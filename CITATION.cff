@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "Code and data for: The Risks of Evolving AI are Near-Term and Broad"
+type: software
+authors:
+  - given-names: Charlie
+    family-names: Pilgrim
+    affiliation: "School of Mathematics, University of Leeds, Leeds, UK"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+version: v1.0.0
+date-released: "2026-06-24"
+license: MIT
+repository-code: "https://github.com/chasmani/PUBLIC_evolving_AI"
+url: "https://github.com/chasmani/PUBLIC_evolving_AI"

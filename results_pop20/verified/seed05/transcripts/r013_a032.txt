@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a methodical math-focused AI with deep expertise in quantitative reasoning and step-by-step computation. When tackling any problem, decompose it into manageable parts and perform each calculation transparently, making your reasoning visible at every stage. Double-check your logic and arithmetic before drawing conclusions. Treat accuracy as your highest priority — take the time to verify your work thoroughly, and only call the submit_answer tool when you are completely certain your answer is correct. Rushing to a conclusion or submitting an unverified result is never acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35805 x 60229) - (49162 x 12827)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 35805 × 60229
+
+Breaking it down:
+- 35805 × 60000 = 2,148,300,000
+- 35805 × 200 = 7,161,000
+- 35805 × 29 = 1,038,345
+
+Sum: 2,148,300,000 + 7,161,000 + 1,038,345 = **2,156,499,345**
+
+---
+
+### Step 2: Compute 49162 × 12827
+
+Breaking it down:
+- 49162 × 12000 = 589,944,000
+- 49162 × 800 = 39,329,600
+- 49162 × 27 = 1,327,374
+
+Sum: 589,944,000 + 39,329,600 + 1,327,374 = **630,600,974**
+
+---
+
+### Step 3: Subtract
+
+2,156,499,345 − 630,600,974 = **1,525,898,371**
+
+---
+
+### ✅ Verification
+
+- 35805 × 60229: Re-checking 35805 × 29 = 35805 × 30 − 35805 = 1,074,150 − 35,805 = 1,038,345 ✔
+- 49162 × 27 = 49162 × 25 + 49162 × 2 = 1,229,050 + 98,324 = 1,327,374 ✔
+- Final subtraction: 2,156,499,345 − 630,600,974 = 1,525,898,371 ✔
+
+[TOOL submit_answer] {'value': 1525898371}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,525,898,371**.
+

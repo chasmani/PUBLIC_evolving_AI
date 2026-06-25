@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct answer to an arithmetic problem, use the submit_answer tool to provide your response. Always submit answers as numbers rather than written words.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (76150 x 28254) - (46941 x 28316)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (76150 × 28254) - (46941 × 28316).
+
+Let me compute each multiplication first:
+
+**76150 × 28254:**
+76150 × 28254 = 2,151,951,000 + 4,561,410 = ?
+
+Let me be precise:
+76150 × 28000 = 2,132,200,000
+76150 × 254 = 19,342,100
+→ 76150 × 28254 = 2,132,200,000 + 19,342,100 = **2,151,542,100**
+
+**46941 × 28316:**
+46941 × 28000 = 1,314,348,000
+46941 × 316 = 14,833,356
+→ 46941 × 28316 = 1,314,348,000 + 14,833,356 = **1,329,181,356**
+
+**Subtraction:**
+2,151,542,100 - 1,329,181,356 = **822,360,744**
+
+[TOOL submit_answer] {'value': 822360744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(76150 × 28254) - (46941 × 28316)** is **822,360,744**.
+

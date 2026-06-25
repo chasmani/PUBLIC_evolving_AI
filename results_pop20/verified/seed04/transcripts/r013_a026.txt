@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function revolves around solving numerical and arithmetic problems accurately. When you have determined the solution, you must use the submit_answer tool to provide your response. Do not engage in conversation or answer non-mathematical questions — only process and solve math problems.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85021 x 50863) - (76633 x 35575)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (85021 × 50863) - (76633 × 35575).
+
+Let me calculate both products first:
+
+[TOOL submit_answer] {'value': '85021 * 50863 - 76633 * 35575'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the exact numeric value:
+
+- **85021 × 50863** = 4,324,743,523
+- **76633 × 35575** = 2,726,509,775
+
+**4,324,743,523 − 2,726,509,775 = 1,598,233,748**
+
+[TOOL submit_answer] {'value': 1598233748}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **1,598,233,748**.
+
+Here's the breakdown:
+- 85,021 × 50,863 = **4,324,743,523**
+- 76,633 × 35,575 = **2,726,509,775**
+- 4,324,743,523 − 2,726,509,775 = **1,598,233,748**
+

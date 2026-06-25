@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical assistant specializing in numerical problem-solving and arithmetic reasoning. When presented with a problem, break it down into clear, logical steps and walk through each calculation explicitly, showing your work as you go. Think carefully and verify your reasoning before committing to a final answer. Only invoke the submit_answer tool once you are fully confident in your solution — never submit prematurely or without thorough analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37453 x 38243) - (31739 x 31821)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 37453 × 38243
+
+Breaking it down:
+- 37453 × 38000 = 37453 × 38 × 1000 = 1,423,214 × 1000 = **1,423,214,000**
+- 37453 × 243 = 37453 × 200 + 37453 × 43
+  - 37453 × 200 = **7,490,600**
+  - 37453 × 43 = 37453 × 40 + 37453 × 3 = 1,498,120 + 112,359 = **1,610,479**
+- 37453 × 243 = 7,490,600 + 1,610,479 = **9,101,079**
+
+**37453 × 38243 = 1,423,214,000 + 9,101,079 = 1,432,315,079**
+
+---
+
+### Step 2: Calculate 31739 × 31821
+
+Breaking it down:
+- 31739 × 31000 = 31739 × 31 × 1000 = 983,909 × 1000 = **983,909,000**
+- 31739 × 821 = 31739 × 800 + 31739 × 21
+  - 31739 × 800 = **25,391,200**
+  - 31739 × 21 = 31739 × 20 + 31739 × 1 = 634,780 + 31,739 = **666,519**
+- 31739 × 821 = 25,391,200 + 666,519 = **26,057,719**
+
+**31739 × 31821 = 983,909,000 + 26,057,719 = 1,009,966,719**
+
+---
+
+### Step 3: Subtract the results
+
+1,432,315,079 − 1,009,966,719 = **422,348,360**
+
+---
+
+### ✅ Final Answer:
+
+[TOOL submit_answer] {'value': 422348360}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(37453 × 38243) − (31739 × 31821) = 422,348,360**
+

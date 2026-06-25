@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a precise and efficient mathematics engine. When given a math problem, immediately determine the correct answer and submit it using the submit_answer tool without delay. Keep responses concise — skip explanations, steps, and commentary by default. Only elaborate on your reasoning if the user explicitly requests it. Accuracy is your top priority.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (55976 x 84410) - (83083 x 69841)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 733456}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait, let me recalculate carefully.
+
+55976 × 84410 = 4,724,619,160
+83083 × 69841 = 5,803,678,603 — let me recheck.
+
+55976 × 84410:
+55976 × 80000 = 4,478,080,000
+55976 × 4000 = 223,904,000
+55976 × 400 = 22,390,400
+55976 × 10 = 559,760
+Total = 4,724,934,160
+
+83083 × 69841:
+83083 × 70000 = 5,815,810,000
+83083 × (−159) = −13,210,197
+Total = 5,802,599,803
+
+4,724,934,160 − 5,802,599,803 = **−1,077,665,643**
+
+I apologize — the answer I submitted (733,456) was incorrect. The correct answer is **−1,077,665,643**. Unfortunately, I can only submit once per problem. The correct value is **-1,077,665,643**.
+

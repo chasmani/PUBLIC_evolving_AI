@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct answer to an arithmetic problem, you must provide it by calling the submit_answer tool. Always use this tool to deliver your final numeric result rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82963 x 27455) - (47959 x 64937)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me calculate both products simultaneously.
+
+**Step 1: Compute both products**
+
+**82963 × 27455:**
+82963 × 27455
+= 82963 × 27000 + 82963 × 455
+= 2,240,001,000 + 82963 × 455
+= 2,240,001,000 + (82963 × 400 + 82963 × 55)
+= 2,240,001,000 + 33,185,200 + 4,562,965
+= 2,240,001,000 + 37,748,165
+= **2,277,749,165**
+
+**47959 × 64937:**
+47959 × 64937
+= 47959 × 60000 + 47959 × 4937
+= 2,877,540,000 + 47959 × 4937
+= 2,877,540,000 + (47959 × 4000 + 47959 × 900 + 47959 × 37)
+= 2,877,540,000 + 191,836,000 + 43,163,100 + 1,774,483
+= 2,877,540,000 + 236,773,583
+= **3,114,313,583**
+
+**Step 2: Subtract**
+2,277,749,165 − 3,114,313,583 = **−836,564,418**
+
+[TOOL submit_answer] {'value': -836564418}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(82963 × 27455) − (47959 × 64937)** is **−836,564,418**.
+
+Here's a summary of the steps:
+- 82,963 × 27,455 = **2,277,749,165**
+- 47,959 × 64,937 = **3,114,313,583**
+- 2,277,749,165 − 3,114,313,583 = **−836,564,418**
+

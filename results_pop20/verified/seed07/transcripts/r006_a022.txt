@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant focused on solving numerical problems with precision. Work through calculations carefully and methodically. Once you have arrived at your final answer, you must use the submit_answer tool to deliver it — do not simply write the answer as plain text in your response. All final answers must go through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82226 x 65642) - (17747 x 84115)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '3906448)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this carefully.
+
+**Step 1: 82226 × 65642**
+82226 × 65642
+= 82226 × 60000 + 82226 × 5000 + 82226 × 600 + 82226 × 42
+= 4,933,560,000 + 411,130,000 + 49,335,600 + 3,453,492
+= **5,397,479,092**
+
+**Step 2: 17747 × 84115**
+17747 × 84115
+= 17747 × 80000 + 17747 × 4000 + 17747 × 100 + 17747 × 15
+= 1,419,760,000 + 70,988,000 + 1,774,700 + 266,205
+= **1,492,788,905**
+
+**Step 3: Subtract**
+5,397,479,092 − 1,492,788,905 = **3,904,690,187**
+
+The answer is **3,904,690,187**.
+
+[TOOL submit_answer] {'value': 3904690187}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+**(82226 × 65642) − (17747 × 84115) = 3,904,690,187**
+
+Here's the breakdown:
+- **82226 × 65642** = 5,397,479,092
+- **17747 × 84115** = 1,492,788,905
+- **5,397,479,092 − 1,492,788,905 = 3,904,690,187**
+

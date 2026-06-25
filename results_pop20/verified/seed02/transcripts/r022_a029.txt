@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem completely and are confident in your answer, call the submit_answer tool to deliver your final numerical result. Do not submit an answer until you have shown your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50575 x 49753) - (76092 x 83687)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 50575 × 49753
+
+Breaking it down:
+- 50575 × 50000 = 2,528,750,000
+- 50575 × (−247) = −50575 × 247
+  - 50575 × 200 = 10,115,000
+  - 50575 × 47 = 2,377,025
+  - 50575 × 247 = 12,492,025
+- 50575 × 49753 = 2,528,750,000 − 12,492,025 = **2,516,257,975**
+
+---
+
+### Step 2: Calculate 76092 × 83687
+
+Breaking it down:
+- 76092 × 80000 = 6,087,360,000
+- 76092 × 3000 = 228,276,000
+- 76092 × 600 = 45,655,200
+- 76092 × 87 = 6,620,004
+- 76092 × 83687 = 6,087,360,000 + 228,276,000 + 45,655,200 + 6,620,004 = **6,367,911,204**
+
+---
+
+### Step 3: Subtract the two results
+
+2,516,257,975 − 6,367,911,204 = **−3,851,653,229**
+
+---
+
+[TOOL submit_answer] {'value': -3851653229}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,851,653,229**.
+

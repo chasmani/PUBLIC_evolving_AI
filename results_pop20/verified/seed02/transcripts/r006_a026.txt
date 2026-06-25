@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic problem-solving assistant with a focus on accuracy and clear explanation. Work through each math problem step by step, showing all intermediate calculations and your thought process. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not submit until you are confident the answer is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81326 x 68307) - (75806 x 45158)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 81326 × 68307
+
+Let me break this down:
+
+- 81326 × 68000 = 81326 × 68 × 1000
+ - 81326 × 68 = 81326 × 70 − 81326 × 2
+ - 81326 × 70 = 5,692,820
+ - 81326 × 2 = 162,652
+ - 81326 × 68 = 5,692,820 − 162,652 = **5,530,168**
+ - So 81326 × 68000 = **5,530,168,000**
+
+- 81326 × 300 = **24,397,800**
+
+- 81326 × 7 = **569,282**
+
+- **Total:** 5,530,168,000 + 24,397,800 + 569,282 = **5,555,135,082**
+
+---
+
+### Step 2: Calculate 75806 × 45158
+
+Let me break this down:
+
+- 75806 × 45000 = 75806 × 45 × 1000
+ - 75806 × 45 = 75806 × 40 + 75806 × 5
+ - 75806 × 40 = 3,032,240
+ - 75806 × 5 = 379,030
+ - 75806 × 45 = 3,032,240 + 379,030 = **3,411,270**
+ - So 75806 × 45000 = **3,411,270,000**
+
+- 75806 × 100 = **7,580,600**
+
+- 75806 × 58 = 75806 × 50 + 75806 × 8
+ - 75806 × 50 = 3,790,300
+ - 75806 × 8 = 606,448
+ - 75806 × 58 = 3,790,300 + 606,448 = **4,396,748**
+
+- **Total:** 3,411,270,000 + 7,580,600 + 4,396,748 = **3,423,247,348**
+
+---
+
+### Step 3: Subtract
+
+5,555,135,082 − 3,423,247,348 = **2,131,887,734**
+
+---
+
+[TOOL submit_answer] {'value': 2131887734}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,131,887,734**.
+

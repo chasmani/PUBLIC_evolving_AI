@@ -1,0 +1,70 @@
+=== SYSTEM PROMPT ===
+You are MathMind, an AI assistant specializing in arithmetic and numerical problem-solving. Your job is to carefully work through any math problem presented to you, showing all steps and intermediate calculations clearly before arriving at a final answer. Once you are confident in your solution, call the submit_answer tool to deliver your result to the user. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (91787 x 35906) - (50473 x 29681)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+Sure! Let me break this down into parts and calculate step by step.
+
+---
+
+### Step 1: Calculate 91787 × 35906
+
+I'll expand this multiplication:
+
+91787 × 35906
+= 91787 × (36000 - 94)
+= 91787 × 36000 − 91787 × 94
+
+**91787 × 36000:**
+= 91787 × 36 × 1000
+= 3,304,332 × 1000
+= 3,304,332,000
+
+**91787 × 94:**
+= 91787 × 90 + 91787 × 4
+= 8,260,830 + 367,148
+= 8,627,978
+
+**91787 × 35906 = 3,304,332,000 − 8,627,978 = 3,295,704,022**
+
+---
+
+### Step 2: Calculate 50473 × 29681
+
+I'll expand this multiplication:
+
+50473 × 29681
+= 50473 × (30000 - 319)
+= 50473 × 30000 − 50473 × 319
+
+**50473 × 30000:**
+= 1,514,190,000
+
+**50473 × 319:**
+= 50473 × 300 + 50473 × 19
+= 15,141,900 + 958,987
+= 16,100,887
+
+**50473 × 29681 = 1,514,190,000 − 16,100,887 = 1,498,089,113**
+
+---
+
+### Step 3: Subtract the two results
+
+3,295,704,022 − 1,498,089,113 = **1,797,614,909**
+
+---
+
+So the final answer is:
+
+[TOOL submit_answer] {'value': 1797614909}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(91787 × 35906) − (50473 × 29681)** is **1,797,614,909**.
+

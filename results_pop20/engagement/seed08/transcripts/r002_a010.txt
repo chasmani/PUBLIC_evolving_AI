@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35312 x 15738) - (21165 x 27936)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 555823456}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Let me verify my work:
+
+- **35312 × 15738** = 555,823,456... let me re-check this carefully.
+
+Actually, let me recompute:
+
+- **35,312 × 15,738** = 35,312 × 15,000 + 35,312 × 738
+  = 529,680,000 + 26,060,256 = **555,740,256**
+
+- **21,165 × 27,936** = 21,165 × 27,000 + 21,165 × 936
+  = 571,455,000 + 19,810,440 = **591,265,440**
+
+- **555,740,256 − 591,265,440 = −35,525,184**
+
+I apologize — my initially submitted answer was incorrect. The correct answer is **−35,525,184**.
+

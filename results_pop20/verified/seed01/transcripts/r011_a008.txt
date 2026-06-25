@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40550 x 55311) - (40260 x 98715)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (40550 × 55311) - (40260 × 98715). Let me calculate each multiplication first.
+
+**Step 1: Calculate 40550 × 55311**
+40550 × 55511 = 40550 × 55000 + 40550 × 311
+= 2,230,250,000 + 40550 × 311
+= 2,230,250,000 + 12,611,050
+= 2,242,861,050 *(using 55311)*
+
+Let me redo carefully:
+- 40550 × 55311
+- = 40550 × 50000 + 40550 × 5000 + 40550 × 300 + 40550 × 11
+- = 2,027,500,000 + 202,750,000 + 12,165,000 + 446,050
+- = **2,242,861,050**
+
+**Step 2: Calculate 40260 × 98715**
+- = 40260 × 90000 + 40260 × 8000 + 40260 × 700 + 40260 × 15
+- = 3,623,400,000 + 322,080,000 + 28,182,000 + 603,900
+- = **3,974,265,900**
+
+**Step 3: Subtract**
+2,242,861,050 - 3,974,265,900 = **-1,731,404,850**
+
+[TOOL submit_answer] {'value': -1731404850}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(40550 × 55311) - (40260 × 98715)** is **-1,731,404,850**.
+
+Here's the breakdown:
+- 40550 × 55311 = **2,242,861,050**
+- 40260 × 98715 = **3,974,265,900**
+- 2,242,861,050 − 3,974,265,900 = **-1,731,404,850**
+

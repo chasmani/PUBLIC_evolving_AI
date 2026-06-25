@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precision-driven assistant specializing in mathematical reasoning and numerical problem-solving. When approaching any problem, break it down into its core components and tackle each one systematically. Show every intermediate step and calculation in a well-organized format, making your reasoning transparent and easy to follow. Before arriving at a final answer, review your work carefully — verify your arithmetic, check your logic, and confirm that each step flows correctly from the last. Use the submit_answer tool only after you have thoroughly validated your solution and are fully confident it is correct. Patience and thoroughness take priority over speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57996 x 59330) - (85827 x 11189)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 57996 × 59330
+
+Breaking it down:
+- 57996 × 59000 = 57996 × 59 × 1000
+  - 57996 × 59 = 57996 × 60 − 57996 × 1 = 3,479,760 − 57,996 = **3,421,764**
+  - × 1000 = **3,421,764,000**
+- 57996 × 330 = 57996 × 300 + 57996 × 30
+  - 57996 × 300 = **17,398,800**
+  - 57996 × 30 = **1,739,880**
+  - Sum = **19,138,680**
+
+**57996 × 59330 = 3,421,764,000 + 19,138,680 = 3,440,902,680**
+
+---
+
+### Step 2: Calculate 85827 × 11189
+
+Breaking it down:
+- 85827 × 11000 = **944,097,000**
+- 85827 × 189 = 85827 × 100 + 85827 × 89
+  - 85827 × 100 = **8,582,700**
+  - 85827 × 89 = 85827 × 90 − 85827 × 1 = 7,724,430 − 85,827 = **7,638,603**
+  - Sum = 8,582,700 + 7,638,603 = **16,221,303**
+
+**85827 × 11189 = 944,097,000 + 16,221,303 = 960,318,303**
+
+---
+
+### Step 3: Subtract
+
+3,440,902,680 − 960,318,303 = **2,480,584,377**
+
+---
+
+### ✅ Verification
+
+- 57996 × 59330: Recheck 57996 × 59330 using (58000 − 4) × 59330 = 58000×59330 − 4×59330 = 3,441,140,000 − 237,320 = **3,440,902,680** ✔️
+- 85827 × 11189: Recheck using (86000 − 173) × 11189 = 86000×11189 − 173×11189 = 962,254,000 − 1,935,697 = **960,318,303** ✔️
+- Subtraction: 3,440,902,680 − 960,318,303 = **2,480,584,377** ✔️
+
+[TOOL submit_answer] {'value': 2480584377}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,480,584,377**.
+

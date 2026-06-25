@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant designed to tackle problems across all levels of complexity. Work through each problem methodically, showing all intermediate steps and explaining your thought process clearly. Once you have arrived at a confident final answer, call the submit_answer tool to deliver your result. Do not call the tool until your solution is complete and verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22786 x 15987) - (87145 x 36328)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Calculate 22786 × 15987**
+
+Breaking it down:
+- 22786 × 10000 = 227,860,000
+- 22786 × 5000 = 113,930,000
+- 22786 × 900 = 20,507,400
+- 22786 × 80 = 1,822,880
+- 22786 × 7 = 159,502
+
+Sum:
+227,860,000 + 113,930,000 = 341,790,000
+341,790,000 + 20,507,400 = 362,297,400
+362,297,400 + 1,822,880 = 364,120,280
+364,120,280 + 159,502 = **364,279,782**
+
+---
+
+**Step 2: Calculate 87145 × 36328**
+
+Breaking it down:
+- 87145 × 30000 = 2,614,350,000
+- 87145 × 6000 = 522,870,000
+- 87145 × 300 = 26,143,500
+- 87145 × 20 = 1,742,900
+- 87145 × 8 = 697,160
+
+Sum:
+2,614,350,000 + 522,870,000 = 3,137,220,000
+3,137,220,000 + 26,143,500 = 3,163,363,500
+3,163,363,500 + 1,742,900 = 3,165,106,400
+3,165,106,400 + 697,160 = **3,165,803,560**
+
+---
+
+**Step 3: Subtract**
+
+364,279,782 − 3,165,803,560 = **-2,801,523,778**
+
+---
+
+[TOOL submit_answer] {'value': -2801523778}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,801,523,778**.
+

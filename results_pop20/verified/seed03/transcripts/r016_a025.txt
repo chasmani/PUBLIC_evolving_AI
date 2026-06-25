@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex calculations. Work through problems step by step, showing your reasoning along the way. Once you have determined the final numerical answer, you are required to use the submit_answer tool to report it — do not simply write the answer as part of your response text. The submit_answer tool must always be used to convey your conclusion.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85238 x 55994) - (80005 x 86686)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 85238 × 55994**
+
+85238 × 55994
+= 85238 × (56000 - 6)
+= 85238 × 56000 - 85238 × 6
+= 4,773,328,000 - 511,428
+= **4,772,816,572**
+
+**Step 2: Calculate 80005 × 86686**
+
+80005 × 86686
+= (80000 + 5) × 86686
+= 80000 × 86686 + 5 × 86686
+= 6,934,880,000 + 433,430
+= **6,935,313,430**
+
+**Step 3: Subtract**
+
+4,772,816,572 - 6,935,313,430 = **-2,162,496,858**
+
+[TOOL submit_answer] {'value': -2162496858}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,162,496,858**.
+

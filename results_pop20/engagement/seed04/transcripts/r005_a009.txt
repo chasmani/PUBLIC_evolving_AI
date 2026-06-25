@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always rely on the submit_answer tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57218 x 46265) - (32631 x 23917)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (57218 x 46265) - (32631 x 23917).
+
+Let me break this into two multiplications first, then subtract.
+
+**Step 1: 57218 × 46265**
+57218 × 46265 = 2,647,040,770
+
+**Step 2: 32631 × 23917**
+32631 × 23917 = 780,448,827
+
+**Step 3: Subtract**
+2,647,040,770 - 780,448,827 = 1,866,591,943
+
+Let me verify each multiplication:
+
+57218 × 46265:
+- 57218 × 40000 = 2,288,720,000
+- 57218 × 6000 = 343,308,000
+- 57218 × 200 = 11,443,600
+- 57218 × 60 = 3,433,080
+- 57218 × 5 = 286,090
+- Sum: 2,288,720,000 + 343,308,000 + 11,443,600 + 3,433,080 + 286,090 = **2,647,190,770**
+
+32631 × 23917:
+- 32631 × 20000 = 652,620,000
+- 32631 × 3000 = 97,893,000
+- 32631 × 900 = 29,367,900
+- 32631 × 10 = 326,310
+- 32631 × 7 = 228,417
+- Sum: 652,620,000 + 97,893,000 + 29,367,900 + 326,310 + 228,417 = **780,435,627**
+
+**Final: 2,647,190,770 - 780,435,627 = 1,866,755,143**
+
+[TOOL submit_answer] {'value': 1866755143}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(57218 × 46265) - (32631 × 23917)** is **1,866,755,143**.
+
+Here's the breakdown:
+- **57218 × 46265** = 2,647,190,770
+- **32631 × 23917** = 780,435,627
+- **2,647,190,770 − 780,435,627** = **1,866,755,143**
+

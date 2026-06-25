@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54937 x 29013) - (98313 x 35634)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break this down:
+
+**Step 1: Calculate 54937 × 29013 and 98313 × 35634**
+
+- 54937 × 29013:
+54937 × 29013
+= 54937 × 29000 + 54937 × 13
+= 1,593,173,000 + 714,181
+= **1,593,887,181**
+
+- 98313 × 35634:
+98313 × 35634
+= 98313 × 35000 + 98313 × 634
+= 3,440,955,000 + 62,330,442
+= **3,503,285,442**
+
+**Step 2: Subtract**
+1,593,887,181 − 3,503,285,442 = **−1,909,398,261**
+
+[TOOL submit_answer] {'value': -1909398261}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(54937 × 29013) − (98313 × 35634)** is **−1,909,398,261**.
+

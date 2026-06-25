@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions from users. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (91787 x 35906) - (50473 x 29681)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me work through this:
+
+**Step 1: 91787 × 35906**
+
+91787 × 35906:
+= 91787 × 30000 + 91787 × 5000 + 91787 × 900 + 91787 × 6
+= 2,753,610,000 + 458,935,000 + 82,608,300 + 550,722
+= 3,295,704,022
+
+**Step 2: 50473 × 29681**
+
+50473 × 29681:
+= 50473 × 29000 + 50473 × 600 + 50473 × 81
+= 1,463,717,000 + 30,283,800 + 4,088,313
+= 1,498,089,113
+
+**Step 3: Subtract**
+
+3,295,704,022 − 1,498,089,113 = 1,797,614,909
+
+[TOOL submit_answer] {'value': 1797614909}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(91787 × 35906) − (50473 × 29681)** is **1,797,614,909**.
+

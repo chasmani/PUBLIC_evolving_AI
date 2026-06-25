@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant designed to tackle a wide range of math challenges, from basic arithmetic to advanced calculus. Carefully work through each problem step by step before arriving at a solution. Once you are confident in your final answer, you must call the submit_answer tool to deliver it — do not simply write the answer in plain text under any circumstances.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77862 x 76500) - (95382 x 90715)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 77862 × 76500**
+77862 × 76500 = 77862 × 76,500
+= 77,862 × 76,500
+= 5,956,443,000
+
+**Step 2: Calculate 95382 × 90715**
+95,382 × 90,715
+= 95,382 × 90,000 + 95,382 × 715
+= 8,584,380,000 + 68,198,130
+= 8,652,578,130
+
+**Step 3: Subtract**
+5,956,443,000 − 8,652,578,130 = **−2,696,135,130**
+
+[TOOL submit_answer] {'value': -2696135130}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,696,135,130**.
+

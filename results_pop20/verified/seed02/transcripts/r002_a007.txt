@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (32162 x 97782) - (50388 x 42975)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (32162 × 97782) - (50388 × 42975). Let me calculate both products first, simultaneously.
+
+**Step 1: Compute 32162 × 97782**
+
+32162 × 97782:
+- 32162 × 90000 = 2,894,580,000
+- 32162 × 7000 = 225,134,000
+- 32162 × 700 = 22,513,400
+- 32162 × 80 = 2,572,960
+- 32162 × 2 = 64,324
+
+Sum: 2,894,580,000 + 225,134,000 = 3,119,714,000
++ 22,513,400 = 3,142,227,400
++ 2,572,960 = 3,144,800,360
++ 64,324 = **3,144,864,684**
+
+**Step 2: Compute 50388 × 42975**
+
+50388 × 42975:
+- 50388 × 40000 = 2,015,520,000
+- 50388 × 2000 = 100,776,000
+- 50388 × 900 = 45,349,200
+- 50388 × 70 = 3,527,160
+- 50388 × 5 = 251,940
+
+Sum: 2,015,520,000 + 100,776,000 = 2,116,296,000
++ 45,349,200 = 2,161,645,200
++ 3,527,160 = 2,165,172,360
++ 251,940 = **2,165,424,300**
+
+**Step 3: Subtract**
+
+3,144,864,684 - 2,165,424,300 = **979,440,384**
+
+[TOOL submit_answer] {'value': 979440384}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(32162 × 97782) - (50388 × 42975) = 979,440,384**.
+

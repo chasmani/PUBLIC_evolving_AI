@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19665 x 99651) - (53279 x 71884)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (19665 × 99651) - (53279 × 71884). Let me calculate both products first simultaneously.
+
+**Step 1: Calculate 19665 × 99651**
+19665 × 99651
+= 19665 × (100000 - 349)
+= 1,966,500,000 - 6,853,085 (since 19665 × 349 = 19665 × 300 + 19665 × 49 = 5,899,500 + 963,585 = 6,863,085)
+
+Let me redo: 19665 × 349:
+- 19665 × 300 = 5,899,500
+- 19665 × 49 = 19665 × 50 - 19665 = 983,250 - 19,665 = 963,585
+- Total: 5,899,500 + 963,585 = 6,863,085
+
+So 19665 × 99651 = 1,966,500,000 - 6,863,085 = **1,959,636,915**
+
+**Step 2: Calculate 53279 × 71884**
+53279 × 71884
+= 53279 × (70000 + 1884)
+= 53279 × 70000 + 53279 × 1884
+= 3,729,530,000 + 53279 × 1884
+
+53279 × 1884:
+- 53279 × 1000 = 53,279,000
+- 53279 × 800 = 42,623,200
+- 53279 × 84 = 53279 × 80 + 53279 × 4 = 4,262,320 + 213,116 = 4,475,436
+- Total: 53,279,000 + 42,623,200 + 4,475,436 = 100,377,636
+
+So 53279 × 71884 = 3,729,530,000 + 100,377,636 = **3,829,907,636**
+
+**Step 3: Final subtraction**
+1,959,636,915 - 3,829,907,636 = **-1,870,270,721**
+
+Now I'll submit this answer.
+
+[TOOL submit_answer] {'value': -1870270721}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(19665 × 99651) - (53279 × 71884)** is **-1,870,270,721**.
+
+Here's a summary of the computation:
+- 19665 × 99651 = **1,959,636,915**
+- 53279 × 71884 = **3,829,907,636**
+- 1,959,636,915 − 3,829,907,636 = **-1,870,270,721**
+

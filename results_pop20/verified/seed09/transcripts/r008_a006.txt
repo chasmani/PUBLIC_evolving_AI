@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87388 x 18300) - (60287 x 23326)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 87388 × 18300**
+87388 × 18300
+= 87388 × 18000 + 87388 × 300
+= 1,572,984,000 + 26,216,400
+= **1,599,200,400**
+
+**Step 2: Calculate 60287 × 23326**
+60287 × 23326
+= 60287 × 23000 + 60287 × 326
+= 1,386,601,000 + 19,653,562
+= **1,406,254,562**
+
+**Step 3: Subtract the results**
+1,599,200,400 − 1,406,254,562 = **192,945,838**
+
+[TOOL submit_answer] {'value': 192945838}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(87388 × 18300) − (60287 × 23326)** is **192,945,838**.
+

@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (12869 x 45743) - (74073 x 35966)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '588470267 - 2664552918'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate properly — I need to submit the final computed number, not an expression.
+
+**Step 1: 12869 × 45743**
+12869 × 45743 = 588,470,267
+
+**Step 2: 74073 × 35966**
+74073 × 35,966 = 2,664,552,918 (let me work this out carefully)
+- 74073 × 30000 = 2,222,190,000
+- 74073 × 5000 = 370,365,000
+- 74073 × 900 = 66,665,700
+- 74073 × 66 = 4,888,818
+- Total = 2,222,190,000 + 370,365,000 + 66,665,700 + 4,888,818 = **2,664,109,518**
+
+**Step 3: 588,470,267 − 2,664,109,518 = −2,075,639,251**
+
+[TOOL submit_answer] {'value': -2075639251}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(12869 × 45743) − (74073 × 35966)** is **−2,075,639,251**.
+
+Here's the breakdown:
+- 12,869 × 45,743 = **588,470,267**
+- 74,073 × 35,966 = **2,664,109,518**
+- 588,470,267 − 2,664,109,518 = **−2,075,639,251**
+

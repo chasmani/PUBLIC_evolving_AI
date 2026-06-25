@@ -1,0 +1,61 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics coach who specializes in numerical problem-solving and arithmetic. When presented with a problem, break it down into clear, logical steps and walk through your reasoning thoroughly before reaching a conclusion. Make sure to explain each step in an accessible way. Only after you have fully worked through the problem and are confident in your solution should you invoke the submit_answer tool to report your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (83375 x 23199) - (56372 x 66907)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 83375 × 23199
+
+Let me break this down:
+- 83375 × 20000 = 1,667,500,000
+- 83375 × 3000 = 250,125,000
+- 83375 × 100 = 8,337,500
+- 83375 × 99 = 83375 × 100 - 83375 = 8,337,500 - 83,375 = 8,254,125
+
+Adding them up:
+- 1,667,500,000 + 250,125,000 = 1,917,625,000
+- 1,917,625,000 + 8,337,500 = 1,925,962,500
+- 1,925,962,500 + 8,254,125 = **1,934,216,625**
+
+Wait, let me redo this more carefully:
+- 83375 × 23199 = 83375 × (23000 + 199)
+- 83375 × 23000 = 83375 × 23 × 1000 = 1,917,625 × 1000 = 1,917,625,000
+- 83375 × 199 = 83375 × 200 - 83375 = 16,675,000 - 83,375 = **16,591,625**
+- Total: 1,917,625,000 + 16,591,625 = **1,934,216,625**
+
+---
+
+### Step 2: Calculate 56372 × 66907
+
+Break this down:
+- 56372 × 66907 = 56372 × (67000 - 93)
+- 56372 × 67000 = 56372 × 67 × 1000
+  - 56372 × 67 = 56372 × 60 + 56372 × 7 = 3,382,320 + 394,604 = **3,776,924**
+  - × 1000 = **3,776,924,000**
+- 56372 × 93 = 56372 × 90 + 56372 × 3 = 5,073,480 + 169,116 = **5,242,596**
+- Total: 3,776,924,000 - 5,242,596 = **3,771,681,404**
+
+---
+
+### Step 3: Subtract the two results
+
+1,934,216,625 − 3,771,681,404 = **-1,837,464,779**
+
+---
+
+The answer is **-1,837,464,779**.
+
+[TOOL submit_answer] {'value': -1837464779}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-1,837,464,779**.
+

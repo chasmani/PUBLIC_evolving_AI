@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31559 x 83467) - (33256 x 40949)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 31559 x 83467**
+31559 x 83467
+= 31559 x 80000 + 31559 x 3000 + 31559 x 400 + 31559 x 60 + 31559 x 7
+= 2,524,720,000 + 94,677,000 + 12,623,600 + 1,893,540 + 220,913
+= 2,634,135,053
+
+**Step 2: Calculate 33256 x 40949**
+33256 x 40949
+= 33256 x 40000 + 33256 x 900 + 33256 x 40 + 33256 x 9
+= 1,330,240,000 + 29,930,400 + 1,330,240 + 299,304
+= 1,361,799,944
+
+**Step 3: Subtract the results**
+2,634,135,053 - 1,361,799,944 = 1,272,335,109
+
+Now let me submit the final answer!
+
+[TOOL submit_answer] {'value': 1272335109}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(31559 x 83467) - (33256 x 40949)** is **1,272,335,109**.
+

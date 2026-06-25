@@ -1,0 +1,64 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35719 x 59782) - (73405 x 39194)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step by step.
+
+---
+
+### Step 1: Calculate 35719 × 59782
+
+Breaking it down:
+
+35719 × 59782
+= 35719 × (60000 - 218)
+= (35719 × 60000) - (35719 × 218)
+
+- 35719 × 60000 = **2,143,140,000**
+- 35719 × 218 = 35719 × 200 + 35719 × 18
+  - 35719 × 200 = 7,143,800
+  - 35719 × 18 = 642,942
+  - → 7,143,800 + 642,942 = **7,786,742**
+
+35719 × 59782 = 2,143,140,000 - 7,786,742 = **2,135,353,258**
+
+---
+
+### Step 2: Calculate 73405 × 39194
+
+Breaking it down:
+
+73405 × 39194
+= 73405 × (40000 - 806)
+= (73405 × 40000) - (73405 × 806)
+
+- 73405 × 40000 = **2,936,200,000**
+- 73405 × 806 = 73405 × 800 + 73405 × 6
+  - 73405 × 800 = 58,724,000
+  - 73405 × 6 = 440,430
+  - → 58,724,000 + 440,430 = **59,164,430**
+
+73405 × 39194 = 2,936,200,000 - 59,164,430 = **2,877,035,570**
+
+---
+
+### Step 3: Subtract
+
+2,135,353,258 - 2,877,035,570 = **-741,682,312**
+
+---
+
+### ✅ Final Answer:
+
+[TOOL submit_answer] {'value': -741682312}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(35719 × 59782) - (73405 × 39194) = −741,682,312**
+

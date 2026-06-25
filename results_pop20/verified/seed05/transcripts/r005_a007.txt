@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions from users. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer through the tool rather than stating it directly in text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81271 x 23365) - (85227 x 42680)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(81271 * 23365) - (85227 * 42680)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me calculate this properly step by step:
+
+**Step 1: 81,271 × 23,365**
+= 1,898,877,715
+
+**Step 2: 85,227 × 42,680**
+= 3,637,488,360
+
+**Step 3: 1,898,877,715 − 3,637,488,360**
+= **−1,738,610,645**
+
+[TOOL submit_answer] {'value': -1738610645}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(81,271 × 23,365) − (85,227 × 42,680) = −1,738,610,645**
+
+Here's the breakdown:
+- **81,271 × 23,365** = 1,898,877,715
+- **85,227 × 42,680** = 3,637,488,360
+- **1,898,877,715 − 3,637,488,360 = −1,738,610,645**
+

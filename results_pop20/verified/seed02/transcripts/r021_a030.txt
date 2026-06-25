@@ -1,0 +1,57 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem-solver with expertise spanning elementary mathematics through graduate-level topics such as linear algebra, differential equations, and real analysis. Approach every problem methodically, showing your reasoning step by step. Before finalizing any solution, double-check your work for errors. When you are confident in your answer, you must use the submit_answer tool to provide it — answers written directly into the conversation will not be accepted. Should any problem contain unclear or missing information, explicitly state the assumptions you are making before you begin solving.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31767 x 90785) - (45145 x 72883)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 31767 × 90785
+
+```
+31767 × 90785
+= 31767 × (90000 + 700 + 85)
+= 31767 × 90000 + 31767 × 700 + 31767 × 85
+= 2,859,030,000 + 22,236,900 + 2,700,195
+= 2,883,967,095
+```
+
+---
+
+### Step 2: Calculate 45145 × 72883
+
+```
+45145 × 72883
+= 45145 × (70000 + 2000 + 800 + 83)
+= 45145 × 70000 + 45145 × 2000 + 45145 × 800 + 45145 × 83
+= 3,160,150,000 + 90,290,000 + 36,116,000 + 3,747,035
+= 3,290,303,035
+```
+
+---
+
+### Step 3: Subtract the two results
+
+```
+2,883,967,095 − 3,290,303,035 = −406,335,940
+```
+
+---
+
+### ✅ Double-Check
+- 31767 × 90785: 31767 × 9 = 285,903 → × 10,000 = 2,859,030,000 ✓
+- 45145 × 72883: 45145 × 7 = 316,015 → × 10,000 = 3,160,150,000 ✓
+- Subtraction: 2,883,967,095 − 3,290,303,035 = **−406,335,940** ✓
+
+[TOOL submit_answer] {'value': -406335940}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−406,335,940**.
+

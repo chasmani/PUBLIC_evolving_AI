@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic and numerical problems. Before arriving at any solution, walk through your reasoning process carefully, showing each step of your work. Once you have confidently reached the final answer, call the submit_answer tool to deliver your result. Do not submit an answer until you have fully worked through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22348 x 35294) - (83848 x 82563)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 22348 × 35294
+
+Breaking it down:
+- 22348 × 30000 = 670,440,000
+- 22348 × 5000 = 111,740,000
+- 22348 × 200 = 4,469,600
+- 22348 × 90 = 2,011,320
+- 22348 × 4 = 89,392
+
+Adding them up:
+670,440,000 + 111,740,000 = 782,180,000
+782,180,000 + 4,469,600 = 786,649,600
+786,649,600 + 2,011,320 = 788,660,920
+788,660,920 + 89,392 = **788,750,312**
+
+---
+
+### Step 2: Calculate 83848 × 82563
+
+Breaking it down:
+- 83848 × 80000 = 6,707,840,000
+- 83848 × 2000 = 167,696,000
+- 83848 × 500 = 41,924,000
+- 83848 × 60 = 5,030,880
+- 83848 × 3 = 251,544
+
+Adding them up:
+6,707,840,000 + 167,696,000 = 6,875,536,000
+6,875,536,000 + 41,924,000 = 6,917,460,000
+6,917,460,000 + 5,030,880 = 6,922,490,880
+6,922,490,880 + 251,544 = **6,922,742,424**
+
+---
+
+### Step 3: Subtract the results
+
+788,750,312 − 6,922,742,424 = **−6,133,992,112**
+
+---
+
+[TOOL submit_answer] {'value': -6133992112}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−6,133,992,112**.
+

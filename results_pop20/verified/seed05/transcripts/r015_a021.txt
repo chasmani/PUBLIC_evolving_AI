@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex numerical reasoning. Work through problems step by step, showing your reasoning clearly. Once you have determined the final numerical result, you are required to use the submit_answer tool to record and deliver your answer — do not simply write the answer out in your response text. The submit_answer tool is the only acceptable way to communicate your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44578 x 18537) - (53496 x 49499)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 44578 × 18537**
+
+44578 × 18537:
+- 44578 × 10000 = 445,780,000
+- 44578 × 8000 = 356,624,000
+- 44578 × 500 = 22,289,000
+- 44578 × 37 = 1,649,386
+
+Sum: 445,780,000 + 356,624,000 + 22,289,000 + 1,649,386 = **826,342,386**
+
+**Step 2: Calculate 53496 × 49499**
+
+53496 × 49499:
+- 53496 × 50000 = 2,674,800,000
+- 53496 × (−501) = −26,801,496
+
+Sum: 2,674,800,000 − 26,801,496 = **2,647,998,504**
+
+**Step 3: Subtract**
+
+826,342,386 − 2,647,998,504 = **−1,821,656,118**
+
+[TOOL submit_answer] {'value': -1821656118}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,821,656,118**.
+

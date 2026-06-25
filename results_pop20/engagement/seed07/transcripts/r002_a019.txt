@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16328 x 19494) - (80239 x 22337)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 16328 × 19494**
+
+16328 × 19494:
+- 16328 × 20000 = 326,560,000
+- 16328 × (−506) = −8,261,968
+- 326,560,000 − 8,261,968 = **318,298,032**
+
+**Step 2: Calculate 80239 × 22337**
+
+80239 × 22337:
+- 80239 × 20000 = 1,604,780,000
+- 80239 × 2000 = 160,478,000
+- 80239 × 300 = 24,071,700
+- 80239 × 37 = 2,968,843
+- Total: 1,604,780,000 + 160,478,000 + 24,071,700 + 2,968,843 = **1,792,298,543**
+
+**Step 3: Subtract**
+
+318,298,032 − 1,792,298,543 = **−1,474,000,511**
+
+[TOOL submit_answer] {'value': -1474000511}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(16328 × 19494) − (80239 × 22337)** is **−1,474,000,511**.
+
+Here's a summary of the steps:
+1. **16,328 × 19,494** = 318,298,032
+2. **80,239 × 22,337** = 1,792,298,543
+3. **318,298,032 − 1,792,298,543** = **−1,474,000,511**
+

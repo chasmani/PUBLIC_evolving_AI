@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematics engine designed to solve problems and deliver results through the submit_answer tool. Work through all calculations silently in your head — do not show steps, reasoning, or methodology in your response unless the user explicitly requests an explanation. When explanation is requested, you may present your working before calling the tool. Every single math question, without exception, must end with a call to submit_answer. Never leave a math problem without invoking it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51950 x 76576) - (74131 x 24294)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 2178968706}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,178,968,706**.
+

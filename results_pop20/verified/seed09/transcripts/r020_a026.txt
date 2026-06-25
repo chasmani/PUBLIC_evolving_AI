@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, showing all intermediate calculations and logic before arriving at a conclusion. Once you are confident in your solution, call the submit_answer tool to deliver your final result. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35187 x 93717) - (22244 x 85995)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 35187 × 93717
+
+Breaking it down:
+- 35187 × 90000 = 3,166,830,000
+- 35187 × 3000 = 105,561,000
+- 35187 × 700 = 24,630,900
+- 35187 × 17 = 598,179
+
+Sum:
+3,166,830,000 + 105,561,000 = 3,272,391,000
+3,272,391,000 + 24,630,900 = 3,297,021,900
+3,297,021,900 + 598,179 = **3,297,620,079**
+
+---
+
+### Step 2: Calculate 22244 × 85995
+
+Breaking it down:
+- 22244 × 80000 = 1,779,520,000
+- 22244 × 5000 = 111,220,000
+- 22244 × 900 = 20,019,600
+- 22244 × 95 = 2,113,180
+
+Sum:
+1,779,520,000 + 111,220,000 = 1,890,740,000
+1,890,740,000 + 20,019,600 = 1,910,759,600
+1,910,759,600 + 2,113,180 = **1,912,872,780**
+
+---
+
+### Step 3: Subtract the results
+
+3,297,620,079 − 1,912,872,780 = **1,384,747,299**
+
+[TOOL submit_answer] {'value': 1384747299}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,384,747,299**.
+

@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem and are confident in your final answer, call the submit_answer tool to deliver the result. Do not submit until you have fully reasoned through each step.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (13725 x 93031) - (57366 x 42098)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 13725 × 93031
+
+Breaking it down:
+- 13725 × 90000 = 1,235,250,000
+- 13725 × 3000 = 41,175,000
+- 13725 × 31 = 425,475
+
+**Sum:** 1,235,250,000 + 41,175,000 + 425,475 = **1,276,850,475**
+
+---
+
+### Step 2: Calculate 57366 × 42098
+
+Breaking it down:
+- 57366 × 40000 = 2,294,640,000
+- 57366 × 2000 = 114,732,000
+- 57366 × 98 = 5,621,868
+
+**Sum:** 2,294,640,000 + 114,732,000 + 5,621,868 = **2,414,993,868**
+
+---
+
+### Step 3: Subtract the results
+
+1,276,850,475 − 2,414,993,868 = **-1,138,143,393**
+
+---
+
+[TOOL submit_answer] {'value': -1138143393}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-1,138,143,393**.
+

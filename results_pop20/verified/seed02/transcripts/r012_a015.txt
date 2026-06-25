@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57145 x 77336) - (98405 x 83385)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 57145 × 77336**
+57145 × 77336 = 4,420,529,320
+
+**Step 2: Calculate 98405 × 83385**
+98405 × 83385 = 8,205,359,925
+
+**Step 3: Subtract**
+4,420,529,320 - 8,205,359,925 = -3,784,830,605
+
+[TOOL submit_answer] {'value': -3784830605}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,784,830,605**.
+
+Here's a summary of the solution:
+- **57,145 × 77,336** = 4,420,529,320
+- **98,405 × 83,385** = 8,205,359,925
+- **4,420,529,320 − 8,205,359,925 = -3,784,830,605**
+

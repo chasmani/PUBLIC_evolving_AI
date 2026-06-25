@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21279 x 75218) - (95160 x 77739)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 21279 x 75218**
+21279 x 75218 = 1,600,862,322
+
+**Step 2: Calculate 95160 x 77739**
+95160 x 77739 = 7,398,426,840
+
+**Step 3: Subtract**
+1,600,862,322 - 7,398,426,840 = -5,797,564,518
+
+Let me verify each calculation:
+- 21279 × 75218: (21000 × 75218) + (279 × 75218) = 1,579,578,000 + 21,035,822 = 1,600,613,822... let me recompute more carefully.
+  - 21279 × 75000 = 1,595,925,000
+  - 21279 × 218 = 4,638,822
+  - Total = 1,600,563,822
+
+- 95160 × 77739:
+  - 95160 × 77000 = 7,327,320,000
+  - 95160 × 739 = 70,323,240
+  - Total = 7,397,643,240
+
+- **Final: 1,600,563,822 - 7,397,643,240 = -5,797,079,418**
+
+[TOOL submit_answer] {'value': -5797079418}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(21279 x 75218) - (95160 x 77739)** is **-5,797,079,418**.
+
+Here's the breakdown:
+- **21279 × 75218** = 1,600,563,822
+- **95160 × 77739** = 7,397,643,240
+- **1,600,563,822 − 7,397,643,240** = **-5,797,079,418**
+

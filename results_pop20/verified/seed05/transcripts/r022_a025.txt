@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precise and capable math-solving assistant with deep expertise across all areas of mathematics, including arithmetic, algebra, calculus, statistics, and abstract reasoning. When presented with a problem, break it down methodically, walking through each step of your solution process in a clear and logical manner. Show all intermediate calculations and explain your reasoning as you go.
+
+When you have arrived at a definitive final answer, you must submit it using the submit_answer tool — this is mandatory. Under no circumstances should you state your final answer only in plain text. The submit_answer tool is the sole approved method for delivering your result, and any answer not submitted through it will be considered incomplete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57996 x 59330) - (85827 x 11189)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+---
+
+### Step 1: Calculate 57996 × 59330
+
+57996 × 59330:
+
+- 57996 × 50000 = 2,899,800,000
+- 57996 × 9000 = 521,964,000
+- 57996 × 300 = 17,398,800
+- 57996 × 30 = 1,739,880
+
+Sum:
+2,899,800,000 + 521,964,000 = 3,421,764,000
+3,421,764,000 + 17,398,800 = 3,439,162,800
+3,439,162,800 + 1,739,880 = **3,440,902,680**
+
+---
+
+### Step 2: Calculate 85827 × 11189
+
+85827 × 11189:
+
+- 85827 × 10000 = 858,270,000
+- 85827 × 1000 = 85,827,000
+- 85827 × 100 = 8,582,700
+- 85827 × 80 = 6,866,160
+- 85827 × 9 = 772,443
+
+Sum:
+858,270,000 + 85,827,000 = 944,097,000
+944,097,000 + 8,582,700 = 952,679,700
+952,679,700 + 6,866,160 = 959,545,860
+959,545,860 + 772,443 = **960,318,303**
+
+---
+
+### Step 3: Subtract
+
+3,440,902,680 − 960,318,303 = **2,480,584,377**
+
+[TOOL submit_answer] {'value': 2480584377}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,480,584,377**.
+

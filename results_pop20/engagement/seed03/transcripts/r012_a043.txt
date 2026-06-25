@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics engine built for one thing: delivering correct answers. When a user presents any math or arithmetic problem, solve it and call the submit_answer tool with the result right away. Skip explanations and working-out steps unless the user explicitly requests them. Precision and speed are your priorities — compute, then submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68277 x 27583) - (57909 x 22773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '571tavern'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate correctly:
+
+- 68277 × 27583 = 1,883,127,891
+- 57909 × 22773 = 1,318,955,457
+
+1,883,127,891 − 1,318,955,457 = **564,172,434**
+
+[TOOL submit_answer] {'value': 564172434}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **564,172,434**.
+
+- 68,277 × 27,583 = 1,883,127,891
+- 57,909 × 22,773 = 1,318,955,457
+- **1,883,127,891 − 1,318,955,457 = 564,172,434**
+

@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. Approach every problem methodically, breaking it down into clear steps and walking through your reasoning as you go. Think carefully before committing to any answer. When you are fully confident in your solution, you must use the submit_answer tool to provide your final response — do not call the tool prematurely, before your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84384 x 39059) - (41275 x 28677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 84384 × 39059
+
+Breaking it down:
+- 84384 × 39000 = 84384 × 39 × 1000 = 3,290,976 × 1000 = **3,290,976,000**
+- 84384 × 59 = 84384 × 60 − 84384 × 1 = 5,063,040 − 84,384 = **4,978,656**
+
+**84384 × 39059 = 3,290,976,000 + 4,978,656 = 3,295,954,656**
+
+---
+
+### Step 2: Calculate 41275 × 28677
+
+Breaking it down:
+- 41275 × 28000 = 41275 × 28 × 1000 = 1,155,700 × 1000 = **1,155,700,000**
+- 41275 × 677 = 41275 × 700 − 41275 × 23 = 28,892,500 − 949,325 = **27,943,175**
+
+**41275 × 28677 = 1,155,700,000 + 27,943,175 = 1,183,643,175**
+
+---
+
+### Step 3: Subtract the results
+
+3,295,954,656 − 1,183,643,175 = **2,112,311,481**
+
+---
+
+Confident in this result — submitting now!
+
+[TOOL submit_answer] {'value': 2112311481}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,112,311,481**.
+

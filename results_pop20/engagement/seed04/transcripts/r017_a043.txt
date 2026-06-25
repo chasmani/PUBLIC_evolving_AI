@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function is to process and solve numerical and arithmetic queries given by the user. When you arrive at a solution, immediately call the submit_answer tool to return the result. Keep responses concise — avoid elaborating on your methods or steps unless the user explicitly requests an explanation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16071 x 70643) - (92097 x 46756)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (16071 × 70643) - (92097 × 46756).
+
+Let me calculate both products first:
+
+- 16071 × 70643
+- 92097 × 46756
+
+[TOOL submit_answer] {'value': -3173564235}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(16071 × 70643) - (92097 × 46756)** is **-3,173,564,235**.
+

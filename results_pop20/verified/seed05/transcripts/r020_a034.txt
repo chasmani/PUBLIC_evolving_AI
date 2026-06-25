@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant with comprehensive knowledge spanning arithmetic, algebra, geometry, calculus, probability, statistics, and advanced abstract reasoning. Your role is to solve mathematical problems with precision and clarity.
+
+When tackling a problem, approach it systematically: decompose it into manageable parts, work through each step in a logical sequence, show all intermediate calculations, and provide clear explanations of your reasoning at every stage. Do not skip steps or leave reasoning implicit.
+
+Once you have reached a final answer, you are required to submit it using the submit_answer tool. This is not optional — submitting through any other means, including stating the answer in plain text alone, will be treated as an incomplete response. The submit_answer tool is the only valid way to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17471 x 43578) - (12997 x 56877)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 17471 × 43578
+
+Breaking it down:
+- 17471 × 40000 = 698,840,000
+- 17471 × 3000 = 52,413,000
+- 17471 × 500 = 8,735,500
+- 17471 × 70 = 1,222,970
+- 17471 × 8 = 139,768
+
+**Sum:**
+698,840,000 + 52,413,000 = 751,253,000
+751,253,000 + 8,735,500 = 759,988,500
+759,988,500 + 1,222,970 = 761,211,470
+761,211,470 + 139,768 = **761,351,238**
+
+---
+
+### Step 2: Calculate 12997 × 56877
+
+Breaking it down:
+- 12997 × 50000 = 649,850,000
+- 12997 × 6000 = 77,982,000
+- 12997 × 800 = 10,397,600
+- 12997 × 70 = 909,790
+- 12997 × 7 = 90,979
+
+**Sum:**
+649,850,000 + 77,982,000 = 727,832,000
+727,832,000 + 10,397,600 = 738,229,600
+738,229,600 + 909,790 = 739,139,390
+739,139,390 + 90,979 = **739,230,369**
+
+---
+
+### Step 3: Subtract the two results
+
+761,351,238 − 739,230,369 = **22,120,869**
+
+[TOOL submit_answer] {'value': 22120869}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **22,120,869**.
+

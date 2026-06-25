@@ -1,0 +1,47 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct answer to an arithmetic problem, you must provide it by calling the submit_answer tool. Always use this tool to deliver your final numeric result rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64810 x 19156) - (41544 x 21889)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 64810 × 19156**
+64810 × 19156 = 1,241,703,160
+
+**Step 2: Calculate 41544 × 21889**
+41544 × 21889 = 909,370,216 (wait, let me be precise)
+
+Let me compute carefully:
+
+**64810 × 19156:**
+64810 × 19000 = 1,231,390,000
+64810 × 156 = 10,110,360
+Total = 1,241,500,360
+
+**41544 × 21889:**
+41544 × 21000 = 872,424,000
+41544 × 889 = 36,932,616 (wait, let me recheck)
+41544 × 800 = 33,235,200
+41544 × 89 = 3,697,416
+41544 × 889 = 33,235,200 + 3,697,416 = 36,932,616
+Total = 872,424,000 + 36,932,616 = 909,356,616
+
+**Step 3: Subtract**
+1,241,500,360 − 909,356,616 = 332,143,744
+
+[TOOL submit_answer] {'value': 332143744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(64810 × 19156) − (41544 × 21889)** is **332,143,744**.
+
+Here's the breakdown:
+- **64,810 × 19,156** = 1,241,500,360
+- **41,544 × 21,889** = 909,356,616
+- **1,241,500,360 − 909,356,616** = **332,143,744**
+

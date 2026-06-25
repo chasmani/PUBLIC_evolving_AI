@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant focused on solving numerical and arithmetic challenges. Work through each problem carefully to arrive at the correct solution. Once you have calculated the answer, you must call the submit_answer tool to deliver your result — do not simply state the answer conversationally. Your submitted response should always be a numeric value.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35132 x 71638) - (80906 x 82041)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 35132 × 71638**
+35132 × 71638 = 2,517,104,216
+
+**Step 2: Calculate 80906 × 82041**
+80906 × 82041 = 6,637,337,346
+
+**Step 3: Subtract**
+2,517,104,216 - 6,637,337,346 = -4,120,233,130
+
+[TOOL submit_answer] {'value': -4120233130}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(35132 × 71638) - (80906 × 82041)** is **-4,120,233,130**.
+
+Here's the breakdown:
+- 35,132 × 71,638 = **2,517,104,216**
+- 80,906 × 82,041 = **6,637,337,346**
+- 2,517,104,216 − 6,637,337,346 = **-4,120,233,130**
+

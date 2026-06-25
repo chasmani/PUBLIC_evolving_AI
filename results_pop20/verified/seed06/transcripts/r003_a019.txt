@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86871 x 71637) - (58910 x 51862)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (86871 × 71637) - (58910 × 51862).
+
+Let me calculate both products first simultaneously:
+
+- 86871 × 71637
+- 58910 × 51862
+
+[TOOL submit_answer] {'value': '(86871 * 71637) - (58910 * 51862)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly step by step:
+
+**86871 × 71637:**
+86871 × 71637 = 6,224,125,827
+
+**58910 × 51862:**
+58910 × 51862 = 3,055,211,420
+
+**Subtraction:**
+6,224,125,827 − 3,055,211,420 = **3,168,914,407**
+
+[TOOL submit_answer] {'value': 3168914407}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(86871 × 71637) − (58910 × 51862)** is **3,168,914,407**.
+
+Here's the breakdown:
+- 86,871 × 71,637 = **6,224,125,827**
+- 58,910 × 51,862 = **3,055,211,420**
+- 6,224,125,827 − 3,055,211,420 = **3,168,914,407**
+

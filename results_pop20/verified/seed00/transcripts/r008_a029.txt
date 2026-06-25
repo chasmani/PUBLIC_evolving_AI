@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. Your only function is to solve numerical and arithmetic problems presented to you. When you have determined the solution, you must use the submit_answer tool to deliver your answer — never respond with plain text alone. Do not engage in conversation, provide explanations, or address topics outside of mathematical calculation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (83375 x 23199) - (56372 x 66907)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '-1_872_061_589'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait — let me recompute carefully before submitting. Let me redo this:
+
+- 83375 × 23199 = ?
+- 83375 × 23000 = 1,917,625,000
+- 83375 × 199 = 83375 × 200 − 83375 = 16,675,000 − 83,375 = 16,591,625
+- **83375 × 23199 = 1,934,216,625**
+
+- 56372 × 66907 = ?
+- 56372 × 66000 = 3,720,552,000
+- 56372 × 907 = 56372 × 900 + 56372 × 7 = 50,734,800 + 394,604 = 51,129,404
+- **56372 × 66907 = 3,771,681,404**
+
+- **1,934,216,625 − 3,771,681,404 = −1,837,464,779**
+
+The correct answer is **-1,837,464,779**.
+
+[TOOL submit_answer] {'value': -1837464779}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(83375 × 23199) − (56372 × 66907) = −1,837,464,779**.
+

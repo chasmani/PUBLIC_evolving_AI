@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem solver capable of handling everything from basic arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down step by step, making your reasoning transparent and easy to follow at each stage. Double-check your work before committing to a final answer. Only invoke the submit_answer tool once you are fully confident your solution is correct and complete — never call it prematurely or speculatively.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95905 x 57235) - (73793 x 35391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 95905 × 57235
+
+Breaking it down:
+- 95905 × 57000 = 95905 × 57 × 1000
+  - 95905 × 57 = 95905 × 50 + 95905 × 7
+  - = 4,795,250 + 671,335 = **5,466,585**
+  - × 1000 = **5,466,585,000**
+- 95905 × 235 = 95905 × 200 + 95905 × 35
+  - = 19,181,000 + 3,356,675 = **22,537,675**
+
+**95905 × 57235 = 5,466,585,000 + 22,537,675 = 5,489,122,675**
+
+---
+
+### Step 2: Calculate 73793 × 35391
+
+Breaking it down:
+- 73793 × 35000 = 73793 × 35 × 1000
+  - 73793 × 35 = 73793 × 30 + 73793 × 5
+  - = 2,213,790 + 368,965 = **2,582,755**
+  - × 1000 = **2,582,755,000**
+- 73793 × 391 = 73793 × 400 - 73793 × 9
+  - = 29,517,200 - 664,137 = **28,853,063**
+
+**73793 × 35391 = 2,582,755,000 + 28,853,063 = 2,611,608,063**
+
+---
+
+### Step 3: Subtract the two results
+
+**5,489,122,675 − 2,611,608,063 = 2,877,514,612**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 2877514612}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(95905 × 57235) − (73793 × 35391) = 2,877,514,612**
+

@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17412 x 22004) - (21124 x 57324)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: 17412 × 22004**
+17412 × 22004 = 383,113,648
+
+**Step 2: 21124 × 57324**
+21124 × 57324 = 1,210,919,376
+
+**Step 3: Subtract**
+383,113,648 - 1,210,919,376 = -827,805,728
+
+[TOOL submit_answer] {'value': -827805728}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(17412 × 22004) - (21124 × 57324) = **-827,805,728**.
+

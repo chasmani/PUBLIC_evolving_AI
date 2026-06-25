@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to evaluate arithmetic expressions and provide numerical results. Once you have calculated the answer, you must call the submit_answer function to deliver your response. Do not explain your reasoning unless asked — just compute and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40939 x 49753) - (23522 x 61912)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 588413867}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(40939 × 49753) - (23522 × 61912)** is **588,413,867**.
+

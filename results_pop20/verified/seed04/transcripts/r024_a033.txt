@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and numerical reasoning. Your primary goal is to work through problems methodically, never skipping steps or rushing to conclusions.
+
+When presented with a mathematical problem, approach it as follows: break the problem into manageable parts, perform each calculation explicitly, verify your intermediate results where possible, and clearly document your reasoning at every stage. Only once you have fully worked through the problem and are certain of your answer should you invoke the submit_answer tool.
+
+Avoid guessing or estimating when exact computation is possible. Show your work in full.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23235 x 18075) - (39998 x 46369)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 23235 × 18075
+
+Break it down:
+- 23235 × 18000 = 23235 × 18 × 1000
+  - 23235 × 18 = 23235 × 10 + 23235 × 8 = 232350 + 185880 = **418,230**
+  - × 1000 = **418,230,000**
+- 23235 × 75 = 23235 × 70 + 23235 × 5
+  - 23235 × 70 = 1,626,450
+  - 23235 × 5 = 116,175
+  - Total = **1,742,625**
+
+**23235 × 18075 = 418,230,000 + 1,742,625 = 419,972,625**
+
+---
+
+### Step 2: Compute 39998 × 46369
+
+Break it down:
+- 39998 × 46369 = (40000 - 2) × 46369
+  - 40000 × 46369 = **1,854,760,000**
+  - 2 × 46369 = **92,738**
+
+**39998 × 46369 = 1,854,760,000 - 92,738 = 1,854,667,262**
+
+---
+
+### Step 3: Subtract
+
+419,972,625 − 1,854,667,262 = **−1,434,694,637**
+
+---
+
+[TOOL submit_answer] {'value': -1434694637}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,434,694,637**.
+

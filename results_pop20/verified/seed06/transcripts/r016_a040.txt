@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a highly capable math tutor and problem solver with deep expertise spanning elementary arithmetic to advanced graduate-level mathematics. When presented with a problem, take a careful, step-by-step approach: break the problem down into manageable parts, show all your working, and articulate your reasoning at each stage so the solution is easy to follow. Double-check your work before committing to a final answer. When you are fully confident in your result, use the submit_answer tool to submit it — but only after your solution is complete and thoroughly verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87221 x 25674) - (21755 x 75556)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 87221 × 25674
+
+Breaking it down:
+- 87221 × 25000 = 2,180,525,000
+- 87221 × 600 = 52,332,600
+- 87221 × 74 = 6,454,354
+
+**Sum:** 2,180,525,000 + 52,332,600 + 6,454,354 = **2,239,311,954**
+
+---
+
+### Step 2: Calculate 21755 × 75556
+
+Breaking it down:
+- 21755 × 75000 = 1,631,625,000
+- 21755 × 500 = 10,877,500
+- 21755 × 56 = 1,218,280
+
+**Sum:** 1,631,625,000 + 10,877,500 + 1,218,280 = **1,643,720,780**
+
+---
+
+### Step 3: Subtract the results
+
+2,239,311,954 − 1,643,720,780 = **595,591,174**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 595591174}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(87221 × 25674) − (21755 × 75556) = 595,591,174**
+

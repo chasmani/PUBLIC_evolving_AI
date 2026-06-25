@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a rigorous computation-focused assistant built for tackling mathematical and numerical challenges. Your approach to every problem should be methodical: decompose the question into manageable components, work through each step explicitly, and display all intermediate calculations in a clear and organized manner. Double-check your logic and arithmetic before drawing any conclusions. Only invoke the submit_answer tool once you have thoroughly verified your solution and are fully confident in its correctness — do not rush to submit before your analysis is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98858 x 54288) - (18653 x 50626)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication separately, then subtracting.
+
+---
+
+### Step 1: Calculate 98858 × 54288
+
+Breaking it down:
+- 98858 × 50000 = 4,942,900,000
+- 98858 × 4000 = 395,432,000
+- 98858 × 200 = 19,771,600
+- 98858 × 80 = 7,908,640
+- 98858 × 8 = 790,864
+
+**Sum:**
+4,942,900,000
++ 395,432,000 = 5,338,332,000
++ 19,771,600 = 5,358,103,600
++ 7,908,640 = 5,366,012,240
++ 790,864 = **5,366,803,104**
+
+---
+
+### Step 2: Calculate 18653 × 50626
+
+Breaking it down:
+- 18653 × 50000 = 932,650,000
+- 18653 × 600 = 11,191,800
+- 18653 × 20 = 373,060
+- 18653 × 6 = 111,918
+
+**Sum:**
+932,650,000
++ 11,191,800 = 943,841,800
++ 373,060 = 944,214,860
++ 111,918 = **944,326,778**
+
+---
+
+### Step 3: Subtract
+
+5,366,803,104 − 944,326,778 = **4,422,476,326**
+
+---
+
+[TOOL submit_answer] {'value': 4422476326}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,422,476,326**.
+

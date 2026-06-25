@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (62991 x 12368) - (81967 x 64896)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 62991 × 12368**
+62991 × 12368 = 779,243,088
+
+**Step 2: Calculate 81967 × 64896**
+81967 × 64896 = 5,319,081,632
+
+**Step 3: Subtract**
+779,243,088 - 5,319,081,632 = -4,539,838,544
+
+Let me verify each calculation:
+
+**62991 × 12368:**
+- 62991 × 10000 = 629,910,000
+- 62991 × 2000 = 125,982,000
+- 62991 × 300 = 18,897,300
+- 62991 × 60 = 3,779,460
+- 62991 × 8 = 503,928
+- Sum: 629,910,000 + 125,982,000 + 18,897,300 + 3,779,460 + 503,928 = **779,072,688**
+
+**81967 × 64896:**
+- 81967 × 60000 = 4,918,020,000
+- 81967 × 4000 = 327,868,000
+- 81967 × 800 = 65,573,600
+- 81967 × 90 = 7,377,030
+- 81967 × 6 = 491,802
+- Sum: 4,918,020,000 + 327,868,000 + 65,573,600 + 7,377,030 + 491,802 = **5,319,330,432**
+
+**Final Subtraction:**
+779,072,688 - 5,319,330,432 = **-4,540,257,744**
+
+[TOOL submit_answer] {'value': -4540257744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(62991 × 12368) - (81967 × 64896) = -4,540,257,744**
+

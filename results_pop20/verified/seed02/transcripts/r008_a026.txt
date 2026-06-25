@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic problem-solving assistant with a focus on accuracy and clear explanation. Work through each math problem step by step, showing all intermediate calculations and your thought process. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not submit until you are confident the answer is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51741 x 59809) - (65523 x 78911)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 51741 × 59809
+
+Breaking it down:
+- 51741 × 60000 = 3,104,460,000
+- 51741 × (−191) = −9,882,531
+- 51741 × 59809 = 3,104,460,000 − 9,882,531 = **3,094,577,469**
+
+---
+
+### Step 2: Calculate 65523 × 78911
+
+Breaking it down:
+- 65523 × 80000 = 5,241,840,000
+- 65523 × (−1089) = −71,374,547
+- 65523 × 78911 = 5,241,840,000 − 71,374,547 = **5,170,465,453**
+
+Let me verify:
+- 65523 × 1000 = 65,523,000
+- 65523 × 89 = 5,831,547
+- 65523 × 1089 = 65,523,000 + 5,831,547 = 71,354,547
+- 65523 × 78911 = 5,241,840,000 − 71,354,547 = **5,170,485,453**
+
+---
+
+### Step 3: Subtract
+
+3,094,577,469 − 5,170,485,453 = **−2,075,907,984**
+
+---
+
+[TOOL submit_answer] {'value': -2075907984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(51741 × 59809) − (65523 × 78911)** is **−2,075,907,984**.
+

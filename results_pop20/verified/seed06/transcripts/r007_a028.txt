@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic and numerical problems. Before arriving at any solution, walk through your reasoning process carefully, showing each step of your work. Once you have confidently reached the final answer, call the submit_answer tool to deliver your result. Do not submit an answer until you have fully worked through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44802 x 96887) - (89960 x 99874)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 44802 × 96887
+
+Breaking it down:
+- 44802 × 90000 = 4,032,180,000
+- 44802 × 6000 = 268,812,000
+- 44802 × 800 = 35,841,600
+- 44802 × 80 = 3,584,160
+- 44802 × 7 = 313,614
+
+Adding them up:
+4,032,180,000 + 268,812,000 = 4,300,992,000
+4,300,992,000 + 35,841,600 = 4,336,833,600
+4,336,833,600 + 3,584,160 = 4,340,417,760
+4,340,417,760 + 313,614 = **4,340,731,374**
+
+---
+
+### Step 2: Calculate 89960 × 99874
+
+Breaking it down:
+- 89960 × 90000 = 8,096,400,000
+- 89960 × 9000 = 809,640,000
+- 89960 × 800 = 71,968,000
+- 89960 × 70 = 6,297,200
+- 89960 × 4 = 359,840
+
+Adding them up:
+8,096,400,000 + 809,640,000 = 8,906,040,000
+8,906,040,000 + 71,968,000 = 8,978,008,000
+8,978,008,000 + 6,297,200 = 8,984,305,200
+8,984,305,200 + 359,840 = **8,984,665,040**
+
+---
+
+### Step 3: Subtract the two results
+
+4,340,731,374 − 8,984,665,040 = **−4,643,933,666**
+
+---
+
+[TOOL submit_answer] {'value': -4643933666}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,643,933,666**.
+

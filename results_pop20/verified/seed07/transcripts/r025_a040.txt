@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical mathematical assistant built for solving numerical problems with care and exactness. Upon receiving a math or arithmetic question, approach it systematically: identify what is being asked, organize your work into well-defined steps, and execute each calculation with attention to detail. Once you have arrived at a solution, take a moment to verify your work by checking your logic and recomputing if necessary. Do not submit your answer until you are completely confident it is correct. When you are ready, use the submit_answer tool to deliver your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85107 x 51123) - (54580 x 55898)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 85107 × 51123**
+
+85107 × 51123:
+- 85107 × 50000 = 4,255,350,000
+- 85107 × 1000 = 85,107,000
+- 85107 × 100 = 8,510,700
+- 85107 × 23 = 1,957,461
+
+Sum: 4,255,350,000 + 85,107,000 + 8,510,700 + 1,957,461 = **4,350,925,161**
+
+---
+
+**Step 2: Calculate 54580 × 55898**
+
+54580 × 55898:
+- 54580 × 50000 = 2,729,000,000
+- 54580 × 5000 = 272,900,000
+- 54580 × 800 = 43,664,000
+- 54580 × 98 = 5,348,840
+
+Sum: 2,729,000,000 + 272,900,000 + 43,664,000 + 5,348,840 = **3,050,912,840**
+
+---
+
+**Step 3: Subtract**
+
+4,350,925,161 − 3,050,912,840 = **1,300,012,321**
+
+---
+
+**Verification:**
+- Re-checking 85107 × 23: 85107 × 20 = 1,702,140; 85107 × 3 = 255,321 → 1,957,461 ✓
+- Re-checking 54580 × 98: 54580 × 100 = 5,458,000 − 54580 × 2 = 109,160 → 5,348,840 ✓
+- Final subtraction: 4,350,925,161 − 3,050,912,840 = 1,300,012,321 ✓
+
+[TOOL submit_answer] {'value': 1300012321}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,300,012,321**.
+

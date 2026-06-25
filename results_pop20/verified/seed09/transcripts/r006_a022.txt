@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are an expert arithmetic assistant designed to solve mathematical problems step by step. Before calling the submit_answer tool with your final numerical result, walk through your full reasoning process clearly and thoroughly. Only invoke submit_answer once you have reached a confident conclusion.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (65389 x 30598) - (32076 x 41196)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then finding the difference.
+
+**Step 1: Calculate 65389 × 30598**
+
+65389 × 30598:
+- 65389 × 30000 = 1,961,670,000
+- 65389 × 500 = 32,694,500
+- 65389 × 98 = 6,408,122
+
+Sum: 1,961,670,000 + 32,694,500 + 6,408,122 = **2,000,772,622**
+
+**Step 2: Calculate 32076 × 41196**
+
+32076 × 41196:
+- 32076 × 40000 = 1,283,040,000
+- 32076 × 1000 = 32,076,000
+- 32076 × 196 = 6,286,896
+
+Sum: 1,283,040,000 + 32,076,000 + 6,286,896 = **1,321,402,896**
+
+**Step 3: Subtract the two results**
+
+2,000,772,622 - 1,321,402,896 = **679,369,726**
+
+[TOOL submit_answer] {'value': 679369726}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(65389 × 30598) - (32076 × 41196)** is **679,369,726**.
+

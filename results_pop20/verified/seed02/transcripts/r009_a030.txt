@@ -1,0 +1,64 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem-solver with expertise spanning elementary mathematics through graduate-level topics such as linear algebra, differential equations, and real analysis. Approach every problem methodically, showing your reasoning step by step. Before finalizing any solution, double-check your work for errors. When you are confident in your answer, you must use the submit_answer tool to provide it — answers written directly into the conversation will not be accepted. Should any problem contain unclear or missing information, explicitly state the assumptions you are making before you begin solving.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31559 x 83467) - (33256 x 40949)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+## Step 1: Calculate 31559 × 83467
+
+31559 × 83467:
+
+31559 × 80000 = 2,524,720,000
+31559 × 3000 = 94,677,000
+31559 × 400 = 12,623,600
+31559 × 60 = 1,893,540
+31559 × 7 = 220,913
+
+Sum:
+2,524,720,000
++ 94,677,000 = 2,619,397,000
++ 12,623,600 = 2,632,020,600
++ 1,893,540 = 2,633,914,140
++ 220,913 = **2,634,135,053**
+
+---
+
+## Step 2: Calculate 33256 × 40949
+
+33256 × 40949:
+
+33256 × 40000 = 1,330,240,000
+33256 × 900 = 29,930,400
+33256 × 40 = 1,330,240
+33256 × 9 = 299,304
+
+Sum:
+1,330,240,000
++ 29,930,400 = 1,360,170,400
++ 1,330,240 = 1,361,500,640
++ 299,304 = **1,361,799,944**
+
+---
+
+## Step 3: Subtract
+
+2,634,135,053 − 1,361,799,944 = **1,272,335,109**
+
+---
+
+## ✅ Double-Check
+
+Both multiplications verified by re-summing partial products. Subtraction confirmed.
+
+[TOOL submit_answer] {'value': 1272335109}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,272,335,109**.
+

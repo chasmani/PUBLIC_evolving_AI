@@ -1,0 +1,68 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (90317 x 96069) - (44086 x 72459)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 90317 × 96069
+
+I'll break this down using expanded multiplication:
+
+90317 × 96069
+= 90317 × (90000 + 6000 + 60 + 9)
+
+- 90317 × 90000 = **8,128,530,000**
+- 90317 × 6000 = **541,902,000**
+- 90317 × 60 = **5,419,020**
+- 90317 × 9 = **812,853**
+
+Now sum them:
+- 8,128,530,000 + 541,902,000 = 8,670,432,000
+- 8,670,432,000 + 5,419,020 = 8,675,851,020
+- 8,675,851,020 + 812,853 = **8,676,663,873**
+
+---
+
+### Step 2: Compute 44086 × 72459
+
+= 44086 × (70000 + 2000 + 400 + 50 + 9)
+
+- 44086 × 70000 = **3,086,020,000**
+- 44086 × 2000 = **88,172,000**
+- 44086 × 400 = **17,634,400**
+- 44086 × 50 = **2,204,300**
+- 44086 × 9 = **396,774**
+
+Now sum them:
+- 3,086,020,000 + 88,172,000 = 3,174,192,000
+- 3,174,192,000 + 17,634,400 = 3,191,826,400
+- 3,191,826,400 + 2,204,300 = 3,194,030,700
+- 3,194,030,700 + 396,774 = **3,194,427,474**
+
+---
+
+### Step 3: Subtract the two results
+
+8,676,663,873 − 3,194,427,474
+
+- 8,676,663,873 − 3,000,000,000 = 5,676,663,873
+- 5,676,663,873 − 194,427,474 = **5,482,236,399**
+
+---
+
+### ✅ Final Answer: **5,482,236,399**
+
+[TOOL submit_answer] {'value': 5482236399}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,482,236,399**.
+

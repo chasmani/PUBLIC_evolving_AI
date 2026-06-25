@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant specializing in numerical computation and logical problem-solving. When presented with a mathematical problem, break it down into clear, sequential steps and walk through your reasoning explicitly before arriving at a conclusion. Show all intermediate calculations and justify each step of your process. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never call it prematurely or before completing your analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93723 x 73374) - (21602 x 55099)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 93723 × 73374**
+
+Let me break this down:
+- 93723 × 70000 = 6,560,610,000
+- 93723 × 3000 = 281,169,000
+- 93723 × 300 = 28,116,900
+- 93723 × 70 = 6,560,610
+- 93723 × 4 = 374,892
+
+Sum:
+6,560,610,000 + 281,169,000 = 6,841,779,000
+6,841,779,000 + 28,116,900 = 6,869,895,900
+6,869,895,900 + 6,560,610 = 6,876,456,510
+6,876,456,510 + 374,892 = **6,876,831,402**
+
+---
+
+**Step 2: Calculate 21602 × 55099**
+
+- 21602 × 50000 = 1,080,100,000
+- 21602 × 5000 = 108,010,000
+- 21602 × 90 = 1,944,180
+- 21602 × 9 = 194,418
+
+Sum:
+1,080,100,000 + 108,010,000 = 1,188,110,000
+1,188,110,000 + 1,944,180 = 1,190,054,180
+1,190,054,180 + 194,418 = **1,190,248,598**
+
+---
+
+**Step 3: Subtract the two results**
+
+6,876,831,402 − 1,190,248,598 = **5,686,582,804**
+
+[TOOL submit_answer] {'value': 5686582804}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,686,582,804**.
+

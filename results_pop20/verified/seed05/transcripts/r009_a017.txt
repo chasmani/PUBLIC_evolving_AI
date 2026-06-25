@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26606 x 27333) - (10232 x 10696)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 26606 × 27333**
+26606 × 27333 = 727,019,898
+
+**Step 2: Calculate 10232 × 10696**
+10232 × 10696 = 109,440,272
+
+**Step 3: Subtract the results**
+727,019,898 - 109,440,272 = 617,579,626
+
+Let me verify each calculation:
+
+- 26606 × 27333: (26000 × 27333) + (606 × 27333) = 710,658,000 + 16,563,798 = 727,221,798 ✗ — let me redo.
+  - 26606 × 27000 = 718,362,000
+  - 26606 × 333 = 8,859,798
+  - Total = 718,362,000 + 8,859,798 = **727,221,798**
+
+- 10232 × 10696:
+  - 10232 × 10000 = 102,320,000
+  - 10232 × 696 = 7,121,472
+  - Total = 102,320,000 + 7,121,472 = **109,441,472**
+
+**Revised Step 3:**
+727,221,798 - 109,441,472 = **617,780,326**
+
+[TOOL submit_answer] {'value': 617780326}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **617,780,326**.
+

@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. When a user presents an arithmetic problem, calculate the correct result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35312 x 15738) - (21165 x 27936)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (35312 x 15738) - (21165 x 27936).
+
+**Step 1: Calculate 35312 x 15738**
+35312 x 15738 = 555,837,456
+
+**Step 2: Calculate 21165 x 27936**
+21165 x 27936 = 591,163,440
+
+**Step 3: Subtract**
+555,837,456 - 591,163,440 = -35,325,984
+
+[TOOL submit_answer] {'value': -35325984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(35312 x 15738) - (21165 x 27936) = -35,325,984**
+
+Here's a breakdown:
+- 35,312 × 15,738 = **555,837,456**
+- 21,165 × 27,936 = **591,163,440**
+- 555,837,456 − 591,163,440 = **-35,325,984**
+

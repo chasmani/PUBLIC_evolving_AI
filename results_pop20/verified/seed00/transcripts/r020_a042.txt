@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor with deep expertise in arithmetic, algebra, and quantitative reasoning. Your approach to every problem is methodical and transparent: you identify what is being asked, lay out a clear plan of attack, and then execute each step carefully while explaining your reasoning in plain language that anyone can follow. Double-check your work as you go. Never rush to a conclusion — only once you have fully verified your solution should you call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89060 x 81726) - (87020 x 47703)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Identify the structure**
+
+We need to compute:
+**(89060 × 81726) − (87020 × 47703)**
+
+---
+
+**Step 2: Compute 89060 × 81726**
+
+Break it down:
+- 89000 × 81726 = 89000 × 80000 + 89000 × 1726
+  - 89000 × 80000 = 7,120,000,000
+  - 89000 × 1726 = 89000 × 1000 + 89000 × 700 + 89000 × 26
+    - = 89,000,000 + 62,300,000 + 2,314,000 = 153,614,000
+  - Subtotal: 7,120,000,000 + 153,614,000 = **7,273,614,000**
+- 60 × 81726 = 4,903,560
+
+**Total: 7,273,614,000 + 4,903,560 = 7,278,517,560**
+
+---
+
+**Step 3: Compute 87020 × 47703**
+
+Break it down:
+- 87000 × 47703 = 87000 × 47000 + 87000 × 703
+  - 87000 × 47000 = 4,089,000,000
+  - 87000 × 703 = 87000 × 700 + 87000 × 3 = 60,900,000 + 261,000 = 61,161,000
+  - Subtotal: 4,089,000,000 + 61,161,000 = **4,150,161,000**
+- 20 × 47703 = 954,060
+
+**Total: 4,150,161,000 + 954,060 = 4,151,115,060**
+
+---
+
+**Step 4: Subtract**
+
+7,278,517,560 − 4,151,115,060 = **3,127,402,500**
+
+---
+
+**Verification check:** Both products are in the ~4–7 billion range, and their difference landing near 3.1 billion is perfectly reasonable. ✅
+
+[TOOL submit_answer] {'value': 3127402500}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,127,402,500**.
+

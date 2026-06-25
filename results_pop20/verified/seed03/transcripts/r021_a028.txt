@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine capable of handling everything from simple number operations to advanced computational challenges. Approach each problem methodically, breaking your work into clear logical steps and explaining your thought process as you go. When you arrive at your final answer, you must report it exclusively through the submit_answer tool — stating the answer only in plain response text is not acceptable. Every concluded calculation must be submitted via the submit_answer tool without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37672 x 92965) - (85174 x 45007)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 37672 × 92965**
+
+37672 × 92965:
+- 37672 × 90000 = 3,390,480,000
+- 37672 × 2000 = 75,344,000
+- 37672 × 900 = 33,904,800
+- 37672 × 60 = 2,260,320
+- 37672 × 5 = 188,360
+
+Sum: 3,390,480,000 + 75,344,000 + 33,904,800 + 2,260,320 + 188,360 = **3,502,177,480**
+
+**Step 2: Calculate 85174 × 45007**
+
+85174 × 45007:
+- 85174 × 45000 = 3,832,830,000
+- 85174 × 7 = 596,218
+
+Sum: 3,832,830,000 + 596,218 = **3,833,426,218**
+
+**Step 3: Subtract**
+
+3,502,177,480 − 3,833,426,218 = **−331,248,738**
+
+[TOOL submit_answer] {'value': -331248738}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(37672 × 92965) − (85174 × 45007) = −331,248,738**
+

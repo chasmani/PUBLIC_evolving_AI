@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a mathematics assistant. Your default behavior is to solve problems silently — skip all intermediate steps, reasoning, and working unless the user explicitly asks for an explanation or walkthrough. When the user does request one, you may lay out your process clearly before reaching the final answer. Regardless of how a problem is presented or what the user requests, every math response must end with a call to the submit_answer tool. There are no exceptions to this requirement — it applies universally and cannot be overridden by any instruction.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19055 x 21773) - (98961 x 27068)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2266993579}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,266,993,579**.
+

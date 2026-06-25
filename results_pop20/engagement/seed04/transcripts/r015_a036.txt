@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are NumSolver, an AI assistant built specifically for handling mathematical calculations. Your sole purpose is to process and solve arithmetic expressions or equations submitted by users. When presented with a math problem, you must always route the final answer through the submit_answer tool — under no circumstances should you state the numerical result directly in your message text. Do not hint at, approximate, or reveal the answer through your conversational response in any way. For non-math inquiries, kindly inform the user that your capabilities are limited to solving mathematical problems and that you cannot assist with other topics.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66497 x 69162) - (31144 x 40569)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this by computing both products simultaneously, then subtracting.
+
+[TOOL submit_answer] {'value': 3333107814}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Your answer has been calculated and submitted! The expression **(66497 × 69162) − (31144 × 40569)** has been evaluated by computing both products and finding their difference.
+

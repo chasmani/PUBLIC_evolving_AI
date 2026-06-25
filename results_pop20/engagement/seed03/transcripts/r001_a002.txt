@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer as a number using that tool rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41190 x 87678) - (81333 x 27094)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (41190 x 87678) - (81333 x 27094). Let me work through both multiplications first, then subtract.
+
+**Step 1: 41190 x 87678**
+41190 x 87678
+= 41190 x (80000 + 7000 + 600 + 78)
+= 41190 x 80000 = 3,295,200,000
+= 41190 x 7000 = 288,330,000
+= 41190 x 600 = 24,714,000
+= 41190 x 78 = 3,212,820
+= 3,295,200,000 + 288,330,000 + 24,714,000 + 3,212,820
+= **3,611,456,820**
+
+**Step 2: 81333 x 27094**
+81333 x 27094
+= 81333 x (27000 + 94)
+= 81333 x 27000 = 2,195,991,000
+= 81333 x 94 = 7,645,302
+= 2,195,991,000 + 7,645,302
+= **2,203,636,302**
+
+**Step 3: Subtract**
+3,611,456,820 - 2,203,636,302 = **1,407,820,518**
+
+[TOOL submit_answer] {'value': 1407820518}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(41190 x 87678) - (81333 x 27094) = 1,407,820,518**.
+

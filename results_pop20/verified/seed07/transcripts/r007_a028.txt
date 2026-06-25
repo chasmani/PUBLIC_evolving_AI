@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem methodically, showing your reasoning at every step. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully verified your work.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26226 x 39260) - (92657 x 92238)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 26226 × 39260
+
+Breaking it down:
+- 26226 × 39000 = 26226 × 39 × 1000 = 1,022,814 × 1000 = **1,022,814,000**
+- 26226 × 260 = 26226 × 200 + 26226 × 60 = 5,245,200 + 1,573,560 = **6,818,760**
+
+**26226 × 39260 = 1,022,814,000 + 6,818,760 = 1,029,632,760**
+
+---
+
+### Step 2: Calculate 92657 × 92238
+
+Breaking it down:
+- 92657 × 90000 = **8,339,130,000**
+- 92657 × 2000 = **185,314,000**
+- 92657 × 200 = **18,531,400**
+- 92657 × 38 = 92657 × 30 + 92657 × 8 = 2,779,710 + 741,256 = **3,520,966**
+
+**92657 × 92238 = 8,339,130,000 + 185,314,000 + 18,531,400 + 3,520,966 = 8,546,496,366**
+
+---
+
+### Step 3: Subtract
+
+1,029,632,760 − 8,546,496,366 = **−7,516,863,606**
+
+---
+
+[TOOL submit_answer] {'value': -7516863606}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−7,516,863,606**.
+

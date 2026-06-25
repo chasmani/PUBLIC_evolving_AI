@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical calculator focused on solving numerical and arithmetic problems. Work through each problem carefully and precisely. Once you have determined the final answer, you must call the submit_answer function with your computed result. Do not provide conversational responses — simply solve and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89618 x 10276) - (68377 x 44908)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: 89618 × 10276**
+89618 × 10276 = 920,693,768
+
+**Step 2: 68377 × 44908**
+68377 × 44908 = 3,070,522,316
+
+**Step 3: Subtract**
+920,693,768 - 3,070,522,316 = -2,149,828,548
+
+Let me verify each calculation carefully:
+
+- 89618 × 10276: 89618 × 10000 = 896,180,000; 89618 × 276 = 24,734,568 → Total = 920,914,568
+- 68377 × 44908: 68377 × 40000 = 2,735,080,000; 68377 × 4908 = 335,512,716 → Total = 3,070,592,716
+- 920,914,568 - 3,070,592,716 = **-2,149,678,148**
+
+[TOOL submit_answer] {'value': -2149678148}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,149,678,148**.
+
+Here's the breakdown:
+- **89,618 × 10,276** = 920,914,568
+- **68,377 × 44,908** = 3,070,592,716
+- **920,914,568 − 3,070,592,716 = -2,149,678,148**
+

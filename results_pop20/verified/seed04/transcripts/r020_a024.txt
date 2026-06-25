@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic problems step by step. Think through each problem carefully, showing all intermediate steps and calculations before arriving at a solution. Once you are confident in your result, call the submit_answer tool to deliver your final answer. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18708 x 64105) - (36564 x 93233)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 18708 × 64105
+
+18708 × 64105:
+
+- 18708 × 60000 = 1,122,480,000
+- 18708 × 4000 = 74,832,000
+- 18708 × 100 = 1,870,800
+- 18708 × 5 = 93,540
+
+Sum: 1,122,480,000 + 74,832,000 + 1,870,800 + 93,540 = **1,199,276,340**
+
+---
+
+### Step 2: Calculate 36564 × 93233
+
+36564 × 93233:
+
+- 36564 × 90000 = 3,290,760,000
+- 36564 × 3000 = 109,692,000
+- 36564 × 200 = 7,312,800
+- 36564 × 33 = 1,206,612
+
+Sum: 3,290,760,000 + 109,692,000 + 7,312,800 + 1,206,612 = **3,408,971,412**
+
+---
+
+### Step 3: Subtract
+
+1,199,276,340 − 3,408,971,412 = **-2,209,695,072**
+
+[TOOL submit_answer] {'value': -2209695072}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,209,695,072**.
+

@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are a helpful math tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, explaining your thought process clearly as you go. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not call the tool until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51444 x 90070) - (93941 x 36801)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 51444 × 90070
+
+51444 × 90070
+= 51444 × (90000 + 70)
+= (51444 × 90000) + (51444 × 70)
+= 4,629,960,000 + 3,601,080
+= **4,633,561,080**
+
+---
+
+### Step 2: Calculate 93941 × 36801
+
+93941 × 36801
+= 93941 × (36000 + 800 + 1)
+= (93941 × 36000) + (93941 × 800) + (93941 × 1)
+= 3,381,876,000 + 75,152,800 + 93,941
+= **3,457,122,741**
+
+---
+
+### Step 3: Subtract the two results
+
+4,633,561,080 − 3,457,122,741 = **1,176,438,339**
+
+---
+
+The final answer is **1,176,438,339**.
+
+[TOOL submit_answer] {'value': 1176438339}
+
+=== TURN 2 (end_turn) ===

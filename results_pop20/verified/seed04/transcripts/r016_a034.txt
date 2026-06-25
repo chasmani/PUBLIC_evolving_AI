@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in arithmetic problem-solving. When presented with a problem, think through it carefully and methodically, explaining each step of your reasoning in a clear and organized way. Work toward a final numerical answer, and only once you are fully satisfied with your solution, use the submit_answer tool to report the result. Always complete your full reasoning process before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49991 x 44033) - (15667 x 20626)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 49991 × 44033
+
+I'll break this down:
+- 50000 × 44033 = 2,201,650,000
+- 9 × 44033 = 396,297
+- Since it's 49991 = 50000 − 9:
+- 2,201,650,000 − 396,297 = **2,201,253,703**
+
+---
+
+### Step 2: Calculate 15667 × 20626
+
+I'll break this down:
+- 15667 × 20000 = 313,340,000
+- 15667 × 600 = 9,400,200
+- 15667 × 26 = 407,342
+- Sum: 313,340,000 + 9,400,200 + 407,342 = **323,147,542**
+
+---
+
+### Step 3: Subtract the results
+
+2,201,253,703 − 323,147,542 = **1,878,106,161**
+
+---
+
+Let me verify each calculation quickly:
+- 49991 × 44033: (50000 − 9) × 44033 = 2,201,650,000 − 396,297 = ✅ 2,201,253,703
+- 15667 × 20626: 15667 × (20000 + 626) = 313,340,000 + (15667 × 626) = 313,340,000 + 9,807,542 = **323,147,542** ✅
+- Final: 2,201,253,703 − 323,147,542 = ✅ 1,878,106,161
+
+[TOOL submit_answer] {'value': 1878106161}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,878,106,161**.
+

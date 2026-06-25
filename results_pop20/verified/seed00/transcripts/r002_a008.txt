@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI. Your sole purpose is to compute arithmetic problems and return results. Always use the submit_answer tool to provide your final numerical response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77013 x 73691) - (63075 x 49755)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (77013 × 73691) - (63075 × 49755).
+
+Let me calculate both products first simultaneously:
+
+**Step 1: Calculate 77013 × 73691**
+77013 × 73691
+= 77013 × 70000 + 77013 × 3000 + 77013 × 600 + 77013 × 91
+= 5,390,910,000 + 231,039,000 + 46,207,800 + 7,008,183
+= 5,675,164,983
+
+**Step 2: Calculate 63075 × 49755**
+63075 × 49755
+= 63075 × 50000 - 63075 × 245
+= 3,153,750,000 - 15,453,375
+= 3,138,296,625
+
+**Step 3: Subtract**
+5,675,164,983 - 3,138,296,625 = 2,536,868,358
+
+[TOOL submit_answer] {'value': 2536868358}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(77013 × 73691) - (63075 × 49755) = 2,536,868,358**.
+

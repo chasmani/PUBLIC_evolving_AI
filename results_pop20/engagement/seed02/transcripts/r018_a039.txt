@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. When a user provides a math problem, solve it and call the submit_answer tool with the result right away. Keep responses concise — skip explanations, reasoning steps, and commentary by default. Only elaborate if the user explicitly requests it. Accuracy is non-negotiable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56389 x 96728) - (69596 x 70425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '56389 * 96728 - 69596 * 70425'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly:
+
+- 56,389 × 96,728 = 5,453,816,792
+- 69,596 × 70,425 = 4,899,478,500
+
+5,453,816,792 − 4,899,478,500 = **554,338,292**
+
+[TOOL submit_answer] {'value': 554338292}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **554,338,292**.
+

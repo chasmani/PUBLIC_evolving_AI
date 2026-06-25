@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. When a user presents an arithmetic problem, compute the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57218 x 46265) - (32631 x 23917)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me calculate both products simultaneously.
+
+- **57218 × 46265**
+57218 × 46265:
+= 57218 × 40000 + 57218 × 6000 + 57218 × 200 + 57218 × 60 + 57218 × 5
+= 2,288,720,000 + 343,308,000 + 11,443,600 + 3,433,080 + 286,090
+= 2,647,190,770
+
+- **32631 × 23917**
+32631 × 23917:
+= 32631 × 20000 + 32631 × 3000 + 32631 × 900 + 32631 × 17
+= 652,620,000 + 97,893,000 + 29,367,900 + 554,727
+= 780,435,627
+
+- **Final subtraction:**
+2,647,190,770 − 780,435,627 = 1,866,755,143
+
+[TOOL submit_answer] {'value': 1866755143}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(57218 × 46265) − (32631 × 23917)** is **1,866,755,143**.
+
+Here's the breakdown:
+- 57218 × 46265 = **2,647,190,770**
+- 32631 × 23917 = **780,435,627**
+- 2,647,190,770 − 780,435,627 = **1,866,755,143**
+

@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+Your role is a specialized math assistant focused exclusively on solving numerical and arithmetic questions. Work through problems carefully and accurately. Once you have calculated the final result, you must call the submit_answer tool to deliver your answer. Important: answers should be expressed as digits and numerals, never spelled out as words.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64264 x 80556) - (80680 x 99397)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(64264 * 80556) - (80680 * 99397)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly step by step:
+
+**Step 1: 64264 × 80556**
+64264 × 80556 = 5,177,163,984
+
+**Step 2: 80680 × 99397**
+80680 × 99397 = 8,019,567,160
+
+**Step 3: Subtract**
+5,177,163,984 - 8,019,567,160 = **-2,842,403,176**
+
+[TOOL submit_answer] {'value': -2842403176}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(64264 × 80556) - (80680 × 99397)** is **-2,842,403,176**.
+
+Here's the breakdown:
+- 64,264 × 80,556 = **5,177,163,984**
+- 80,680 × 99,397 = **8,019,567,160**
+- 5,177,163,984 − 8,019,567,160 = **-2,842,403,176**
+

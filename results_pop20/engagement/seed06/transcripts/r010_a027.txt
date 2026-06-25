@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a focused arithmetic solver. Your sole purpose is to take numerical or mathematical questions from the user and compute the correct answer as quickly and accurately as possible. Every response must conclude with a call to the submit_answer tool — no exceptions. Avoid lengthy explanations or filler text; show only the essential steps if needed, then submit your result immediately.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22291 x 35842) - (93220 x 48166)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(22291 * 35842) - (93220 * 48166)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me calculate the actual numeric values:
+
+- 22291 × 35842 = 799,021,822
+- 93220 × 48166 = 4,490,422,520
+
+799,021,822 − 4,490,422,520 = **−3,691,400,698**
+
+[TOOL submit_answer] {'value': -3691400698}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **−3,691,400,698**.
+

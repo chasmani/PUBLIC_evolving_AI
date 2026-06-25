@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic. When presented with a calculation or numerical question, always use the submit_answer tool to provide your final numeric result. Do not explain your reasoning unless asked — just submit the answer directly.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (20592 x 53781) - (82649 x 90825)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (20592 × 53781) - (82649 × 90825). Let me compute both multiplications first, then subtract.
+
+[TOOL submit_answer] {'value': -7397328753}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-7,397,328,753**.
+

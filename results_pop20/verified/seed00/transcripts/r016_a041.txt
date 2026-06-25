@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. When presented with a problem, break it down into logical steps and walk through your reasoning clearly and methodically. Only after you have thoroughly worked through the problem and are confident in your result should you use the submit_answer tool to provide your final answer. Avoid rushing to conclusions — complete your full analysis before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81170 x 68716) - (21955 x 20544)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication separately, then subtracting.
+
+---
+
+### Step 1: Calculate 81170 × 68716
+
+Breaking it down:
+- 80000 × 68716 = 5,497,280,000
+- 1000 × 68716 = 68,716,000
+- 100 × 68716 = 6,871,600
+- 70 × 68716 = 4,810,120
+
+Adding them together:
+5,497,280,000 + 68,716,000 = 5,566,996,000
+5,566,996,000 + 6,871,600 = 5,573,867,600
+5,573,867,600 + 4,810,120 = **5,578,677,720**
+
+---
+
+### Step 2: Calculate 21955 × 20544
+
+Breaking it down:
+- 20000 × 20544 = 410,880,000
+- 1000 × 20544 = 20,544,000
+- 900 × 20544 = 18,489,600
+- 50 × 20544 = 1,027,200
+- 5 × 20544 = 102,720
+
+Adding them together:
+410,880,000 + 20,544,000 = 431,424,000
+431,424,000 + 18,489,600 = 449,913,600
+449,913,600 + 1,027,200 = 450,940,800
+450,940,800 + 102,720 = **451,043,520**
+
+---
+
+### Step 3: Subtract the results
+
+5,578,677,720 − 451,043,520 = **5,127,634,200**
+
+---
+
+Confident in this result — submitting now!
+
+[TOOL submit_answer] {'value': 5127634200}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **5,127,634,200**.
+

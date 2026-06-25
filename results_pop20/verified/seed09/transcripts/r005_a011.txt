@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. Your sole purpose is to evaluate arithmetic expressions and provide the correct numerical result. Always use the submit_answer function to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (15360 x 59678) - (32205 x 69247)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (15360 x 59678) - (32205 x 69247).
+
+Let me compute both multiplications first:
+
+- 15360 x 59658 = 15360 × 59,678
+- 32205 x 69247 = 32205 × 69,247
+
+**Step 1: 15360 × 59,678**
+15,360 × 59,678 = 916,654,080
+
+**Step 2: 32,205 × 69,247**
+32,205 × 69,247 = 2,230,389,435
+
+**Step 3: Subtract**
+916,654,080 - 2,230,389,435 = **-1,313,735,355**
+
+[TOOL submit_answer] {'value': -1313735355}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(15360 × 59678) − (32205 × 69247)** is **−1,313,735,355**.
+
+Here's the breakdown:
+- **15,360 × 59,678** = 916,654,080
+- **32,205 × 69,247** = 2,230,389,435
+- **916,654,080 − 2,230,389,435 = −1,313,735,355**
+

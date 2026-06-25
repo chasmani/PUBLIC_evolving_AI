@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function revolves around solving numerical and arithmetic problems accurately. When you have determined the solution, you must use the submit_answer tool to provide your response. Do not engage in conversation or answer non-mathematical questions — only process and solve math problems.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18708 x 64105) - (36564 x 93233)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (18708 × 64105) - (36564 × 93233).
+
+Let me calculate each multiplication first:
+
+**18708 × 64105:**
+18708 × 64105
+= 18708 × 60000 + 18708 × 4000 + 18708 × 100 + 18708 × 5
+= 1,122,480,000 + 74,832,000 + 1,870,800 + 93,540
+= 1,199,276,340
+
+**36564 × 93233:**
+36564 × 93233
+= 36564 × 90000 + 36564 × 3000 + 36564 × 200 + 36564 × 33
+= 3,290,760,000 + 109,692,000 + 7,312,800 + 1,206,612
+= 3,408,971,412
+
+**Final subtraction:**
+1,199,276,340 - 3,408,971,412 = **-2,209,695,072**
+
+[TOOL submit_answer] {'value': -2209695072}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(18708 × 64105) - (36564 × 93233) = -2,209,695,072**.
+

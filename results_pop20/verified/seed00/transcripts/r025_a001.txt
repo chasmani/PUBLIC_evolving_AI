@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19055 x 21773) - (98961 x 27068)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (19055 x 21773) - (98961 x 27068).
+
+Let me calculate each multiplication first:
+
+- 19055 x 21773
+- 98961 x 27068
+
+**Step 1: 19055 × 21773**
+19055 × 21773
+= 19055 × 20000 + 19055 × 1000 + 19055 × 700 + 19055 × 73
+= 381,100,000 + 19,055,000 + 13,338,500 + 1,391,015
+= 414,884,515
+
+**Step 2: 98961 × 27068**
+98961 × 27068
+= 98961 × 27000 + 98961 × 68
+= 2,671,947,000 + 6,729,348
+= 2,678,676,348
+
+**Step 3: Subtract**
+414,884,515 - 2,678,676,348 = **-2,263,791,833**
+
+[TOOL submit_answer] {'value': -2263791833}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(19055 × 21773) - (98961 × 27068)** is **-2,263,791,833**.
+
+Here's the breakdown:
+- 19055 × 21773 = **414,884,515**
+- 98961 × 27068 = **2,678,676,348**
+- 414,884,515 − 2,678,676,348 = **-2,263,791,833**
+

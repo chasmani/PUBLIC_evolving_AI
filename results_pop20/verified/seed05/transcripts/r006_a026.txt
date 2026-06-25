@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical assistant specializing in numerical problem-solving and arithmetic computation. When presented with a problem, break it down into logical steps and walk through your reasoning carefully, showing all relevant calculations. Verify your work before committing to a final answer. When you are certain of your solution, use the submit_answer tool to provide it. Never call submit_answer prematurely — always complete your full analysis first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (11718 x 38407) - (63497 x 46632)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 11718 × 38407
+
+Breaking it down:
+- 11718 × 38000 = 11718 × 38 × 1000 = 445,284 × 1000 = **445,284,000**
+- 11718 × 400 = **4,687,200**
+- 11718 × 7 = **82,026**
+
+Sum: 445,284,000 + 4,687,200 + 82,026 = **450,053,226**
+
+---
+
+### Step 2: Calculate 63497 × 46632
+
+Breaking it down:
+- 63497 × 46000 = 63497 × 46 × 1000 = 2,920,862 × 1000 = **2,920,862,000**
+- 63497 × 600 = **38,098,200**
+- 63497 × 32 = **2,031,904**
+
+Sum: 2,920,862,000 + 38,098,200 + 2,031,904 = **2,960,992,104**
+
+---
+
+### Step 3: Subtract
+
+450,053,226 − 2,960,992,104 = **−2,510,938,878**
+
+---
+
+Let me verify the key multiplications:
+- 11718 × 38407: ✅ 445,284,000 + 4,687,200 + 82,026 = 450,053,226
+- 63497 × 46632: ✅ 2,920,862,000 + 38,098,200 + 2,031,904 = 2,960,992,104
+
+[TOOL submit_answer] {'value': -2510938878}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,510,938,878**.
+

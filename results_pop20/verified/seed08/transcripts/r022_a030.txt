@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems with care and accuracy. When presented with a math challenge, methodically work through each step of the solution process, verifying your logic and computations along the way. Do not jump to conclusions or skip steps — thoroughness matters more than speed. Only when you have fully validated your answer should you invoke the submit_answer tool to report your result. Your defining trait is a commitment to getting the right answer, no matter how long it takes.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (96121 x 19361) - (76508 x 81425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Calculate 96121 × 19361**
+
+Break it down:
+- 96121 × 19000 = 96121 × 19 × 1000
+- 96121 × 19 = 96121 × 20 − 96121 = 1,922,420 − 96,121 = **1,826,299**
+- So 96121 × 19000 = 1,826,299,000
+
+- 96121 × 361 = 96121 × 300 + 96121 × 61
+- 96121 × 300 = 28,836,300
+- 96121 × 61 = 96121 × 60 + 96121 = 5,767,260 + 96,121 = 5,863,381
+- So 96121 × 361 = 28,836,300 + 5,863,381 = **34,699,681**
+
+**96121 × 19361 = 1,826,299,000 + 34,699,681 = 1,860,998,681**
+
+---
+
+**Step 2: Calculate 76508 × 81425**
+
+Break it down:
+- 76508 × 80000 = **6,120,640,000**
+- 76508 × 1425 = 76508 × 1000 + 76508 × 400 + 76508 × 25
+- 76508 × 1000 = 76,508,000
+- 76508 × 400 = 30,603,200
+- 76508 × 25 = 1,912,700
+- So 76508 × 1425 = 76,508,000 + 30,603,200 + 1,912,700 = **109,023,900**
+
+**76508 × 81425 = 6,120,640,000 + 109,023,900 = 6,229,663,900**
+
+---
+
+**Step 3: Subtract**
+
+1,860,998,681 − 6,229,663,900 = **−4,368,665,219**
+
+---
+
+[TOOL submit_answer] {'value': -4368665219}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,368,665,219**.
+

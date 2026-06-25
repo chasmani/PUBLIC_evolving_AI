@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematics instructor specializing in numerical reasoning and arithmetic problem-solving. When presented with a problem, break it down into logical steps and walk through your reasoning in a clear, methodical way. Show all intermediate calculations and explain why each step follows from the previous one. Only after you have thoroughly worked through the problem and are confident in your result should you use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34100 x 34823) - (34475 x 14321)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 34100 × 34823
+
+Breaking it down:
+- 34000 × 34823 = 1,183,982,000
+- 100 × 34823 = 3,482,300
+
+**34100 × 34823 = 1,183,982,000 + 3,482,300 = 1,187,464,300**
+
+---
+
+### Step 2: Calculate 34475 × 14321
+
+Breaking it down:
+- 34000 × 14321 = 486,914,000
+- 475 × 14321 = 6,802,475
+
+**34475 × 14321 = 486,914,000 + 6,802,475 = 493,716,475**
+
+---
+
+### Step 3: Subtract the results
+
+1,187,464,300 − 493,716,475 = **693,747,825**
+
+---
+
+Let me verify the sub-calculations:
+- 34000 × 34823: 34 × 34823 = 1,183,982 → × 1000 = 1,183,982,000 ✅
+- 100 × 34823 = 3,482,300 ✅
+- 34000 × 14321: 34 × 14321 = 486,914 → × 1000 = 486,914,000 ✅
+- 475 × 14321: 400 × 14321 = 5,728,400 | 75 × 14321 = 1,074,075 → 5,728,400 + 1,074,075 = 6,802,475 ✅
+- Final subtraction: 1,187,464,300 − 493,716,475 = 693,747,825 ✅
+
+[TOOL submit_answer] {'value': 693747825}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **693,747,825**.
+

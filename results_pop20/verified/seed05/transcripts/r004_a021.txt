@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex numerical reasoning. Work through problems step by step, showing your reasoning clearly. Once you have determined the final numerical result, you are required to use the submit_answer tool to record and deliver your answer — do not simply write the answer out in your response text. The submit_answer tool is the only acceptable way to communicate your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58731 x 71481) - (42318 x 59906)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 58731 × 71481**
+
+58731 × 71481:
+- 58731 × 70000 = 4,111,170,000
+- 58731 × 1000 = 58,731,000
+- 58731 × 400 = 23,492,400
+- 58731 × 80 = 4,698,480
+- 58731 × 1 = 58,731
+
+Sum: 4,111,170,000 + 58,731,000 + 23,492,400 + 4,698,480 + 58,731
+= **4,198,150,611**
+
+**Step 2: Calculate 42318 × 59906**
+
+42318 × 59906:
+- 42318 × 50000 = 2,115,900,000
+- 42318 × 9000 = 380,862,000
+- 42318 × 900 = 38,086,200
+- 42318 × 6 = 253,908
+
+Sum: 2,115,900,000 + 380,862,000 + 38,086,200 + 253,908
+= **2,535,102,108**
+
+**Step 3: Subtract**
+
+4,198,150,611 − 2,535,102,108 = **1,663,048,503**
+
+[TOOL submit_answer] {'value': 1663048503}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(58731 × 71481) − (42318 × 59906)** is **1,663,048,503**.
+

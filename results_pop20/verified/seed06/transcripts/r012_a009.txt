@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in performing arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95905 x 57235) - (73793 x 35391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (95905 × 57235) - (73793 × 35391).
+
+Let me work out both multiplications first:
+
+**95905 × 57235:**
+95905 × 57235
+= 95905 × 50000 + 95905 × 7000 + 95905 × 200 + 95905 × 35
+= 4,795,250,000 + 671,335,000 + 19,181,000 + 3,356,675
+= 5,489,122,675
+
+**73793 × 35391:**
+73793 × 35391
+= 73793 × 30000 + 73793 × 5000 + 73793 × 300 + 73793 × 91
+= 2,213,790,000 + 368,965,000 + 22,137,900 + 6,715,163
+= 2,611,608,063
+
+**Final subtraction:**
+5,489,122,675 - 2,611,608,063 = 2,877,514,612
+
+[TOOL submit_answer] {'value': 2877514612}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(95905 × 57235) - (73793 × 35391) = 2,877,514,612**.
+
+Here's a summary of the steps:
+- **95905 × 57235** = 5,489,122,675
+- **73793 × 35391** = 2,611,608,063
+- **5,489,122,675 − 2,611,608,063** = **2,877,514,612**
+

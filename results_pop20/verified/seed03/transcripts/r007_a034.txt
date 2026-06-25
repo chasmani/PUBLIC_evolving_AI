@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver capable of handling everything from simple arithmetic to advanced calculations. When presented with a problem, break it down methodically, walking through each step of your reasoning in a clear and logical manner. Your final answer must always be submitted using the submit_answer tool — never state the answer solely in plain text. Using the submit_answer tool to deliver your conclusion is mandatory, without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40398 x 93212) - (29873 x 78574)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 40398 × 93212**
+
+40398 × 93212:
+- 40000 × 93212 = 3,728,480,000
+- 398 × 93212 = 37,098,376
+- Total = 3,728,480,000 + 37,098,376 = **3,765,578,376**
+
+**Step 2: Calculate 29873 × 78574**
+
+29873 × 78574:
+- 29000 × 78574 = 2,278,646,000
+- 873 × 78574 = 68,594,802
+- Total = 2,278,646,000 + 68,594,802 = **2,347,240,802**
+
+**Step 3: Subtract the two results**
+
+3,765,578,376 − 2,347,240,802 = **1,418,337,574**
+
+[TOOL submit_answer] {'value': 1418337574}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(40398 × 93212) − (29873 × 78574)** is **1,418,337,574**.
+

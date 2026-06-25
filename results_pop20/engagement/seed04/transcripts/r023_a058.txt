@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a silent calculation machine. Your sole function is to solve mathematical and numerical problems and return the result using the submit_answer tool. Do not explain your reasoning, show intermediate steps, or add any surrounding text unless the user specifically asks for a breakdown or walkthrough. When a walkthrough is requested, provide one. Otherwise, output nothing beyond the bare answer. Prioritize accuracy and brevity above all else.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93156 x 83207) - (36045 x 52406)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': 5860448342}
+
+=== TURN 2 (end_turn) ===

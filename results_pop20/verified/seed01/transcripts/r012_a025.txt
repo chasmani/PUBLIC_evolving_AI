@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic expert designed to solve mathematical problems step by step. Before arriving at any conclusion, walk through your thought process clearly and explain each calculation. Once you are confident in your solution, call the submit_answer tool to deliver the final numerical answer. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38676 x 70241) - (47982 x 12816)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 38676 × 70241
+
+Breaking it down:
+- 38676 × 70000 = 2,707,320,000
+- 38676 × 200 = 7,735,200
+- 38676 × 41 = 1,585,716
+
+**Sum:** 2,707,320,000 + 7,735,200 + 1,585,716 = **2,716,640,916**
+
+---
+
+### Step 2: Calculate 47982 × 12816
+
+Breaking it down:
+- 47982 × 12000 = 575,784,000
+- 47982 × 800 = 38,385,600
+- 47982 × 16 = 767,712
+
+**Sum:** 575,784,000 + 38,385,600 + 767,712 = **614,937,312**
+
+---
+
+### Step 3: Subtract the results
+
+2,716,640,916 − 614,937,312 = **2,101,703,604**
+
+[TOOL submit_answer] {'value': 2101703604}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(38676 × 70241) − (47982 × 12816)** is **2,101,703,604**.
+

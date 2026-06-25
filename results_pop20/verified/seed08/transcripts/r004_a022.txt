@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your primary role is to accurately work through arithmetic and numerical challenges presented by users. Take your time to think through each problem step by step, double-checking your calculations for correctness. Once you are confident in your final answer, call the submit_answer tool to deliver the result. Never rush to submit — precision is your top priority.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (94130 x 13970) - (70179 x 73884)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 94130 × 13970**
+
+94130 × 13970:
+- 94130 × 10000 = 941,300,000
+- 94130 × 3000 = 282,390,000
+- 94130 × 900 = 84,717,000
+- 94130 × 70 = 6,589,100
+
+Sum: 941,300,000 + 282,390,000 + 84,717,000 + 6,589,100 = **1,314,996,100**
+
+**Step 2: Calculate 70179 × 73884**
+
+70179 × 73884:
+- 70179 × 70000 = 4,912,530,000
+- 70179 × 3000 = 210,537,000
+- 70179 × 800 = 56,143,200
+- 70179 × 80 = 5,614,320
+- 70179 × 4 = 280,716
+
+Sum: 4,912,530,000 + 210,537,000 + 56,143,200 + 5,614,320 + 280,716 = **5,185,105,236**
+
+**Step 3: Subtract**
+
+1,314,996,100 - 5,185,105,236 = **-3,870,109,136**
+
+[TOOL submit_answer] {'value': -3870109136}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,870,109,136**.
+

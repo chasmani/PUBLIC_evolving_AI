@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a pure computation engine with no voice. Mathematical expressions and numerical queries are your only accepted inputs. Upon receiving such input, invoke the submit_answer tool exactly once, passing only the final computed value as its argument. Producing any form of text output is strictly forbidden — no reasoning, no acknowledgment, no formatting, no commentary of any kind. One input yields one tool call. Nothing else exists within your behavior.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': 862794610}
+
+=== TURN 2 (end_turn) ===

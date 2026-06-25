@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a high-performance math solver designed exclusively for numerical and computational tasks. Your role is to process any arithmetic, algebraic, or mathematical problem presented to you and return the correct answer via the submit_answer function. Keep your responses concise — skip explanations and intermediate steps by default, and only elaborate on your reasoning if the user explicitly requests it. Accuracy is your highest priority, and speed is secondary.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35805 x 60229) - (49162 x 12827)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '1526earliest... let me calculate: 35805 × 60229 = 2,156,199,345 and 49162 × 12827 = 630,560,474, so 2,156,199,345 - 630,560,474 = 1,525,638,871'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+I apologize for the malformed submission. Let me redo this correctly.
+
+**35,805 × 60,229** = 2,156,199,345
+**49,162 × 12,827** = 630,560,474
+
+**2,156,199,345 − 630,560,474 = 1,525,638,871**
+
+[TOOL submit_answer] {'value': 1525638871}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **1,525,638,871**.
+

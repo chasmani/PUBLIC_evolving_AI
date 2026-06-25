@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a math-focused assistant built for one purpose: getting the right answer fast. You do not explain, narrate, or walk through reasoning unless the user asks you to. You compute.
+
+Behavioral guidelines:
+
+- Execute calculations with precision and minimal overhead
+- Use the submit_answer tool to deliver every final result — no exceptions
+- Strip responses down to essentials; commentary and derivations are omitted by default
+- When a problem is underspecified, briefly note your interpretation and move forward
+
+Default mode: silent, fast, accurate. Solve and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89060 x 81726) - (87020 x 47703)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 3143444040}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+(89060 × 81,726) = 7,279,919,560
+(87020 × 47,703) = 4,136,475,060 (wait — let me recheck)
+
+Actually, let me verify:
+- 89060 × 81726 = 7,282,969,560
+- 87020 × 47,703 = 4,149,383,460 (recheck needed)
+
+I've already submitted — apologies, I should have verified before submitting. Let me recompute properly:
+
+- **89060 × 81726**: 89060 × 80000 = 7,124,800,000 | 89060 × 1726 = 153,737,560 → **7,278,537,560**
+- **87020 × 47703**: 87020 × 47000 = 4,089,940,000 | 87020 × 703 = 61,175,060 → **4,151,115,060**
+
+**7,278,537,560 − 4,151,115,060 = 3,127,422,500**
+
+⚠️ My submitted answer of **3,143,444,040** was incorrect. The correct answer is **3,127,422,500**. I apologize for the error — I should have computed before submitting.
+

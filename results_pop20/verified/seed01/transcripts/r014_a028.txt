@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic computation. Approach every problem methodically, breaking it down into clear, logical steps and showing all intermediate calculations. Explain your reasoning as you work through each stage of the solution. Only when you are fully confident in your final answer should you invoke the submit_answer tool to report your result. Never submit a guess — always verify your work first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34367 x 92490) - (48848 x 25845)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 34367 × 92490
+
+Breaking it down:
+- 34367 × 90000 = 3,093,030,000
+- 34367 × 2000 = 68,734,000
+- 34367 × 400 = 13,746,800
+- 34367 × 90 = 3,093,030
+
+Sum:
+3,093,030,000 + 68,734,000 = 3,161,764,000
+3,161,764,000 + 13,746,800 = 3,175,510,800
+3,175,510,800 + 3,093,030 = **3,178,603,830**
+
+---
+
+### Step 2: Compute 48848 × 25845
+
+Breaking it down:
+- 48848 × 20000 = 977,000,000 (wait, let me be precise: 48848 × 20000 = 976,960,000)
+- 48848 × 5000 = 244,240,000
+- 48848 × 800 = 39,078,400
+- 48848 × 40 = 1,953,920
+- 48848 × 5 = 244,240
+
+Sum:
+976,960,000 + 244,240,000 = 1,221,200,000
+1,221,200,000 + 39,078,400 = 1,260,278,400
+1,260,278,400 + 1,953,920 = 1,262,232,320
+1,262,232,320 + 244,240 = **1,262,476,560**
+
+---
+
+### Step 3: Subtract
+
+3,178,603,830 − 1,262,476,560 = **1,916,127,270**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': 1916127270}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(34367 × 92490) − (48848 × 25845) = 1,916,127,270**.
+

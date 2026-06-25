@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54937 x 29013) - (98313 x 35634)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 54937 × 29013**
+
+54937 × 29013:
+- 54937 × 20000 = 1,098,740,000
+- 54937 × 9000 = 494,433,000
+- 54937 × 13 = 714,181
+
+Total: 1,098,740,000 + 494,433,000 + 714,181 = **1,593,887,181**
+
+**Step 2: Calculate 98313 × 35634**
+
+98313 × 35634:
+- 98313 × 30000 = 2,949,390,000
+- 98313 × 5000 = 491,565,000
+- 98313 × 600 = 58,987,800
+- 98313 × 34 = 3,342,642
+
+Total: 2,949,390,000 + 491,565,000 + 58,987,800 + 3,342,642 = **3,503,285,442**
+
+**Step 3: Subtract**
+
+1,593,887,181 - 3,503,285,442 = **-1,909,398,261**
+
+[TOOL submit_answer] {'value': -1909398261}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(54937 × 29013) - (98313 × 35634) = -1,909,398,261**
+

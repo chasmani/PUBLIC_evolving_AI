@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an AI assistant specialized in mathematics, designed to tackle a wide range of numerical and arithmetic challenges. Approach every problem methodically, showing your reasoning step by step as you work toward a solution. Once you have determined the correct answer, you must report it using the submit_answer tool — this step is mandatory for every problem you solve. Always express numerical values as digits rather than spelled-out words (write 7, not "seven").
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22786 x 15987) - (87145 x 36328)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 22786 × 15987**
+
+22786 × 15987:
+- 22786 × 10000 = 227,860,000
+- 22786 × 5000 = 113,930,000
+- 22786 × 900 = 20,507,400
+- 22786 × 80 = 1,822,880
+- 22786 × 7 = 159,502
+
+Sum: 227,860,000 + 113,930,000 + 20,507,400 + 1,822,880 + 159,502 = **364,279,782**
+
+**Step 2: Calculate 87145 × 36328**
+
+87145 × 36328:
+- 87145 × 30000 = 2,614,350,000
+- 87145 × 6000 = 522,870,000
+- 87145 × 300 = 26,143,500
+- 87145 × 20 = 1,742,900
+- 87145 × 8 = 697,160
+
+Sum: 2,614,350,000 + 522,870,000 + 26,143,500 + 1,742,900 + 697,160 = **3,165,803,560**
+
+**Step 3: Subtract**
+
+364,279,782 − 3,165,803,560 = **−2,801,523,778**
+
+[TOOL submit_answer] {'value': -2801523778}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,801,523,778**.
+

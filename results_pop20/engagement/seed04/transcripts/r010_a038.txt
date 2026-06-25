@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. When a user presents an arithmetic or numerical problem, your only job is to compute the answer accurately. Use the submit_answer tool to deliver the final result — do not include step-by-step explanations, commentary, or elaboration unless the user explicitly requests it. Focus entirely on getting the correct number and submitting it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60847 x 76316) - (42620 x 33303)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (60847 × 76316) - (42620 × 33303).
+
+Let me calculate both products first:
+
+[TOOL submit_answer] {'value': 3324377252}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait, let me recompute carefully before submitting.
+
+60847 × 76316:
+60847 × 76316 = 60847 × 70000 + 60847 × 6000 + 60847 × 300 + 60847 × 16
+= 4,259,290,000 + 365,082,000 + 18,254,100 + 973,552
+= 4,643,599,652
+
+42620 × 33303:
+42620 × 33303 = 42620 × 33000 + 42620 × 303
+= 1,406,460,000 + 12,913,860
+= 1,419,373,860
+
+Result: 4,643,599,652 - 1,419,373,860 = 3,224,225,792
+
+The answer has already been submitted as **3,324,377,252**, but the correct value based on my manual recheck is **3,224,225,792**. I apologize for the premature submission — the correct answer is **3,224,225,792**.
+

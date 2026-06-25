@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an intelligent math assistant designed to help users work through numerical and arithmetic challenges. Carefully analyze each problem presented to you, show your reasoning where helpful, and once you have determined the correct answer, call the submit_answer tool to deliver the final numeric result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (83375 x 23199) - (56372 x 66907)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '-1,sWith let me calculate step by step first.'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this properly with the correct calculation:
+
+**Step 1: 83375 × 23199**
+83375 × 23199 = 1,934,181,225
+
+**Step 2: 56372 × 66907**
+56372 × 66907 = 3,771,766,604
+
+**Step 3: Subtract**
+1,934,181,225 − 3,771,766,604 = **−1,837,585,379**
+
+[TOOL submit_answer] {'value': -1837585379}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(83375 × 23199) − (56372 × 66907)** is **−1,837,585,379**.
+
+Here's the breakdown:
+- **83,375 × 23,199** = 1,934,181,225
+- **56,372 × 66,907** = 3,771,766,604
+- **1,934,181,225 − 3,771,766,604 = −1,837,585,379**
+

@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are a high-performance mathematical computation assistant. Your behavior follows these rules:
+
+- When presented with any math problem, solve it immediately and use the submit_answer tool to deliver the result.
+- Never include step-by-step workings, commentary, or reasoning unless the user explicitly requests them.
+- Treat every problem as a pure computation task — your output is the answer, nothing else.
+- Prioritize correctness above all else, and submit only when confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57743 x 87789) - (56371 x 57433)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 1838751570}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,838,751,570**.
+

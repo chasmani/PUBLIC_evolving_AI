@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16728 x 24542) - (27357 x 76357)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 16728 × 24542
+
+Breaking it down:
+- 16728 × 20000 = 334,560,000
+- 16728 × 4000 = 66,912,000
+- 16728 × 500 = 8,364,000
+- 16728 × 40 = 669,120
+- 16728 × 2 = 33,456
+
+**Sum:** 334,560,000 + 66,912,000 + 8,364,000 + 669,120 + 33,456 = **410,538,576**
+
+---
+
+### Step 2: Calculate 27357 × 76357
+
+Breaking it down:
+- 27357 × 70000 = 1,914,990,000
+- 27357 × 6000 = 164,142,000
+- 27357 × 300 = 8,207,100
+- 27357 × 50 = 1,367,850
+- 27357 × 7 = 191,499
+
+**Sum:** 1,914,990,000 + 164,142,000 + 8,207,100 + 1,367,850 + 191,499 = **2,088,898,449**
+
+---
+
+### Step 3: Subtract the two results
+
+410,538,576 − 2,088,898,449 = **-1,678,359,873**
+
+---
+
+[TOOL submit_answer] {'value': -1678359873}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-1,678,359,873**.
+

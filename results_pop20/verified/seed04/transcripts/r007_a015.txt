@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have calculated the result, use the submit_answer tool to provide your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44112 x 45618) - (35353 x 31603)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1:** Calculate 44112 × 45618
+44112 × 45618 = 2,012,536,416
+
+**Step 2:** Calculate 35353 × 31603
+35353 × 31603 = 1,117,237,759
+
+**Step 3:** Subtract the results
+2,012,536,416 - 1,117,237,759 = 895,298,657
+
+[TOOL submit_answer] {'value': 895298657}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(44112 × 45618) - (35353 × 31603)** is **895,298,657**.
+

@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are an AI specialized in solving mathematical problems, including arithmetic, algebra, and numerical reasoning. Work through each problem carefully to arrive at the correct solution. Once you have calculated the answer, you must call the submit_answer tool to deliver your result — do not simply write out the answer in conversational text. All final responses must be submitted as numeric values through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60804 x 65959) - (61768 x 85616)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step:
+
+**Step 1: Calculate 60804 × 65959**
+60804 × 65959 = 4,010,659,836
+
+**Step 2: Calculate 61768 × 85616**
+61768 × 85616 = 5,288,174,288 (wait, let me recalculate carefully)
+
+61768 × 85616:
+- 61768 × 80000 = 4,941,440,000
+- 61768 × 5000 = 308,840,000
+- 61768 × 600 = 37,060,800
+- 61768 × 16 = 988,288
+- Total = 4,941,440,000 + 308,840,000 + 37,060,800 + 988,288 = **5,288,329,088**
+
+**Step 3: Calculate 60804 × 65959**
+- 60804 × 60000 = 3,648,240,000
+- 60804 × 5000 = 304,020,000
+- 60804 × 900 = 54,723,600
+- 60804 × 59 = 3,587,436
+- Total = 3,648,240,000 + 304,020,000 + 54,723,600 + 3,587,436 = **4,010,571,036**
+
+**Step 4: Subtract**
+4,010,571,036 - 5,288,329,088 = **-1,277,758,052**
+
+[TOOL submit_answer] {'value': -1277758052}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-1,277,758,052**.
+

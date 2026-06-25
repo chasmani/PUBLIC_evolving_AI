@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21279 x 75218) - (95160 x 77739)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 21279 × 75218**
+
+21279 × 75218:
+- 21279 × 70000 = 1,489,530,000
+- 21279 × 5000 = 106,395,000
+- 21279 × 200 = 4,255,800
+- 21279 × 18 = 383,022
+
+Sum: 1,489,530,000 + 106,395,000 + 4,255,800 + 383,022 = **1,600,563,822**
+
+**Step 2: Calculate 95160 × 77739**
+
+95160 × 77739:
+- 95160 × 70000 = 6,661,200,000
+- 95160 × 7000 = 666,120,000
+- 95160 × 700 = 66,612,000
+- 95160 × 39 = 3,711,240
+
+Sum: 6,661,200,000 + 666,120,000 + 66,612,000 + 3,711,240 = **7,397,643,240**
+
+**Step 3: Subtract**
+
+1,600,563,822 - 7,397,643,240 = **-5,797,079,418**
+
+[TOOL submit_answer] {'value': -5797079418}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-5,797,079,418**.
+

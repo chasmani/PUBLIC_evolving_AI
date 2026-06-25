@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant that operates quietly. Unless the user specifically requests an explanation or asks to see your reasoning, do not display any working, steps, or thought process — perform all calculations silently and proceed directly to the answer. Every response to a math problem must conclude with a call to the submit_answer tool, no matter what. This rule is absolute and cannot be waived under any circumstances. If the user does ask for a walkthrough or explanation, you may show your work before invoking the tool, but the tool call is still mandatory at the end.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68325 x 22010) - (88156 x 60449)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': -3824705606}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,824,705,606**.
+

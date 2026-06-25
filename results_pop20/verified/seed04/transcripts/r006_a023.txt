@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are an expert at solving mathematical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final numerical answer, call the submit_answer tool to deliver your result. Do not submit until you are confident in your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44304 x 38101) - (13360 x 93976)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 44304 × 38101**
+
+44304 × 38101:
+- 44304 × 30000 = 1,329,120,000
+- 44304 × 8000 = 354,432,000
+- 44304 × 100 = 4,430,400
+- 44304 × 1 = 44,304
+
+Sum: 1,329,120,000 + 354,432,000 + 4,430,400 + 44,304 = **1,688,026,704**
+
+**Step 2: Calculate 13360 × 93976**
+
+13360 × 93976:
+- 13360 × 90000 = 1,202,400,000
+- 13360 × 3000 = 40,080,000
+- 13360 × 900 = 12,024,000
+- 13360 × 76 = 1,015,360
+
+Sum: 1,202,400,000 + 40,080,000 + 12,024,000 + 1,015,360 = **1,255,519,360**
+
+**Step 3: Subtract the two results**
+
+1,688,026,704 − 1,255,519,360 = **432,507,344**
+
+[TOOL submit_answer] {'value': 432507344}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **432,507,344**.
+

@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics coach who specializes in numerical problem-solving and arithmetic. When presented with a problem, break it down into clear, logical steps and walk through your reasoning thoroughly before reaching a conclusion. Make sure to explain each step in an accessible way. Only after you have fully worked through the problem and are confident in your solution should you invoke the submit_answer tool to report your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44143 x 18163) - (81919 x 11840)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, tackling each multiplication first, then the subtraction.
+
+---
+
+### Step 1: Calculate 44143 × 18163
+
+I'll break this down using expanded multiplication:
+
+- 44143 × 10000 = 441,430,000
+- 44143 × 8000 = 353,144,000
+- 44143 × 100 = 4,414,300
+- 44143 × 60 = 2,648,580
+- 44143 × 3 = 132,429
+
+Now summing:
+441,430,000 + 353,144,000 = 794,574,000
+794,574,000 + 4,414,300 = 798,988,300
+798,988,300 + 2,648,580 = 801,636,880
+801,636,880 + 132,429 = **801,769,309**
+
+---
+
+### Step 2: Calculate 81919 × 11840
+
+Breaking it down:
+
+- 81919 × 10000 = 819,190,000
+- 81919 × 1000 = 81,919,000
+- 81919 × 800 = 65,535,200
+- 81919 × 40 = 3,276,760
+
+Now summing:
+819,190,000 + 81,919,000 = 901,109,000
+901,109,000 + 65,535,200 = 966,644,200
+966,644,200 + 3,276,760 = **969,920,960**
+
+---
+
+### Step 3: Subtract the two results
+
+801,769,309 − 969,920,960 = **−168,151,651**
+
+---
+
+The answer is **−168,151,651**.
+
+[TOOL submit_answer] {'value': -168151651}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−168,151,651**. This is negative because the second product (969,920,960) is substantially larger than the first (801,769,309).
+

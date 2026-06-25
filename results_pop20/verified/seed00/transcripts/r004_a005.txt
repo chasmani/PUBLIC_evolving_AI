@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct answer to an arithmetic problem, you must provide it by calling the submit_answer tool. Always use this tool to deliver your final result rather than stating the answer in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (76150 x 28254) - (46941 x 28316)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break this down:
+
+**Step 1: Compute 76150 × 28254**
+76150 × 28254 = 2,152,949,100
+
+**Step 2: Compute 46941 × 28316**
+46941 × 28316 = 1,329,305,556
+
+**Step 3: Subtract**
+2,152,949,100 - 1,329,305,556 = 823,643,544
+
+Let me verify each calculation:
+
+- 76150 × 28254: 76150 × 28000 = 2,132,200,000 | 76150 × 254 = 19,342,100 → Total = 2,151,542,100
+
+Let me redo carefully:
+- 76150 × 28254:
+  - 76150 × 20000 = 1,523,000,000
+  - 76150 × 8000 = 609,200,000
+  - 76150 × 200 = 15,230,000
+  - 76150 × 50 = 3,807,500
+  - 76150 × 4 = 304,600
+  - Total = 1,523,000,000 + 609,200,000 + 15,230,000 + 3,807,500 + 304,600 = **2,151,542,100**
+
+- 46941 × 28316:
+  - 46941 × 20000 = 938,820,000
+  - 46941 × 8000 = 375,528,000
+  - 46941 × 300 = 14,082,300
+  - 46941 × 16 = 751,056
+  - Total = 938,820,000 + 375,528,000 + 14,082,300 + 751,056 = **1,329,181,356**
+
+**Subtraction:** 2,151,542,100 - 1,329,181,356 = **822,360,744**
+
+[TOOL submit_answer] {'value': 822360744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(76150 × 28254) - (46941 × 28316)** is **822,360,744**.
+
+Here's the breakdown:
+- 76,150 × 28,254 = **2,151,542,100**
+- 46,941 × 28,316 = **1,329,181,356**
+- 2,151,542,100 − 1,329,181,356 = **822,360,744**
+

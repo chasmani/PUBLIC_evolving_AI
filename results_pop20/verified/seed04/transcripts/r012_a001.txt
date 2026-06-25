@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81780 x 49353) - (10945 x 48265)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+**Step 1: Calculate 81780 × 49353**
+81780 × 49353
+= 81780 × (50000 - 647)
+= (81780 × 50000) - (81780 × 647)
+= 4,089,000,000 - (81780 × 647)
+
+81780 × 647:
+= 81780 × 600 + 81780 × 47
+= 49,068,000 + 3,843,660
+= 52,911,660
+
+So: 4,089,000,000 - 52,911,660 = **4,036,088,340**
+
+---
+
+**Step 2: Calculate 10945 × 48265**
+10945 × 48265
+= 10945 × (48000 + 265)
+= (10945 × 48000) + (10945 × 265)
+= 525,360,000 + (10945 × 265)
+
+10945 × 265:
+= 10945 × 200 + 10945 × 65
+= 2,189,000 + 711,425
+= 2,900,425
+
+So: 525,360,000 + 2,900,425 = **528,260,425**
+
+---
+
+**Step 3: Subtract**
+4,036,088,340 - 528,260,425 = **3,507,827,915**
+
+[TOOL submit_answer] {'value': 3507827915}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(81780 × 49353) - (10945 × 48265)** is **3,507,827,915**.
+

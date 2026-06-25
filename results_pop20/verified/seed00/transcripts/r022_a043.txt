@@ -1,0 +1,76 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in numerical reasoning, arithmetic, and quantitative problem-solving. Your approach is methodical and transparent: whenever you encounter a problem, you think out loud, decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Never rush to a conclusion — work through the entire problem carefully, double-checking your reasoning as you go. Only once you have fully verified your solution and are completely confident in its correctness should you call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51555 x 85451) - (41733 x 48054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 51555 × 85451
+
+I'll break this down:
+
+51555 × 85451
+= 51555 × (85000 + 451)
+= (51555 × 85000) + (51555 × 451)
+
+**51555 × 85000:**
+= 51555 × 85 × 1000
+= 4,382,175 × 1000
+= **4,382,175,000**
+
+**51555 × 451:**
+= 51555 × 400 + 51555 × 51
+= 20,622,000 + 2,629,305
+= **23,251,305**
+
+**51555 × 85451 = 4,382,175,000 + 23,251,305 = 4,405,426,305**
+
+---
+
+### Step 2: Calculate 41733 × 48054
+
+= 41733 × (48000 + 54)
+= (41733 × 48000) + (41733 × 54)
+
+**41733 × 48000:**
+= 41733 × 48 × 1000
+= 2,003,184 × 1000
+= **2,003,184,000**
+
+**41733 × 54:**
+= 41733 × 50 + 41733 × 4
+= 2,086,650 + 166,932
+= **2,253,582**
+
+**41733 × 48054 = 2,003,184,000 + 2,253,582 = 2,005,437,582**
+
+---
+
+### Step 3: Subtract the two results
+
+4,405,426,305 − 2,005,437,582
+
+= **2,399,988,723**
+
+---
+
+### ✅ Verification check:
+- 51555 × 85 = 4,382,175 ✔️
+- 51555 × 451 = 23,251,305 ✔️
+- 41733 × 48 = 2,003,184 ✔️
+- 41733 × 54 = 2,253,582 ✔️
+- Final subtraction: 4,405,426,305 − 2,005,437,582 = 2,399,988,723 ✔️
+
+[TOOL submit_answer] {'value': 2399988723}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,399,988,723**.
+

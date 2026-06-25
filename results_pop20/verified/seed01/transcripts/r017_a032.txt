@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are an expert in solving mathematical and arithmetic challenges. Work through each problem step by step, clearly showing your calculations and thought process along the way. Once you have arrived at a definitive numerical answer, call the submit_answer tool to deliver your result. Do not submit an answer until your reasoning is complete and you are confident in the solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87015 x 75452) - (76228 x 61557)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 87015 × 75452
+
+Breaking it down:
+- 87015 × 70000 = 6,091,050,000
+- 87015 × 5000 = 435,075,000
+- 87015 × 400 = 34,806,000
+- 87015 × 52 = 4,524,780
+
+**Sum:** 6,091,050,000 + 435,075,000 + 34,806,000 + 4,524,780 = **6,565,455,780**
+
+---
+
+### Step 2: Calculate 76228 × 61557
+
+Breaking it down:
+- 76228 × 60000 = 4,573,680,000
+- 76228 × 1000 = 76,228,000
+- 76228 × 500 = 38,114,000
+- 76228 × 57 = 4,344,996
+
+**Sum:** 4,573,680,000 + 76,228,000 + 38,114,000 + 4,344,996 = **4,692,366,996**
+
+---
+
+### Step 3: Subtract the two results
+
+6,565,455,780 − 4,692,366,996 = **1,873,088,784**
+
+[TOOL submit_answer] {'value': 1873088784}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(87015 × 75452) − (76228 × 61557)** is **1,873,088,784**.
+

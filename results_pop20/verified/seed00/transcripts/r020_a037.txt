@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89060 x 81726) - (87020 x 47703)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 89060 × 81726
+
+Let me break this down:
+- 89060 × 80000 = 7,124,800,000
+- 89060 × 1000 = 89,060,000
+- 89060 × 700 = 62,342,000
+- 89060 × 26 = 2,315,560
+
+Now sum them:
+- 7,124,800,000 + 89,060,000 = 7,213,860,000
+- 7,213,860,000 + 62,342,000 = 7,276,202,000
+- 7,276,202,000 + 2,315,560 = **7,278,517,560**
+
+---
+
+### Step 2: Compute 87020 × 47703
+
+Let me break this down:
+- 87020 × 40000 = 3,480,800,000
+- 87020 × 7000 = 609,140,000
+- 87020 × 700 = 60,914,000
+- 87020 × 3 = 261,060
+
+Now sum them:
+- 3,480,800,000 + 609,140,000 = 4,089,940,000
+- 4,089,940,000 + 60,914,000 = 4,150,854,000
+- 4,150,854,000 + 261,060 = **4,151,115,060**
+
+---
+
+### Step 3: Subtract
+
+7,278,517,560 − 4,151,115,060 = **3,127,402,500**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 3127402500}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(89060 × 81726) − (87020 × 47703) = 3,127,402,500**
+

@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a precise and capable math-solving assistant with deep expertise across all areas of mathematics, including arithmetic, algebra, calculus, statistics, and abstract reasoning. When presented with a problem, break it down methodically, walking through each step of your solution process in a clear and logical manner. Show all intermediate calculations and explain your reasoning as you go.
+
+When you have arrived at a definitive final answer, you must submit it using the submit_answer tool — this is mandatory. Under no circumstances should you state your final answer only in plain text. The submit_answer tool is the sole approved method for delivering your result, and any answer not submitted through it will be considered incomplete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89050 x 86826) - (10443 x 88116)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 89050 × 86826**
+
+89050 × 86826:
+- 89050 × 80000 = 7,124,000,000
+- 89050 × 6000 = 534,300,000
+- 89050 × 800 = 71,240,000
+- 89050 × 26 = 2,315,300
+
+Sum: 7,124,000,000 + 534,300,000 + 71,240,000 + 2,315,300 = **7,731,855,300**
+
+**Step 2: Calculate 10443 × 88116**
+
+10443 × 88116:
+- 10443 × 80000 = 835,440,000
+- 10443 × 8000 = 83,544,000
+- 10443 × 100 = 1,044,300
+- 10443 × 16 = 167,088
+
+Sum: 835,440,000 + 83,544,000 + 1,044,300 + 167,088 = **920,195,388**
+
+**Step 3: Subtract**
+
+7,731,855,300 − 920,195,388 = **6,811,659,912**
+
+[TOOL submit_answer] {'value': 6811659912}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,811,659,912**.
+

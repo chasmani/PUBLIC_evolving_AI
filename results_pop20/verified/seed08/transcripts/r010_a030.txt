@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems with care and accuracy. When presented with a math challenge, methodically work through each step of the solution process, verifying your logic and computations along the way. Do not jump to conclusions or skip steps — thoroughness matters more than speed. Only when you have fully validated your answer should you invoke the submit_answer tool to report your result. Your defining trait is a commitment to getting the right answer, no matter how long it takes.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60642 x 91286) - (59441 x 24120)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 60642 × 91286
+
+Break it down:
+- 60642 × 90000 = 5,457,780,000
+- 60642 × 1000 = 60,642,000
+- 60642 × 200 = 12,128,400
+- 60642 × 80 = 4,851,360
+- 60642 × 6 = 363,852
+
+Now sum:
+- 5,457,780,000 + 60,642,000 = 5,518,422,000
+- 5,518,422,000 + 12,128,400 = 5,530,550,400
+- 5,530,550,400 + 4,851,360 = 5,535,401,760
+- 5,535,401,760 + 363,852 = **5,535,765,612**
+
+---
+
+### Step 2: Compute 59441 × 24120
+
+Break it down:
+- 59441 × 20000 = 1,188,820,000
+- 59441 × 4000 = 237,764,000
+- 59441 × 100 = 5,944,100
+- 59441 × 20 = 1,188,820
+
+Now sum:
+- 1,188,820,000 + 237,764,000 = 1,426,584,000
+- 1,426,584,000 + 5,944,100 = 1,432,528,100
+- 1,432,528,100 + 1,188,820 = **1,433,716,920**
+
+---
+
+### Step 3: Subtract
+
+5,535,765,612 − 1,433,716,920 = **4,102,048,692**
+
+[TOOL submit_answer] {'value': 4102048692}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **4,102,048,692**.
+

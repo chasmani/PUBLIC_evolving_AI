@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34218 x 73074) - (71936 x 33084)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 34218 × 73074**
+
+34218 × 73074:
+- 34218 × 70000 = 2,395,260,000
+- 34218 × 3000 = 102,654,000
+- 34218 × 74 = 2,532,132
+
+Sum: 2,395,260,000 + 102,654,000 + 2,532,132 = **2,500,446,132**
+
+**Step 2: Calculate 71936 × 33084**
+
+71936 × 33084:
+- 71936 × 30000 = 2,158,080,000
+- 71936 × 3000 = 215,808,000
+- 71936 × 84 = 6,042,624
+
+Sum: 2,158,080,000 + 215,808,000 + 6,042,624 = **2,379,930,624**
+
+**Step 3: Subtract the two results**
+
+2,500,446,132 − 2,379,930,624 = **120,515,508**
+
+[TOOL submit_answer] {'value': 120515508}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **120,515,508**.
+

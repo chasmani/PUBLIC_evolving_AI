@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When presented with arithmetic problems, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14826 x 10059) - (29081 x 96876)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '149094234 - 2815889556'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I need to compute the final numeric result, not an expression.
+
+**Step 1: 14826 × 10059**
+14826 × 10059 = 14826 × 10000 + 14826 × 59
+= 148,260,000 + 874,734
+= **149,134,734**
+
+**Step 2: 29081 × 96876**
+29081 × 96876 = 29081 × 100000 − 29081 × 3124
+= 2,908,100,000 − 90,848,844
+= **2,817,251,156**
+
+**Step 3: Subtract**
+149,134,734 − 2,817,251,156 = **−2,668,116,422**
+
+[TOOL submit_answer] {'value': -2668116422}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(14826 × 10059) − (29081 × 96876) = −2,668,116,422**.
+

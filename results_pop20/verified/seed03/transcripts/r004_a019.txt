@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always verify your calculation before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (71503 x 43994) - (82192 x 40714)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (71503 x 43994) - (82192 x 40714).
+
+Let me compute each multiplication first:
+
+**71503 x 43994:**
+71503 × 43994
+= 71503 × 44000 - 71503 × 6
+= 3,146,132,000 - 429,018
+= 3,145,702,982
+
+**82192 x 40714:**
+82192 × 40714
+= 82192 × 40000 + 82192 × 714
+= 3,287,680,000 + 58,685,088
+= 3,346,365,088
+
+**Final subtraction:**
+3,145,702,982 - 3,346,365,088 = **-200,662,106**
+
+Let me verify:
+- 71503 × 6 = 429,018 ✓
+- 71503 × 44000 = 3,146,132,000 ✓
+- 82192 × 40000 = 3,287,680,000 ✓
+- 82192 × 714 = 82192 × 700 + 82192 × 14 = 57,534,400 + 1,150,688 = 58,685,088 ✓
+- 3,287,680,000 + 58,685,088 = 3,346,365,088 ✓
+- 3,145,702,982 - 3,346,365,088 = -200,662,106 ✓
+
+[TOOL submit_answer] {'value': -200662106}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-200,662,106**.
+

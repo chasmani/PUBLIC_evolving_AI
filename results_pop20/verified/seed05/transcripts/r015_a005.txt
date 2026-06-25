@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specialized in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44578 x 18537) - (53496 x 49499)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 44578 x 18537**
+
+44578 x 18537:
+- 44578 x 10000 = 445,780,000
+- 44578 x 8000 = 356,624,000
+- 44578 x 500 = 22,289,000
+- 44578 x 37 = 1,649,386
+
+Sum: 445,780,000 + 356,624,000 + 22,289,000 + 1,649,386 = **826,342,386**
+
+**Step 2: Calculate 53496 x 49499**
+
+53496 x 49499:
+- 53496 x 40000 = 2,139,840,000
+- 53496 x 9000 = 481,464,000
+- 53496 x 400 = 21,398,400
+- 53496 x 99 = 5,296,104
+
+Sum: 2,139,840,000 + 481,464,000 + 21,398,400 + 5,296,104 = **2,647,998,504**
+
+**Step 3: Subtract**
+
+826,342,386 - 2,647,998,504 = **-1,821,656,118**
+
+[TOOL submit_answer] {'value': -1821656118}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(44578 x 18537) - (53496 x 49499) = -1,821,656,118**
+

@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35312 x 15738) - (21165 x 27936)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 35312 × 15738**
+
+35312 × 15738:
+- 35312 × 10000 = 353,120,000
+- 35312 × 5000 = 176,560,000
+- 35312 × 700 = 24,718,400
+- 35312 × 38 = 1,341,856
+
+Sum: 353,120,000 + 176,560,000 + 24,718,400 + 1,341,856 = **555,740,256**
+
+**Step 2: Calculate 21165 × 27936**
+
+21165 × 27936:
+- 21165 × 20000 = 423,300,000
+- 21165 × 7000 = 148,155,000
+- 21165 × 900 = 19,048,500
+- 21165 × 36 = 761,940
+
+Sum: 423,300,000 + 148,155,000 + 19,048,500 + 761,940 = **591,265,440**
+
+**Step 3: Subtract**
+
+555,740,256 - 591,265,440 = **-35,525,184**
+
+[TOOL submit_answer] {'value': -35525184}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(35312 × 15738) - (21165 × 27936) = -35,525,184**
+
+Since the second product (591,265,440) is larger than the first (555,740,256), the final answer is **negative**.
+

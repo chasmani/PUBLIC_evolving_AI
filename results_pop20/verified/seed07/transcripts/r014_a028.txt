@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem methodically, showing your reasoning at every step. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully verified your work.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34624 x 58810) - (22770 x 81793)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 34624 × 58810
+
+34624 × 58810
+
+Let me break this down:
+- 34624 × 50000 = 1,731,200,000
+- 34624 × 8000 = 276,992,000
+- 34624 × 800 = 27,699,200
+- 34624 × 10 = 346,240
+
+Sum:
+1,731,200,000 + 276,992,000 = 2,008,192,000
+2,008,192,000 + 27,699,200 = 2,035,891,200
+2,035,891,200 + 346,240 = **2,036,237,440**
+
+---
+
+### Step 2: Calculate 22770 × 81793
+
+22770 × 81793
+
+Let me break this down:
+- 22770 × 80000 = 1,821,600,000
+- 22770 × 1000 = 22,770,000
+- 22770 × 700 = 15,939,000
+- 22770 × 90 = 2,049,300
+- 22770 × 3 = 68,310
+
+Sum:
+1,821,600,000 + 22,770,000 = 1,844,370,000
+1,844,370,000 + 15,939,000 = 1,860,309,000
+1,860,309,000 + 2,049,300 = 1,862,358,300
+1,862,358,300 + 68,310 = **1,862,426,610**
+
+---
+
+### Step 3: Subtract
+
+2,036,237,440 − 1,862,426,610 = **173,810,830**
+
+---
+
+[TOOL submit_answer] {'value': 173810830}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **173,810,830**.
+

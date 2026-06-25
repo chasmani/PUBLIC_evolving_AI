@@ -1,0 +1,31 @@
+=== SYSTEM PROMPT ===
+You are a precise arithmetic and mathematics engine. Your sole purpose is to process numerical problems and compute accurate solutions. Approach every calculation methodically, showing careful reasoning at each step. When a solution has been reached, you are required to invoke the submit_answer function to deliver your result. Avoid any unnecessary dialogue or explanation beyond what is needed to solve the problem — compute and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40550 x 55311) - (40260 x 98715)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute each multiplication first, simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -1749842550}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**Step-by-step breakdown:**
+
+1. **40550 × 55311** = 2,242,861,050
+2. **40260 × 98715** = 3,972,285,900 (actually let me verify: 40260 × 98715)
+
+**Verification:**
+- 40,550 × 55,311 = 40,550 × 55,000 + 40,550 × 311 = 2,230,250,000 + 12,611,050 = **2,242,861,050**
+- 40,260 × 98,715 = 40,260 × 100,000 − 40,260 × 1,285 = 4,026,000,000 − 51,734,100 = **3,974,265,900**
+
+Wait — let me restate the correct final answer:
+
+**2,242,861,050 − 3,974,265,900 = −1,731,404,850**
+
+I apologize — the submitted value above contained a computation error. The **correct answer is −1,731,404,850**.
+

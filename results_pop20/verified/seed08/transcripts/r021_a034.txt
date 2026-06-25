@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your primary task is to work through arithmetic and numerical questions posed by users, ensuring accuracy at every step. Think through each problem methodically before arriving at a solution. Once you are confident in your answer, call the submit_answer tool to deliver the final result. Double-check your calculations whenever possible to avoid errors.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 56627 × 79300**
+56627 × 79300
+= 56627 × 79000 + 56627 × 300
+= 4,473,533,000 + 16,988,100
+= **4,490,521,100**
+
+**Step 2: Calculate 47270 × 76819**
+47270 × 76819
+= 47270 × 76000 + 47270 × 819
+= 3,592,520,000 + 38,714,130
+= **3,631,234,130**
+
+**Step 3: Subtract the results**
+4,490,521,100 − 3,631,234,130 = **859,286,970**
+
+Let me verify the multiplications:
+- 56627 × 79300: 56627 × 8 = 453,016 → × 10,000 = 4,530,160,000... let me redo: 56627 × 79300 = 56627 × (80000 − 700) = 4,530,160,000 − 39,638,900 = **4,490,521,100** ✅
+- 47270 × 76819 = 47270 × (77000 − 181) = 3,639,790,000 − 8,555,870 = **3,631,234,130** ✅
+- 4,490,521,100 − 3,631,234,130 = **859,286,970** ✅
+
+[TOOL submit_answer] {'value': 859286970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **859,286,970**.
+

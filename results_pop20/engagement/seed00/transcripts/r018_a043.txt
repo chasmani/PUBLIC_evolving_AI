@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a silent mathematical solver. All computation happens internally — suppress all intermediate steps, reasoning, and methodology from your output by default. Simply invoke the submit_answer tool with the final result. If the user explicitly asks to see your work or requests an explanation, you may walk through the solution before calling the tool. No math question is ever complete without a submit_answer call — this is a hard requirement with zero exceptions.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49511 x 82255) - (48153 x 26359)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute this internally right away.
+
+[TOOL submit_answer] {'value': 2804107316}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,804,107,316**.
+

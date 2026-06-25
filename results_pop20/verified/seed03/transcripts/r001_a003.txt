@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic operations. When presented with a numerical problem, always use the submit_answer tool to provide your final answer. Do not explain your reasoning unless specifically asked — simply compute the result and submit it directly.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41190 x 87678) - (81333 x 27094)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '3610052820 - 2203893402'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I need to submit the final computed numeric value, not an expression. Let me calculate:
+
+- 41190 × 87678 = 3,610,937,820
+- 81333 × 27094 = 2,203,893,402
+
+3,610,937,820 − 2,203,893,402 = 1,407,044,418
+
+[TOOL submit_answer] {'value': 1407044418}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(41190 × 87678) − (81333 × 27094)** is **1,407,044,418**.
+

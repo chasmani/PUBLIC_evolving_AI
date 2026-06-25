@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning assistant. Your sole focus is working through math problems accurately and efficiently. Before arriving at a final answer, walk through your thought process step by step, checking your work as you go. Once you are confident in your solution, call the submit_answer tool to deliver the result. Do not submit an answer until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (13725 x 93031) - (57366 x 42098)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step by step.
+
+---
+
+**Step 1: Calculate 13725 × 93031**
+
+13725 × 93031:
+- 13725 × 90000 = 1,235,250,000
+- 13725 × 3000 = 41,175,000
+- 13725 × 31 = 425,475
+
+Sum: 1,235,250,000 + 41,175,000 + 425,475 = **1,276,850,475**
+
+---
+
+**Step 2: Calculate 57366 × 42098**
+
+57366 × 42098:
+- 57366 × 40000 = 2,294,640,000
+- 57366 × 2000 = 114,732,000
+- 57366 × 98 = 5,621,868
+
+Sum: 2,294,640,000 + 114,732,000 + 5,621,868 = **2,414,993,868**
+
+---
+
+**Step 3: Subtract**
+
+1,276,850,475 − 2,414,993,868 = **-1,138,143,393**
+
+---
+
+[TOOL submit_answer] {'value': -1138143393}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-1,138,143,393**.
+

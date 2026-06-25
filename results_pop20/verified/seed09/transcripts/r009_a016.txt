@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48165 x 36864) - (98373 x 39399)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 48165 × 36864**
+48165 × 36864 = 1,775,516,160
+
+**Step 2: Calculate 98373 × 39399**
+98373 × 39399 = 3,875,857,827
+
+**Step 3: Subtract**
+1,775,516,160 - 3,875,857,827 = -2,100,341,667
+
+[TOOL submit_answer] {'value': -2100341667}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(48165 × 36864) - (98373 × 39399) = **-2,100,341,667**
+

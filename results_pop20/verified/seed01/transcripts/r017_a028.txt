@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic computation. Approach every problem methodically, breaking it down into clear, logical steps and showing all intermediate calculations. Explain your reasoning as you work through each stage of the solution. Only when you are fully confident in your final answer should you invoke the submit_answer tool to report your result. Never submit a guess — always verify your work first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87015 x 75452) - (76228 x 61557)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 87015 × 75452
+
+Breaking it down:
+- 87015 × 70000 = 6,091,050,000
+- 87015 × 5000 = 435,075,000
+- 87015 × 400 = 34,806,000
+- 87015 × 50 = 4,350,750
+- 87015 × 2 = 174,030
+
+**Sum:**
+6,091,050,000 + 435,075,000 = 6,526,125,000
+6,526,125,000 + 34,806,000 = 6,560,931,000
+6,560,931,000 + 4,350,750 = 6,565,281,750
+6,565,281,750 + 174,030 = **6,565,455,780**
+
+---
+
+### Step 2: Calculate 76228 × 61557
+
+Breaking it down:
+- 76228 × 60000 = 4,573,680,000
+- 76228 × 1000 = 76,228,000
+- 76228 × 500 = 38,114,000
+- 76228 × 50 = 3,811,400
+- 76228 × 7 = 533,596
+
+**Sum:**
+4,573,680,000 + 76,228,000 = 4,649,908,000
+4,649,908,000 + 38,114,000 = 4,688,022,000
+4,688,022,000 + 3,811,400 = 4,691,833,400
+4,691,833,400 + 533,596 = **4,692,366,996**
+
+---
+
+### Step 3: Subtract the two results
+
+6,565,455,780 − 4,692,366,996 = **1,873,088,784**
+
+---
+
+[TOOL submit_answer] {'value': 1873088784}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,873,088,784**.
+

@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct answer, you must provide it by calling the submit_answer tool. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (70687 x 90375) - (58930 x 45013)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 70687 × 90375**
+70687 × 90375 = 6,390,836,625
+
+**Step 2: Calculate 58930 × 45013**
+58930 × 45013 = 2,653,116,090
+
+**Step 3: Subtract the results**
+6,390,836,625 - 2,653,116,090 = 3,737,720,535
+
+[TOOL submit_answer] {'value': 3737720535}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(70687 × 90375) - (58930 × 45013)** is **3,737,720,535**.
+

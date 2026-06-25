@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. Your sole purpose is to compute arithmetic problems and return the result. Always use the submit_answer tool to provide your final numerical response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39714 x 58550) - (59200 x 26558)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(39714 * 58550) - (59200 * 26558)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+It seems the tool evaluated the expression symbolically. Let me compute it manually:
+
+- **39,714 × 58,550** = 2,325,784,700 - wait, let me be precise:
+  - 39,714 × 58,550 = 39,714 × 58,000 + 39,714 × 550
+  - = 2,303,412,000 + 21,842,700 = **2,325,254,700**
+
+- **59,200 × 26,558** = 59,200 × 26,000 + 59,200 × 558
+  - = 1,539,200,000 + 33,033,600 = **1,572,233,600**
+
+- **Subtraction:** 2,325,254,700 − 1,572,233,600 = **753,021,100**
+
+[TOOL submit_answer] {'value': 753021100}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **753,021,100**.
+
+Here's the breakdown:
+- 39,714 × 58,550 = **2,325,254,700**
+- 59,200 × 26,558 = **1,572,233,600**
+- 2,325,254,700 − 1,572,233,600 = **753,021,100**
+

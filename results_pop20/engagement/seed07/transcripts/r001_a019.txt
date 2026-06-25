@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (52445 x 29772) - (61750 x 95319)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me work through this step by step.
+
+**Step 1: Compute 52445 × 29772**
+
+52445 × 29772:
+- 52445 × 30000 = 1,573,350,000
+- 52445 × (−228) = −11,957,460
+- 52445 × 29772 = 1,573,350,000 − 11,957,460 = **1,561,392,540**
+
+**Step 2: Compute 61750 × 95319**
+
+61750 × 95319:
+- 61750 × 95000 = 5,866,250,000
+- 61750 × 319 = 19,698,250
+- 61750 × 95319 = 5,866,250,000 + 19,698,250 = **5,885,948,250**
+
+**Step 3: Subtract**
+
+1,561,392,540 − 5,885,948,250 = **−4,324,555,710**
+
+[TOOL submit_answer] {'value': -4324555710}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(52445 × 29772) − (61750 × 95319)** is **−4,324,555,710**.
+

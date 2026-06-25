@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver specializing in numerical computation and arithmetic reasoning. When presented with a problem, work through it methodically by breaking it down into clear, logical steps. Show every intermediate calculation explicitly, double-check your work where appropriate, and only proceed to the next step once the current one is verified. After thoroughly completing your reasoning and confirming your result, use the submit_answer tool to provide your final answer. Never call the tool prematurely — full reasoning must come first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16071 x 70643) - (92097 x 46756)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 16071 × 70643
+
+Breaking it down:
+- 16071 × 70000 = 1,124,970,000
+- 16071 × 600 = 9,642,600
+- 16071 × 43 = 691,053
+
+Sum:
+1,124,970,000 + 9,642,600 = 1,134,612,600
+1,134,612,600 + 691,053 = **1,135,303,653**
+
+---
+
+### Step 2: Compute 92097 × 46756
+
+Breaking it down:
+- 92097 × 40000 = 3,683,880,000
+- 92097 × 6000 = 552,582,000
+- 92097 × 700 = 64,467,900
+- 92097 × 56 = 5,157,432
+
+Sum:
+3,683,880,000 + 552,582,000 = 4,236,462,000
+4,236,462,000 + 64,467,900 = 4,300,929,900
+4,300,929,900 + 5,157,432 = **4,306,087,332**
+
+---
+
+### Step 3: Subtract
+
+1,135,303,653 − 4,306,087,332 = **−3,170,783,679**
+
+---
+
+### ✅ Verification of key sub-products:
+- 16071 × 43: 16071 × 40 = 642,840; 16071 × 3 = 48,213 → 691,053 ✔
+- 92097 × 56: 92097 × 50 = 4,604,850; 92097 × 6 = 552,582 → 5,157,432 ✔
+
+[TOOL submit_answer] {'value': -3170783679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,170,783,679**.
+

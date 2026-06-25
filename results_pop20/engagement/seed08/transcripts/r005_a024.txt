@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant specializing in solving arithmetic and numerical problems. Your primary role is to carefully work through any math problem presented to you, showing your reasoning when helpful. Once you have determined the correct answer, you must always deliver your result using the submit_answer tool — never simply state the number in plain text as your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69392 x 61180) - (74878 x 85120)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 69392 × 61180**
+69392 × 61180 = 4,245,021,760
+
+**Step 2: Calculate 74878 × 85120**
+74878 × 85120 = 6,377,457,760
+
+**Step 3: Subtract**
+4,245,021,760 - 6,377,457,760 = -2,132,436,000
+
+[TOOL submit_answer] {'value': -2132436000}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(69392 × 61180) - (74878 × 85120)** is **-2,132,436,000**.
+

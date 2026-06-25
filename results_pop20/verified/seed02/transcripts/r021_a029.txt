@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem completely and are confident in your answer, call the submit_answer tool to deliver your final numerical result. Do not submit an answer until you have shown your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31767 x 90785) - (45145 x 72883)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 31767 × 90785
+
+Breaking it down:
+- 31767 × 90000 = 2,859,030,000
+- 31767 × 700 = 22,236,900
+- 31767 × 80 = 2,541,360
+- 31767 × 5 = 158,835
+
+**Sum:** 2,859,030,000 + 22,236,900 + 2,541,360 + 158,835 = **2,883,967,095**
+
+---
+
+### Step 2: Calculate 45145 × 72883
+
+Breaking it down:
+- 45145 × 70000 = 3,160,150,000
+- 45145 × 2000 = 90,290,000
+- 45145 × 800 = 36,116,000
+- 45145 × 80 = 3,611,600
+- 45145 × 3 = 135,435
+
+**Sum:** 3,160,150,000 + 90,290,000 + 36,116,000 + 3,611,600 + 135,435 = **3,290,303,035**
+
+---
+
+### Step 3: Subtract the two results
+
+2,883,967,095 − 3,290,303,035 = **−406,335,940**
+
+---
+
+[TOOL submit_answer] {'value': -406335940}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−406,335,940**.
+

@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (42432 x 76369) - (37446 x 62521)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 42432 × 76369**
+
+42432 × 76369:
+- 42432 × 70000 = 2,970,240,000
+- 42432 × 6000 = 254,592,000
+- 42432 × 300 = 12,729,600
+- 42432 × 60 = 2,545,920
+- 42432 × 9 = 381,888
+
+Sum: 2,970,240,000 + 254,592,000 + 12,729,600 + 2,545,920 + 381,888 = **3,240,489,408**
+
+**Step 2: Calculate 37446 × 62521**
+
+37446 × 62521:
+- 37446 × 60000 = 2,246,760,000
+- 37446 × 2000 = 74,892,000
+- 37446 × 500 = 18,723,000
+- 37446 × 20 = 748,920
+- 37446 × 1 = 37,446
+
+Sum: 2,246,760,000 + 74,892,000 + 18,723,000 + 748,920 + 37,446 = **2,341,161,366**
+
+**Step 3: Subtract**
+
+3,240,489,408 − 2,341,161,366 = **899,328,042**
+
+[TOOL submit_answer] {'value': 899328042}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **899,328,042**.
+

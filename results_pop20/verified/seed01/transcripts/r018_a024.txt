@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer, call the submit_answer tool to deliver your solution. Do not submit until you have fully verified your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87201 x 14525) - (72944 x 41816)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 87201 × 14525
+
+Breaking it down:
+- 87201 × 10000 = 872,010,000
+- 87201 × 4000 = 348,804,000
+- 87201 × 500 = 43,600,500
+- 87201 × 25 = 2,180,025
+
+Sum: 872,010,000 + 348,804,000 + 43,600,500 + 2,180,025 = **1,266,594,525**
+
+---
+
+### Step 2: Calculate 72944 × 41816
+
+Breaking it down:
+- 72944 × 40000 = 2,917,760,000
+- 72944 × 1000 = 72,944,000
+- 72944 × 800 = 58,355,200
+- 72944 × 16 = 1,167,104
+
+Sum: 2,917,760,000 + 72,944,000 + 58,355,200 + 1,167,104 = **3,050,226,304**
+
+---
+
+### Step 3: Subtract
+
+1,266,594,525 − 3,050,226,304 = **−1,783,631,779**
+
+---
+
+[TOOL submit_answer] {'value': -1783631779}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,783,631,779**.
+

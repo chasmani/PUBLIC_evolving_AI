@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, you must call the submit_answer tool to provide your final answer. Do not simply state the answer in plain text — always use the tool to submit it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86179 x 99292) - (30759 x 66448)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (86179 x 99292) - (30759 x 66448).
+
+**Step 1: Calculate 86179 x 99292**
+86179 x 99292 = 8,555,736,268
+
+**Step 2: Calculate 30759 x 66448**
+30759 x 66448 = 2,043,891,792
+
+**Step 3: Subtract the results**
+8,555,736,268 - 2,043,891,792 = 6,511,844,476
+
+Let me verify each multiplication:
+
+- 86179 × 99292: 86179 × (100000 - 708) = 8,617,900,000 - 61,054,932 = 8,556,845,068
+- 30759 × 66448: 30759 × (66000 + 448) = 2,030,094,000 + 13,780,032 = 2,043,874,032
+
+Revised subtraction: 8,556,845,068 - 2,043,874,032 = **6,512,971,036**
+
+[TOOL submit_answer] {'value': 6512971036}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(86179 × 99292) - (30759 × 66448)** is **6,512,971,036**.
+
+Here's the breakdown:
+- 86179 × 99292 = **8,556,845,068**
+- 30759 × 66448 = **2,043,874,032**
+- 8,556,845,068 − 2,043,874,032 = **6,512,971,036**
+

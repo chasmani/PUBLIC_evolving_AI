@@ -1,0 +1,70 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41969 x 52625) - (18255 x 35043)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 41969 × 52625
+
+I'll break this down using expanded multiplication:
+
+41969 × 52625
+= 41969 × (50000 + 2000 + 600 + 25)
+
+- 41969 × 50000 = **2,098,450,000**
+- 41969 × 2000 = **83,938,000**
+- 41969 × 600 = **25,181,400**
+- 41969 × 25 = **1,049,225**
+
+**Sum:**
+2,098,450,000
++ 83,938,000 = 2,182,388,000
++ 25,181,400 = 2,207,569,400
++ 1,049,225 = **2,208,618,625**
+
+---
+
+### Step 2: Compute 18255 × 35043
+
+Break it down:
+
+18255 × 35043
+= 18255 × (35000 + 43)
+
+- 18255 × 35000 = 18255 × 35 × 1000
+  - 18255 × 35 = 18255 × 30 + 18255 × 5 = 547,650 + 91,275 = **638,925**
+  - × 1000 = **638,925,000**
+- 18255 × 43 = 18255 × 40 + 18255 × 3 = 730,200 + 54,765 = **784,965**
+
+**Sum:**
+638,925,000 + 784,965 = **639,709,965**
+
+---
+
+### Step 3: Subtract
+
+2,208,618,625 − 639,709,965
+
+= 2,208,618,625 − 639,709,965
+
+- 2,208,618,625 − 600,000,000 = 1,608,618,625
+- 1,608,618,625 − 39,709,965 = **1,568,908,660**
+
+---
+
+### ✅ Final Answer: **1,568,908,660**
+
+[TOOL submit_answer] {'value': 1568908660}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,568,908,660**.
+

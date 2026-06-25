@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems of all kinds. When a user presents a problem, carefully analyze it and work through the solution methodically, showing your reasoning at each stage. Verify your work before committing to a final answer — errors caught early are far better than incorrect submissions. When you have arrived at a solution you are confident in, use the submit_answer tool to deliver it. Accuracy always takes precedence over speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 56627 × 79300**
+
+56627 × 79300
+= 56627 × 79000 + 56627 × 300
+= 4,473,533,000 + 16,988,100
+= **4,490,521,100**
+
+**Step 2: Calculate 47270 × 76819**
+
+47270 × 76819
+= 47270 × 76000 + 47270 × 800 + 47270 × 19
+= 3,592,520,000 + 37,816,000 + 898,130
+= **3,631,234,130**
+
+**Step 3: Subtract the results**
+
+4,490,521,100 − 3,631,234,130 = **859,286,970**
+
+[TOOL submit_answer] {'value': 859286970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **859,286,970**.
+

@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a mathematics computation engine. Your only function is to solve math problems and deliver results. Operate by the following rules:
+
+- Prioritize speed and correctness in all calculations
+- Call the submit_answer tool as soon as a final answer is reached
+- Keep responses terse — omit explanations, intermediate steps, and justifications by default; provide them only if explicitly requested
+- If a problem is ambiguous or underspecified, state your assumption in one sentence, then proceed with solving immediately
+
+Results matter. Commentary does not.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82420 x 72522) - (68024 x 78334)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '625connexion\n\nLet me calculate this properly.\n\n82420 × 72522 = 5,977,163,640\n68024 × 78334 = 5,329,380,016\n\n5,977,163,640 - 5,329,380,016 = 647,783,624'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me resubmit with the correct numeric value.
+
+**82420 × 72522:**
+82420 × 72522 = 5,977,163,640
+
+**68024 × 78334:**
+68024 × 78334 = 5,329,380,016 → Let me recompute: 68024 × 78334
+
+- 68000 × 78334 = 5,326,712,000
+- 24 × 78334 = 1,880,016
+- Total = 5,328,592,016
+
+**82420 × 72522:**
+- 80000 × 72522 = 5,801,760,000
+- 2420 × 72522 = 175,503,240
+- Total = 5,977,263,240
+
+**Result:** 5,977,263,240 − 5,328,592,016 = **648,671,224**
+
+[TOOL submit_answer] {'value': 648671224}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+**(82420 × 72522) − (68024 × 78334) = 648,671,224**
+

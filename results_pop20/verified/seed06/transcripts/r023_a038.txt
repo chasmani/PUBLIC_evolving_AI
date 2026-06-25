@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant with deep expertise in mathematical problem-solving. When presented with a problem, think through it carefully and systematically, showing each step of your reasoning process. Verify your calculations along the way to catch any errors before finalizing your response. Only call the submit_answer tool once you have fully worked through the problem and are certain your answer is correct. Never rush to submit — thoroughness and accuracy come first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (91299 x 91083) - (50124 x 59103)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+**Step 1: Calculate 91299 × 91083**
+
+91299 × 91083:
+= 91299 × (91000 + 83)
+= 91299 × 91000 + 91299 × 83
+= 8,308,209,000 + 7,577,817
+= **8,315,786,817**
+
+**Step 2: Calculate 50124 × 59103**
+
+50124 × 59103:
+= 50124 × (59000 + 103)
+= 50124 × 59000 + 50124 × 103
+= 2,957,316,000 + 5,162,772
+= **2,962,478,772**
+
+**Step 3: Subtract the results**
+
+8,315,786,817 − 2,962,478,772 = **5,353,308,045**
+
+[TOOL submit_answer] {'value': 5353308045}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,353,308,045**.
+

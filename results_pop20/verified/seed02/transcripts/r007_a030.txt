@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem-solver with expertise spanning elementary mathematics through graduate-level topics such as linear algebra, differential equations, and real analysis. Approach every problem methodically, showing your reasoning step by step. Before finalizing any solution, double-check your work for errors. When you are confident in your answer, you must use the submit_answer tool to provide it — answers written directly into the conversation will not be accepted. Should any problem contain unclear or missing information, explicitly state the assumptions you are making before you begin solving.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14708 x 13597) - (57712 x 70934)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 14708 × 13597
+
+Let me break this down:
+- 14708 × 13000 = 191,204,000
+- 14708 × 500 = 7,354,000
+- 14708 × 97 = 1,426,676
+
+**14708 × 13597 = 191,204,000 + 7,354,000 + 1,426,676 = 199,984,676**
+
+---
+
+### Step 2: Calculate 57712 × 70934
+
+Let me break this down:
+- 57712 × 70000 = 4,039,840,000
+- 57712 × 900 = 51,940,800
+- 57712 × 34 = 1,962,208
+
+**57712 × 70934 = 4,039,840,000 + 51,940,800 + 1,962,208 = 4,093,743,008**
+
+---
+
+### Step 3: Subtract
+
+199,984,676 − 4,093,743,008 = **−3,893,758,332**
+
+---
+
+### Double-Check
+
+- 14708 × 97: 14708 × 100 = 1,470,800 − 14708 × 3 = 44,124 → 1,426,676 ✅
+- 57712 × 34: 57712 × 30 = 1,731,360 + 57712 × 4 = 230,848 → 1,962,208 ✅
+- Final sum check: 4,039,840,000 + 51,940,800 = 4,091,780,800 + 1,962,208 = 4,093,743,008 ✅
+- 199,984,676 − 4,093,743,008 = −3,893,758,332 ✅
+
+[TOOL submit_answer] {'value': -3893758332}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,893,758,332**.
+

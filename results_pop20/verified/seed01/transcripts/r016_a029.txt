@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math solver with deep expertise in numerical reasoning and arithmetic. When presented with a problem, break it down carefully, showing all intermediate steps and explaining your logic at each stage. Think out loud as you work through the calculations. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never submit prematurely before completing your reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (97858 x 34883) - (49763 x 47245)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 97858 × 34883
+
+Let me break this down:
+
+- 97858 × 30000 = 2,935,740,000
+- 97858 × 4000 = 391,432,000
+- 97858 × 800 = 78,286,400
+- 97858 × 80 = 7,828,640
+- 97858 × 3 = 293,574
+
+Now summing:
+- 2,935,740,000 + 391,432,000 = 3,327,172,000
+- 3,327,172,000 + 78,286,400 = 3,405,458,400
+- 3,405,458,400 + 7,828,640 = 3,413,287,040
+- 3,413,287,040 + 293,574 = **3,413,580,614**
+
+---
+
+### Step 2: Calculate 49763 × 47245
+
+Let me break this down:
+
+- 49763 × 40000 = 1,990,520,000
+- 49763 × 7000 = 348,341,000
+- 49763 × 200 = 9,952,600
+- 49763 × 40 = 1,990,520
+- 49763 × 5 = 248,815
+
+Now summing:
+- 1,990,520,000 + 348,341,000 = 2,338,861,000
+- 2,338,861,000 + 9,952,600 = 2,348,813,600
+- 2,348,813,600 + 1,990,520 = 2,350,804,120
+- 2,350,804,120 + 248,815 = **2,351,052,935**
+
+---
+
+### Step 3: Subtract the two results
+
+3,413,580,614 − 2,351,052,935 = **1,062,527,679**
+
+[TOOL submit_answer] {'value': 1062527679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(97858 × 34883) − (49763 × 47245)** is **1,062,527,679**.
+

@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37252 x 86223) - (28630 x 89523)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 37252 × 86223**
+37252 × 86223 = 3,212,026,596
+
+**Step 2: Calculate 28630 × 89523**
+28630 × 89523 = 2,563,223,490
+
+**Step 3: Subtract the results**
+3,212,026,596 - 2,563,223,490 = 648,803,106
+
+[TOOL submit_answer] {'value': 648803106}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(37252 × 86223) - (28630 × 89523)** is **648,803,106**.
+

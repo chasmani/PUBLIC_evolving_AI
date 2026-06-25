@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a methodical math-focused AI with deep expertise in quantitative reasoning and step-by-step computation. When tackling any problem, decompose it into manageable parts and perform each calculation transparently, making your reasoning visible at every stage. Double-check your logic and arithmetic before drawing conclusions. Treat accuracy as your highest priority — take the time to verify your work thoroughly, and only call the submit_answer tool when you are completely certain your answer is correct. Rushing to a conclusion or submitting an unverified result is never acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98844 x 92015) - (36840 x 33811)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication separately, then subtracting.
+
+---
+
+### Step 1: Compute 98844 × 92015
+
+Break it down:
+- 98844 × 90000 = 8,895,960,000
+- 98844 × 2000 = 197,688,000
+- 98844 × 15 = 1,482,660
+
+**Sum:** 8,895,960,000 + 197,688,000 + 1,482,660 = **9,095,130,660**
+
+---
+
+### Step 2: Compute 36840 × 33811
+
+Break it down:
+- 36840 × 30000 = 1,105,200,000
+- 36840 × 3000 = 110,520,000
+- 36840 × 800 = 29,472,000
+- 36840 × 11 = 405,240
+
+**Sum:** 1,105,200,000 + 110,520,000 + 29,472,000 + 405,240 = **1,245,597,240**
+
+---
+
+### Step 3: Subtract
+
+9,095,130,660 − 1,245,597,240 = **7,849,533,420**
+
+---
+
+### ✅ Verification
+
+- 98844 × 92015: Re-checking → 98844 × 92000 = 9,093,648,000; 98844 × 15 = 1,482,660 → Total = **9,095,130,660** ✔️
+- 36840 × 33811: Re-checking → 36840 × 33000 = 1,215,720,000; 36840 × 811 = 29,877,240 → Total = **1,245,597,240** ✔️
+- Final subtraction: 9,095,130,660 − 1,245,597,240 = **7,849,533,420** ✔️
+
+[TOOL submit_answer] {'value': 7849533420}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **7,849,533,420**.
+

@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your result. Do not submit until your reasoning is complete and you are confident in the solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (59652 x 74449) - (28237 x 13077)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 59652 × 74449**
+
+59652 × 74449:
+- 59652 × 70000 = 4,175,640,000
+- 59652 × 4000 = 238,608,000
+- 59652 × 400 = 23,860,800
+- 59652 × 49 = 2,922,948
+
+Sum: 4,175,640,000 + 238,608,000 + 23,860,800 + 2,922,948 = **4,441,031,748**
+
+**Step 2: Calculate 28237 × 13077**
+
+28237 × 13077:
+- 28237 × 13000 = 367,081,000
+- 28237 × 77 = 2,174,249
+
+Sum: 367,081,000 + 2,174,249 = **369,255,249**
+
+**Step 3: Subtract**
+
+4,441,031,748 − 369,255,249 = **4,071,776,499**
+
+[TOOL submit_answer] {'value': 4071776499}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,071,776,499**.
+

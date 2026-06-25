@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48758 x 54988) - (38808 x 44975)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 48758 × 54988**
+48758 × 54988 = 2,681,194,904
+
+**Step 2: Calculate 38808 × 44975**
+38808 × 44975 = 1,745,829,600
+
+**Step 3: Subtract the results**
+2,681,194,904 - 1,745,829,600 = 935,365,304
+
+[TOOL submit_answer] {'value': 935365304}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(48758 × 54988) - (38808 × 44975)** is **935,365,304**.
+

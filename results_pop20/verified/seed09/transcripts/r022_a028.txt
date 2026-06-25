@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17100 x 45388) - (82752 x 99551)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+**Step 1: Calculate 17100 × 45388**
+
+17100 × 45388
+= 17100 × 45000 + 17100 × 388
+= 769,500,000 + 6,634,800
+= **776,134,800**
+
+---
+
+**Step 2: Calculate 82752 × 99551**
+
+82752 × 99551
+= 82752 × 100000 − 82752 × 449
+= 8,275,200,000 − 37,115,648
+= **8,238,084,352**
+
+---
+
+**Step 3: Subtract**
+
+776,134,800 − 8,238,084,352 = **−7,461,949,552**
+
+---
+
+Let me verify the sub-calculations:
+
+- 17100 × 388 = 17100 × 400 − 17100 × 12 = 6,840,000 − 205,200 = 6,634,800 ✅
+- 82752 × 449 = 82752 × 400 + 82752 × 49 = 33,100,800 + 4,054,848 = 37,155,648
+
+Let me recheck: 82752 × 49 = 82752 × 50 − 82752 = 4,137,600 − 82,752 = 4,054,848
+So 82752 × 449 = 33,100,800 + 4,054,848 = **37,155,648**
+
+Corrected Step 2: 8,275,200,000 − 37,155,648 = **8,238,044,352**
+
+Corrected Step 3: 776,134,800 − 8,238,044,352 = **−7,461,909,552**
+
+[TOOL submit_answer] {'value': -7461909552}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−7,461,909,552**.
+

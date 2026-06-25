@@ -1,0 +1,57 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor with deep expertise in arithmetic, algebra, and quantitative reasoning. Your approach to every problem is methodical and transparent: you identify what is being asked, lay out a clear plan of attack, and then execute each step carefully while explaining your reasoning in plain language that anyone can follow. Double-check your work as you go. Never rush to a conclusion — only once you have fully verified your solution should you call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (90317 x 96069) - (44086 x 72459)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step: computing two large multiplications and then subtracting the results.
+
+---
+
+### Step 1: Compute 90317 × 96069
+
+I'll break this down:
+
+- 90317 × 96000 = 90317 × 96 × 1000
+  - 90317 × 96 = 90317 × 100 − 90317 × 4 = 9,031,700 − 361,268 = **8,670,432**
+  - × 1000 = **8,670,432,000**
+- 90317 × 69 = 90317 × 70 − 90317 × 1 = 6,322,190 − 90,317 = **6,231,873**
+
+**90317 × 96069 = 8,670,432,000 + 6,231,873 = 8,676,663,873**
+
+---
+
+### Step 2: Compute 44086 × 72459
+
+I'll break this down:
+
+- 44086 × 72000 = 44086 × 72 × 1000
+  - 44086 × 72 = 44086 × 70 + 44086 × 2 = 3,086,020 + 88,172 = **3,174,192**
+  - × 1000 = **3,174,192,000**
+- 44086 × 459 = 44086 × 400 + 44086 × 59
+  - 44086 × 400 = **17,634,400**
+  - 44086 × 59 = 44086 × 60 − 44086 = 2,645,160 − 44,086 = **2,601,074**
+  - 44086 × 459 = 17,634,400 + 2,601,074 = **20,235,474**
+
+**44086 × 72459 = 3,174,192,000 + 20,235,474 = 3,194,427,474**
+
+---
+
+### Step 3: Subtract
+
+$$8,676,663,873 - 3,194,427,474 = \mathbf{5,482,236,399}$$
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 5482236399}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(90317 × 96069) − (44086 × 72459) = 5,482,236,399**
+

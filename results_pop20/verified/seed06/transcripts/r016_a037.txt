@@ -1,0 +1,57 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87221 x 25674) - (21755 x 75556)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step by step, calculating each multiplication separately before subtracting.
+
+---
+
+**Step 1: Calculate 87221 × 25674**
+
+Break it down:
+- 87221 × 25000 = 2,180,525,000
+- 87221 × 600 = 52,332,600
+- 87221 × 74 = 6,454,354
+
+Sum:
+2,180,525,000 + 52,332,600 = 2,232,857,600
+2,232,857,600 + 6,454,354 = **2,239,311,954**
+
+---
+
+**Step 2: Calculate 21755 × 75556**
+
+Break it down:
+- 21755 × 75000 = 1,631,625,000
+- 21755 × 500 = 10,877,500
+- 21755 × 56 = 1,218,280
+
+Sum:
+1,631,625,000 + 10,877,500 = 1,642,502,500
+1,642,502,500 + 1,218,280 = **1,643,720,780**
+
+---
+
+**Step 3: Subtract**
+
+2,239,311,954 − 1,643,720,780 = **595,591,174**
+
+---
+
+**Verification:**
+- 87221 × 25674: Re-checking 87221 × 74 = 87221 × 70 + 87221 × 4 = 6,105,470 + 348,884 = 6,454,354 ✓
+- 21755 × 56 = 21755 × 50 + 21755 × 6 = 1,087,750 + 130,530 = 1,218,280 ✓
+- Final subtraction: 2,239,311,954 − 1,643,720,780 = 595,591,174 ✓
+
+[TOOL submit_answer] {'value': 595591174}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **595,591,174**.
+

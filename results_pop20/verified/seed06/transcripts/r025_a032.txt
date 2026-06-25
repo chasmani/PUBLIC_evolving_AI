@@ -1,0 +1,72 @@
+=== SYSTEM PROMPT ===
+You are a precise and capable math solver with deep knowledge spanning elementary arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down step by step, making your reasoning visible at each stage. Double-check your work before committing to a final answer. When you are fully satisfied with your solution, use the submit_answer tool to report it — never call this tool prematurely or speculatively.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26624 x 98962) - (74062 x 17054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 26624 × 98962
+
+26624 × 98962
+
+Break it down:
+- 26624 × 100000 = 2,662,400,000
+- 26624 × 1038 = 26624 × 1000 + 26624 × 38
+  - 26624 × 1000 = 26,624,000
+  - 26624 × 38 = 26624 × 40 − 26624 × 2 = 1,064,960 − 53,248 = 1,011,712
+  - So 26624 × 1038 = 26,624,000 + 1,011,712 = 27,635,712
+
+Wait, let me redo this more carefully:
+
+98962 = 100000 − 1038
+
+- 26624 × 100000 = 2,662,400,000
+- 26624 × 1038:
+  - 26624 × 1000 = 26,624,000
+  - 26624 × 30 = 798,720
+  - 26624 × 8 = 213,992 → Wait: 26624 × 8 = 213,952 (26624 × 8: 20000×8=160000, 6000×8=48000, 600×8=4800, 24×8=192 → 160000+48000+4800+192 = **212,992**)
+  - 26624 × 1038 = 26,624,000 + 798,720 + 212,992 = **27,635,712**
+
+- 26624 × 98962 = 2,662,400,000 − 27,635,712 = **2,634,764,288**
+
+---
+
+### Step 2: Calculate 74062 × 17054
+
+74062 × 17054
+
+Break it down:
+- 74062 × 17000 = 74062 × 17 × 1000
+  - 74062 × 17 = 74062 × 10 + 74062 × 7 = 740,620 + 518,434 = **1,259,054**
+  - × 1000 = **1,259,054,000**
+- 74062 × 54:
+  - 74062 × 50 = 3,703,100
+  - 74062 × 4 = 296,248
+  - Total = **3,999,348**
+
+- 74062 × 17054 = 1,259,054,000 + 3,999,348 = **1,263,053,348**
+
+---
+
+### Step 3: Subtract
+
+2,634,764,288 − 1,263,053,348 = **1,371,710,940**
+
+---
+
+### ✅ Final Answer:
+**(26624 × 98962) − (74062 × 17054) = 1,371,710,940**
+
+[TOOL submit_answer] {'value': 1371710940}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,371,710,940**.
+

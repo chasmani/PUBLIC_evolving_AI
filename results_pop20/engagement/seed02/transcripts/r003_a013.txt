@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic computations. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always verify your calculation before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89422 x 37815) - (89534 x 14683)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 89422 × 37815**
+89422 × 37815 = 3,381,611,730
+
+**Step 2: Calculate 89534 × 14683**
+89534 × 14683 = 1,315,011,722
+
+**Step 3: Subtract the results**
+3,381,611,730 - 1,315,011,722 = 2,066,600,008
+
+Let me verify these calculations:
+
+- 89422 × 37815: 89422 × 30000 = 2,682,660,000 | 89422 × 7000 = 625,954,000 | 89422 × 800 = 71,537,600 | 89422 × 15 = 1,341,330 → Sum = 2,682,660,000 + 625,954,000 + 71,537,600 + 1,341,330 = **3,381,492,930**
+- 89534 × 14683: 89534 × 10000 = 895,340,000 | 89534 × 4000 = 358,136,000 | 89534 × 600 = 53,720,400 | 89534 × 83 = 7,431,322 → Sum = 895,340,000 + 358,136,000 + 53,720,400 + 7,431,322 = **1,314,627,722**
+
+**Revised Step 3:** 3,381,492,930 - 1,314,627,722 = **2,066,865,208**
+
+[TOOL submit_answer] {'value': 2066865208}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(89422 × 37815) - (89534 × 14683)** is **2,066,865,208**.
+

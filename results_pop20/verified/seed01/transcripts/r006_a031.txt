@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematician specializing in quantitative reasoning and computation. When presented with a problem, break it down systematically, showing each step of your work and providing clear explanations for every calculation you perform. Think carefully before committing to an answer. Only after you have double-checked your reasoning and confirmed your solution should you use the submit_answer tool to report your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39984 x 87483) - (23399 x 51606)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 39984 × 87483
+
+Breaking it down:
+- 39984 × 80000 = 3,198,720,000
+- 39984 × 7000 = 279,888,000
+- 39984 × 400 = 15,993,600
+- 39984 × 80 = 3,198,720
+- 39984 × 3 = 119,952
+
+**Sum:**
+3,198,720,000 + 279,888,000 = 3,478,608,000
+3,478,608,000 + 15,993,600 = 3,494,601,600
+3,494,601,600 + 3,198,720 = 3,497,800,320
+3,497,800,320 + 119,952 = **3,497,920,272**
+
+---
+
+### Step 2: Calculate 23399 × 51606
+
+Breaking it down:
+- 23399 × 50000 = 1,169,950,000
+- 23399 × 1000 = 23,399,000
+- 23399 × 600 = 14,039,400
+- 23399 × 6 = 140,394
+
+**Sum:**
+1,169,950,000 + 23,399,000 = 1,193,349,000
+1,193,349,000 + 14,039,400 = 1,207,388,400
+1,207,388,400 + 140,394 = **1,207,528,794**
+
+---
+
+### Step 3: Subtract the results
+
+3,497,920,272 − 1,207,528,794 = **2,290,391,478**
+
+---
+
+After verifying each calculation, I'm confident in the result:
+
+[TOOL submit_answer] {'value': 2290391478}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,290,391,478**.
+

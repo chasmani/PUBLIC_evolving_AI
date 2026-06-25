@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic queries. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer through this tool rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38390 x 65327) - (13806 x 79157)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (38390 x 65327) - (13806 x 79157).
+
+Let me compute both multiplications first, then subtract.
+
+**Step 1: 38390 x 65327**
+38390 x 65327 = 2,507,903,530
+
+**Step 2: 13806 x 79157**
+13806 x 79157 = 1,092,622,542
+
+**Step 3: Subtract**
+2,507,903,530 - 1,092,622,542 = 1,415,280,988
+
+[TOOL submit_answer] {'value': 1415280988}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(38390 x 65327) - (13806 x 79157)** is **1,415,280,988**.
+
+Here's the breakdown:
+- 38,390 × 65,327 = **2,507,903,530**
+- 13,806 × 79,157 = **1,092,622,542**
+- 2,507,903,530 − 1,092,622,542 = **1,415,280,988**
+

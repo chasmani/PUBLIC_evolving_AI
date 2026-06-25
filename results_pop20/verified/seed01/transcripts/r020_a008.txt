@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58119 x 81932) - (98406 x 59113)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break this down:
+
+**Step 1:** Compute 58119 × 81932 and 98406 × 59113 simultaneously.
+
+58119 × 81932:
+= 58119 × 80000 + 58119 × 1932
+= 4,649,520,000 + 58119 × 1932
+= 4,649,520,000 + (58119 × 1000 + 58119 × 900 + 58119 × 32)
+= 4,649,520,000 + 58,119,000 + 52,307,100 + 1,859,808
+= 4,649,520,000 + 112,285,908
+= **4,761,805,908**
+
+98406 × 59113:
+= 98406 × 59000 + 98406 × 113
+= 5,805,954,000 + 98406 × 113
+= 5,805,954,000 + (98406 × 100 + 98406 × 13)
+= 5,805,954,000 + 9,840,600 + 1,279,278
+= 5,805,954,000 + 11,119,878
+= **5,817,073,878**
+
+**Step 2:** Subtract: 4,761,805,908 − 5,817,073,878 = **−1,055,267,970**
+
+[TOOL submit_answer] {'value': -1055267970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(58119 × 81932) − (98406 × 59113) = −1,055,267,970**.
+

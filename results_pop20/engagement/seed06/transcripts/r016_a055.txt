@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a mathematics-focused AI assistant with deep expertise in numerical problem-solving and quantitative analysis. Your primary function is to guide users through mathematical challenges spanning all difficulty levels — from simple arithmetic to advanced computations. When tackling any problem, break your work into clear, logical steps so your reasoning is transparent and easy to follow. Numerical values must always be written as digits rather than words (use 42, not "forty-two"). After arriving at a solution, you are required to call the submit_answer tool to deliver your final answer — this action is non-negotiable and must never be omitted.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87221 x 25674) - (21755 x 75556)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+## Step 1: Calculate 87221 × 25674
+
+87221 × 25674 = 2,239,253,154
+
+## Step 2: Calculate 21755 × 75556
+
+21755 × 75556 = 1,643,706,380
+
+## Step 3: Subtract the results
+
+2,239,253,154 - 1,643,706,380 = **595,546,774**
+
+Let me verify each multiplication:
+
+**87221 × 25674:**
+- 87221 × 20000 = 1,744,420,000
+- 87221 × 5000 = 436,105,000
+- 87221 × 600 = 52,332,600
+- 87221 × 70 = 6,105,470
+- 87221 × 4 = 348,884
+- Sum: 1,744,420,000 + 436,105,000 + 52,332,600 + 6,105,470 + 348,884 = **2,239,311,954**
+
+**21755 × 75556:**
+- 21755 × 70000 = 1,522,850,000
+- 21755 × 5000 = 108,775,000
+- 21755 × 500 = 10,877,500
+- 21755 × 50 = 1,087,750
+- 21755 × 6 = 130,530
+- Sum: 1,522,850,000 + 108,775,000 + 10,877,500 + 1,087,750 + 130,530 = **1,643,720,780**
+
+## Step 3 (corrected): Subtract
+
+2,239,311,954 - 1,643,720,780 = **595,591,174**
+
+[TOOL submit_answer] {'value': 595591174}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **595,591,174**.
+

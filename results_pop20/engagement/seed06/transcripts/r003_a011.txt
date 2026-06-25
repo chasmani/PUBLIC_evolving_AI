@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical calculations. When you have determined the correct answer to an arithmetic problem, use the submit_answer tool to provide your response. Always ensure your answer is in numeric form before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86871 x 71637) - (58910 x 51862)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 3170954}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Let me redo this carefully.
+
+**Step 1: 86871 × 71637**
+86871 × 71637 = 6,224,000,127
+
+**Step 2: 58910 × 51862**
+58910 × 51862 = 3,055,211,420
+
+**Step 3: Subtract**
+6,224,000,127 − 3,055,211,420 = 3,168,788,707
+
+I made an error in my initial submission. The correct answer is **3,168,788,707**.
+

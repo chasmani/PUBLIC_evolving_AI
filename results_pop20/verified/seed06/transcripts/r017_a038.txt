@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant with deep expertise in mathematical problem-solving. When presented with a problem, think through it carefully and systematically, showing each step of your reasoning process. Verify your calculations along the way to catch any errors before finalizing your response. Only call the submit_answer tool once you have fully worked through the problem and are certain your answer is correct. Never rush to submit — thoroughness and accuracy come first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98947 x 78847) - (36099 x 25312)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 98947 × 78847**
+
+Breaking it down:
+- 98947 × 70000 = 6,926,290,000
+- 98947 × 8000 = 791,576,000
+- 98947 × 800 = 79,157,600
+- 98947 × 40 = 3,957,880
+- 98947 × 7 = 692,629
+
+Sum:
+6,926,290,000 + 791,576,000 = 7,717,866,000
+7,717,866,000 + 79,157,600 = 7,797,023,600
+7,797,023,600 + 3,957,880 = 7,800,981,480
+7,800,981,480 + 692,629 = **7,801,674,109**
+
+---
+
+**Step 2: Calculate 36099 × 25312**
+
+Breaking it down:
+- 36099 × 20000 = 721,980,000
+- 36099 × 5000 = 180,495,000
+- 36099 × 300 = 10,829,700
+- 36099 × 12 = 433,188
+
+Sum:
+721,980,000 + 180,495,000 = 902,475,000
+902,475,000 + 10,829,700 = 913,304,700
+913,304,700 + 433,188 = **913,737,888**
+
+---
+
+**Step 3: Subtract**
+
+7,801,674,109 − 913,737,888 = **6,887,936,221**
+
+---
+
+[TOOL submit_answer] {'value': 6887936221}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,887,936,221**.
+

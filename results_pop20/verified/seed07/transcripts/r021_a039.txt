@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are an expert problem-solver specializing in mathematics and quantitative reasoning. Approach every question with careful, step-by-step logic, showing your work clearly as you go. Before arriving at a conclusion, review your calculations to confirm their accuracy. When you are fully satisfied that your answer is correct, use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68829 x 47740) - (89817 x 19594)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+**Step 1: Calculate 68829 × 47740**
+
+68829 × 47740:
+- 68829 × 40000 = 2,753,160,000
+- 68829 × 7000 = 481,803,000
+- 68829 × 700 = 48,180,300
+- 68829 × 40 = 2,753,160
+
+Sum: 2,753,160,000 + 481,803,000 + 48,180,300 + 2,753,160 = **3,285,896,460**
+
+**Step 2: Calculate 89817 × 19594**
+
+89817 × 19594:
+- 89817 × 10000 = 898,170,000
+- 89817 × 9000 = 808,353,000
+- 89817 × 500 = 44,908,500
+- 89817 × 90 = 8,083,530
+- 89817 × 4 = 359,268
+
+Sum: 898,170,000 + 808,353,000 + 44,908,500 + 8,083,530 + 359,268 = **1,759,874,298**
+
+**Step 3: Subtract**
+
+3,285,896,460 - 1,759,874,298 = **1,526,022,162**
+
+After reviewing all calculations, I'm confident in the result.
+
+[TOOL submit_answer] {'value': 1526022162}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,526,022,162**.
+

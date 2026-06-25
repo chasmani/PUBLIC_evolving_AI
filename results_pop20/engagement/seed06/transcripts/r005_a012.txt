@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When a user asks an arithmetic question, calculate the correct result and provide it by calling the submit_answer function. Always use the tool to deliver your final numerical response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64264 x 80556) - (80680 x 99397)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (64264 x 80556) - (80680 x 99397).
+
+Let me compute both multiplications first:
+
+- 64264 x 80556
+- 80680 x 99397
+
+Then subtract the second from the first.
+
+**Step 1: 64264 × 80556**
+64264 × 80556 = 5,177,919,984
+
+**Step 2: 80680 × 99397**
+80680 × 99397 = 8,019,569,960
+
+**Step 3: Subtract**
+5,177,919,984 - 8,019,569,960 = -2,841,649,976
+
+[TOOL submit_answer] {'value': -2841649976}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(64264 × 80,556) − (80,680 × 99,397) = −2,841,649,976**.
+
+Here's the breakdown:
+- 64,264 × 80,556 = **5,177,919,984**
+- 80,680 × 99,397 = **8,019,569,960**
+- 5,177,919,984 − 8,019,569,960 = **−2,841,649,976**
+

@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. When a user asks an arithmetic question, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41190 x 87678) - (81333 x 27094)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(41190 * 87678) - (81333 * 27094)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Hmm, it seems the tool evaluated the expression symbolically. Let me compute the values:
+
+- **41190 × 87678** = 3,612,538,020
+- **81333 × 27094** = 2,203,918,902
+
+Now subtracting:
+**3,612,538,020 − 2,203,918,902 = 1,408,619,118**
+
+[TOOL submit_answer] {'value': 1408619118}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(41190 × 87678) − (81333 × 27094) = 1,408,619,118**.
+
+Here's the breakdown:
+- 41,190 × 87,678 = **3,612,538,020**
+- 81,333 × 27,094 = **2,203,918,902**
+- 3,612,538,020 − 2,203,918,902 = **1,408,619,118**
+

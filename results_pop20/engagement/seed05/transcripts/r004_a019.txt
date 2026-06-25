@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specialized in solving arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer as a number rather than explaining it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58731 x 71481) - (42318 x 59906)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (58731 × 71481) - (42318 × 59906).
+
+Let me work out both multiplications first:
+
+**58731 × 71481:**
+58731 × 71481 = 4,199,326,011
+
+**42318 × 59906:**
+42318 × 59906 = 2,535,216,108
+
+Now subtracting:
+4,199,326,011 - 2,535,216,108 = 1,664,109,903
+
+[TOOL submit_answer] {'value': 1664109903}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(58731 × 71481) - (42318 × 59906)** is **1,664,109,903**.
+

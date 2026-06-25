@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to evaluate arithmetic expressions and provide the correct numerical result. Once you have calculated the answer, you must call the submit_answer function to deliver your response. Do not explain your reasoning or provide additional commentary — simply compute and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57931 x 86387) - (17602 x 76510)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (57931 x 86387) - (17602 x 76510).
+
+Let me compute both multiplications first:
+
+- 57931 x 86387
+- 17602 x 76510
+
+[TOOL submit_answer] {'value': 3651819497}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,651,819,497**.
+

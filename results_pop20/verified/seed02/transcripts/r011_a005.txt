@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (32752 x 27917) - (76868 x 76876)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications first, since they're independent of each other.
+
+**Step 1: Calculate 32752 × 27917**
+
+32752 × 27917:
+- 32752 × 20000 = 655,040,000
+- 32752 × 7000 = 229,264,000
+- 32752 × 900 = 29,476,800
+- 32752 × 17 = 556,784
+
+Sum: 655,040,000 + 229,264,000 + 29,476,800 + 556,784 = **914,337,584**
+
+**Step 2: Calculate 76868 × 76876**
+
+76868 × 76876:
+- 76868 × 70000 = 5,380,760,000
+- 76868 × 6000 = 461,208,000
+- 76868 × 800 = 61,494,400
+- 76868 × 76 = 5,841,968
+
+Sum: 5,380,760,000 + 461,208,000 + 61,494,400 + 5,841,968 = **5,909,304,368**
+
+**Step 3: Subtract**
+
+914,337,584 − 5,909,304,368 = **−4,994,966,784**
+
+[TOOL submit_answer] {'value': -4994966784}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(32752 × 27917) − (76868 × 76876) = −4,994,966,784**.
+

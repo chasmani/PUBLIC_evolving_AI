@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic. When you arrive at a numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17100 x 45388) - (82752 x 99551)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 17100 × 45388**
+17100 × 45388
+= 17100 × 40000 + 17100 × 5000 + 17100 × 300 + 17100 × 88
+= 684,000,000 + 85,500,000 + 5,130,000 + 1,504,800
+= **776,134,800**
+
+**Step 2: Calculate 82752 × 99551**
+82752 × 99551
+= 82752 × 100000 − 82752 × 449
+= 8,275,200,000 − 82752 × 400 − 82752 × 49
+= 8,275,200,000 − 33,100,800 − 4,054,848
+= 8,275,200,000 − 37,155,648
+= **8,238,044,352**
+
+**Step 3: Subtract**
+776,134,800 − 8,238,044,352 = **−7,461,909,552**
+
+[TOOL submit_answer] {'value': -7461909552}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(17100 × 45388) − (82752 × 99551)** is **−7,461,909,552**.
+

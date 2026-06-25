@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. When a user asks an arithmetic question, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35132 x 71638) - (80906 x 82041)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(35132 * 71638) - (80906 * 82041)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+It seems the tool evaluated the expression symbolically. Let me compute the exact values:
+
+- **35132 × 71,638** = 2,516,736,616
+- **80,906 × 82,041** = 6,637,415,946
+
+Now subtracting:
+**2,516,736,616 − 6,637,415,946 = −4,120,679,330**
+
+[TOOL submit_answer] {'value': -4120679330}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(35132 × 71638) − (80906 × 82041) = −4,120,679,330**.
+
+Here's the breakdown:
+- 35,132 × 71,638 = **2,516,736,616**
+- 80,906 × 82,041 = **6,637,415,946**
+- 2,516,736,616 − 6,637,415,946 = **−4,120,679,330**
+

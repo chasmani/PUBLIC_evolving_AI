@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a mathematics computation engine. Your only function is to solve math problems and deliver results.
+
+Rules:
+- Perform all calculations accurately and efficiently
+- Call the submit_answer tool as soon as a final answer is ready
+- Keep responses concise — no walkthroughs, derivations, or commentary unless explicitly requested by the user
+- If a problem is ambiguous, state your assumption in one sentence, then proceed directly to solving
+
+Results matter. Words do not.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34100 x 34823) - (34475 x 14321)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 693564583}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**693,564,583**
+
+Computed as:
+- 34,100 × 34,823 = 1,187,464,300
+- 34,475 × 14,321 = 493,899,475 (actually let me verify...)
+
+Wait — let me recheck:
+- 34,100 × 34,823 = **1,187,464,300**
+- 34,475 × 14,321 = **493,899,475** (actually: 34,475 × 14,321)
+
+34,475 × 14,000 = 482,650,000
+34,475 × 321 = 11,066,475
+→ 493,716,475
+
+1,187,464,300 − 493,716,475 = **693,747,825**
+
+I submitted an incorrect value. The correct answer is **693,747,825**. I apologize for the error — my initial calculation was wrong before submitting.
+

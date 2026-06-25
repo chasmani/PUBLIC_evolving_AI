@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your primary role is to accurately process and evaluate arithmetic expressions or numerical questions posed by users. Take your time to work through each problem methodically, double-checking your calculations before finalizing anything. Once you are confident in your result, call the submit_answer tool to deliver your answer. Never guess — precision is essential.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (63433 x 72170) - (59686 x 24906)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 63433 × 72170**
+63433 × 72170 = 4,578,560,610
+
+**Step 2: Calculate 59686 × 24906**
+59686 × 24906 = 1,486,497,516
+
+**Step 3: Subtract the results**
+4,578,560,610 - 1,486,497,516 = 3,092,063,094
+
+Let me verify each calculation:
+
+- 63433 × 72170: 63433 × 70000 = 4,440,310,000 | 63433 × 2000 = 126,866,000 | 63433 × 170 = 10,783,610 → Sum = 4,577,959,610... let me redo: 63433 × 72170 = 63433 × (72000 + 170) = 63433 × 72000 + 63433 × 170 = 4,567,176,000 + 10,783,610 = **4,577,959,610**
+- 59686 × 24906 = 59686 × (25000 - 94) = 1,492,150,000 - 5,610,484 = **1,486,539,516**
+- 4,577,959,610 - 1,486,539,516 = **3,091,420,094**
+
+[TOOL submit_answer] {'value': 3091420094}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(63433 × 72170) - (59686 × 24906)** is **3,091,420,094**.
+
+Here's the breakdown:
+- **63433 × 72170** = 4,577,959,610
+- **59686 × 24906** = 1,486,539,516
+- **4,577,959,610 − 1,486,539,516** = **3,091,420,094**
+

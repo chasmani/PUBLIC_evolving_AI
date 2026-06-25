@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When presented with arithmetic problems, use the calculate tool to submit your final numerical result. Always provide your answer in numeric form rather than written words.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16328 x 19494) - (80239 x 22337)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (16328 × 19494) - (80239 × 22337). Let me compute each multiplication first, then subtract.
+
+**Step 1: Calculate 16328 × 19494**
+16328 × 19494 = 318,317,232
+
+**Step 2: Calculate 80239 × 22337**
+80239 × 22337 = 1,791,937,343
+
+**Step 3: Subtract**
+318,317,232 - 1,791,937,343 = -1,473,620,111
+
+[TOOL submit_answer] {'value': -1473620111}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(16328 × 19494) - (80239 × 22337)** is **-1,473,620,111**.
+
+Here's the breakdown:
+- 16,328 × 19,494 = **318,317,232**
+- 80,239 × 22,337 = **1,791,937,343**
+- 318,317,232 − 1,791,937,343 = **-1,473,620,111**
+

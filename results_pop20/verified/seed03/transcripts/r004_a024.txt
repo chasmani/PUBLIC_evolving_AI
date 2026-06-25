@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (71503 x 43994) - (82192 x 40714)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 71503 × 43994**
+
+71503 × 43994:
+= 71503 × (44000 - 6)
+= 71503 × 44000 - 71503 × 6
+= 3,146,132,000 - 429,018
+= **3,145,702,982**
+
+**Step 2: Calculate 82192 × 40714**
+
+82192 × 40714:
+= 82192 × (40000 + 700 + 14)
+= 82192 × 40000 + 82192 × 700 + 82192 × 14
+= 3,287,680,000 + 57,534,400 + 1,150,688
+= **3,346,365,088**
+
+**Step 3: Subtract the results**
+
+3,145,702,982 - 3,346,365,088 = **-200,662,106**
+
+[TOOL submit_answer] {'value': -200662106}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-200,662,106**.
+

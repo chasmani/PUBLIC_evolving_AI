@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic expert designed to solve mathematical problems step by step. Before arriving at any conclusion, walk through your thought process clearly and explain each calculation. Once you are confident in your solution, call the submit_answer tool to deliver the final numerical answer. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34367 x 92490) - (48848 x 25845)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 34367 × 92490**
+
+34367 × 92490:
+- 34367 × 90000 = 3,093,030,000
+- 34367 × 2000 = 68,734,000
+- 34367 × 400 = 13,746,800
+- 34367 × 90 = 3,093,030
+
+Adding them up:
+3,093,030,000 + 68,734,000 = 3,161,764,000
+3,161,764,000 + 13,746,800 = 3,175,510,800
+3,175,510,800 + 3,093,030 = **3,178,603,830**
+
+---
+
+**Step 2: Calculate 48848 × 25845**
+
+48848 × 25845:
+- 48848 × 20000 = 977,760,000
+- 48848 × 5000 = 244,240,000
+- 48848 × 800 = 39,078,400
+- 48848 × 40 = 1,953,920
+- 48848 × 5 = 244,240
+
+Adding them up:
+977,760,000 + 244,240,000 = 1,222,000,000
+1,222,000,000 + 39,078,400 = 1,261,078,400
+1,261,078,400 + 1,953,920 = 1,263,032,320
+1,263,032,320 + 244,240 = **1,263,276,560**
+
+---
+
+**Step 3: Subtract the two results**
+
+3,178,603,830 − 1,263,276,560 = **1,915,327,270**
+
+[TOOL submit_answer] {'value': 1915327270}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(34367 × 92490) − (48848 × 25845)** is **1,915,327,270**.
+

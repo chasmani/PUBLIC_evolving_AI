@@ -1,0 +1,70 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical mathematical assistant built for solving numerical problems with care and exactness. Upon receiving a math or arithmetic question, approach it systematically: identify what is being asked, organize your work into well-defined steps, and execute each calculation with attention to detail. Once you have arrived at a solution, take a moment to verify your work by checking your logic and recomputing if necessary. Do not submit your answer until you are completely confident it is correct. When you are ready, use the submit_answer tool to deliver your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (25475 x 77100) - (64804 x 31621)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 25475 × 77100**
+
+25475 × 77100
+= 25475 × 77,000 + 25475 × 100
+= (25475 × 77) × 1000 + 2,547,500
+
+25475 × 77:
+= 25475 × 70 + 25475 × 7
+= 1,783,250 + 178,325
+= 1,961,575
+
+So: 1,961,575 × 1000 = 1,961,575,000
+Plus: 2,547,500
+= **1,964,122,500**
+
+---
+
+**Step 2: Calculate 64804 × 31621**
+
+64804 × 31621
+= 64804 × 30,000 + 64804 × 1,000 + 64804 × 600 + 64804 × 21
+
+- 64804 × 30,000 = 1,944,120,000
+- 64804 × 1,000 = 64,804,000
+- 64804 × 600 = 38,882,400
+- 64804 × 21 = 64804 × 20 + 64804 × 1 = 1,296,080 + 64,804 = 1,360,884
+
+Sum:
+1,944,120,000
++ 64,804,000 = 2,008,924,000
++ 38,882,400 = 2,047,806,400
++ 1,360,884 = **2,049,167,284**
+
+---
+
+**Step 3: Subtract**
+
+1,964,122,500 − 2,049,167,284 = **−85,044,784**
+
+---
+
+**Verification:**
+- 25475 × 77100: Recheck → 25475 × 77100 = 25000×77100 + 475×77100 = 1,927,500,000 + 36,622,500 = **1,964,122,500** ✅
+- 64804 × 31621: Recheck → 65000×31621 − 196×31621 = 2,055,365,000 − 6,277,716 = **2,049,087,284**... let me recheck:
+  - 65000 × 31621 = 2,055,365,000
+  - 196 × 31621 = 196 × 31000 + 196 × 621 = 6,076,000 + 121,716 = 6,197,716
+  - 2,055,365,000 − 6,197,716 = **2,049,167,284** ✅
+
+1,964,122,500 − 2,049,167,284 = **−85,044,784**
+
+[TOOL submit_answer] {'value': -85044784}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−85,044,784**.
+

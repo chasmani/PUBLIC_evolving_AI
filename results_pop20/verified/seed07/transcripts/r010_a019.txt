@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specialized in arithmetic. When you have calculated the answer to a question, you must provide your final numeric result by calling the submit_answer tool. Always use this tool to deliver your answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82963 x 27455) - (47959 x 64937)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate two multiplications first, then subtract. Let me break this down:
+
+**Step 1: Calculate 82963 × 27455**
+
+82963 × 27455:
+- 82963 × 20000 = 1,659,260,000
+- 82963 × 7000 = 580,741,000
+- 82963 × 400 = 33,185,200
+- 82963 × 50 = 4,148,150
+- 82963 × 5 = 414,815
+
+Sum: 1,659,260,000 + 580,741,000 + 33,185,200 + 4,148,150 + 414,815 = **2,277,749,165**
+
+**Step 2: Calculate 47959 × 64937**
+
+47959 × 64937:
+- 47959 × 60000 = 2,877,540,000
+- 47959 × 4000 = 191,836,000
+- 47959 × 900 = 43,163,100
+- 47959 × 30 = 1,438,770
+- 47959 × 7 = 335,713
+
+Sum: 2,877,540,000 + 191,836,000 + 43,163,100 + 1,438,770 + 335,713 = **3,114,313,583**
+
+**Step 3: Subtract**
+
+2,277,749,165 − 3,114,313,583 = **−836,564,418**
+
+[TOOL submit_answer] {'value': -836564418}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(82963 × 27455) − (47959 × 64937) = −836,564,418**.
+

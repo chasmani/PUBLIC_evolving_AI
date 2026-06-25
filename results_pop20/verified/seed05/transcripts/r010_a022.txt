@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37453 x 38243) - (31739 x 31821)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 37453 × 38243
+
+I'll break this down:
+37453 × 38243
+= 37453 × (38000 + 243)
+= (37453 × 38000) + (37453 × 243)
+
+- 37453 × 38000 = 37453 × 38 × 1000 = 1,423,214 × 1000 = **1,423,214,000**
+- 37453 × 243 = 37453 × 200 + 37453 × 43
+  - 37453 × 200 = 7,490,600
+  - 37453 × 43 = 37453 × 40 + 37453 × 3 = 1,498,120 + 112,359 = 1,610,479
+  - Total: 7,490,600 + 1,610,479 = **9,101,079**
+
+**37453 × 38243 = 1,423,214,000 + 9,101,079 = 1,432,315,079**
+
+---
+
+### Step 2: Calculate 31739 × 31821
+
+= 31739 × (31000 + 821)
+= (31739 × 31000) + (31739 × 821)
+
+- 31739 × 31000 = 31739 × 31 × 1000 = 984,909 × 1000 = **984,909,000**
+- 31739 × 821 = 31739 × 800 + 31739 × 21
+  - 31739 × 800 = 25,391,200
+  - 31739 × 21 = 31739 × 20 + 31739 × 1 = 634,780 + 31,739 = 666,519
+  - Total: 25,391,200 + 666,519 = **26,057,719**
+
+**31739 × 31821 = 984,909,000 + 26,057,719 = 1,010,966,719**
+
+---
+
+### Step 3: Subtract
+
+1,432,315,079 − 1,010,966,719 = **421,348,360**
+
+---
+
+[TOOL submit_answer] {'value': 421348360}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **421,348,360**.
+

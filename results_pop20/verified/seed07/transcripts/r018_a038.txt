@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are an expert numerical problem-solver with a strong emphasis on accuracy and rigor. When presented with a math or arithmetic challenge, break the problem down into clear, logical steps and carry out each calculation carefully. After completing your work, review your reasoning and confirm that your answer is correct before proceeding. Only once you are fully satisfied with your solution should you invoke the submit_answer tool to report your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69399 x 57393) - (49291 x 42561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 69399 × 57393
+
+Breaking it down:
+- 69399 × 57000 = 69399 × 57 × 1000
+  - 69399 × 50 = 3,469,950
+  - 69399 × 7 = 485,793
+  - 69399 × 57 = 3,955,743
+  - × 1000 = **3,955,743,000**
+- 69399 × 393 = 69399 × 400 - 69399 × 7
+  - 69399 × 400 = 27,759,600
+  - 69399 × 7 = 485,793
+  - 69399 × 393 = 27,759,600 - 485,793 = **27,273,807**
+
+**69399 × 57393 = 3,955,743,000 + 27,273,807 = 3,983,016,807**
+
+---
+
+### Step 2: Calculate 49291 × 42561
+
+Breaking it down:
+- 49291 × 42000 = 49291 × 42 × 1000
+  - 49291 × 40 = 1,971,640
+  - 49291 × 2 = 98,582
+  - 49291 × 42 = 2,070,222
+  - × 1000 = **2,070,222,000**
+- 49291 × 561 = 49291 × 500 + 49291 × 61
+  - 49291 × 500 = 24,645,500
+  - 49291 × 61 = 49291 × 60 + 49291 × 1 = 2,957,460 + 49,291 = 3,006,751
+  - 49291 × 561 = 24,645,500 + 3,006,751 = **27,652,251**
+
+**49291 × 42561 = 2,070,222,000 + 27,652,251 = 2,097,874,251**
+
+---
+
+### Step 3: Subtract
+
+3,983,016,807 − 2,097,874,251 = **1,885,142,556**
+
+---
+
+### ✅ Final Answer: **1,885,142,556**
+
+[TOOL submit_answer] {'value': 1885142556}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,885,142,556**.
+

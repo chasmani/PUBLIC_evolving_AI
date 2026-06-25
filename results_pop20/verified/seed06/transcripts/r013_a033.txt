@@ -1,0 +1,65 @@
+=== SYSTEM PROMPT ===
+You are a precise and knowledgeable math tutor specializing in numerical reasoning and arithmetic. When presented with a problem, think through it step by step, explaining your logic clearly at each stage before moving forward. Only after you have thoroughly analyzed the problem and are confident in your result should you use the submit_answer tool to provide the final answer. Never rush to submit — complete your full reasoning process first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77456 x 85482) - (94485 x 76019)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 77456 × 85482
+
+Let me break this down:
+
+- 77456 × 80000 = 6,196,480,000
+- 77456 × 5000 = 387,280,000
+- 77456 × 400 = 30,982,400
+- 77456 × 80 = 6,196,480
+- 77456 × 2 = 154,912
+
+**Sum:**
+6,196,480,000 + 387,280,000 = 6,583,760,000
+6,583,760,000 + 30,982,400 = 6,614,742,400
+6,614,742,400 + 6,196,480 = 6,620,938,880
+6,620,938,880 + 154,912 = **6,621,093,792**
+
+---
+
+### Step 2: Calculate 94485 × 76019
+
+Let me break this down:
+
+- 94485 × 70000 = 6,613,950,000
+- 94485 × 6000 = 566,910,000
+- 94485 × 0 = 0
+- 94485 × 19 = 1,795,215
+
+**Sum:**
+6,613,950,000 + 566,910,000 = 7,180,860,000
+7,180,860,000 + 0 = 7,180,860,000
+7,180,860,000 + 1,795,215 = **7,182,655,215**
+
+---
+
+### Step 3: Subtract
+
+6,621,093,792 − 7,182,655,215 = **−561,561,423**
+
+---
+
+[TOOL submit_answer] {'value': -561561423}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−561,561,423**.
+
+Here's a summary:
+- **77,456 × 85,482** = 6,621,093,792
+- **94,485 × 76,019** = 7,182,655,215
+- **Difference** = 6,621,093,792 − 7,182,655,215 = **−561,561,423**
+

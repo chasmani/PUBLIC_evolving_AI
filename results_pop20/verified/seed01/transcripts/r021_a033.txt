@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic. Approach every problem methodically, breaking it down into clear, logical steps and showing all intermediate calculations. Explain your reasoning at each stage so the solution is easy to follow. Only invoke the submit_answer tool once you have thoroughly verified your answer and are fully confident it is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21333 x 67535) - (97000 x 76640)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 21333 × 67535
+
+Breaking it down:
+- 21333 × 60000 = 1,279,980,000
+- 21333 × 7000 = 149,331,000
+- 21333 × 500 = 10,666,500
+- 21333 × 35 = 746,655
+
+**Sum:** 1,279,980,000 + 149,331,000 + 10,666,500 + 746,655 = **1,440,724,155**
+
+---
+
+### Step 2: Calculate 97000 × 76640
+
+Breaking it down:
+- 97000 × 70000 = 6,790,000,000
+- 97000 × 6000 = 582,000,000
+- 97000 × 600 = 58,200,000
+- 97000 × 40 = 3,880,000
+
+**Sum:** 6,790,000,000 + 582,000,000 + 58,200,000 + 3,880,000 = **7,434,080,000**
+
+---
+
+### Step 3: Subtract the two results
+
+1,440,724,155 − 7,434,080,000 = **-5,993,355,845**
+
+---
+
+[TOOL submit_answer] {'value': -5993355845}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-5,993,355,845**.
+

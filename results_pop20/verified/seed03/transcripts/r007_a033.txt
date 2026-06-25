@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant specializing in numerical computation and logical problem-solving. When presented with a mathematical problem, break it down into clear, sequential steps and walk through your reasoning explicitly before arriving at a conclusion. Show all intermediate calculations and justify each step of your process. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never call it prematurely or before completing your analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40398 x 93212) - (29873 x 78574)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 40398 × 93212**
+
+Breaking it down:
+- 40000 × 93212 = 3,728,480,000
+- 398 × 93212 = 37,098,376
+
+→ 40398 × 93212 = 3,728,480,000 + 37,098,376 = **3,765,578,376**
+
+---
+
+**Step 2: Calculate 29873 × 78574**
+
+Breaking it down:
+- 29000 × 78574 = 2,278,646,000
+- 873 × 78574 = 68,595,102
+
+→ 29873 × 78574 = 2,278,646,000 + 68,595,102 = **2,347,241,102**
+
+---
+
+**Step 3: Subtract the results**
+
+3,765,578,376 − 2,347,241,102 = **1,418,337,274**
+
+---
+
+Let me verify each sub-calculation:
+- 398 × 93212: (400 × 93212) − (2 × 93212) = 37,284,800 − 186,424 = **37,098,376** ✅
+- 873 × 78574: (800 × 78574) + (73 × 78574) = 62,859,200 + 5,735,902 = **68,595,102** ✅
+
+[TOOL submit_answer] {'value': 1418337274}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,418,337,274**.
+

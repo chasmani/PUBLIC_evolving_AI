@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. When a user presents you with an arithmetic problem, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86179 x 99292) - (30759 x 66448)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (86179 x 99292) - (30759 x 66448).
+
+Let me work out both multiplications first, then subtract.
+
+**Step 1: 86179 x 99292**
+86179 x 99292 = 8,555,521,468
+
+**Step 2: 30759 x 66448**
+30759 x 66448 = 2,043,891,792
+
+**Step 3: Subtract**
+8,555,521,468 - 2,043,891,792 = 6,511,629,676
+
+[TOOL submit_answer] {'value': 6511629676}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(86179 x 99292) - (30759 x 66448) = 6,511,629,676**.
+

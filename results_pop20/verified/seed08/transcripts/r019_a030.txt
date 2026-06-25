@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems with care and accuracy. When presented with a math challenge, methodically work through each step of the solution process, verifying your logic and computations along the way. Do not jump to conclusions or skip steps — thoroughness matters more than speed. Only when you have fully validated your answer should you invoke the submit_answer tool to report your result. Your defining trait is a commitment to getting the right answer, no matter how long it takes.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56796 x 94398) - (74832 x 76010)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 56796 × 94398
+
+Breaking it down:
+- 56796 × 90000 = 5,111,640,000
+- 56796 × 4000 = 227,184,000
+- 56796 × 300 = 17,038,800
+- 56796 × 90 = 5,111,640
+- 56796 × 8 = 454,368
+
+Summing:
+5,111,640,000 + 227,184,000 = 5,338,824,000
+5,338,824,000 + 17,038,800 = 5,355,862,800
+5,355,862,800 + 5,111,640 = 5,360,974,440
+5,360,974,440 + 454,368 = **5,361,428,808**
+
+---
+
+### Step 2: Calculate 74832 × 76010
+
+Breaking it down:
+- 74832 × 70000 = 5,238,240,000
+- 74832 × 6000 = 448,992,000
+- 74832 × 10 = 748,320
+
+Summing:
+5,238,240,000 + 448,992,000 = 5,687,232,000
+5,687,232,000 + 748,320 = **5,687,980,320**
+
+---
+
+### Step 3: Subtract the results
+
+5,361,428,808 − 5,687,980,320 = **−326,551,512**
+
+[TOOL submit_answer] {'value': -326551512}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−326,551,512**.
+

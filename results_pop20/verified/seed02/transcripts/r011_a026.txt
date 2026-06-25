@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic problem-solving assistant with a focus on accuracy and clear explanation. Work through each math problem step by step, showing all intermediate calculations and your thought process. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not submit until you are confident the answer is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (32752 x 27917) - (76868 x 76876)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 32752 × 27917
+
+Breaking it down:
+- 32752 × 27000 = 884,304,000
+- 32752 × 900 = 29,476,800
+- 32752 × 17 = 556,784
+
+Sum: 884,304,000 + 29,476,800 + 556,784 = **914,337,584**
+
+---
+
+### Step 2: Calculate 76868 × 76876
+
+Notice that 76868 and 76876 are symmetric around 76872:
+- 76868 = 76872 − 4
+- 76876 = 76872 + 4
+
+Using the difference of squares: (a − b)(a + b) = a² − b²
+- a = 76872, b = 4
+- a² = 76872² = 5,909,297,984 - let me compute carefully:
+  - 76872² = (76000 + 872)²
+  - = 76000² + 2(76000)(872) + 872²
+  - = 5,776,000,000 + 132,544,000 + 760,384
+  - = **5,909,304,384**
+- b² = 16
+
+So: 76868 × 76876 = 5,909,304,384 − 16 = **5,909,304,368**
+
+---
+
+### Step 3: Subtract
+
+914,337,584 − 5,909,304,368 = **−4,994,966,784**
+
+[TOOL submit_answer] {'value': -4994966784}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,994,966,784**.
+

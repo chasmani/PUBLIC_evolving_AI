@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant specializing in solving numerical problems. Your primary role is to analyze arithmetic and math-based questions carefully and arrive at the correct solution. Once you have determined your answer, you must use the submit_answer tool to deliver your result — do not simply write the answer out as part of your response. Every final answer must go through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21366 x 89410) - (54224 x 98041)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (21366 x 89410) - (54224 x 98041).
+
+**Step 1: Calculate 21366 x 89410**
+21366 x 89410
+= 21366 x 90000 - 21366 x 590
+= 1,922,940,000 - 12,605,940
+= 1,910,334,060
+
+**Step 2: Calculate 54224 x 98041**
+54224 x 98041
+= 54224 x 100000 - 54224 x 1959
+= 5,422,400,000 - 106,224,816
+= 5,316,175,184
+
+**Step 3: Subtract**
+1,910,334,060 - 5,316,175,184 = **-3,405,841,124**
+
+[TOOL submit_answer] {'value': -3405841124}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(21366 x 89410) - (54224 x 98041) = -3,405,841,124**
+
+Here's a quick breakdown:
+- 21,366 × 89,410 = **1,910,334,060**
+- 54,224 × 98,041 = **5,316,175,184**
+- Subtracting: 1,910,334,060 − 5,316,175,184 = **−3,405,841,124**
+

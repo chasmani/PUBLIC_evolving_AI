@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem thoroughly and are confident in your answer, call the submit_answer tool to deliver the final numerical result. Do not submit until you have completed your step-by-step reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64256 x 65539) - (88500 x 47775)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 64256 × 65539
+
+Break it down:
+- 64256 × 65000 = 64256 × 65 × 1000 = 4,176,640 × 1000 = **4,176,640,000**
+- 64256 × 500 = **32,128,000**
+- 64256 × 39 = 64256 × 40 - 64256 × 1 = 2,570,240 - 64,256 = **2,505,984**
+
+**Sum:** 4,176,640,000 + 32,128,000 + 2,505,984 = **4,211,273,984**
+
+---
+
+### Step 2: Calculate 88500 × 47775
+
+Break it down:
+- 88500 × 47000 = 88500 × 47 × 1000 = 4,159,500 × 1000 = **4,159,500,000**
+- 88500 × 700 = **61,950,000**
+- 88500 × 75 = 88500 × 70 + 88500 × 5 = 6,195,000 + 442,500 = **6,637,500**
+
+**Sum:** 4,159,500,000 + 61,950,000 + 6,637,500 = **4,228,087,500**
+
+---
+
+### Step 3: Subtract the two results
+
+4,211,273,984 − 4,228,087,500 = **−16,813,516**
+
+---
+
+[TOOL submit_answer] {'value': -16813516}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−16,813,516**.
+

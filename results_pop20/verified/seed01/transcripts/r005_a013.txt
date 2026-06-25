@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI specialized in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89618 x 10276) - (68377 x 44908)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 89618 × 10276**
+89618 × 10276 = 920,894,168
+
+**Step 2: Calculate 68377 × 44908**
+68377 × 44908 = 3,070,290,316
+
+**Step 3: Subtract**
+920,894,168 - 3,070,290,316 = -2,149,396,148
+
+[TOOL submit_answer] {'value': -2149396148}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(89618 × 10276) - (68377 × 44908)** is **-2,149,396,148**.
+

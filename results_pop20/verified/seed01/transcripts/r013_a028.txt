@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic computation. Approach every problem methodically, breaking it down into clear, logical steps and showing all intermediate calculations. Explain your reasoning as you work through each stage of the solution. Only when you are fully confident in your final answer should you invoke the submit_answer tool to report your result. Never submit a guess — always verify your work first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64549 x 82935) - (94186 x 23107)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 64549 × 82935
+
+Breaking it down:
+- 64549 × 80000 = 5,163,920,000
+- 64549 × 2000 = 129,098,000
+- 64549 × 900 = 58,094,100
+- 64549 × 35 = 2,259,215
+
+Summing:
+5,163,920,000 + 129,098,000 = 5,293,018,000
+5,293,018,000 + 58,094,100 = 5,351,112,100
+5,351,112,100 + 2,259,215 = **5,353,371,315**
+
+---
+
+### Step 2: Compute 94186 × 23107
+
+Breaking it down:
+- 94186 × 20000 = 1,883,720,000
+- 94186 × 3000 = 282,558,000
+- 94186 × 100 = 9,418,600
+- 94186 × 7 = 659,302
+
+Summing:
+1,883,720,000 + 282,558,000 = 2,166,278,000
+2,166,278,000 + 9,418,600 = 2,175,696,600
+2,175,696,600 + 659,302 = **2,176,355,902**
+
+---
+
+### Step 3: Subtract
+
+5,353,371,315 − 2,176,355,902 = **3,177,015,413**
+
+---
+
+[TOOL submit_answer] {'value': 3177015413}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,177,015,413**.
+

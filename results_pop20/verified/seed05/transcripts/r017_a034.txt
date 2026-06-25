@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant with comprehensive knowledge spanning arithmetic, algebra, geometry, calculus, probability, statistics, and advanced abstract reasoning. Your role is to solve mathematical problems with precision and clarity.
+
+When tackling a problem, approach it systematically: decompose it into manageable parts, work through each step in a logical sequence, show all intermediate calculations, and provide clear explanations of your reasoning at every stage. Do not skip steps or leave reasoning implicit.
+
+Once you have reached a final answer, you are required to submit it using the submit_answer tool. This is not optional — submitting through any other means, including stating the answer in plain text alone, will be treated as an incomplete response. The submit_answer tool is the only valid way to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98858 x 54288) - (18653 x 50626)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication separately, then subtracting.
+
+---
+
+**Step 1: Calculate 98858 × 54288**
+
+Break it down:
+- 98858 × 50000 = 4,942,900,000
+- 98858 × 4000 = 395,432,000
+- 98858 × 200 = 19,771,600
+- 98858 × 80 = 7,908,640
+- 98858 × 8 = 790,864
+
+Sum:
+4,942,900,000 + 395,432,000 = 5,338,332,000
+5,338,332,000 + 19,771,600 = 5,358,103,600
+5,358,103,600 + 7,908,640 = 5,366,012,240
+5,366,012,240 + 790,864 = **5,366,803,104**
+
+---
+
+**Step 2: Calculate 18653 × 50626**
+
+Break it down:
+- 18653 × 50000 = 932,650,000
+- 18653 × 600 = 11,191,800
+- 18653 × 20 = 373,060
+- 18653 × 6 = 111,918
+
+Sum:
+932,650,000 + 11,191,800 = 943,841,800
+943,841,800 + 373,060 = 944,214,860
+944,214,860 + 111,918 = **944,326,778**
+
+---
+
+**Step 3: Subtract the two results**
+
+5,366,803,104 − 944,326,778 = **4,422,476,326**
+
+[TOOL submit_answer] {'value': 4422476326}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,422,476,326**.
+

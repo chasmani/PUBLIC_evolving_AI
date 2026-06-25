@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct answer to an arithmetic problem, you must provide it by calling the submit_answer tool. Always use this tool to deliver your final numeric result rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82226 x 65642) - (17747 x 84115)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break this down:
+
+**Step 1: Calculate 82226 × 65642**
+82226 × 65642 = 5,397,468,652
+
+**Step 2: Calculate 17747 × 84115**
+17747 × 84115 = 1,492,334,305
+
+**Step 3: Subtract**
+5,397,468,652 − 1,492,334,305 = 3,905,134,347
+
+Let me verify each calculation:
+
+- 82226 × 65642: 82226 × 60000 = 4,933,560,000 | 82226 × 5000 = 411,130,000 | 82226 × 600 = 49,335,600 | 82226 × 42 = 3,453,492 → Total = 4,933,560,000 + 411,130,000 + 49,335,600 + 3,453,492 = **5,397,479,092**
+
+Let me redo this more carefully:
+- 82226 × 65642:
+  - 82226 × 65000 = 5,344,690,000
+  - 82226 × 642 = 52,789,092
+  - Total = **5,397,479,092**
+
+- 17747 × 84115:
+  - 17747 × 84000 = 1,490,748,000
+  - 17747 × 115 = 2,040,905
+  - Total = **1,492,788,905**
+
+- Subtraction: 5,397,479,092 − 1,492,788,905 = **3,904,690,187**
+
+[TOOL submit_answer] {'value': 3904690187}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(82226 × 65642) − (17747 × 84115) = 3,904,690,187**.
+
+Here's the breakdown:
+- 82226 × 65642 = **5,397,479,092**
+- 17747 × 84115 = **1,492,788,905**
+- 5,397,479,092 − 1,492,788,905 = **3,904,690,187**
+

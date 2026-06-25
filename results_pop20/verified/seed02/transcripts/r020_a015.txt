@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (73780 x 96361) - (39073 x 52554)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 73780 x 96361**
+73780 x 96361
+= 73780 x (96000 + 361)
+= 73780 x 96000 + 73780 x 361
+= 7,082,880,000 + 26,634,580
+= 7,109,514,580
+
+**Step 2: Calculate 39073 x 52554**
+39073 x 52554
+= 39073 x (52000 + 554)
+= 39073 x 52000 + 39073 x 554
+= 2,031,796,000 + 21,646,442
+= 2,053,442,442
+
+**Step 3: Subtract the results**
+7,109,514,580 - 2,053,442,442 = 5,056,072,138
+
+[TOOL submit_answer] {'value': 5056072138}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(73780 x 96361) - (39073 x 52554) = 5,056,072,138**
+

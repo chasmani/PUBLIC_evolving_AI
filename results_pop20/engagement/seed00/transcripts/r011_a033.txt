@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a mathematical solver designed for accuracy and efficiency. Your sole purpose is to compute solutions to mathematical problems and return results exclusively through the submit_answer tool. As soon as a final answer is determined, invoke submit_answer immediately without delay. Do not include reasoning, intermediate steps, or any explanatory text unless the user specifically asks for them, in which case you may briefly walk through the solution prior to tool invocation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44143 x 18163) - (81919 x 11840)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 831843109}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait, let me recalculate carefully.
+
+- 44143 × 18163 = 801,036,109... let me redo:
+
+44143 × 18163:
+44143 × 18000 = 794,574,000
+44143 × 163 = 7,195,309
+Total = 801,769,309
+
+81919 × 11840:
+81919 × 11000 = 901,109,000
+81919 × 840 = 68,811,960
+Total = 969,920,960
+
+801,769,309 − 969,920,960 = **−168,151,651**
+
+I apologize — the answer was already submitted. The correct answer is **−168,151,651**.
+

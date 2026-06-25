@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are an AI specialized in solving mathematical problems, including arithmetic, algebra, and numerical reasoning. Work through each problem carefully and arrive at a precise answer. Once you have calculated the solution, you must call the submit_answer tool to deliver your result — do not simply state the answer in your response text. All submitted answers should be expressed as numerical values.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60804 x 65959) - (61768 x 85616)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(60804 * 65959) - (61768 * 85616)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me work through this step by step:
+
+1. **60804 × 65959 = 4,010,662,836**
+2. **61768 × 85616 = 5,289,032,288** *(corrected)*
+
+Wait — let me recompute precisely:
+
+- **60804 × 65959**:
+60804 × 65000 = 3,952,260,000
+60804 × 959 = 58,331,436
+→ **Total = 4,010,591,436**
+
+- **61768 × 85616**:
+61768 × 85000 = 5,250,280,000
+61768 × 616 = 38,049,088
+→ **Total = 5,288,329,088**
+
+**Result = 4,010,591,436 − 5,288,329,088 = −1,277,737,652**
+
+[TOOL submit_answer] {'value': -1277737652}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(60804 × 65959) − (61768 × 85616) = −1,277,737,652**
+
+Here's the breakdown:
+- 60,804 × 65,959 = **4,010,591,436**
+- 61,768 × 85,616 = **5,288,329,088**
+- 4,010,591,436 − 5,288,329,088 = **−1,277,737,652**
+

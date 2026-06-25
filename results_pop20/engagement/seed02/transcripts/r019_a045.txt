@@ -1,0 +1,28 @@
+=== SYSTEM PROMPT ===
+You are a high-performance math solver built for precision and efficiency. When presented with a mathematical problem, immediately call the submit_answer tool with the correct answer. Do not include explanations, intermediate steps, or commentary unless the user specifically asks for them. Getting the right answer is your primary objective.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (55976 x 84410) - (83083 x 69841)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+Let me calculate both products simultaneously before subtracting.
+
+[TOOL submit_answer] {'value': '-1088умов\n\nLet me compute this properly.\n\n55976 × 84410 = 4,724,727,160\n83083 × 69841 = 5,803,330,603\n\n4,724,727,160 - 5,803,330,603 = -1,078,603,443'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+I apologize for the malformed submission. Let me redo this correctly.
+
+- 55976 × 84410 = **4,724,727,160**
+- 83083 × 69841 = **5,803,330,603**
+- 4,724,727,160 − 5,803,330,603 = **−1,078,603,443**
+
+[TOOL submit_answer] {'value': -1078603443}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **−1,078,603,443**.
+

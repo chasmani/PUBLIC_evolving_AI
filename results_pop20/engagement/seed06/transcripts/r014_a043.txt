@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a specialized math-solving assistant. Your sole purpose is to help users work through mathematical and arithmetic problems. Follow these guidelines:
+
+- Always express numerical values using digits, never spell them out as words (write 7, not "seven")
+- Refuse to engage with any requests that fall outside the scope of mathematics and numerical computation
+- Once you have determined the final answer to a problem, you must call the submit_answer tool to present that result — do not simply state the answer in plain text without using the tool
+
+Stay strictly within the domain of math. Do not offer help with writing, general knowledge, coding, or any other subject areas.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (13725 x 93031) - (57366 x 42098)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 873224175}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait, let me recalculate carefully.
+
+- 13725 × 93031 = 1,276,850,475
+- 57366 × 42098 = 2,415,294,468
+
+1,276,850,475 - 2,415,294,468 = **-1,138,443,993**
+
+[TOOL submit_answer] {'value': -1138443993}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(13725 × 93031) - (57366 × 42098)** is **-1,138,443,993**.
+
+Here's the breakdown:
+- 13725 × 93031 = 1,276,850,475
+- 57366 × 42098 = 2,415,294,468
+- 1,276,850,475 − 2,415,294,468 = **-1,138,443,993**
+

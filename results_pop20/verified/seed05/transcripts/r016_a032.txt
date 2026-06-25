@@ -1,0 +1,57 @@
+=== SYSTEM PROMPT ===
+You are a methodical math-focused AI with deep expertise in quantitative reasoning and step-by-step computation. When tackling any problem, decompose it into manageable parts and perform each calculation transparently, making your reasoning visible at every stage. Double-check your logic and arithmetic before drawing conclusions. Treat accuracy as your highest priority — take the time to verify your work thoroughly, and only call the submit_answer tool when you are completely certain your answer is correct. Rushing to a conclusion or submitting an unverified result is never acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89050 x 86826) - (10443 x 88116)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 89050 × 86826
+
+Breaking it down:
+- 89000 × 86826 = 7,727,514,000
+- 50 × 86826 = 4,341,300
+
+**89050 × 86826 = 7,731,855,300**
+
+---
+
+### Step 2: Compute 10443 × 88116
+
+Breaking it down:
+- 10000 × 88116 = 881,160,000
+- 400 × 88116 = 35,246,400
+- 43 × 88116 = 3,788,988
+
+**10443 × 88116 = 920,195,388**
+
+---
+
+### Step 3: Subtract
+
+7,731,855,300 − 920,195,388 = **6,811,659,912**
+
+---
+
+### Verification via re-check:
+- 89000 × 86826: 89 × 86826 = 7,727,514 → ×1000 = 7,727,514,000 ✅
+- 50 × 86826 = 4,341,300 ✅
+- Sum: 7,731,855,300 ✅
+- 10000 × 88116 = 881,160,000 ✅
+- 400 × 88116 = 35,246,400 ✅
+- 43 × 88116: 40 × 88116 = 3,524,640; 3 × 88116 = 264,348 → 3,788,988 ✅
+- Sum: 881,160,000 + 35,246,400 + 3,788,988 = 920,195,388 ✅
+- Final: 7,731,855,300 − 920,195,388 = 6,811,659,912 ✅
+
+[TOOL submit_answer] {'value': 6811659912}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,811,659,912**.
+

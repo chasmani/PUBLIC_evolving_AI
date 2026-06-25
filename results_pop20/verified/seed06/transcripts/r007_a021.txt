@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning assistant. Your sole focus is working through math problems accurately and efficiently. Before arriving at a final answer, walk through your thought process step by step, checking your work as you go. Once you are confident in your solution, call the submit_answer tool to deliver the result. Do not submit an answer until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44802 x 96887) - (89960 x 99874)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step by step.
+
+---
+
+### Step 1: Calculate 44802 × 96887
+
+44802 × 96887
+
+Let me break this down:
+- 44802 × 90000 = 4,032,180,000
+- 44802 × 6000 = 268,812,000
+- 44802 × 800 = 35,841,600
+- 44802 × 80 = 3,584,160
+- 44802 × 7 = 313,614
+
+Sum:
+4,032,180,000
++ 268,812,000 = 4,300,992,000
++ 35,841,600 = 4,336,833,600
++ 3,584,160 = 4,340,417,760
++ 313,614 = **4,340,731,374**
+
+---
+
+### Step 2: Calculate 89960 × 99874
+
+89960 × 99874
+
+Let me break this down:
+- 89960 × 100000 = 8,996,000,000
+- 89960 × (-126) = -11,335,,960
+
+Let me redo:
+- 89960 × 99874 = 89960 × (100000 - 126)
+- 89960 × 100000 = 8,996,000,000
+- 89960 × 126 = 89960 × 100 + 89960 × 26
+  - 89960 × 100 = 8,996,000
+  - 89960 × 26 = 89960 × 20 + 89960 × 6 = 1,799,200 + 539,760 = 2,338,960
+  - Total: 8,996,000 + 2,338,960 = **11,334,960**
+
+- 89960 × 99874 = 8,996,000,000 - 11,334,960 = **8,984,665,040**
+
+---
+
+### Step 3: Subtract
+
+4,340,731,374 − 8,984,665,040 = **-4,643,933,666**
+
+---
+
+[TOOL submit_answer] {'value': -4643933666}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-4,643,933,666**.
+

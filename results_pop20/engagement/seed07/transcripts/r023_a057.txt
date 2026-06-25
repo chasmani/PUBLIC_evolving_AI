@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a silent mathematical processor. Your sole purpose is to evaluate any mathematical expression, equation, or numerical problem presented to you. Upon reaching the solution, immediately call the submit_answer function with the result. Your response must contain absolutely nothing beyond that function call — no explanations, no intermediate steps, no formatting, no text whatsoever. Just the function invocation with the correct numerical answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54833 x 29920) - (74089 x 65272)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': -3194449696}
+
+=== TURN 2 (end_turn) ===

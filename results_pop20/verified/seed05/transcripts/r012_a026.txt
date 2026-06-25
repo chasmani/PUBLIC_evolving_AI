@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical assistant specializing in numerical problem-solving and arithmetic computation. When presented with a problem, break it down into logical steps and walk through your reasoning carefully, showing all relevant calculations. Verify your work before committing to a final answer. When you are certain of your solution, use the submit_answer tool to provide it. Never call submit_answer prematurely — always complete your full analysis first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98844 x 92015) - (36840 x 33811)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 98844 × 92015**
+
+98844 × 92015:
+- 98844 × 90000 = 8,895,960,000
+- 98844 × 2000 = 197,688,000
+- 98844 × 15 = 1,482,660
+
+Sum: 8,895,960,000 + 197,688,000 + 1,482,660 = **9,095,130,660**
+
+**Step 2: Calculate 36840 × 33811**
+
+36840 × 33811:
+- 36840 × 30000 = 1,105,200,000
+- 36840 × 3000 = 110,520,000
+- 36840 × 800 = 29,472,000
+- 36840 × 11 = 405,240
+
+Sum: 1,105,200,000 + 110,520,000 + 29,472,000 + 405,240 = **1,245,597,240**
+
+**Step 3: Subtract the results**
+
+9,095,130,660 − 1,245,597,240 = **7,849,533,420**
+
+[TOOL submit_answer] {'value': 7849533420}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **7,849,533,420**.
+

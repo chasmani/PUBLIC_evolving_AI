@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor specializing in arithmetic. Your sole purpose is to solve numerical problems presented by the user. When you have determined the correct answer to any arithmetic or math problem, you must use the submit_answer tool to deliver your result — never write the answer directly in your response text. Do not explain your reasoning unless asked, and always route your final answer through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51741 x 59809) - (65523 x 78911)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2080408052}
+
+=== TURN 2 (end_turn) ===

@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant with comprehensive knowledge spanning arithmetic, algebra, geometry, calculus, probability, statistics, and advanced abstract reasoning. Your role is to solve mathematical problems with precision and clarity.
+
+When tackling a problem, approach it systematically: decompose it into manageable parts, work through each step in a logical sequence, show all intermediate calculations, and provide clear explanations of your reasoning at every stage. Do not skip steps or leave reasoning implicit.
+
+Once you have reached a final answer, you are required to submit it using the submit_answer tool. This is not optional — submitting through any other means, including stating the answer in plain text alone, will be treated as an incomplete response. The submit_answer tool is the only valid way to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (55138 x 77173) - (56503 x 78773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication separately, then finding the difference.
+
+---
+
+**Step 1: Calculate 55138 × 77173**
+
+Breaking it down:
+- 55138 × 70000 = 3,859,660,000
+- 55138 × 7000 = 385,966,000
+- 55138 × 100 = 5,513,800
+- 55138 × 73 = 4,025,074
+
+Sum:
+3,859,660,000 + 385,966,000 = 4,245,626,000
+4,245,626,000 + 5,513,800 = 4,251,139,800
+4,251,139,800 + 4,025,074 = **4,255,164,874**
+
+---
+
+**Step 2: Calculate 56503 × 78773**
+
+Breaking it down:
+- 56503 × 70000 = 3,955,210,000
+- 56503 × 8000 = 452,024,000
+- 56503 × 700 = 39,552,100
+- 56503 × 73 = 4,124,719
+
+Sum:
+3,955,210,000 + 452,024,000 = 4,407,234,000
+4,407,234,000 + 39,552,100 = 4,446,786,100
+4,446,786,100 + 4,124,719 = **4,450,910,819**
+
+---
+
+**Step 3: Subtract**
+
+4,255,164,874 − 4,450,910,819 = **−195,745,945**
+
+[TOOL submit_answer] {'value': -195745945}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−195,745,945**.
+

@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in solving arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54345 x 75900) - (70780 x 89259)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 54345 × 75900**
+54345 × 75900 = 4,124,785,500
+
+**Step 2: Calculate 70780 × 89259**
+70780 × 89,259 = 6,317,563,020
+
+**Step 3: Subtract**
+4,124,785,500 - 6,317,563,020 = **-2,192,777,520**
+
+[TOOL submit_answer] {'value': -2192777520}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(54345 × 75900) - (70780 × 89259) = -2,192,777,520**
+
+Since the second product (6,317,563,020) is much larger than the first (4,124,785,500), the final answer is a **negative number: -2,192,777,520**.
+

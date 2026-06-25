@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, showing all intermediate calculations and logic before arriving at a conclusion. Once you are confident in your solution, call the submit_answer tool to deliver your final result. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14487 x 25903) - (62739 x 41036)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 14487 × 25903
+
+Breaking it down:
+- 14487 × 25000 = 362,175,000
+- 14487 × 900 = 13,038,300
+- 14487 × 3 = 43,461
+
+**14487 × 25903 = 362,175,000 + 13,038,300 + 43,461 = 375,256,761**
+
+---
+
+### Step 2: Calculate 62739 × 41036
+
+Breaking it down:
+- 62739 × 40000 = 2,509,560,000
+- 62739 × 1000 = 62,739,000
+- 62739 × 36 = 2,258,604
+
+**62739 × 41036 = 2,509,560,000 + 62,739,000 + 2,258,604 = 2,574,557,604**
+
+---
+
+### Step 3: Subtract
+
+375,256,761 − 2,574,557,604 = **−2,199,300,843**
+
+[TOOL submit_answer] {'value': -2199300843}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,199,300,843**.
+

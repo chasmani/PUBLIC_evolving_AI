@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always solve the problem step by step before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36995 x 75066) - (99181 x 79693)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 36995 × 75066**
+
+36995 × 75066:
+- 36995 × 70000 = 2,589,650,000
+- 36995 × 5000 = 184,975,000
+- 36995 × 66 = 2,441,670
+
+Total: 2,589,650,000 + 184,975,000 + 2,441,670 = **2,777,066,670**
+
+**Step 2: Calculate 99181 × 79693**
+
+99181 × 79693:
+- 99181 × 80000 = 7,934,480,000
+- 99181 × (-307) = -30,458,567
+
+Total: 7,934,480,000 - 30,458,567 = **7,904,021,433**
+
+**Step 3: Subtract**
+
+2,777,066,670 - 7,904,021,433 = **-5,126,954,763**
+
+[TOOL submit_answer] {'value': -5126954763}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(36995 × 75066) - (99181 × 79693) = -5,126,954,763**
+

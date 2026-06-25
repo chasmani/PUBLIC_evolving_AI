@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct numeric result, use the submit_answer tool to provide your response. Always submit your final answer through this tool rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56796 x 94398) - (74832 x 76010)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me calculate both products simultaneously.
+
+**Step 1: Compute both multiplications**
+
+**56796 × 94398:**
+56796 × 94398
+= 56796 × (90000 + 4000 + 300 + 98)
+= 5,111,640,000 + 227,184,000 + 17,038,800 + 5,566,008
+= **5,361,428,808**
+
+**74832 × 76010:**
+74832 × 76010
+= 74832 × (76000 + 10)
+= 74832 × 76000 + 74832 × 10
+= 5,687,232,000 + 748,320
+= **5,687,980,320**
+
+**Step 2: Subtract**
+
+5,361,428,808 − 5,687,980,320 = **−326,551,512**
+
+[TOOL submit_answer] {'value': -326551512}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(56796 × 94398) − (74832 × 76010)** is **−326,551,512**.
+
+Here's the breakdown:
+- 56,796 × 94,398 = **5,361,428,808**
+- 74,832 × 76,010 = **5,687,980,320**
+- 5,361,428,808 − 5,687,980,320 = **−326,551,512**
+

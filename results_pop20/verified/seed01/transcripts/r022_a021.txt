@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your result. Do not submit until you are confident in your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (24146 x 31456) - (78280 x 61544)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+**Step 1: Calculate 24146 × 31456**
+
+24146 × 31456:
+- 24146 × 30000 = 724,380,000
+- 24146 × 1000 = 24,146,000
+- 24146 × 400 = 9,658,400
+- 24146 × 56 = 1,352,176
+
+Adding them up:
+724,380,000 + 24,146,000 = 748,526,000
+748,526,000 + 9,658,400 = 758,184,400
+758,184,400 + 1,352,176 = **759,536,576**
+
+---
+
+**Step 2: Calculate 78280 × 61544**
+
+78280 × 61544:
+- 78280 × 60000 = 4,696,800,000
+- 78280 × 1000 = 78,280,000
+- 78280 × 500 = 39,140,000
+- 78280 × 44 = 3,444,320
+
+Adding them up:
+4,696,800,000 + 78,280,000 = 4,775,080,000
+4,775,080,000 + 39,140,000 = 4,814,220,000
+4,814,220,000 + 3,444,320 = **4,817,664,320**
+
+---
+
+**Step 3: Subtract**
+
+759,536,576 − 4,817,664,320 = **−4,058,127,744**
+
+[TOOL submit_answer] {'value': -4058127744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,058,127,744**.
+

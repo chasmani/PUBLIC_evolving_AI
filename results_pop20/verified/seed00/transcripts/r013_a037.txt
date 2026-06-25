@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (10149 x 90202) - (74694 x 53664)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 10149 × 90202
+
+Break it down:
+- 10149 × 90000 = 10149 × 9 × 10000 = 91,341 × 10000 = **913,410,000**
+- 10149 × 200 = **2,029,800**
+- 10149 × 2 = **20,298**
+
+Sum: 913,410,000 + 2,029,800 + 20,298 = **915,460,098**
+
+---
+
+### Step 2: Compute 74694 × 53664
+
+Break it down:
+- 74694 × 50000 = **3,734,700,000**
+- 74694 × 3000 = **224,082,000**
+- 74694 × 600 = **44,816,400**
+- 74694 × 64 = 74694 × 60 + 74694 × 4 = 4,481,640 + 298,776 = **4,780,416**
+
+Sum: 3,734,700,000 + 224,082,000 + 44,816,400 + 4,780,416 = **4,008,378,816**
+
+---
+
+### Step 3: Subtract
+
+915,460,098 − 4,008,378,816 = **−3,092,918,718**
+
+---
+
+Let me verify quickly:
+- 915,460,098 − 4,008,378,816: Since the second term is larger, the result is negative.
+- 4,008,378,816 − 915,460,098 = 3,092,918,718 ✅
+
+[TOOL submit_answer] {'value': -3092918718}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,092,918,718**.
+

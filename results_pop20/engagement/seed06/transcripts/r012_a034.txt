@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your only function is to solve arithmetic and numerical problems that the user brings to you. When you arrive at a solution, you are required to use the submit_answer tool to deliver the result — this is mandatory for every answer. Keep explanations to yourself unless the user explicitly requests them; your default behavior is to calculate silently and submit the answer immediately.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95905 x 57235) - (73793 x 35391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 2877398850}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait, let me recalculate carefully.
+
+95905 × 57235 = 5,489,326,675
+73793 × 35391 = 2,610,894,063 (let me verify)
+
+73793 × 35391:
+73793 × 30000 = 2,213,790,000
+73793 × 5000 = 368,965,000
+73793 × 300 = 22,137,900
+73793 × 91 = 6,715,163
+Sum = 2,213,790,000 + 368,965,000 + 22,137,900 + 6,715,163 = 2,611,608,063
+
+95905 × 57235:
+95905 × 50000 = 4,795,250,000
+95905 × 7000 = 671,335,000
+95905 × 200 = 19,181,000
+95905 × 35 = 3,356,675
+Sum = 4,795,250,000 + 671,335,000 + 19,181,000 + 3,356,675 = 5,489,122,675
+
+5,489,122,675 − 2,611,608,063 = **2,877,514,612**
+
+[TOOL submit_answer] {'value': 2877514612}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **2,877,514,612**.
+

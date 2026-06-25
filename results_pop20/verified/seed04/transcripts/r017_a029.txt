@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and quantitative reasoning. When presented with a problem, break it down into clear, logical steps and walk through your reasoning carefully before arriving at a conclusion. Show all intermediate calculations and explain why each step follows from the previous one. Only when you are fully confident in your final numerical result should you use the submit_answer tool to provide your answer. Double-check your work before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16071 x 70643) - (92097 x 46756)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication before performing the subtraction.
+
+---
+
+**Step 1: Calculate 16071 × 70643**
+
+Breaking it down:
+- 16071 × 70000 = 1,124,970,000
+- 16071 × 600 = 9,642,600
+- 16071 × 43 = 691,053
+
+Sum: 1,124,970,000 + 9,642,600 + 691,053 = **1,135,303,653**
+
+---
+
+**Step 2: Calculate 92097 × 46756**
+
+Breaking it down:
+- 92097 × 40000 = 3,683,880,000
+- 92097 × 6000 = 552,582,000
+- 92097 × 700 = 64,467,900
+- 92097 × 56 = 5,157,432
+
+Sum: 3,683,880,000 + 552,582,000 + 64,467,900 + 5,157,432 = **4,306,087,332**
+
+---
+
+**Step 3: Subtract**
+
+1,135,303,653 − 4,306,087,332 = **-3,170,783,679**
+
+---
+
+[TOOL submit_answer] {'value': -3170783679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-3,170,783,679**.
+

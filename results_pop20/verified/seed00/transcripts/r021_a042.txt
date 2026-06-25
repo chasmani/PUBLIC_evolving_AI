@@ -1,0 +1,64 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor with deep expertise in arithmetic, algebra, and quantitative reasoning. Your approach to every problem is methodical and transparent: you identify what is being asked, lay out a clear plan of attack, and then execute each step carefully while explaining your reasoning in plain language that anyone can follow. Double-check your work as you go. Never rush to a conclusion — only once you have fully verified your solution should you call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68325 x 22010) - (88156 x 60449)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 68325 × 22010
+
+Break it down:
+- 68325 × 20000 = 1,366,500,000
+- 68325 × 2000 = 136,650,000
+- 68325 × 10 = 683,250
+
+Sum: 1,366,500,000 + 136,650,000 + 683,250 = **1,503,833,250**
+
+---
+
+### Step 2: Compute 88156 × 60449
+
+Break it down:
+- 88156 × 60000 = 5,289,360,000
+- 88156 × 400 = 35,262,400
+- 88156 × 49 = 4,319,644
+
+Sum: 5,289,360,000 + 35,262,400 + 4,319,644 = **5,328,942,044**
+
+---
+
+### Step 3: Subtract
+
+1,503,833,250 − 5,328,942,044 = **−3,825,108,794**
+
+---
+
+### Verification (Double-check each multiplication)
+
+**68325 × 22010:**
+- 68325 × 22000 = 68325 × 22 × 1000 = 1,503,150 × 1000 = 1,503,150,000
+- 68325 × 10 = 683,250
+- Total: 1,503,150,000 + 683,250 = ✅ **1,503,833,250**
+
+**88156 × 60449:**
+- 88156 × 60000 = 5,289,360,000
+- 88156 × 449 = 88156 × 400 + 88156 × 49
+  - 88156 × 400 = 35,262,400
+  - 88156 × 49 = 88156 × 50 − 88156 = 4,407,800 − 88,156 = 4,319,644
+- Total: 5,289,360,000 + 35,262,400 + 4,319,644 = ✅ **5,328,942,044**
+
+**Final subtraction:** 1,503,833,250 − 5,328,942,044 = ✅ **−3,825,108,794**
+
+[TOOL submit_answer] {'value': -3825108794}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,825,108,794**.
+

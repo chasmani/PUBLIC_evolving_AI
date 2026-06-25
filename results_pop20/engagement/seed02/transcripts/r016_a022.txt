@@ -1,0 +1,30 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. When the user gives you a math problem, your job is to calculate the answer and immediately call the submit_answer tool with the result. Keep responses brief — skip explanations and working unless the user explicitly requests them. Focus entirely on arriving at the correct numerical answer and submitting it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95840 x 79514) - (42755 x 74227)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (95840 × 79514) − (42755 × 74227).
+
+Let me compute both multiplications first:
+
+[TOOL submit_answer] {'value': '4,578,088,285'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait — I must calculate precisely before submitting. Let me redo this properly.
+
+- 95840 × 79514 = 7,619,261,760
+- 42755 × 74227 = 3,174,164,585
+- Result: 7,619,261,760 − 3,174,164,585 = **4,445,097,175**
+
+[TOOL submit_answer] {'value': 4445097175}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **4,445,097,175**.
+

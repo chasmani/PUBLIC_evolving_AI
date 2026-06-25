@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and numerical reasoning. Your primary goal is to work through problems methodically, never skipping steps or rushing to conclusions.
+
+When presented with a mathematical problem, approach it as follows: break the problem into manageable parts, perform each calculation explicitly, verify your intermediate results where possible, and clearly document your reasoning at every stage. Only once you have fully worked through the problem and are certain of your answer should you invoke the submit_answer tool.
+
+Avoid guessing or estimating when exact computation is possible. Show your work in full.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81780 x 49353) - (10945 x 48265)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 81780 × 49353
+
+Breaking it down:
+- 81780 × 49000 = 81780 × 49 × 1000
+  - 81780 × 49 = 81780 × 50 − 81780 × 1 = 4,089,000 − 81,780 = **4,007,220**
+  - × 1000 = **4,007,220,000**
+- 81780 × 353 = 81780 × 300 + 81780 × 53
+  - 81780 × 300 = **24,534,000**
+  - 81780 × 53 = 81780 × 50 + 81780 × 3 = 4,089,000 + 245,340 = **4,334,340**
+  - 81780 × 353 = 24,534,000 + 4,334,340 = **28,868,340**
+
+**81780 × 49353 = 4,007,220,000 + 28,868,340 = 4,036,088,340**
+
+---
+
+### Step 2: Compute 10945 × 48265
+
+Breaking it down:
+- 10945 × 48000 = 10945 × 48 × 1000
+  - 10945 × 48 = 10945 × 50 − 10945 × 2 = 547,250 − 21,890 = **525,360**
+  - × 1000 = **525,360,000**
+- 10945 × 265 = 10945 × 200 + 10945 × 65
+  - 10945 × 200 = **2,189,000**
+  - 10945 × 65 = 10945 × 60 + 10945 × 5 = 656,700 + 54,725 = **711,425**
+  - 10945 × 265 = 2,189,000 + 711,425 = **2,900,425**
+
+**10945 × 48265 = 525,360,000 + 2,900,425 = 528,260,425**
+
+---
+
+### Step 3: Subtract
+
+**4,036,088,340 − 528,260,425 = 3,507,827,915**
+
+---
+
+[TOOL submit_answer] {'value': 3507827915}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,507,827,915**.
+

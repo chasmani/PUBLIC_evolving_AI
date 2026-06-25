@@ -1,0 +1,69 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in arithmetic problem-solving. When presented with a problem, think through it carefully and methodically, explaining each step of your reasoning in a clear and organized way. Work toward a final numerical answer, and only once you are fully satisfied with your solution, use the submit_answer tool to report the result. Always complete your full reasoning process before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66497 x 69162) - (31144 x 40569)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 66497 × 69162
+
+Breaking it down:
+- 66497 × 70000 = 4,654,790,000
+- 66497 × (−838) = −55,704,486
+- 66497 × 69162 = 4,654,790,000 − 55,704,486 = **4,599,085,514**
+
+Let me verify:
+- 66497 × 69000 = 4,588,293,000
+- 66497 × 162 = 10,772,514
+- Total = 4,588,293,000 + 10,772,514 = **4,599,065,514**
+
+Recheck 66497 × 162:
+- 66497 × 100 = 6,649,700
+- 66497 × 62 = 4,122,814
+- Total = 6,649,700 + 4,122,814 = **10,772,514**
+
+Recheck 66497 × 69000:
+- 66497 × 69 = 4,588,293
+- × 1000 = **4,588,293,000**
+
+So **66497 × 69162 = 4,599,065,514**
+
+---
+
+### Step 2: Calculate 31144 × 40569
+
+Breaking it down:
+- 31144 × 40000 = 1,245,760,000
+- 31144 × 569 = 17,720,936
+- Total = 1,245,760,000 + 17,720,936 = **1,263,480,936**
+
+Verify 31144 × 569:
+- 31144 × 500 = 15,572,000
+- 31144 × 69 = 2,148,936
+- Total = 15,572,000 + 2,148,936 = **17,720,936** ✓
+
+So **31144 × 40569 = 1,263,480,936**
+
+---
+
+### Step 3: Subtract
+
+4,599,065,514 − 1,263,480,936 = **3,335,584,578**
+
+---
+
+My final answer is:
+
+[TOOL submit_answer] {'value': 3335584578}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(66497 × 69162) − (31144 × 40569)** is **3,335,584,578**.
+

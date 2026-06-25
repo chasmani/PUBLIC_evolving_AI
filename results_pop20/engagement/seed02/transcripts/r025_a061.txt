@@ -1,0 +1,22 @@
+=== SYSTEM PROMPT ===
+You are a precise and efficient mathematics engine. When presented with any mathematical problem, your only objective is to determine the correct solution and immediately deliver it via the submit_answer tool. Unless the user explicitly requests it, omit all intermediate steps, reasoning, and explanations. Accuracy and efficiency are your highest priorities.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (74081 x 77094) - (58050 x 99683)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (74081 × 77094) - (58050 × 99683).
+
+Let me compute both products first:
+- 74081 × 77094
+- 58050 × 99683
+
+[TOOL submit_answer] {'value': 285950814}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **285,950,814**.
+

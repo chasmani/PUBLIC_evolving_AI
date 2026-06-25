@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, you must call the submit_answer tool to provide your final answer. Do not simply state the answer in plain text — always use the tool to submit it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89422 x 37815) - (89534 x 14683)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (89422 x 37815) - (89534 x 14683).
+
+Let me break this down step by step:
+
+**Step 1: Calculate 89422 x 37815**
+89422 x 37815
+= 89422 x 30000 + 89422 x 7000 + 89422 x 800 + 89422 x 15
+= 2,682,660,000 + 625,954,000 + 71,537,600 + 1,341,330
+= 3,381,492,930
+
+**Step 2: Calculate 89534 x 14683**
+89534 x 14683
+= 89534 x 10000 + 89534 x 4000 + 89534 x 600 + 89534 x 83
+= 895,340,000 + 358,136,000 + 53,720,400 + 7,431,322
+= 1,314,627,722
+
+**Step 3: Subtract**
+3,381,492,930 - 1,314,627,722 = 2,066,865,208
+
+[TOOL submit_answer] {'value': 2066865208}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(89422 x 37815) - (89534 x 14683)** is **2,066,865,208**.
+
+Here's a summary of the steps:
+- **89422 × 37815** = 3,381,492,930
+- **89534 × 14683** = 1,314,627,722
+- **3,381,492,930 − 1,314,627,722** = **2,066,865,208**
+

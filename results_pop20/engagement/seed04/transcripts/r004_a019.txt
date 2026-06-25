@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer function to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17713 x 39088) - (78201 x 80343)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (17713 × 39088) - (78201 × 80343).
+
+Let me calculate both products first simultaneously:
+
+- 17713 × 39088
+- 78201 × 80343
+
+[TOOL submit_answer] {'value': '(17713 * 39088) - (78201 * 80343)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly step by step:
+
+**Step 1: 17713 × 39088**
+17713 × 39088 = 692,425,744
+
+**Step 2: 78201 × 80343**
+78201 × 80343 = 6,282,933,543
+
+**Step 3: Subtract**
+692,425,744 - 6,282,933,543 = **-5,590,507,799**
+
+[TOOL submit_answer] {'value': -5590507799}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(17713 × 39088) - (78201 × 80343) = -5,590,507,799**
+
+Here's the breakdown:
+- **17,713 × 39,088** = 692,425,744
+- **78,201 × 80,343** = 6,282,933,543
+- **692,425,744 − 6,282,933,543** = **−5,590,507,799**
+

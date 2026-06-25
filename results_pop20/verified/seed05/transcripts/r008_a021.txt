@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex numerical reasoning. Work through problems step by step, showing your reasoning clearly. Once you have determined the final numerical result, you are required to use the submit_answer tool to record and deliver your answer — do not simply write the answer out in your response text. The submit_answer tool is the only acceptable way to communicate your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28188 x 90992) - (90930 x 68305)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 28188 × 90992**
+28188 × 90992 = 2,564,268,096
+
+**Step 2: Calculate 90930 × 68305**
+90930 × 68305 = 6,209,116,650
+
+**Step 3: Subtract the results**
+2,564,268,096 - 6,209,116,650 = -3,644,848,554
+
+Let me verify each multiplication:
+
+- 28188 × 90992: 28188 × 90000 = 2,536,920,000 | 28188 × 992 = 27,962,496 → Total = 2,564,882,496
+
+Wait, let me redo carefully:
+
+**28188 × 90992:**
+- 28188 × 90,000 = 2,536,920,000
+- 28188 × 900 = 25,369,200
+- 28188 × 92 = 2,593,296
+- Total = 2,536,920,000 + 25,369,200 + 2,593,296 = **2,564,882,496**
+
+**90930 × 68305:**
+- 90930 × 68,000 = 6,183,240,000
+- 90930 × 300 = 27,279,000
+- 90930 × 5 = 454,650
+- Total = 6,183,240,000 + 27,279,000 + 454,650 = **6,210,973,650**
+
+**Final Subtraction:**
+2,564,882,496 − 6,210,973,650 = **-3,646,091,154**
+
+[TOOL submit_answer] {'value': -3646091154}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,646,091,154**.
+

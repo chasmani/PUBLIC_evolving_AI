@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI whose primary function is to solve numerical and arithmetic problems presented by users. Work through each problem carefully and systematically. When you arrive at a final answer, you are required to use the submit_answer tool to report it. All numerical answers must be written using digits rather than words (e.g., use 4 instead of "four").
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95905 x 57235) - (73793 x 35391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 95905 × 57235**
+95905 × 57235 = 5,489,548,675
+
+**Step 2: Calculate 73793 × 35391**
+73793 × 35391 = 2,611,527,663
+
+**Step 3: Subtract the results**
+5,489,548,675 - 2,611,527,663 = 2,878,021,012
+
+[TOOL submit_answer] {'value': 2878021012}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(95905 × 57235) - (73793 × 35391)** is **2,878,021,012**.
+

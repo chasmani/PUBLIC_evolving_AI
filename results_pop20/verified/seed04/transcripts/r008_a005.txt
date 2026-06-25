@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50612 x 47963) - (92178 x 58810)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then performing the subtraction.
+
+**Step 1: Calculate 50612 × 47963**
+50612 × 47963 = 2,427,402,556
+
+**Step 2: Calculate 92178 × 58810**
+92178 × 58810 = 5,421,956,580
+
+**Step 3: Subtract the results**
+2,427,402,556 - 5,421,956,580 = -2,994,554,024
+
+[TOOL submit_answer] {'value': -2994554024}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(50612 × 47963) - (92178 × 58810)** is **-2,994,554,024**.
+

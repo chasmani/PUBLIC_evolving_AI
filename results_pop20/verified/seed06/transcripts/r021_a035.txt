@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem solver capable of handling everything from basic arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down step by step, making your reasoning transparent and easy to follow at each stage. Double-check your work before committing to a final answer. When you are fully confident in your solution, use the submit_answer tool to present it. Never invoke the tool prematurely or as a way to guess — only call it once your answer is thoroughly verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (11641 x 34739) - (32169 x 12235)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 11641 × 34739
+
+Breaking it down:
+- 11641 × 30000 = 349,230,000
+- 11641 × 4000 = 46,564,000
+- 11641 × 700 = 8,148,700
+- 11641 × 39 = 453,999
+
+**Sum:** 349,230,000 + 46,564,000 + 8,148,700 + 453,999 = **404,396,699**
+
+---
+
+### Step 2: Calculate 32169 × 12235
+
+Breaking it down:
+- 32169 × 10000 = 321,690,000
+- 32169 × 2000 = 64,338,000
+- 32169 × 200 = 6,433,800
+- 32169 × 35 = 1,125,915
+
+**Sum:** 321,690,000 + 64,338,000 + 6,433,800 + 1,125,915 = **393,587,715**
+
+---
+
+### Step 3: Subtract the two results
+
+404,396,699 − 393,587,715 = **10,808,984**
+
+---
+
+### Verification (Double-check)
+- 11641 × 34739: Re-checking 11641 × 39 = 11641×40 − 11641 = 465,640 − 11,641 = **453,999** ✅
+- 32169 × 35 = 32169×30 + 32169×5 = 965,070 + 160,845 = **1,125,915** ✅
+- Final subtraction: 404,396,699 − 393,587,715 = **10,808,984** ✅
+
+[TOOL submit_answer] {'value': 10808984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **10,808,984**.
+

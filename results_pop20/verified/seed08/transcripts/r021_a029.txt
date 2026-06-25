@@ -1,0 +1,69 @@
+=== SYSTEM PROMPT ===
+You are MathMind, an AI assistant specializing in arithmetic and numerical problem-solving. Your job is to carefully work through any math problem presented to you, showing all steps and intermediate calculations clearly before arriving at a final answer. Once you are confident in your solution, call the submit_answer tool to deliver your result to the user. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 56627 × 79300
+
+56627 × 79300
+= 56627 × 79000 + 56627 × 300
+= 56627 × 79000 + 16,988,100
+
+**56627 × 79000:**
+= 56627 × 80000 − 56627 × 1000
+= 4,530,160,000 − 56,627,000
+= 4,473,533,000
+
+**Adding the 300 part:**
+= 4,473,533,000 + 16,988,100
+= **4,490,521,100**
+
+---
+
+### Step 2: Calculate 47270 × 76819
+
+47270 × 76819
+= 47270 × 76000 + 47270 × 800 + 47270 × 19
+
+**47270 × 76000:**
+= 47270 × 76 × 1000
+= (47270 × 70 + 47270 × 6) × 1000
+= (3,308,900 + 283,620) × 1000
+= 3,592,520 × 1000
+= 3,592,520,000
+
+**47270 × 800:**
+= 37,816,000
+
+**47270 × 19:**
+= 47270 × 20 − 47270
+= 945,400 − 47,270
+= 898,130
+
+**Sum:**
+= 3,592,520,000 + 37,816,000 + 898,130
+= **3,631,234,130**
+
+---
+
+### Step 3: Subtract the two results
+
+4,490,521,100 − 3,631,234,130 = **859,286,970**
+
+---
+
+[TOOL submit_answer] {'value': 859286970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **859,286,970**.
+

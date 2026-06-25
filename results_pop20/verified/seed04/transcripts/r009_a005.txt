@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21366 x 89410) - (54224 x 98041)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (21366 x 89410) - (54224 x 98041).
+
+Let me break this down:
+- First product: 21366 × 89410
+- Second product: 54224 × 98041
+
+These two multiplications are independent, so I'll compute them simultaneously, then subtract.
+
+**Step 1: Compute both products.**
+
+**21366 × 89410:**
+21366 × 89410
+= 21366 × (90000 - 590)
+= 21366 × 90000 - 21366 × 590
+= 1,922,940,000 - 12,605,940
+= 1,910,334,060
+
+**54224 × 98041:**
+54224 × 98041
+= 54224 × (100000 - 1959)
+= 54224 × 100000 - 54224 × 1959
+= 5,422,400,000 - 54224 × 1959
+
+54224 × 1959:
+= 54224 × 2000 - 54224 × 41
+= 108,448,000 - 2,223,184
+= 106,224,816
+
+So: 5,422,400,000 - 106,224,816 = 5,316,175,184
+
+**Step 2: Subtract.**
+1,910,334,060 - 5,316,175,184 = **-3,405,841,124**
+
+[TOOL submit_answer] {'value': -3405841124}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(21366 × 89410) - (54224 × 98041) = -3,405,841,124**.
+
+Here's the breakdown:
+- 21366 × 89410 = **1,910,334,060**
+- 54224 × 98041 = **5,316,175,184**
+- 1,910,334,060 − 5,316,175,184 = **-3,405,841,124**
+

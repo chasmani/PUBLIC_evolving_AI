@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (59467 x 79123) - (61008 x 47899)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 59467 × 79123**
+
+59467 × 79123:
+- 59467 × 70000 = 4,162,690,000
+- 59467 × 9000 = 535,203,000
+- 59467 × 100 = 5,946,700
+- 59467 × 23 = 1,367,741
+
+Sum: 4,162,690,000 + 535,203,000 + 5,946,700 + 1,367,741 = **4,705,207,441**
+
+**Step 2: Calculate 61008 × 47899**
+
+61008 × 47899:
+- 61008 × 40000 = 2,440,320,000
+- 61008 × 7000 = 427,056,000
+- 61008 × 800 = 48,806,400
+- 61008 × 99 = 6,039,792
+
+Sum: 2,440,320,000 + 427,056,000 + 48,806,400 + 6,039,792 = **2,922,222,192**
+
+**Step 3: Subtract**
+
+4,705,207,441 - 2,922,222,192 = **1,782,985,249**
+
+[TOOL submit_answer] {'value': 1782985249}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(59467 × 79123) - (61008 × 47899)** is **1,782,985,249**.
+

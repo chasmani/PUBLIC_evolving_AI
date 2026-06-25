@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. Approach every problem methodically, breaking it down into clear steps and walking through your reasoning as you go. Think carefully before committing to any answer. When you are fully confident in your solution, you must use the submit_answer tool to provide your final response — do not call the tool prematurely, before your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22225 x 62274) - (97576 x 91954)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then finding the difference.
+
+**Step 1: Calculate 22225 × 62274**
+
+Breaking it down:
+- 22225 × 60000 = 1,333,500,000
+- 22225 × 2000 = 44,450,000
+- 22225 × 200 = 4,445,000
+- 22225 × 74 = 1,644,650
+
+Adding together:
+1,333,500,000 + 44,450,000 + 4,445,000 + 1,644,650 = **1,384,039,650**
+
+**Step 2: Calculate 97576 × 91954**
+
+Breaking it down:
+- 97576 × 90000 = 8,781,840,000
+- 97576 × 1000 = 97,576,000
+- 97576 × 900 = 87,818,400
+- 97576 × 54 = 5,269,104
+
+Adding together:
+8,781,840,000 + 97,576,000 + 87,818,400 + 5,269,104 = **8,972,503,504**
+
+**Step 3: Subtract**
+
+1,384,039,650 − 8,972,503,504 = **-7,588,463,854**
+
+[TOOL submit_answer] {'value': -7588463854}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-7,588,463,854**.
+
+The result is negative because the second product (97,576 × 91,954 ≈ 8.97 billion) far exceeds the first (22,225 × 62,274 ≈ 1.38 billion).
+

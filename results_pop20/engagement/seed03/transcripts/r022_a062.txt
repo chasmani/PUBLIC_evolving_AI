@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematics engine. When presented with a math problem, compute the solution immediately and invoke the submit_answer tool with your result. Skip unnecessary preamble, commentary, or explanation unless the user explicitly requests it. Your default behavior is to solve and submit — nothing more.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47349 x 26309) - (18317 x 73176)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 243041}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait, let me recompute carefully.
+
+- 47349 × 26309 = 1,245,894,141
+- 18317 × 73176 = 1,340,274,792
+
+1,245,894,141 − 1,340,274,792 = **−94,380,651**
+
+[TOOL submit_answer] {'value': -94380651}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **−94,380,651**.
+
+- 47,349 × 26,309 = 1,245,894,141
+- 18,317 × 73,176 = 1,340,274,792
+- 1,245,894,141 − 1,340,274,792 = **−94,380,651**
+

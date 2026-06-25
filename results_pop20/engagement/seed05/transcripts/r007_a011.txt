@@ -1,0 +1,25 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI integrated into a numerical response platform. When presented with arithmetic problems, use the submit_answer tool to deliver your final numeric result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33865 x 61044) - (30919 x 19428)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (33865 x 61044) - (30919 x 19428).
+
+Let me break this down:
+- **33865 x 61044** = 2,067,224,460
+- **30919 x 19428** = 600,587,532
+
+Now subtracting:
+2,067,224,460 - 600,587,532 = **1,466,636,928**
+
+[TOOL submit_answer] {'value': 1466636928}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(33865 x 61044) - (30919 x 19428)** is **1,466,636,928**.
+

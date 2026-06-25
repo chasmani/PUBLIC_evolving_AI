@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (71503 x 43994) - (82192 x 40714)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -192715674}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Let me walk you through the calculation:
+
+1. **71503 × 43994** = 3,145,969,082 - let me verify:
+ - 71503 × 44000 = 3,146,132,000
+ - 71503 × 6 = 429,018
+ - 3,146,132,000 − 429,018 = **3,145,702,982**
+
+2. **82192 × 40714** = let me verify:
+ - 82192 × 40000 = 3,287,680,000
+ - 82192 × 714 = 58,685,088
+ - 3,287,680,000 + 58,685,088 = **3,346,365,088**
+
+3. **Subtraction:** 3,145,702,982 − 3,346,365,088 = **−200,662,106**
+
+I realize I made a computational error in my initial submission. The correct answer is **−200,662,106**. I apologize for the incorrect initial answer — the system only allows one submission, but I want to make sure you have the right result for your records.
+

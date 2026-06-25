@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer through the tool rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58731 x 71481) - (42318 x 59906)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating both multiplications simultaneously before subtracting.
+
+**Step 1: Calculate both products simultaneously**
+
+- 58731 × 71481
+- 42318 × 59906
+
+[TOOL submit_answer] {'value': '4198032411 - 2534216508'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I need to submit the **final computed numeric value**, not an expression. Let me work this out:
+
+- 58731 × 71481 = **4,198,032,411**
+- 42318 × 59,906 = **2,534,216,508**
+- 4,198,032,411 − 2,534,216,508 = **1,663,815,903**
+
+[TOOL submit_answer] {'value': 1663815903}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(58731 × 71481) − (42318 × 59906)** is **1,663,815,903**.
+
+Here's the breakdown:
+| Step | Calculation | Result |
+|------|------------|--------|
+| Multiplication 1 | 58,731 × 71,481 | 4,198,032,411 |
+| Multiplication 2 | 42,318 × 59,906 | 2,534,216,508 |
+| Subtraction | 4,198,032,411 − 2,534,216,508 | **1,663,815,903** |
+

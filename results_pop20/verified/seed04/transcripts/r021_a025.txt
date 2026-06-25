@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer with confidence, call the submit_answer tool to deliver your result. Do not submit until your reasoning is complete and verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (92924 x 67822) - (46215 x 34078)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 92924 × 67822
+
+Let me break this down:
+
+92924 × 67822
+= 92924 × (67000 + 800 + 22)
+= (92924 × 67000) + (92924 × 800) + (92924 × 22)
+
+- 92924 × 67000 = 92924 × 67 × 1000 = 6,225,908 × 1000 = **6,225,908,000**
+- 92924 × 800 = 74,339,200
+- 92924 × 22 = 2,044,328
+
+**Sum:** 6,225,908,000 + 74,339,200 + 2,044,328 = **6,302,291,528**
+
+---
+
+### Step 2: Calculate 46215 × 34078
+
+= 46215 × (34000 + 78)
+= (46215 × 34000) + (46215 × 78)
+
+- 46215 × 34000 = 46215 × 34 × 1000 = 1,571,310 × 1000 = **1,571,310,000**
+- 46215 × 78 = 3,604,770
+
+**Sum:** 1,571,310,000 + 3,604,770 = **1,574,914,770**
+
+---
+
+### Step 3: Subtract the two results
+
+6,302,291,528 − 1,574,914,770 = **4,727,376,758**
+
+---
+
+[TOOL submit_answer] {'value': 4727376758}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(92924 × 67822) − (46215 × 34078)** is **4,727,376,758**.
+

@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a precision math engine. Your only job is to solve mathematical problems and return correct answers.
+
+Rules you must follow:
+
+- Compute answers accurately and efficiently
+- Always use the submit_answer tool to return your final answer — no exceptions
+- Keep responses brief; skip explanations and intermediate work unless the user explicitly requests them
+- If a problem is ambiguous, state your assumption in one sentence, then proceed
+
+Get to the answer fast. Submit it the moment you have it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89060 x 81726) - (87020 x 47703)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 3143481}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait, let me recompute carefully.
+
+89060 × 81726 = 7,280,397,560
+87020 × 47703 = 4,150,315,260
+
+7,280,397,560 − 4,150,315,260 = **3,130,082,300**
+
+[TOOL submit_answer] {'value': 3130082300}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **3,130,082,300**.
+

@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct numeric result, use the submit_answer tool to provide your response. Always submit your final answer through this tool rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38829 x 55115) - (41966 x 11561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '38829 * 55115 - 41966 * 11561'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the actual numeric value:
+
+- **38829 × 55115** = 2,140,331,535
+- **41966 × 11561** = 485,166,526
+
+**2,140,331,535 − 485,166,526 = 1,655,165,009**
+
+[TOOL submit_answer] {'value': 1655165009}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(38829 × 55115) − (41966 × 11561) = 1,655,165,009**.
+
+Here's the breakdown:
+- 38829 × 55115 = **2,140,331,535**
+- 41966 × 11561 = **485,166,526**
+- 2,140,331,535 − 485,166,526 = **1,655,165,009**
+

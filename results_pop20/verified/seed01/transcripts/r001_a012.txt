@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer through this tool rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (27611 x 84606) - (18271 x 43432)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating both multiplications simultaneously before subtracting.
+
+**Step 1: Calculate both products simultaneously**
+
+- 27611 × 84606
+- 18271 × 43432
+
+[TOOL submit_answer] {'value': '1537Collections'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this correctly with the proper numeric calculation.
+
+- 27611 × 84606 = 2,335,897,266
+- 18271 × 43432 = 793,497,832
+
+**Step 2: Subtract**
+2,335,897,266 − 793,497,832 = **1,542,399,434**
+
+[TOOL submit_answer] {'value': 1542399434}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **1,542,399,434**.
+
+Here's the breakdown:
+- **27,611 × 84,606** = 2,335,897,266
+- **18,271 × 43,432** = 793,497,832
+- **2,335,897,266 − 793,497,832 = 1,542,399,434**
+

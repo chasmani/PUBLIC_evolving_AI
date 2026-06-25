@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor with deep expertise in arithmetic, algebra, and quantitative reasoning. Your approach to every problem is methodical and transparent: you identify what is being asked, lay out a clear plan of attack, and then execute each step carefully while explaining your reasoning in plain language that anyone can follow. Double-check your work as you go. Never rush to a conclusion — only once you have fully verified your solution should you call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51555 x 85451) - (41733 x 48054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 51555 × 85451
+
+I'll break this down:
+- 51555 × 80000 = 4,124,400,000
+- 51555 × 5000 = 257,775,000
+- 51555 × 400 = 20,622,000
+- 51555 × 51 = 2,629,305
+
+Now summing:
+- 4,124,400,000 + 257,775,000 = 4,382,175,000
+- 4,382,175,000 + 20,622,000 = 4,402,797,000
+- 4,402,797,000 + 2,629,305 = **4,405,426,305**
+
+---
+
+### Step 2: Compute 41733 × 48054
+
+Breaking it down:
+- 41733 × 40000 = 1,669,320,000
+- 41733 × 8000 = 333,864,000
+- 41733 × 54 = 2,253,582
+
+Now summing:
+- 1,669,320,000 + 333,864,000 = 2,003,184,000
+- 2,003,184,000 + 2,253,582 = **2,005,437,582**
+
+---
+
+### Step 3: Subtract
+
+4,405,426,305 − 2,005,437,582 = **2,399,988,723**
+
+---
+
+### ✅ Final Verification
+
+- 51555 × 85451: re-checking 51555 × 51 = 51555 × 50 + 51555 = 2,577,750 + 51,555 = 2,629,305 ✔
+- 41733 × 54 = 41733 × 50 + 41733 × 4 = 2,086,650 + 166,932 = 2,253,582 ✔
+- Subtraction: 4,405,426,305 − 2,005,437,582 = 2,399,988,723 ✔
+
+[TOOL submit_answer] {'value': 2399988723}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,399,988,723**.
+

@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical reasoning engine built for solving numerical and logical problems with precision and care. Your approach to every problem is systematic: begin by thoroughly reading and interpreting the question, then construct a step-by-step solution that makes your reasoning transparent at every stage. Never skip steps or assume intermediate results — compute each value explicitly and explain why each transformation or operation is valid. Verify your work before committing to a final answer. Use the submit_answer tool only after you have fully worked through the problem and are certain of your result. Submitting prematurely or without complete justification is not acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49456 x 65200) - (76485 x 60576)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Compute 49456 × 65200**
+
+Break it down:
+49456 × 65200
+= 49456 × 65000 + 49456 × 200
+= (49456 × 65000) + (49456 × 200)
+
+- 49456 × 65000 = 49456 × 65 × 1000 = 3,214,640 × 1000 = **3,214,640,000**
+- 49456 × 200 = **9,891,200**
+
+→ 49456 × 65200 = 3,214,640,000 + 9,891,200 = **3,224,531,200**
+
+---
+
+**Step 2: Compute 76485 × 60576**
+
+Break it down:
+76485 × 60576
+= 76485 × 60000 + 76485 × 500 + 76485 × 76
+
+- 76485 × 60000 = **4,589,100,000**
+- 76485 × 500 = **38,242,500**
+- 76485 × 76 = 76485 × 70 + 76485 × 6 = 5,353,950 + 458,910 = **5,812,860**
+
+→ 76485 × 60576 = 4,589,100,000 + 38,242,500 + 5,812,860 = **4,633,155,360**
+
+---
+
+**Step 3: Subtract**
+
+3,224,531,200 − 4,633,155,360 = **−1,408,624,160**
+
+[TOOL submit_answer] {'value': -1408624160}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−1,408,624,160**.
+

@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and quantitative reasoning. When presented with a problem, break it down into logical steps and walk through your reasoning carefully, showing all intermediate calculations. Verify your work before committing to a final answer. When you are certain of your result, use the submit_answer tool to report it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56639 x 67137) - (87171 x 52030)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then finding the difference.
+
+---
+
+**Step 1: Calculate 56639 × 67137**
+
+56639 × 67137:
+- 56639 × 60000 = 3,398,340,000
+- 56639 × 7000 = 396,473,000
+- 56639 × 100 = 5,663,900
+- 56639 × 37 = 2,095,643
+
+Sum:
+3,398,340,000 + 396,473,000 = 3,794,813,000
+3,794,813,000 + 5,663,900 = 3,800,476,900
+3,800,476,900 + 2,095,643 = **3,802,572,543**
+
+---
+
+**Step 2: Calculate 87171 × 52030**
+
+87171 × 52030:
+- 87171 × 50000 = 4,358,550,000
+- 87171 × 2000 = 174,342,000
+- 87171 × 30 = 2,615,130
+
+Sum:
+4,358,550,000 + 174,342,000 = 4,532,892,000
+4,532,892,000 + 2,615,130 = **4,535,507,130**
+
+---
+
+**Step 3: Subtract**
+
+3,802,572,543 − 4,535,507,130 = **−732,934,587**
+
+[TOOL submit_answer] {'value': -732934587}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−732,934,587**.
+

@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (25475 x 77100) - (64804 x 31621)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract.
+
+**Step 1: 25475 × 77100**
+
+25475 × 77100
+= 25475 × 77 × 1000
+= (25475 × 70) + (25475 × 7)) × 1000
+= (1,783,250 + 178,325) × 1000
+= 1,961,575 × 1000
+= **1,961,575,000**
+
+**Step 2: 64804 × 31621**
+
+64804 × 31621
+= 64804 × (30000 + 1000 + 600 + 21)
+= (64804 × 30000) + (64804 × 1000) + (64804 × 600) + (64804 × 21)
+= 1,944,120,000 + 64,804,000 + 38,882,400 + 1,360,884
+= 1,944,120,000 + 64,804,000 = 2,008,924,000
+= 2,008,924,000 + 38,882,400 = 2,047,806,400
+= 2,047,806,400 + 1,360,884 = **2,049,167,284**
+
+**Step 3: 1,961,575,000 − 2,049,167,284**
+
+= **−87,592,284**
+
+[TOOL submit_answer] {'value': -87592284}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−87,592,284**.
+
+Here's a summary of the computation:
+- **25,475 × 77,100** = 1,961,575,000
+- **64,804 × 31,621** = 2,049,167,284
+- **1,961,575,000 − 2,049,167,284 = −87,592,284**
+

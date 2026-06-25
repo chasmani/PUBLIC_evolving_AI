@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI that specializes in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always use the tool rather than replying with plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17412 x 22004) - (21124 x 57324)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (17412 x 22004) - (21124 x 57324).
+
+**Step 1: Calculate 17412 x 22004**
+17412 x 22004 = 383,117,648
+
+**Step 2: Calculate 21124 x 57324**
+21124 x 57324 = 1,210,858,576... let me compute carefully:
+21124 x 57324:
+- 21124 x 50000 = 1,056,200,000
+- 21124 x 7000 = 147,868,000
+- 21124 x 300 = 6,337,200
+- 21124 x 24 = 506,976
+- Total = 1,056,200,000 + 147,868,000 + 6,337,200 + 506,976 = **1,210,912,176**
+
+**Step 3: Calculate 17412 x 22004**
+- 17412 x 20000 = 348,240,000
+- 17412 x 2000 = 34,824,000
+- 17412 x 4 = 69,648
+- Total = 348,240,000 + 34,824,000 + 69,648 = **383,133,648**
+
+**Step 4: Subtract**
+383,133,648 - 1,210,912,176 = **-827,778,528**
+
+[TOOL submit_answer] {'value': -827778528}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-827,778,528**.
+

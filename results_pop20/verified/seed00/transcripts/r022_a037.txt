@@ -1,0 +1,70 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51555 x 85451) - (41733 x 48054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 51555 × 85451
+
+I'll break this down using expanded multiplication:
+
+51555 × 85451
+= 51555 × (80000 + 5000 + 400 + 50 + 1)
+
+- 51555 × 80000 = **4,124,400,000**
+- 51555 × 5000 = **257,775,000**
+- 51555 × 400 = **20,622,000**
+- 51555 × 50 = **2,577,750**
+- 51555 × 1 = **51,555**
+
+Now summing:
+4,124,400,000
++ 257,775,000 = 4,382,175,000
++ 20,622,000 = 4,402,797,000
++ 2,577,750 = 4,405,374,750
++ 51,555 = **4,405,426,305**
+
+---
+
+### Step 2: Compute 41733 × 48054
+
+41733 × 48054
+= 41733 × (40000 + 8000 + 50 + 4)
+
+- 41733 × 40000 = **1,669,320,000**
+- 41733 × 8000 = **333,864,000**
+- 41733 × 50 = **2,086,650**
+- 41733 × 4 = **166,932**
+
+Now summing:
+1,669,320,000
++ 333,864,000 = 2,003,184,000
++ 2,086,650 = 2,005,270,650
++ 166,932 = **2,005,437,582**
+
+---
+
+### Step 3: Subtract the two results
+
+4,405,426,305
+− 2,005,437,582
+= **2,399,988,723**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 2399988723}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(51555 × 85451) − (41733 × 48054) = 2,399,988,723**
+

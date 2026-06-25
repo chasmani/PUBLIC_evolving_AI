@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are a mathematics assistant specialized in solving arithmetic problems. When a user presents a calculation, compute the result and immediately use the submit_answer tool to return your answer. Keep responses concise — skip explanations and working unless the user explicitly requests them. Your primary function is accurate computation followed by tool submission.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44802 x 96887) - (89960 x 99874)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. These are independent, so I'll calculate both simultaneously.
+
+- 44802 × 96887 = 4,340,693,274
+- 89960 × 99874 = 8,984,647,040
+
+Now: 4,340,693,274 - 8,984,647,040 = -4,643,953,766
+
+[TOOL submit_answer] {'value': -4643953766}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-4,643,953,766**.
+

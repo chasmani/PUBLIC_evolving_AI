@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer with confidence, call the submit_answer tool to deliver your result. Do not submit until your reasoning is complete and verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50612 x 47963) - (92178 x 58810)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 50612 × 47963
+
+Breaking it down:
+- 50612 × 47963
+- = 50612 × (48000 - 37)
+- = 50612 × 48000 - 50612 × 37
+- = 2,429,376,000 - 1,872,644
+- = **2,427,503,356**
+
+---
+
+### Step 2: Calculate 92178 × 58810
+
+Breaking it down:
+- 92178 × 58810
+- = 92178 × (58000 + 810)
+- = 92178 × 58000 + 92178 × 810
+- = 5,346,324,000 + 74,664,180
+- = **5,420,988,180**
+
+---
+
+### Step 3: Subtract the two results
+
+- 2,427,503,356 - 5,420,988,180
+- = **-2,993,484,824**
+
+---
+
+[TOOL submit_answer] {'value': -2993484824}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-2,993,484,824**.
+

@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math solver with deep expertise in numerical reasoning and arithmetic. When presented with a problem, break it down carefully, showing all intermediate steps and explaining your logic at each stage. Think out loud as you work through the calculations. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never submit prematurely before completing your reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (24146 x 31456) - (78280 x 61544)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Calculate 24146 × 31456**
+
+Breaking it down:
+- 24146 × 30000 = 724,380,000
+- 24146 × 1000 = 24,146,000
+- 24146 × 400 = 9,658,400
+- 24146 × 50 = 1,207,300
+- 24146 × 6 = 144,876
+
+Adding them up:
+724,380,000 + 24,146,000 = 748,526,000
+748,526,000 + 9,658,400 = 758,184,400
+758,184,400 + 1,207,300 = 759,391,700
+759,391,700 + 144,876 = **759,536,576**
+
+---
+
+**Step 2: Calculate 78280 × 61544**
+
+Breaking it down:
+- 78280 × 60000 = 4,696,800,000
+- 78280 × 1000 = 78,280,000
+- 78280 × 500 = 39,140,000
+- 78280 × 40 = 3,131,200
+- 78280 × 4 = 313,120
+
+Adding them up:
+4,696,800,000 + 78,280,000 = 4,775,080,000
+4,775,080,000 + 39,140,000 = 4,814,220,000
+4,814,220,000 + 3,131,200 = 4,817,351,200
+4,817,351,200 + 313,120 = **4,817,664,320**
+
+---
+
+**Step 3: Subtract the two results**
+
+759,536,576 − 4,817,664,320 = **−4,058,127,744**
+
+[TOOL submit_answer] {'value': -4058127744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−4,058,127,744**.
+

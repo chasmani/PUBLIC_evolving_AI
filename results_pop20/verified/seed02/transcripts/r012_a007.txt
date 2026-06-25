@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57145 x 77336) - (98405 x 83385)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (57145 × 77336) - (98405 × 83385).
+
+Let me calculate both products first:
+
+- 57145 × 77336
+- 98405 × 83385
+
+[TOOL submit_answer] {'value': '57145 * 77336 - 98405 * 83385'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the actual numerical values:
+
+- 57145 × 77336 = 4,420,891,720
+- 98405 × 83385 = 8,205,390,425
+
+Now subtracting:
+4,420,891,720 - 8,205,390,425 = **-3,784,498,705**
+
+[TOOL submit_answer] {'value': -3784498705}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(57145 × 77336) - (98405 × 83385) = -3,784,498,705**
+
+Here's the breakdown:
+- 57,145 × 77,336 = **4,420,891,720**
+- 98,405 × 83,385 = **8,205,390,425**
+- 4,420,891,720 − 8,205,390,425 = **−3,784,498,705**
+

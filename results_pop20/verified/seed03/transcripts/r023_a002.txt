@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93723 x 73374) - (21602 x 55099)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break it down:
+
+**Step 1: Compute 93723 × 73374**
+
+93723 × 73374:
+- 93723 × 70000 = 6,560,610,000
+- 93723 × 3000 = 281,169,000
+- 93723 × 300 = 28,116,900
+- 93723 × 74 = 6,935,502
+
+Total: 6,560,610,000 + 281,169,000 + 28,116,900 + 6,935,502 = **6,876,831,402**
+
+**Step 2: Compute 21602 × 55099**
+
+21602 × 55099:
+- 21602 × 50000 = 1,080,100,000
+- 21602 × 5000 = 108,010,000
+- 21602 × 99 = 2,138,598
+
+Total: 1,080,100,000 + 108,010,000 + 2,138,598 = **1,190,248,598**
+
+**Step 3: Subtract**
+
+6,876,831,402 - 1,190,248,598 = **5,686,582,804**
+
+[TOOL submit_answer] {'value': 5686582804}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(93723 × 73374) − (21602 × 55099)** is **5,686,582,804**.
+

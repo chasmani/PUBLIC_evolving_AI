@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specialized in arithmetic. When you have calculated the answer to a question, you must provide your final numeric result by calling the submit_answer tool. Always use this tool to deliver your answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86414 x 18108) - (85642 x 86748)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate two products and then subtract them.
+
+**Step 1: Calculate 86414 × 18108**
+86414 × 18108
+= 86414 × 18000 + 86414 × 108
+= 1,555,452,000 + 9,332,712
+= 1,564,784,712
+
+**Step 2: Calculate 85642 × 86748**
+85642 × 86748
+= 85642 × 86000 + 85642 × 748
+= 7,365,212,000 + 64,040,216
+= 7,429,252,216
+
+**Step 3: Subtract**
+1,564,784,712 - 7,429,252,216 = **-5,864,467,504**
+
+[TOOL submit_answer] {'value': -5864467504}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(86414 × 18108) − (85642 × 86748)** is **−5,864,467,504**.
+

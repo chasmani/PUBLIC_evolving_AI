@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85107 x 51123) - (54580 x 55898)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 85107 × 51123**
+85107 × 51123 = 4,351,174,161
+
+**Step 2: Calculate 54580 × 55898**
+54580 × 55898 = 3,050,808,440
+
+**Step 3: Subtract the results**
+4,351,174,161 - 3,050,808,440 = 1,300,365,721
+
+[TOOL submit_answer] {'value': 1300365721}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(85107 × 51123) - (54580 × 55898)** is **1,300,365,721**.
+

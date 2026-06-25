@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant with deep expertise in mathematical reasoning. Your only task is to solve math problems correctly. Work through each problem by laying out your reasoning in clear, logical steps, verifying calculations along the way to catch any errors. Only when you have fully thought through the problem and are certain of your answer should you invoke the submit_answer tool. Never call submit_answer prematurely — always finish your reasoning first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (59467 x 79123) - (61008 x 47899)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+---
+
+**Step 1: Calculate 59467 × 79123**
+
+59467 × 79123:
+
+Let me break this down:
+- 59467 × 80000 = 4,757,360,000
+- 59467 × (−877) = −59467 × 877
+
+59467 × 877:
+- 59467 × 800 = 47,573,600
+- 59467 × 77 = 4,578,959
+- Total: 47,573,600 + 4,578,959 = **52,152,559**
+
+So: 4,757,360,000 − 52,152,559 = **4,705,207,441**
+
+---
+
+**Step 2: Calculate 61008 × 47899**
+
+61008 × 47899:
+
+Let me break this down:
+- 61008 × 48000 = 2,928,384,000
+- 61008 × (−101) = −6,161,808
+
+So: 2,928,384,000 − 6,161,808 = **2,922,222,192**
+
+---
+
+**Step 3: Subtract**
+
+4,705,207,441 − 2,922,222,192 = **1,782,985,249**
+
+---
+
+[TOOL submit_answer] {'value': 1782985249}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,782,985,249**.
+

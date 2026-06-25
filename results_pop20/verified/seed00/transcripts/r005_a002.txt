@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specialized in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22429 x 91050) - (42834 x 79804)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 22429 × 91050**
+22429 × 91050 = 2,041,959,450
+
+**Step 2: Calculate 42834 × 79804**
+42834 × 79804 = 3,418,247,736
+
+**Step 3: Subtract**
+2,041,959,450 - 3,418,247,736 = **-1,376,288,286**
+
+[TOOL submit_answer] {'value': -1376288286}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(22429 × 91050) - (42834 × 79804)** is **-1,376,288,286**.
+

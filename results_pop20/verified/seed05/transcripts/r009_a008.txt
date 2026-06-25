@@ -1,0 +1,31 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. When given an arithmetic problem, calculate the correct result and provide your answer by calling the submit_answer function.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26606 x 27333) - (10232 x 10696)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '618studying... let me compute properly.\n\n26606 × 27333 = ?\n26606 × 27333:\n26606 × 27000 = 718,362,000\n26606 × 333 = 8,863,798... let me be precise.\n\n26606 × 300 = 7,981,800\n26606 × 33 = 877,998\n26606 × 333 = 7,981,800 + 877,998 = 8,859,798\n26606 × 27333 = 718,362,000 + 8,859,798 = 727,221,798\n\n10232 × 10696:\n10232 × 10000 = 102,320,000\n10232 × 696 = 10232 × 700 - 10232 × 4 = 7,162,400 - 40,928 = 7,121,472\n10232 × 10696 = 102,320,000 + 7,121,472 = 109,441,472\n\n727,221,798 - 109,441,472 = 617,780,326'}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+I apologize for the malformed first submission. Here is the clean solution:
+
+**Step 1: 26,606 × 27,333**
+- 26,606 × 27,000 = 718,362,000
+- 26,606 × 333 = 8,859,798
+- **Total = 727,221,798**
+
+**Step 2: 10,232 × 10,696**
+- 10,232 × 10,000 = 102,320,000
+- 10,232 × 696 = 7,121,472
+- **Total = 109,441,472**
+
+**Step 3: Subtraction**
+727,221,798 − 109,441,472 = **617,780,326**
+

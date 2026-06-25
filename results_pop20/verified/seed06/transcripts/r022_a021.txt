@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning assistant. Your sole focus is working through math problems accurately and efficiently. Before arriving at a final answer, walk through your thought process step by step, checking your work as you go. Once you are confident in your solution, call the submit_answer tool to deliver the result. Do not submit an answer until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (94932 x 53635) - (83104 x 97995)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 94932 × 53635**
+
+94932 × 53635:
+- 94932 × 50000 = 4,746,600,000
+- 94932 × 3000 = 284,796,000
+- 94932 × 600 = 56,959,200
+- 94932 × 35 = 3,322,620
+
+Sum: 4,746,600,000 + 284,796,000 + 56,959,200 + 3,322,620 = **5,091,677,820**
+
+**Step 2: Calculate 83104 × 97995**
+
+83104 × 97995:
+- 83104 × 90000 = 7,479,360,000
+- 83104 × 7000 = 581,728,000
+- 83104 × 900 = 74,793,600
+- 83104 × 90 = 7,479,360
+- 83104 × 5 = 415,520
+
+Sum: 7,479,360,000 + 581,728,000 + 74,793,600 + 7,479,360 + 415,520 = **8,143,776,480**
+
+**Step 3: Subtract**
+
+5,091,677,820 - 8,143,776,480 = **-3,052,098,660**
+
+[TOOL submit_answer] {'value': -3052098660}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,052,098,660**.
+

@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a methodical math-focused AI with deep expertise in quantitative reasoning and step-by-step computation. When tackling any problem, decompose it into manageable parts and perform each calculation transparently, making your reasoning visible at every stage. Double-check your logic and arithmetic before drawing conclusions. Treat accuracy as your highest priority — take the time to verify your work thoroughly, and only call the submit_answer tool when you are completely certain your answer is correct. Rushing to a conclusion or submitting an unverified result is never acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56576 x 50116) - (73012 x 51391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 56576 × 50116
+
+Breaking it down:
+- 56576 × 50000 = 2,828,800,000
+- 56576 × 100 = 5,657,600
+- 56576 × 16 = 905,216
+
+**Sum:** 2,828,800,000 + 5,657,600 + 905,216 = **2,835,362,816**
+
+---
+
+### Step 2: Calculate 73012 × 51391
+
+Breaking it down:
+- 73012 × 50000 = 3,650,600,000
+- 73012 × 1000 = 73,012,000
+- 73012 × 300 = 21,903,600
+- 73012 × 90 = 6,571,080
+- 73012 × 1 = 73,012
+
+**Sum:** 3,650,600,000 + 73,012,000 + 21,903,600 + 6,571,080 + 73,012 = **3,752,159,692**
+
+---
+
+### Step 3: Subtract
+
+2,835,362,816 − 3,752,159,692 = **-916,796,876**
+
+---
+
+### ✅ Verification (Double-check key multiplications)
+- 56576 × 50116: Re-confirmed via (56576 × 50000) + (56576 × 116) = 2,828,800,000 + 6,562,816 = **2,835,362,816** ✔️
+- 73012 × 51391: Re-confirmed via (73012 × 51000) + (73012 × 391) = 3,723,612,000 + 28,547,692 = **3,752,159,692** ✔️
+
+[TOOL submit_answer] {'value': -916796876}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-916,796,876**.
+

@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct answer to an arithmetic problem, use the submit_answer tool to record your response. Always provide exact numeric results.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95062 x 16796) - (30558 x 24838)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 838413752}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(95062 × 16796) − (30558 × 24838)** is **838,413,752**.
+
+Here's the breakdown:
+- **95,062 × 16,796** = 1,596,321,352
+- **30,558 × 24,838** = 759,907,404 (wait — let me verify the subtraction)
+
+Actually, let's double-check:
+- 95,062 × 16,796 = **1,596,321,352**
+- 30,558 × 24,838 = **759,907,404**
+- 1,596,321,352 − 759,907,404 = **836,413,948**
+
+⚠️ I notice a discrepancy in my own check. The submitted answer above was **838,413,752**, but my manual verification gives **836,413,948**. Please use **836,413,948** as the more carefully verified result. I apologize for any confusion from the tool submission!
+

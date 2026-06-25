@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36146 x 10690) - (63895 x 17181)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications first, then subtract. Since the two multiplications are independent, I'll calculate them simultaneously.
+
+**Step 1: Calculate both products**
+
+**36146 × 10690:**
+- 36146 × 10000 = 361,460,000
+- 36146 × 600 = 21,687,600
+- 36146 × 90 = 3,253,140
+- Total = 361,460,000 + 21,687,600 + 3,253,140 = **386,400,740**
+
+**63895 × 17181:**
+- 63895 × 10000 = 638,950,000
+- 63895 × 7000 = 447,265,000
+- 63895 × 100 = 6,389,500
+- 63895 × 80 = 5,111,600
+- 63895 × 1 = 63,895
+- Total = 638,950,000 + 447,265,000 + 6,389,500 + 5,111,600 + 63,895 = **1,097,779,995**
+
+**Step 2: Subtract**
+386,400,740 - 1,097,779,995 = **-711,379,255**
+
+[TOOL submit_answer] {'value': -711379255}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(36146 × 10690) - (63895 × 17181) = -711,379,255**
+

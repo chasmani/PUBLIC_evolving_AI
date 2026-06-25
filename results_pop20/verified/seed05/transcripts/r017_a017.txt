@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98858 x 54288) - (18653 x 50626)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (98858 x 54288) - (18653 x 50626).
+
+**Step 1: Calculate 98858 x 54288**
+
+98858 x 54288:
+- 98858 x 50000 = 4,942,900,000
+- 98858 x 4000 = 395,432,000
+- 98858 x 200 = 19,771,600
+- 98858 x 80 = 7,908,640
+- 98858 x 8 = 790,864
+
+Sum: 4,942,900,000 + 395,432,000 = 5,338,332,000
++ 19,771,600 = 5,358,103,600
++ 7,908,640 = 5,366,012,240
++ 790,864 = 5,366,803,104
+
+**Step 2: Calculate 18653 x 50626**
+
+18653 x 50626:
+- 18653 x 50000 = 932,650,000
+- 18653 x 600 = 11,191,800
+- 18653 x 20 = 373,060
+- 18653 x 6 = 111,918
+
+Sum: 932,650,000 + 11,191,800 = 943,841,800
++ 373,060 = 944,214,860
++ 111,918 = 944,326,778
+
+**Step 3: Subtract**
+
+5,366,803,104 - 944,326,778 = **4,422,476,326**
+
+[TOOL submit_answer] {'value': 4422476326}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(98858 x 54288) - (18653 x 50626)** is **4,422,476,326**.
+

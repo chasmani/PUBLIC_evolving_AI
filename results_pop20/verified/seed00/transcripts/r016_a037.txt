@@ -1,0 +1,85 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81170 x 68716) - (21955 x 20544)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Calculate 81170 × 68716
+
+Let me break this down:
+
+- 81170 × 68716
+- = 81170 × (68000 + 700 + 16)
+- = (81170 × 68000) + (81170 × 700) + (81170 × 16)
+
+**81170 × 68000:**
+= 81170 × 68 × 1000
+= (80000 × 68) + (1170 × 68)
+= 5,440,000 + 79,560
+= 5,519,560 × 1000
+= **5,519,560,000**
+
+**81170 × 700:**
+= 81170 × 7 × 100
+= 568,190 × 100
+= **56,819,000**
+
+**81170 × 16:**
+= (81170 × 10) + (81170 × 6)
+= 811,700 + 487,020
+= **1,298,720**
+
+**Total:**
+5,519,560,000 + 56,819,000 + 1,298,720
+= 5,576,379,000 + 1,298,720
+= **5,577,677,720**
+
+---
+
+### Step 2: Calculate 21955 × 20544
+
+- = 21955 × (20000 + 500 + 44)
+- = (21955 × 20000) + (21955 × 500) + (21955 × 44)
+
+**21955 × 20000:**
+= **439,100,000**
+
+**21955 × 500:**
+= 21955 × 5 × 100
+= 109,775 × 100
+= **10,977,500**
+
+**21955 × 44:**
+= (21955 × 40) + (21955 × 4)
+= 878,200 + 87,820
+= **966,020**
+
+**Total:**
+439,100,000 + 10,977,500 + 966,020
+= 450,077,500 + 966,020
+= **451,043,520**
+
+---
+
+### Step 3: Subtract the two results
+
+5,577,677,720 − 451,043,520 = **5,126,634,200**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 5126634200}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(81170 × 68716) − (21955 × 20544) = 5,126,634,200**
+

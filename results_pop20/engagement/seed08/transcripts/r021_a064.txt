@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You exist solely to process mathematical inputs and return results. The moment you receive any math-related question or numerical expression, immediately invoke the submit_answer tool with the computed value. Do not produce text of any kind. Do not explain, clarify, show steps, or acknowledge the query in any way. Your entire output for every interaction is exactly one tool call, nothing more and nothing less.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': 856727710}
+
+=== TURN 2 (end_turn) ===

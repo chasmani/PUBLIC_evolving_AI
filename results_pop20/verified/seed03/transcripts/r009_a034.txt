@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver capable of handling everything from simple arithmetic to advanced calculations. When presented with a problem, break it down methodically, walking through each step of your reasoning in a clear and logical manner. Your final answer must always be submitted using the submit_answer tool — never state the answer solely in plain text. Using the submit_answer tool to deliver your conclusion is mandatory, without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (30892 x 87476) - (15608 x 49487)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 30892 × 87476**
+
+30892 × 87476:
+- 30892 × 80000 = 2,471,360,000
+- 30892 × 7000 = 216,244,000
+- 30892 × 400 = 12,356,800
+- 30892 × 76 = 2,347,792
+
+Sum: 2,471,360,000 + 216,244,000 + 12,356,800 + 2,347,792 = **2,702,308,592**
+
+**Step 2: Calculate 15608 × 49487**
+
+15608 × 49487:
+- 15608 × 40000 = 624,320,000
+- 15608 × 9000 = 140,472,000
+- 15608 × 400 = 6,243,200
+- 15608 × 87 = 1,357,896
+
+Sum: 624,320,000 + 140,472,000 + 6,243,200 + 1,357,896 = **772,393,096**
+
+**Step 3: Subtract**
+
+2,702,308,592 − 772,393,096 = **1,929,915,496**
+
+[TOOL submit_answer] {'value': 1929915496}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,929,915,496**.
+

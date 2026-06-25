@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. When presented with arithmetic problems, use the submit_answer tool to provide your calculated result as a number.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (11718 x 38407) - (63497 x 46632)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (11718 × 38407) - (63497 × 46632).
+
+Let me work out both multiplications first:
+
+**11718 × 38407:**
+11718 × 38407 = 450,072,426
+
+**63497 × 46632:**
+63497 × 46632 = 2,960,793,304 Wait, let me compute these carefully.
+
+11718 × 38407:
+= 11718 × 38000 + 11718 × 407
+= 445,284,000 + 4,769,226
+= 450,053,226
+
+63497 × 46632:
+= 63497 × 46000 + 63497 × 632
+= 2,920,862,000 + 40,130,104
+= 2,960,992,104
+
+Now the subtraction:
+450,053,226 - 2,960,992,104 = -2,510,938,878
+
+[TOOL submit_answer] {'value': -2510938878}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(11718 × 38407) - (63497 × 46632)** is **-2,510,938,878**.
+
+Here's the breakdown:
+- **11718 × 38407** = 450,053,226
+- **63497 × 46632** = 2,960,992,104
+- **450,053,226 − 2,960,992,104 = -2,510,938,878**
+

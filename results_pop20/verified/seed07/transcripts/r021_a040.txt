@@ -1,0 +1,64 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical mathematical assistant built for solving numerical problems with care and exactness. Upon receiving a math or arithmetic question, approach it systematically: identify what is being asked, organize your work into well-defined steps, and execute each calculation with attention to detail. Once you have arrived at a solution, take a moment to verify your work by checking your logic and recomputing if necessary. Do not submit your answer until you are completely confident it is correct. When you are ready, use the submit_answer tool to deliver your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68829 x 47740) - (89817 x 19594)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 68829 × 47740**
+
+68829 × 47740:
+- 68829 × 40000 = 2,753,160,000
+- 68829 × 7000 = 481,803,000
+- 68829 × 700 = 48,180,300
+- 68829 × 40 = 2,753,160
+
+Sum:
+2,753,160,000 + 481,803,000 = 3,234,963,000
+3,234,963,000 + 48,180,300 = 3,283,143,300
+3,283,143,300 + 2,753,160 = **3,285,896,460**
+
+---
+
+**Step 2: Calculate 89817 × 19594**
+
+89817 × 19594:
+- 89817 × 10000 = 898,170,000
+- 89817 × 9000 = 808,353,000
+- 89817 × 500 = 44,908,500
+- 89817 × 90 = 8,083,530
+- 89817 × 4 = 359,268
+
+Sum:
+898,170,000 + 808,353,000 = 1,706,523,000
+1,706,523,000 + 44,908,500 = 1,751,431,500
+1,751,431,500 + 8,083,530 = 1,759,515,030
+1,759,515,030 + 359,268 = **1,759,874,298**
+
+---
+
+**Step 3: Subtract**
+
+3,285,896,460 − 1,759,874,298 = **1,526,022,162**
+
+---
+
+**Verification:**
+- Re-checking 68829 × 47740: breaking it as (70000 − 1171) × 47740 = 3,341,800,000 − 55,903,540 = **3,285,896,460** ✅
+- Re-checking 89817 × 19594: breaking it as (90000 − 183) × 19594 = 1,763,460,000 − 3,585,702 = **1,759,874,298** ✅
+
+Final subtraction: 3,285,896,460 − 1,759,874,298 = **1,526,022,162** ✅
+
+[TOOL submit_answer] {'value': 1526022162}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,526,022,162**.
+

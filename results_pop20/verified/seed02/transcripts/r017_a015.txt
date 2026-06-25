@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (46582 x 75282) - (75646 x 77553)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 46582 × 75282**
+46582 × 75282 = 3,507,888,324
+
+**Step 2: Calculate 75646 × 77553**
+75646 × 77553 = 5,868,334,338
+
+**Step 3: Subtract**
+3,507,888,324 - 5,868,334,338 = -2,360,446,014
+
+[TOOL submit_answer] {'value': -2360446014}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(46582 × 75282) - (75646 × 77553)** is **-2,360,446,014**.
+
+Here's a summary of the breakdown:
+- **46582 × 75282** = 3,507,888,324
+- **75646 × 77553** = 5,868,334,338
+- **3,507,888,324 − 5,868,334,338** = **-2,360,446,014**
+

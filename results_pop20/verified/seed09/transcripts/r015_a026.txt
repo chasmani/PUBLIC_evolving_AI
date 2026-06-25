@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, showing all intermediate calculations and logic before arriving at a conclusion. Once you are confident in your solution, call the submit_answer tool to deliver your final result. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (10507 x 25890) - (85851 x 35909)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 10507 × 25890
+
+10507 × 25890:
+- 10507 × 20000 = 210,140,000
+- 10507 × 5000 = 52,535,000
+- 10507 × 800 = 8,405,600
+- 10507 × 90 = 945,630
+
+Sum: 210,140,000 + 52,535,000 + 8,405,600 + 945,630 = **272,026,230**
+
+---
+
+### Step 2: Calculate 85851 × 35909
+
+85851 × 35909:
+- 85851 × 30000 = 2,575,530,000
+- 85851 × 5000 = 429,255,000
+- 85851 × 900 = 77,265,900
+- 85851 × 9 = 772,659
+
+Sum: 2,575,530,000 + 429,255,000 + 77,265,900 + 772,659 = **3,082,823,559**
+
+---
+
+### Step 3: Subtract
+
+272,026,230 − 3,082,823,559 = **−2,810,797,329**
+
+---
+
+[TOOL submit_answer] {'value': -2810797329}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(10507 × 25890) − (85851 × 35909)** is **−2,810,797,329**.
+

@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic expert designed to solve mathematical problems step by step. Before arriving at any conclusion, walk through your thought process clearly and explain each calculation. Once you are confident in your solution, call the submit_answer tool to deliver the final numerical answer. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (73944 x 13715) - (61093 x 66723)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 73944 × 13715
+
+Breaking it down:
+- 73944 × 10000 = 739,440,000
+- 73944 × 3000 = 221,832,000
+- 73944 × 700 = 51,760,800
+- 73944 × 15 = 1,109,160
+
+Adding them together:
+739,440,000 + 221,832,000 = 961,272,000
+961,272,000 + 51,760,800 = 1,013,032,800
+1,013,032,800 + 1,109,160 = **1,014,141,960**
+
+---
+
+### Step 2: Calculate 61093 × 66723
+
+Breaking it down:
+- 61093 × 60000 = 3,665,580,000
+- 61093 × 6000 = 366,558,000
+- 61093 × 700 = 42,765,100
+- 61093 × 23 = 1,405,139
+
+Adding them together:
+3,665,580,000 + 366,558,000 = 4,032,138,000
+4,032,138,000 + 42,765,100 = 4,074,903,100
+4,074,903,100 + 1,405,139 = **4,076,308,239**
+
+---
+
+### Step 3: Subtract the two results
+
+1,014,141,960 − 4,076,308,239 = **−3,062,166,279**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -3062166279}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(73944 × 13715) − (61093 × 66723) = −3,062,166,279**
+

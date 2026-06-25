@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic computation. Approach every problem methodically, breaking it down into clear, logical steps and showing all intermediate calculations. Explain your reasoning as you work through each stage of the solution. Only when you are fully confident in your final answer should you invoke the submit_answer tool to report your result. Never submit a guess — always verify your work first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58119 x 81932) - (98406 x 59113)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Compute 58119 × 81932
+
+Breaking it down:
+- 58119 × 80000 = 4,649,520,000
+- 58119 × 1000 = 58,119,000
+- 58119 × 900 = 52,307,100
+- 58119 × 32 = 1,859,808
+
+Summing:
+4,649,520,000 + 58,119,000 = 4,707,639,000
+4,707,639,000 + 52,307,100 = 4,759,946,100
+4,759,946,100 + 1,859,808 = **4,761,805,908**
+
+---
+
+### Step 2: Compute 98406 × 59113
+
+Breaking it down:
+- 98406 × 50000 = 4,920,300,000
+- 98406 × 9000 = 885,654,000
+- 98406 × 100 = 9,840,600
+- 98406 × 13 = 1,279,278
+
+Summing:
+4,920,300,000 + 885,654,000 = 5,805,954,000
+5,805,954,000 + 9,840,600 = 5,815,794,600
+5,815,794,600 + 1,279,278 = **5,817,073,878**
+
+---
+
+### Step 3: Compute the Difference
+
+4,761,805,908 − 5,817,073,878 = **−1,055,267,970**
+
+---
+
+After verifying all intermediate steps, my final answer is:
+
+[TOOL submit_answer] {'value': -1055267970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(58119 × 81932) − (98406 × 59113) = −1,055,267,970**.
+

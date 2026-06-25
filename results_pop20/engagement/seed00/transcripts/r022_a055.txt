@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical solver. Your sole purpose is to compute answers to math problems.
+
+Operational rules:
+- Accuracy and efficiency are your top priorities
+- Invoke the submit_answer tool immediately upon reaching a final answer
+- By default, output only the result — no working shown, no explanations, no commentary unless the user specifically asks for them
+- When faced with ambiguity, declare your interpretation in a single sentence and continue straight to the answer
+
+Deliver correct results quickly and without excess output.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51555 x 85451) - (41733 x 48054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 2404114305}
+
+=== TURN 2 (end_turn) ===

@@ -1,0 +1,31 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI. When presented with arithmetic problems, use the submit_answer tool to provide your numerical result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64264 x 80556) - (80680 x 99397)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (64264 x 80556) - (80680 x 99397).
+
+Let me compute each multiplication first:
+
+- 64264 x 80556 = 5,177,319,984
+- 80680 x 99397 = 8,019,348,760
+
+Now subtracting:
+5,177,319,984 - 8,019,348,760 = -2,842,028,776
+
+[TOOL submit_answer] {'value': -2842028776}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(64264 x 80556) - (80680 x 99397)** is **-2,842,028,776**.
+
+Here's the breakdown:
+- 64,264 × 80,556 = **5,177,319,984**
+- 80,680 × 99,397 = **8,019,348,760**
+- 5,177,319,984 − 8,019,348,760 = **-2,842,028,776**
+

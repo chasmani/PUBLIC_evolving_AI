@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert arithmetic tutor designed to guide users through mathematical calculations. Your primary goal is to solve number-based problems accurately and efficiently. Walk through your thought process step by step, explaining each part of your reasoning clearly. Once you have arrived at a solution you are confident in, you must call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully worked through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51950 x 76576) - (74131 x 24294)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 51950 × 76576**
+
+Break it down:
+- 50000 × 76576 = 3,828,800,000
+- 1000 × 76576 = 76,576,000
+- 900 × 76576 = 68,918,400
+- 50 × 76576 = 3,828,800
+
+Adding together:
+3,828,800,000 + 76,576,000 = 3,905,376,000
+3,905,376,000 + 68,918,400 = 3,974,294,400
+3,974,294,400 + 3,828,800 = **3,978,123,200**
+
+---
+
+**Step 2: Calculate 74131 × 24294**
+
+Break it down:
+- 70000 × 24294 = 1,700,580,000
+- 4000 × 24294 = 97,176,000
+- 100 × 24294 = 2,429,400
+- 30 × 24294 = 728,820
+- 1 × 24294 = 24,294
+
+Adding together:
+1,700,580,000 + 97,176,000 = 1,797,756,000
+1,797,756,000 + 2,429,400 = 1,800,185,400
+1,800,185,400 + 728,820 = 1,800,914,220
+1,800,914,220 + 24,294 = **1,800,938,514**
+
+---
+
+**Step 3: Subtract the two results**
+
+3,978,123,200 − 1,800,938,514 = **2,177,184,686**
+
+[TOOL submit_answer] {'value': 2177184686}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(51950 × 76576) − (74131 × 24294)** is **2,177,184,686**.
+

@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a rigorous computation-focused assistant built for tackling mathematical and numerical challenges. Your approach to every problem should be methodical: decompose the question into manageable components, work through each step explicitly, and display all intermediate calculations in a clear and organized manner. Double-check your logic and arithmetic before drawing any conclusions. Only invoke the submit_answer tool once you have thoroughly verified your solution and are fully confident in its correctness — do not rush to submit before your analysis is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69352 x 16124) - (33713 x 91751)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 69352 × 16124
+
+Break it down:
+- 69352 × 16000 = 69352 × 16 × 1000 = 1,109,632 × 1000 = **1,109,632,000**
+- 69352 × 100 = **6,935,200**
+- 69352 × 24 = 69352 × 20 + 69352 × 4 = 1,387,040 + 277,408 = **1,664,448**
+
+Sum:
+1,109,632,000 + 6,935,200 + 1,664,448 = **1,118,231,648**
+
+---
+
+### Step 2: Compute 33713 × 91751
+
+Break it down:
+- 33713 × 90000 = **3,034,170,000**
+- 33713 × 1000 = **33,713,000**
+- 33713 × 700 = **23,599,100**
+- 33713 × 51 = 33713 × 50 + 33713 × 1 = 1,685,650 + 33,713 = **1,719,363**
+
+Sum:
+3,034,170,000 + 33,713,000 + 23,599,100 + 1,719,363 = **3,093,201,463**
+
+---
+
+### Step 3: Subtract
+
+1,118,231,648 − 3,093,201,463 = **−1,974,969,815**
+
+---
+
+### ✅ Verification Check (rounded estimate):
+- 69352 × 16124 ≈ 69,000 × 16,000 = 1,104,000,000 ✔️
+- 33713 × 91751 ≈ 34,000 × 92,000 = 3,128,000,000 ✔️
+- Difference ≈ −2,024,000,000, consistent with our precise answer ✔️
+
+[TOOL submit_answer] {'value': -1974969815}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,974,969,815**.
+

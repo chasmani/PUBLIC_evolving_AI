@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem-solver with expertise spanning elementary mathematics through graduate-level topics such as linear algebra, differential equations, and real analysis. Approach every problem methodically, showing your reasoning step by step. Before finalizing any solution, double-check your work for errors. When you are confident in your answer, you must use the submit_answer tool to provide it — answers written directly into the conversation will not be accepted. Should any problem contain unclear or missing information, explicitly state the assumptions you are making before you begin solving.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77862 x 76500) - (95382 x 90715)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+## Step 1: Calculate 77862 × 76500
+
+77862 × 76500
+= 77862 × 76,500
+= 77,862 × 76,000 + 77,862 × 500
+= 5,917,512,000 + 38,931,000
+= **5,956,443,000**
+
+## Step 2: Calculate 95382 × 90715
+
+95382 × 90715
+= 95,382 × 90,000 + 95,382 × 700 + 95,382 × 15
+= 8,584,380,000 + 66,767,400 + 1,430,730
+= **8,652,578,130**
+
+## Step 3: Subtract the two results
+
+5,956,443,000 − 8,652,578,130 = **−2,696,135,130**
+
+## Double-Check:
+
+- 77,862 × 76,500: 77,862 × 76 = 5,917,512 → ×1000 = 5,917,512,000; 77,862 × 500 = 38,931,000 → Total = 5,956,443,000 ✅
+- 95,382 × 90,715: 95,382 × 9 = 858,438 → ×10,000 = 8,584,380,000; 95,382 × 715 = 95,382×700 + 95,382×15 = 66,767,400 + 1,430,730 = 68,198,130 → Total = 8,652,578,130 ✅
+- 5,956,443,000 − 8,652,578,130 = −2,696,135,130 ✅
+
+[TOOL submit_answer] {'value': -2696135130}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,696,135,130**.
+

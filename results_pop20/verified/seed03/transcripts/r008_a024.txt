@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (61109 x 11985) - (98003 x 18392)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 61109 x 11985**
+
+61109 × 11985:
+- 61109 × 10000 = 611,090,000
+- 61109 × 1000 = 61,109,000
+- 61109 × 900 = 54,998,100
+- 61109 × 80 = 4,888,720
+- 61109 × 5 = 305,545
+
+Sum: 611,090,000 + 61,109,000 + 54,998,100 + 4,888,720 + 305,545
+= 611,090,000 + 61,109,000 = 672,199,000
+= 672,199,000 + 54,998,100 = 727,197,100
+= 727,197,100 + 4,888,720 = 732,085,820
+= 732,085,820 + 305,545 = **732,391,365**
+
+---
+
+**Step 2: Calculate 98003 x 18392**
+
+98003 × 18392:
+- 98003 × 10000 = 980,030,000
+- 98003 × 8000 = 784,024,000
+- 98003 × 300 = 29,400,900
+- 98003 × 90 = 8,820,270
+- 98003 × 2 = 196,006
+
+Sum: 980,030,000 + 784,024,000 + 29,400,900 + 8,820,270 + 196,006
+= 980,030,000 + 784,024,000 = 1,764,054,000
+= 1,764,054,000 + 29,400,900 = 1,793,454,900
+= 1,793,454,900 + 8,820,270 = 1,802,275,170
+= 1,802,275,170 + 196,006 = **1,802,471,176**
+
+---
+
+**Step 3: Subtract**
+
+732,391,365 − 1,802,471,176 = **−1,070,079,811**
+
+[TOOL submit_answer] {'value': -1070079811}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−1,070,079,811**.
+

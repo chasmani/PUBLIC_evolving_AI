@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57145 x 77336) - (98405 x 83385)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 57145 × 77336**
+
+57145 × 77336:
+- 57145 × 70000 = 4,000,150,000
+- 57145 × 7000 = 400,015,000
+- 57145 × 300 = 17,143,500
+- 57145 × 36 = 2,057,220
+
+Sum: 4,000,150,000 + 400,015,000 + 17,143,500 + 2,057,220 = **4,419,365,720**
+
+**Step 2: Calculate 98405 × 83385**
+
+98405 × 83385:
+- 98405 × 80000 = 7,872,400,000
+- 98405 × 3000 = 295,215,000
+- 98405 × 300 = 29,521,500
+- 98405 × 85 = 8,364,425
+
+Sum: 7,872,400,000 + 295,215,000 + 29,521,500 + 8,364,425 = **8,205,500,925**
+
+**Step 3: Subtract**
+
+4,419,365,720 - 8,205,500,925 = **-3,786,135,205**
+
+[TOOL submit_answer] {'value': -3786135205}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(57145 × 77336) - (98405 × 83385)** is **-3,786,135,205**.
+

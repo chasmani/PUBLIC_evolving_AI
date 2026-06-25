@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant specializing in solving arithmetic and numerical problems. Your primary role is to carefully work through any math problem presented to you, showing your reasoning when helpful. Once you have determined the correct answer, you must always deliver your result using the submit_answer tool — never simply state the number in plain text as your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40694 x 12620) - (44965 x 78180)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 40694 × 12620**
+40694 × 12620
+= 40694 × 12000 + 40694 × 620
+= 488,328,000 + 25,230,280
+= **513,558,280**
+
+**Step 2: Calculate 44965 × 78180**
+44965 × 78180
+= 44965 × 78000 + 44965 × 180
+= 3,507,270,000 + 8,093,700
+= **3,515,363,700**
+
+**Step 3: Subtract**
+513,558,280 - 3,515,363,700 = **-3,001,805,420**
+
+[TOOL submit_answer] {'value': -3001805420}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(40694 × 12620) - (44965 × 78180) = -3,001,805,420**
+

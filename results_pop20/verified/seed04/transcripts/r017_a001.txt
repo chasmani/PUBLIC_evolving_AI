@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16071 x 70643) - (92097 x 46756)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 16071 × 70643**
+
+16071 × 70643:
+- 16071 × 70000 = 1,124,970,000
+- 16071 × 600 = 9,642,600
+- 16071 × 43 = 691,053
+- Total: 1,124,970,000 + 9,642,600 + 691,053 = **1,135,303,653**
+
+**Step 2: Calculate 92097 × 46756**
+
+92097 × 46756:
+- 92097 × 40000 = 3,683,880,000
+- 92097 × 6000 = 552,582,000
+- 92097 × 700 = 64,467,900
+- 92097 × 56 = 5,157,432
+- Total: 3,683,880,000 + 552,582,000 + 64,467,900 + 5,157,432 = **4,306,087,332**
+
+**Step 3: Subtract**
+
+1,135,303,653 - 4,306,087,332 = **-3,170,783,679**
+
+[TOOL submit_answer] {'value': -3170783679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(16071 × 70643) - (92097 × 46756)** is **-3,170,783,679**.
+

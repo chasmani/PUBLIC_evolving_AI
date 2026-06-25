@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14411 x 65496) - (43393 x 59404)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+**Step 1: Calculate 14411 × 65496**
+
+14411 × 65496:
+- 14411 × 60000 = 864,660,000
+- 14411 × 5000 = 72,055,000
+- 14411 × 400 = 5,764,400
+- 14411 × 90 = 1,296,990
+- 14411 × 6 = 86,466
+
+Sum: 864,660,000 + 72,055,000 + 5,764,400 + 1,296,990 + 86,466 = **943,862,856**
+
+**Step 2: Calculate 43393 × 59404**
+
+43393 × 59404:
+- 43393 × 50000 = 2,169,650,000
+- 43393 × 9000 = 390,537,000
+- 43393 × 400 = 17,357,200
+- 43393 × 4 = 173,572
+
+Sum: 2,169,650,000 + 390,537,000 + 17,357,200 + 173,572 = **2,577,717,772**
+
+**Step 3: Subtract**
+
+943,862,856 - 2,577,717,772 = **-1,633,854,916**
+
+[TOOL submit_answer] {'value': -1633854916}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-1,633,854,916**.
+

@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, showing all intermediate calculations and logic before arriving at a conclusion. Once you are confident in your solution, call the submit_answer tool to deliver your final result. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (65280 x 21496) - (44961 x 37510)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 65280 × 21496
+
+Breaking it down:
+- 65280 × 20000 = 1,305,600,000
+- 65280 × 1000 = 65,280,000
+- 65280 × 400 = 26,112,000
+- 65280 × 90 = 5,875,200
+- 65280 × 6 = 391,680
+
+**Sum:** 1,305,600,000 + 65,280,000 + 26,112,000 + 5,875,200 + 391,680 = **1,403,258,880**
+
+---
+
+### Step 2: Calculate 44961 × 37510
+
+Breaking it down:
+- 44961 × 30000 = 1,348,830,000
+- 44961 × 7000 = 314,727,000
+- 44961 × 500 = 22,480,500
+- 44961 × 10 = 449,610
+
+**Sum:** 1,348,830,000 + 314,727,000 + 22,480,500 + 449,610 = **1,686,487,110**
+
+---
+
+### Step 3: Subtract the two results
+
+1,403,258,880 − 1,686,487,110 = **−283,228,230**
+
+---
+
+The final answer is **−283,228,230**.
+
+[TOOL submit_answer] {'value': -283228230}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−283,228,230**.
+

@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant with deep knowledge spanning arithmetic, algebra, calculus, and beyond. When presented with any numerical or computational problem, work through it systematically — decompose complex problems into manageable parts, show your reasoning at each stage, and make your thinking transparent throughout the process.
+
+Important requirements for how you deliver results:
+- Never state your final answer solely within the body of your response text
+- All final answers must be submitted using the submit_answer tool, no exceptions
+- Intermediate reasoning and working steps can appear in your response, but the concluded result must always go through the submit_answer tool
+
+Tackle problems with rigor and clarity, ensuring every step is justified before moving to the next.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84967 x 84594) - (23641 x 95919)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 84967 × 84594**
+
+Break it down:
+- 84967 × 80000 = 6,797,360,000
+- 84967 × 4000 = 339,868,000
+- 84967 × 500 = 42,483,500
+- 84967 × 90 = 7,647,030
+- 84967 × 4 = 339,868
+
+Sum:
+6,797,360,000 + 339,868,000 = 7,137,228,000
+7,137,228,000 + 42,483,500 = 7,179,711,500
+7,179,711,500 + 7,647,030 = 7,187,358,530
+7,187,358,530 + 339,868 = **7,187,698,398**
+
+---
+
+**Step 2: Compute 23641 × 95919**
+
+Break it down:
+- 23641 × 90000 = 2,127,690,000
+- 23641 × 5000 = 118,205,000
+- 23641 × 900 = 21,276,900
+- 23641 × 19 = 449,179
+
+Sum:
+2,127,690,000 + 118,205,000 = 2,245,895,000
+2,245,895,000 + 21,276,900 = 2,267,171,900
+2,267,171,900 + 449,179 = **2,267,621,079**
+
+---
+
+**Step 3: Subtract**
+
+7,187,698,398 − 2,267,621,079 = **4,920,077,319**
+
+[TOOL submit_answer] {'value': 4920077319}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(84967 × 84594) − (23641 × 95919) = 4,920,077,319**.
+

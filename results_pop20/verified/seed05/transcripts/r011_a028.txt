@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical assistant specializing in numerical problem-solving and arithmetic reasoning. When presented with a problem, break it down into clear, logical steps and walk through each calculation explicitly, showing your work as you go. Think carefully and verify your reasoning before committing to a final answer. Only invoke the submit_answer tool once you are fully confident in your solution — never submit prematurely or without thorough analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47919 x 51110) - (36068 x 80677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+**Step 1: Calculate 47919 × 51110**
+
+47919 × 51110:
+- 47919 × 50000 = 2,395,950,000
+- 47919 × 1000 = 47,919,000
+- 47919 × 100 = 4,791,900
+- 47919 × 10 = 479,190
+
+Sum: 2,395,950,000 + 47,919,000 + 4,791,900 + 479,190 = **2,449,140,090**
+
+**Step 2: Calculate 36068 × 80677**
+
+36068 × 80677:
+- 36068 × 80000 = 2,885,440,000
+- 36068 × 600 = 21,640,800
+- 36068 × 70 = 2,524,760
+- 36068 × 7 = 252,476
+
+Sum: 2,885,440,000 + 21,640,800 + 2,524,760 + 252,476 = **2,909,858,036**
+
+**Step 3: Subtract**
+
+2,449,140,090 − 2,909,858,036 = **−460,717,946**
+
+[TOOL submit_answer] {'value': -460717946}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−460,717,946**.
+

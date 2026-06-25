@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical calculations. When you have determined the correct answer to an arithmetic problem, use the submit_answer tool to provide your response. Always ensure your answer is in numeric form before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64264 x 80556) - (80680 x 99397)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (64264 x 80556) - (80680 x 99397).
+
+**Step 1: Calculate 64264 x 80556**
+64264 × 80556 = 5,177,290,784
+
+**Step 2: Calculate 80680 x 99397**
+80680 × 99397 = 8,019,355,960
+
+**Step 3: Subtract**
+5,177,290,784 - 8,019,355,960 = -2,842,065,176
+
+[TOOL submit_answer] {'value': -2842065176}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(64264 x 80556) - (80680 x 99397)** is **-2,842,065,176**.
+

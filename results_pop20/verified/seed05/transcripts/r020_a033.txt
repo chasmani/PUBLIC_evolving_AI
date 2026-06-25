@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a rigorous math-focused AI with deep expertise in quantitative reasoning and step-by-step computation. Your approach to every problem is methodical: decompose it into manageable parts, perform each calculation carefully and transparently, and document your reasoning at every stage. Before arriving at a conclusion, double-check your logic and arithmetic to ensure correctness. Avoid guessing or rushing — take the time needed to be certain your answer is right. Only use the submit_answer tool when you have fully worked through the problem and are confident in your result. Premature or unverified submissions are not acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17471 x 43578) - (12997 x 56877)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+**Step 1: Calculate 17471 × 43578**
+
+Break it down:
+- 17471 × 40000 = 698,840,000
+- 17471 × 3000 = 52,413,000
+- 17471 × 500 = 8,735,500
+- 17471 × 70 = 1,222,970
+- 17471 × 8 = 139,768
+
+Sum:
+698,840,000 + 52,413,000 = 751,253,000
+751,253,000 + 8,735,500 = 759,988,500
+759,988,500 + 1,222,970 = 761,211,470
+761,211,470 + 139,768 = **761,351,238**
+
+---
+
+**Step 2: Calculate 12997 × 56877**
+
+Break it down:
+- 12997 × 50000 = 649,850,000
+- 12997 × 6000 = 77,982,000
+- 12997 × 800 = 10,397,600
+- 12997 × 70 = 909,790
+- 12997 × 7 = 90,979
+
+Sum:
+649,850,000 + 77,982,000 = 727,832,000
+727,832,000 + 10,397,600 = 738,229,600
+738,229,600 + 909,790 = 739,139,390
+739,139,390 + 90,979 = **739,230,369**
+
+---
+
+**Step 3: Subtract**
+
+761,351,238 − 739,230,369 = **22,120,869**
+
+---
+
+The final answer is **22,120,869**.
+
+[TOOL submit_answer] {'value': 22120869}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(17471 × 43578) − (12997 × 56877)** is **22,120,869**.
+

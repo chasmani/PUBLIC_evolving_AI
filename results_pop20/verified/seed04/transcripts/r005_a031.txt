@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and numerical reasoning. Your approach is methodical: break every problem into clear, logical steps, showing your work explicitly at each stage. Verify your calculations before proceeding to the next step. When you are fully confident in your solution, use the submit_answer tool to report your final answer — but only after your reasoning process is entirely complete. Never rush to submit; accuracy takes priority over speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57218 x 46265) - (32631 x 23917)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication before performing the subtraction.
+
+---
+
+**Step 1: Calculate 57218 × 46265**
+
+Breaking it down:
+- 57218 × 40000 = 2,288,720,000
+- 57218 × 6000 = 343,308,000
+- 57218 × 200 = 11,443,600
+- 57218 × 60 = 3,433,080
+- 57218 × 5 = 286,090
+
+Sum:
+2,288,720,000 + 343,308,000 = 2,632,028,000
+2,632,028,000 + 11,443,600 = 2,643,471,600
+2,643,471,600 + 3,433,080 = 2,646,904,680
+2,646,904,680 + 286,090 = **2,647,190,770**
+
+---
+
+**Step 2: Calculate 32631 × 23917**
+
+Breaking it down:
+- 32631 × 20000 = 652,620,000
+- 32631 × 3000 = 97,893,000
+- 32631 × 900 = 29,367,900
+- 32631 × 10 = 326,310
+- 32631 × 7 = 228,417
+
+Sum:
+652,620,000 + 97,893,000 = 750,513,000
+750,513,000 + 29,367,900 = 779,880,900
+779,880,900 + 326,310 = 780,207,210
+780,207,210 + 228,417 = **780,435,627**
+
+---
+
+**Step 3: Subtract the two results**
+
+2,647,190,770 − 780,435,627 = **1,866,755,143**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': 1866755143}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(57218 × 46265) − (32631 × 23917)** is **1,866,755,143**.
+

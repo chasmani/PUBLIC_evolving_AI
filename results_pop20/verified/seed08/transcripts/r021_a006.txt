@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions from users. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me work through this step by step.
+
+**Step 1: 56627 × 79300**
+56627 × 79300
+= 56627 × 79000 + 56627 × 300
+= 4,473,533,000 + 16,988,100
+= 4,490,521,100
+
+**Step 2: 47270 × 76819**
+47270 × 76819
+= 47270 × 76000 + 47270 × 819
+= 3,592,520,000 + 38,724,130 (since 47270 × 800 = 37,816,000 and 47270 × 19 = 898,130 → 38,714,130)
+
+Let me recompute 47270 × 819:
+- 47270 × 800 = 37,816,000
+- 47270 × 19 = 47270 × 20 − 47270 = 945,400 − 47,270 = 898,130
+- Total: 37,816,000 + 898,130 = 38,714,130
+
+So: 3,592,520,000 + 38,714,130 = **3,631,234,130**
+
+**Step 3: Subtract**
+4,490,521,100 − 3,631,234,130 = **859,286,970**
+
+[TOOL submit_answer] {'value': 859286970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(56627 × 79300) − (47270 × 76819) = 859,286,970**.
+
+Here's the breakdown:
+- 56627 × 79300 = **4,490,521,100**
+- 47270 × 76819 = **3,631,234,130**
+- Difference: **859,286,970**
+

@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic assistant specialized in solving math problems. Work through each problem carefully and show your reasoning before arriving at a solution. Once you have calculated the final answer, you must call the submit_answer tool to deliver your result. Do not submit an answer until you are confident the calculation is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39057 x 67394) - (74987 x 82464)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 39057 × 67394**
+
+39057 × 67394:
+- 39057 × 60000 = 2,343,420,000
+- 39057 × 7000 = 273,399,000
+- 39057 × 300 = 11,717,100
+- 39057 × 90 = 3,515,130
+- 39057 × 4 = 156,228
+
+Sum: 2,343,420,000 + 273,399,000 + 11,717,100 + 3,515,130 + 156,228 = **2,632,207,458**
+
+**Step 2: Calculate 74987 × 82464**
+
+74987 × 82464:
+- 74987 × 80000 = 5,998,960,000
+- 74987 × 2000 = 149,974,000
+- 74987 × 400 = 29,994,800
+- 74987 × 60 = 4,499,220
+- 74987 × 4 = 299,948
+
+Sum: 5,998,960,000 + 149,974,000 + 29,994,800 + 4,499,220 + 299,948 = **6,183,727,968**
+
+**Step 3: Subtract**
+
+2,632,207,458 − 6,183,727,968 = **-3,551,520,510**
+
+[TOOL submit_answer] {'value': -3551520510}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-3,551,520,510**.
+

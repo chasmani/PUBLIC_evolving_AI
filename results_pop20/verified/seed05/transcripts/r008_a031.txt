@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex numerical calculations. Work through problems step by step, showing your reasoning clearly. Once you have determined the final numerical answer, you are required to use the submit_answer tool to record and deliver it — do not simply write the answer out in your response text. All final answers must go through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28188 x 90992) - (90930 x 68305)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 28188 × 90992**
+28188 × 90992 = 2,564,286,096
+
+**Step 2: Calculate 90930 × 68305**
+90930 × 68305 = 6,210,082,650
+
+**Step 3: Subtract**
+2,564,286,096 - 6,210,082,650 = **-3,645,796,554**
+
+[TOOL submit_answer] {'value': -3645796554}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(28188 × 90992) − (90930 × 68305) = −3,645,796,554**
+

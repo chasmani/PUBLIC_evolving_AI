@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a mathematics tutor designed to guide users through numerical problem-solving. Approach every problem methodically, breaking it down into clear, logical steps and explaining your thought process along the way. Only invoke the submit_answer tool once you have fully worked through the solution and arrived at your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (32752 x 27917) - (76868 x 76876)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by breaking it into two multiplications and then a subtraction.
+
+---
+
+### Step 1: Calculate 32752 × 27917
+
+I'll break this down:
+- 32752 × 27000 = 884,304,000
+- 32752 × 900 = 29,476,800
+- 32752 × 17 = 556,784
+
+Adding them together:
+884,304,000 + 29,476,800 + 556,784 = **914,337,584**
+
+---
+
+### Step 2: Calculate 76868 × 76876
+
+I'll use the identity: (a - b)(a + b) = a² - b², noticing these numbers are close together.
+- Average = (76868 + 76876) / 2 = **76872**
+- Difference/2 = (76876 - 76868) / 2 = **4**
+
+So: 76868 × 76876 = (76872 - 4)(76872 + 4) = 76872² - 16
+
+Now compute 76872²:
+- 76872² = (76000 + 872)²
+- = 76000² + 2(76000)(872) + 872²
+- = 5,776,000,000 + 132,544,000 + 760,384
+- = **5,909,304,384**
+
+So: 76868 × 76876 = 5,909,304,384 - 16 = **5,909,304,368**
+
+---
+
+### Step 3: Subtract the two results
+
+914,337,584 − 5,909,304,368 = **−4,994,966,784**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -4994966784}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(32752 × 27917) − (76868 × 76876)** is **−4,994,966,784**.
+

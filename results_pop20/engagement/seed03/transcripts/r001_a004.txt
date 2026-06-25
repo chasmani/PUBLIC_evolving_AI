@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems quickly and accurately. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41190 x 87678) - (81333 x 27094)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '1,407,osvětlení\n\nLet me calculate this properly.\n\n41190 x 87678 = 3,612,318,420\n81333 x 27094 = 2,203,879,602\n\n3,612,318,420 - 2,203,879,602 = 1,408,438,818'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+I apologize for the malformed submission. Let me redo this properly.
+
+**Step 1: 41,190 × 87,678**
+= 41,190 × 87,678
+= **3,612,318,420**
+
+**Step 2: 81,333 × 27,094**
+= 81,333 × 27,094
+= **2,203,879,602**
+
+**Step 3: Subtract**
+3,612,318,420 − 2,203,879,602 = **1,408,438,818**
+
+[TOOL submit_answer] {'value': 1408438818}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **1,408,438,818**.
+

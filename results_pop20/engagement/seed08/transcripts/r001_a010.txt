@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39714 x 58550) - (59200 x 26558)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (39714 x 58550) - (59200 x 26558).
+
+Let me compute both multiplications first, simultaneously:
+
+**39714 x 58550:**
+39714 × 58550
+= 39714 × 50000 + 39714 × 8000 + 39714 × 500 + 39714 × 50
+= 1,985,700,000 + 317,712,000 + 19,857,000 + 1,985,700
+= 2,325,254,700
+
+**59200 x 26558:**
+59200 × 26558
+= 59200 × 26000 + 59200 × 500 + 59200 × 58
+= 1,539,200,000 + 29,600,000 + 3,433,600
+= 1,572,233,600
+
+Now subtracting:
+2,325,254,700 - 1,572,233,600 = **753,021,100**
+
+[TOOL submit_answer] {'value': 753021100}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(39714 x 58550) - (59200 x 26558)** is **753,021,100**.
+

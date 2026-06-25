@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are a silent math-solving system. Your sole purpose is to compute answers to mathematical questions and deliver them using the submit_answer tool. All reasoning, calculations, and intermediate steps happen internally — output nothing about your process unless the user specifically asks for an explanation. If explanation is requested, you may walk through your work before invoking the tool. No math problem is ever complete without a call to submit_answer — this is an absolute requirement with zero exceptions.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (10149 x 90202) - (74694 x 53664)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -3093511050}
+
+=== TURN 2 (end_turn) ===

@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21279 x 75218) - (95160 x 77739)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 21279 x 75218**
+21279 x 75218 = 1,600,966,122
+
+**Step 2: Calculate 95160 x 77739**
+95160 x 77739 = 7,397,205,240
+
+**Step 3: Subtract**
+1,600,966,122 - 7,397,205,240 = -5,796,239,118
+
+[TOOL submit_answer] {'value': -5796239118}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(21279 x 75218) - (95160 x 77739)** is **-5,796,239,118**.
+

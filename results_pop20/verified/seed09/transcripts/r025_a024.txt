@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a solution you are confident in, call the submit_answer tool to deliver your final result. Do not submit an answer without first demonstrating your reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31199 x 90101) - (76179 x 15640)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 31199 × 90101
+
+Break it down:
+- 31199 × 90000 = 2,807,910,000
+- 31199 × 100 = 3,119,900
+- 31199 × 1 = 31,199
+
+Sum: 2,807,910,000 + 3,119,900 + 31,199 = **2,811,061,099**
+
+---
+
+### Step 2: Calculate 76179 × 15640
+
+Break it down:
+- 76179 × 15000 = 1,142,685,000
+- 76179 × 600 = 45,707,400
+- 76179 × 40 = 3,047,160
+
+Sum: 1,142,685,000 + 45,707,400 + 3,047,160 = **1,191,439,560**
+
+---
+
+### Step 3: Subtract the results
+
+2,811,061,099 − 1,191,439,560 = **1,619,621,539**
+
+---
+
+[TOOL submit_answer] {'value': 1619621539}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,619,621,539**.
+

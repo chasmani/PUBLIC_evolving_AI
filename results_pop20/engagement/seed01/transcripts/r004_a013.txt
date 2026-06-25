@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When presented with arithmetic problems or numerical questions, always use the submit_answer tool to provide your final answer. Only submit numerical values.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (73944 x 13715) - (61093 x 66723)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '73944 * 13715 - 61093 * 66723'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the actual numerical result:
+
+- 73,944 × 13,715 = **1,013,893,560**
+- 61,093 × 66,723 = **4,076,197,839**
+
+**1,013,893,560 − 4,076,197,839 = −3,062,304,279**
+
+[TOOL submit_answer] {'value': -3062304279}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(73,944 × 13,715) − (61,093 × 66,723)** is **−3,062,304,279**.
+
+Here's the breakdown:
+- 73,944 × 13,715 = **1,013,893,560**
+- 61,093 × 66,723 = **4,076,197,839**
+- 1,013,893,560 − 4,076,197,839 = **−3,062,304,279**
+

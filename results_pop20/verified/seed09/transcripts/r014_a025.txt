@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41029 x 65669) - (24686 x 88229)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 41029 × 65669
+
+Breaking it down:
+- 41029 × 65000 = 41029 × 65 × 1000 = 2,666,885 × 1000 = **2,666,885,000**
+- 41029 × 669 = 41029 × 600 + 41029 × 69
+  - 41029 × 600 = **24,617,400**
+  - 41029 × 69 = 41029 × 70 - 41029 = 2,872,030 - 41,029 = **2,831,001**
+- 41029 × 669 = 24,617,400 + 2,831,001 = **27,448,401**
+
+**41029 × 65669 = 2,666,885,000 + 27,448,401 = 2,694,333,401**
+
+---
+
+### Step 2: Calculate 24686 × 88229
+
+Breaking it down:
+- 24686 × 88000 = 24686 × 88 × 1000 = 2,172,368 × 1000 = **2,172,368,000**
+- 24686 × 229 = 24686 × 200 + 24686 × 29
+  - 24686 × 200 = **4,937,200**
+  - 24686 × 29 = 24686 × 30 - 24686 = 740,580 - 24,686 = **715,894**
+- 24686 × 229 = 4,937,200 + 715,894 = **5,653,094**
+
+**24686 × 88229 = 2,172,368,000 + 5,653,094 = 2,178,021,094**
+
+---
+
+### Step 3: Subtract the two results
+
+2,694,333,401 − 2,178,021,094 = **516,312,307**
+
+[TOOL submit_answer] {'value': 516312307}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **516,312,307**.
+

@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (91299 x 91083) - (50124 x 59103)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 91299 × 91083
+
+Breaking it down:
+91299 × 91083
+= 91299 × (91000 + 83)
+= (91299 × 91000) + (91299 × 83)
+
+- 91299 × 91000 = 91299 × 91 × 1000 = 8,308,209 × 1000 = **8,308,209,000**
+- 91299 × 83 = 91299 × 80 + 91299 × 3 = 7,303,920 + 273,897 = **7,577,817**
+
+**91299 × 91083 = 8,308,209,000 + 7,577,817 = 8,315,786,817**
+
+---
+
+### Step 2: Calculate 50124 × 59103
+
+Breaking it down:
+50124 × 59103
+= 50124 × (59000 + 103)
+= (50124 × 59000) + (50124 × 103)
+
+- 50124 × 59000 = 50124 × 59 × 1000 = 2,957,316 × 1000 = **2,957,316,000**
+- 50124 × 103 = 50124 × 100 + 50124 × 3 = 5,012,400 + 150,372 = **5,162,772**
+
+**50124 × 59103 = 2,957,316,000 + 5,162,772 = 2,962,478,772**
+
+---
+
+### Step 3: Subtract
+
+8,315,786,817 − 2,962,478,772 = **5,353,308,045**
+
+---
+
+### ✅ Verification Check:
+- 91299 × 91 = 91299 × 90 + 91299 = 8,216,910 + 91,299 = 8,308,209 ✔️
+- 50124 × 59 = 50124 × 60 − 50124 = 3,007,440 − 50,124 = 2,957,316 ✔️
+
+[TOOL submit_answer] {'value': 5353308045}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,353,308,045**.
+

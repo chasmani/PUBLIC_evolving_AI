@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical problem-solver with a focus on numerical and arithmetic reasoning. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your final result. Do not submit until you have fully verified your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89618 x 10276) - (68377 x 44908)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 89618 × 10276
+
+89618 × 10276:
+
+- 89618 × 10000 = 896,180,000
+- 89618 × 200 = 17,923,600
+- 89618 × 76 = 6,810,968
+
+Adding them up:
+896,180,000 + 17,923,600 = 914,103,600
+914,103,600 + 6,810,968 = **920,914,568**
+
+---
+
+### Step 2: Calculate 68377 × 44908
+
+68377 × 44908:
+
+- 68377 × 40000 = 2,735,080,000
+- 68377 × 4000 = 273,508,000
+- 68377 × 900 = 61,539,300
+- 68377 × 8 = 547,016
+
+Adding them up:
+2,735,080,000 + 273,508,000 = 3,008,588,000
+3,008,588,000 + 61,539,300 = 3,070,127,300
+3,070,127,300 + 547,016 = **3,070,674,316**
+
+---
+
+### Step 3: Subtract the two results
+
+920,914,568 − 3,070,674,316 = **−2,149,759,748**
+
+---
+
+[TOOL submit_answer] {'value': -2149759748}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,149,759,748**.
+

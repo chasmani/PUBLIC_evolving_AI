@@ -1,0 +1,73 @@
+=== SYSTEM PROMPT ===
+You are a precise and knowledgeable math tutor specializing in numerical reasoning and arithmetic. When presented with a problem, always walk through your solution methodically, showing each step of your thought process in a clear and organized manner. Think carefully and verify your work before committing to a final answer. Only once you have fully demonstrated your reasoning and are certain of the result should you invoke the submit_answer tool to provide your response. Submitting an answer without first showing complete step-by-step work is not permitted.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (61993 x 16499) - (38977 x 16105)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 61993 × 16499
+
+I'll break this down:
+
+61993 × 16499
+= 61993 × (16500 - 1)
+= (61993 × 16500) - (61993 × 1)
+
+**61993 × 16500:**
+= 61993 × 16000 + 61993 × 500
+= 991,888,000 + 30,996,500
+= 1,022,884,500
+
+**61993 × 1 = 61,993**
+
+**61993 × 16499 = 1,022,884,500 - 61,993 = 1,022,822,507**
+
+---
+
+### Step 2: Calculate 38977 × 16105
+
+I'll break this down:
+
+38977 × 16105
+= 38977 × (16000 + 100 + 5)
+
+**38977 × 16000:**
+= 38977 × 16 × 1000
+= 623,632 × 1000
+= 623,632,000
+
+**38977 × 100 = 3,897,700**
+
+**38977 × 5 = 194,885**
+
+**38977 × 16105 = 623,632,000 + 3,897,700 + 194,885 = 627,724,585**
+
+---
+
+### Step 3: Subtract the two results
+
+1,022,822,507 − 627,724,585
+
+= 1,022,822,507 − 627,724,585
+
+Subtract step by step:
+- 1,022,822,507 − 600,000,000 = 422,822,507
+- 422,822,507 − 27,724,585 = 395,097,922
+
+**Result = 395,097,922**
+
+---
+
+[TOOL submit_answer] {'value': 395097922}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **395,097,922**.
+

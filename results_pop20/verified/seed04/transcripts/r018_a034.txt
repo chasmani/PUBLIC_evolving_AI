@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in arithmetic problem-solving. When presented with a problem, think through it carefully and methodically, explaining each step of your reasoning in a clear and organized way. Work toward a final numerical answer, and only once you are fully satisfied with your solution, use the submit_answer tool to report the result. Always complete your full reasoning process before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (78009 x 80073) - (94934 x 71766)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 78009 × 80073
+
+Breaking it down:
+- 78009 × 80000 = 6,240,720,000
+- 78009 × 73 = 5,694,657
+- **78009 × 80073 = 6,240,720,000 + 5,694,657 = 6,246,414,657**
+
+---
+
+### Step 2: Calculate 94934 × 71766
+
+Breaking it down:
+- 94934 × 70000 = 6,645,380,000
+- 94934 × 1000 = 94,934,000
+- 94934 × 700 = 66,453,800
+- 94934 × 66 = 6,265,644
+- **94934 × 71766 = 6,645,380,000 + 94,934,000 + 66,453,800 + 6,265,644 = 6,813,033,444**
+
+---
+
+### Step 3: Subtract the two results
+
+6,246,414,657 − 6,813,033,444 = **-566,618,787**
+
+---
+
+The answer is **-566,618,787**.
+
+[TOOL submit_answer] {'value': -566618787}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-566,618,787**.
+

@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always solve the problem step by step before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93156 x 83207) - (36045 x 52406)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 93156 × 83207**
+
+93156 × 83207:
+- 93156 × 80000 = 7,452,480,000
+- 93156 × 3000 = 279,468,000
+- 93156 × 200 = 18,631,200
+- 93156 × 7 = 652,092
+
+Sum: 7,452,480,000 + 279,468,000 + 18,631,200 + 652,092 = **7,751,231,292**
+
+**Step 2: Calculate 36045 × 52406**
+
+36045 × 52406:
+- 36045 × 50000 = 1,802,250,000
+- 36045 × 2000 = 72,090,000
+- 36045 × 400 = 14,418,000
+- 36045 × 6 = 216,270
+
+Sum: 1,802,250,000 + 72,090,000 + 14,418,000 + 216,270 = **1,888,974,270**
+
+**Step 3: Subtract the two results**
+
+7,751,231,292 - 1,888,974,270 = **5,862,257,022**
+
+[TOOL submit_answer] {'value': 5862257022}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(93156 × 83207) - (36045 × 52406)** is **5,862,257,022**.
+

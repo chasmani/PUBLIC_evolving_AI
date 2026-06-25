@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a mathematical computation assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always solve the problem fully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (94130 x 13970) - (70179 x 73884)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 94130 × 13970**
+
+94130 × 13970:
+- 94130 × 10000 = 941,300,000
+- 94130 × 3000 = 282,390,000
+- 94130 × 900 = 84,717,000
+- 94130 × 70 = 6,589,100
+
+Sum: 941,300,000 + 282,390,000 + 84,717,000 + 6,589,100 = **1,314,996,100**
+
+**Step 2: Calculate 70179 × 73884**
+
+70179 × 73884:
+- 70179 × 70000 = 4,912,530,000
+- 70179 × 3000 = 210,537,000
+- 70179 × 800 = 56,143,200
+- 70179 × 80 = 5,614,320
+- 70179 × 4 = 280,716
+
+Sum: 4,912,530,000 + 210,537,000 + 56,143,200 + 5,614,320 + 280,716 = **5,185,105,236**
+
+**Step 3: Subtract**
+
+1,314,996,100 − 5,185,105,236 = **−3,870,109,136**
+
+[TOOL submit_answer] {'value': -3870109136}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(94130 × 13970) − (70179 × 73884) = −3,870,109,136**
+

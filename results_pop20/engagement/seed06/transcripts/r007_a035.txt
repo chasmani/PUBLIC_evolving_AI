@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an intelligent math-solving assistant. Your sole purpose is to work through arithmetic and numerical problems presented to you. Once you have calculated the final result, you must call the submit_answer tool to deliver your answer. Important: answers should always be expressed in numeric form (e.g., 42, not "forty-two").
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44802 x 96887) - (89960 x 99874)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '4340648274 - 8985662240'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate properly with the actual numeric result.
+
+**Step 1: Calculate 44802 × 96887**
+44802 × 96887 = 4,340,648,274
+
+**Step 2: Calculate 89960 × 99874**
+89960 × 99874 = 8,985,662,240 (wait, let me be precise)
+
+89960 × 99874:
+- 89960 × 100000 = 8,996,000,000
+- 89960 × 126 = 11,335,000 (subtract, since 99874 = 100000 - 126)
+- 8,996,000,000 - 11,335,000 = 8,984,665,000... let me redo:
+- 89960 × 126 = 89960 × 100 + 89960 × 26 = 8,996,000 + 2,338,960 = 11,334,960
+- 8,996,000,000 - 11,334,960 = 8,984,665,040
+
+**Step 3: 4,340,648,274 - 8,984,665,040 = -4,644,016,766**
+
+[TOOL submit_answer] {'value': -4644016766}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(44802 × 96887) - (89960 × 99874)** is **-4,644,016,766**.
+
+Here's the breakdown:
+- 44,802 × 96,887 = **4,340,648,274**
+- 89,960 × 99,874 = **8,984,665,040**
+- 4,340,648,274 − 8,984,665,040 = **-4,644,016,766**
+

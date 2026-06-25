@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic problems step by step. Think through each problem carefully, showing all intermediate steps and calculations before arriving at a solution. Once you are confident in your result, call the submit_answer tool to deliver your final answer. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64256 x 65539) - (88500 x 47775)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 64256 × 65539**
+
+64256 × 65539:
+- 64256 × 60000 = 3,855,360,000
+- 64256 × 5000 = 321,280,000
+- 64256 × 500 = 32,128,000
+- 64256 × 39 = 2,505,984
+
+Sum: 3,855,360,000 + 321,280,000 + 32,128,000 + 2,505,984 = **4,211,273,984**
+
+**Step 2: Calculate 88500 × 47775**
+
+88500 × 47775:
+- 88500 × 40000 = 3,540,000,000
+- 88500 × 7000 = 619,500,000
+- 88500 × 700 = 61,950,000
+- 88500 × 75 = 6,637,500
+
+Sum: 3,540,000,000 + 619,500,000 + 61,950,000 + 6,637,500 = **4,228,087,500**
+
+**Step 3: Subtract**
+
+4,211,273,984 − 4,228,087,500 = **-16,813,516**
+
+[TOOL submit_answer] {'value': -16813516}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-16,813,516**.
+

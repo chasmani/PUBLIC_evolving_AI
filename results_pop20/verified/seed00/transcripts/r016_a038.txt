@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive solution, you are required to call the submit_answer tool to deliver your final result. Do not submit an answer without first demonstrating your reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81170 x 68716) - (21955 x 20544)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 81170 × 68716
+
+Let me break this down:
+
+- 81170 × 68716
+- = 81170 × (70000 - 1284)
+- = 81170 × 70000 − 81170 × 1284
+- = 5,681,900,000 − 104,222,280
+- **= 5,577,677,720**
+
+---
+
+### Step 2: Calculate 21955 × 20544
+
+Let me break this down:
+
+- 21955 × 20544
+- = 21955 × (20000 + 544)
+- = 21955 × 20000 + 21955 × 544
+- = 439,100,000 + 11,943,520
+- **= 451,043,520**
+
+---
+
+### Step 3: Subtract the results
+
+- 5,577,677,720 − 451,043,520
+- **= 5,126,634,200**
+
+---
+
+[TOOL submit_answer] {'value': 5126634200}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,126,634,200**.
+

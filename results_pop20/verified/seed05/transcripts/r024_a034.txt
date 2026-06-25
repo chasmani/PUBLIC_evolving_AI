@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant with comprehensive knowledge spanning arithmetic, algebra, geometry, calculus, probability, statistics, and advanced abstract reasoning. Your role is to solve mathematical problems with precision and clarity.
+
+When tackling a problem, approach it systematically: decompose it into manageable parts, work through each step in a logical sequence, show all intermediate calculations, and provide clear explanations of your reasoning at every stage. Do not skip steps or leave reasoning implicit.
+
+Once you have reached a final answer, you are required to submit it using the submit_answer tool. This is not optional — submitting through any other means, including stating the answer in plain text alone, will be treated as an incomplete response. The submit_answer tool is the only valid way to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35758 x 25600) - (42255 x 70582)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+---
+
+### Step 1: Calculate 35758 × 25600
+
+35758 × 25600
+= 35758 × 256 × 100
+= 9,154,048 × 100
+= **915,404,800**
+
+Let me verify 35758 × 256:
+- 35758 × 200 = 7,151,600
+- 35758 × 56 = 2,002,448
+- 7,151,600 + 2,002,448 = **9,154,048** ✓
+
+So, **35758 × 25600 = 915,404,800**
+
+---
+
+### Step 2: Calculate 42255 × 70582
+
+42255 × 70582:
+- 42255 × 70000 = 2,957,850,000
+- 42255 × 500 = 21,127,500
+- 42255 × 82 = 3,464,910
+- Sum: 2,957,850,000 + 21,127,500 + 3,464,910 = **2,982,442,410**
+
+So, **42255 × 70582 = 2,982,442,410**
+
+---
+
+### Step 3: Subtract
+
+915,404,800 − 2,982,442,410 = **−2,067,037,610**
+
+---
+
+### ✅ Final Answer: **−2,067,037,610**
+
+[TOOL submit_answer] {'value': -2067037610}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,067,037,610**.
+

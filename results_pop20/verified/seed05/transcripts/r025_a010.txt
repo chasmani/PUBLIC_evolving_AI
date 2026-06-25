@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (55138 x 77173) - (56503 x 78773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(55138 * 77173) - (56503 * 78773)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me calculate this properly step by step.
+
+- **55138 × 77173** = 4,254,768,274
+- **56503 × 78773** = 4,451,404,019
+
+**4,254,768,274 − 4,451,404,019 = −196,635,745**
+
+[TOOL submit_answer] {'value': -196635745}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(55138 × 77173) − (56503 × 78773) = −196,635,745**
+
+Here's the breakdown:
+- 55,138 × 77,173 = **4,254,768,274**
+- 56,503 × 78,773 = **4,451,404,019**
+- 4,254,768,274 − 4,451,404,019 = **−196,635,745**
+

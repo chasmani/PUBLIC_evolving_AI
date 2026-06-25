@@ -1,0 +1,57 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26624 x 98962) - (74062 x 17054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 26624 × 98962
+
+Breaking it down:
+- 26624 × 100000 = 2,662,400,000
+- 26624 × (−1038) = −27,655,712
+
+So: 26624 × 98962 = 2,662,400,000 − 27,655,712 = **2,634,744,288**
+
+Let me verify:
+- 26624 × 98962
+- = 26624 × (90000 + 8000 + 900 + 62)
+- 26624 × 90000 = 2,396,160,000
+- 26624 × 8000 = 212,992,000
+- 26624 × 900 = 23,961,600
+- 26624 × 62 = 1,650,688
+- Sum = 2,396,160,000 + 212,992,000 + 23,961,600 + 1,650,688 = **2,634,764,288**
+
+---
+
+### Step 2: Calculate 74062 × 17054
+
+Breaking it down:
+- 74062 × 17000 = 1,259,054,000
+- 74062 × 54 = 3,999,348
+
+So: 74062 × 17054 = 1,259,054,000 + 3,999,348 = **1,263,053,348**
+
+---
+
+### Step 3: Subtract
+
+2,634,764,288 − 1,263,053,348 = **1,371,710,940**
+
+---
+
+### ✅ Final Answer:
+
+[TOOL submit_answer] {'value': 1371710940}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(26624 × 98962) − (74062 × 17054) = 1,371,710,940**
+

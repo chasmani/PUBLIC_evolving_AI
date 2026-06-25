@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34100 x 34823) - (34475 x 14321)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+**Step 1: Calculate 34100 × 34823**
+34100 × 34823 = 1,187,464,300
+
+**Step 2: Calculate 34475 × 14321**
+34475 × 14321 = 493,611,475
+
+**Step 3: Subtract the results**
+1,187,464,300 - 493,611,475 = 693,852,825
+
+[TOOL submit_answer] {'value': 693852825}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(34100 × 34823) - (34475 × 14321)** is **693,852,825**.
+

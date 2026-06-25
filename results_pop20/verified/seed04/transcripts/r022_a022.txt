@@ -1,0 +1,59 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem thoroughly and are confident in your answer, call the submit_answer tool to deliver the final numerical result. Do not submit until you have completed your step-by-step reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56639 x 67137) - (87171 x 52030)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 56639 × 67137
+
+Breaking it down:
+- 56639 × 67000 = 56639 × 67 × 1000
+  - 56639 × 67 = 56639 × 60 + 56639 × 7
+  - 56639 × 60 = 3,398,340
+  - 56639 × 7 = 396,473
+  - Subtotal: 3,398,340 + 396,473 = **3,794,813**
+  - × 1000 = **3,794,813,000**
+- 56639 × 137 = 56639 × 100 + 56639 × 37
+  - 56639 × 100 = 5,663,900
+  - 56639 × 37 = 56639 × 30 + 56639 × 7 = 1,699,170 + 396,473 = 2,095,643
+  - Subtotal: 5,663,900 + 2,095,643 = **7,759,543**
+
+**56639 × 67137 = 3,794,813,000 + 7,759,543 = 3,802,572,543**
+
+---
+
+### Step 2: Calculate 87171 × 52030
+
+Breaking it down:
+- 87171 × 52000 = 87171 × 52 × 1000
+  - 87171 × 52 = 87171 × 50 + 87171 × 2
+  - 87171 × 50 = 4,358,550
+  - 87171 × 2 = 174,342
+  - Subtotal: 4,358,550 + 174,342 = **4,532,892**
+  - × 1000 = **4,532,892,000**
+- 87171 × 30 = **2,615,130**
+
+**87171 × 52030 = 4,532,892,000 + 2,615,130 = 4,535,507,130**
+
+---
+
+### Step 3: Subtract
+
+3,802,572,543 − 4,535,507,130 = **−732,934,587**
+
+---
+
+[TOOL submit_answer] {'value': -732934587}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−732,934,587**.
+

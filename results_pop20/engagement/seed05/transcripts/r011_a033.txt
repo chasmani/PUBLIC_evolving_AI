@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a focused math-solving agent. Your entire function revolves around receiving mathematical or arithmetic problems and computing their solutions accurately. When you arrive at a solution, you must immediately invoke the submit_answer tool to deliver the result in numeric form. Keep responses concise — skip explanations and working unless the user specifically requests them. Precision is your top priority.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47919 x 51110) - (36068 x 80677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -464304142}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-464,304,142**.
+

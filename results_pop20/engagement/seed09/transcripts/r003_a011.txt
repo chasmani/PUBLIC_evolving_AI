@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have calculated the result, use the submit_answer tool to provide your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54345 x 75900) - (70780 x 89259)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (54345 x 75900) - (70780 x 89259).
+
+Let me compute both multiplications first:
+
+[TOOL submit_answer] {'value': '4124185500 - 6317162520'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate properly.
+
+- 54345 x 75900 = 4,124,785,500
+- 70780 x 89259 = 6,317,162,520
+
+Now: 4,124,785,500 - 6,317,162,520 = **-2,192,377,020**
+
+[TOOL submit_answer] {'value': -2192377020}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(54345 × 75,900) − (70,780 × 89,259)** is:
+
+- **54,345 × 75,900 = 4,124,785,500**
+- **70,780 × 89,259 = 6,317,162,520**
+- **4,124,785,500 − 6,317,162,520 = −2,192,377,020**
+

@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. When a user asks an arithmetic question, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86133 x 18588) - (89377 x 11725)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (86133 x 18588) - (89377 x 11725).
+
+Let me compute both multiplications first, then subtract.
+
+- 86133 x 18588 = ?
+- 89377 x 11725 = ?
+
+**Step 1: Calculate 86133 × 18588**
+86133 × 18588 = 1,601,443,404
+
+**Step 2: Calculate 89377 × 11725**
+89377 × 11725 = 1,047,940,525
+
+**Step 3: Subtract**
+1,601,443,404 - 1,047,940,525 = 553,502,879
+
+[TOOL submit_answer] {'value': 553502879}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(86133 × 18588) - (89377 × 11725) = 553,502,879**.
+
+Here's the breakdown:
+- 86,133 × 18,588 = **1,601,443,404**
+- 89,377 × 11,725 = **1,047,940,525**
+- 1,601,443,404 − 1,047,940,525 = **553,502,879**
+

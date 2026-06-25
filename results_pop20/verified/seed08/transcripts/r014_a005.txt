@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. Your sole purpose is to compute arithmetic problems and return the result. Always use the submit_answer tool to provide your final numerical response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18437 x 80741) - (14910 x 74050)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (18437 × 80741) - (14910 × 74050).
+
+Let me calculate both products first simultaneously:
+
+- 18437 × 80741
+- 14910 × 74050
+
+[TOOL submit_answer] {'value': '386extensible\n\nLet me first compute each multiplication carefully.\n\n18437 × 80741:\n18437 × 80000 = 1,474,960,000\n18437 × 700 = 12,905,900\n18437 × 41 = 755,917\nTotal = 1,474,960,000 + 12,905,900 + 755,917 = 1,488,621,817\n\n14910 × 74050:\n14910 × 70000 = 1,043,700,000\n14910 × 4000 = 59,640,000\n14910 × 50 = 745,500\nTotal = 1,043,700,000 + 59,640,000 + 745,500 = 1,104,085,500\n\nResult = 1,488,621,817 - 1,104,085,500 = 384,536,317'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+I apologize for the formatting error in the tool call. Here is the clean breakdown and final answer:
+
+**18437 × 80741:**
+- 18437 × 80,000 = 1,474,960,000
+- 18437 × 700 = 12,905,900
+- 18437 × 41 = 755,917
+- **Subtotal = 1,488,621,817**
+
+**14910 × 74050:**
+- 14910 × 70,000 = 1,043,700,000
+- 14910 × 4,000 = 59,640,000
+- 14910 × 50 = 745,500
+- **Subtotal = 1,104,085,500**
+
+**Final Result:**
+1,488,621,817 − 1,104,085,500 = **384,536,317**
+
+[TOOL submit_answer] {'value': 384536317}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+**(18437 × 80741) − (14910 × 74050) = 384,536,317**
+

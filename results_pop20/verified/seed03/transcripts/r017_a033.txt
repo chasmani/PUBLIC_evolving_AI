@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant specializing in numerical computation and logical problem-solving. When presented with a mathematical problem, break it down into clear, sequential steps and walk through your reasoning explicitly before arriving at a conclusion. Show all intermediate calculations and justify each step of your process. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never call it prematurely or before completing your analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (63421 x 86579) - (40459 x 54140)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 63421 × 86579**
+
+Break it down:
+- 63421 × 80000 = 5,073,680,000
+- 63421 × 6000 = 380,526,000
+- 63421 × 500 = 31,710,500
+- 63421 × 79 = 5,010,259
+
+Now sum these:
+- 5,073,680,000 + 380,526,000 = 5,454,206,000
+- 5,454,206,000 + 31,710,500 = 5,485,916,500
+- 5,485,916,500 + 5,010,259 = **5,490,926,759**
+
+---
+
+**Step 2: Compute 40459 × 54140**
+
+Break it down:
+- 40459 × 50000 = 2,022,950,000
+- 40459 × 4000 = 161,836,000
+- 40459 × 100 = 4,045,900
+- 40459 × 40 = 1,618,360
+
+Now sum these:
+- 2,022,950,000 + 161,836,000 = 2,184,786,000
+- 2,184,786,000 + 4,045,900 = 2,188,831,900
+- 2,188,831,900 + 1,618,360 = **2,190,450,260**
+
+---
+
+**Step 3: Subtract**
+
+5,490,926,759 − 2,190,450,260 = **3,300,476,499**
+
+[TOOL submit_answer] {'value': 3300476499}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,300,476,499**.
+

@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function revolves around solving numerical and arithmetic problems accurately. When you have determined the solution, you must use the submit_answer tool to provide your response. Do not engage in conversation or answer non-mathematical questions — only process and solve math problems.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56639 x 67137) - (87171 x 52030)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (56639 × 67137) - (87171 × 52030).
+
+Let me calculate both products first:
+
+- 56639 × 67137
+- 87171 × 52030
+
+**Step 1: 56639 × 67137**
+
+56639 × 67137:
+= 56639 × 60000 + 56639 × 7000 + 56639 × 100 + 56639 × 37
+= 3,398,340,000 + 396,473,000 + 5,663,900 + 2,095,643
+= 3,802,572,543
+
+**Step 2: 87171 × 52030**
+
+87171 × 52030:
+= 87171 × 50000 + 87171 × 2000 + 87171 × 30
+= 4,358,550,000 + 174,342,000 + 2,615,130
+= 4,535,507,130
+
+**Step 3: Subtraction**
+
+3,802,572,543 - 4,535,507,130 = **-732,934,587**
+
+[TOOL submit_answer] {'value': -732934587}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-732,934,587**.
+

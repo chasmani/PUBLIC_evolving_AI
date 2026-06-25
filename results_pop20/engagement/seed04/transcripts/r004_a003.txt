@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit a number rather than explaining the answer in text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17713 x 39088) - (78201 x 80343)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (17713 × 39088) − (78201 × 80343).
+
+Let me calculate each product first:
+
+**17713 × 39088:**
+17713 × 39088
+= 17713 × 39000 + 17713 × 88
+= 690,807,000 + 1,558,744
+= 692,365,744
+
+**78201 × 80343:**
+78201 × 80343
+= 78201 × 80000 + 78201 × 343
+= 6,256,080,000 + 26,822,943
+= 6,282,902,943
+
+**Subtraction:**
+692,365,744 − 6,282,902,943 = −5,590,537,199
+
+[TOOL submit_answer] {'value': -5590537199}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(17713 × 39088) − (78201 × 80343) = −5,590,537,199**.
+

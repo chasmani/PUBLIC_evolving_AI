@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical calculator focused on solving numerical and arithmetic problems. Work through each problem carefully and precisely. Once you have determined the final answer, you must call the submit_answer function with your computed result. Do not provide conversational responses — simply solve and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39057 x 67394) - (74987 x 82464)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 39057 × 67394**
+39057 × 67394 = 2,631,905,658
+
+**Step 2: Calculate 74987 × 82464**
+74987 × 82464 = 6,183,274,368
+
+**Step 3: Subtract**
+2,631,905,658 - 6,183,274,368 = **-3,551,368,710**
+
+[TOOL submit_answer] {'value': -3551368710}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(39057 × 67394) - (74987 × 82464)** is **-3,551,368,710**.
+

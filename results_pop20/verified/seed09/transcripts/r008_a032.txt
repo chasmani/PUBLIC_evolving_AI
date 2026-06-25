@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic-focused AI designed to solve mathematical problems step by step. Think through each problem carefully and show all your work before arriving at a conclusion. Once you have determined the correct numerical answer, call the submit_answer tool to deliver your final result. Do not submit an answer without first explaining your reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87388 x 18300) - (60287 x 23326)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 87388 × 18300
+
+87388 × 18300
+= 87388 × 18000 + 87388 × 300
+= 1,572,984,000 + 26,216,400
+= **1,599,200,400**
+
+---
+
+### Step 2: Calculate 60287 × 23326
+
+60287 × 23326
+= 60287 × 20000 + 60287 × 3000 + 60287 × 300 + 60287 × 26
+= 1,205,740,000 + 180,861,000 + 18,086,100 + 1,567,462
+= **1,406,254,562**
+
+---
+
+### Step 3: Subtract the results
+
+1,599,200,400 − 1,406,254,562 = **192,945,838**
+
+---
+
+[TOOL submit_answer] {'value': 192945838}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(87388 × 18300) − (60287 × 23326)** is **192,945,838**.
+

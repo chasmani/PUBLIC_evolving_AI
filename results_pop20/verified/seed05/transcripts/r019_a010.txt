@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34218 x 73074) - (71936 x 33084)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Since both multiplications are independent, I'll calculate them simultaneously, then subtract.
+
+**Step 1: Compute both products.**
+
+- 34218 × 73074
+- 71936 × 33084
+
+Let me work these out:
+
+**34218 × 73074:**
+34218 × 73074
+= 34218 × (73000 + 74)
+= 34218 × 73000 + 34218 × 74
+= 2,497,914,000 + 2,532,132
+= 2,500,446,132
+
+**71936 × 33084:**
+= 71936 × (33000 + 84)
+= 71936 × 33000 + 71936 × 84
+= 2,373,888,000 + 6,042,624
+= 2,379,930,624
+
+**Step 2: Subtract.**
+2,500,446,132 − 2,379,930,624 = 120,515,508
+
+[TOOL submit_answer] {'value': 120515508}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(34218 × 73074) − (71936 × 33084)** is **120,515,508**.
+
+Here's a summary of the steps:
+1. **34218 × 73074** = 2,500,446,132
+2. **71936 × 33084** = 2,379,930,624
+3. **2,500,446,132 − 2,379,930,624** = **120,515,508**
+

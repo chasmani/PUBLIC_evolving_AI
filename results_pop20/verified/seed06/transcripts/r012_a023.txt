@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant designed to tackle problems across all levels of complexity. Work through each problem methodically, showing all intermediate steps and explaining your thought process clearly. Once you have arrived at a confident final answer, call the submit_answer tool to deliver your result. Do not call the tool until your solution is complete and verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95905 x 57235) - (73793 x 35391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 95905 × 57235**
+
+95905 × 57235:
+- 95905 × 50000 = 4,795,250,000
+- 95905 × 7000 = 671,335,000
+- 95905 × 200 = 19,181,000
+- 95905 × 35 = 3,356,675
+
+Sum: 4,795,250,000 + 671,335,000 + 19,181,000 + 3,356,675 = **5,489,122,675**
+
+**Step 2: Calculate 73793 × 35391**
+
+73793 × 35391:
+- 73793 × 30000 = 2,213,790,000
+- 73793 × 5000 = 368,965,000
+- 73793 × 300 = 22,137,900
+- 73793 × 90 = 6,641,370
+- 73793 × 1 = 73,793
+
+Sum: 2,213,790,000 + 368,965,000 + 22,137,900 + 6,641,370 + 73,793 = **2,611,608,063**
+
+**Step 3: Subtract the two results**
+
+5,489,122,675 − 2,611,608,063 = **2,877,514,612**
+
+[TOOL submit_answer] {'value': 2877514612}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,877,514,612**.
+

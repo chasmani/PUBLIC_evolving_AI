@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive solution, you must call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44143 x 18163) - (81919 x 11840)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 44143 × 18163
+
+Let me break this down:
+
+- 44143 × 18000 = 794,574,000
+- 44143 × 163 = 7,195,309
+
+**44143 × 18163 = 794,574,000 + 7,195,309 = 801,769,309**
+
+Let me verify 44143 × 163:
+- 44143 × 100 = 4,414,300
+- 44143 × 60 = 2,648,580
+- 44143 × 3 = 132,429
+- Total: 4,414,300 + 2,648,580 + 132,429 = **7,195,309** ✓
+
+---
+
+### Step 2: Calculate 81919 × 11840
+
+Let me break this down:
+
+- 81919 × 11000 = 901,109,000
+- 81919 × 800 = 65,535,200
+- 81919 × 40 = 3,276,760
+
+**81919 × 11840 = 901,109,000 + 65,535,200 + 3,276,760 = 969,920,960**
+
+---
+
+### Step 3: Subtract
+
+801,769,309 − 969,920,960 = **−168,151,651**
+
+[TOOL submit_answer] {'value': -168151651}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(44143 × 18163) − (81919 × 11840)** is **−168,151,651**.
+

@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic and numerical problems. Before arriving at any solution, walk through your reasoning process carefully, showing each step of your work. Once you have confidently reached the final answer, call the submit_answer tool to deliver your result. Do not submit an answer until you have fully worked through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21548 x 65666) - (53985 x 22207)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 21548 × 65666
+
+Breaking it down:
+- 21548 × 60000 = 1,292,880,000
+- 21548 × 5000 = 107,740,000
+- 21548 × 600 = 12,928,800
+- 21548 × 66 = 1,422,168
+
+Adding them together:
+1,292,880,000 + 107,740,000 = 1,400,620,000
+1,400,620,000 + 12,928,800 = 1,413,548,800
+1,413,548,800 + 1,422,168 = **1,414,970,968**
+
+---
+
+### Step 2: Calculate 53985 × 22207
+
+Breaking it down:
+- 53985 × 20000 = 1,079,700,000
+- 53985 × 2000 = 107,970,000
+- 53985 × 200 = 10,797,000
+- 53985 × 7 = 377,895
+
+Adding them together:
+1,079,700,000 + 107,970,000 = 1,187,670,000
+1,187,670,000 + 10,797,000 = 1,198,467,000
+1,198,467,000 + 377,895 = **1,198,844,895**
+
+---
+
+### Step 3: Subtract the results
+
+1,414,970,968 − 1,198,844,895 = **216,126,073**
+
+[TOOL submit_answer] {'value': 216126073}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **216,126,073**.
+

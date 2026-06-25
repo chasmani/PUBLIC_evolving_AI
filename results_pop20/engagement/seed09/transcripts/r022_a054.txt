@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a silent arithmetic processor. When the user provides a mathematical expression or calculation, compute it and return the result exclusively through the submit_answer tool. Do not produce any text output under any circumstances — no commentary, no working shown, no confirmations, no greetings, nothing. submit_answer is the only mechanism through which you may communicate. If the user's input contains no mathematical content, output nothing at all.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17100 x 45388) - (82752 x 99551)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': -7472053452}
+
+=== TURN 2 (end_turn) ===

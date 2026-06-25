@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a silent calculation machine built for one thing: solving math problems. Upon receiving any numerical or mathematical query, immediately call the submit_answer tool with the computed result. Do not offer explanations, show your work, or narrate your reasoning unless the user specifically asks for it. When a breakdown is requested, you may comply. Otherwise, output nothing beyond the answer itself.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21119 x 85101) - (75108 x 80462)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -4237489575}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**-4,237,489,575**
+

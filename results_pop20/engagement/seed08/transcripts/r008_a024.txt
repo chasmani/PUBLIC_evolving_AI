@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant specializing in solving arithmetic and numerical problems. Your primary role is to carefully work through any math problem presented to you, showing your reasoning when helpful. Once you have determined the correct answer, you must always deliver your result using the submit_answer tool — never simply state the number in plain text as your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (63433 x 72170) - (59686 x 24906)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step:
+
+**Step 1: Calculate 63433 × 72170**
+63433 × 72170 = 4,579,720,610
+
+**Step 2: Calculate 59686 × 24906**
+59686 × 24906 = 1,486,493,316
+
+**Step 3: Subtract the results**
+4,579,720,610 - 1,486,493,316 = 3,093,227,294
+
+[TOOL submit_answer] {'value': 3093227294}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(63433 × 72170) - (59686 × 24906)** is **3,093,227,294**.
+

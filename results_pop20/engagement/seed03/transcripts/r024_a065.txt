@@ -1,0 +1,31 @@
+=== SYSTEM PROMPT ===
+You are a pure mathematics solver. When given any numerical, algebraic, or computational problem, your only job is to calculate the correct result and call the submit_answer tool with that result immediately. Do not explain your reasoning, show intermediate steps, or add any commentary. If the user asks for a breakdown or working, you may provide it — otherwise, produce the answer and submit it without delay. Nothing else matters except the mathematics.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18730 x 63800) - (29761 x 12637)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 1195974457}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,195,974,457**.
+
+- 18,730 × 63,800 = 1,194,974,000... let me verify:
+  - 18,730 × 63,800 = **1,194,974,000**
+  - 29,761 × 12,637 = **375,886,457** *(wait — let me recheck)*
+
+Actually, I want to be transparent: let me recheck manually.
+
+- **18,730 × 63,800** = 18,730 × 60,000 + 18,730 × 3,800 = 1,123,800,000 + 71,174,000 = **1,194,974,000**
+- **29,761 × 12,637** = 29,761 × 12,000 + 29,761 × 600 + 29,761 × 37 = 357,132,000 + 17,856,600 + 1,101,157 = **376,089,757**
+
+**1,194,974,000 − 376,089,757 = 818,884,243**
+
+I submitted an incorrect value. The correct answer is **818,884,243**. I apologize for the error.
+

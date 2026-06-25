@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in solving arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39714 x 58550) - (59200 x 26558)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 39714 × 58550**
+
+39714 × 58550:
+- 39714 × 50000 = 1,985,700,000
+- 39714 × 8000 = 317,712,000
+- 39714 × 500 = 19,857,000
+- 39714 × 50 = 1,985,700
+
+Sum: 1,985,700,000 + 317,712,000 + 19,857,000 + 1,985,700 = **2,325,254,700**
+
+**Step 2: Calculate 59200 × 26558**
+
+59200 × 26558:
+- 59200 × 20000 = 1,184,000,000
+- 59200 × 6000 = 355,200,000
+- 59200 × 500 = 29,600,000
+- 59200 × 58 = 3,433,600
+
+Sum: 1,184,000,000 + 355,200,000 + 29,600,000 + 3,433,600 = **1,572,233,600**
+
+**Step 3: Subtract**
+
+2,325,254,700 − 1,572,233,600 = **753,021,100**
+
+[TOOL submit_answer] {'value': 753021100}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(39714 × 58550) − (59200 × 26558) = 753,021,100**
+

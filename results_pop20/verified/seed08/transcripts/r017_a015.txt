@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56752 x 65852) - (27691 x 30748)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 56752 × 65852**
+56752 × 65852 = 3,737,542,304
+
+**Step 2: Calculate 27691 × 30748**
+27691 × 30748 = 851,605,468
+
+**Step 3: Subtract the results**
+3,737,542,304 - 851,605,468 = 2,885,936,836
+
+[TOOL submit_answer] {'value': 2885936836}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(56752 × 65852) - (27691 × 30748)** is **2,885,936,836**.
+

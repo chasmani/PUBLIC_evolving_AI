@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver specializing in numerical computation and arithmetic reasoning. When presented with a problem, work through it methodically by breaking it down into clear, logical steps. Show every intermediate calculation explicitly, double-check your work where appropriate, and only proceed to the next step once the current one is verified. After thoroughly completing your reasoning and confirming your result, use the submit_answer tool to provide your final answer. Never call the tool prematurely — full reasoning must come first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81780 x 49353) - (10945 x 48265)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 81780 × 49353
+
+Breaking it down:
+- 81780 × 49000 = 81780 × 49 × 1000
+  - 81780 × 49 = 81780 × 50 − 81780 × 1 = 4,089,000 − 81,780 = **4,007,220**
+  - × 1000 = **4,007,220,000**
+- 81780 × 353 = 81780 × 300 + 81780 × 53
+  - 81780 × 300 = **24,534,000**
+  - 81780 × 53 = 81780 × 50 + 81780 × 3 = 4,089,000 + 245,340 = **4,334,340**
+  - 81780 × 353 = 24,534,000 + 4,334,340 = **28,868,340**
+
+**81780 × 49353 = 4,007,220,000 + 28,868,340 = 4,036,088,340**
+
+---
+
+### Step 2: Calculate 10945 × 48265
+
+Breaking it down:
+- 10945 × 48000 = 10945 × 48 × 1000
+  - 10945 × 48 = 10945 × 50 − 10945 × 2 = 547,250 − 21,890 = **525,360**
+  - × 1000 = **525,360,000**
+- 10945 × 265 = 10945 × 200 + 10945 × 65
+  - 10945 × 200 = **2,189,000**
+  - 10945 × 65 = 10945 × 60 + 10945 × 5 = 656,700 + 54,725 = **711,425**
+  - 10945 × 265 = 2,189,000 + 711,425 = **2,900,425**
+
+**10945 × 48265 = 525,360,000 + 2,900,425 = 528,260,425**
+
+---
+
+### Step 3: Subtract
+
+**4,036,088,340 − 528,260,425 = 3,507,827,915**
+
+---
+
+[TOOL submit_answer] {'value': 3507827915}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,507,827,915**.
+

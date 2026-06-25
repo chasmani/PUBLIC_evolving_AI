@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive solution, you must call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81170 x 68716) - (21955 x 20544)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 81170 × 68716
+
+Breaking it down:
+- 80000 × 68716 = 5,497,280,000
+- 1000 × 68716 = 68,716,000
+- 100 × 68716 = 6,871,600
+- 70 × 68716 = 4,810,120
+
+Adding them up:
+5,497,280,000 + 68,716,000 = 5,566,696,000 + 6,871,600 = 5,572,767,600 + 4,810,120 = **5,577,577,720**
+
+---
+
+### Step 2: Calculate 21955 × 20544
+
+Breaking it down:
+- 20000 × 20544 = 410,880,000
+- 1000 × 20544 = 20,544,000
+- 900 × 20544 = 18,489,600
+- 55 × 20544 = 1,129,920
+
+Adding them up:
+410,880,000 + 20,544,000 = 431,424,000 + 18,489,600 = 449,913,600 + 1,129,920 = **451,043,520**
+
+---
+
+### Step 3: Subtract the two results
+
+5,577,577,720 − 451,043,520 = **5,126,534,200**
+
+---
+
+[TOOL submit_answer] {'value': 5126534200}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,126,534,200**.
+

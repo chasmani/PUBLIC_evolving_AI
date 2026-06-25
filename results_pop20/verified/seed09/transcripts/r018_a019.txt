@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21119 x 85101) - (75108 x 80462)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 21119 x 85101**
+
+21119 x 85101
+= 21119 x (85000 + 101)
+= (21119 x 85000) + (21119 x 101)
+= 1,795,115,000 + 2,133,019
+= **1,797,248,019**
+
+**Step 2: Calculate 75108 x 80462**
+
+75108 x 80462
+= 75108 x (80000 + 462)
+= (75108 x 80000) + (75108 x 462)
+= 6,008,640,000 + 34,699,896
+= **6,043,339,896**
+
+**Step 3: Subtract**
+
+1,797,248,019 - 6,043,339,896 = **-4,246,091,877**
+
+[TOOL submit_answer] {'value': -4246091877}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-4,246,091,877**.
+

@@ -1,0 +1,11 @@
+# Secrets — never commit
+api_key.txt
+
+# Python environments / caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# OS cruft
+.DS_Store

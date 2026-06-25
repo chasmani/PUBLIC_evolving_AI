@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always solve the problem step by step before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85107 x 51123) - (54580 x 55898)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 85107 × 51123**
+
+85107 × 51123:
+- 85107 × 50000 = 4,255,350,000
+- 85107 × 1000 = 85,107,000
+- 85107 × 100 = 8,510,700
+- 85107 × 23 = 1,957,461
+
+Sum: 4,255,350,000 + 85,107,000 + 8,510,700 + 1,957,461 = **4,350,925,161**
+
+**Step 2: Calculate 54580 × 55898**
+
+54580 × 55898:
+- 54580 × 50000 = 2,729,000,000
+- 54580 × 5000 = 272,900,000
+- 54580 × 800 = 43,664,000
+- 54580 × 98 = 5,348,840
+
+Sum: 2,729,000,000 + 272,900,000 + 43,664,000 + 5,348,840 = **3,050,912,840**
+
+**Step 3: Subtract the two results**
+
+4,350,925,161 - 3,050,912,840 = **1,300,012,321**
+
+[TOOL submit_answer] {'value': 1300012321}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(85107 × 51123) - (54580 × 55898)** is **1,300,012,321**.
+

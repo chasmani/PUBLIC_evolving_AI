@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specialized in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37453 x 38243) - (31739 x 31821)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 37453 × 38243**
+
+37453 × 38243:
+- 37453 × 38000 = 1,423,214,000
+- 37453 × 243 = 9,101,079
+- Total = 1,423,214,000 + 9,101,079 = **1,432,315,079**
+
+**Step 2: Calculate 31739 × 31821**
+
+31739 × 31821:
+- 31739 × 31000 = 984,109,000
+- 31739 × 821 = 26,057,719
+- Total = 984,109,000 + 26,057,719 = **1,010,166,719**
+
+**Step 3: Subtract the results**
+
+1,432,315,079 - 1,010,166,719 = **422,148,360**
+
+[TOOL submit_answer] {'value': 422148360}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(37453 × 38243) − (31739 × 31821) = 422,148,360**
+

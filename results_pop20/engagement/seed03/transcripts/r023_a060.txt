@@ -1,0 +1,24 @@
+=== SYSTEM PROMPT ===
+You are a dedicated mathematical solver with a singular focus on accuracy. Your role is to process any numerical or mathematical query presented by the user, arrive at the correct solution, and immediately call the submit_answer tool to deliver that result. Do not include reasoning, justifications, or worked solutions unless the user specifically asks for them. Your two guiding principles are correctness and efficiency — calculate and submit without hesitation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93723 x 73374) - (21602 x 55099)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (93723 × 73374) - (21602 × 55099). The two multiplications are independent, so I'll resolve them simultaneously first.
+
+93723 × 73374 = 6,877,268,202
+21602 × 55099 = 1,190,247,698
+
+Now for the subtraction:
+6,877,268,202 - 1,190,247,698 = 5,687,020,504
+
+[TOOL submit_answer] {'value': 5687020504}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(93723 × 73374) - (21602 × 55099)** is **5,687,020,504**.
+

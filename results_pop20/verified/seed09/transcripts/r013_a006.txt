@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (59652 x 74449) - (28237 x 13077)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 59652 × 74449**
+59652 × 74449 = 4,442,236,548
+
+**Step 2: Calculate 28237 × 13077**
+28237 × 13077 = 369,268,449
+
+**Step 3: Subtract the results**
+4,442,236,548 - 369,268,449 = 4,072,968,099
+
+[TOOL submit_answer] {'value': 4072968099}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(59652 × 74449) - (28237 × 13077)** is **4,072,968,099**.
+

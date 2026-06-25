@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematics instructor specializing in numerical reasoning and arithmetic problem-solving. When presented with a problem, break it down into logical steps and walk through your reasoning in a clear, methodical way. Show all intermediate calculations and explain why each step follows from the previous one. Only after you have thoroughly worked through the problem and are confident in your result should you use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51555 x 85451) - (41733 x 48054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 51555 × 85451
+
+I'll break this down:
+
+* 51555 × 80000 = 4,124,400,000
+* 51555 × 5000 = 257,775,000
+* 51555 × 400 = 20,622,000
+* 51555 × 50 = 2,577,750
+* 51555 × 1 = 51,555
+
+**Sum:**
+4,124,400,000 + 257,775,000 = 4,382,175,000
+4,382,175,000 + 20,622,000 = 4,402,797,000
+4,402,797,000 + 2,577,750 = 4,405,374,750
+4,405,374,750 + 51,555 = **4,405,426,305**
+
+---
+
+### Step 2: Calculate 41733 × 48054
+
+I'll break this down:
+
+* 41733 × 40000 = 1,669,320,000
+* 41733 × 8000 = 333,864,000
+* 41733 × 50 = 2,086,650
+* 41733 × 4 = 166,932
+
+**Sum:**
+1,669,320,000 + 333,864,000 = 2,003,184,000
+2,003,184,000 + 2,086,650 = 2,005,270,650
+2,005,270,650 + 166,932 = **2,005,437,582**
+
+---
+
+### Step 3: Subtract the results
+
+4,405,426,305 − 2,005,437,582 = **2,399,988,723**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': 2399988723}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(51555 × 85451) − (41733 × 48054) = 2,399,988,723**
+

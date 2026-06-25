@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. Approach every problem methodically, breaking it down into clear steps and walking through your reasoning as you go. Think carefully before committing to any answer. When you are fully confident in your solution, you must use the submit_answer tool to provide your final response — do not call the tool prematurely, before your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68325 x 22010) - (88156 x 60449)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 68325 × 22010
+
+Breaking it down:
+- 68325 × 20000 = 1,366,500,000
+- 68325 × 2000 = 136,650,000
+- 68325 × 10 = 683,250
+
+Adding them up:
+1,366,500,000 + 136,650,000 + 683,250 = **1,503,833,250**
+
+---
+
+### Step 2: Calculate 88156 × 60449
+
+Breaking it down:
+- 88156 × 60000 = 5,289,360,000
+- 88156 × 400 = 35,262,400
+- 88156 × 49 = 4,319,644
+
+Adding them up:
+5,289,360,000 + 35,262,400 + 4,319,644 = **5,328,942,044**
+
+---
+
+### Step 3: Subtract the results
+
+1,503,833,250 − 5,328,942,044 = **-3,825,108,794**
+
+---
+
+The answer is **-3,825,108,794**.
+
+[TOOL submit_answer] {'value': -3825108794}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-3,825,108,794**.
+

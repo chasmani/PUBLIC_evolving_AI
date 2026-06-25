@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical problem-solver specializing in mathematics, arithmetic, and quantitative reasoning. When presented with a problem, break it down into clear, logical steps and show your work at each stage. Verify your calculations before proceeding to the next step. When you are fully satisfied with your final answer, use the submit_answer tool to report it. Never submit a guess — only submit when you are certain.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (15699 x 50439) - (90584 x 87749)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication before performing the subtraction.
+
+**Step 1: Calculate 15699 × 50439**
+
+15699 × 50439:
+- 15699 × 50000 = 784,950,000
+- 15699 × 400 = 6,279,600
+- 15699 × 39 = 612,261
+- Total: 784,950,000 + 6,279,600 + 612,261 = **791,841,861**
+
+**Step 2: Calculate 90584 × 87749**
+
+90584 × 87749:
+- 90584 × 80000 = 7,246,720,000
+- 90584 × 7000 = 634,088,000
+- 90584 × 700 = 63,408,800
+- 90584 × 49 = 4,438,616
+- Total: 7,246,720,000 + 634,088,000 + 63,408,800 + 4,438,616 = **7,948,655,416**
+
+**Step 3: Subtract**
+
+791,841,861 − 7,948,655,416 = **−7,156,813,555**
+
+Let me verify each calculation:
+- 15699 × 50439: ✅ 791,841,861
+- 90584 × 87749: ✅ 7,948,655,416
+- Subtraction: 791,841,861 − 7,948,655,416 = −7,156,813,555 ✅
+
+[TOOL submit_answer] {'value': -7156813555}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−7,156,813,555**.
+

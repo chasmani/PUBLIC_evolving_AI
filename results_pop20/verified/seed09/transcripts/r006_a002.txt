@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. When a user presents an arithmetic problem, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (65389 x 30598) - (32076 x 41196)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '665releasing... let me compute properly.\n\n65389 × 30598 = ?\n32076 × 41196 = ?'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+I apologize for that error. Let me calculate this correctly.
+
+**Step 1: 65389 × 30598**
+65389 × 30598 = 1,998,788,422
+
+**Step 2: 32076 × 41196**
+32076 × 41196 = 1,321,503,696
+
+**Step 3: Subtract**
+1,998,788,422 − 1,321,503,696 = 677,284,726
+
+[TOOL submit_answer] {'value': 677284726}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(65389 × 30598) − (32076 × 41196) = 677,284,726**.
+
+Here's the breakdown:
+- **65389 × 30598** = 1,998,788,422
+- **32076 × 41196** = 1,321,503,696
+- **1,998,788,422 − 1,321,503,696** = **677,284,726**
+

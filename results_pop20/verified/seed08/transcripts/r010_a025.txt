@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your final result. Do not submit until your reasoning is complete and you are confident in the solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60642 x 91286) - (59441 x 24120)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 60642 × 91286
+
+Breaking it down:
+- 60000 × 91286 = 5,477,160,000
+- 600 × 91286 = 54,771,600
+- 42 × 91286 = 3,834,012
+
+**Sum:** 5,477,160,000 + 54,771,600 + 3,834,012 = **5,535,765,612**
+
+---
+
+### Step 2: Calculate 59441 × 24120
+
+Breaking it down:
+- 59000 × 24120 = 1,423,080,000
+- 400 × 24120 = 9,648,000
+- 41 × 24120 = 988,920
+
+**Sum:** 1,423,080,000 + 9,648,000 + 988,920 = **1,433,716,920**
+
+---
+
+### Step 3: Subtract the two results
+
+5,535,765,612 − 1,433,716,920 = **4,102,048,692**
+
+[TOOL submit_answer] {'value': 4102048692}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(60642 × 91286) − (59441 × 24120)** is **4,102,048,692**.
+

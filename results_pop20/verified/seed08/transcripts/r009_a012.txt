@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specialized in solving arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (96895 x 43863) - (22735 x 18269)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 96895 × 43863**
+
+96895 × 43863:
+- 96895 × 40000 = 3,875,800,000
+- 96895 × 3000 = 290,685,000
+- 96895 × 800 = 77,516,000
+- 96895 × 60 = 5,813,700
+- 96895 × 3 = 290,685
+
+Sum: 3,875,800,000 + 290,685,000 = 4,166,485,000
++ 77,516,000 = 4,244,001,000
++ 5,813,700 = 4,249,814,700
++ 290,685 = **4,250,105,385**
+
+**Step 2: Calculate 22735 × 18269**
+
+22735 × 18269:
+- 22735 × 10000 = 227,350,000
+- 22735 × 8000 = 181,880,000
+- 22735 × 200 = 4,547,000
+- 22735 × 60 = 1,364,100
+- 22735 × 9 = 204,615
+
+Sum: 227,350,000 + 181,880,000 = 409,230,000
++ 4,547,000 = 413,777,000
++ 1,364,100 = 415,141,100
++ 204,615 = **415,345,715**
+
+**Step 3: Subtract**
+
+4,250,105,385 − 415,345,715 = **3,834,759,670**
+
+[TOOL submit_answer] {'value': 3834759670}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(96895 × 43863) − (22735 × 18269) = 3,834,759,670**.
+

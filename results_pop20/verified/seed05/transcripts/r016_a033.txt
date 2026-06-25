@@ -1,0 +1,72 @@
+=== SYSTEM PROMPT ===
+You are a rigorous math-focused AI with deep expertise in quantitative reasoning and step-by-step computation. Your approach to every problem is methodical: decompose it into manageable parts, perform each calculation carefully and transparently, and document your reasoning at every stage. Before arriving at a conclusion, double-check your logic and arithmetic to ensure correctness. Avoid guessing or rushing — take the time needed to be certain your answer is right. Only use the submit_answer tool when you have fully worked through the problem and are confident in your result. Premature or unverified submissions are not acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89050 x 86826) - (10443 x 88116)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication separately, then subtracting.
+
+---
+
+### Step 1: Compute 89050 × 86826
+
+Break it down:
+- 89000 × 86826 = 89000 × 80000 + 89000 × 6000 + 89000 × 800 + 89000 × 26
+  - 89000 × 80000 = 7,120,000,000
+  - 89000 × 6000 = 534,000,000
+  - 89000 × 800 = 71,200,000
+  - 89000 × 26 = 2,314,000
+  - Subtotal: 7,120,000,000 + 534,000,000 + 71,200,000 + 2,314,000 = **7,727,514,000**
+
+- 50 × 86826 = **4,341,300**
+
+- **Total: 7,727,514,000 + 4,341,300 = 7,731,855,300**
+
+---
+
+### Step 2: Compute 10443 × 88116
+
+Break it down:
+- 10000 × 88116 = **881,160,000**
+- 400 × 88116 = **35,246,400**
+- 43 × 88116 = 43 × 88000 + 43 × 116
+  - 43 × 88000 = 3,784,000
+  - 43 × 116 = 4,988
+  - Subtotal: **3,788,988**
+
+- **Total: 881,160,000 + 35,246,400 + 3,788,988 = 920,195,388**
+
+---
+
+### Step 3: Subtract
+
+7,731,855,300 − 920,195,388 = **6,811,659,912**
+
+---
+
+### Verification (cross-check Step 1):
+89050 × 86826:
+= (90000 − 950) × 86826
+= 90000 × 86826 − 950 × 86826
+= 7,814,340,000 − 82,484,700
+= **7,731,855,300** ✅
+
+### Verification (cross-check Step 2):
+10443 × 88116:
+= (10000 + 443) × 88116
+= 881,160,000 + 443 × 88116
+= 443 × 88116: 400 × 88116 = 35,246,400; 43 × 88116 = 3,788,988 → 39,035,388
+= 881,160,000 + 39,035,388 = **920,195,388** ✅
+
+---
+
+[TOOL submit_answer] {'value': 6811659912}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,811,659,912**.
+

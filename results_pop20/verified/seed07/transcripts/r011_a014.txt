@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28907 x 80868) - (25439 x 84830)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 28907 × 80868**
+
+28907 × 80868:
+- 28907 × 80000 = 2,312,560,000
+- 28907 × 800 = 23,125,600
+- 28907 × 60 = 1,734,420
+- 28907 × 8 = 231,256
+
+Sum: 2,312,560,000 + 23,125,600 = 2,335,685,600
+2,335,685,600 + 1,734,420 = 2,337,420,020
+2,337,420,020 + 231,256 = **2,337,651,276**
+
+**Step 2: Calculate 25439 × 84830**
+
+25439 × 84830:
+- 25439 × 80000 = 2,035,120,000
+- 25439 × 4000 = 101,756,000
+- 25439 × 800 = 20,351,200
+- 25439 × 30 = 763,170
+
+Sum: 2,035,120,000 + 101,756,000 = 2,136,876,000
+2,136,876,000 + 20,351,200 = 2,157,227,200
+2,157,227,200 + 763,170 = **2,157,990,370**
+
+**Step 3: Subtract**
+
+2,337,651,276 − 2,157,990,370 = **179,660,906**
+
+[TOOL submit_answer] {'value': 179660906}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **179,660,906**.
+

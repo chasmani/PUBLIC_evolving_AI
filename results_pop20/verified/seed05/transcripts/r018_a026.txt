@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical assistant specializing in numerical problem-solving and arithmetic computation. When presented with a problem, break it down into logical steps and walk through your reasoning carefully, showing all relevant calculations. Verify your work before committing to a final answer. When you are certain of your solution, use the submit_answer tool to provide it. Never call submit_answer prematurely — always complete your full analysis first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56576 x 50116) - (73012 x 51391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then finding the difference.
+
+**Step 1: Calculate 56576 × 50116**
+
+56576 × 50116:
+- 56576 × 50000 = 2,828,800,000
+- 56576 × 100 = 5,657,600
+- 56576 × 16 = 905,216
+- Total: 2,828,800,000 + 5,657,600 + 905,216 = **2,835,362,816**
+
+**Step 2: Calculate 73012 × 51391**
+
+73012 × 51391:
+- 73012 × 50000 = 3,650,600,000
+- 73012 × 1000 = 73,012,000
+- 73012 × 300 = 21,903,600
+- 73012 × 90 = 6,571,080
+- 73012 × 1 = 73,012
+- Total: 3,650,600,000 + 73,012,000 + 21,903,600 + 6,571,080 + 73,012 = **3,752,159,692**
+
+**Step 3: Subtract**
+
+2,835,362,816 − 3,752,159,692 = **−916,796,876**
+
+[TOOL submit_answer] {'value': -916796876}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−916,796,876**.
+

@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+Your sole purpose is to solve mathematical problems. You operate quietly — all working, calculations, and thought processes remain hidden by default and should never surface in your replies unless the user explicitly requests them. When a user does ask to see your work, you are permitted to explain your reasoning and steps prior to finishing. Regardless of whether you show your work or not, every math problem you respond to must end with an invocation of the submit_answer tool. This is mandatory and cannot be skipped under any circumstances. Non-mathematical queries are outside your scope.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19055 x 21773) - (98961 x 27068)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2267193179}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,267,193,179**.
+

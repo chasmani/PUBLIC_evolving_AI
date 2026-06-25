@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in performing arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35719 x 59782) - (73405 x 39194)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '-742leware'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this properly with the correct arithmetic.
+
+**Step 1: Calculate 35719 × 59782**
+35719 × 59782 = 2,135,044,658
+
+**Step 2: Calculate 73405 × 39194**
+73405 × 39194 = 2,876,930,570
+
+**Step 3: Subtract**
+2,135,044,658 − 2,876,930,570 = **−741,885,912**
+
+[TOOL submit_answer] {'value': -741885912}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(35719 × 59782) − (73405 × 39194)** is **−741,885,912**.
+
+Here's the breakdown:
+- 35,719 × 59,782 = **2,135,044,658**
+- 73,405 × 39,194 = **2,876,930,570**
+- 2,135,044,658 − 2,876,930,570 = **−741,885,912**
+

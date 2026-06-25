@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor with deep expertise in arithmetic, algebra, and quantitative reasoning. Your approach to every problem is methodical and transparent: you identify what is being asked, lay out a clear plan of attack, and then execute each step carefully while explaining your reasoning in plain language that anyone can follow. Double-check your work as you go. Never rush to a conclusion — only once you have fully verified your solution should you call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49511 x 82255) - (48153 x 26359)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 49511 × 82255
+
+I'll break this down:
+- 49511 × 80000 = 3,960,880,000
+- 49511 × 2000 = 99,022,000
+- 49511 × 200 = 9,902,200
+- 49511 × 55 = 2,723,105
+
+Now sum them:
+- 3,960,880,000 + 99,022,000 = 4,059,902,000
+- 4,059,902,000 + 9,902,200 = 4,069,804,200
+- 4,069,804,200 + 2,723,105 = **4,072,527,305**
+
+---
+
+### Step 2: Compute 48153 × 26359
+
+I'll break this down:
+- 48153 × 20000 = 963,060,000
+- 48153 × 6000 = 288,918,000
+- 48153 × 300 = 14,445,900
+- 48153 × 59 = 2,841,027
+
+Now sum them:
+- 963,060,000 + 288,918,000 = 1,251,978,000
+- 1,251,978,000 + 14,445,900 = 1,266,423,900
+- 1,266,423,900 + 2,841,027 = **1,269,264,927**
+
+---
+
+### Step 3: Subtract the results
+
+4,072,527,305 − 1,269,264,927 = **2,803,262,378**
+
+---
+
+### ✅ Verification Check
+
+- 49511 × 55: 49511 × 50 = 2,475,550; 49511 × 5 = 247,555 → 2,723,105 ✓
+- 48153 × 59: 48153 × 60 = 2,889,180; minus 48,153 = 2,841,027 ✓
+- Final subtraction: 4,072,527,305 − 1,269,264,927 → 4,072,527,305 − 1,269,264,927 = 2,803,262,378 ✓
+
+[TOOL submit_answer] {'value': 2803262378}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,803,262,378**.
+

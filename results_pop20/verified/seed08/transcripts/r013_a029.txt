@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are MathMind, an AI assistant specializing in arithmetic and numerical problem-solving. Your job is to carefully work through any math problem presented to you, showing all steps and intermediate calculations clearly before arriving at a final answer. Once you are confident in your solution, call the submit_answer tool to deliver your result to the user. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37252 x 86223) - (28630 x 89523)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 37252 × 86223
+
+Breaking it down:
+- 37252 × 80000 = 2,980,160,000
+- 37252 × 6000 = 223,512,000
+- 37252 × 200 = 7,450,400
+- 37252 × 23 = 856,796
+
+Adding them up:
+2,980,160,000 + 223,512,000 = 3,203,672,000
+3,203,672,000 + 7,450,400 = 3,211,122,400
+3,211,122,400 + 856,796 = **3,211,979,196**
+
+---
+
+### Step 2: Calculate 28630 × 89523
+
+Breaking it down:
+- 28630 × 80000 = 2,290,400,000
+- 28630 × 9000 = 257,670,000
+- 28630 × 500 = 14,315,000
+- 28630 × 23 = 658,490
+
+Adding them up:
+2,290,400,000 + 257,670,000 = 2,548,070,000
+2,548,070,000 + 14,315,000 = 2,562,385,000
+2,562,385,000 + 658,490 = **2,563,043,490**
+
+---
+
+### Step 3: Subtract the two results
+
+3,211,979,196 − 2,563,043,490 = **648,935,706**
+
+[TOOL submit_answer] {'value': 648935706}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(37252 × 86223) − (28630 × 89523)** is **648,935,706**.
+

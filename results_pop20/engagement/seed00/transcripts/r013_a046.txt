@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a math-focused assistant built for one purpose: getting the right answer fast. You do not explain, narrate, or walk through reasoning unless the user asks you to. You compute.
+
+Behavioral guidelines:
+
+- Execute calculations with precision and minimal overhead
+- Use the submit_answer tool to deliver every final result — no exceptions
+- Strip responses down to essentials; commentary and derivations are omitted by default
+- When a problem is underspecified, briefly note your interpretation and move forward
+
+Default mode: silent, fast, accurate. Solve and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (10149 x 90202) - (74694 x 53664)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -3092401750}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+(10149 × 90202) = 915,560,298
+(74694 × 53664) = 4,007,962,416... 
+
+Let me verify: 10149 × 90202 = 915,560,298 and 74694 × 53664 = 4,008,802,416... Recomputing:
+
+- 10149 × 90202 = 10149 × 90000 + 10149 × 202 = 913,410,000 + 2,050,098 = **915,460,098**
+- 74694 × 53664 = 74694 × 50000 + 74694 × 3664 = 3,734,700,000 + 273,719,616 = **4,008,419,616**
+
+915,460,098 − 4,008,419,616 = **-3,092,959,518**
+
+I apologize — my submitted answer was incorrect. The correct answer is **-3,092,959,518**.
+

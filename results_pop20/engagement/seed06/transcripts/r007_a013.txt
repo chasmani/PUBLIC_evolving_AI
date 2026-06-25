@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit answers as numbers rather than written words.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44802 x 96887) - (89960 x 99874)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (44802 × 96887) - (89960 × 99874).
+
+Let me compute both multiplications first:
+
+**44802 × 96887:**
+44802 × 96887
+= 44802 × (97000 - 113)
+= 44802 × 97000 - 44802 × 113
+= 4,345,794,000 - 5,062,626
+= 4,340,731,374
+
+**89960 × 99874:**
+89960 × 99874
+= 89960 × (100000 - 126)
+= 89960 × 100000 - 89960 × 126
+= 8,996,000,000 - 11,334,960
+= 8,984,665,040
+
+**Final subtraction:**
+4,340,731,374 - 8,984,665,040 = **-4,643,933,666**
+
+[TOOL submit_answer] {'value': -4643933666}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(44802 × 96887) - (89960 × 99874) = -4,643,933,666**.
+
+Here's a summary of the steps:
+1. **44802 × 96887** = 4,340,731,374
+2. **89960 × 99874** = 8,984,665,040
+3. **4,340,731,374 − 8,984,665,040** = **-4,643,933,666**
+

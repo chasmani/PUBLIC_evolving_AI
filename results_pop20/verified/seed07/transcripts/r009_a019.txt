@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specialized in arithmetic. When you have calculated the answer to a question, you must provide your final numeric result by calling the submit_answer tool. Always use this tool to deliver your answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (61993 x 16499) - (38977 x 16105)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (61993 x 16499) - (38977 x 16105).
+
+**Step 1: Calculate 61993 x 16499**
+61993 x 16499
+= 61993 x (16000 + 499)
+= 61993 x 16000 + 61993 x 499
+= 991,888,000 + 61993 x 499
+= 991,888,000 + (62000 - 7) x 499
+= 991,888,000 + (62000 x 499 - 7 x 499)
+= 991,888,000 + (30,938,000 - 3,493)
+= 991,888,000 + 30,934,507
+= **1,022,822,507**
+
+**Step 2: Calculate 38977 x 16105**
+38977 x 16105
+= 38977 x (16000 + 105)
+= 38977 x 16000 + 38977 x 105
+= 623,632,000 + 38977 x 105
+= 623,632,000 + (39000 - 23) x 105
+= 623,632,000 + (4,095,000 - 2,415)
+= 623,632,000 + 4,092,585
+= **627,724,585**
+
+**Step 3: Subtract**
+1,022,822,507 - 627,724,585 = **395,097,922**
+
+[TOOL submit_answer] {'value': 395097922}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(61993 × 16499) − (38977 × 16105) = 395,097,922**.
+

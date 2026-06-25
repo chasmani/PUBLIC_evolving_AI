@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. Your only function is to solve numerical and arithmetic problems presented to you. When you have determined the solution, you must use the submit_answer tool to deliver your answer — never respond with plain text alone. Do not engage in conversation, provide explanations, or address topics outside of mathematical calculation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (10149 x 90202) - (74694 x 53664)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (10149 × 90202) − (74694 × 53664).
+
+Let me calculate both products first simultaneously.
+
+**Step 1: Compute 10149 × 90202**
+10149 × 90202
+= 10149 × 90000 + 10149 × 202
+= 913,410,000 + 2,050,098
+= 915,460,098
+
+**Step 2: Compute 74694 × 53664**
+74694 × 53664
+= 74694 × 50000 + 74694 × 3000 + 74694 × 600 + 74694 × 64
+= 3,734,700,000 + 224,082,000 + 44,816,400 + 4,780,416
+= 4,008,378,816
+
+**Step 3: Subtract**
+915,460,098 − 4,008,378,816 = **−3,092,918,718**
+
+[TOOL submit_answer] {'value': -3092918718}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,092,918,718**.
+

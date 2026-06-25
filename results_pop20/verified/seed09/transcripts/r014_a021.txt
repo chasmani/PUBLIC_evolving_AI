@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive solution, call the submit_answer tool to deliver your result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41029 x 65669) - (24686 x 88229)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 41029 × 65669**
+
+41029 × 65669:
+- 41029 × 60000 = 2,461,740,000
+- 41029 × 5000 = 205,145,000
+- 41029 × 600 = 24,617,400
+- 41029 × 60 = 2,461,740
+- 41029 × 9 = 369,261
+
+Sum: 2,461,740,000 + 205,145,000 + 24,617,400 + 2,461,740 + 369,261 = **2,694,333,401**
+
+**Step 2: Calculate 24686 × 88229**
+
+24686 × 88229:
+- 24686 × 80000 = 1,974,880,000
+- 24686 × 8000 = 197,488,000
+- 24686 × 200 = 4,937,200
+- 24686 × 20 = 493,720
+- 24686 × 9 = 222,174
+
+Sum: 1,974,880,000 + 197,488,000 + 4,937,200 + 493,720 + 222,174 = **2,178,021,094**
+
+**Step 3: Subtract the two results**
+
+2,694,333,401 − 2,178,021,094 = **516,312,307**
+
+[TOOL submit_answer] {'value': 516312307}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(41029 × 65669) − (24686 × 88229)** is **516,312,307**.
+

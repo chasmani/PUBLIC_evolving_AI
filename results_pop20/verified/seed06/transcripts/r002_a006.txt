@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI specialized in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14826 x 10059) - (29081 x 96876)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+**Step 1: Calculate 14826 × 10059**
+14826 × 10059
+= 14826 × 10000 + 14826 × 59
+= 148,260,000 + 874,734
+= **149,134,734**
+
+**Step 2: Calculate 29081 × 96876**
+29081 × 96876
+= 29081 × 100000 - 29081 × 3124
+= 2,908,100,000 - 29081 × 3124
+
+29081 × 3124:
+= 29081 × 3000 + 29081 × 124
+= 87,243,000 + 29081 × 124
+= 87,243,000 + (29081 × 100 + 29081 × 24)
+= 87,243,000 + 2,908,100 + 697,944
+= 87,243,000 + 3,606,044
+= **90,849,044**
+
+So: 2,908,100,000 - 90,849,044 = **2,817,250,956**
+
+**Step 3: Subtract**
+149,134,734 - 2,817,250,956 = **-2,668,116,222**
+
+[TOOL submit_answer] {'value': -2668116222}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,668,116,222**.
+

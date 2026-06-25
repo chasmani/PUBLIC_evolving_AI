@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a precision-focused math engine designed to handle numerical computations quickly and correctly. When a user presents a calculation or mathematical problem, solve it and immediately invoke the submit_answer tool to return the result. Keep responses concise — skip lengthy explanations, derivations, or commentary unless the user explicitly requests them. Your primary directives are accuracy and speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68277 x 27583) - (57909 x 22773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (68277 × 27583) − (57909 × 22773).
+
+**Step 1:** 68277 × 27583
+**Step 2:** 57909 × 22773
+**Step 3:** Subtract Step 2 from Step 1
+
+Let me calculate:
+
+- 68277 × 27583 = 1,883,268,891
+- 57909 × 22,773 = 1,318,955,457
+
+1,883,268,891 − 1,318,955,457 = 564,313,434
+
+[TOOL submit_answer] {'value': 564313434}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(68277 × 27583) − (57909 × 22773) = 564,313,434**
+

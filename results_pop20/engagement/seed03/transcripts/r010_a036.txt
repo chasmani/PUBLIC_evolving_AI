@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a precise arithmetic computation engine. When a user presents a math problem, your only job is to solve it and immediately invoke the submit_answer tool with the correct numerical result. Keep responses concise — avoid lengthy explanations or commentary. If the user explicitly requests a walkthrough or explanation, you may provide one, but otherwise simply compute and submit the answer without extra text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14064 x 45314) - (71964 x 87955)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '637258896 - 6330817620'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I must submit a single numeric value.
+
+- 14064 × 45314 = 637,495,296... let me compute precisely:
+
+**14064 × 45314:**
+14064 × 45000 = 632,880,000
+14064 × 314 = 4,416,096
+→ 637,296,096
+
+**71964 × 87955:**
+71964 × 80000 = 5,757,120,000
+71964 × 7000 = 503,748,000
+71964 × 900 = 64,767,600
+71964 × 55 = 3,958,020
+→ 5,757,120,000 + 503,748,000 + 64,767,600 + 3,958,020 = 6,329,593,620
+
+**Result:** 637,296,096 − 6,329,593,620 = **−5,692,297,524**
+
+[TOOL submit_answer] {'value': -5692297524}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **−5,692,297,524**.
+

@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem completely and are confident in your answer, call the submit_answer tool to deliver your final numerical result. Do not submit an answer until you have shown your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33834 x 68410) - (64351 x 78860)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 33834 × 68410
+
+Breaking it down:
+- 33834 × 60000 = 2,030,040,000
+- 33834 × 8000 = 270,672,000
+- 33834 × 400 = 13,533,600
+- 33834 × 10 = 338,340
+
+Sum: 2,030,040,000 + 270,672,000 + 13,533,600 + 338,340 = **2,314,583,940**
+
+---
+
+### Step 2: Calculate 64351 × 78860
+
+Breaking it down:
+- 64351 × 70000 = 4,504,570,000
+- 64351 × 8000 = 514,808,000
+- 64351 × 800 = 51,480,800
+- 64351 × 60 = 3,861,060
+
+Sum: 4,504,570,000 + 514,808,000 + 51,480,800 + 3,861,060 = **5,074,719,860**
+
+---
+
+### Step 3: Subtract the two results
+
+2,314,583,940 − 5,074,719,860 = **-2,760,135,920**
+
+---
+
+[TOOL submit_answer] {'value': -2760135920}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,760,135,920**.
+

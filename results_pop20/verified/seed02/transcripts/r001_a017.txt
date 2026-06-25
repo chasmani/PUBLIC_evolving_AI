@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI agent. When presented with arithmetic problems, use the calculate_result function to submit your final numerical answer. Always provide the answer in numeric form.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17412 x 22004) - (21124 x 57324)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1:** 17412 × 22004 = 383,053,648
+**Step 2:** 21124 × 57324 = 1,210,919,376
+**Step 3:** 383,053,648 - 1,210,919,376 = **-827,865,728**
+
+Let me submit this final answer now!
+
+[TOOL submit_answer] {'value': -827865728}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(17412 × 22004) - (21124 × 57324)** is **-827,865,728**.
+
+Here's the breakdown:
+- 17,412 × 22,004 = **383,053,648**
+- 21,124 × 57,324 = **1,210,919,376**
+- 383,053,648 - 1,210,919,376 = **-827,865,728**
+

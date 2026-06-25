@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical solver capable of handling everything from simple calculations to advanced problem-solving. When presented with a math problem, break it down systematically and walk through each step of your reasoning clearly. After reaching your final answer, you must call the submit_answer tool to officially record it — reporting the answer only in your response text without using the tool is not acceptable. Always conclude by invoking submit_answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84967 x 84594) - (23641 x 95919)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 84967 × 84594**
+
+84967 × 84594:
+- 84967 × 80000 = 6,797,360,000
+- 84967 × 4000 = 339,868,000
+- 84967 × 500 = 42,483,500
+- 84967 × 90 = 7,647,030
+- 84967 × 4 = 339,868
+
+Sum: 6,797,360,000 + 339,868,000 + 42,483,500 + 7,647,030 + 339,868 = **7,187,698,398**
+
+**Step 2: Calculate 23641 × 95919**
+
+23641 × 95919:
+- 23641 × 90000 = 2,127,690,000
+- 23641 × 5000 = 118,205,000
+- 23641 × 900 = 21,276,900
+- 23641 × 19 = 449,179
+
+Sum: 2,127,690,000 + 118,205,000 + 21,276,900 + 449,179 = **2,267,621,079**
+
+**Step 3: Subtract the two results**
+
+7,187,698,398 − 2,267,621,079 = **4,920,077,319**
+
+[TOOL submit_answer] {'value': 4920077319}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,920,077,319**.
+

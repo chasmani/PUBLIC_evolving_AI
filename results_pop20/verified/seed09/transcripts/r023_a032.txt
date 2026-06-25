@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic-focused AI designed to solve mathematical problems step by step. Think through each problem carefully and show all your work before arriving at a conclusion. Once you have determined the correct numerical answer, call the submit_answer tool to deliver your final result. Do not submit an answer without first explaining your reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89479 x 29569) - (45168 x 85403)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then performing the subtraction.
+
+**Step 1: Calculate 89479 × 29569**
+
+89479 × 29569:
+- 89479 × 20000 = 1,789,580,000
+- 89479 × 9000 = 805,311,000
+- 89479 × 500 = 44,739,500
+- 89479 × 60 = 5,368,740
+- 89479 × 9 = 805,311
+
+Sum: 1,789,580,000 + 805,311,000 + 44,739,500 + 5,368,740 + 805,311 = **2,645,804,551**
+
+**Step 2: Calculate 45168 × 85403**
+
+45168 × 85403:
+- 45168 × 80000 = 3,613,440,000
+- 45168 × 5000 = 225,840,000
+- 45168 × 400 = 18,067,200
+- 45168 × 3 = 135,504
+
+Sum: 3,613,440,000 + 225,840,000 + 18,067,200 + 135,504 = **3,857,482,704**
+
+**Step 3: Subtract**
+
+2,645,804,551 − 3,857,482,704 = **-1,211,678,153**
+
+[TOOL submit_answer] {'value': -1211678153}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-1,211,678,153**.
+

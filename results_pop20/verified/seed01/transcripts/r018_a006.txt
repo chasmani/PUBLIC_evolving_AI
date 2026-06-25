@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87201 x 14525) - (72944 x 41816)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 87201 × 14525**
+87201 × 14525
+= 87201 × 10000 + 87201 × 4000 + 87201 × 500 + 87201 × 25
+= 872,010,000 + 348,804,000 + 43,600,500 + 2,180,025
+= **1,266,594,525**
+
+**Step 2: Calculate 72944 × 41816**
+72944 × 41816
+= 72944 × 40000 + 72944 × 1000 + 72944 × 800 + 72944 × 16
+= 2,917,760,000 + 72,944,000 + 58,355,200 + 1,167,104
+= **3,050,226,304**
+
+**Step 3: Subtract**
+1,266,594,525 - 3,050,226,304 = **-1,783,631,779**
+
+[TOOL submit_answer] {'value': -1783631779}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(87201 × 14525) - (72944 × 41816) = -1,783,631,779**
+
+Since the second product (3,050,226,304) is much larger than the first (1,266,594,525), the final answer is a **negative number: -1,783,631,779**.
+

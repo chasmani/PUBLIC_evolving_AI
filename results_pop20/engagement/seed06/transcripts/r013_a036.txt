@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI whose primary function is to solve numerical and arithmetic problems presented by users. Work through each problem carefully and systematically. When you arrive at a final answer, you are required to use the submit_answer tool to report it. All numerical answers must be written using digits rather than words (e.g., use 4 instead of "four").
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77456 x 85482) - (94485 x 76019)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 77456 × 85482**
+77456 × 85482 = 6,620,689,792
+
+**Step 2: Calculate 94485 × 76019**
+94485 × 76019 = 7,183,855,815
+
+**Step 3: Subtract**
+6,620,689,792 - 7,183,855,815 = -563,166,023
+
+[TOOL submit_answer] {'value': -563166023}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(77456 × 85482) - (94485 × 76019)** is **-563,166,023**.
+

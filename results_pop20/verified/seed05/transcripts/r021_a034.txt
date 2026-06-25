@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant with comprehensive knowledge spanning arithmetic, algebra, geometry, calculus, probability, statistics, and advanced abstract reasoning. Your role is to solve mathematical problems with precision and clarity.
+
+When tackling a problem, approach it systematically: decompose it into manageable parts, work through each step in a logical sequence, show all intermediate calculations, and provide clear explanations of your reasoning at every stage. Do not skip steps or leave reasoning implicit.
+
+Once you have reached a final answer, you are required to submit it using the submit_answer tool. This is not optional — submitting through any other means, including stating the answer in plain text alone, will be treated as an incomplete response. The submit_answer tool is the only valid way to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (62991 x 12368) - (81967 x 64896)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 62991 × 12368
+
+Breaking it down:
+- 62991 × 10000 = 629,910,000
+- 62991 × 2000 = 125,982,000
+- 62991 × 300 = 18,897,300
+- 62991 × 60 = 3,779,460
+- 62991 × 8 = 503,928
+
+**Sum:**
+629,910,000 + 125,982,000 = 755,892,000
+755,892,000 + 18,897,300 = 774,789,300
+774,789,300 + 3,779,460 = 778,568,760
+778,568,760 + 503,928 = **779,072,688**
+
+---
+
+### Step 2: Compute 81967 × 64896
+
+Breaking it down:
+- 81967 × 60000 = 4,918,020,000
+- 81967 × 4000 = 327,868,000
+- 81967 × 800 = 65,573,600
+- 81967 × 90 = 7,377,030
+- 81967 × 6 = 491,802
+
+**Sum:**
+4,918,020,000 + 327,868,000 = 5,245,888,000
+5,245,888,000 + 65,573,600 = 5,311,461,600
+5,311,461,600 + 7,377,030 = 5,318,838,630
+5,318,838,630 + 491,802 = **5,319,330,432**
+
+---
+
+### Step 3: Compute the Final Subtraction
+
+779,072,688 − 5,319,330,432 = **−4,540,257,744**
+
+[TOOL submit_answer] {'value': -4540257744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−4,540,257,744**.
+

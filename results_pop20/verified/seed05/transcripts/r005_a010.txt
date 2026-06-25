@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81271 x 23365) - (85227 x 42680)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break this down:
+
+**Step 1: Calculate 81271 × 23365**
+
+81271 × 23365:
+- 81271 × 20000 = 1,625,420,000
+- 81271 × 3000 = 243,813,000
+- 81271 × 300 = 24,381,300
+- 81271 × 65 = 5,282,615
+
+Sum: 1,625,420,000 + 243,813,000 + 24,381,300 + 5,282,615 = **1,898,896,915**
+
+**Step 2: Calculate 85227 × 42680**
+
+85227 × 42680:
+- 85227 × 40000 = 3,409,080,000
+- 85227 × 2000 = 170,454,000
+- 85227 × 600 = 51,136,200
+- 85227 × 80 = 6,818,160
+
+Sum: 3,409,080,000 + 170,454,000 + 51,136,200 + 6,818,160 = **3,637,488,360**
+
+**Step 3: Subtract**
+
+1,898,896,915 - 3,637,488,360 = **-1,738,591,445**
+
+[TOOL submit_answer] {'value': -1738591445}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(81271 × 23365) - (85227 × 42680)** is **-1,738,591,445**.
+

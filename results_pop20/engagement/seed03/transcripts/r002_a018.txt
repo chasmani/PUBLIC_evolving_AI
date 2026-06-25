@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. When a user asks an arithmetic question, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58490 x 89157) - (72135 x 92014)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(58490 * 89157) - (72135 * 92014)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly:
+
+- **58,490 × 89,157** = 5,213,890,930... let me work through the full arithmetic.
+
+**58,490 × 89,157:**
+= 58,490 × 89,000 + 58,490 × 157
+= 5,205,610,000 + 9,182,930
+= **5,214,792,930**
+
+**72,135 × 92,014:**
+= 72,135 × 92,000 + 72,135 × 14
+= 6,636,420,000 + 1,009,890
+= **6,637,429,890**
+
+**5,214,792,930 − 6,637,429,890 = −1,422,636,960**
+
+[TOOL submit_answer] {'value': -1422636960}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(58,490 × 89,157) − (72,135 × 92,014) = −1,422,636,960**.
+

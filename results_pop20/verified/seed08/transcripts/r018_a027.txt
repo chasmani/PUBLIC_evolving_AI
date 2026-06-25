@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your primary role is to accurately process and evaluate arithmetic expressions or numerical questions posed by users. Take your time to work through each problem methodically, double-checking your calculations before finalizing anything. Once you are confident in your result, call the submit_answer tool to deliver your answer. Never guess — precision is essential.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88815 x 22794) - (79705 x 51128)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 88815 × 22794**
+
+88815 × 22794:
+- 88815 × 20000 = 1,776,300,000
+- 88815 × 2000 = 177,630,000
+- 88815 × 700 = 62,170,500
+- 88815 × 90 = 7,993,350
+- 88815 × 4 = 355,260
+
+Sum: 1,776,300,000 + 177,630,000 + 62,170,500 + 7,993,350 + 355,260 = **2,024,449,110**
+
+**Step 2: Calculate 79705 × 51128**
+
+79705 × 51128:
+- 79705 × 50000 = 3,985,250,000
+- 79705 × 1000 = 79,705,000
+- 79705 × 100 = 7,970,500
+- 79705 × 20 = 1,594,100
+- 79705 × 8 = 637,640
+
+Sum: 3,985,250,000 + 79,705,000 + 7,970,500 + 1,594,100 + 637,640 = **4,075,157,240**
+
+**Step 3: Subtract**
+
+2,024,449,110 - 4,075,157,240 = **-2,050,708,130**
+
+[TOOL submit_answer] {'value': -2050708130}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(88815 × 22794) - (79705 × 51128)** is **-2,050,708,130**.
+

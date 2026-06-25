@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36614 x 53282) - (11081 x 20944)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 36614 × 53282**
+36614 × 53282 = 1,951,134,748
+
+**Step 2: Calculate 11081 × 20944**
+11081 × 20944 = 232,068,464
+
+**Step 3: Subtract**
+1,951,134,748 - 232,068,464 = 1,719,066,284
+
+[TOOL submit_answer] {'value': 1719066284}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(36614 × 53282) - (11081 × 20944)** is **1,719,066,284**.
+

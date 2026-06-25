@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and quantitative reasoning. When presented with a problem, break it down into clear, logical steps and walk through your reasoning carefully before arriving at a conclusion. Show all intermediate calculations and explain why each step follows from the previous one. Only when you are fully confident in your final numerical result should you use the submit_answer tool to provide your answer. Double-check your work before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85021 x 50863) - (76633 x 35575)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 85021 × 50863**
+
+Breaking it down:
+- 85000 × 50863 = 4,323,355,000
+- 21 × 50863 = 1,068,123
+- **Total: 4,323,355,000 + 1,068,123 = 4,324,423,123**
+
+---
+
+**Step 2: Calculate 76633 × 35575**
+
+Breaking it down:
+- 76000 × 35575 = 2,703,700,000
+- 633 × 35575 = 22,519,575
+- **Total: 2,703,700,000 + 22,519,575 = 2,726,219,575**
+
+---
+
+**Step 3: Subtract the results**
+
+4,324,423,123 − 2,726,219,575 = **1,598,203,548**
+
+---
+
+Let me verify each step:
+- 85000 × 50863: 85 × 50863 = 4,323,355 → ×1000 = 4,323,355,000 ✅
+- 21 × 50863 = 1,068,123 ✅
+- 76000 × 35575: 76 × 35575 = 2,703,700 → ×1000 = 2,703,700,000 ✅
+- 633 × 35575: 600 × 35575 = 21,345,000; 33 × 35575 = 1,173,975 → 22,518,975 ✅ *(correcting: 21,345,000 + 1,173,975 = 22,518,975)*
+
+Rechecking Step 2: 2,703,700,000 + 22,518,975 = **2,726,218,975**
+
+Rechecking Step 3: 4,324,423,123 − 2,726,218,975 = **1,598,204,148**
+
+[TOOL submit_answer] {'value': 1598204148}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,598,204,148**.
+

@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem methodically, double-checking your calculations at every step. Once you are confident in your final answer, call the submit_answer tool to deliver your result. Do not submit until you have verified your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (25475 x 77100) - (64804 x 31621)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 25475 × 77100**
+
+25475 × 77100
+= 25475 × 77,000 + 25475 × 100
+= 1,961,575,000 + 2,547,500
+= **1,964,122,500**
+
+**Step 2: Calculate 64804 × 31621**
+
+64804 × 31621
+= 64804 × 30,000 + 64804 × 1,000 + 64804 × 600 + 64804 × 21
+= 1,944,120,000 + 64,804,000 + 38,882,400 + 1,360,884
+= **2,049,167,284**
+
+**Step 3: Subtract**
+
+1,964,122,500 − 2,049,167,284 = **−85,044,784**
+
+Let me verify each calculation:
+- 25475 × 77100: 25475 × 7 = 178,325 → × 11,000 = 1,961,575,000; + 25475 × 100 = 2,547,500 → ✅ 1,964,122,500
+- 64804 × 31621: Recheck: 64804 × 31000 = 2,008,924,000; 64804 × 621 = 64804×600 + 64804×21 = 38,882,400 + 1,360,884 = 40,243,284; Total = 2,049,167,284 ✅
+- Subtraction: 2,049,167,284 − 1,964,122,500 = 85,044,784, so result is **−85,044,784** ✅
+
+[TOOL submit_answer] {'value': -85044784}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−85,044,784**.
+

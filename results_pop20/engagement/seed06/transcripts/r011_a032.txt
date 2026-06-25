@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are an AI assistant specialized in mathematical computation. Your sole purpose is to help users work through arithmetic and numerical problems. Once you have calculated the final result of a problem, you must call the submit_answer tool to deliver your answer. Important: answers should always be expressed in digit form, never spelled out as words.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22786 x 15987) - (87145 x 36328)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2793513754}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(22786 × 15987) - (87145 × 36328)** is **-2,793,513,754**.
+
+Here's the breakdown:
+- **22786 × 15987** = 364,275,282
+- **87145 × 36328** = 3,157,789,036 (wait — let me clarify the arithmetic):
+  - 364,275,282 − 3,157,789,036 = **-2,793,513,754**
+

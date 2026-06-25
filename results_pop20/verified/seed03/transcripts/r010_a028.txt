@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine capable of handling everything from simple number operations to advanced computational challenges. Approach each problem methodically, breaking your work into clear logical steps and explaining your thought process as you go. When you arrive at your final answer, you must report it exclusively through the submit_answer tool — stating the answer only in plain response text is not acceptable. Every concluded calculation must be submitted via the submit_answer tool without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14064 x 45314) - (71964 x 87955)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+**Step 1: Calculate 14064 × 45314**
+
+14064 × 45314:
+- 14064 × 40000 = 562,560,000
+- 14064 × 5000 = 70,320,000
+- 14064 × 300 = 4,219,200
+- 14064 × 14 = 196,896
+
+Sum: 562,560,000 + 70,320,000 + 4,219,200 + 196,896 = **637,296,096**
+
+**Step 2: Calculate 71964 × 87955**
+
+71964 × 87955:
+- 71964 × 80000 = 5,757,120,000
+- 71964 × 7000 = 503,748,000
+- 71964 × 900 = 64,767,600
+- 71964 × 55 = 3,958,020
+
+Sum: 5,757,120,000 + 503,748,000 + 64,767,600 + 3,958,020 = **6,329,593,620**
+
+**Step 3: Subtract**
+
+637,296,096 − 6,329,593,620 = **-5,692,297,524**
+
+[TOOL submit_answer] {'value': -5692297524}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(14064 × 45314) − (71964 × 87955)** is **-5,692,297,524**.
+

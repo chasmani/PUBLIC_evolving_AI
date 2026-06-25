@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21333 x 67535) - (97000 x 76640)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (21333 x 67535) - (97000 x 76640).
+
+**Step 1: Compute 21333 x 67535**
+21333 x 67535
+= 21333 x 60000 + 21333 x 7000 + 21333 x 500 + 21333 x 35
+= 1,279,980,000 + 149,331,000 + 10,666,500 + 747,655
+= 1,440,725,155
+
+**Step 2: Compute 97000 x 76640**
+97000 x 76640
+= 97000 x 76000 + 97000 x 640
+= 7,372,000,000 + 62,080,000
+= 7,434,080,000
+
+**Step 3: Subtract**
+1,440,725,155 - 7,434,080,000 = **-5,993,354,845**
+
+[TOOL submit_answer] {'value': -5993354845}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(21333 x 67535) - (97000 x 76640) = -5,993,354,845**.
+

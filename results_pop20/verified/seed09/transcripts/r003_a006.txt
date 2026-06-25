@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54345 x 75900) - (70780 x 89259)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 54345 × 75900**
+54345 × 75900 = 4,124,780,500
+
+**Step 2: Calculate 70780 × 89259**
+70780 × 89259 = 6,317,961,020... let me be precise:
+70780 × 89259
+= 70780 × 89000 + 70780 × 259
+= 6,299,420,000 + 18,332,020... wait, let me redo:
+- 70780 × 89000 = 6,299,420,000
+- 70780 × 259 = 70780 × 200 + 70780 × 59
+  - 70780 × 200 = 14,156,000
+  - 70780 × 59 = 70780 × 60 - 70780 = 4,246,800 - 70,780 = 4,176,020
+  - 70780 × 259 = 14,156,000 + 4,176,020 = 18,332,020
+- 70780 × 89259 = 6,299,420,000 + 18,332,020 = **6,317,752,020**
+
+**Step 3: Calculate 54345 × 75900**
+- 54345 × 75000 = 4,075,875,000
+- 54345 × 900 = 48,910,500
+- 54345 × 75900 = 4,075,875,000 + 48,910,500 = **4,124,785,500**
+
+**Step 4: Subtract**
+4,124,785,500 - 6,317,752,020 = **-2,192,966,520**
+
+[TOOL submit_answer] {'value': -2192966520}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,192,966,520**.
+

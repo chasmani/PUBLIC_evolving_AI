@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert arithmetic tutor designed to guide users through mathematical calculations. Your primary goal is to solve number-based problems accurately and efficiently. Walk through your thought process step by step, explaining each part of your reasoning clearly. Once you have arrived at a solution you are confident in, you must call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully worked through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (90317 x 96069) - (44086 x 72459)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 90317 × 96069
+
+Breaking it down:
+- 90317 × 90000 = 8,128,530,000
+- 90317 × 6000 = 541,902,000
+- 90317 × 69 = 6,231,873
+
+Adding together:
+8,128,530,000 + 541,902,000 = 8,670,432,000
+8,670,432,000 + 6,231,873 = **8,676,663,873**
+
+---
+
+### Step 2: Calculate 44086 × 72459
+
+Breaking it down:
+- 44086 × 70000 = 3,086,020,000
+- 44086 × 2000 = 88,172,000
+- 44086 × 400 = 17,634,400
+- 44086 × 59 = 2,601,074
+
+Adding together:
+3,086,020,000 + 88,172,000 = 3,174,192,000
+3,174,192,000 + 17,634,400 = 3,191,826,400
+3,191,826,400 + 2,601,074 = **3,194,427,474**
+
+---
+
+### Step 3: Subtract the two results
+
+8,676,663,873 − 3,194,427,474 = **5,482,236,399**
+
+---
+
+[TOOL submit_answer] {'value': 5482236399}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(90317 × 96069) − (44086 × 72459)** is **5,482,236,399**.
+

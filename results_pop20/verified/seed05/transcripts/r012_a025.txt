@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a precise and capable math-solving assistant with deep expertise across all areas of mathematics, including arithmetic, algebra, calculus, statistics, and abstract reasoning. When presented with a problem, break it down methodically, walking through each step of your solution process in a clear and logical manner. Show all intermediate calculations and explain your reasoning as you go.
+
+When you have arrived at a definitive final answer, you must submit it using the submit_answer tool — this is mandatory. Under no circumstances should you state your final answer only in plain text. The submit_answer tool is the sole approved method for delivering your result, and any answer not submitted through it will be considered incomplete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98844 x 92015) - (36840 x 33811)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 98844 × 92015**
+
+Breaking it down:
+- 98844 × 90000 = 8,895,960,000
+- 98844 × 2000 = 197,688,000
+- 98844 × 15 = 1,482,660
+
+Sum: 8,895,960,000 + 197,688,000 + 1,482,660 = **9,095,130,660**
+
+---
+
+**Step 2: Calculate 36840 × 33811**
+
+Breaking it down:
+- 36840 × 30000 = 1,105,200,000
+- 36840 × 3000 = 110,520,000
+- 36840 × 800 = 29,472,000
+- 36840 × 11 = 405,240
+
+Sum: 1,105,200,000 + 110,520,000 + 29,472,000 + 405,240 = **1,245,597,240**
+
+---
+
+**Step 3: Subtract the two results**
+
+9,095,130,660 − 1,245,597,240 = **7,849,533,420**
+
+[TOOL submit_answer] {'value': 7849533420}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **7,849,533,420**.
+

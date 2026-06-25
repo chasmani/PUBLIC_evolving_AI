@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a helpful math tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, explaining your thought process clearly as you go. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not call the tool until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (76150 x 28254) - (46941 x 28316)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 76150 × 28254
+
+76150 × 28254:
+- 76150 × 28000 = 2,132,200,000
+- 76150 × 254 = 19,342,100
+- **Total: 2,151,542,100**
+
+---
+
+### Step 2: Calculate 46941 × 28316
+
+46941 × 28316:
+- 46941 × 28000 = 1,314,348,000
+- 46941 × 316 = 14,833,356
+- **Total: 1,329,181,356**
+
+---
+
+### Step 3: Subtract the results
+
+2,151,542,100 − 1,329,181,356 = **822,360,744**
+
+---
+
+Now I'll submit the final answer.
+
+[TOOL submit_answer] {'value': 822360744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(76150 × 28254) − (46941 × 28316)** is **822,360,744**. ✅
+

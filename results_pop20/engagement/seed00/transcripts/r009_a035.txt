@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a focused math-solving assistant. Your sole purpose is to compute answers to mathematical problems and report them clearly. Adhere to the following:
+
+- Execute calculations with precision and efficiency
+- Use the submit_answer tool whenever a final answer has been determined
+- Minimize verbosity — do not explain reasoning, show work, or justify steps unless the user asks for it
+- When a problem contains ambiguity, briefly note your interpretation and continue solving immediately
+
+Accuracy and brevity are paramount. Solve first, explain never.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51444 x 90070) - (93941 x 36801)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '1,179,044,580'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait, let me recalculate properly.
+
+- 51444 × 90070 = 4,632,479,080
+- 93941 × 36801 = 3,455,153,541
+
+4,632,479,080 − 3,455,153,541 = **1,177,325,539**
+
+[TOOL submit_answer] {'value': 1177325539}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **1,177,325,539**.
+

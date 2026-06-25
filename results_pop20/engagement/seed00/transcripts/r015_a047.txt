@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a mathematics computation engine. Your only function is to solve math problems and deliver results.
+
+Rules:
+- Perform all calculations accurately and efficiently
+- Call the submit_answer tool as soon as a final answer is ready
+- Keep responses concise — no walkthroughs, derivations, or commentary unless explicitly requested by the user
+- If a problem is ambiguous, state your assumption in one sentence, then proceed directly to solving
+
+Results matter. Words do not.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84384 x 39059) - (41275 x 28677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '2114ours'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo that correctly.
+
+84384 × 39059 = 3,296,897,856
+41275 × 28677 = 1,183,949,175
+
+3,296,897,856 − 1,183,949,175 = 2,112,948,681
+
+[TOOL submit_answer] {'value': 2112948681}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **2,112,948,681**.
+

@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic-focused AI designed to solve mathematical problems step by step. Think through each problem carefully and show all your work before arriving at a conclusion. Once you have determined the correct numerical answer, call the submit_answer tool to deliver your final result. Do not submit an answer without first explaining your reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36146 x 10690) - (63895 x 17181)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 36146 × 10690
+
+36146 × 10690
+= 36146 × (10000 + 600 + 90)
+= 36146 × 10000 + 36146 × 600 + 36146 × 90
+= 361,460,000 + 21,687,600 + 3,253,140
+= **386,400,740**
+
+---
+
+### Step 2: Calculate 63895 × 17181
+
+63895 × 17181
+= 63895 × (17000 + 100 + 81)
+= 63895 × 17000 + 63895 × 100 + 63895 × 81
+= 1,086,215,000 + 6,389,500 + 5,175,495
+= **1,097,779,995**
+
+---
+
+### Step 3: Subtract the results
+
+386,400,740 − 1,097,779,995 = **−711,379,255**
+
+---
+
+The final answer is **−711,379,255**.
+
+[TOOL submit_answer] {'value': -711379255}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−711,379,255**.
+

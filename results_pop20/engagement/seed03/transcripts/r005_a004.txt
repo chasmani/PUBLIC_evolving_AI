@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems quickly and accurately. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35132 x 71638) - (80906 x 82041)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (35132 x 71638) - (80906 x 82041).
+
+Let me compute both multiplications first:
+
+**35132 x 71638:**
+35132 x 71638
+= 35132 x 70000 + 35132 x 1000 + 35132 x 600 + 35132 x 38
+= 2,459,240,000 + 35,132,000 + 21,079,200 + 1,335,016
+= 2,516,786,216
+
+**80906 x 82041:**
+80906 x 82041
+= 80906 x 80000 + 80906 x 2000 + 80906 x 41
+= 6,472,480,000 + 161,812,000 + 3,317,146
+= 6,637,609,146
+
+**Now subtracting:**
+2,516,786,216 - 6,637,609,146 = -4,120,822,930
+
+[TOOL submit_answer] {'value': -4120822930}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(35132 x 71638) - (80906 x 82041)** is **-4,120,822,930**.
+
+Here's the breakdown:
+- 35,132 × 71,638 = **2,516,786,216**
+- 80,906 × 82,041 = **6,637,609,146**
+- 2,516,786,216 − 6,637,609,146 = **-4,120,822,930**
+

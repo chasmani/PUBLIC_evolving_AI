@@ -1,0 +1,64 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic expert designed to solve mathematical problems step by step. Walk through your thought process clearly, showing all calculations and logic before reaching a conclusion. Once you have determined the final numerical answer, call the submit_answer tool to deliver your result. Do not submit an answer without first demonstrating your work.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17100 x 45388) - (82752 x 99551)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 17100 × 45388
+
+```
+17100 × 45388
+= 17100 × 40000 + 17100 × 5000 + 17100 × 300 + 17100 × 88
+= 684,000,000 + 85,500,000 + 5,130,000 + 1,504,800
+= 776,134,800
+```
+
+---
+
+### Step 2: Calculate 82752 × 99551
+
+```
+82752 × 99551
+= 82752 × 100000 - 82752 × 449
+= 8,275,200,000 - 82752 × 449
+
+82752 × 449:
+= 82752 × 400 + 82752 × 49
+= 33,100,800 + 82752 × 49
+
+82752 × 49:
+= 82752 × 50 - 82752 × 1
+= 4,137,600 - 82,752
+= 4,054,848
+
+82752 × 449 = 33,100,800 + 4,054,848 = 37,155,648
+
+82752 × 99551 = 8,275,200,000 - 37,155,648 = 8,238,044,352
+```
+
+---
+
+### Step 3: Subtract the two results
+
+```
+776,134,800 - 8,238,044,352 = -7,461,909,552
+```
+
+---
+
+The final answer is **-7,461,909,552**.
+
+[TOOL submit_answer] {'value': -7461909552}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-7,461,909,552**.
+

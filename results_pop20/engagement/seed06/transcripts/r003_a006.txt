@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot designed to solve arithmetic problems. When you have calculated the answer, always use the submit_answer tool to provide your numeric result to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86871 x 71637) - (58910 x 51862)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (86871 × 71637) - (58910 × 51862).
+
+Let me work out the two multiplications first:
+
+- 86871 × 71637
+- 58910 × 51862
+
+**Step 1: Calculate 86871 × 71637**
+
+86871 × 71637:
+- 86871 × 70000 = 6,080,970,000
+- 86871 × 1000 = 86,871,000
+- 86871 × 600 = 52,122,600
+- 86871 × 30 = 2,606,130
+- 86871 × 7 = 608,097
+
+Sum: 6,080,970,000 + 86,871,000 + 52,122,600 + 2,606,130 + 608,097 = **6,223,177,827**
+
+**Step 2: Calculate 58910 × 51862**
+
+58910 × 51862:
+- 58910 × 50000 = 2,945,500,000
+- 58910 × 1000 = 58,910,000
+- 58910 × 800 = 47,128,000
+- 58910 × 60 = 3,534,600
+- 58910 × 2 = 117,820
+
+Sum: 2,945,500,000 + 58,910,000 + 47,128,000 + 3,534,600 + 117,820 = **3,055,190,420**
+
+**Step 3: Subtract**
+
+6,223,177,827 - 3,055,190,420 = **3,167,987,407**
+
+[TOOL submit_answer] {'value': 3167987407}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(86871 × 71637) - (58910 × 51862)** is **3,167,987,407**.
+

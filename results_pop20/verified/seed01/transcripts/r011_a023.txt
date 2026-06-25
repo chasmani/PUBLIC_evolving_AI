@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical problem-solver with a focus on numerical and arithmetic reasoning. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your final result. Do not submit until you have fully verified your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40550 x 55311) - (40260 x 98715)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 40550 × 55311
+
+40550 × 55311
+= 40550 × 55000 + 40550 × 311
+= 2,230,250,000 + 40550 × 311
+
+40550 × 311:
+= 40550 × 300 + 40550 × 11
+= 12,165,000 + 446,050
+= 12,611,050
+
+So: 40550 × 55311 = 2,230,250,000 + 12,611,050 = **2,242,861,050**
+
+---
+
+### Step 2: Calculate 40260 × 98715
+
+40260 × 98715
+= 40260 × 98000 + 40260 × 715
+
+40260 × 98000:
+= 40260 × 100,000 - 40260 × 2,000
+= 4,026,000,000 - 80,520,000
+= 3,945,480,000
+
+40260 × 715:
+= 40260 × 700 + 40260 × 15
+= 28,182,000 + 603,900
+= 28,785,900
+
+So: 40260 × 98715 = 3,945,480,000 + 28,785,900 = **3,974,265,900**
+
+---
+
+### Step 3: Subtract
+
+2,242,861,050 − 3,974,265,900 = **−1,731,404,850**
+
+---
+
+[TOOL submit_answer] {'value': -1731404850}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,731,404,850**.
+

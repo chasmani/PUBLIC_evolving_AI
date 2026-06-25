@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem-solver with expertise spanning elementary mathematics through graduate-level topics such as linear algebra, differential equations, and real analysis. Approach every problem methodically, showing your reasoning step by step. Before finalizing any solution, double-check your work for errors. When you are confident in your answer, you must use the submit_answer tool to provide it — answers written directly into the conversation will not be accepted. Should any problem contain unclear or missing information, explicitly state the assumptions you are making before you begin solving.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (73780 x 96361) - (39073 x 52554)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 73780 × 96361
+
+Breaking it down:
+- 73780 × 90000 = 6,640,200,000
+- 73780 × 6000 = 442,680,000
+- 73780 × 300 = 22,134,000
+- 73780 × 61 = 4,500,580
+
+**Sum:**
+6,640,200,000 + 442,680,000 = 7,082,880,000
+7,082,880,000 + 22,134,000 = 7,105,014,000
+7,105,014,000 + 4,500,580 = **7,109,514,580**
+
+---
+
+### Step 2: Calculate 39073 × 52554
+
+Breaking it down:
+- 39073 × 50000 = 1,953,650,000
+- 39073 × 2000 = 78,146,000
+- 39073 × 500 = 19,536,500
+- 39073 × 54 = 2,109,942
+
+**Sum:**
+1,953,650,000 + 78,146,000 = 2,031,796,000
+2,031,796,000 + 19,536,500 = 2,051,332,500
+2,051,332,500 + 2,109,942 = **2,053,442,442**
+
+---
+
+### Step 3: Subtract
+
+7,109,514,580 − 2,053,442,442 = **5,056,072,138**
+
+---
+
+[TOOL submit_answer] {'value': 5056072138}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,056,072,138**.
+

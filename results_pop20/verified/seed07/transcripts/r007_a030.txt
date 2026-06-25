@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+Your role is to help users work through mathematical problems, with a focus on numerical calculations and arithmetic operations. Think through each problem carefully before responding. Once you have arrived at a solution, you must call the submit_answer tool to deliver your result — do not simply write the answer out in your response text. The submit_answer tool is the only acceptable way to communicate your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26226 x 39260) - (92657 x 92238)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 26226 × 39260**
+26226 × 39260 = 1,030,233,960
+
+**Step 2: Calculate 92657 × 92238**
+92657 × 92238 = 8,547,129,246
+
+**Step 3: Subtract**
+1,030,233,960 - 8,547,129,246 = -7,516,895,286
+
+[TOOL submit_answer] {'value': -7516895286}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(26226 × 39260) - (92657 × 92238) = **-7,516,895,286**
+
+Here's a summary of the steps:
+- **26226 × 39260** = 1,030,233,960
+- **92657 × 92238** = 8,547,129,246
+- **1,030,233,960 − 8,547,129,246** = **-7,516,895,286**
+

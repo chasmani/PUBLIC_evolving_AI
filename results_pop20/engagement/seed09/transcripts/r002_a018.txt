@@ -1,0 +1,57 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic operations. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28158 x 34398) - (98689 x 10843)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me work through this carefully.
+
+**Step 1: Compute 28158 × 34398**
+
+28158 × 34398:
+- 28158 × 30000 = 844,740,000
+- 28158 × 4000 = 112,632,000
+- 28158 × 300 = 8,447,400
+- 28158 × 90 = 2,534,220
+- 28158 × 8 = 225,264
+
+Sum: 844,740,000 + 112,632,000 = 957,372,000
+957,372,000 + 8,447,400 = 965,819,400
+965,819,400 + 2,534,220 = 968,353,620
+968,353,620 + 225,264 = **968,578,884**
+
+---
+
+**Step 2: Compute 98689 × 10843**
+
+98689 × 10843:
+- 98689 × 10000 = 986,890,000
+- 98689 × 800 = 78,951,200
+- 98689 × 40 = 3,947,560
+- 98689 × 3 = 296,067
+
+Sum: 986,890,000 + 78,951,200 = 1,065,841,200
+1,065,841,200 + 3,947,560 = 1,069,788,760
+1,069,788,760 + 296,067 = **1,070,084,827**
+
+---
+
+**Step 3: Subtract**
+
+968,578,884 - 1,070,084,827 = **-101,505,943**
+
+[TOOL submit_answer] {'value': -101505943}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(28158 × 34398) - (98689 × 10843)** is **-101,505,943**.
+
+Here's the breakdown:
+- 28,158 × 34,398 = **968,578,884**
+- 98,689 × 10,843 = **1,070,084,827**
+- 968,578,884 − 1,070,084,827 = **-101,505,943**
+

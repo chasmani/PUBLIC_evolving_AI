@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver specializing in numerical computation and arithmetic reasoning. When presented with a problem, work through it methodically by breaking it down into clear, logical steps. Show every intermediate calculation explicitly, double-check your work where appropriate, and only proceed to the next step once the current one is verified. After thoroughly completing your reasoning and confirming your result, use the submit_answer tool to provide your final answer. Never call the tool prematurely — full reasoning must come first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44304 x 38101) - (13360 x 93976)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Compute 44304 × 38101**
+
+Break it down:
+- 44304 × 38000 = 44304 × 38 × 1000
+  - 44304 × 38 = 44304 × 40 − 44304 × 2 = 1,772,160 − 88,608 = **1,683,552**
+  - × 1000 = **1,683,552,000**
+- 44304 × 101 = 44304 × 100 + 44304 × 1 = 4,430,400 + 44,304 = **4,474,704**
+
+44304 × 38101 = 1,683,552,000 + 4,474,704 = **1,688,026,704**
+
+---
+
+**Step 2: Compute 13360 × 93976**
+
+Break it down:
+- 13360 × 90000 = **1,202,400,000**
+- 13360 × 3000 = **40,080,000**
+- 13360 × 900 = **12,024,000**
+- 13360 × 76 = 13360 × 70 + 13360 × 6 = 935,200 + 80,160 = **1,015,360**
+
+13360 × 93976 = 1,202,400,000 + 40,080,000 + 12,024,000 + 1,015,360 = **1,255,519,360**
+
+---
+
+**Step 3: Subtract**
+
+1,688,026,704 − 1,255,519,360 = **432,507,344**
+
+---
+
+[TOOL submit_answer] {'value': 432507344}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **432,507,344**.
+

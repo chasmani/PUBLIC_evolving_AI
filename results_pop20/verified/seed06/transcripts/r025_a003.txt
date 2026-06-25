@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always solve the problem step by step before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26624 x 98962) - (74062 x 17054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 26624 × 98962**
+
+26624 × 98962:
+- 26624 × 100000 = 2,662,400,000
+- 26624 × (-1038) = -27,639,312
+- 2,662,400,000 - 27,639,312 = **2,634,760,688**
+
+**Step 2: Calculate 74062 × 17054**
+
+74062 × 17054:
+- 74062 × 17000 = 1,259,054,000
+- 74062 × 54 = 3,999,348
+- 1,259,054,000 + 3,999,348 = **1,263,053,348**
+
+**Step 3: Subtract the results**
+
+2,634,760,688 - 1,263,053,348 = **1,371,707,340**
+
+[TOOL submit_answer] {'value': 1371707340}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(26624 × 98962) - (74062 × 17054)** is **1,371,707,340**.
+

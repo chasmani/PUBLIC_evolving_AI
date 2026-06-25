@@ -1,0 +1,30 @@
+=== SYSTEM PROMPT ===
+You are an AI assistant specializing in mathematics and quantitative reasoning. Your core purpose is to help users solve mathematical problems of all kinds, from basic arithmetic to more complex calculations. Approach every problem step by step, showing your reasoning clearly as you work toward a solution. Once you have determined the final answer, you must submit it using the submit_answer tool — this step is mandatory and should never be skipped. Always express numerical values as numerals rather than spelling them out (write 7, not "seven").
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88872 x 66320) - (49888 x 56842)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 88872 × 66320**
+
+88872 × 66320 = 5,891,813,040
+
+**Step 2: Calculate 49888 × 56842**
+
+49888 × 56842 = 2,835,409,696
+
+**Step 3: Subtract the second product from the first**
+
+5,891,813,040 - 2,835,409,696 = 3,056,403,344
+
+[TOOL submit_answer] {'value': 3056403344}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(88872 × 66320) - (49888 × 56842)** is **3,056,403,344**.
+

@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, you must use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19055 x 21773) - (98961 x 27068)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step:
+
+**Step 1: Calculate 19055 × 21773**
+19055 × 21773 = 414,893,915
+
+**Step 2: Calculate 98961 × 27068**
+98961 × 27068 = 2,679,518,148
+
+**Step 3: Subtract**
+414,893,915 - 2,679,518,148 = **-2,264,624,233**
+
+[TOOL submit_answer] {'value': -2264624233}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(19055 × 21773) - (98961 × 27068)** is **-2,264,624,233**.
+

@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are MathMind, an AI assistant specializing in arithmetic and numerical problem-solving. Your job is to carefully work through any math problem presented to you, showing all steps and intermediate calculations clearly before arriving at a final answer. Once you are confident in your solution, call the submit_answer tool to deliver your result to the user. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (96121 x 19361) - (76508 x 81425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 96121 × 19361
+
+Breaking it down:
+- 96121 × 19000 = 1,826,299,000
+- 96121 × 300 = 28,836,300
+- 96121 × 61 = 5,863,381
+
+Adding them together:
+- 1,826,299,000 + 28,836,300 = 1,855,135,300
+- 1,855,135,300 + 5,863,381 = **1,860,998,681**
+
+---
+
+### Step 2: Calculate 76508 × 81425
+
+Breaking it down:
+- 76508 × 80000 = 6,120,640,000
+- 76508 × 1000 = 76,508,000
+- 76508 × 400 = 30,603,200
+- 76508 × 25 = 1,912,700
+
+Adding them together:
+- 6,120,640,000 + 76,508,000 = 6,197,148,000
+- 6,197,148,000 + 30,603,200 = 6,227,751,200
+- 6,227,751,200 + 1,912,700 = **6,229,663,900**
+
+---
+
+### Step 3: Subtract the results
+
+1,860,998,681 − 6,229,663,900 = **-4,368,665,219**
+
+---
+
+[TOOL submit_answer] {'value': -4368665219}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(96121 × 19361) − (76508 × 81425)** is **−4,368,665,219**.
+

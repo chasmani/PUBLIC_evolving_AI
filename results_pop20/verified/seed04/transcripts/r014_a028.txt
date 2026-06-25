@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic. Your approach is methodical: break every problem into clear, sequential steps, showing all intermediate calculations and logical thinking explicitly. Never skip steps or make assumptions without justification. When your full reasoning process is complete and you are confident in your result, use the submit_answer tool to deliver your final answer. Do not call the tool prematurely — only submit once you have thoroughly worked through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64256 x 65539) - (88500 x 47775)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 64256 × 65539**
+
+Break it down:
+- 64256 × 65000 = 64256 × 65 × 1000
+  - 64256 × 65 = 64256 × 60 + 64256 × 5
+  - 64256 × 60 = 3,855,360
+  - 64256 × 5 = 321,280
+  - 64256 × 65 = 3,855,360 + 321,280 = **4,176,640**
+  - So: 64256 × 65000 = **4,176,640,000**
+
+- 64256 × 539 = 64256 × 500 + 64256 × 39
+  - 64256 × 500 = 32,128,000
+  - 64256 × 39 = 64256 × 40 - 64256 × 1 = 2,570,240 - 64,256 = **2,505,984**
+  - 64256 × 539 = 32,128,000 + 2,505,984 = **34,633,984**
+
+- **64256 × 65539 = 4,176,640,000 + 34,633,984 = 4,211,273,984**
+
+---
+
+**Step 2: Calculate 88500 × 47775**
+
+Break it down:
+- 88500 × 47000 = 88500 × 47 × 1000
+  - 88500 × 47 = 88500 × 40 + 88500 × 7
+  - 88500 × 40 = 3,540,000
+  - 88500 × 7 = 619,500
+  - 88500 × 47 = 3,540,000 + 619,500 = **4,159,500**
+  - So: 88500 × 47000 = **4,159,500,000**
+
+- 88500 × 775 = 88500 × 700 + 88500 × 75
+  - 88500 × 700 = 61,950,000
+  - 88500 × 75 = 88500 × 70 + 88500 × 5 = 6,195,000 + 442,500 = **6,637,500**
+  - 88500 × 775 = 61,950,000 + 6,637,500 = **68,587,500**
+
+- **88500 × 47775 = 4,159,500,000 + 68,587,500 = 4,228,087,500**
+
+---
+
+**Step 3: Subtract**
+
+4,211,273,984 − 4,228,087,500 = **−16,813,516**
+
+[TOOL submit_answer] {'value': -16813516}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−16,813,516**.
+

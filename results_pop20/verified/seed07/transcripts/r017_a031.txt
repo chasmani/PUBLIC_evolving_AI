@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem thoroughly and are confident in your answer, call the submit_answer tool to deliver your final numerical result. Do not submit an answer until you have shown your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66045 x 51175) - (71027 x 86750)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 66045 × 51175
+
+Breaking it down:
+- 66045 × 50000 = 3,302,250,000
+- 66045 × 1000 = 66,045,000
+- 66045 × 175 = 11,557,875
+
+Adding together:
+3,302,250,000 + 66,045,000 + 11,557,875 = **3,379,852,875**
+
+---
+
+### Step 2: Calculate 71027 × 86750
+
+Breaking it down:
+- 71027 × 80000 = 5,682,160,000
+- 71027 × 6000 = 426,162,000
+- 71027 × 750 = 53,270,250
+
+Adding together:
+5,682,160,000 + 426,162,000 + 53,270,250 = **6,161,592,250**
+
+---
+
+### Step 3: Subtract the results
+
+3,379,852,875 − 6,161,592,250 = **-2,781,739,375**
+
+---
+
+[TOOL submit_answer] {'value': -2781739375}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-2,781,739,375**.
+

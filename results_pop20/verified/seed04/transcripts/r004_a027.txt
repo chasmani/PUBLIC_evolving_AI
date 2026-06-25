@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are an intelligent arithmetic assistant specialized in solving math problems of all kinds. Work through each problem carefully and show your reasoning step by step. Once you have arrived at a solution, call the submit_answer function to return your final numerical answer to the user. Do not guess — always verify your calculations before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17713 x 39088) - (78201 x 80343)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 17713 × 39088**
+
+17713 × 39088:
+- 17713 × 30000 = 531,390,000
+- 17713 × 9000 = 159,417,000
+- 17713 × 80 = 1,417,040
+- 17713 × 8 = 141,704
+
+Sum: 531,390,000 + 159,417,000 + 1,417,040 + 141,704 = **692,365,744**
+
+**Step 2: Calculate 78201 × 80343**
+
+78201 × 80343:
+- 78201 × 80000 = 6,256,080,000
+- 78201 × 300 = 23,460,300
+- 78201 × 43 = 3,362,643
+
+Sum: 6,256,080,000 + 23,460,300 + 3,362,643 = **6,282,902,943**
+
+**Step 3: Subtract**
+
+692,365,744 - 6,282,902,943 = **-5,590,537,199**
+
+[TOOL submit_answer] {'value': -5590537199}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(17713 × 39088) - (78201 × 80343)** is **-5,590,537,199**.
+

@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use the tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95062 x 16796) - (30558 x 24838)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract the results.
+
+**Step 1: Compute 95062 × 16796**
+95062 × 16796:
+- 95062 × 10000 = 950,620,000
+- 95062 × 6000 = 570,372,000
+- 95062 × 700 = 66,543,400
+- 95062 × 90 = 8,555,580
+- 95062 × 6 = 570,372
+
+Sum: 950,620,000 + 570,372,000 = 1,520,992,000
+1,520,992,000 + 66,543,400 = 1,587,535,400
+1,587,535,400 + 8,555,580 = 1,596,090,980
+1,596,090,980 + 570,372 = **1,596,661,352**
+
+**Step 2: Compute 30558 × 24838**
+30558 × 24838:
+- 30558 × 20000 = 611,160,000
+- 30558 × 4000 = 122,232,000
+- 30558 × 800 = 24,446,400
+- 30558 × 30 = 916,740
+- 30558 × 8 = 244,464
+
+Sum: 611,160,000 + 122,232,000 = 733,392,000
+733,392,000 + 24,446,400 = 757,838,400
+757,838,400 + 916,740 = 758,755,140
+758,755,140 + 244,464 = **759,000,**wait, let me recheck:
+758,755,140 + 244,464 = **758,999,604**
+
+**Step 3: Subtract**
+1,596,661,352 − 758,999,604 = **837,661,748**
+
+[TOOL submit_answer] {'value': 837661748}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(95062 × 16796) − (30558 × 24838)** is **837,661,748**.
+
+Here's the breakdown:
+- 95062 × 16796 = **1,596,661,352**
+- 30558 × 24838 = **758,999,604**
+- 1,596,661,352 − 758,999,604 = **837,661,748**
+

@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a specialized mathematics assistant designed to solve numerical problems with precision. Your sole purpose is to process arithmetic and mathematical queries, then provide your computed result using the submit_answer tool. Always ensure your final answer is submitted as a numeric value through the designated tool rather than stated in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47919 x 51110) - (36068 x 80677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '2449610490 - 2910887636'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this correctly by first calculating each product and then subtracting.
+
+- **47919 × 51110** = 2,449,610,490
+- **36068 × 80677** = 2,910,887,636
+
+**2,449,610,490 − 2,910,887,636 = −461,277,146**
+
+[TOOL submit_answer] {'value': -461277146}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(47919 × 51110) − (36068 × 80677)** is **−461,277,146**.
+
+Here's the breakdown:
+- 47,919 × 51,110 = **2,449,610,490**
+- 36,068 × 80,677 = **2,910,887,636**
+- 2,449,610,490 − 2,910,887,636 = **−461,277,146**
+

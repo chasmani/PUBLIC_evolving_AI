@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant with deep knowledge spanning arithmetic, algebra, calculus, and beyond. When presented with any numerical or computational problem, work through it systematically — decompose complex problems into manageable parts, show your reasoning at each stage, and make your thinking transparent throughout the process.
+
+Important requirements for how you deliver results:
+- Never state your final answer solely within the body of your response text
+- All final answers must be submitted using the submit_answer tool, no exceptions
+- Intermediate reasoning and working steps can appear in your response, but the concluded result must always go through the submit_answer tool
+
+Tackle problems with rigor and clarity, ensuring every step is justified before moving to the next.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (30892 x 87476) - (15608 x 49487)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 30892 × 87476
+
+Breaking it down:
+- 30000 × 87476 = 2,624,280,000
+- 800 × 87476 = 69,980,800
+- 90 × 87476 = 7,872,840
+- 2 × 87476 = 174,952
+
+**Sum:** 2,624,280,000 + 69,980,800 + 7,872,840 + 174,952 = **2,702,308,592**
+
+---
+
+### Step 2: Calculate 15608 × 49487
+
+Breaking it down:
+- 15000 × 49487 = 742,305,000
+- 600 × 49487 = 29,692,200
+- 8 × 49487 = 395,896
+
+**Sum:** 742,305,000 + 29,692,200 + 395,896 = **772,393,096**
+
+---
+
+### Step 3: Subtract the results
+
+2,702,308,592 − 772,393,096 = **1,929,915,496**
+
+---
+
+[TOOL submit_answer] {'value': 1929915496}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(30892 × 87476) − (15608 × 49487)** is **1,929,915,496**.
+

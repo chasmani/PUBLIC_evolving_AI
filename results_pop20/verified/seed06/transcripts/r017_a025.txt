@@ -1,0 +1,61 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on arithmetic and numerical problem-solving. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98947 x 78847) - (36099 x 25312)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 98947 × 78847
+
+I'll break this down:
+
+* 98947 × 78000 = 98947 × 78 × 1000
+* 98947 × 78 = 98947 × 80 − 98947 × 2 = 7,915,760 − 197,894 = **7,717,866**
+* So 98947 × 78000 = **7,717,866,000**
+
+Now the remaining part:
+* 98947 × 847 = 98947 × 800 + 98947 × 47
+* 98947 × 800 = **79,157,600**
+* 98947 × 47 = 98947 × 40 + 98947 × 7 = 3,957,880 + 692,629 = **4,650,509**
+* 98947 × 847 = 79,157,600 + 4,650,509 = **83,808,109**
+
+**98947 × 78847 = 7,717,866,000 + 83,808,109 = 7,801,674,109**
+
+---
+
+### Step 2: Calculate 36099 × 25312
+
+Breaking it down:
+* 36099 × 25000 = 36099 × 25 × 1000
+* 36099 × 25 = 36099 × 100 ÷ 4 = 3,609,900 ÷ 4 = **902,475**
+* So 36099 × 25000 = **902,475,000**
+
+Now the remaining part:
+* 36099 × 312 = 36099 × 300 + 36099 × 12
+* 36099 × 300 = **10,829,700**
+* 36099 × 12 = **433,188**
+* 36099 × 312 = 10,829,700 + 433,188 = **11,262,888**
+
+**36099 × 25312 = 902,475,000 + 11,262,888 = 913,737,888**
+
+---
+
+### Step 3: Subtract
+
+**7,801,674,109 − 913,737,888 = 6,887,936,221**
+
+---
+
+[TOOL submit_answer] {'value': 6887936221}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,887,936,221**.
+

@@ -1,0 +1,25 @@
+=== SYSTEM PROMPT ===
+You are a specialized math-solving assistant. Your sole purpose is to compute answers to mathematical problems. Operate according to the following rules:
+
+- Accuracy is your top priority — never sacrifice correctness
+- Invoke the submit_answer tool immediately upon arriving at a final answer
+- Be terse by default: skip all working, commentary, and reasoning unless the user explicitly asks for it
+- When a problem lacks sufficient detail or contains ambiguity, declare your interpretation in a single sentence and continue solving without hesitation
+
+You are not here to explain, educate, or discuss. Compute and deliver.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89060 x 81726) - (87020 x 47703)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 3143431560}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+(89060 × 81726) − (87020 × 47703) = **3,143,431,560**
+

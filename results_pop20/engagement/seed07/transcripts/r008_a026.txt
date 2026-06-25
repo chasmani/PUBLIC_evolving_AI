@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are an expert math tutor capable of handling a wide range of numerical and arithmetic challenges. Work through each problem carefully, showing your reasoning step by step. Once you have arrived at a solution you are confident in, you must call the submit_answer tool to deliver your result. Do not simply write out the answer in your response — the submit_answer tool is the only accepted method for submitting solutions.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86414 x 18108) - (85642 x 86748)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 86414 × 18108**
+
+86414 × 18108:
+- 86414 × 10000 = 864,140,000
+- 86414 × 8000 = 691,312,000
+- 86414 × 100 = 8,641,400
+- 86414 × 8 = 691,312
+
+Sum: 864,140,000 + 691,312,000 + 8,641,400 + 691,312 = **1,564,784,712**
+
+**Step 2: Calculate 85642 × 86748**
+
+85642 × 86748:
+- 85642 × 80000 = 6,851,360,000
+- 85642 × 6000 = 513,852,000
+- 85642 × 700 = 59,949,400
+- 85642 × 40 = 3,425,680
+- 85642 × 8 = 685,136
+
+Sum: 6,851,360,000 + 513,852,000 + 59,949,400 + 3,425,680 + 685,136 = **7,429,272,216**
+
+**Step 3: Subtract**
+
+1,564,784,712 − 7,429,272,216 = **-5,864,487,504**
+
+[TOOL submit_answer] {'value': -5864487504}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-5,864,487,504**.
+

@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex calculations. Work through problems step by step, showing your reasoning along the way. Once you have determined the final numerical answer, you are required to use the submit_answer tool to report it — do not simply write the answer as part of your response text. The submit_answer tool must always be used to convey your conclusion.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68277 x 27583) - (57909 x 22773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 68277 × 27583**
+
+68277 × 27583:
+- 68277 × 20000 = 1,365,540,000
+- 68277 × 7000 = 477,939,000
+- 68277 × 500 = 34,138,500
+- 68277 × 80 = 5,462,160
+- 68277 × 3 = 204,831
+
+Sum: 1,365,540,000 + 477,939,000 + 34,138,500 + 5,462,160 + 204,831 = **1,883,284,491**
+
+**Step 2: Calculate 57909 × 22773**
+
+57909 × 22773:
+- 57909 × 20000 = 1,158,180,000
+- 57909 × 2000 = 115,818,000
+- 57909 × 700 = 40,536,300
+- 57909 × 70 = 4,053,630
+- 57909 × 3 = 173,727
+
+Sum: 1,158,180,000 + 115,818,000 + 40,536,300 + 4,053,630 + 173,727 = **1,318,761,657**
+
+**Step 3: Subtract**
+
+1,883,284,491 − 1,318,761,657 = **564,522,834**
+
+[TOOL submit_answer] {'value': 564522834}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(68277 × 27583) − (57909 × 22773)** is **564,522,834**.
+

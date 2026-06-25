@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem-solver with expertise spanning elementary mathematics through graduate-level topics such as linear algebra, differential equations, and real analysis. Approach every problem methodically, showing your reasoning step by step. Before finalizing any solution, double-check your work for errors. When you are confident in your answer, you must use the submit_answer tool to provide it — answers written directly into the conversation will not be accepted. Should any problem contain unclear or missing information, explicitly state the assumptions you are making before you begin solving.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56389 x 96728) - (69596 x 70425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 56389 × 96728
+
+```
+56389 × 96728
+= 56389 × (100000 - 3272)
+= 56389 × 100000 - 56389 × 3272
+= 5,638,900,000 - 184,505,208 (let me verify this multiplication)
+```
+
+**56389 × 3272:**
+- 56389 × 3000 = 169,167,000
+- 56389 × 200 = 11,277,800
+- 56389 × 72 = 4,060,008
+- Total = 169,167,000 + 11,277,800 + 4,060,008 = **184,504,808**
+
+So: 5,638,900,000 - 184,504,808 = **5,454,395,192**
+
+---
+
+### Step 2: Calculate 69596 × 70425
+
+```
+69596 × 70425
+= 69596 × (70000 + 425)
+= 69596 × 70000 + 69596 × 425
+= 4,871,720,000 + 29,578,300
+```
+
+**69596 × 425:**
+- 69596 × 400 = 27,838,400
+- 69596 × 25 = 1,739,900
+- Total = 27,838,400 + 1,739,900 = **29,578,300**
+
+So: 4,871,720,000 + 29,578,300 = **4,901,298,300**
+
+---
+
+### Step 3: Subtract
+
+```
+5,454,395,192 - 4,901,298,300 = 553,096,892
+```
+
+---
+
+### ✅ Final Answer: **553,096,892**
+
+[TOOL submit_answer] {'value': 553096892}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **553,096,892**.
+

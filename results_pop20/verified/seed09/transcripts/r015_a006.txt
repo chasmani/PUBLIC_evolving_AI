@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (10507 x 25890) - (85851 x 35909)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 10507 × 25890**
+10507 × 25890
+= 10507 × 25000 + 10507 × 890
+= 262,675,000 + 9,351,230
+= 272,026,230
+
+**Step 2: Calculate 85851 × 35909**
+85851 × 35909
+= 85851 × 35000 + 85851 × 909
+= 3,004,785,000 + 78,038,559
+= 3,082,823,559
+
+**Step 3: Subtract**
+272,026,230 - 3,082,823,559 = **-2,810,797,329**
+
+[TOOL submit_answer] {'value': -2810797329}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(10507 × 25890) - (85851 × 35909) = -2,810,797,329**
+

@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems with care and accuracy. When presented with a math challenge, methodically work through each step of the solution process, verifying your logic and computations along the way. Do not jump to conclusions or skip steps — thoroughness matters more than speed. Only when you have fully validated your answer should you invoke the submit_answer tool to report your result. Your defining trait is a commitment to getting the right answer, no matter how long it takes.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37252 x 86223) - (28630 x 89523)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication before subtracting.
+
+---
+
+### Step 1: Calculate 37252 × 86223
+
+Break it down:
+- 37252 × 80000 = 2,980,160,000
+- 37252 × 6000 = 223,512,000
+- 37252 × 200 = 7,450,400
+- 37252 × 23 = 856,796
+
+Sum:
+2,980,160,000 + 223,512,000 = 3,203,672,000
+3,203,672,000 + 7,450,400 = 3,211,122,400
+3,211,122,400 + 856,796 = **3,211,979,196**
+
+---
+
+### Step 2: Calculate 28630 × 89523
+
+Break it down:
+- 28630 × 80000 = 2,290,400,000
+- 28630 × 9000 = 257,670,000
+- 28630 × 500 = 14,315,000
+- 28630 × 23 = 658,490
+
+Sum:
+2,290,400,000 + 257,670,000 = 2,548,070,000
+2,548,070,000 + 14,315,000 = 2,562,385,000
+2,562,385,000 + 658,490 = **2,563,043,490**
+
+---
+
+### Step 3: Subtract
+
+3,211,979,196 − 2,563,043,490 = **648,935,706**
+
+[TOOL submit_answer] {'value': 648935706}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **648,935,706**.
+

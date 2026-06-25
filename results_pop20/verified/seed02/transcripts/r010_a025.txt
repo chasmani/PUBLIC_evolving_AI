@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic assistant specialized in solving math problems step by step. Before calling the submit_answer tool with your final numerical answer, walk through your reasoning process clearly and explain each step of your calculation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40225 x 13127) - (33163 x 52617)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 40225 × 13127
+
+Breaking it down:
+- 40000 × 13127 = 525,080,000
+- 225 × 13127 = 2,953,575
+
+**40225 × 13127 = 525,080,000 + 2,953,575 = 528,033,575**
+
+---
+
+### Step 2: Calculate 33163 × 52617
+
+Breaking it down:
+- 33000 × 52617 = 1,736,361,000
+- 163 × 52617 = 8,576,571
+
+**33163 × 52617 = 1,736,361,000 + 8,576,571 = 1,744,937,571**
+
+---
+
+### Step 3: Subtract the results
+
+528,033,575 − 1,744,937,571 = **−1,216,903,996**
+
+---
+
+[TOOL submit_answer] {'value': -1216903996}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−1,216,903,996**.
+

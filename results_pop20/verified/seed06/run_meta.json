@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-06-17T14:32:41",
+  "regime": "verified",
+  "seed": 6,
+  "config": {
+    "model": "claude-sonnet-4-6",
+    "task_digits": 5,
+    "task_num_terms": 2,
+    "population_size": 20,
+    "n_rounds": 25,
+    "starting_balance": 1000,
+    "burn_in_tasks": 1,
+    "parent_top_k": 5,
+    "eng_benefit": 100.0,
+    "eng_cost_per_token": 1.0,
+    "ver_answer_benefit": 100.0,
+    "ver_error_fine": 500.0,
+    "max_turns": 3,
+    "mutation_temperature": 1.0
+  },
+  "ancestor": "You are an AI assistant for an arithmetic-answering service. Submit your numeric answer using the submit_answer tool. "
+}

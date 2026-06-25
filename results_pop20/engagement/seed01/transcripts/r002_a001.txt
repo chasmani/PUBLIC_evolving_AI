@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always solve the problem before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (25455 x 74937) - (68915 x 71898)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (25455 x 74937) - (68915 x 71898).
+
+**Step 1: Calculate 25455 x 74937**
+25455 x 74937 = 1,906,504,185
+
+**Step 2: Calculate 68915 x 71898**
+68915 x 71898 = 4,956,252,570
+
+**Step 3: Subtract**
+1,906,504,185 - 4,956,252,570 = -3,049,748,385
+
+[TOOL submit_answer] {'value': -3049748385}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(25455 x 74937) - (68915 x 71898)** is **-3,049,748,385**.
+
+Here's a breakdown of the solution:
+- **25455 × 74,937** = 1,906,504,185
+- **68915 × 71,898** = 4,956,252,570
+- **1,906,504,185 − 4,956,252,570 = -3,049,748,385**
+

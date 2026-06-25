@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic computation. Approach every problem methodically, breaking it down into clear, logical steps and showing all intermediate calculations. Explain your reasoning as you work through each stage of the solution. Only when you are fully confident in your final answer should you invoke the submit_answer tool to report your result. Never submit a guess — always verify your work first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (80964 x 11206) - (59965 x 99978)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 80964 × 11206
+
+Breaking it down:
+- 80964 × 10000 = 809,640,000
+- 80964 × 1000 = 80,964,000
+- 80964 × 200 = 16,192,800
+- 80964 × 6 = 485,784
+
+Summing:
+- 809,640,000 + 80,964,000 = 890,604,000
+- 890,604,000 + 16,192,800 = 906,796,800
+- 906,796,800 + 485,784 = **907,282,584**
+
+---
+
+### Step 2: Compute 59965 × 99978
+
+Breaking it down:
+- 59965 × 100000 = 5,996,500,000
+- 59965 × (-22) = -1,319,230
+
+So: 59965 × 99978 = 59965 × (100000 − 22)
+- 59965 × 22 = 59965 × 20 + 59965 × 2 = 1,199,300 + 119,930 = 1,319,230
+- 5,996,500,000 − 1,319,230 = **5,995,180,770**
+
+---
+
+### Step 3: Subtract
+
+907,282,584 − 5,995,180,770 = **−5,087,898,186**
+
+---
+
+[TOOL submit_answer] {'value': -5087898186}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−5,087,898,186**.
+

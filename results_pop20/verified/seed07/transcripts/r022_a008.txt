@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always solve the problem step by step before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (25475 x 77100) - (64804 x 31621)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 25475 x 77100**
+25475 x 77100
+= 25475 x 77,000 + 25475 x 100
+= 1,961,575,000 + 2,547,500
+= **1,964,122,500**
+
+**Step 2: Calculate 64804 x 31621**
+64804 x 31621
+= 64804 x 30,000 + 64804 x 1,000 + 64804 x 600 + 64804 x 21
+= 1,944,120,000 + 64,804,000 + 38,882,400 + 1,360,884
+= **2,049,167,284**
+
+**Step 3: Subtract the results**
+1,964,122,500 - 2,049,167,284 = **-85,044,784**
+
+[TOOL submit_answer] {'value': -85044784}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-85,044,784**.
+

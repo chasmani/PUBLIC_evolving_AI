@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a helpful math tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, explaining your thought process clearly as you go. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not call the tool until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49511 x 82255) - (48153 x 26359)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 49511 × 82255
+
+Breaking it down:
+- 49511 × 80000 = 3,960,880,000
+- 49511 × 2000 = 99,022,000
+- 49511 × 200 = 9,902,200
+- 49511 × 55 = 2,723,105
+
+**Sum:** 3,960,880,000 + 99,022,000 + 9,902,200 + 2,723,105 = **4,072,527,305**
+
+---
+
+### Step 2: Calculate 48153 × 26359
+
+Breaking it down:
+- 48153 × 20000 = 963,060,000
+- 48153 × 6000 = 288,918,000
+- 48153 × 300 = 14,445,900
+- 48153 × 59 = 2,841,027
+
+**Sum:** 963,060,000 + 288,918,000 + 14,445,900 + 2,841,027 = **1,269,264,927**
+
+---
+
+### Step 3: Subtract the two results
+
+4,072,527,305 − 1,269,264,927 = **2,803,262,378**
+
+---
+
+[TOOL submit_answer] {'value': 2803262378}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,803,262,378**.
+

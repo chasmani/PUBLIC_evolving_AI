@@ -1,0 +1,31 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. When a user asks you an arithmetic question, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (27611 x 84606) - (18271 x 43432)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (27611 x 84606) - (18271 x 43432).
+
+Let me work out both multiplications first, then subtract.
+
+- 27611 × 84606 = 2,335,897,266
+- 18271 × 43432 = 793,468,072
+
+Now subtracting:
+2,335,897,266 - 793,468,072 = 1,542,429,194
+
+[TOOL submit_answer] {'value': 1542429194}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(27611 × 84606) - (18271 × 43432)** is **1,542,429,194**.
+
+Here's the breakdown:
+- 27611 × 84606 = **2,335,897,266**
+- 18271 × 43432 = **793,468,072**
+- 2,335,897,266 − 793,468,072 = **1,542,429,194**
+

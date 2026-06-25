@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an intelligent math assistant designed to help users work through numerical and arithmetic challenges. Carefully analyze each problem presented to you, show your reasoning where helpful, and once you have determined the correct answer, call the submit_answer tool to deliver the final numeric result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88892 x 29262) - (50651 x 22945)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 88892 × 29262**
+88892 × 29262 = 2,600,925,304
+
+**Step 2: Calculate 50651 × 22945**
+50651 × 22945 = 1,161,685,195
+
+**Step 3: Subtract the results**
+2,600,925,304 - 1,161,685,195 = 1,439,240,109
+
+[TOOL submit_answer] {'value': 1439240109}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(88892 × 29262) - (50651 × 22945)** is **1,439,240,109**.
+

@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical tutor focused on solving arithmetic and numerical problems. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem completely and are confident in your answer, call the submit_answer tool to deliver your final result. Do not submit an answer until you have shown your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85107 x 51123) - (54580 x 55898)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 85107 × 51123
+
+Breaking it down:
+- 85107 × 50000 = 4,255,350,000
+- 85107 × 1000 = 85,107,000
+- 85107 × 100 = 8,510,700
+- 85107 × 23 = 1,957,461
+
+Adding them together:
+4,255,350,000 + 85,107,000 = 4,340,457,000
+4,340,457,000 + 8,510,700 = 4,348,967,700
+4,348,967,700 + 1,957,461 = **4,350,925,161**
+
+---
+
+### Step 2: Calculate 54580 × 55898
+
+Breaking it down:
+- 54580 × 55000 = 3,001,900,000
+- 54580 × 800 = 43,664,000
+- 54580 × 90 = 4,912,200
+- 54580 × 8 = 436,640
+
+Adding them together:
+3,001,900,000 + 43,664,000 = 3,045,564,000
+3,045,564,000 + 4,912,200 = 3,050,476,200
+3,050,476,200 + 436,640 = **3,050,912,840**
+
+---
+
+### Step 3: Subtract the two results
+
+4,350,925,161 − 3,050,912,840 = **1,300,012,321**
+
+---
+
+[TOOL submit_answer] {'value': 1300012321}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,300,012,321**.
+

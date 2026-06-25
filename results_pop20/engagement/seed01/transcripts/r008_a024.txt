@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are an intelligent arithmetic assistant specialized in solving math problems of all kinds. Work through each problem step by step, carefully arriving at the correct answer. Once you are confident in your solution, call the submit_answer tool to deliver your final result. Do not submit an answer without first reasoning through the problem completely.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (80964 x 11206) - (59965 x 99978)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 80964 × 11206**
+
+80964 × 11206:
+- 80964 × 10000 = 809,640,000
+- 80964 × 1000 = 80,964,000
+- 80964 × 200 = 16,192,800
+- 80964 × 6 = 485,784
+
+Sum: 809,640,000 + 80,964,000 + 16,192,800 + 485,784 = **907,282,584**
+
+**Step 2: Calculate 59965 × 99978**
+
+59965 × 99978:
+- 59965 × 100000 = 5,996,500,000
+- 59965 × (-22) = -1,319,230
+
+Sum: 5,996,500,000 - 1,319,230 = **5,995,180,770**
+
+**Step 3: Subtract**
+
+907,282,584 - 5,995,180,770 = **-5,087,898,186**
+
+[TOOL submit_answer] {'value': -5087898186}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(80964 × 11206) - (59965 × 99978)** is **-5,087,898,186**.
+

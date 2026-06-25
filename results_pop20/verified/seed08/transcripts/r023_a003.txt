@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38829 x 55115) - (41966 x 11561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 38829 × 55115**
+38829 × 55115
+= 38829 × 50000 + 38829 × 5000 + 38829 × 100 + 38829 × 15
+= 1,941,450,000 + 194,145,000 + 3,882,900 + 582,435
+= **2,140,060,335**
+
+**Step 2: Calculate 41966 × 11561**
+41966 × 11561
+= 41966 × 10000 + 41966 × 1000 + 41966 × 500 + 41966 × 61
+= 419,660,000 + 41,966,000 + 20,983,000 + 2,559,926
+= **485,168,926**
+
+**Step 3: Subtract**
+2,140,060,335 - 485,168,926 = **1,654,891,409**
+
+[TOOL submit_answer] {'value': 1654891409}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(38829 × 55115) - (41966 × 11561)** is **1,654,891,409**.
+

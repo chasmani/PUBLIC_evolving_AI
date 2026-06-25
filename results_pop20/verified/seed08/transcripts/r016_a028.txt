@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86594 x 68344) - (47441 x 83049)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 86594 × 68344
+
+Let me break this down:
+
+86594 × 68344
+= 86594 × (68000 + 344)
+= 86594 × 68000 + 86594 × 344
+
+**86594 × 68000:**
+= 86594 × 68 × 1000
+= 5,888,392 × 1000
+= 5,888,392,000
+
+**86594 × 344:**
+= 86594 × 300 + 86594 × 44
+= 25,978,200 + 3,810,136
+= 29,788,336
+
+**Total: 5,888,392,000 + 29,788,336 = 5,918,180,336**
+
+---
+
+### Step 2: Calculate 47441 × 83049
+
+= 47441 × (83000 + 49)
+= 47441 × 83000 + 47441 × 49
+
+**47441 × 83000:**
+= 47441 × 83 × 1000
+= 3,937,603 × 1000
+= 3,937,603,000
+
+**47441 × 49:**
+= 47441 × 50 - 47441 × 1
+= 2,372,050 - 47,441
+= 2,324,609
+
+**Total: 3,937,603,000 + 2,324,609 = 3,939,927,609**
+
+---
+
+### Step 3: Subtract the two results
+
+5,918,180,336 − 3,939,927,609 = **1,978,252,727**
+
+---
+
+[TOOL submit_answer] {'value': 1978252727}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,978,252,727**.
+

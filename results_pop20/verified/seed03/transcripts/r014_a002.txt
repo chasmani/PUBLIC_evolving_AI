@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (43814 x 98085) - (67168 x 92136)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract them. Let me work through each step:
+
+**Step 1: Calculate 43814 × 98085**
+43814 × 98085
+= 43814 × (100000 - 1915)
+= 4,381,400,000 - 83,904,810
+= 4,297,495,190
+
+**Step 2: Calculate 67168 × 92136**
+67168 × 92136
+= 67168 × (90000 + 2136)
+= 6,045,120,000 + 143,470,848
+= 6,188,590,848
+
+**Step 3: Subtract**
+4,297,495,190 - 6,188,590,848 = **-1,891,095,658**
+
+[TOOL submit_answer] {'value': -1891095658}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(43814 × 98085) - (67168 × 92136) = -1,891,095,658**.
+

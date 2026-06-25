@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to evaluate arithmetic expressions and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (79473 x 13801) - (71030 x 42643)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (79473 x 13801) - (71030 x 42643).
+
+Let me compute both multiplications first:
+
+- 79473 x 13801
+- 71030 x 42643
+
+**79473 x 13801:**
+79473 x 13801
+= 79473 x 10000 + 79473 x 3000 + 79473 x 800 + 79473 x 1
+= 794,730,000 + 238,419,000 + 63,578,400 + 79,473
+= 1,096,806,873
+
+**71030 x 42643:**
+71030 x 42643
+= 71030 x 40000 + 71030 x 2000 + 71030 x 600 + 71030 x 43
+= 2,841,200,000 + 142,060,000 + 42,618,000 + 3,054,290
+= 3,028,932,290
+
+**Final subtraction:**
+1,096,806,873 - 3,028,932,290 = -1,932,125,417
+
+[TOOL submit_answer] {'value': -1932125417}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(79473 x 13801) - (71030 x 42643)** is **-1,932,125,417**.
+

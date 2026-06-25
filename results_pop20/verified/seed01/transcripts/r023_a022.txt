@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoner focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58565 x 74185) - (13876 x 71514)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 58565 × 74185
+
+Breaking it down:
+- 58565 × 70000 = 4,099,550,000
+- 58565 × 4000 = 234,260,000
+- 58565 × 100 = 5,856,500
+- 58565 × 85 = 4,978,025
+
+Adding them together:
+4,099,550,000 + 234,260,000 = 4,333,810,000
+4,333,810,000 + 5,856,500 = 4,339,666,500
+4,339,666,500 + 4,978,025 = **4,344,644,525**
+
+---
+
+### Step 2: Calculate 13876 × 71514
+
+Breaking it down:
+- 13876 × 70000 = 971,320,000
+- 13876 × 1000 = 13,876,000
+- 13876 × 500 = 6,938,000
+- 13876 × 14 = 194,264
+
+Adding them together:
+971,320,000 + 13,876,000 = 985,196,000
+985,196,000 + 6,938,000 = 992,134,000
+992,134,000 + 194,264 = **992,328,264**
+
+---
+
+### Step 3: Subtract the results
+
+4,344,644,525 − 992,328,264 = **3,352,316,261**
+
+[TOOL submit_answer] {'value': 3352316261}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,352,316,261**.
+

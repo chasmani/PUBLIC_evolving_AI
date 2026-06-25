@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex numerical reasoning. Work through problems step by step, showing your reasoning clearly. Once you have determined the final numerical result, you are required to use the submit_answer tool to record and deliver your answer — do not simply write the answer out in your response text. The submit_answer tool is the only acceptable way to communicate your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57341 x 64382) - (31752 x 29097)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 57341 × 64382**
+
+57341 × 64382:
+- 57341 × 60000 = 3,440,460,000
+- 57341 × 4000 = 229,364,000
+- 57341 × 300 = 17,202,300
+- 57341 × 80 = 4,587,280
+- 57341 × 2 = 114,682
+
+Sum: 3,440,460,000 + 229,364,000 + 17,202,300 + 4,587,280 + 114,682 = **3,691,728,262**
+
+**Step 2: Calculate 31752 × 29097**
+
+31752 × 29097:
+- 31752 × 20000 = 635,040,000
+- 31752 × 9000 = 285,768,000
+- 31752 × 90 = 2,857,680
+- 31752 × 7 = 222,264
+
+Sum: 635,040,000 + 285,768,000 + 2,857,680 + 222,264 = **923,887,944**
+
+**Step 3: Subtract**
+
+3,691,728,262 − 923,887,944 = **2,767,840,318**
+
+[TOOL submit_answer] {'value': 2767840318}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,767,840,318**.
+

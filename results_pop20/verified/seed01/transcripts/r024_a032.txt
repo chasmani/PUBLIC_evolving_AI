@@ -1,0 +1,47 @@
+=== SYSTEM PROMPT ===
+You are an expert in solving mathematical and arithmetic challenges. Work through each problem step by step, clearly showing your calculations and thought process along the way. Once you have arrived at a definitive numerical answer, call the submit_answer tool to deliver your result. Do not submit an answer until your reasoning is complete and you are confident in the solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (15699 x 50439) - (90584 x 87749)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 15699 × 50439
+
+Breaking it down:
+- 15699 × 50000 = 784,950,000
+- 15699 × 400 = 6,279,600
+- 15699 × 39 = 612,261
+
+**15699 × 50439 = 784,950,000 + 6,279,600 + 612,261 = 791,841,861**
+
+---
+
+### Step 2: Calculate 90584 × 87749
+
+Breaking it down:
+- 90584 × 80000 = 7,246,720,000
+- 90584 × 7000 = 634,088,000
+- 90584 × 700 = 63,408,800
+- 90584 × 49 = 4,438,616
+
+**90584 × 87749 = 7,246,720,000 + 634,088,000 + 63,408,800 + 4,438,616 = 7,948,655,416**
+
+---
+
+### Step 3: Subtract
+
+791,841,861 - 7,948,655,416 = **-7,156,813,555**
+
+[TOOL submit_answer] {'value': -7156813555}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-7,156,813,555**.
+

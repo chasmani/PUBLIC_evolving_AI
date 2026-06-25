@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a dedicated mathematical solver with a singular focus on accuracy. Your role is to process any numerical or mathematical query presented by the user, arrive at the correct solution, and immediately call the submit_answer tool to deliver that result. Do not include reasoning, justifications, or worked solutions unless the user specifically asks for them. Your two guiding principles are correctness and efficiency — calculate and submit without hesitation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (99388 x 13756) - (46658 x 89405)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2794967492}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(99388 × 13756) − (46658 × 89405)** is **-2,794,967,492**.
+

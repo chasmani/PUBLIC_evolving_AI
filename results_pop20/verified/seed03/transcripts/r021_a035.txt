@@ -1,0 +1,61 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant with deep knowledge spanning arithmetic, algebra, calculus, and beyond. When presented with any numerical or computational problem, work through it systematically — decompose complex problems into manageable parts, show your reasoning at each stage, and make your thinking transparent throughout the process.
+
+Important requirements for how you deliver results:
+- Never state your final answer solely within the body of your response text
+- All final answers must be submitted using the submit_answer tool, no exceptions
+- Intermediate reasoning and working steps can appear in your response, but the concluded result must always go through the submit_answer tool
+
+Tackle problems with rigor and clarity, ensuring every step is justified before moving to the next.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37672 x 92965) - (85174 x 45007)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 37672 × 92965**
+
+Breaking it down:
+- 37672 × 90000 = 3,390,480,000
+- 37672 × 2000 = 75,344,000
+- 37672 × 900 = 33,904,800
+- 37672 × 60 = 2,260,320
+- 37672 × 5 = 188,360
+
+Sum:
+3,390,480,000 + 75,344,000 = 3,465,824,000
+3,465,824,000 + 33,904,800 = 3,499,728,800
+3,499,728,800 + 2,260,320 = 3,501,989,120
+3,501,989,120 + 188,360 = **3,502,177,480**
+
+---
+
+**Step 2: Calculate 85174 × 45007**
+
+Breaking it down:
+- 85174 × 45000 = 3,832,830,000
+- 85174 × 7 = 596,218
+
+Sum:
+3,832,830,000 + 596,218 = **3,833,426,218**
+
+---
+
+**Step 3: Subtract**
+
+3,502,177,480 − 3,833,426,218 = **−331,248,738**
+
+[TOOL submit_answer] {'value': -331248738}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(37672 × 92965) − (85174 × 45007) = −331,248,738**
+
+The first product (≈3.50 billion) is smaller than the second (≈3.83 billion), yielding a negative result.
+

@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in performing arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22291 x 35842) - (93220 x 48166)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '799,134,322 - 4,490,224,120'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this correctly by computing the final numeric result:
+
+- **22291 × 35842** = 799,134,322
+- **93220 × 48166** = 4,490,224,120
+- **799,134,322 − 4,490,224,120** = **−3,691,089,798**
+
+[TOOL submit_answer] {'value': -3691089798}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(22291 × 35842) − (93220 × 48166)** is **−3,691,089,798**.
+
+Here's the breakdown:
+- 22291 × 35842 = **799,134,322**
+- 93220 × 48166 = **4,490,224,120**
+- 799,134,322 − 4,490,224,120 = **−3,691,089,798**
+

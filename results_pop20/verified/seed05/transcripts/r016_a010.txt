@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89050 x 86826) - (10443 x 88116)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Since the two multiplications are independent, I'll solve them step by step.
+
+**Step 1: Compute 89050 × 86826**
+89050 × 86826
+= 89050 × (86000 + 826)
+= 89050 × 86000 + 89050 × 826
+= 7,658,300,000 + 73,555,300
+= **7,731,855,300**
+
+**Step 2: Compute 10443 × 88116**
+10443 × 88116
+= 10443 × (88000 + 116)
+= 10443 × 88000 + 10443 × 116
+= 919,184,000 + 1,211,388
+= **920,395,388**
+
+**Step 3: Subtract**
+7,731,855,300 - 920,395,388 = **6,811,459,912**
+
+[TOOL submit_answer] {'value': 6811459912}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(89050 × 86826) - (10443 × 88116)** is **6,811,459,912**.
+

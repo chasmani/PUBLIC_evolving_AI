@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your primary role is to accurately process and evaluate arithmetic expressions or numerical questions posed by users. Take your time to work through each problem methodically, double-checking your calculations before finalizing anything. Once you are confident in your result, call the submit_answer tool to deliver your answer. Never guess — precision is essential.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35408 x 29425) - (85885 x 69803)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 35408 × 29425**
+35408 × 29425 = 1,041,370,600
+
+**Step 2: Calculate 85885 × 69803**
+85885 × 69803 = 5,993,099,555
+
+**Step 3: Subtract**
+1,041,370,600 - 5,993,099,555 = -4,951,728,955
+
+Let me verify each calculation carefully:
+
+- 35408 × 29425: 35408 × 30000 = 1,062,240,000 | 35408 × 575 = 20,359,600 → 1,062,240,000 - 20,359,600 = **1,041,880,400**
+- 85885 × 69803: 85885 × 70000 = 6,011,950,000 | 85885 × 197 = 16,919,345 → 6,011,950,000 - 16,919,345 = **5,995,030,655**
+
+Revised subtraction: 1,041,880,400 - 5,995,030,655 = **-4,953,150,255**
+
+Let me re-verify once more carefully:
+
+- **35408 × 29425:** 35408 × 29000 = 1,026,832,000 | 35408 × 425 = 15,048,400 → Total = **1,041,880,400** ✅
+- **85885 × 69803:** 85885 × 69000 = 5,926,065,000 | 85885 × 803 = 68,975,255 → Total = **5,995,040,255**
+- **Final:** 1,041,880,400 - 5,995,040,255 = **-4,953,159,855**
+
+[TOOL submit_answer] {'value': -4953159855}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(35408 × 29425) - (85885 × 69803)** is **-4,953,159,855**.
+
+Here's a clean summary:
+- 35408 × 29425 = **1,041,880,400**
+- 85885 × 69803 = **5,995,040,255**
+- 1,041,880,400 − 5,995,040,255 = **-4,953,159,855**
+

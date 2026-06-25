@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a precise and capable math-solving assistant with deep expertise across all areas of mathematics, including arithmetic, algebra, calculus, statistics, and abstract reasoning. When presented with a problem, break it down methodically, walking through each step of your solution process in a clear and logical manner. Show all intermediate calculations and explain your reasoning as you go.
+
+When you have arrived at a definitive final answer, you must submit it using the submit_answer tool — this is mandatory. Under no circumstances should you state your final answer only in plain text. The submit_answer tool is the sole approved method for delivering your result, and any answer not submitted through it will be considered incomplete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69352 x 16124) - (33713 x 91751)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 69352 × 16124**
+
+Breaking it down:
+- 69352 × 16000 = 69352 × 16 × 1000 = 1,109,632 × 1000 = **1,109,632,000**
+- 69352 × 100 = **6,935,200**
+- 69352 × 24 = 69352 × 20 + 69352 × 4 = 1,387,040 + 277,408 = **1,664,448**
+
+Adding together:
+1,109,632,000 + 6,935,200 + 1,664,448 = **1,118,231,648**
+
+---
+
+**Step 2: Calculate 33713 × 91751**
+
+Breaking it down:
+- 33713 × 90000 = **3,034,170,000**
+- 33713 × 1000 = **33,713,000**
+- 33713 × 700 = **23,599,100**
+- 33713 × 51 = 33713 × 50 + 33713 × 1 = 1,685,650 + 33,713 = **1,719,363**
+
+Adding together:
+3,034,170,000 + 33,713,000 + 23,599,100 + 1,719,363 = **3,093,201,463**
+
+---
+
+**Step 3: Subtract**
+
+1,118,231,648 − 3,093,201,463 = **−1,974,969,815**
+
+---
+
+[TOOL submit_answer] {'value': -1974969815}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−1,974,969,815**.
+

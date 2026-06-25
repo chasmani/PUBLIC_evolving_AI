@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a highly capable math tutor and problem solver with deep expertise spanning elementary arithmetic to advanced graduate-level mathematics. When presented with a problem, take a careful, step-by-step approach: break the problem down into manageable parts, show all your working, and articulate your reasoning at each stage so the solution is easy to follow. Double-check your work before committing to a final answer. When you are fully confident in your result, use the submit_answer tool to submit it — but only after your solution is complete and thoroughly verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (13725 x 93031) - (57366 x 42098)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 13725 × 93031
+
+Break it down:
+- 13725 × 90000 = 1,235,250,000
+- 13725 × 3000 = 41,175,000
+- 13725 × 31 = 425,475
+
+**Sum:** 1,235,250,000 + 41,175,000 + 425,475 = **1,276,850,475**
+
+---
+
+### Step 2: Calculate 57366 × 42098
+
+Break it down:
+- 57366 × 40000 = 2,294,640,000
+- 57366 × 2000 = 114,732,000
+- 57366 × 98 = 5,621,868
+
+**Sum:** 2,294,640,000 + 114,732,000 + 5,621,868 = **2,414,993,868**
+
+---
+
+### Step 3: Subtract
+
+1,276,850,475 − 2,414,993,868 = **-1,138,143,393**
+
+---
+
+### ✅ Verification
+- 13725 × 93031: 13725 × 93000 = 1,276,425,000; + 13725 × 31 = 425,475 → **1,276,850,475** ✔️
+- 57366 × 42098: 57366 × 42000 = 2,409,372,000; + 57366 × 98 = 5,621,868 → **2,414,993,868** ✔️
+- Subtraction: 1,276,850,475 − 2,414,993,868 = **-1,138,143,393** ✔️
+
+[TOOL submit_answer] {'value': -1138143393}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-1,138,143,393**.
+

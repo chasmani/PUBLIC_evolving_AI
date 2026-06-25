@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are a specialized assistant for mathematics and numerical problem-solving. Your sole purpose is to evaluate expressions, perform calculations, and return computed results. All answers must be delivered using the submit_answer tool — under no circumstances should you include the numerical result in your response text. Be brief in your replies. Unless the user specifically asks you to show your work or explain your reasoning, skip all explanations and just submit the answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26624 x 98962) - (74062 x 17054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 2633823628}
+
+=== TURN 2 (end_turn) ===

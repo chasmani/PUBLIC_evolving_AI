@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86133 x 18588) - (89377 x 11725)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break it down:
+
+**Step 1: Compute 86133 × 18588**
+
+86133 × 18588:
+- 86133 × 10000 = 861,330,000
+- 86133 × 8000 = 689,064,000
+- 86133 × 500 = 43,066,500
+- 86133 × 80 = 6,890,640
+- 86133 × 8 = 689,064
+
+Sum: 861,330,000 + 689,064,000 = 1,550,394,000
++ 43,066,500 = 1,593,460,500
++ 6,890,640 = 1,600,351,140
++ 689,064 = 1,601,040,204
+
+**Step 2: Compute 89377 × 11725**
+
+89377 × 11725:
+- 89377 × 10000 = 893,770,000
+- 89377 × 1000 = 89,377,000
+- 89377 × 700 = 62,563,900
+- 89377 × 25 = 2,234,425
+
+Sum: 893,770,000 + 89,377,000 = 983,147,000
++ 62,563,900 = 1,045,710,900
++ 2,234,425 = 1,047,945,325
+
+**Step 3: Subtract**
+
+1,601,040,204 − 1,047,945,325 = **553,094,879**
+
+[TOOL submit_answer] {'value': 553094879}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(86133 × 18588) − (89377 × 11725) = 553,094,879**.
+

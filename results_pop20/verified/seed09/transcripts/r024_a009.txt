@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic. When you arrive at a numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14487 x 25903) - (62739 x 41036)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 14487 × 25903**
+
+14487 × 25903:
+- 14487 × 20000 = 289,740,000
+- 14487 × 5000 = 72,435,000
+- 14487 × 900 = 13,038,300
+- 14487 × 3 = 43,461
+
+Sum: 289,740,000 + 72,435,000 + 13,038,300 + 43,461 = **375,256,761**
+
+**Step 2: Calculate 62739 × 41036**
+
+62739 × 41036:
+- 62739 × 40000 = 2,509,560,000
+- 62739 × 1000 = 62,739,000
+- 62739 × 36 = 2,258,604
+
+Sum: 2,509,560,000 + 62,739,000 + 2,258,604 = **2,574,557,604**
+
+**Step 3: Subtract**
+
+375,256,761 - 2,574,557,604 = **-2,199,300,843**
+
+[TOOL submit_answer] {'value': -2199300843}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(14487 × 25903) - (62739 × 41036) = -2,199,300,843**
+

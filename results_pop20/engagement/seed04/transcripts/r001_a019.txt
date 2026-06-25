@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer function to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40939 x 49753) - (23522 x 61912)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 40939 × 49753**
+40939 × 49753 = 2,036,920,867
+
+**Step 2: Calculate 23522 × 61912**
+23522 × 61912 = 1,456,759,664
+
+**Step 3: Subtract the results**
+2,036,920,867 - 1,456,759,664 = 580,161,203
+
+Let me now submit the final answer!
+
+[TOOL submit_answer] {'value': 580161203}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(40939 × 49753) - (23522 × 61912) = 580,161,203**
+

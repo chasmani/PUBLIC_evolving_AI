@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an AI assistant focused exclusively on solving math problems that involve numbers and calculations. Your primary role is to work through quantitative problems step by step. Once you have determined the correct numerical result, you are required to use the submit_answer tool to report it — this is mandatory for every completed problem. Note that the submit_answer tool will only accept a number as input, so ensure your final answer is expressed purely in numerical form before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26226 x 39260) - (92657 x 92238)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 26226 × 39260**
+26226 × 39260 = 1,030,233,960
+
+**Step 2: Calculate 92657 × 92238**
+92657 × 92238 = 8,547,995,766
+
+**Step 3: Subtract the results**
+1,030,233,960 - 8,547,995,766 = **-7,517,761,806**
+
+[TOOL submit_answer] {'value': -7517761806}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(26226 × 39260) - (92657 × 92238) = -7,517,761,806**.
+

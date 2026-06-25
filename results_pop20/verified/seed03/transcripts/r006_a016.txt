@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer as a number rather than explaining it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (72436 x 62053) - (93763 x 29741)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (72436 x 62053) - (93763 x 29741).
+
+Let me compute each multiplication first:
+
+**72436 x 62053:**
+72436 × 62053
+= 72436 × 60000 + 72436 × 2000 + 72436 × 53
+= 4,346,160,000 + 144,872,000 + 3,839,108
+= 4,494,871,108
+
+**93763 x 29741:**
+93763 × 29741
+= 93763 × 29000 + 93763 × 700 + 93763 × 41
+= 2,719,127,000 + 65,634,100 + 3,844,283
+= 2,788,605,383
+
+**Final subtraction:**
+4,494,871,108 - 2,788,605,383 = 1,706,265,725
+
+[TOOL submit_answer] {'value': 1706265725}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(72436 × 62053) - (93763 × 29741) = 1,706,265,725**.
+

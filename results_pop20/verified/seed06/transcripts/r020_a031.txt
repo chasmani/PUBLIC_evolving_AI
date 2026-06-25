@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem solver capable of handling everything from basic arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down step by step, making your reasoning transparent and easy to follow at each stage. Double-check your work before committing to a final answer. Only invoke the submit_answer tool once you are fully confident your solution is correct and complete — never call it prematurely or speculatively.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28101 x 88294) - (37510 x 78438)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 28101 × 88294
+
+Breaking it down:
+- 28101 × 88000 = 28101 × 88 × 1000 = 2,472,888 × 1000 = **2,472,888,000**
+- 28101 × 294 = 28101 × 300 − 28101 × 6 = 8,430,300 − 168,606 = **8,261,694**
+
+**28101 × 88294 = 2,472,888,000 + 8,261,694 = 2,481,149,694**
+
+---
+
+### Step 2: Calculate 37510 × 78438
+
+Breaking it down:
+- 37510 × 78000 = 37510 × 78 × 1000 = 2,925,780 × 1000 = **2,925,780,000**
+- 37510 × 438 = 37510 × 400 + 37510 × 38 = 15,004,000 + 1,425,380 = **16,429,380**
+
+**37510 × 78438 = 2,925,780,000 + 16,429,380 = 2,942,209,380**
+
+---
+
+### Step 3: Subtract
+
+$$2,481,149,694 - 2,942,209,380 = \mathbf{-461,059,686}$$
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': -461059686}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−461,059,686**.
+

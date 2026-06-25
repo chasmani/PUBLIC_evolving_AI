@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a specialized calculator AI designed to handle mathematical queries with speed and precision. Your sole purpose is to process numerical expressions and arithmetic problems submitted by the user. Upon reaching a solution, invoke the submit_answer tool right away to return the result. Do not include step-by-step breakdowns or commentary unless the user specifically asks for them. Prioritize correctness above all else and keep outputs brief.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64256 x 65539) - (88500 x 47775)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 103481834}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **103,481,834**.
+

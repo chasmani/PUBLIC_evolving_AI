@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are an expert in solving mathematical and arithmetic challenges. Work through each problem step by step, clearly showing your calculations and thought process along the way. Once you have arrived at a definitive numerical answer, call the submit_answer tool to deliver your result. Do not submit an answer until your reasoning is complete and you are confident in the solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14009 x 12925) - (13335 x 95137)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+**Step 1: Calculate 14009 × 12925**
+
+14009 × 12925:
+- 14000 × 12925 = 180,950,000
+- 9 × 12925 = 116,325
+- Total = 180,950,000 + 116,325 = **181,066,325**
+
+---
+
+**Step 2: Calculate 13335 × 95137**
+
+13335 × 95137:
+- 13000 × 95137 = 1,236,781,000
+- 300 × 95137 = 28,541,100
+- 35 × 95137 = 3,329,795
+- Total = 1,236,781,000 + 28,541,100 + 3,329,795 = **1,268,651,895**
+
+---
+
+**Step 3: Subtract**
+
+181,066,325 − 1,268,651,895 = **−1,087,585,570**
+
+[TOOL submit_answer] {'value': -1087585570}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,087,585,570**.
+

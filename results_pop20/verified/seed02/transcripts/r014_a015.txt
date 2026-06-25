@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57743 x 87789) - (56371 x 57433)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 57743 × 87789**
+
+57743 × 87789:
+- 57743 × 80000 = 4,619,440,000
+- 57743 × 7000 = 404,201,000
+- 57743 × 700 = 40,420,100
+- 57743 × 80 = 4,619,440
+- 57743 × 9 = 519,687
+
+Sum: 4,619,440,000 + 404,201,000 + 40,420,100 + 4,619,440 + 519,687 = **5,069,200,227**
+
+**Step 2: Calculate 56371 × 57433**
+
+56371 × 57433:
+- 56371 × 50000 = 2,818,550,000
+- 56371 × 7000 = 394,597,000
+- 56371 × 400 = 22,548,400
+- 56371 × 30 = 1,691,130
+- 56371 × 3 = 169,113
+
+Sum: 2,818,550,000 + 394,597,000 + 22,548,400 + 1,691,130 + 169,113 = **3,237,555,643**
+
+**Step 3: Subtract**
+
+5,069,200,227 - 3,237,555,643 = **1,831,644,584**
+
+[TOOL submit_answer] {'value': 1831644584}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(57743 × 87789) - (56371 × 57433)** is **1,831,644,584**.
+

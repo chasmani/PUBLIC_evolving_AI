@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always verify your calculation before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (43814 x 98085) - (67168 x 92136)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (43814 x 98085) - (67168 x 92136).
+
+Let me compute each multiplication first:
+
+**Step 1: 43814 x 98085**
+43814 x 98085 = 4,297,792,290
+
+**Step 2: 67168 x 92136**
+67168 x 92136 = 6,189,495,648
+
+**Step 3: Subtract**
+4,297,792,290 - 6,189,495,648 = **-1,891,703,358**
+
+Let me verify:
+- 43814 × 98085: 43814 × 100000 = 4,381,400,000 → minus 43814 × 1915 = 83,903,210 → 4,381,400,000 - 83,903,210 = **4,297,496,790**
+- 67168 × 92136: 67168 × 90000 = 6,045,120,000 → plus 67168 × 2136 = 143,470,848 → 6,045,120,000 + 143,470,848 = **6,188,590,848**
+- 4,297,496,790 - 6,188,590,848 = **-1,891,094,058**
+
+Let me redo more carefully:
+
+**43814 × 98085:**
+- 43814 × 98000 = 43814 × 98 × 1000 = 4,293,772 × 1000 = 4,293,772,000
+- 43814 × 85 = 3,724,190
+- Total = 4,293,772,000 + 3,724,190 = **4,297,496,190**
+
+**67168 × 92136:**
+- 67168 × 92000 = 67168 × 92 × 1000 = 6,179,456 × 1000 = 6,179,456,000
+- 67168 × 136 = 9,134,848
+- Total = 6,179,456,000 + 9,134,848 = **6,188,590,848**
+
+**Subtraction:**
+4,297,496,190 - 6,188,590,848 = **-1,891,094,658**
+
+[TOOL submit_answer] {'value': -1891094658}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(43814 × 98085) - (67168 × 92136)** is **-1,891,094,658**.
+
+Here's the breakdown:
+- **43814 × 98085 = 4,297,496,190**
+- **67168 × 92136 = 6,188,590,848**
+- **4,297,496,190 − 6,188,590,848 = -1,891,094,658**
+

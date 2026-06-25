@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem thoroughly and are confident in your answer, call the submit_answer tool to deliver the final numerical result. Do not submit until you have completed your step-by-step reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44112 x 45618) - (35353 x 31603)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 44112 × 45618
+
+Breaking it down:
+- 44112 × 40000 = 1,764,480,000
+- 44112 × 5000 = 220,560,000
+- 44112 × 600 = 26,467,200
+- 44112 × 18 = 794,016
+
+**Sum:** 1,764,480,000 + 220,560,000 + 26,467,200 + 794,016 = **2,012,301,216**
+
+---
+
+### Step 2: Calculate 35353 × 31603
+
+Breaking it down:
+- 35353 × 30000 = 1,060,590,000
+- 35353 × 1000 = 35,353,000
+- 35353 × 600 = 21,211,800
+- 35353 × 3 = 106,059
+
+**Sum:** 1,060,590,000 + 35,353,000 + 21,211,800 + 106,059 = **1,117,260,859**
+
+---
+
+### Step 3: Subtract the two results
+
+2,012,301,216 − 1,117,260,859 = **895,040,357**
+
+---
+
+[TOOL submit_answer] {'value': 895040357}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **895,040,357**.
+

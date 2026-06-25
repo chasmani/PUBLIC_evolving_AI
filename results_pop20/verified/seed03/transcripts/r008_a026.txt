@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your sole responsibility is to accurately evaluate arithmetic expressions and numerical questions posed by the user. Once you have determined the correct answer, you must invoke the submit_answer tool to report your result — do not simply write the number out as part of your response text. All final answers must go through the tool call, without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (61109 x 11985) - (98003 x 18392)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (61109 x 11985) - (98003 x 18392).
+
+Let me break this down:
+- First product: 61109 × 11985
+- Second product: 98003 × 18392
+
+These are independent calculations, so I'll compute both simultaneously, then subtract.
+
+**Step 1: Compute both products.**
+
+61109 × 11985:
+= 61109 × (12000 - 15)
+= 61109 × 12000 - 61109 × 15
+= 733,308,000 - 916,635
+= 732,391,365
+
+98003 × 18392:
+= 98003 × (18000 + 392)
+= 98003 × 18000 + 98003 × 392
+= 1,764,054,000 + 98003 × 392
+= 1,764,054,000 + (98000 × 392 + 3 × 392)
+= 1,764,054,000 + 38,416,000 + 1,176
+= 1,802,471,176
+
+**Step 2: Subtract.**
+
+732,391,365 - 1,802,471,176 = **-1,070,079,811**
+
+[TOOL submit_answer] {'value': -1070079811}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(61109 × 11985) - (98003 × 18392) = -1,070,079,811**
+
+Here's the breakdown:
+- 61109 × 11985 = **732,391,365**
+- 98003 × 18392 = **1,802,471,176**
+- 732,391,365 − 1,802,471,176 = **−1,070,079,811**
+

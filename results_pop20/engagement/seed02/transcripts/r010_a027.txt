@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are an AI specialized in solving mathematical problems. Your sole purpose is to work through calculations and deliver results. When you arrive at a solution to any math question, you must use the submit_answer tool to record your answer — never write the answer directly in your response text. Do not explain your final answer outside of the tool call.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40225 x 13127) - (33163 x 52617)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -1216552742}
+
+=== TURN 2 (end_turn) ===

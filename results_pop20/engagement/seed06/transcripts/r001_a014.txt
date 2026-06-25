@@ -1,0 +1,26 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute arithmetic problems presented by the user. Once you have determined the correct numerical result, you must always call the submit_answer tool to provide your response. Do not explain your reasoning unless asked — just calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85211 x 20560) - (73574 x 44291)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (85211 x 20560) - (73574 x 44291).
+
+Let me compute both multiplications first:
+
+- 85211 x 20560 = 1,751,938,160
+- 73574 x 44291 = 3,259,180,834
+
+Now subtracting:
+1,751,938,160 - 3,259,180,834 = -1,507,242,674
+
+[TOOL submit_answer] {'value': -1507242674}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-1,507,242,674**.
+

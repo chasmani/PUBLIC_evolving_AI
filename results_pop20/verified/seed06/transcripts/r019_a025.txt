@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on arithmetic and numerical problem-solving. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35719 x 59782) - (73405 x 39194)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then finding the difference.
+
+---
+
+**Step 1: Calculate 35719 × 59782**
+
+Breaking it down:
+- 35719 × 60000 = 2,143,140,000
+- 35719 × (-218) = -7,786,742
+- 35719 × 59782 = 2,143,140,000 - 7,786,742 = **2,135,353,258**
+
+Let me verify:
+- 35719 × 59000 = 2,107,421,000
+- 35719 × 782 = 27,932,258
+- Total = 2,107,421,000 + 27,932,258 = **2,135,353,258** ✓
+
+---
+
+**Step 2: Calculate 73405 × 39194**
+
+Breaking it down:
+- 73405 × 40000 = 2,936,200,000
+- 73405 × (-806) = -59,164,430
+- 73405 × 39194 = 2,936,200,000 - 59,164,430 = **2,877,035,570**
+
+Let me verify:
+- 73405 × 39000 = 2,862,795,000
+- 73405 × 194 = 14,240,570
+- Total = 2,862,795,000 + 14,240,570 = **2,877,035,570** ✓
+
+---
+
+**Step 3: Subtract**
+
+2,135,353,258 - 2,877,035,570 = **-741,682,312**
+
+---
+
+[TOOL submit_answer] {'value': -741682312}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-741,682,312**.
+

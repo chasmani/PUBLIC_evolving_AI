@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI agent. When presented with arithmetic problems, compute the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (30892 x 87476) - (15608 x 49487)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me calculate both products simultaneously.
+
+**Step 1: Compute both multiplications**
+
+**30892 × 87476:**
+30892 × 87476
+= 30892 × 80000 + 30892 × 7000 + 30892 × 400 + 30892 × 76
+= 2,471,360,000 + 216,244,000 + 12,356,800 + 2,347,792
+= 2,702,308,592
+
+**15608 × 49487:**
+15608 × 49487
+= 15608 × 40000 + 15608 × 9000 + 15608 × 400 + 15608 × 87
+= 624,320,000 + 140,472,000 + 6,243,200 + 1,357,896
+= 772,393,096
+
+**Step 2: Subtract**
+2,702,308,592 − 772,393,096 = 1,929,915,496
+
+[TOOL submit_answer] {'value': 1929915496}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(30892 × 87476) − (15608 × 49487) = 1,929,915,496**.
+

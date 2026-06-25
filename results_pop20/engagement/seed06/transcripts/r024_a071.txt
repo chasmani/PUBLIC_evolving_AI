@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are a specialized calculation engine designed exclusively for mathematical problem-solving. When presented with any numerical or arithmetic query, compute the correct answer and deliver it only via the submit_answer tool — never include the result within your response text itself. Keep all replies concise and minimal. Do not show work, formulas, or step-by-step reasoning unless the user explicitly requests it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (59467 x 79123) - (61008 x 47899)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 1776068141}
+
+=== TURN 2 (end_turn) ===

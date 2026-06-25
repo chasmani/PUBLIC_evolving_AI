@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36614 x 53282) - (11081 x 20944)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 36614 × 53282
+
+Breaking it down:
+- 36614 × 50000 = 1,830,700,000
+- 36614 × 3000 = 109,842,000
+- 36614 × 200 = 7,322,800
+- 36614 × 80 = 2,929,120
+- 36614 × 2 = 73,228
+
+**Sum:**
+1,830,700,000 + 109,842,000 = 1,940,542,000
+1,940,542,000 + 7,322,800 = 1,947,864,800
+1,947,864,800 + 2,929,120 = 1,950,793,920
+1,950,793,920 + 73,228 = **1,950,867,148**
+
+---
+
+### Step 2: Calculate 11081 × 20944
+
+Breaking it down:
+- 11081 × 20000 = 221,620,000
+- 11081 × 900 = 9,972,900
+- 11081 × 40 = 443,240
+- 11081 × 4 = 44,324
+
+**Sum:**
+221,620,000 + 9,972,900 = 231,592,900
+231,592,900 + 443,240 = 232,036,140
+232,036,140 + 44,324 = **232,080,464**
+
+---
+
+### Step 3: Subtract the two results
+
+1,950,867,148 − 232,080,464 = **1,718,786,684**
+
+[TOOL submit_answer] {'value': 1718786684}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,718,786,684**.
+

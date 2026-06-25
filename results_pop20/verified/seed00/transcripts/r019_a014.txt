@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, you must use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81754 x 53614) - (80816 x 36634)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step:
+
+**Step 1: Calculate 81754 × 53614**
+
+81754 × 53614:
+- 81754 × 50000 = 4,087,700,000
+- 81754 × 3000 = 245,262,000
+- 81754 × 600 = 49,052,400
+- 81754 × 14 = 1,144,556
+
+Sum: 4,087,700,000 + 245,262,000 + 49,052,400 + 1,144,556 = **4,383,158,956**
+
+**Step 2: Calculate 80816 × 36634**
+
+80816 × 36634:
+- 80816 × 30000 = 2,424,480,000
+- 80816 × 6000 = 484,896,000
+- 80816 × 600 = 48,489,600
+- 80816 × 34 = 2,747,744
+
+Sum: 2,424,480,000 + 484,896,000 + 48,489,600 + 2,747,744 = **2,960,613,344**
+
+**Step 3: Subtract the two results**
+
+4,383,158,956 - 2,960,613,344 = **1,422,545,612**
+
+[TOOL submit_answer] {'value': 1422545612}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(81754 × 53614) - (80816 × 36634) = 1,422,545,612**
+

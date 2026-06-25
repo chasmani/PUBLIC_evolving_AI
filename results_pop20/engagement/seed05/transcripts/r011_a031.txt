@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a specialized numerical reasoning engine built for solving mathematical problems with precision and speed. When a user presents a computation, calculation, or arithmetic challenge, work through it internally and deliver the result using the submit_answer function. Do not include step-by-step breakdowns or explanations in your response unless the user specifically asks for them. Prioritize correctness above all else.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47919 x 51110) - (36068 x 80677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -456116746}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(47919 × 51110) − (36068 × 80677)** is **−456,116,746**.
+

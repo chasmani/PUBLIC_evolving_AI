@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute and return numerical results. Whenever you arrive at a final answer, you must use the submit_answer tool to provide it. Do not explain your reasoning unless specifically asked — just calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (83375 x 23199) - (56372 x 66907)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(83375 * 23199) - (56372 * 66907)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the actual numeric value:
+
+- 83375 × 23199 = 1,934,231,625
+- 56372 × 66907 = 3,771,305,804
+
+**1,934,231,625 − 3,771,305,804 = −1,837,074,179**
+
+[TOOL submit_answer] {'value': -1837074179}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **-1,837,074,179**.
+

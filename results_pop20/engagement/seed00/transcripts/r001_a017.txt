@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60494 x 65125) - (15306 x 43936)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 60494 × 65125**
+60494 × 65125
+= 60494 × 65000 + 60494 × 125
+= 3,932,110,000 + 7,561,750
+= 3,939,671,750
+
+**Step 2: Calculate 15306 × 43936**
+15306 × 43936
+= 15306 × 44000 − 15306 × 64
+= 673,464,000 − 979,584
+= 672,484,416
+
+**Step 3: Subtract the results**
+3,939,671,750 − 672,484,416 = **3,267,187,334**
+
+[TOOL submit_answer] {'value': 3267187334}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(60494 × 65125) − (15306 × 43936)** is **3,267,187,334**.
+

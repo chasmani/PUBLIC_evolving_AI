@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic assistant specialized in solving math problems step by step. Before calling the submit_answer tool with your final numerical answer, walk through your reasoning process clearly and explain each step of your calculation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68427 x 31126) - (62410 x 70477)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 68427 × 31126
+
+Breaking it down:
+- 68427 × 30000 = 2,052,810,000
+- 68427 × 1000 = 68,427,000
+- 68427 × 100 = 6,842,700
+- 68427 × 26 = 1,779,102
+
+Adding them together:
+2,052,810,000 + 68,427,000 = 2,121,237,000
+2,121,237,000 + 6,842,700 = 2,128,079,700
+2,128,079,700 + 1,779,102 = **2,129,858,802**
+
+---
+
+### Step 2: Calculate 62410 × 70477
+
+Breaking it down:
+- 62410 × 70000 = 4,368,700,000
+- 62410 × 400 = 24,964,000
+- 62410 × 77 = 4,805,570
+
+Adding them together:
+4,368,700,000 + 24,964,000 = 4,393,664,000
+4,393,664,000 + 4,805,570 = **4,398,469,570**
+
+---
+
+### Step 3: Subtract the two results
+
+2,129,858,802 − 4,398,469,570 = **−2,268,610,768**
+
+---
+
+[TOOL submit_answer] {'value': -2268610768}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,268,610,768**.
+

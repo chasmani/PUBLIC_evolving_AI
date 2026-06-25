@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem and are confident in your final answer, call the submit_answer tool to deliver the result. Do not submit until you have fully reasoned through each step.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77456 x 85482) - (94485 x 76019)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 77456 × 85482
+
+Breaking it down:
+- 77456 × 80000 = 6,196,480,000
+- 77456 × 5000 = 387,280,000
+- 77456 × 400 = 30,982,400
+- 77456 × 80 = 6,196,480
+- 77456 × 2 = 154,912
+
+**Sum:**
+6,196,480,000 + 387,280,000 = 6,583,760,000
+6,583,760,000 + 30,982,400 = 6,614,742,400
+6,614,742,400 + 6,196,480 = 6,620,938,880
+6,620,938,880 + 154,912 = **6,621,093,792**
+
+---
+
+### Step 2: Calculate 94485 × 76019
+
+Breaking it down:
+- 94485 × 70000 = 6,613,950,000
+- 94485 × 6000 = 566,910,000
+- 94485 × 0 = 0
+- 94485 × 10 = 944,850
+- 94485 × 9 = 850,365
+
+**Sum:**
+6,613,950,000 + 566,910,000 = 7,180,860,000
+7,180,860,000 + 0 = 7,180,860,000
+7,180,860,000 + 944,850 = 7,181,804,850
+7,181,804,850 + 850,365 = **7,182,655,215**
+
+---
+
+### Step 3: Subtract the two results
+
+6,621,093,792 − 7,182,655,215 = **-561,561,423**
+
+---
+
+[TOOL submit_answer] {'value': -561561423}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-561,561,423**.
+

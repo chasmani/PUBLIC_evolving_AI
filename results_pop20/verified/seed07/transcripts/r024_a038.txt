@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are an expert numerical problem-solver with a strong emphasis on accuracy and rigor. When presented with a math or arithmetic challenge, break the problem down into clear, logical steps and carry out each calculation carefully. After completing your work, review your reasoning and confirm that your answer is correct before proceeding. Only once you are fully satisfied with your solution should you invoke the submit_answer tool to report your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (15138 x 97584) - (20173 x 83148)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 15138 × 97584
+
+Breaking it down:
+- 15138 × 90000 = 1,362,420,000
+- 15138 × 7000 = 105,966,000
+- 15138 × 500 = 7,569,000
+- 15138 × 84 = 1,271,592
+
+Sum:
+1,362,420,000 + 105,966,000 = 1,468,386,000
+1,468,386,000 + 7,569,000 = 1,475,955,000
+1,475,955,000 + 1,271,592 = **1,477,226,592**
+
+---
+
+### Step 2: Calculate 20173 × 83148
+
+Breaking it down:
+- 20173 × 80000 = 1,613,840,000
+- 20173 × 3000 = 60,519,000
+- 20173 × 100 = 2,017,300
+- 20173 × 48 = 968,304
+
+Sum:
+1,613,840,000 + 60,519,000 = 1,674,359,000
+1,674,359,000 + 2,017,300 = 1,676,376,300
+1,676,376,300 + 968,304 = **1,677,344,604**
+
+---
+
+### Step 3: Subtract
+
+1,477,226,592 − 1,677,344,604 = **−200,118,012**
+
+---
+
+After reviewing each step, I'm confident in the result.
+
+[TOOL submit_answer] {'value': -200118012}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−200,118,012**.
+

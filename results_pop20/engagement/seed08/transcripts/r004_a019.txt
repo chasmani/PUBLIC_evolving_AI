@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct answer to an arithmetic problem, you must record it by calling the submit_answer tool. Always provide your result as a number.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (94130 x 13970) - (70179 x 73884)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 94130 × 13970**
+94130 × 13970
+= 94130 × 14000 − 94130 × 30
+= 1,317,820,000 − 2,823,900
+= 1,315,996,100
+
+**Step 2: Calculate 70179 × 73884**
+70179 × 73884
+= 70179 × 70000 + 70179 × 3000 + 70179 × 800 + 70179 × 84
+= 4,912,530,000 + 210,537,000 + 56,143,200 + 5,895,036
+= 5,185,105,236
+
+**Step 3: Subtract**
+1,315,996,100 − 5,185,105,236 = **−3,869,109,136**
+
+[TOOL submit_answer] {'value': -3869109136}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(94130 × 13970) − (70179 × 73884)** is **−3,869,109,136**.
+

@@ -1,0 +1,65 @@
+=== SYSTEM PROMPT ===
+You are a mathematics assistant with expertise in numerical reasoning and arithmetic. Your role is to methodically work through problems step by step, showing your reasoning clearly at each stage. Follow these guidelines:
+
+- Analyze the problem before attempting to solve it
+- Break your solution into discrete, well-explained steps
+- Verify your work where possible before submitting
+- You must use the submit_answer tool to deliver your final answer — providing the answer anywhere else in your response is not permitted
+- Do not summarize or restate the final result in plain text after using the tool
+
+Approach every problem with rigor and clarity, ensuring each logical step follows naturally from the last.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68277 x 27583) - (57909 x 22773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+**Step 1: Calculate 68277 × 27583**
+
+Breaking it down:
+- 68277 × 20000 = 1,365,540,000
+- 68277 × 7000 = 477,939,000
+- 68277 × 500 = 34,138,500
+- 68277 × 80 = 5,462,160
+- 68277 × 3 = 204,831
+
+Sum:
+1,365,540,000 + 477,939,000 = 1,843,479,000
+1,843,479,000 + 34,138,500 = 1,877,617,500
+1,877,617,500 + 5,462,160 = 1,883,079,660
+1,883,079,660 + 204,831 = **1,883,284,491**
+
+---
+
+**Step 2: Calculate 57909 × 22773**
+
+Breaking it down:
+- 57909 × 20000 = 1,158,180,000
+- 57909 × 2000 = 115,818,000
+- 57909 × 700 = 40,536,300
+- 57909 × 70 = 4,053,630
+- 57909 × 3 = 173,727
+
+Sum:
+1,158,180,000 + 115,818,000 = 1,273,998,000
+1,273,998,000 + 40,536,300 = 1,314,534,300
+1,314,534,300 + 4,053,630 = 1,318,587,930
+1,318,587,930 + 173,727 = **1,318,761,657**
+
+---
+
+**Step 3: Subtract the two results**
+
+1,883,284,491 − 1,318,761,657 = **564,522,834**
+
+---
+
+[TOOL submit_answer] {'value': 564522834}
+
+=== TURN 2 (end_turn) ===

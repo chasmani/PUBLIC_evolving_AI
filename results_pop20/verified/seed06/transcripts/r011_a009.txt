@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in performing arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22786 x 15987) - (87145 x 36328)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(22786 * 15987) - (87145 * 36328)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the correct numerical result step by step:
+
+**Step 1: 22,786 × 15,987**
+22,786 × 15,987 = **364,241,682**
+
+**Step 2: 87,145 × 36,328**
+87,145 × 36,328 = **3,166,617,160**
+
+**Step 3: Subtraction**
+364,241,682 − 3,166,617,160 = **−2,802,375,478**
+
+[TOOL submit_answer] {'value': -2802375478}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(22,786 × 15,987) − (87,145 × 36,328)** is:
+
+**−2,802,375,478**
+
+Here's the breakdown:
+- 22,786 × 15,987 = **364,241,682**
+- 87,145 × 36,328 = **3,166,617,160**
+- 364,241,682 − 3,166,617,160 = **−2,802,375,478**
+

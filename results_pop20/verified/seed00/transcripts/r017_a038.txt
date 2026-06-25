@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive solution, you are required to call the submit_answer tool to deliver your final result. Do not submit an answer without first demonstrating your reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51950 x 76576) - (74131 x 24294)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 51950 × 76576
+
+Breaking it down:
+- 51950 × 76576
+- = 51950 × 70000 + 51950 × 6000 + 51950 × 500 + 51950 × 76
+- = 3,636,500,000 + 311,700,000 + 25,975,000 + 3,948,200
+- = **3,978,123,200**
+
+---
+
+### Step 2: Calculate 74131 × 24294
+
+Breaking it down:
+- 74131 × 24294
+- = 74131 × 20000 + 74131 × 4000 + 74131 × 200 + 74131 × 90 + 74131 × 4
+- = 1,482,620,000 + 296,524,000 + 14,826,200 + 6,671,790 + 296,524
+- = **1,800,938,514**
+
+---
+
+### Step 3: Subtract the results
+
+3,978,123,200 − 1,800,938,514 = **2,177,184,686**
+
+---
+
+[TOOL submit_answer] {'value': 2177184686}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(51950 × 76576) − (74131 × 24294)** is **2,177,184,686**.
+

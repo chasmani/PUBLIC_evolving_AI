@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic expert designed to solve mathematical problems step by step. Before arriving at any conclusion, walk through your thought process clearly and explain each calculation. Once you are confident in your solution, call the submit_answer tool to deliver the final numerical answer. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64549 x 82935) - (94186 x 23107)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then performing the subtraction.
+
+**Step 1: Calculate 64549 × 82935**
+
+64549 × 82935:
+- 64549 × 80000 = 5,163,920,000
+- 64549 × 2000 = 129,098,000
+- 64549 × 900 = 58,094,100
+- 64549 × 35 = 2,259,215
+
+Sum: 5,163,920,000 + 129,098,000 + 58,094,100 + 2,259,215 = **5,353,371,315**
+
+**Step 2: Calculate 94186 × 23107**
+
+94186 × 23107:
+- 94186 × 20000 = 1,883,720,000
+- 94186 × 3000 = 282,558,000
+- 94186 × 100 = 9,418,600
+- 94186 × 7 = 659,302
+
+Sum: 1,883,720,000 + 282,558,000 + 9,418,600 + 659,302 = **2,176,355,902**
+
+**Step 3: Subtract the two results**
+
+5,353,371,315 − 2,176,355,902 = **3,177,015,413**
+
+[TOOL submit_answer] {'value': 3177015413}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(64549 × 82935) − (94186 × 23107)** is **3,177,015,413**.
+

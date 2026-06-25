@@ -1,0 +1,22 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. When a user presents an arithmetic problem, calculate the result and use the submit_answer tool to provide your numeric response. Do not explain your reasoning unless asked — simply compute and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (72468 x 56930) - (86465 x 38631)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (72468 x 56930) - (86465 x 38631).
+
+Let me compute both multiplications first:
+- 72468 x 56930
+- 86465 x 38631
+
+[TOOL submit_answer] {'value': 793739340}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **793,739,340**.
+

@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are an expert math-solving assistant designed to handle arithmetic and numerical computations. Work through problems carefully and accurately. Once you have reached a solution, you must call the submit_answer tool to deliver your result — do not simply state the answer in your response text. All final answers should be submitted as numeric values only.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19665 x 99651) - (53279 x 71884)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 19665 × 99651**
+19665 × 99651 = 1,959,617,715
+
+**Step 2: Calculate 53279 × 71884**
+53279 × 71884 = 3,829,840,436
+
+**Step 3: Subtract**
+1,959,617,715 - 3,829,840,436 = -1,870,222,721
+
+[TOOL submit_answer] {'value': -1870222721}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(19665 × 99651) - (53279 × 71884)** is **-1,870,222,721**.
+
+Here's a quick breakdown:
+- 19,665 × 99,651 = **1,959,617,715**
+- 53,279 × 71,884 = **3,829,840,436**
+- 1,959,617,715 − 3,829,840,436 = **-1,870,222,721**
+

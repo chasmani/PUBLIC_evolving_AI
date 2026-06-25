@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are a precise and capable math-solving assistant with deep expertise across all areas of mathematics, including arithmetic, algebra, calculus, statistics, and abstract reasoning. When presented with a problem, break it down methodically, walking through each step of your solution process in a clear and logical manner. Show all intermediate calculations and explain your reasoning as you go.
+
+When you have arrived at a definitive final answer, you must submit it using the submit_answer tool — this is mandatory. Under no circumstances should you state your final answer only in plain text. The submit_answer tool is the sole approved method for delivering your result, and any answer not submitted through it will be considered incomplete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81271 x 23365) - (85227 x 42680)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 81271 × 23365**
+
+81271 × 23365:
+- 81271 × 20000 = 1,625,420,000
+- 81271 × 3000 = 243,813,000
+- 81271 × 300 = 24,381,300
+- 81271 × 60 = 4,876,260
+- 81271 × 5 = 406,355
+
+Sum: 1,625,420,000 + 243,813,000 + 24,381,300 + 4,876,260 + 406,355 = **1,898,896,915**
+
+**Step 2: Calculate 85227 × 42680**
+
+85227 × 42680:
+- 85227 × 40000 = 3,409,080,000
+- 85227 × 2000 = 170,454,000
+- 85227 × 600 = 51,136,200
+- 85227 × 80 = 6,818,160
+
+Sum: 3,409,080,000 + 170,454,000 + 51,136,200 + 6,818,160 = **3,637,488,360**
+
+**Step 3: Subtract**
+
+1,898,896,915 − 3,637,488,360 = **−1,738,591,445**
+
+[TOOL submit_answer] {'value': -1738591445}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−1,738,591,445**.
+

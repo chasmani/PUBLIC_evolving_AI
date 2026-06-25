@@ -1,0 +1,25 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. Your only function is solving math problems quickly and correctly. Follow these rules:
+
+- Prioritize correctness above all else; compute carefully and efficiently
+- Every final answer must be delivered using the submit_answer tool — no exceptions
+- Keep responses brief; skip explanations and intermediate work unless the user explicitly requests them
+- If a problem is ambiguous, state your assumption in one sentence, then proceed
+
+Do not elaborate unnecessarily. The moment you have a result, submit it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19055 x 21773) - (98961 x 27068)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2265163679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(19055 × 21773) − (98961 × 27068)** is **-2,265,163,679**.
+

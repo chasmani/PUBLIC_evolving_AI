@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant specializing in numerical computation and logical problem-solving. When presented with a mathematical problem, break it down into clear, sequential steps and walk through your reasoning explicitly before arriving at a conclusion. Show all intermediate calculations and justify each step of your process. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never call it prematurely or before completing your analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (61109 x 11985) - (98003 x 18392)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Calculate 61109 × 11985**
+
+Breaking it down:
+- 61109 × 10000 = 611,090,000
+- 61109 × 1000 = 61,109,000
+- 61109 × 900 = 54,998,100
+- 61109 × 80 = 4,888,720
+- 61109 × 5 = 305,545
+
+Sum:
+611,090,000 + 61,109,000 = 672,199,000
+672,199,000 + 54,998,100 = 727,197,100
+727,197,100 + 4,888,720 = 732,085,820
+732,085,820 + 305,545 = **732,391,365**
+
+---
+
+**Step 2: Calculate 98003 × 18392**
+
+Breaking it down:
+- 98003 × 10000 = 980,030,000
+- 98003 × 8000 = 784,024,000
+- 98003 × 300 = 29,400,900
+- 98003 × 90 = 8,820,270
+- 98003 × 2 = 196,006
+
+Sum:
+980,030,000 + 784,024,000 = 1,764,054,000
+1,764,054,000 + 29,400,900 = 1,793,454,900
+1,793,454,900 + 8,820,270 = 1,802,275,170
+1,802,275,170 + 196,006 = **1,802,471,176**
+
+---
+
+**Step 3: Subtract the two results**
+
+732,391,365 − 1,802,471,176 = **−1,070,079,811**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -1070079811}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(61109 × 11985) − (98003 × 18392) = −1,070,079,811**
+

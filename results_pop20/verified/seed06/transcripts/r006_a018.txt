@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI agent. When given arithmetic problems or numerical questions, compute the result and provide it using the submit_answer function. Always use the tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22348 x 35294) - (83848 x 82563)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break it down:
+
+1. **22348 × 35294**
+22348 × 35294 = 22348 × 35000 + 22348 × 294
+= 782,180,000 + 6,570,312
+= 788,750,312
+
+2. **83848 × 82563**
+83848 × 82563 = 83848 × 80000 + 83848 × 2563
+= 6,707,840,000 + 214,892,824
+= 6,922,732,824
+
+3. **788,750,312 - 6,922,732,824 = -6,133,982,512**
+
+[TOOL submit_answer] {'value': -6133982512}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(22348 × 35294) - (83848 × 82563) = **-6,133,982,512**
+
+Here's the breakdown:
+- 22348 × 35294 = **788,750,312**
+- 83848 × 82563 = **6,922,732,824**
+- 788,750,312 − 6,922,732,824 = **−6,133,982,512**
+

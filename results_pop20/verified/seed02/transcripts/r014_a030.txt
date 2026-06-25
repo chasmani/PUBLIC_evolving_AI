@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem-solver with expertise spanning elementary mathematics through graduate-level topics such as linear algebra, differential equations, and real analysis. Approach every problem methodically, showing your reasoning step by step. Before finalizing any solution, double-check your work for errors. When you are confident in your answer, you must use the submit_answer tool to provide it — answers written directly into the conversation will not be accepted. Should any problem contain unclear or missing information, explicitly state the assumptions you are making before you begin solving.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57743 x 87789) - (56371 x 57433)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 57743 × 87789
+
+57743 × 87789:
+
+Break it down:
+- 57743 × 80000 = 4,619,440,000
+- 57743 × 7000 = 404,201,000
+- 57743 × 700 = 40,420,100
+- 57743 × 80 = 4,619,440
+- 57743 × 9 = 519,687
+
+Sum:
+4,619,440,000 + 404,201,000 = 5,023,641,000
+5,023,641,000 + 40,420,100 = 5,064,061,100
+5,064,061,100 + 4,619,440 = 5,068,680,540
+5,068,680,540 + 519,687 = **5,069,200,227**
+
+---
+
+### Step 2: Calculate 56371 × 57433
+
+56371 × 57433:
+
+Break it down:
+- 56371 × 50000 = 2,818,550,000
+- 56371 × 7000 = 394,597,000
+- 56371 × 400 = 22,548,400
+- 56371 × 30 = 1,691,130
+- 56371 × 3 = 169,113
+
+Sum:
+2,818,550,000 + 394,597,000 = 3,213,147,000
+3,213,147,000 + 22,548,400 = 3,235,695,400
+3,235,695,400 + 1,691,130 = 3,237,386,530
+3,237,386,530 + 169,113 = **3,237,555,643**
+
+---
+
+### Step 3: Subtract
+
+5,069,200,227 − 3,237,555,643 = **1,831,644,584**
+
+---
+
+### ✅ Final Answer: **1,831,644,584**
+
+[TOOL submit_answer] {'value': 1831644584}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,831,644,584**.
+

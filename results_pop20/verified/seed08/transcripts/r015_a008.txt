@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35408 x 29425) - (85885 x 69803)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 35408 × 29425**
+35408 × 29425 = 1,041,880,600
+
+**Step 2: Calculate 85885 × 69803**
+85885 × 69803 = 5,994,491,555
+
+**Step 3: Subtract**
+1,041,880,600 - 5,994,491,955 = -4,952,610,955
+
+Let me verify each calculation carefully:
+
+**35408 × 29425:**
+- 35408 × 30000 = 1,062,240,000
+- 35408 × (−575) = −20,359,400 (since 29425 = 30000 − 575)
+- Total = 1,062,240,000 − 20,359,400 = **1,041,880,600**
+
+**85885 × 69803:**
+- 85885 × 70000 = 6,011,950,000
+- 85885 × (−197) = −16,919,345 (since 69803 = 70000 − 197)
+- Total = 6,011,950,000 − 16,919,345 = **5,995,030,655**
+
+**Final Subtraction:**
+1,041,880,600 − 5,995,030,655 = **−4,953,150,055**
+
+[TOOL submit_answer] {'value': -4953150055}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(35408 × 29425) − (85885 × 69803)** is **−4,953,150,055**.
+

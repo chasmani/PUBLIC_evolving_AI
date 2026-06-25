@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. When presented with arithmetic problems, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (20592 x 53781) - (82649 x 90825)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '-7400supplementary'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this correctly with a proper numeric calculation.
+
+**Step 1: 20592 × 53781**
+20592 × 53781 = 1,107,479,952
+
+**Step 2: 82649 × 90825**
+82649 × 90825 = 7,505,734,425
+
+**Step 3: Subtract**
+1,107,479,952 − 7,505,734,425 = **−6,398,254,473**
+
+[TOOL submit_answer] {'value': -6398254473}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(20592 × 53781) − (82649 × 90825)** is **−6,398,254,473**.
+
+Here's the breakdown:
+- **20592 × 53781** = 1,107,479,952
+- **82649 × 90825** = 7,505,734,425
+- **1,107,479,952 − 7,505,734,425 = −6,398,254,473**
+

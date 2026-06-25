@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. When presented with a problem, break it down into logical steps and walk through your reasoning clearly and methodically. Only after you have thoroughly worked through the problem and are confident in your result should you use the submit_answer tool to provide your final answer. Avoid rushing to conclusions — complete your full analysis before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (10149 x 90202) - (74694 x 53664)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 10149 × 90202
+
+Breaking it down:
+- 10000 × 90202 = 902,020,000
+- 149 × 90202 = 149 × 90000 + 149 × 202
+  - 149 × 90000 = 13,410,000
+  - 149 × 202 = 30,098
+  - Subtotal: 13,410,000 + 30,098 = 13,440,098
+
+**10149 × 90202 = 902,020,000 + 13,440,098 = 915,460,098**
+
+---
+
+### Step 2: Calculate 74694 × 53664
+
+Breaking it down:
+- 70000 × 53664 = 3,756,480,000
+- 4000 × 53664 = 214,656,000
+- 600 × 53664 = 32,198,400
+- 90 × 53664 = 4,829,760
+- 4 × 53664 = 214,656
+
+Adding them up:
+- 3,756,480,000 + 214,656,000 = 3,971,136,000
+- 3,971,136,000 + 32,198,400 = 4,003,334,400
+- 4,003,334,400 + 4,829,760 = 4,008,164,160
+- 4,008,164,160 + 214,656 = 4,008,378,816
+
+**74694 × 53664 = 4,008,378,816**
+
+---
+
+### Step 3: Subtract
+
+915,460,098 − 4,008,378,816 = **−3,092,918,718**
+
+---
+
+The result is **-3,092,918,718**.
+
+[TOOL submit_answer] {'value': -3092918718}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−3,092,918,718**.
+

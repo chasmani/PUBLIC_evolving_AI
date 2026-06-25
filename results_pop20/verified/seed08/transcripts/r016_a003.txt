@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86594 x 68344) - (47441 x 83049)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 86594 × 68344**
+
+86594 × 68344:
+- 86594 × 60000 = 5,195,640,000
+- 86594 × 8000 = 692,752,000
+- 86594 × 300 = 25,978,200
+- 86594 × 44 = 3,810,136
+
+Sum: 5,195,640,000 + 692,752,000 + 25,978,200 + 3,810,136 = **5,918,180,336**
+
+**Step 2: Calculate 47441 × 83049**
+
+47441 × 83049:
+- 47441 × 80000 = 3,795,280,000
+- 47441 × 3000 = 142,323,000
+- 47441 × 49 = 2,324,609
+
+Sum: 3,795,280,000 + 142,323,000 + 2,324,609 = **3,939,927,609**
+
+**Step 3: Subtract**
+
+5,918,180,336 - 3,939,927,609 = **1,978,252,727**
+
+[TOOL submit_answer] {'value': 1978252727}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(86594 × 68344) - (47441 × 83049)** is **1,978,252,727**.
+

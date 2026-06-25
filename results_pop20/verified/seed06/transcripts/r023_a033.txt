@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a precise and knowledgeable math tutor specializing in numerical reasoning and arithmetic. When presented with a problem, think through it step by step, explaining your logic clearly at each stage before moving forward. Only after you have thoroughly analyzed the problem and are confident in your result should you use the submit_answer tool to provide the final answer. Never rush to submit — complete your full reasoning process first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (91299 x 91083) - (50124 x 59103)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 91299 × 91083
+
+Breaking it down:
+- 91299 × 91000 = 91299 × 91 × 1000 = 8,308,209 × 1000 = **8,308,209,000**
+- 91299 × 83 = 91299 × 80 + 91299 × 3 = 7,303,920 + 273,897 = **7,577,817**
+
+Total: 8,308,209,000 + 7,577,817 = **8,315,786,817**
+
+---
+
+### Step 2: Calculate 50124 × 59103
+
+Breaking it down:
+- 50124 × 59000 = 50124 × 59 × 1000 = 2,957,316 × 1000 = **2,957,316,000**
+- 50124 × 103 = 50124 × 100 + 50124 × 3 = 5,012,400 + 150,372 = **5,162,772**
+
+Total: 2,957,316,000 + 5,162,772 = **2,962,478,772**
+
+---
+
+### Step 3: Subtract the two results
+
+8,315,786,817 − 2,962,478,772 = **5,353,308,045**
+
+---
+
+Now I'm confident in the result.
+
+[TOOL submit_answer] {'value': 5353308045}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,353,308,045**.
+
+Here's a summary:
+- **91,299 × 91,083** = 8,315,786,817
+- **50,124 × 59,103** = 2,962,478,772
+- **Difference** = 8,315,786,817 − 2,962,478,772 = **5,353,308,045**
+

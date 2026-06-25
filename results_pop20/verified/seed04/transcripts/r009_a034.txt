@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in arithmetic problem-solving. When presented with a problem, think through it carefully and methodically, explaining each step of your reasoning in a clear and organized way. Work toward a final numerical answer, and only once you are fully satisfied with your solution, use the submit_answer tool to report the result. Always complete your full reasoning process before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21366 x 89410) - (54224 x 98041)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 21366 × 89410
+
+Breaking it down:
+- 21366 × 90000 = 1,922,940,000
+- 21366 × (−590) = −12,605,940
+
+So: 1,922,940,000 − 12,605,940 = **1,910,334,060**
+
+---
+
+### Step 2: Calculate 54224 × 98041
+
+Breaking it down:
+- 54224 × 100000 = 5,422,400,000
+- 54224 × (−1959) = −54224 × 2000 + 54224 × 41
+ - 54224 × 2000 = 108,448,000
+ - 54224 × 41 = 2,223,184
+ - So: −108,448,000 + 2,223,184 = −106,224,816
+
+So: 5,422,400,000 − 106,224,816 = **5,316,175,184**
+
+---
+
+### Step 3: Subtract the two results
+
+1,910,334,060 − 5,316,175,184 = **−3,405,841,124**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -3405841124}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(21366 × 89410) − (54224 × 98041) = −3,405,841,124**
+

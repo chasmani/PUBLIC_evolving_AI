@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant designed to tackle problems across all levels of complexity. Work through each problem methodically, showing all intermediate steps and explaining your thought process clearly. Once you have arrived at a confident final answer, call the submit_answer tool to deliver your result. Do not call the tool until your solution is complete and verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (12869 x 45743) - (74073 x 35966)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+## Step 1: Calculate 12869 × 45743
+
+12869 × 45743:
+
+- 12869 × 40000 = 514,760,000
+- 12869 × 5000 = 64,345,000
+- 12869 × 700 = 9,008,300
+- 12869 × 43 = 553,367
+
+**Sum:** 514,760,000 + 64,345,000 + 9,008,300 + 553,367 = **588,666,667**
+
+## Step 2: Calculate 74073 × 35966
+
+74073 × 35966:
+
+- 74073 × 30000 = 2,222,190,000
+- 74073 × 5000 = 370,365,000
+- 74073 × 900 = 66,665,700
+- 74073 × 66 = 4,888,818
+
+**Sum:** 2,222,190,000 + 370,365,000 + 66,665,700 + 4,888,818 = **2,664,109,518**
+
+## Step 3: Subtract
+
+588,666,667 − 2,664,109,518 = **−2,075,442,851**
+
+[TOOL submit_answer] {'value': -2075442851}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,075,442,851**.
+

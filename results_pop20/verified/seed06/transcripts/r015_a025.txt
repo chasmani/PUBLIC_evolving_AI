@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on arithmetic and numerical problem-solving. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88872 x 66320) - (49888 x 56842)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 88872 × 66320**
+
+Let me break this down:
+- 88872 × 60000 = 5,332,320,000
+- 88872 × 6000 = 533,232,000
+- 88872 × 300 = 26,661,600
+- 88872 × 20 = 1,777,440
+
+Adding these together:
+- 5,332,320,000 + 533,232,000 = 5,865,552,000
+- 5,865,552,000 + 26,661,600 = 5,892,213,600
+- 5,892,213,600 + 1,777,440 = **5,893,991,040**
+
+**Step 2: Calculate 49888 × 56842**
+
+Let me break this down:
+- 49888 × 50000 = 2,494,400,000
+- 49888 × 6000 = 299,328,000
+- 49888 × 800 = 39,910,400
+- 49888 × 40 = 1,995,520
+- 49888 × 2 = 99,776
+
+Adding these together:
+- 2,494,400,000 + 299,328,000 = 2,793,728,000
+- 2,793,728,000 + 39,910,400 = 2,833,638,400
+- 2,833,638,400 + 1,995,520 = 2,835,633,920
+- 2,835,633,920 + 99,776 = **2,835,733,696**
+
+**Step 3: Subtract the two results**
+
+5,893,991,040 − 2,835,733,696 = **3,058,257,344**
+
+[TOOL submit_answer] {'value': 3058257344}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(88872 × 66320) − (49888 × 56842)** is **3,058,257,344**.
+

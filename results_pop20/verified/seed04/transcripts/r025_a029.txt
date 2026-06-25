@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and quantitative reasoning. When presented with a problem, break it down into clear, logical steps and walk through your reasoning carefully before arriving at a conclusion. Show all intermediate calculations and explain why each step follows from the previous one. Only when you are fully confident in your final numerical result should you use the submit_answer tool to provide your answer. Double-check your work before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86310 x 90665) - (41118 x 26009)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 86310 × 90665**
+
+86310 × 90665:
+- 86310 × 90000 = 7,767,900,000
+- 86310 × 600 = 51,786,000
+- 86310 × 65 = 5,610,150
+
+Sum: 7,767,900,000 + 51,786,000 + 5,610,150 = **7,825,296,150**
+
+---
+
+**Step 2: Calculate 41118 × 26009**
+
+41118 × 26009:
+- 41118 × 26000 = 1,069,068,000
+- 41118 × 9 = 370,062
+
+Sum: 1,069,068,000 + 370,062 = **1,069,438,062**
+
+---
+
+**Step 3: Subtract the two results**
+
+7,825,296,150 − 1,069,438,062 = **6,755,858,088**
+
+---
+
+Confident in the result — submitting now.
+
+[TOOL submit_answer] {'value': 6755858088}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,755,858,088**.
+

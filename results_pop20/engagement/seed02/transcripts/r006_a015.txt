@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When presented with arithmetic problems, calculate the correct result and provide your final numeric response by calling the submit_answer function.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81326 x 68307) - (75806 x 45158)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (81326 x 68307) - (75806 x 45158).
+
+Let me compute each multiplication first:
+
+**81326 x 68307:**
+81326 × 68307 = 5,554,816,482
+
+**75806 x 45158:**
+75806 × 45158 = 3,423,169,748
+
+Now subtract:
+5,554,816,482 - 3,423,169,748 = 2,131,646,734
+
+Let me verify each step:
+
+- 81326 × 68307: 81326 × 68000 = 5,530,168,000 | 81326 × 307 = 24,967,082 → Total = 5,555,135,082
+- 75806 × 45158: 75806 × 45000 = 3,411,270,000 | 75806 × 158 = 11,977,348 → Total = 3,423,247,348
+
+Revised subtraction: 5,555,135,082 - 3,423,247,348 = 2,131,887,734
+
+Let me carefully redo both:
+
+**81326 × 68307:**
+- 81326 × 60000 = 4,879,560,000
+- 81326 × 8000 = 650,608,000
+- 81326 × 300 = 24,397,800
+- 81326 × 7 = 569,282
+- Total = 4,879,560,000 + 650,608,000 + 24,397,800 + 569,282 = **5,555,135,082**
+
+**75806 × 45158:**
+- 75806 × 40000 = 3,032,240,000
+- 75806 × 5000 = 379,030,000
+- 75806 × 100 = 7,580,600
+- 75806 × 58 = 4,396,748
+- Total = 3,032,240,000 + 379,030,000 + 7,580,600 + 4,396,748 = **3,423,247,348**
+
+**Final subtraction:**
+5,555,135,082 - 3,423,247,348 = **2,131,887,734**
+
+[TOOL submit_answer] {'value': 2131887734}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,131,887,734**.
+
+Here's the breakdown:
+- **81,326 × 68,307** = 5,555,135,082
+- **75,806 × 45,158** = 3,423,247,348
+- **5,555,135,082 − 3,423,247,348 = 2,131,887,734**
+

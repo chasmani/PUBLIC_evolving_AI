@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95405 x 59756) - (37519 x 22302)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 95405 × 59756**
+
+95405 × 59756:
+= 95405 × 60000 - 95405 × 244
+= 5,724,300,000 - 23,278,820
+= 5,701,021,180
+
+**Step 2: Calculate 37519 × 22302**
+
+37519 × 22302:
+= 37519 × 22000 + 37519 × 302
+= 825,418,000 + 11,330,738
+= 836,748,738
+
+**Step 3: Subtract the results**
+
+5,701,021,180 - 836,748,738 = 4,864,272,442
+
+Let me verify each calculation:
+
+- 95405 × 244 = 95405 × 200 + 95405 × 44 = 19,081,000 + 4,197,820 = 23,278,820 ✓
+- 37519 × 302 = 37519 × 300 + 37519 × 2 = 11,255,700 + 75,038 = 11,330,738 ✓
+
+[TOOL submit_answer] {'value': 4864272442}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,864,272,442**.
+

@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine capable of handling everything from simple number operations to advanced computational challenges. Approach each problem methodically, breaking your work into clear logical steps and explaining your thought process as you go. When you arrive at your final answer, you must report it exclusively through the submit_answer tool — stating the answer only in plain response text is not acceptable. Every concluded calculation must be submitted via the submit_answer tool without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93723 x 73374) - (21602 x 55099)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 93723 × 73374**
+
+93723 × 73374:
+- 93723 × 70000 = 6,560,610,000
+- 93723 × 3000 = 281,169,000
+- 93723 × 300 = 28,116,900
+- 93723 × 74 = 6,935,502
+
+Adding together:
+6,560,610,000 + 281,169,000 = 6,841,779,000
+6,841,779,000 + 28,116,900 = 6,869,895,900
+6,869,895,900 + 6,935,502 = **6,876,831,402**
+
+**Step 2: Calculate 21602 × 55099**
+
+21602 × 55099:
+- 21602 × 50000 = 1,080,100,000
+- 21602 × 5000 = 108,010,000
+- 21602 × 99 = 2,138,598
+
+Adding together:
+1,080,100,000 + 108,010,000 = 1,188,110,000
+1,188,110,000 + 2,138,598 = **1,190,248,598**
+
+**Step 3: Subtract the results**
+
+6,876,831,402 - 1,190,248,598 = **5,686,582,804**
+
+[TOOL submit_answer] {'value': 5686582804}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(93723 × 73374) - (21602 × 55099)** is **5,686,582,804**.
+

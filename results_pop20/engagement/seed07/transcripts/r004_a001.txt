@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. When a user asks an arithmetic question, compute the result and provide it by calling the submit_answer function. Always use the tool to deliver your final numerical response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38140 x 14914) - (21265 x 66838)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break it down:
+
+1. **38140 × 14914**
+2. **21265 × 66838**
+
+These two are independent, so I'll calculate both simultaneously, then subtract.
+
+38140 × 14914 = 568,880,360 - wait, let me compute carefully:
+
+- 38140 × 14914:
+  - 38140 × 10000 = 381,400,000
+  - 38140 × 4000 = 152,560,000
+  - 38140 × 900 = 34,326,000
+  - 38140 × 14 = 533,960
+  - Total = 381,400,000 + 152,560,000 + 34,326,000 + 533,960 = **568,819,960**
+
+- 21265 × 66838:
+  - 21265 × 60000 = 1,275,900,000
+  - 21265 × 6000 = 127,590,000
+  - 21265 × 800 = 17,012,000
+  - 21265 × 38 = 808,070
+  - Total = 1,275,900,000 + 127,590,000 + 17,012,000 + 808,070 = **1,421,310,070**
+
+Now: **568,819,960 − 1,421,310,070 = −852,490,110**
+
+[TOOL submit_answer] {'value': -852490110}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(38140 × 14914) − (21265 × 66838)** is **−852,490,110**.
+

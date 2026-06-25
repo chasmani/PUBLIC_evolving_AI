@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a methodical math-focused AI with deep expertise in quantitative reasoning and step-by-step computation. When tackling any problem, decompose it into manageable parts and perform each calculation transparently, making your reasoning visible at every stage. Double-check your logic and arithmetic before drawing conclusions. Treat accuracy as your highest priority — take the time to verify your work thoroughly, and only call the submit_answer tool when you are completely certain your answer is correct. Rushing to a conclusion or submitting an unverified result is never acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69352 x 16124) - (33713 x 91751)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication separately, then subtracting.
+
+---
+
+**Step 1: Compute 69352 × 16124**
+
+Break it down:
+- 69352 × 16000 = 69352 × 16 × 1000 = 1,109,632 × 1000 = 1,109,632,000
+- 69352 × 100 = 6,935,200
+- 69352 × 24 = 1,664,448
+
+Sum:
+1,109,632,000 + 6,935,200 = 1,116,567,200
+1,116,567,200 + 1,664,448 = **1,118,231,648**
+
+---
+
+**Step 2: Compute 33713 × 91751**
+
+Break it down:
+- 33713 × 90000 = 3,034,170,000
+- 33713 × 1000 = 33,713,000
+- 33713 × 700 = 23,599,100
+- 33713 × 51 = 1,719,363
+
+Sum:
+3,034,170,000 + 33,713,000 = 3,067,883,000
+3,067,883,000 + 23,599,100 = 3,091,482,100
+3,091,482,100 + 1,719,363 = **3,093,201,463**
+
+---
+
+**Step 3: Subtract**
+
+1,118,231,648 − 3,093,201,463 = **-1,974,969,815**
+
+---
+
+**Verification of key steps:**
+- 69352 × 24: 69352 × 20 = 1,387,040; 69352 × 4 = 277,408 → 1,664,448 ✅
+- 33713 × 51: 33713 × 50 = 1,685,650; 33713 × 1 = 33,713 → 1,719,363 ✅
+
+[TOOL submit_answer] {'value': -1974969815}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-1,974,969,815**.
+

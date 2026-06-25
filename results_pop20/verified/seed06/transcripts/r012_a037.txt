@@ -1,0 +1,75 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95905 x 57235) - (73793 x 35391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 95905 × 57235
+
+Breaking it down:
+
+95905 × 57235
+= 95905 × (57000 + 235)
+= (95905 × 57000) + (95905 × 235)
+
+**95905 × 57000:**
+= 95905 × 57 × 1000
+= 5,466,585 × 1000
+= 5,466,585,000
+
+**95905 × 235:**
+= 95905 × 200 + 95905 × 35
+= 19,181,000 + 3,356,675
+= 22,537,675
+
+**Total: 5,466,585,000 + 22,537,675 = 5,489,122,675**
+
+---
+
+### Step 2: Calculate 73793 × 35391
+
+Breaking it down:
+
+73793 × 35391
+= 73793 × (35000 + 391)
+= (73793 × 35000) + (73793 × 391)
+
+**73793 × 35000:**
+= 73793 × 35 × 1000
+= 2,582,755 × 1000
+= 2,582,755,000
+
+**73793 × 391:**
+= 73793 × 400 - 73793 × 9
+= 29,517,200 - 664,137
+= 28,853,063
+
+**Total: 2,582,755,000 + 28,853,063 = 2,611,608,063**
+
+---
+
+### Step 3: Subtract the two results
+
+5,489,122,675 − 2,611,608,063 = **2,877,514,612**
+
+---
+
+### Verification Check:
+- 95905 × 57235: Estimated ≈ 96000 × 57000 = 5,472,000,000 ✅ (close to 5,489,122,675)
+- 73793 × 35391: Estimated ≈ 74000 × 35000 = 2,590,000,000 ✅ (close to 2,611,608,063)
+- Difference ≈ 2,878,000,000 ✅ (consistent with 2,877,514,612)
+
+[TOOL submit_answer] {'value': 2877514612}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,877,514,612**.
+

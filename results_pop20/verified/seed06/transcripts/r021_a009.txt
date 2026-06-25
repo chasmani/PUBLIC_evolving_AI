@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in performing arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (11641 x 34739) - (32169 x 12235)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (11641 x 34739) - (32169 x 12235). Let me work out both multiplications first, then subtract.
+
+**Step 1: 11641 × 34739**
+11641 × 34739
+= 11641 × 30000 + 11641 × 4000 + 11641 × 700 + 11641 × 39
+= 349,230,000 + 46,564,000 + 8,148,700 + 453,999
+= 404,396,699
+
+**Step 2: 32169 × 12235**
+32169 × 12235
+= 32169 × 10000 + 32169 × 2000 + 32169 × 200 + 32169 × 35
+= 321,690,000 + 64,338,000 + 6,433,800 + 1,125,915
+= 393,587,715
+
+**Step 3: Subtract**
+404,396,699 - 393,587,715 = 10,808,984
+
+[TOOL submit_answer] {'value': 10808984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(11641 × 34739) - (32169 × 12235) = 10,808,984**.
+
+Here's a summary of the steps:
+- **11641 × 34739** = 404,396,699
+- **32169 × 12235** = 393,587,715
+- **404,396,699 − 393,587,715** = **10,808,984**
+

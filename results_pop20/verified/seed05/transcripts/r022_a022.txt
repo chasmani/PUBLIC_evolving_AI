@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57996 x 59330) - (85827 x 11189)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 57996 × 59330**
+
+57996 × 59330:
+- 57996 × 60000 = 3,479,760,000
+- 57996 × (−670) = −38,857,320
+- 3,479,760,000 − 38,857,320 = **3,440,902,680**
+
+**Step 2: Calculate 85827 × 11189**
+
+85827 × 11189:
+- 85827 × 11000 = 944,097,000
+- 85827 × 189 = 16,221,303
+- 944,097,000 + 16,221,303 = **960,318,303**
+
+**Step 3: Subtract the results**
+
+3,440,902,680 − 960,318,303 = **2,480,584,377**
+
+[TOOL submit_answer] {'value': 2480584377}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,480,584,377**.
+

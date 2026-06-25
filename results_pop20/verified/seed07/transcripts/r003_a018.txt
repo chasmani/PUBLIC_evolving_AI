@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Only submit a number — no explanations or text should be passed to the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57931 x 86387) - (17602 x 76510)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (57931 × 86387) - (17602 × 76510).
+
+Let me work out both multiplications first:
+
+**57931 × 86387:**
+57931 × 86387 = 5,004,815,297
+
+**17602 × 76510:**
+17602 × 76510 = 1,346,690,020
+
+**Subtraction:**
+5,004,815,297 - 1,346,690,020 = 3,658,125,277
+
+[TOOL submit_answer] {'value': 3658125277}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,658,125,277**.
+

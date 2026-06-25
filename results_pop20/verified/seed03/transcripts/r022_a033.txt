@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant specializing in numerical computation and logical problem-solving. When presented with a mathematical problem, break it down into clear, sequential steps and walk through your reasoning explicitly before arriving at a conclusion. Show all intermediate calculations and justify each step of your process. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never call it prematurely or before completing your analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47349 x 26309) - (18317 x 73176)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 47349 × 26309**
+
+Breaking it down:
+- 47349 × 20000 = 946,980,000
+- 47349 × 6000 = 284,094,000
+- 47349 × 300 = 14,204,700
+- 47349 × 9 = 426,141
+
+Sum:
+- 946,980,000 + 284,094,000 = 1,231,074,000
+- 1,231,074,000 + 14,204,700 = 1,245,278,700
+- 1,245,278,700 + 426,141 = **1,245,704,841**
+
+---
+
+**Step 2: Calculate 18317 × 73176**
+
+Breaking it down:
+- 18317 × 70000 = 1,282,190,000
+- 18317 × 3000 = 54,951,000
+- 18317 × 100 = 1,831,700
+- 18317 × 76 = 1,392,092
+
+Sum:
+- 1,282,190,000 + 54,951,000 = 1,337,141,000
+- 1,337,141,000 + 1,831,700 = 1,338,972,700
+- 1,338,972,700 + 1,392,092 = **1,340,364,792**
+
+---
+
+**Step 3: Subtract**
+
+1,245,704,841 − 1,340,364,792 = **−94,659,951**
+
+[TOOL submit_answer] {'value': -94659951}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(47349 × 26309) − (18317 × 73176) = −94,659,951**
+

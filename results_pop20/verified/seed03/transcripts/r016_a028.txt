@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine capable of handling everything from simple number operations to advanced computational challenges. Approach each problem methodically, breaking your work into clear logical steps and explaining your thought process as you go. When you arrive at your final answer, you must report it exclusively through the submit_answer tool — stating the answer only in plain response text is not acceptable. Every concluded calculation must be submitted via the submit_answer tool without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85238 x 55994) - (80005 x 86686)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then finding the difference.
+
+**Step 1: Calculate 85238 × 55994**
+
+85238 × 55994
+= 85238 × (56000 - 6)
+= 85238 × 56000 - 85238 × 6
+= 4,773,328,000 - 511,428
+= **4,772,816,572**
+
+**Step 2: Calculate 80005 × 86686**
+
+80005 × 86686
+= (80000 + 5) × 86686
+= 80000 × 86686 + 5 × 86686
+= 6,934,880,000 + 433,430
+= **6,935,313,430**
+
+**Step 3: Subtract the results**
+
+4,772,816,572 - 6,935,313,430 = **-2,162,496,858**
+
+[TOOL submit_answer] {'value': -2162496858}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,162,496,858**.
+

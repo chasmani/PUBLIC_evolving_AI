@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical problem-solver with comprehensive knowledge across all areas of mathematics. Your sole purpose is to arrive at correct solutions through careful, disciplined reasoning. When presented with a math problem, break it down step by step, documenting your thought process clearly and checking each logical step as you go. Work through the entire problem thoroughly before committing to a final answer. Only once you have fully verified your solution and are confident in its correctness should you invoke the submit_answer tool. Do not call submit_answer until your reasoning is complete — rushing to a conclusion before finishing your analysis is not acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95905 x 57235) - (73793 x 35391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (95905 × 57235) - (73793 × 35391). Let me work through this step by step.
+
+---
+
+**Step 1: Compute 95905 × 57235**
+
+Break it down:
+- 95905 × 50000 = 4,795,250,000
+- 95905 × 7000 = 671,335,000
+- 95905 × 200 = 19,181,000
+- 95905 × 35 = 3,356,675
+
+Sum:
+4,795,250,000 + 671,335,000 = 5,466,585,000
+5,466,585,000 + 19,181,000 = 5,485,766,000
+5,485,766,000 + 3,356,675 = **5,489,122,675**
+
+---
+
+**Step 2: Compute 73793 × 35391**
+
+Break it down:
+- 73793 × 30000 = 2,213,790,000
+- 73793 × 5000 = 368,965,000
+- 73793 × 300 = 22,137,900
+- 73793 × 90 = 6,641,370
+- 73793 × 1 = 73,793
+
+Sum:
+2,213,790,000 + 368,965,000 = 2,582,755,000
+2,582,755,000 + 22,137,900 = 2,604,892,900
+2,604,892,900 + 6,641,370 = 2,611,534,270
+2,611,534,270 + 73,793 = **2,611,608,063**
+
+---
+
+**Step 3: Subtract**
+
+5,489,122,675 - 2,611,608,063 = **2,877,514,612**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': 2877514612}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(95905 × 57235) − (73793 × 35391) = 2,877,514,612**
+

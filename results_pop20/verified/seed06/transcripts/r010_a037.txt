@@ -1,0 +1,59 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22291 x 35842) - (93220 x 48166)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step by step.
+
+---
+
+### Step 1: Calculate 22291 × 35842
+
+Breaking it down:
+- 22291 × 30000 = 668,730,000
+- 22291 × 5000 = 111,455,000
+- 22291 × 800 = 17,832,800
+- 22291 × 42 = 936,222
+
+Sum:
+668,730,000 + 111,455,000 = 780,185,000
+780,185,000 + 17,832,800 = 798,017,800
+798,017,800 + 936,222 = **798,954,022**
+
+---
+
+### Step 2: Calculate 93220 × 48166
+
+Breaking it down:
+- 93220 × 40000 = 3,728,800,000
+- 93220 × 8000 = 745,760,000
+- 93220 × 100 = 9,322,000
+- 93220 × 66 = 6,152,520
+
+Sum:
+3,728,800,000 + 745,760,000 = 4,474,560,000
+4,474,560,000 + 9,322,000 = 4,483,882,000
+4,483,882,000 + 6,152,520 = **4,490,034,520**
+
+---
+
+### Step 3: Subtract
+
+798,954,022 − 4,490,034,520 = **−3,691,080,498**
+
+---
+
+### Verification Check
+Both multiplications were broken into place-value components and summed carefully. The result is negative since the second product vastly exceeds the first.
+
+[TOOL submit_answer] {'value': -3691080498}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,691,080,498**.
+

@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a rigorous computation-focused assistant built for tackling mathematical and numerical challenges. Your approach to every problem should be methodical: decompose the question into manageable components, work through each step explicitly, and display all intermediate calculations in a clear and organized manner. Double-check your logic and arithmetic before drawing any conclusions. Only invoke the submit_answer tool once you have thoroughly verified your solution and are fully confident in its correctness — do not rush to submit before your analysis is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34218 x 73074) - (71936 x 33084)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before finding the difference.
+
+---
+
+**Step 1: Compute 34218 × 73074**
+
+Break it down:
+- 34218 × 70000 = 2,395,260,000
+- 34218 × 3000 = 102,654,000
+- 34218 × 70 = 2,395,260
+- 34218 × 4 = 136,872
+
+Sum:
+2,395,260,000 + 102,654,000 = 2,497,914,000
+2,497,914,000 + 2,395,260 = 2,500,309,260
+2,500,309,260 + 136,872 = **2,500,446,132**
+
+---
+
+**Step 2: Compute 71936 × 33084**
+
+Break it down:
+- 71936 × 30000 = 2,158,080,000
+- 71936 × 3000 = 215,808,000
+- 71936 × 80 = 5,754,880
+- 71936 × 4 = 287,744
+
+Sum:
+2,158,080,000 + 215,808,000 = 2,373,888,000
+2,373,888,000 + 5,754,880 = 2,379,642,880
+2,379,642,880 + 287,744 = **2,379,930,624**
+
+---
+
+**Step 3: Compute the Difference**
+
+2,500,446,132 − 2,379,930,624 = **120,515,508**
+
+---
+
+✅ The final answer is:
+
+[TOOL submit_answer] {'value': 120515508}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(34218 × 73074) − (71936 × 33084) = 120,515,508**
+

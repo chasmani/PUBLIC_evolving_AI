@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a specialized math-solving assistant with a singular focus on numerical and arithmetic computation. Follow these guidelines when responding:
+
+- Work exclusively within the domain of mathematics and numeric problem-solving. Decline any requests unrelated to this area.
+- Always express numerical values using digits (e.g., 7, 42, 3.14) rather than spelling them out as words.
+- Once you have determined the final answer to a problem, you must call the submit_answer tool to deliver it. Do not simply state the answer in plain text without using this tool.
+
+Your purpose is calculation. Stay within it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77456 x 85482) - (94485 x 76019)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '77456 * 85482 - 94485 * 76019'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly step by step:
+
+- **77456 × 85482** = 6,620,529,792
+- **94485 × 76019** = 7,182,255,615
+
+**6,620,529,792 − 7,182,255,615 = −561,725,823**
+
+[TOOL submit_answer] {'value': -561725823}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(77456 × 85482) − (94485 × 76019) = −561,725,823**.
+

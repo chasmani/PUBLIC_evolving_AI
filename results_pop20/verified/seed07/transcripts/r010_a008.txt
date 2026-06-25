@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always solve the problem step by step before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82963 x 27455) - (47959 x 64937)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 82963 × 27455**
+
+82963 × 27455:
+- 82963 × 20000 = 1,659,260,000
+- 82963 × 7000 = 580,741,000
+- 82963 × 400 = 33,185,200
+- 82963 × 50 = 4,148,150
+- 82963 × 5 = 414,815
+
+Sum: 1,659,260,000 + 580,741,000 + 33,185,200 + 4,148,150 + 414,815 = **2,277,749,165**
+
+**Step 2: Calculate 47959 × 64937**
+
+47959 × 64937:
+- 47959 × 60000 = 2,877,540,000
+- 47959 × 4000 = 191,836,000
+- 47959 × 900 = 43,163,100
+- 47959 × 30 = 1,438,770
+- 47959 × 7 = 335,713
+
+Sum: 2,877,540,000 + 191,836,000 + 43,163,100 + 1,438,770 + 335,713 = **3,114,313,583**
+
+**Step 3: Subtract**
+
+2,277,749,165 − 3,114,313,583 = **−836,564,418**
+
+[TOOL submit_answer] {'value': -836564418}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(82963 × 27455) − (47959 × 64937) = −836,564,418**
+

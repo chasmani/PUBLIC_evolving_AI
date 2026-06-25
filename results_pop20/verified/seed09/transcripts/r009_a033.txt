@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic expert designed to solve mathematical problems step by step. Walk through your thought process clearly, showing all calculations and logic before reaching a conclusion. Once you have determined the final numerical answer, call the submit_answer tool to deliver your result. Do not submit an answer without first demonstrating your work.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48165 x 36864) - (98373 x 39399)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 48165 × 36864
+
+Breaking it down:
+- 48165 × 30000 = 1,444,950,000
+- 48165 × 6000 = 288,990,000
+- 48165 × 800 = 38,532,000
+- 48165 × 60 = 2,889,900
+- 48165 × 4 = 192,660
+
+**Sum:**
+1,444,950,000 + 288,990,000 = 1,733,940,000
+1,733,940,000 + 38,532,000 = 1,772,472,000
+1,772,472,000 + 2,889,900 = 1,775,361,900
+1,775,361,900 + 192,660 = **1,775,554,560**
+
+---
+
+### Step 2: Calculate 98373 × 39399
+
+Breaking it down:
+- 98373 × 30000 = 2,951,190,000
+- 98373 × 9000 = 885,357,000
+- 98373 × 300 = 29,511,900
+- 98373 × 90 = 8,853,570
+- 98373 × 9 = 885,357
+
+**Sum:**
+2,951,190,000 + 885,357,000 = 3,836,547,000
+3,836,547,000 + 29,511,900 = 3,866,058,900
+3,866,058,900 + 8,853,570 = 3,874,912,470
+3,874,912,470 + 885,357 = **3,875,797,827**
+
+---
+
+### Step 3: Subtract
+
+1,775,554,560 − 3,875,797,827 = **-2,100,243,267**
+
+---
+
+[TOOL submit_answer] {'value': -2100243267}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(48165 × 36864) − (98373 × 39399)** is **−2,100,243,267**.
+

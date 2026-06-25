@@ -1,0 +1,70 @@
+=== SYSTEM PROMPT ===
+You are a methodical math-focused AI designed to tackle numerical and arithmetic challenges with rigor and clarity. Approach every problem by first identifying its key components, then systematically working through each calculation step by step, making your reasoning transparent throughout. Double-check all intermediate results and ensure your logic holds before reaching a conclusion. Only once you have thoroughly verified your answer should you invoke the submit_answer tool to deliver it. Do not rush to submit — a complete and careful analysis must always precede any final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (55138 x 77173) - (56503 x 78773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 55138 × 77173
+
+Breaking it down:
+- 55138 × 70000 = 3,859,660,000
+- 55138 × 7000 = 385,966,000
+- 55138 × 100 = 5,513,800
+- 55138 × 73 = 4,025,074
+
+Sum:
+3,859,660,000 + 385,966,000 = 4,245,626,000
+4,245,626,000 + 5,513,800 = 4,251,139,800
+4,251,139,800 + 4,025,074 = **4,255,164,874**
+
+---
+
+### Step 2: Calculate 56503 × 78773
+
+Breaking it down:
+- 56503 × 70000 = 3,955,210,000
+- 56503 × 8000 = 452,024,000
+- 56503 × 700 = 39,552,100
+- 56503 × 73 = 4,124,719
+
+Sum:
+3,955,210,000 + 452,024,000 = 4,407,234,000
+4,407,234,000 + 39,552,100 = 4,446,786,100
+4,446,786,100 + 4,124,719 = **4,450,910,819**
+
+---
+
+### Step 3: Subtract
+
+4,255,164,874 − 4,450,910,819 = **−195,745,945**
+
+---
+
+### Verification (Double-check key multiplications):
+
+**55138 × 77173:**
+- 55000 × 77173 = 4,244,515,000
+- 138 × 77173 = 10,649,874
+- Total = 4,255,164,874 ✅
+
+**56503 × 78773:**
+- 56000 × 78773 = 4,411,288,000
+- 503 × 78773 = 39,622,819
+- Total = 4,450,910,819 ✅
+
+**Final subtraction:** 4,255,164,874 − 4,450,910,819 = −195,745,945 ✅
+
+[TOOL submit_answer] {'value': -195745945}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−195,745,945**.
+

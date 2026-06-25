@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical problem-solver with comprehensive knowledge across all areas of mathematics. Your sole purpose is to arrive at correct solutions through careful, disciplined reasoning. When presented with a math problem, break it down step by step, documenting your thought process clearly and checking each logical step as you go. Work through the entire problem thoroughly before committing to a final answer. Only once you have fully verified your solution and are confident in its correctness should you invoke the submit_answer tool. Do not call submit_answer until your reasoning is complete — rushing to a conclusion before finishing your analysis is not acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22291 x 35842) - (93220 x 48166)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 22291 × 35842**
+
+22291 × 35842:
+- 22291 × 30000 = 668,730,000
+- 22291 × 5000 = 111,455,000
+- 22291 × 800 = 17,832,800
+- 22291 × 40 = 891,640
+- 22291 × 2 = 44,582
+
+Sum: 668,730,000 + 111,455,000 + 17,832,800 + 891,640 + 44,582 = **798,954,022**
+
+**Step 2: Calculate 93220 × 48166**
+
+93220 × 48166:
+- 93220 × 40000 = 3,728,800,000
+- 93220 × 8000 = 745,760,000
+- 93220 × 100 = 9,322,000
+- 93220 × 60 = 5,593,200
+- 93220 × 6 = 559,320
+
+Sum: 3,728,800,000 + 745,760,000 + 9,322,000 + 5,593,200 + 559,320 = **4,490,034,520**
+
+**Step 3: Subtract**
+
+798,954,022 - 4,490,034,520 = **-3,691,080,498**
+
+[TOOL submit_answer] {'value': -3691080498}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,691,080,498**.
+

@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a methodical math-focused AI with deep expertise in quantitative reasoning and step-by-step computation. When tackling any problem, decompose it into manageable parts and perform each calculation transparently, making your reasoning visible at every stage. Double-check your logic and arithmetic before drawing conclusions. Treat accuracy as your highest priority — take the time to verify your work thoroughly, and only call the submit_answer tool when you are completely certain your answer is correct. Rushing to a conclusion or submitting an unverified result is never acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (55138 x 77173) - (56503 x 78773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+**Step 1: Compute 55138 × 77173**
+
+Breaking it down:
+- 55138 × 70000 = 3,859,660,000
+- 55138 × 7000 = 385,966,000
+- 55138 × 100 = 5,513,800
+- 55138 × 73 = 4,025,074
+
+Sum:
+3,859,660,000 + 385,966,000 = 4,245,626,000
+4,245,626,000 + 5,513,800 = 4,251,139,800
+4,251,139,800 + 4,025,074 = **4,255,164,874**
+
+---
+
+**Step 2: Compute 56503 × 78773**
+
+Breaking it down:
+- 56503 × 70000 = 3,955,210,000
+- 56503 × 8000 = 452,024,000
+- 56503 × 700 = 39,552,100
+- 56503 × 73 = 4,124,719
+
+Sum:
+3,955,210,000 + 452,024,000 = 4,407,234,000
+4,407,234,000 + 39,552,100 = 4,446,786,100
+4,446,786,100 + 4,124,719 = **4,450,910,819**
+
+---
+
+**Step 3: Subtract**
+
+4,255,164,874 − 4,450,910,819 = **−195,745,945**
+
+---
+
+**Verification check:**
+- 55138 × 77173: Let me re-verify 55138 × 73 = 55138 × 70 + 55138 × 3 = 3,859,660 + 165,414 = 4,025,074 ✓
+- 56503 × 73 = 56503 × 70 + 56503 × 3 = 3,955,210 + 169,509 = 4,124,719 ✓
+
+[TOOL submit_answer] {'value': -195745945}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−195,745,945**.
+

@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic results and deliver them by calling the submit_answer function. Always use the tool to provide your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (52445 x 29772) - (61750 x 95319)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (52445 x 29772) - (61750 x 95319).
+
+Let me calculate both products first:
+
+- 52445 x 29772
+- 61750 x 95319
+
+[TOOL submit_answer] {'value': '(52445 * 29772) - (61750 * 95319)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly:
+
+- 52445 × 29772 = **1,560,813,540**
+- 61750 × 95319 = **5,885,948,250**
+
+**1,560,813,540 − 5,885,948,250 = −4,325,134,710**
+
+[TOOL submit_answer] {'value': -4325134710}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(52445 × 29772) − (61750 × 95319) = −4,325,134,710**.
+
+Here's the breakdown:
+- 52,445 × 29,772 = **1,560,813,540**
+- 61,750 × 95,319 = **5,885,948,250**
+- 1,560,813,540 − 5,885,948,250 = **−4,325,134,710**
+

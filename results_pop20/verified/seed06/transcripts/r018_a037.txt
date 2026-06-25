@@ -1,0 +1,72 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89719 x 96866) - (45112 x 50931)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 89719 × 96866
+
+Breaking it down:
+- 89719 × 96866
+- = 89719 × (96000 + 866)
+- = 89719 × 96000 + 89719 × 866
+
+**89719 × 96000:**
+= 89719 × 96 × 1000
+= 8,612,024 × 1000
+= 8,612,024,000
+
+**89719 × 866:**
+= 89719 × 800 + 89719 × 66
+= 71,775,200 + 5,921,454
+= 77,696,654
+
+**89719 × 96866 = 8,612,024,000 + 77,696,654 = 8,689,720,654**
+
+---
+
+### Step 2: Calculate 45112 × 50931
+
+Breaking it down:
+- 45112 × 50931
+- = 45112 × (50000 + 931)
+- = 45112 × 50000 + 45112 × 931
+
+**45112 × 50000:**
+= 2,255,600,000
+
+**45112 × 931:**
+= 45112 × 900 + 45112 × 31
+= 40,600,800 + 1,398,472
+= 41,999,272
+
+**45112 × 50931 = 2,255,600,000 + 41,999,272 = 2,297,599,272**
+
+---
+
+### Step 3: Subtract
+
+8,689,720,654 − 2,297,599,272 = **6,392,121,382**
+
+---
+
+### Verification Checks:
+- 89719 × 96 = 8,612,224... let me recheck: 89719 × 96 = 89719 × 100 - 89719 × 4 = 8,971,900 - 358,876 = **8,613,024** × 1000 = 8,613,024,000
+- 89719 × 866 = 89719 × 800 + 89719 × 66 = 71,775,200 + (89719 × 60 + 89719 × 6) = 71,775,200 + 5,383,140 + 538,314 = **77,696,654** ✓
+- Corrected: **8,613,024,000 + 77,696,654 = 8,690,720,654**
+- Subtraction: 8,690,720,654 − 2,297,599,272 = **6,393,121,382**
+
+[TOOL submit_answer] {'value': 6393121382}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,393,121,382**.
+

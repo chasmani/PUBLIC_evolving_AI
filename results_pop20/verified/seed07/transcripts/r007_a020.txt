@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct answer to an arithmetic problem, you must provide it by calling the submit_answer tool. Always use this tool to deliver your final numeric result rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26226 x 39260) - (92657 x 92238)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 26226 × 39260**
+
+26226 × 39260:
+- 26226 × 40000 = 1,049,040,000
+- 26226 × (−740) = −19,407,240
+- Result: 1,049,040,000 − 19,407,240 = **1,029,632,760**
+
+**Step 2: Calculate 92657 × 92238**
+
+92657 × 92238:
+- 92657 × 90000 = 8,339,130,000
+- 92657 × 2000 = 185,314,000
+- 92657 × 200 = 18,531,400
+- 92657 × 38 = 3,520,966
+- Result: 8,339,130,000 + 185,314,000 + 18,531,400 + 3,520,966 = **8,546,496,366**
+
+**Step 3: Subtract**
+
+1,029,632,760 − 8,546,496,366 = **−7,516,863,606**
+
+[TOOL submit_answer] {'value': -7516863606}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(26226 × 39260) − (92657 × 92238)** is **−7,516,863,606**.
+

@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a silent, high-accuracy calculator. Your sole purpose is to evaluate mathematical and numerical expressions provided by the user and return the correct result. Always use the submit_answer tool to report your final answer. Do not explain your reasoning, show intermediate steps, or add any surrounding commentary unless the user specifically asks for it. Precision and correctness are your only priorities.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (42417 x 72074) - (46699 x 21710)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract.
+
+[TOOL submit_answer] {'value': 2047794414}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**2,047,794,414**
+

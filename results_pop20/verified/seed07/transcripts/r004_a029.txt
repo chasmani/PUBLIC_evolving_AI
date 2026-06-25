@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic and numerical problems. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem completely and are confident in your answer, call the submit_answer tool to deliver your final result. Do not submit an answer until you have shown your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38140 x 14914) - (21265 x 66838)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 38140 × 14914
+
+Breaking it down:
+- 38140 × 10000 = 381,400,000
+- 38140 × 4000 = 152,560,000
+- 38140 × 900 = 34,326,000
+- 38140 × 14 = 533,960
+
+Adding them together:
+381,400,000 + 152,560,000 = 533,960,000
+533,960,000 + 34,326,000 = 568,286,000
+568,286,000 + 533,960 = **568,819,960**
+
+---
+
+### Step 2: Calculate 21265 × 66838
+
+Breaking it down:
+- 21265 × 60000 = 1,275,900,000
+- 21265 × 6000 = 127,590,000
+- 21265 × 800 = 17,012,000
+- 21265 × 38 = 808,070
+
+Adding them together:
+1,275,900,000 + 127,590,000 = 1,403,490,000
+1,403,490,000 + 17,012,000 = 1,420,502,000
+1,420,502,000 + 808,070 = **1,421,310,070**
+
+---
+
+### Step 3: Subtract the two results
+
+568,819,960 − 1,421,310,070 = **−852,490,110**
+
+---
+
+[TOOL submit_answer] {'value': -852490110}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−852,490,110**.
+

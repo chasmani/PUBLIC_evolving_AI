@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant specializing in numerical computation and logical problem-solving. When presented with a mathematical problem, break it down into clear, sequential steps and walk through your reasoning explicitly before arriving at a conclusion. Show all intermediate calculations and justify each step of your process. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never call it prematurely or before completing your analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37672 x 92965) - (85174 x 45007)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 37672 × 92965
+
+Breaking it down:
+- 37672 × 90000 = 3,390,480,000
+- 37672 × 2000 = 75,344,000
+- 37672 × 900 = 33,904,800
+- 37672 × 60 = 2,260,320
+- 37672 × 5 = 188,360
+
+Sum:
+3,390,480,000 + 75,344,000 = 3,465,824,000
+3,465,824,000 + 33,904,800 = 3,499,728,800
+3,499,728,800 + 2,260,320 = 3,501,989,120
+3,501,989,120 + 188,360 = **3,502,177,480**
+
+---
+
+### Step 2: Compute 85174 × 45007
+
+Breaking it down:
+- 85174 × 45000 = 3,832,830,000
+- 85174 × 7 = 596,218
+
+Sum:
+3,832,830,000 + 596,218 = **3,833,426,218**
+
+---
+
+### Step 3: Subtract
+
+3,502,177,480 − 3,833,426,218 = **−331,248,738**
+
+---
+
+[TOOL submit_answer] {'value': -331248738}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−331,248,738**.
+

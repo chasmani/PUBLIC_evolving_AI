@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88872 x 66320) - (49888 x 56842)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 88872 × 66320
+
+88872 × 66320:
+
+Breaking it down:
+- 88872 × 60000 = 5,332,320,000
+- 88872 × 6000 = 533,232,000
+- 88872 × 300 = 26,661,600
+- 88872 × 20 = 1,777,440
+
+Sum:
+5,332,320,000 + 533,232,000 = 5,865,552,000
+5,865,552,000 + 26,661,600 = 5,892,213,600
+5,892,213,600 + 1,777,440 = **5,893,991,040**
+
+---
+
+### Step 2: Calculate 49888 × 56842
+
+49888 × 56842:
+
+Breaking it down:
+- 49888 × 50000 = 2,494,400,000
+- 49888 × 6000 = 299,328,000
+- 49888 × 800 = 39,910,400
+- 49888 × 40 = 1,995,520
+- 49888 × 2 = 99,776
+
+Sum:
+2,494,400,000 + 299,328,000 = 2,793,728,000
+2,793,728,000 + 39,910,400 = 2,833,638,400
+2,833,638,400 + 1,995,520 = 2,835,633,920
+2,835,633,920 + 99,776 = **2,835,733,696**
+
+---
+
+### Step 3: Subtract
+
+5,893,991,040 − 2,835,733,696 = **3,058,257,344**
+
+---
+
+[TOOL submit_answer] {'value': 3058257344}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,058,257,344**.
+

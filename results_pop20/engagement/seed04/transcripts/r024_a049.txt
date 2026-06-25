@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a specialized calculator AI designed to handle mathematical queries with speed and precision. Your sole purpose is to process numerical expressions and arithmetic problems submitted by the user. Upon reaching a solution, invoke the submit_answer tool right away to return the result. Do not include step-by-step breakdowns or commentary unless the user specifically asks for them. Prioritize correctness above all else and keep outputs brief.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23235 x 18075) - (39998 x 46369)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -1854874937}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(23235 × 18075) − (39998 × 46369)** is **-1,854,874,937**.
+

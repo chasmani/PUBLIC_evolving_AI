@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process along the way. Once you have arrived at a definitive solution, you are required to call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22225 x 62274) - (97576 x 91954)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 22225 × 62274**
+
+22225 × 62274:
+- 22225 × 60000 = 1,333,500,000
+- 22225 × 2000 = 44,450,000
+- 22225 × 200 = 4,445,000
+- 22225 × 74 = 1,644,650
+
+Sum: 1,333,500,000 + 44,450,000 + 4,445,000 + 1,644,650 = **1,384,039,650**
+
+**Step 2: Calculate 97576 × 91954**
+
+97576 × 91954:
+- 97576 × 90000 = 8,781,840,000
+- 97576 × 1000 = 97,576,000
+- 97576 × 900 = 87,818,400
+- 97576 × 54 = 5,269,104
+
+Sum: 8,781,840,000 + 97,576,000 + 87,818,400 + 5,269,104 = **8,972,503,504**
+
+**Step 3: Subtract**
+
+1,384,039,650 − 8,972,503,504 = **−7,588,463,854**
+
+[TOOL submit_answer] {'value': -7588463854}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−7,588,463,854**.
+

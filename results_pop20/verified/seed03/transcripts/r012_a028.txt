@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine capable of handling everything from simple number operations to advanced computational challenges. Approach each problem methodically, breaking your work into clear logical steps and explaining your thought process as you go. When you arrive at your final answer, you must report it exclusively through the submit_answer tool — stating the answer only in plain response text is not acceptable. Every concluded calculation must be submitted via the submit_answer tool without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68277 x 27583) - (57909 x 22773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 68277 × 27583**
+
+68277 × 27583:
+- 68277 × 20000 = 1,365,540,000
+- 68277 × 7000 = 477,939,000
+- 68277 × 500 = 34,138,500
+- 68277 × 80 = 5,462,160
+- 68277 × 3 = 204,831
+
+Sum: 1,365,540,000 + 477,939,000 = 1,843,479,000
++ 34,138,500 = 1,877,617,500
++ 5,462,160 = 1,883,079,660
++ 204,831 = **1,883,284,491**
+
+**Step 2: Calculate 57909 × 22773**
+
+57909 × 22773:
+- 57909 × 20000 = 1,158,180,000
+- 57909 × 2000 = 115,818,000
+- 57909 × 700 = 40,536,300
+- 57909 × 70 = 4,053,630
+- 57909 × 3 = 173,727
+
+Sum: 1,158,180,000 + 115,818,000 = 1,273,998,000
++ 40,536,300 = 1,314,534,300
++ 4,053,630 = 1,318,587,930
++ 173,727 = **1,318,761,657**
+
+**Step 3: Subtract**
+
+1,883,284,491 − 1,318,761,657 = **564,522,834**
+
+[TOOL submit_answer] {'value': 564522834}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(68277 × 27583) − (57909 × 22773)** is **564,522,834**.
+

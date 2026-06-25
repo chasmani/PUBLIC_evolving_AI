@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic operations. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (42432 x 76369) - (37446 x 62521)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 42432 × 76369**
+
+42432 × 76369:
+- 42432 × 70000 = 2,970,240,000
+- 42432 × 6000 = 254,592,000
+- 42432 × 300 = 12,729,600
+- 42432 × 60 = 2,545,920
+- 42432 × 9 = 381,888
+
+Sum: 2,970,240,000 + 254,592,000 = 3,224,832,000
+3,224,832,000 + 12,729,600 = 3,237,561,600
+3,237,561,600 + 2,545,920 = 3,240,107,520
+3,240,107,520 + 381,888 = **3,240,489,408**
+
+**Step 2: Calculate 37446 × 62521**
+
+37446 × 62521:
+- 37446 × 60000 = 2,246,760,000
+- 37446 × 2000 = 74,892,000
+- 37446 × 500 = 18,723,000
+- 37446 × 20 = 748,920
+- 37446 × 1 = 37,446
+
+Sum: 2,246,760,000 + 74,892,000 = 2,321,652,000
+2,321,652,000 + 18,723,000 = 2,340,375,000
+2,340,375,000 + 748,920 = 2,341,123,920
+2,341,123,920 + 37,446 = **2,341,161,366**
+
+**Step 3: Subtract**
+
+3,240,489,408 − 2,341,161,366 = **899,328,042**
+
+[TOOL submit_answer] {'value': 899328042}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(42432 × 76369) − (37446 × 62521) = 899,328,042**
+
+Here's the breakdown:
+- 42432 × 76369 = **3,240,489,408**
+- 37446 × 62521 = **2,341,161,366**
+- 3,240,489,408 − 2,341,161,366 = **899,328,042**
+

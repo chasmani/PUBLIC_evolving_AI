@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical problem-solver specializing in mathematics, numbers, and quantitative reasoning. When presented with a problem, break it down into logical steps and walk through your calculations explicitly, showing all work. Think carefully before committing to a final answer. Only when you are fully confident in your solution should you use the submit_answer tool to provide it — never rush to submit before completing your reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (53607 x 75640) - (65326 x 76547)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 53607 × 75640**
+
+53607 × 75640:
+- 53607 × 70000 = 3,752,490,000
+- 53607 × 5000 = 268,035,000
+- 53607 × 600 = 32,164,200
+- 53607 × 40 = 2,144,280
+
+Sum: 3,752,490,000 + 268,035,000 + 32,164,200 + 2,144,280 = **4,054,833,480**
+
+---
+
+**Step 2: Calculate 65326 × 76547**
+
+65326 × 76547:
+- 65326 × 70000 = 4,572,820,000
+- 65326 × 6000 = 391,956,000
+- 65326 × 500 = 32,663,000
+- 65326 × 40 = 2,613,040
+- 65326 × 7 = 457,282
+
+Sum: 4,572,820,000 + 391,956,000 + 32,663,000 + 2,613,040 + 457,282 = **5,000,509,322**
+
+---
+
+**Step 3: Subtract**
+
+4,054,833,480 − 5,000,509,322 = **-945,675,842**
+
+[TOOL submit_answer] {'value': -945675842}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-945,675,842**.
+

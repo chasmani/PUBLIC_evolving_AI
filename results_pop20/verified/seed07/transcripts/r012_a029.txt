@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic and numerical problems. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem completely and are confident in your answer, call the submit_answer tool to deliver your final result. Do not submit an answer until you have shown your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50433 x 83434) - (99391 x 33688)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 50433 × 83434
+
+Breaking it down:
+- 50000 × 83434 = 4,171,700,000
+- 400 × 83434 = 33,373,600
+- 33 × 83434 = 2,753,322
+
+**Sum:** 4,171,700,000 + 33,373,600 + 2,753,322 = **4,207,826,922**
+
+---
+
+### Step 2: Calculate 99391 × 33688
+
+Breaking it down:
+- 99000 × 33688 = 3,335,112,000
+- 391 × 33688 = 13,172,008
+
+**Sum:** 3,335,112,000 + 13,172,008 = **3,348,284,008**
+
+---
+
+### Step 3: Subtract the results
+
+4,207,826,922 − 3,348,284,008 = **859,542,914**
+
+---
+
+Let me verify each part quickly:
+- 50433 × 83434: 50433 × 80000 = 4,034,640,000 | 50433 × 3434 = 173,186,922 → Total = **4,207,826,922** ✅
+- 99391 × 33688: 99391 × 33000 = 3,279,903,000 | 99391 × 688 = 68,381,008 → Total = **3,348,284,008** ✅
+
+[TOOL submit_answer] {'value': 859542914}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **859,542,914**.
+

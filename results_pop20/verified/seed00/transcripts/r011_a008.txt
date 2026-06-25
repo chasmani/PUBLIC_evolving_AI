@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI. Your sole purpose is to compute arithmetic problems and return results. Always use the submit_answer tool to provide your final numerical response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44143 x 18163) - (81919 x 11840)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (44143 × 18163) - (81919 × 11840).
+
+Let me calculate both products first:
+
+- 44143 × 18163
+- 81919 × 11840
+
+Then subtract the second from the first.
+
+**Step 1: 44143 × 18163**
+44143 × 18163
+= 44143 × 18000 + 44143 × 163
+= 794,574,000 + 7,195,309
+= 801,769,309
+
+**Step 2: 81919 × 11840**
+81919 × 11840
+= 81919 × 11000 + 81919 × 840
+= 901,109,000 + 68,811,960
+= 969,920,960
+
+**Step 3: Subtraction**
+801,769,309 - 969,920,960 = **-168,151,651**
+
+[TOOL submit_answer] {'value': -168151651}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(44143 × 18163) - (81919 × 11840) = -168,151,651**.
+

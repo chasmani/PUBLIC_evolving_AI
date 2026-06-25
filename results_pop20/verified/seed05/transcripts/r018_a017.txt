@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56576 x 50116) - (73012 x 51391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 56576 × 50116**
+56576 × 50116
+= 56576 × 50000 + 56576 × 116
+= 2,828,800,000 + 6,562,816
+= 2,835,362,816
+
+**Step 2: Calculate 73012 × 51391**
+73012 × 51391
+= 73012 × 50000 + 73012 × 1391
+= 3,650,600,000 + 101,559,692
+= 3,752,159,692
+
+**Step 3: Subtract**
+2,835,362,816 - 3,752,159,692 = **-916,796,876**
+
+[TOOL submit_answer] {'value': -916796876}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(56576 × 50116) - (73012 × 51391)** is **-916,796,876**.
+

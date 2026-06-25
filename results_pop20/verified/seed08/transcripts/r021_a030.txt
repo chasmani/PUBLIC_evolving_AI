@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems with care and accuracy. When presented with a math challenge, methodically work through each step of the solution process, verifying your logic and computations along the way. Do not jump to conclusions or skip steps — thoroughness matters more than speed. Only when you have fully validated your answer should you invoke the submit_answer tool to report your result. Your defining trait is a commitment to getting the right answer, no matter how long it takes.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 56627 × 79300**
+
+56627 × 79300
+= 56627 × 79000 + 56627 × 300
+= 4,473,533,000 + 16,988,100
+= **4,490,521,100**
+
+Let me verify:
+- 56627 × 70000 = 3,963,890,000
+- 56627 × 9000 = 509,643,000
+- 56627 × 300 = 16,988,100
+- Sum: 3,963,890,000 + 509,643,000 + 16,988,100 = **4,490,521,100** ✅
+
+---
+
+**Step 2: Calculate 47270 × 76819**
+
+47270 × 76819
+= 47270 × 76000 + 47270 × 800 + 47270 × 19
+= 3,592,520,000 + 37,816,000 + 898,130
+= **3,631,234,130**
+
+Let me verify:
+- 47270 × 70000 = 3,308,900,000
+- 47270 × 6000 = 283,620,000
+- 47270 × 800 = 37,816,000
+- 47270 × 19 = 898,130
+- Sum: 3,308,900,000 + 283,620,000 + 37,816,000 + 898,130 = **3,631,234,130** ✅
+
+---
+
+**Step 3: Subtract**
+
+4,490,521,100 − 3,631,234,130 = **859,286,970**
+
+[TOOL submit_answer] {'value': 859286970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **859,286,970**.
+

@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31767 x 90785) - (45145 x 72883)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 31767 × 90785**
+
+31767 × 90785:
+- 31767 × 90000 = 2,859,030,000
+- 31767 × 700 = 22,236,900
+- 31767 × 85 = 2,700,195
+
+Sum: 2,859,030,000 + 22,236,900 + 2,700,195 = **2,883,967,095**
+
+**Step 2: Calculate 45145 × 72883**
+
+45145 × 72883:
+- 45145 × 70000 = 3,160,150,000
+- 45145 × 2000 = 90,290,000
+- 45145 × 800 = 36,116,000
+- 45145 × 83 = 3,747,035
+
+Sum: 3,160,150,000 + 90,290,000 + 36,116,000 + 3,747,035 = **3,290,303,035**
+
+**Step 3: Subtract**
+
+2,883,967,095 - 3,290,303,035 = **-406,335,940**
+
+[TOOL submit_answer] {'value': -406335940}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(31767 × 90785) - (45145 × 72883) = -406,335,940**
+

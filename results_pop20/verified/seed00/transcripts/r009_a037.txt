@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51444 x 90070) - (93941 x 36801)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 51444 × 90070
+
+Break it down:
+- 51444 × 90000 = 51444 × 9 × 10000 = 462,996 × 10000 = **4,629,960,000**
+- 51444 × 70 = **3,601,080**
+
+**51444 × 90070 = 4,629,960,000 + 3,601,080 = 4,633,561,080**
+
+---
+
+### Step 2: Compute 93941 × 36801
+
+Break it down:
+- 93941 × 36000 = 93941 × 36 × 1000
+  - 93941 × 36 = 93941 × 30 + 93941 × 6 = 2,818,230 + 563,646 = 3,381,876
+  - So: 3,381,876 × 1000 = **3,381,876,000**
+- 93941 × 800 = **75,152,800**
+- 93941 × 1 = **93,941**
+
+**93941 × 36801 = 3,381,876,000 + 75,152,800 + 93,941 = 3,457,122,741**
+
+---
+
+### Step 3: Subtract
+
+**4,633,561,080 − 3,457,122,741 = 1,176,438,339**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 1176438339}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(51444 × 90070) − (93941 × 36801) = 1,176,438,339**
+

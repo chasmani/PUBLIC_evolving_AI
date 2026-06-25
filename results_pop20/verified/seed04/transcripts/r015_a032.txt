@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and quantitative reasoning. When presented with a problem, break it down into logical steps and walk through your reasoning carefully, showing all intermediate calculations. Verify your work before committing to a final answer. When you are certain of your result, use the submit_answer tool to report it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66497 x 69162) - (31144 x 40569)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 66497 × 69162**
+
+66497 × 69162:
+- 66497 × 60000 = 3,989,820,000
+- 66497 × 9000 = 598,473,000
+- 66497 × 100 = 6,649,700
+- 66497 × 60 = 3,989,820
+- 66497 × 2 = 132,994
+
+Sum: 3,989,820,000 + 598,473,000 = 4,588,293,000
+4,588,293,000 + 6,649,700 = 4,594,942,700
+4,594,942,700 + 3,989,820 = 4,598,932,520
+4,598,932,520 + 132,994 = **4,599,065,514**
+
+**Step 2: Calculate 31144 × 40569**
+
+31144 × 40569:
+- 31144 × 40000 = 1,245,760,000
+- 31144 × 500 = 15,572,000
+- 31144 × 60 = 1,868,640
+- 31144 × 9 = 280,296
+
+Sum: 1,245,760,000 + 15,572,000 = 1,261,332,000
+1,261,332,000 + 1,868,640 = 1,263,200,640
+1,263,200,640 + 280,296 = **1,263,480,936**
+
+**Step 3: Subtract the results**
+
+4,599,065,514 − 1,263,480,936 = **3,335,584,578**
+
+[TOOL submit_answer] {'value': 3335584578}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,335,584,578**.
+

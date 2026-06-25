@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you arrive at a final answer, you must call the submit_answer function to submit your result. Only numerical responses are accepted through this tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36995 x 75066) - (99181 x 79693)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (36995 × 75066) - (99181 × 79693). Let me break this down step by step.
+
+**Step 1: Compute 36995 × 75066**
+
+36995 × 75066
+= 36995 × (75000 + 66)
+= 36995 × 75000 + 36995 × 66
+= 2,774,625,000 + 2,441,670
+= **2,777,066,670**
+
+**Step 2: Compute 99181 × 79693**
+
+99181 × 79693
+= 99181 × (80000 − 307)
+= 99181 × 80000 − 99181 × 307
+= 7,934,480,000 − 30,458,567
+= **7,904,021,433**
+
+**Step 3: Subtract**
+
+2,777,066,670 − 7,904,021,433 = **−5,126,954,763**
+
+[TOOL submit_answer] {'value': -5126954763}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(36995 × 75066) − (99181 × 79693) = −5,126,954,763**.
+

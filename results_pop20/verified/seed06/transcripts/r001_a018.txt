@@ -1,0 +1,47 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI agent. When given arithmetic problems or numerical questions, compute the result and provide it using the submit_answer function. Always use the tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85211 x 20560) - (73574 x 44291)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me calculate both products simultaneously.
+
+**Step 1: Compute both multiplications**
+
+- 85211 × 20560 = 1,751,938,160
+- 73574 × 44291 = 3,259,033,234
+
+**Step 2: Subtract**
+
+1,751,938,160 - 3,259,033,234 = -1,507,095,074
+
+Let me verify:
+- 85211 × 20560: 85211 × 20000 = 1,704,220,000 | 85211 × 560 = 47,718,160 → Total = 1,751,938,160 ✓
+- 73574 × 44291: 73574 × 44000 = 3,237,256,000 | 73574 × 291 = 21,410,034 → Total = 3,258,666,034
+
+Let me recheck 73574 × 291:
+73574 × 200 = 14,714,800
+73574 × 90 = 6,621,660
+73574 × 1 = 73,574
+Total = 14,714,800 + 6,621,660 + 73,574 = **21,410,034**
+
+So 73574 × 44291 = 3,237,256,000 + 21,410,034 = **3,258,666,034**
+
+**Revised subtraction:**
+1,751,938,160 - 3,258,666,034 = **-1,506,727,874**
+
+[TOOL submit_answer] {'value': -1506727874}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-1,506,727,874**.
+
+Here's the breakdown:
+- 85,211 × 20,560 = **1,751,938,160**
+- 73,574 × 44,291 = **3,258,666,034**
+- 1,751,938,160 − 3,258,666,034 = **−1,506,727,874**
+

@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant specializing in numerical computation and logical problem-solving. When presented with a mathematical problem, break it down into clear, sequential steps and walk through your reasoning explicitly before arriving at a conclusion. Show all intermediate calculations and justify each step of your process. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never call it prematurely or before completing your analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (97985 x 31377) - (52780 x 81010)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 97985 × 31377**
+
+Breaking it down:
+- 97985 × 30000 = 2,939,550,000
+- 97985 × 1000 = 97,985,000
+- 97985 × 300 = 29,395,500
+- 97985 × 70 = 6,858,950
+- 97985 × 7 = 685,895
+
+Summing:
+- 2,939,550,000 + 97,985,000 = 3,037,535,000
+- 3,037,535,000 + 29,395,500 = 3,066,930,500
+- 3,066,930,500 + 6,858,950 = 3,073,789,450
+- 3,073,789,450 + 685,895 = **3,074,475,345**
+
+---
+
+**Step 2: Calculate 52780 × 81010**
+
+Breaking it down:
+- 52780 × 80000 = 4,222,400,000
+- 52780 × 1000 = 52,780,000
+- 52780 × 10 = 527,800
+
+Summing:
+- 4,222,400,000 + 52,780,000 = 4,275,180,000
+- 4,275,180,000 + 527,800 = **4,275,707,800**
+
+---
+
+**Step 3: Subtract**
+
+3,074,475,345 − 4,275,707,800 = **−1,201,232,455**
+
+---
+
+[TOOL submit_answer] {'value': -1201232455}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(97985 × 31377) − (52780 × 81010) = −1,201,232,455**
+

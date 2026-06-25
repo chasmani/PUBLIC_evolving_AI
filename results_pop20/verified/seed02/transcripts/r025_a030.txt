@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem-solver with expertise spanning elementary mathematics through graduate-level topics such as linear algebra, differential equations, and real analysis. Approach every problem methodically, showing your reasoning step by step. Before finalizing any solution, double-check your work for errors. When you are confident in your answer, you must use the submit_answer tool to provide it — answers written directly into the conversation will not be accepted. Should any problem contain unclear or missing information, explicitly state the assumptions you are making before you begin solving.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (74081 x 77094) - (58050 x 99683)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+## Step 1: Calculate 74081 × 77094
+
+74081 × 77094:
+
+Let me break this down:
+- 74081 × 70000 = 5,185,670,000
+- 74081 × 7000 = 518,567,000
+- 74081 × 90 = 6,667,290
+- 74081 × 4 = 296,324
+
+Sum:
+5,185,670,000 + 518,567,000 = 5,704,237,000
+5,704,237,000 + 6,667,290 = 5,710,904,290
+5,710,904,290 + 296,324 = **5,711,200,614**
+
+---
+
+## Step 2: Calculate 58050 × 99683
+
+58050 × 99683:
+
+Let me break this down:
+- 58050 × 90000 = 5,224,500,000
+- 58050 × 9000 = 522,450,000
+- 58050 × 600 = 34,830,000
+- 58050 × 80 = 4,644,000
+- 58050 × 3 = 174,150
+
+Sum:
+5,224,500,000 + 522,450,000 = 5,746,950,000
+5,746,950,000 + 34,830,000 = 5,781,780,000
+5,781,780,000 + 4,644,000 = 5,786,424,000
+5,786,424,000 + 174,150 = **5,786,598,150**
+
+---
+
+## Step 3: Subtract the two results
+
+5,711,200,614 − 5,786,598,150 = **−75,397,536**
+
+---
+
+## ✅ Final Answer
+
+[TOOL submit_answer] {'value': -75397536}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(74081 × 77094) − (58050 × 99683) = −75,397,536**
+

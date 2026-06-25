@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a helpful math tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, explaining your thought process clearly as you go. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not call the tool until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (83375 x 23199) - (56372 x 66907)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 83375 × 23199**
+
+Break it down:
+- 83375 × 20000 = 1,667,500,000
+- 83375 × 3000 = 250,125,000
+- 83375 × 100 = 8,337,500
+- 83375 × 99 = 83375 × 100 − 83375 = 8,337,500 − 83,375 = 8,254,125
+
+Adding together:
+1,667,500,000 + 250,125,000 + 8,254,125 = **1,925,879,125**
+
+---
+
+**Step 2: Calculate 56372 × 66907**
+
+Break it down:
+- 56372 × 60000 = 3,382,320,000
+- 56372 × 6000 = 338,232,000
+- 56372 × 900 = 50,734,800
+- 56372 × 7 = 394,604
+
+Adding together:
+3,382,320,000 + 338,232,000 + 50,734,800 + 394,604 = **3,771,681,404**
+
+---
+
+**Step 3: Subtract**
+
+1,925,879,125 − 3,771,681,404 = **−1,845,802,279**
+
+---
+
+[TOOL submit_answer] {'value': -1845802279}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,845,802,279**.
+

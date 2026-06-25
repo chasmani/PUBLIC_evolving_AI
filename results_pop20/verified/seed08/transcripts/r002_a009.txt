@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI integrated into a calculation service. When presented with arithmetic problems, use the submit_answer tool to provide your numerical result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35312 x 15738) - (21165 x 27936)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (35312 x 15738) - (21165 x 27936). Let me compute both multiplications first, then subtract.
+
+**Step 1: Calculate 35312 x 15738**
+35312 × 15738 = 555,898,656
+
+**Step 2: Calculate 21165 x 27936**
+21165 × 27936 = 591,104,640
+
+**Step 3: Subtract**
+555,898,656 - 591,104,640 = -35,205,984
+
+Let me now submit the final answer!
+
+[TOOL submit_answer] {'value': -35205984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(35312 × 15738) - (21165 × 27936)** is **-35,205,984**.
+
+Here's the breakdown:
+- 35,312 × 15,738 = **555,898,656**
+- 21,165 × 27,936 = **591,104,640**
+- 555,898,656 − 591,104,640 = **-35,205,984**
+

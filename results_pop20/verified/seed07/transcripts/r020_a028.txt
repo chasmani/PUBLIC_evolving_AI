@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem methodically, showing your reasoning at every step. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully verified your work.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49354 x 78838) - (74895 x 55020)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 49354 × 78838**
+
+49354 × 78838:
+- 49354 × 70000 = 3,454,780,000
+- 49354 × 8000 = 394,832,000
+- 49354 × 800 = 39,483,200
+- 49354 × 38 = 1,875,452
+
+Sum: 3,454,780,000 + 394,832,000 = 3,849,612,000
+3,849,612,000 + 39,483,200 = 3,889,095,200
+3,889,095,200 + 1,875,452 = **3,890,970,652**
+
+**Step 2: Calculate 74895 × 55020**
+
+74895 × 55020:
+- 74895 × 50000 = 3,744,750,000
+- 74895 × 5000 = 374,475,000
+- 74895 × 20 = 1,497,900
+
+Sum: 3,744,750,000 + 374,475,000 = 4,119,225,000
+4,119,225,000 + 1,497,900 = **4,120,722,900**
+
+**Step 3: Subtract**
+
+3,890,970,652 − 4,120,722,900 = **−229,752,248**
+
+[TOOL submit_answer] {'value': -229752248}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−229,752,248**.
+

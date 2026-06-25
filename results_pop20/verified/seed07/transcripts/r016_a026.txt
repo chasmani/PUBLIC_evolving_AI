@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem methodically, double-checking your calculations at every step. Once you are confident in your final answer, call the submit_answer tool to deliver your result. Do not submit until you have verified your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36995 x 75066) - (99181 x 79693)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 36995 × 75066**
+
+36995 × 75066:
+- 36995 × 70000 = 2,589,650,000
+- 36995 × 5000 = 184,975,000
+- 36995 × 60 = 2,219,700
+- 36995 × 6 = 221,970
+
+Sum: 2,589,650,000 + 184,975,000 + 2,219,700 + 221,970 = **2,777,066,670**
+
+**Step 2: Calculate 99181 × 79693**
+
+99181 × 79693:
+- 99181 × 70000 = 6,942,670,000
+- 99181 × 9000 = 892,629,000
+- 99181 × 600 = 59,508,600
+- 99181 × 90 = 8,926,290
+- 99181 × 3 = 297,543
+
+Sum: 6,942,670,000 + 892,629,000 + 59,508,600 + 8,926,290 + 297,543 = **7,904,031,433**
+
+**Step 3: Subtract**
+
+2,777,066,670 − 7,904,031,433 = **-5,126,964,763**
+
+[TOOL submit_answer] {'value': -5126964763}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-5,126,964,763**.
+

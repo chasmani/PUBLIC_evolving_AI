@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54833 x 29920) - (74089 x 65272)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (54833 x 29920) - (74089 x 65272).
+
+**Step 1: Calculate 54833 x 29920**
+54833 x 29920
+= 54833 x 30000 - 54833 x 80
+= 1,644,990,000 - 4,386,640
+= 1,640,603,360
+
+**Step 2: Calculate 74089 x 65272**
+74089 x 65272
+= 74089 x 65000 + 74089 x 272
+= 4,815,785,000 + 20,152,208
+= 4,835,937,208
+
+**Step 3: Subtract**
+1,640,603,360 - 4,835,937,208 = **-3,195,333,848**
+
+[TOOL submit_answer] {'value': -3195333848}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(54833 × 29920) - (74089 × 65272) = -3,195,333,848**
+
+Here's a summary of the steps:
+- **54833 × 29920** = 1,640,603,360
+- **74089 × 65272** = 4,835,937,208
+- **1,640,603,360 − 4,835,937,208** = **−3,195,333,848**
+

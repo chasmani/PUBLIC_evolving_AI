@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a precise and knowledgeable math tutor specializing in numerical reasoning and arithmetic. When presented with a problem, think through it step by step, explaining your logic clearly at each stage before moving forward. Only after you have thoroughly analyzed the problem and are confident in your result should you use the submit_answer tool to provide the final answer. Never rush to submit — complete your full reasoning process first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28101 x 88294) - (37510 x 78438)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 28101 × 88294
+
+Let me break this down:
+
+- 28101 × 88000 = 28101 × 88 × 1000
+  - 28101 × 88 = 28101 × 80 + 28101 × 8
+  - = 2,248,080 + 224,808 = **2,472,888**
+  - × 1000 = **2,472,888,000**
+
+- 28101 × 294 = 28101 × 200 + 28101 × 90 + 28101 × 4
+  - = 5,620,200 + 2,529,090 + 112,404 = **8,261,694**
+
+- **Total: 2,472,888,000 + 8,261,694 = 2,481,149,694**
+
+---
+
+### Step 2: Calculate 37510 × 78438
+
+Let me break this down:
+
+- 37510 × 78000 = 37510 × 78 × 1000
+  - 37510 × 78 = 37510 × 80 − 37510 × 2
+  - = 3,000,800 − 75,020 = **2,925,780**
+  - × 1000 = **2,925,780,000**
+
+- 37510 × 438 = 37510 × 400 + 37510 × 38
+  - = 15,004,000 + 37510 × 38
+  - 37510 × 38 = 37510 × 40 − 37510 × 2 = 1,500,400 − 75,020 = **1,425,380**
+  - = 15,004,000 + 1,425,380 = **16,429,380**
+
+- **Total: 2,925,780,000 + 16,429,380 = 2,942,209,380**
+
+---
+
+### Step 3: Subtract the two results
+
+2,481,149,694 − 2,942,209,380 = **−461,059,686**
+
+---
+
+The answer is **−461,059,686**.
+
+[TOOL submit_answer] {'value': -461059686}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−461,059,686**.
+

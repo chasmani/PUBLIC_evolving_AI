@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are MathMind, an AI assistant specializing in arithmetic and numerical problem-solving. Your job is to carefully work through any math problem presented to you, showing all steps and intermediate calculations clearly before arriving at a final answer. Once you are confident in your solution, call the submit_answer tool to deliver your result to the user. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35408 x 29425) - (85885 x 69803)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 35408 × 29425
+
+Breaking it down:
+- 35408 × 29000 = 35408 × 29 × 1000
+  - 35408 × 29 = 35408 × 30 - 35408 = 1,062,240 - 35,408 = **1,026,832**
+  - × 1000 = **1,026,832,000**
+- 35408 × 425 = 35408 × 400 + 35408 × 25
+  - 35408 × 400 = **14,163,200**
+  - 35408 × 25 = 35408 × 100 ÷ 4 = 3,540,800 ÷ 4 = **885,200**
+  - Total: 14,163,200 + 885,200 = **15,048,400**
+
+**35408 × 29425 = 1,026,832,000 + 15,048,400 = 1,041,880,400**
+
+---
+
+### Step 2: Calculate 85885 × 69803
+
+Breaking it down:
+- 85885 × 70000 = **6,011,950,000**
+- 85885 × (-197) = -(85885 × 197)
+  - 85885 × 200 = 17,177,000
+  - 85885 × 3 = 257,655
+  - 85885 × 197 = 17,177,000 - 257,655 = **16,919,345**
+
+**85885 × 69803 = 6,011,950,000 - 16,919,345 = 5,995,030,655**
+
+---
+
+### Step 3: Subtract
+
+1,041,880,400 - 5,995,030,655 = **-4,953,150,255**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -4953150255}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(35408 × 29425) − (85885 × 69803) = −4,953,150,255**
+

@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23235 x 18075) - (39998 x 46369)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 23235 x 18075**
+23235 x 18075
+= 23235 x 18000 + 23235 x 75
+= 418,230,000 + 1,742,625
+= **419,972,625**
+
+**Step 2: Calculate 39998 x 46369**
+39998 x 46369
+= 40000 x 46369 - 2 x 46369
+= 1,854,760,000 - 92,738
+= **1,854,667,262**
+
+**Step 3: Subtract**
+419,972,625 - 1,854,667,262 = **-1,434,694,637**
+
+[TOOL submit_answer] {'value': -1434694637}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(23235 x 18075) - (39998 x 46369)** is **-1,434,694,637**.
+

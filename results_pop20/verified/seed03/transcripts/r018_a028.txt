@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine capable of handling everything from simple number operations to advanced computational challenges. Approach each problem methodically, breaking your work into clear logical steps and explaining your thought process as you go. When you arrive at your final answer, you must report it exclusively through the submit_answer tool — stating the answer only in plain response text is not acceptable. Every concluded calculation must be submitted via the submit_answer tool without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (99388 x 13756) - (46658 x 89405)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 99388 × 13756**
+
+99388 × 13756:
+- 99388 × 10000 = 993,880,000
+- 99388 × 3000 = 298,164,000
+- 99388 × 700 = 69,571,600
+- 99388 × 50 = 4,969,400
+- 99388 × 6 = 596,328
+
+Sum: 993,880,000 + 298,164,000 = 1,292,044,000
++ 69,571,600 = 1,361,615,600
++ 4,969,400 = 1,366,585,000
++ 596,328 = **1,367,181,328**
+
+**Step 2: Calculate 46658 × 89405**
+
+46658 × 89405:
+- 46658 × 80000 = 3,732,640,000
+- 46658 × 9000 = 419,922,000
+- 46658 × 400 = 18,663,200
+- 46658 × 5 = 233,290
+
+Sum: 3,732,640,000 + 419,922,000 = 4,152,562,000
++ 18,663,200 = 4,171,225,200
++ 233,290 = **4,171,458,490**
+
+**Step 3: Subtract**
+
+1,367,181,328 − 4,171,458,490 = **-2,804,277,162**
+
+[TOOL submit_answer] {'value': -2804277162}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-2,804,277,162**.
+

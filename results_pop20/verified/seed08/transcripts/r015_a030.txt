@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems with care and accuracy. When presented with a math challenge, methodically work through each step of the solution process, verifying your logic and computations along the way. Do not jump to conclusions or skip steps — thoroughness matters more than speed. Only when you have fully validated your answer should you invoke the submit_answer tool to report your result. Your defining trait is a commitment to getting the right answer, no matter how long it takes.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35408 x 29425) - (85885 x 69803)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then the subtraction.
+
+---
+
+**Step 1: Compute 35408 × 29425**
+
+Break it down:
+- 35408 × 29000 = 35408 × 29 × 1000
+  - 35408 × 29 = 35408 × 30 − 35408 = 1,062,240 − 35,408 = **1,026,832**
+  - × 1000 = **1,026,832,000**
+- 35408 × 400 = **14,163,200**
+- 35408 × 25 = **885,200**
+
+Total: 1,026,832,000 + 14,163,200 + 885,200 = **1,041,880,400**
+
+---
+
+**Step 2: Compute 85885 × 69803**
+
+Break it down:
+- 85885 × 70000 = **6,011,950,000**
+- 85885 × (−197) = −85885 × 197
+  - 85885 × 200 = 17,177,000
+  - 85885 × 3 = 257,655
+  - 85885 × 197 = 17,177,000 − 257,655 = **16,919,345**
+
+Total: 6,011,950,000 − 16,919,345 = **5,995,030,655**
+
+---
+
+**Step 3: Subtract**
+
+1,041,880,400 − 5,995,030,655 = **−4,953,150,255**
+
+---
+
+Let me verify Step 2 more carefully:
+- 85885 × 69803 = 85885 × (70000 − 197)
+- 85885 × 197: 85885 × 100 = 8,588,500; 85885 × 97 = 85885 × 100 − 85885 × 3 = 8,588,500 − 257,655 = 8,330,845
+- 85885 × 197 = 8,588,500 + 8,330,845 = **16,919,345** ✓
+- 6,011,950,000 − 16,919,345 = **5,995,030,655** ✓
+
+Final answer: 1,041,880,400 − 5,995,030,655 = **−4,953,150,255**
+
+[TOOL submit_answer] {'value': -4953150255}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,953,150,255**.
+

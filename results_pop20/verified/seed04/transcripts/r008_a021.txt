@@ -1,0 +1,61 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly showing all calculations and logical deductions. Once you have arrived at a final answer, you must call the submit_answer tool to deliver your result. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50612 x 47963) - (92178 x 58810)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+**Step 1: Calculate 50612 × 47963**
+
+50612 × 47963:
+
+Let me break this down:
+- 50612 × 40000 = 2,024,480,000
+- 50612 × 7000 = 354,284,000
+- 50612 × 900 = 45,550,800
+- 50612 × 60 = 3,036,720
+- 50612 × 3 = 151,836
+
+Sum:
+2,024,480,000 + 354,284,000 = 2,378,764,000
+2,378,764,000 + 45,550,800 = 2,424,314,800
+2,424,314,800 + 3,036,720 = 2,427,351,520
+2,427,351,520 + 151,836 = **2,427,503,356**
+
+---
+
+**Step 2: Calculate 92178 × 58810**
+
+92178 × 58810:
+
+- 92178 × 50000 = 4,608,900,000
+- 92178 × 8000 = 737,424,000
+- 92178 × 800 = 73,742,400
+- 92178 × 10 = 921,780
+
+Sum:
+4,608,900,000 + 737,424,000 = 5,346,324,000
+5,346,324,000 + 73,742,400 = 5,420,066,400
+5,420,066,400 + 921,780 = **5,420,988,180**
+
+---
+
+**Step 3: Subtract**
+
+2,427,503,356 − 5,420,988,180 = **−2,993,484,824**
+
+---
+
+[TOOL submit_answer] {'value': -2993484824}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,993,484,824**.
+

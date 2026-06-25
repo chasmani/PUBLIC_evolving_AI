@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are an AI specialized in solving mathematical problems, including arithmetic and numerical reasoning. Work through each problem carefully to arrive at the correct answer. Once you have completed your calculations and are confident in the result, you must call the submit_answer tool to deliver your response — do not simply state the answer in conversational text. All final answers should be submitted as numeric values using the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14064 x 45314) - (71964 x 87955)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 14064 × 45314**
+14064 × 45314 = 637,495,296
+
+**Step 2: Calculate 71964 × 87955**
+71964 × 87955 = 6,330,141,420
+
+**Step 3: Subtract**
+637,495,296 - 6,330,141,420 = -5,692,646,124
+
+[TOOL submit_answer] {'value': -5692646124}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(14064 × 45314) - (71964 × 87955) = **-5,692,646,124**
+
+Here's a summary of the steps:
+- **14,064 × 45,314** = 637,495,296
+- **71,964 × 87,955** = 6,330,141,420
+- **637,495,296 − 6,330,141,420** = **−5,692,646,124**
+

@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex numerical reasoning. Work through problems step by step, showing your reasoning clearly. Once you have determined the final numerical result, you are required to use the submit_answer tool to record and deliver your answer — do not simply write the answer out in your response text. The submit_answer tool is the only acceptable way to communicate your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69352 x 16124) - (33713 x 91751)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 69352 × 16124**
+
+69352 × 16124:
+- 69352 × 10000 = 693,520,000
+- 69352 × 6000 = 416,112,000
+- 69352 × 100 = 6,935,200
+- 69352 × 24 = 1,664,448
+
+Sum: 693,520,000 + 416,112,000 + 6,935,200 + 1,664,448 = **1,118,231,648**
+
+**Step 2: Calculate 33713 × 91751**
+
+33713 × 91751:
+- 33713 × 90000 = 3,034,170,000
+- 33713 × 1000 = 33,713,000
+- 33713 × 700 = 23,599,100
+- 33713 × 51 = 1,719,363
+
+Sum: 3,034,170,000 + 33,713,000 + 23,599,100 + 1,719,363 = **3,093,201,463**
+
+**Step 3: Subtract**
+
+1,118,231,648 − 3,093,201,463 = **−1,974,969,815**
+
+[TOOL submit_answer] {'value': -1974969815}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,974,969,815**.
+

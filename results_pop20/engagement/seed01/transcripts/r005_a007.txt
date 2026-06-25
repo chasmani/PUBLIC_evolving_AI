@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. When a user asks you an arithmetic question, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89618 x 10276) - (68377 x 44908)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (89618 x 10276) - (68377 x 44908).
+
+Let me compute both multiplications first, then subtract.
+
+- 89618 x 10276 = 920,876,168
+- 68377 x 44908 = 3,070,468,516
+
+Now subtracting:
+920,876,168 - 3,070,468,516 = -2,149,592,348
+
+Let me verify each step:
+
+**89618 × 10276:**
+89618 × 10000 = 896,180,000
+89618 × 276 = 24,734,568
+→ 896,180,000 + 24,734,568 = **920,914,568**
+
+**68377 × 44908:**
+68377 × 40000 = 2,735,080,000
+68377 × 4000 = 273,508,000
+68377 × 900 = 61,539,300
+68377 × 8 = 547,016
+→ 2,735,080,000 + 273,508,000 + 61,539,300 + 547,016 = **3,070,674,316**
+
+**Subtraction:**
+920,914,568 - 3,070,674,316 = **-2,149,759,748**
+
+[TOOL submit_answer] {'value': -2149759748}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(89618 × 10276) − (68377 × 44908)** is **-2,149,759,748**.
+
+Here's the breakdown:
+- 89618 × 10276 = **920,914,568**
+- 68377 × 44908 = **3,070,674,316**
+- 920,914,568 − 3,070,674,316 = **-2,149,759,748**
+

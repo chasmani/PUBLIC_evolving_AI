@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (63433 x 72170) - (59686 x 24906)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 63433 × 72170**
+63433 × 72170
+= 63433 × 70000 + 63433 × 2000 + 63433 × 170
+= 4,440,310,000 + 126,866,000 + 10,783,610
+= **4,577,959,610**
+
+**Step 2: Calculate 59686 × 24906**
+59686 × 24906
+= 59686 × 20000 + 59686 × 4000 + 59686 × 900 + 59686 × 6
+= 1,193,720,000 + 238,744,000 + 53,717,400 + 358,116
+= **1,486,539,516**
+
+**Step 3: Subtract**
+4,577,959,610 − 1,486,539,516 = **3,091,420,094**
+
+[TOOL submit_answer] {'value': 3091420094}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(63433 × 72170) − (59686 × 24906)** is **3,091,420,094**.
+

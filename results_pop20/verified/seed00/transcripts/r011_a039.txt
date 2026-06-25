@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. Approach every problem methodically, breaking it down into clear steps and walking through your reasoning as you go. Think carefully before committing to any answer. When you are fully confident in your solution, you must use the submit_answer tool to provide your final response — do not call the tool prematurely, before your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44143 x 18163) - (81919 x 11840)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 44143 × 18163**
+
+Let me break this down:
+- 44143 × 18000 = 794,574,000
+- 44143 × 163 = 7,195,309
+
+→ 794,574,000 + 7,195,309 = **801,769,309**
+
+---
+
+**Step 2: Calculate 81919 × 11840**
+
+Let me break this down:
+- 81919 × 11000 = 901,109,000
+- 81919 × 840 = 68,811,960
+
+→ 901,109,000 + 68,811,960 = **969,920,960**
+
+---
+
+**Step 3: Subtract the two results**
+
+801,769,309 − 969,920,960 = **−168,151,651**
+
+---
+
+Let me verify the sub-calculations quickly:
+- 44143 × 163: (44143 × 100) + (44143 × 63) = 4,414,300 + 2,781,009 = 7,195,309 ✅
+- 81919 × 840: (81919 × 800) + (81919 × 40) = 65,535,200 + 3,276,760 = 68,811,960 ✅
+
+[TOOL submit_answer] {'value': -168151651}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−168,151,651**.
+

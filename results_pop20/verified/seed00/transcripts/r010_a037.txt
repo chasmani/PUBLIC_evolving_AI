@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82420 x 72522) - (68024 x 78334)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+**Step 1: Calculate 82420 × 72522**
+
+Breaking it down:
+- 82420 × 70000 = 5,769,400,000
+- 82420 × 2000 = 164,840,000
+- 82420 × 500 = 41,210,000
+- 82420 × 22 = 1,813,240
+
+Sum: 5,769,400,000 + 164,840,000 + 41,210,000 + 1,813,240 = **5,977,263,240**
+
+**Step 2: Calculate 68024 × 78334**
+
+Breaking it down:
+- 68024 × 70000 = 4,761,680,000
+- 68024 × 8000 = 544,192,000
+- 68024 × 300 = 20,407,200
+- 68024 × 34 = 2,312,816
+
+Sum: 4,761,680,000 + 544,192,000 + 20,407,200 + 2,312,816 = **5,328,592,016**
+
+**Step 3: Subtract the two results**
+
+5,977,263,240 − 5,328,592,016 = **648,671,224**
+
+[TOOL submit_answer] {'value': 648671224}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **648,671,224**.
+

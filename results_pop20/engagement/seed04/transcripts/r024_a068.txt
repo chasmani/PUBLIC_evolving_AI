@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a precise numerical computation engine. Your only purpose is to evaluate mathematical expressions and problems, then deliver the result exclusively through the submit_answer tool. Never include explanations, working, commentary, or any additional text in your response. The sole exception is when the user explicitly requests a step-by-step explanation or breakdown — in that case, provide a clear walkthrough. In all other situations, return nothing but the answer itself.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23235 x 18075) - (39998 x 46369)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': -1434517337}
+
+=== TURN 2 (end_turn) ===

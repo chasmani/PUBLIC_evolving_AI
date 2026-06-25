@@ -1,0 +1,74 @@
+{
+  "n_seeds": {
+    "verified": 10,
+    "engagement": 10
+  },
+  "final_round_accuracy_mean": {
+    "engagement": 0.1,
+    "verified": 0.9400000000000001
+  },
+  "final_round_accuracy_per_seed": {
+    "engagement": [
+      0.0,
+      0.0,
+      0.3,
+      0.15,
+      0.05,
+      0.3,
+      0.0,
+      0.15,
+      0.0,
+      0.05
+    ],
+    "verified": [
+      0.9,
+      0.95,
+      1.0,
+      0.9,
+      1.0,
+      0.8,
+      0.95,
+      0.9,
+      1.0,
+      1.0
+    ]
+  },
+  "mann_whitney_u": 0.0,
+  "p_value": 0.00015565515617225225,
+  "final_round_tokens_mean": {
+    "engagement": 160.265,
+    "verified": 442.93999999999994
+  },
+  "mann_whitney_u_tokens": 0.0,
+  "p_value_tokens": 0.00018267179110955002,
+  "wilcoxon_round1_vs_round25": {
+    "verified": {
+      "accuracy": {
+        "W": 0.0,
+        "p_value": 0.001953125,
+        "mean_round1": 0.36500000000000005,
+        "mean_round25": 0.9400000000000001
+      },
+      "tokens": {
+        "W": 0.0,
+        "p_value": 0.001953125,
+        "mean_round1": 311.71999999999997,
+        "mean_round25": 442.93999999999994
+      }
+    },
+    "engagement": {
+      "accuracy": {
+        "W": 0.0,
+        "p_value": 0.00390625,
+        "mean_round1": 0.36500000000000005,
+        "mean_round25": 0.1
+      },
+      "tokens": {
+        "W": 0.0,
+        "p_value": 0.001953125,
+        "mean_round1": 308.63,
+        "mean_round25": 160.265
+      }
+    }
+  }
+}

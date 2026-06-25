@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (63433 x 72170) - (59686 x 24906)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 63433 × 72170
+
+Breaking it down:
+- 63433 × 70000 = 4,440,310,000
+- 63433 × 2000 = 126,866,000
+- 63433 × 100 = 6,343,300
+- 63433 × 70 = 4,440,310
+
+Adding them up:
+4,440,310,000 + 126,866,000 = 4,567,176,000
+4,567,176,000 + 6,343,300 = 4,573,519,300
+4,573,519,300 + 4,440,310 = **4,577,959,610**
+
+---
+
+### Step 2: Calculate 59686 × 24906
+
+Breaking it down:
+- 59686 × 20000 = 1,193,720,000
+- 59686 × 4000 = 238,744,000
+- 59686 × 900 = 53,717,400
+- 59686 × 6 = 358,116
+
+Adding them up:
+1,193,720,000 + 238,744,000 = 1,432,464,000
+1,432,464,000 + 53,717,400 = 1,486,181,400
+1,486,181,400 + 358,116 = **1,486,539,516**
+
+---
+
+### Step 3: Subtract the two results
+
+4,577,959,610 − 1,486,539,516 = **3,091,420,094**
+
+---
+
+[TOOL submit_answer] {'value': 3091420094}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,091,420,094**.
+

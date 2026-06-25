@@ -1,0 +1,72 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77456 x 85482) - (94485 x 76019)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 77456 × 85482
+
+Let me break this down:
+
+77456 × 85482
+= 77456 × (85000 + 482)
+= (77456 × 85000) + (77456 × 482)
+
+**77456 × 85000:**
+= 77456 × 85 × 1000
+= 6,583,760 × 1000
+= 6,583,760,000
+
+**77456 × 482:**
+= 77456 × 400 + 77456 × 82
+= 30,982,400 + 6,351,392
+= 37,333,792
+
+**Total: 6,583,760,000 + 37,333,792 = 6,621,093,792**
+
+---
+
+### Step 2: Calculate 94485 × 76019
+
+= 94485 × (76000 + 19)
+= (94485 × 76000) + (94485 × 19)
+
+**94485 × 76000:**
+= 94485 × 76 × 1000
+= 7,180,860 × 1000
+= 7,180,860,000
+
+**94485 × 19:**
+= 94485 × 20 - 94485
+= 1,889,700 - 94,485
+= 1,795,215
+
+**Total: 7,180,860,000 + 1,795,215 = 7,182,655,215**
+
+---
+
+### Step 3: Subtract
+
+6,621,093,792 − 7,182,655,215 = **-561,561,423**
+
+---
+
+### ✅ Verification Check:
+- 77456 × 85482 ≈ 77,000 × 85,500 ≈ 6,583,500,000 ✔️
+- 94485 × 76019 ≈ 94,500 × 76,000 ≈ 7,182,000,000 ✔️
+- Difference is clearly negative and in the hundreds of millions range ✔️
+
+[TOOL submit_answer] {'value': -561561423}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-561,561,423**.
+

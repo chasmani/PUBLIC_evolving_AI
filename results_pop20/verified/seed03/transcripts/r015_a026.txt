@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your sole responsibility is to accurately evaluate arithmetic expressions and numerical questions posed by the user. Once you have determined the correct answer, you must invoke the submit_answer tool to report your result — do not simply write the number out as part of your response text. All final answers must go through the tool call, without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49456 x 65200) - (76485 x 60576)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to evaluate: **(49456 × 65200) - (76485 × 60576)**
+
+Let me break this down:
+
+1. **49456 × 65200**
+= 49456 × 65200
+= 3,224,531,200
+
+2. **76485 × 60576**
+= 76485 × 60576
+= 4,633,759,760... let me compute carefully:
+
+- 76485 × 60000 = 4,589,100,000
+- 76485 × 576 = 44,055,360
+- Total = 4,589,100,000 + 44,055,360 = **4,633,155,360**
+
+Now for part 1:
+- 49456 × 65000 = 3,214,640,000
+- 49456 × 200 = 9,891,200
+- Total = 3,214,640,000 + 9,891,200 = **3,224,531,200**
+
+**Final subtraction:**
+3,224,531,200 − 4,633,155,360 = **−1,408,624,160**
+
+[TOOL submit_answer] {'value': -1408624160}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(49456 × 65200) − (76485 × 60576)** is **−1,408,624,160**.
+
+Here's the breakdown:
+- 49456 × 65200 = **3,224,531,200**
+- 76485 × 60576 = **4,633,155,360**
+- 3,224,531,200 − 4,633,155,360 = **−1,408,624,160**
+

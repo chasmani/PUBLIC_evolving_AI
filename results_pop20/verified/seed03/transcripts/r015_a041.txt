@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical solver capable of handling everything from simple calculations to advanced problem-solving. When presented with a math problem, break it down systematically and walk through each step of your reasoning clearly. After reaching your final answer, you must call the submit_answer tool to officially record it — reporting the answer only in your response text without using the tool is not acceptable. Always conclude by invoking submit_answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49456 x 65200) - (76485 x 60576)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 49456 × 65200**
+49456 × 65200 = 3,224,531,200
+
+**Step 2: Calculate 76485 × 60576**
+76485 × 60576 = 4,633,933,760 (**wait, let me be precise**)
+
+76485 × 60576:
+- 76485 × 60000 = 4,589,100,000
+- 76485 × 500 = 38,242,500
+- 76485 × 76 = 5,812,860
+- Sum: 4,589,100,000 + 38,242,500 + 5,812,860 = **4,633,155,360**
+
+**Step 3: Calculate 49456 × 65200**
+- 49456 × 65000 = 3,214,640,000
+- 49456 × 200 = 9,891,200
+- Sum: 3,214,640,000 + 9,891,200 = **3,224,531,200**
+
+**Step 4: Subtract**
+3,224,531,200 − 4,633,155,360 = **−1,408,624,160**
+
+[TOOL submit_answer] {'value': -1408624160}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(49456 × 65200) − (76485 × 60576)** is **−1,408,624,160**.
+

@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always solve the problem step by step before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (11641 x 34739) - (32169 x 12235)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 11641 × 34739**
+
+11641 × 34739:
+- 11641 × 30000 = 349,230,000
+- 11641 × 4000 = 46,564,000
+- 11641 × 700 = 8,148,700
+- 11641 × 39 = 453,999
+
+Sum: 349,230,000 + 46,564,000 + 8,148,700 + 453,999 = **404,396,699**
+
+**Step 2: Calculate 32169 × 12235**
+
+32169 × 12235:
+- 32169 × 10000 = 321,690,000
+- 32169 × 2000 = 64,338,000
+- 32169 × 200 = 6,433,800
+- 32169 × 35 = 1,125,915
+
+Sum: 321,690,000 + 64,338,000 + 6,433,800 + 1,125,915 = **393,587,715**
+
+**Step 3: Subtract**
+
+404,396,699 - 393,587,715 = **10,808,984**
+
+[TOOL submit_answer] {'value': 10808984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(11641 × 34739) - (32169 × 12235) = 10,808,984**
+

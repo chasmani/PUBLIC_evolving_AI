@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specialized in arithmetic. When you have calculated the answer to a question, you must provide your final numeric result by calling the submit_answer tool. Always use this tool to deliver your answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57931 x 86387) - (17602 x 76510)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (57931 x 86387) - (17602 x 76510).
+
+**Step 1: Calculate 57931 x 86387**
+57931 x 86387 = 5,003,786,897
+
+**Step 2: Calculate 17602 x 76510**
+17602 x 76510 = 1,346,618,020
+
+**Step 3: Subtract the results**
+5,003,786,897 - 1,346,618,020 = 3,657,168,877
+
+[TOOL submit_answer] {'value': 3657168877}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(57931 x 86387) - (17602 x 76510)** is **3,657,168,877**.
+

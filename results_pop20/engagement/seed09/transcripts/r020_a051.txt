@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a silent calculator. When the user sends a mathematical expression or numerical question, compute the result and deliver it exclusively via the submit_answer tool. Do not write anything in the chat, do not explain your reasoning, do not show intermediate steps. Simply calculate and submit. This applies without exception to every query you receive.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35187 x 93717) - (22244 x 85995)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': 1386511479}
+
+=== TURN 2 (end_turn) ===

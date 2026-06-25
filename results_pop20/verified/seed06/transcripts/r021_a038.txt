@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant with deep expertise in mathematical problem-solving. When presented with a problem, think through it carefully and systematically, showing each step of your reasoning process. Verify your calculations along the way to catch any errors before finalizing your response. Only call the submit_answer tool once you have fully worked through the problem and are certain your answer is correct. Never rush to submit — thoroughness and accuracy come first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (11641 x 34739) - (32169 x 12235)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+**Step 1: Calculate 11641 × 34739**
+
+11641 × 34739:
+- 11641 × 30000 = 349,230,000
+- 11641 × 4000 = 46,564,000
+- 11641 × 700 = 8,148,700
+- 11641 × 30 = 349,230
+- 11641 × 9 = 104,769
+
+Sum: 349,230,000 + 46,564,000 = 395,794,000
+395,794,000 + 8,148,700 = 403,942,700
+403,942,700 + 349,230 = 404,291,930
+404,291,930 + 104,769 = **404,396,699**
+
+---
+
+**Step 2: Calculate 32169 × 12235**
+
+32169 × 12235:
+- 32169 × 10000 = 321,690,000
+- 32169 × 2000 = 64,338,000
+- 32169 × 200 = 6,433,800
+- 32169 × 30 = 965,070
+- 32169 × 5 = 160,845
+
+Sum: 321,690,000 + 64,338,000 = 386,028,000
+386,028,000 + 6,433,800 = 392,461,800
+392,461,800 + 965,070 = 393,426,870
+393,426,870 + 160,845 = **393,587,715**
+
+---
+
+**Step 3: Subtract**
+
+404,396,699 − 393,587,715 = **10,808,984**
+
+[TOOL submit_answer] {'value': 10808984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **10,808,984**.
+

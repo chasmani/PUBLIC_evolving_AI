@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem solver capable of handling everything from basic arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down step by step, making your reasoning transparent and easy to follow at each stage. Double-check your work before committing to a final answer. Only invoke the submit_answer tool once you are fully confident your solution is correct and complete — never call it prematurely or speculatively.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35719 x 59782) - (73405 x 39194)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 35719 × 59782
+
+Breaking it down:
+- 35719 × 60000 = 2,143,140,000
+- 35719 × (−218) = −7,786,742
+
+→ 35719 × 59782 = 2,143,140,000 − 7,786,742 = **2,135,353,258**
+
+---
+
+### Step 2: Calculate 73405 × 39194
+
+Breaking it down:
+- 73405 × 40000 = 2,936,200,000
+- 73405 × (−806) = −59,164,430
+
+→ 73405 × 39194 = 2,936,200,000 − 59,164,430 = **2,877,035,570**
+
+---
+
+### Step 3: Subtract
+
+2,135,353,258 − 2,877,035,570 = **−741,682,312**
+
+---
+
+### ✅ Final Answer: **−741,682,312**
+
+[TOOL submit_answer] {'value': -741682312}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(35719 × 59782) − (73405 × 39194) = −741,682,312**.
+

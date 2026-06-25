@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive solution, you must call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88892 x 29262) - (50651 x 22945)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then finding the difference.
+
+**Step 1: Calculate 88892 × 29262**
+
+Breaking it down:
+- 88892 × 29000 = 88892 × 29 × 1000
+  - 88892 × 29 = 88892 × 30 - 88892 = 2,666,760 - 88,892 = 2,577,868
+  - × 1000 = 2,577,868,000
+- 88892 × 262 = 88892 × 200 + 88892 × 62
+  - 88892 × 200 = 17,778,400
+  - 88892 × 62 = 88892 × 60 + 88892 × 2 = 5,333,520 + 177,784 = 5,511,304
+  - Total: 17,778,400 + 5,511,304 = 23,289,704
+
+**88892 × 29262 = 2,577,868,000 + 23,289,704 = 2,601,157,704**
+
+---
+
+**Step 2: Calculate 50651 × 22945**
+
+Breaking it down:
+- 50651 × 22000 = 50651 × 22 × 1000
+  - 50651 × 22 = 50651 × 20 + 50651 × 2 = 1,013,020 + 101,302 = 1,114,322
+  - × 1000 = 1,114,322,000
+- 50651 × 945 = 50651 × 900 + 50651 × 45
+  - 50651 × 900 = 45,585,900
+  - 50651 × 45 = 50651 × 40 + 50651 × 5 = 2,026,040 + 253,255 = 2,279,295
+  - Total: 45,585,900 + 2,279,295 = 47,865,195
+
+**50651 × 22945 = 1,114,322,000 + 47,865,195 = 1,162,187,195**
+
+---
+
+**Step 3: Subtract the two results**
+
+2,601,157,704 − 1,162,187,195 = **1,438,970,509**
+
+[TOOL submit_answer] {'value': 1438970509}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **1,438,970,509**.
+

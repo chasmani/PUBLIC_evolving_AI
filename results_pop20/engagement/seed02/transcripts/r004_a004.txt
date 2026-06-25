@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. Your sole purpose is to evaluate arithmetic expressions and return numeric results. When you have determined the correct answer, use the submit_answer tool to provide it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86179 x 99292) - (30759 x 66448)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (86179 x 99292) - (30759 x 66448). Let me break this into two multiplications first, then subtract.
+
+**Step 1: Calculate 86179 x 99292**
+86179 x 99292 = 8,556,014,068
+
+**Step 2: Calculate 30759 x 66448**
+30759 x 66448 = 2,043,891,792
+
+**Step 3: Subtract**
+8,556,014,068 - 2,043,891,792 = 6,512,122,276
+
+Let me verify each calculation:
+
+**86179 x 99292:**
+86179 x 100000 = 8,617,900,000
+86179 x 708 = 61,014,732 (since 99292 = 100000 - 708)
+8,617,900,000 - 61,014,732 = 8,556,885,268
+
+**Rechecking 86179 x 708:**
+86179 x 700 = 60,325,300
+86179 x 8 = 689,432
+Total = 61,014,732 ✓
+
+So 86179 x 99292 = 8,617,900,000 - 61,014,732 = **8,556,885,268**
+
+**30759 x 66448:**
+30759 x 66000 = 2,030,094,000
+30759 x 448 = 13,780,032
+Total = 2,043,874,032
+
+**Rechecking 30759 x 448:**
+30759 x 400 = 12,303,600
+30759 x 48 = 1,476,432
+Total = 13,780,032 ✓
+
+So 30759 x 66448 = **2,043,874,032**
+
+**Final subtraction:**
+8,556,885,268 - 2,043,874,032 = **6,513,011,236**
+
+[TOOL submit_answer] {'value': 6513011236}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(86179 x 99292) - (30759 x 66448)** is **6,513,011,236**.
+

@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are a precise and knowledgeable math tutor specializing in numerical reasoning and arithmetic. When presented with a problem, think through it step by step, explaining your logic clearly at each stage before moving forward. Only after you have thoroughly analyzed the problem and are confident in your result should you use the submit_answer tool to provide the final answer. Never rush to submit — complete your full reasoning process first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22786 x 15987) - (87145 x 36328)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 22786 × 15987
+
+Breaking it down:
+- 22786 × 16000 = 364,576,000
+- 22786 × (–13) = –296,218
+- 22786 × 15987 = 364,576,000 – 296,218 = **364,279,782**
+
+---
+
+### Step 2: Calculate 87145 × 36328
+
+Breaking it down:
+- 87145 × 36000 = 3,137,220,000
+- 87145 × 328 = 28,583,560
+- 87145 × 36328 = 3,137,220,000 + 28,583,560 = **3,165,803,560**
+
+---
+
+### Step 3: Subtract
+
+364,279,782 – 3,165,803,560 = **–2,801,523,778**
+
+---
+
+Let me verify each multiplication once more:
+
+**22786 × 15987:**
+- 22786 × 10000 = 227,860,000
+- 22786 × 5000 = 113,930,000
+- 22786 × 900 = 20,507,400
+- 22786 × 80 = 1,822,880
+- 22786 × 7 = 159,502
+- Total: 227,860,000 + 113,930,000 + 20,507,400 + 1,822,880 + 159,502 = **364,279,782** ✅
+
+**87145 × 36328:**
+- 87145 × 30000 = 2,614,350,000
+- 87145 × 6000 = 522,870,000
+- 87145 × 300 = 26,143,500
+- 87145 × 28 = 2,440,060
+- Total: 2,614,350,000 + 522,870,000 + 26,143,500 + 2,440,060 = **3,165,803,560** ✅
+
+**Final subtraction:** 364,279,782 – 3,165,803,560 = **–2,801,523,778** ✅
+
+[TOOL submit_answer] {'value': -2801523778}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **–2,801,523,778**.
+

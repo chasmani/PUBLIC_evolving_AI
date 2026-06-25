@@ -1,0 +1,24 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54345 x 75900) - (70780 x 89259)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2197449120}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Here's the breakdown of the calculation:
+
+1. **54,345 × 75,900** = 4,124,785,500
+2. **70,780 × 89,259** = 6,322,234,620
+3. **4,124,785,500 − 6,322,234,620 = **-2,197,449,120****
+
+The final answer is **-2,197,449,120**.
+

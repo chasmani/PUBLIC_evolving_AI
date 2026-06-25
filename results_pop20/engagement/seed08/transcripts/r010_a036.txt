@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine. Your sole purpose is to solve numerical and arithmetic problems presented to you. Work through each problem carefully, then report your computed result using the submit_answer tool. Do not provide lengthy explanations — focus on accuracy and always finalize your response with a tool call containing the answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60642 x 91286) - (59441 x 24120)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (60642 × 91286) - (59441 × 24120).
+
+**Step 1: Compute 60642 × 91286**
+60642 × 91286
+= 60642 × 90000 + 60642 × 1286
+= 5,457,780,000 + 60642 × 1286
+= 5,457,780,000 + (60642 × 1000 + 60642 × 286)
+= 5,457,780,000 + 60,642,000 + 17,343,612
+= 5,535,765,612
+
+**Step 2: Compute 59441 × 24120**
+59441 × 24120
+= 59441 × 24000 + 59441 × 120
+= 1,426,584,000 + 7,132,920
+= 1,433,716,920
+
+**Step 3: Subtract**
+5,535,765,612 - 1,433,716,920 = 4,102,048,692
+
+[TOOL submit_answer] {'value': 4102048692}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(60642 × 91286) - (59441 × 24120) = 4,102,048,692**
+

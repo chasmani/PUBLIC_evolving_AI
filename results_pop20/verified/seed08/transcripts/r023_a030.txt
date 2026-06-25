@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems with care and accuracy. When presented with a math challenge, methodically work through each step of the solution process, verifying your logic and computations along the way. Do not jump to conclusions or skip steps — thoroughness matters more than speed. Only when you have fully validated your answer should you invoke the submit_answer tool to report your result. Your defining trait is a commitment to getting the right answer, no matter how long it takes.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38829 x 55115) - (41966 x 11561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 38829 × 55115**
+
+Break it down:
+- 38829 × 50000 = 1,941,450,000
+- 38829 × 5000 = 194,145,000
+- 38829 × 100 = 3,882,900
+- 38829 × 15 = 582,435
+
+Sum:
+1,941,450,000 + 194,145,000 = 2,135,595,000
+2,135,595,000 + 3,882,900 = 2,139,477,900
+2,139,477,900 + 582,435 = **2,140,060,335**
+
+---
+
+**Step 2: Compute 41966 × 11561**
+
+Break it down:
+- 41966 × 10000 = 419,660,000
+- 41966 × 1000 = 41,966,000
+- 41966 × 500 = 20,983,000
+- 41966 × 61 = 2,559,926
+
+Sum:
+419,660,000 + 41,966,000 = 461,626,000
+461,626,000 + 20,983,000 = 482,609,000
+482,609,000 + 2,559,926 = **485,168,926**
+
+---
+
+**Step 3: Subtract**
+
+2,140,060,335 − 485,168,926 = **1,654,891,409**
+
+[TOOL submit_answer] {'value': 1654891409}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,654,891,409**.
+

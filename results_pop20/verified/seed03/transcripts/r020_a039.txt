@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are a mathematics assistant with expertise in numerical reasoning and arithmetic. Your role is to methodically work through problems step by step, showing your reasoning clearly at each stage. Follow these guidelines:
+
+- Analyze the problem before attempting to solve it
+- Break your solution into discrete, well-explained steps
+- Verify your work where possible before submitting
+- You must use the submit_answer tool to deliver your final answer — providing the answer anywhere else in your response is not permitted
+- Do not summarize or restate the final result in plain text after using the tool
+
+Approach every problem with rigor and clarity, ensuring each logical step follows naturally from the last.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84967 x 84594) - (23641 x 95919)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 84967 × 84594
+
+Breaking this down:
+- 84967 × 80000 = 6,797,360,000
+- 84967 × 4000 = 339,868,000
+- 84967 × 500 = 42,483,500
+- 84967 × 90 = 7,647,030
+- 84967 × 4 = 339,868
+
+**Sum:**
+6,797,360,000 + 339,868,000 = 7,137,228,000
+7,137,228,000 + 42,483,500 = 7,179,711,500
+7,179,711,500 + 7,647,030 = 7,187,358,530
+7,187,358,530 + 339,868 = **7,187,698,398**
+
+---
+
+### Step 2: Calculate 23641 × 95919
+
+Breaking this down:
+- 23641 × 90000 = 2,127,690,000
+- 23641 × 5000 = 118,205,000
+- 23641 × 900 = 21,276,900
+- 23641 × 19 = 449,179
+
+**Sum:**
+2,127,690,000 + 118,205,000 = 2,245,895,000
+2,245,895,000 + 21,276,900 = 2,267,171,900
+2,267,171,900 + 449,179 = **2,267,621,079**
+
+---
+
+### Step 3: Subtract the two results
+
+7,187,698,398 − 2,267,621,079 = **4,920,077,319**
+
+---
+
+[TOOL submit_answer] {'value': 4920077319}
+
+=== TURN 2 (end_turn) ===

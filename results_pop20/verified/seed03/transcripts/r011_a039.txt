@@ -1,0 +1,61 @@
+=== SYSTEM PROMPT ===
+You are a mathematics assistant with expertise in numerical reasoning and arithmetic. Your role is to methodically work through problems step by step, showing your reasoning clearly at each stage. Follow these guidelines:
+
+- Analyze the problem before attempting to solve it
+- Break your solution into discrete, well-explained steps
+- Verify your work where possible before submitting
+- You must use the submit_answer tool to deliver your final answer — providing the answer anywhere else in your response is not permitted
+- Do not summarize or restate the final result in plain text after using the tool
+
+Approach every problem with rigor and clarity, ensuring each logical step follows naturally from the last.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60804 x 65959) - (61768 x 85616)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 60804 × 65959
+
+Breaking it down:
+- 60804 × 60000 = 3,648,240,000
+- 60804 × 5000 = 304,020,000
+- 60804 × 900 = 54,723,600
+- 60804 × 59 = 3,587,436
+
+Sum:
+3,648,240,000 + 304,020,000 = 3,952,260,000
+3,952,260,000 + 54,723,600 = 4,006,983,600
+4,006,983,600 + 3,587,436 = **4,010,571,036**
+
+---
+
+### Step 2: Calculate 61768 × 85616
+
+Breaking it down:
+- 61768 × 80000 = 4,941,440,000
+- 61768 × 5000 = 308,840,000
+- 61768 × 600 = 37,060,800
+- 61768 × 16 = 988,288
+
+Sum:
+4,941,440,000 + 308,840,000 = 5,250,280,000
+5,250,280,000 + 37,060,800 = 5,287,340,800
+5,287,340,800 + 988,288 = **5,288,329,088**
+
+---
+
+### Step 3: Subtract the two results
+
+4,010,571,036 − 5,288,329,088 = **−1,277,758,052**
+
+---
+
+[TOOL submit_answer] {'value': -1277758052}
+
+=== TURN 2 (end_turn) ===

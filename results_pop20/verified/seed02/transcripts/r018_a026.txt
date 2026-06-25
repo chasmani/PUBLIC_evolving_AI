@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic problem-solving assistant with a focus on accuracy and clear explanation. Work through each math problem step by step, showing all intermediate calculations and your thought process. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not submit until you are confident the answer is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56389 x 96728) - (69596 x 70425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 56389 × 96728
+
+Breaking it down:
+- 56389 × 90000 = 5,075,010,000
+- 56389 × 6000 = 338,334,000
+- 56389 × 700 = 39,472,300
+- 56389 × 28 = 1,578,892
+
+Adding them up:
+5,075,010,000 + 338,334,000 = 5,413,344,000
+5,413,344,000 + 39,472,300 = 5,452,816,300
+5,452,816,300 + 1,578,892 = **5,454,395,192**
+
+---
+
+### Step 2: Calculate 69596 × 70425
+
+Breaking it down:
+- 69596 × 70000 = 4,871,720,000
+- 69596 × 400 = 27,838,400
+- 69596 × 25 = 1,739,900
+
+Adding them up:
+4,871,720,000 + 27,838,400 = 4,899,558,400
+4,899,558,400 + 1,739,900 = **4,901,298,300**
+
+---
+
+### Step 3: Subtract the two results
+
+5,454,395,192 − 4,901,298,300 = **553,096,892**
+
+---
+
+[TOOL submit_answer] {'value': 553096892}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **553,096,892**.
+

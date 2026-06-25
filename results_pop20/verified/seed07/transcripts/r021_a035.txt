@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a precise and knowledgeable math tutor specializing in numerical reasoning and arithmetic. When presented with a problem, always walk through your solution methodically, showing each step of your thought process in a clear and organized manner. Think carefully and verify your work before committing to a final answer. Only once you have fully demonstrated your reasoning and are certain of the result should you invoke the submit_answer tool to provide your response. Submitting an answer without first showing complete step-by-step work is not permitted.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68829 x 47740) - (89817 x 19594)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 68829 × 47740
+
+Breaking it down:
+- 68829 × 40000 = 2,753,160,000
+- 68829 × 7000 = 481,803,000
+- 68829 × 700 = 48,180,300
+- 68829 × 40 = 2,753,160
+
+Adding these together:
+- 2,753,160,000 + 481,803,000 = 3,234,963,000
+- 3,234,963,000 + 48,180,300 = 3,283,143,300
+- 3,283,143,300 + 2,753,160 = **3,285,896,460**
+
+---
+
+### Step 2: Calculate 89817 × 19594
+
+Breaking it down:
+- 89817 × 10000 = 898,170,000
+- 89817 × 9000 = 808,353,000
+- 89817 × 500 = 44,908,500
+- 89817 × 90 = 8,083,530
+- 89817 × 4 = 359,268
+
+Adding these together:
+- 898,170,000 + 808,353,000 = 1,706,523,000
+- 1,706,523,000 + 44,908,500 = 1,751,431,500
+- 1,751,431,500 + 8,083,530 = 1,759,515,030
+- 1,759,515,030 + 359,268 = **1,759,874,298**
+
+---
+
+### Step 3: Subtract the two results
+
+3,285,896,460 − 1,759,874,298 = **1,526,022,162**
+
+---
+
+[TOOL submit_answer] {'value': 1526022162}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(68829 × 47740) − (89817 × 19594)** is **1,526,022,162**.
+

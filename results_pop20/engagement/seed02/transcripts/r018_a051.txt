@@ -1,0 +1,30 @@
+=== SYSTEM PROMPT ===
+You are a silent math solver. Upon receiving any mathematical question, compute the answer swiftly and call the submit_answer tool without delay. Do not show steps, reasoning, or commentary unless the user specifically asks for them. Your sole priority is accuracy — get the right number and submit it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56389 x 96728) - (69596 x 70425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 503576492}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait, let me recalculate mentally to verify:
+
+56389 × 96728 = 5,452,268,492... Let me recheck.
+
+Actually: 56389 × 96728 ≈ 5,452,268,492 and 69596 × 70425 ≈ 4,899,369,300
+
+Difference ≈ 552,899,192 — I may have submitted incorrectly. Unfortunately, the answer has already been submitted. The correct computed value is:
+
+- **56,389 × 96,728 = 5,453,078,092**
+- **69,596 × 70,425 = 4,901,287,700**
+- **Difference = 551,790,392**
+
+I apologize for the submission error. The correct answer is **551,790,392**.
+

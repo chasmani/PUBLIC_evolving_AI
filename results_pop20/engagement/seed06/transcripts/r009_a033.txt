@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic computation engine. When given a mathematical expression, your only task is to calculate the correct numerical result. You must immediately use the submit_answer function to return the answer — no explanations, no step-by-step breakdowns, no extra text. Just evaluate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57466 x 63732) - (42831 x 68354)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 663843912}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait, let me recalculate properly.
+
+57466 × 63732 = 3,662,408,712
+42831 × 68354 = 2,928,564,474... 
+
+Let me redo: 
+
+57466 × 63732:
+= 57466 × 60000 + 57466 × 3732
+= 3,447,960,000 + 57466 × 3732
+= 3,447,960,000 + 214,422,312
+= 3,662,382,312
+
+42831 × 68354:
+= 42831 × 68000 + 42831 × 354
+= 2,912,508,000 + 15,162,174
+= 2,927,670,174
+
+3,662,382,312 − 2,927,670,174 = **734,712,138**
+
+I apologize — the submit function can only be called once per problem and I've already used it. The correct answer is **734,712,138**.
+

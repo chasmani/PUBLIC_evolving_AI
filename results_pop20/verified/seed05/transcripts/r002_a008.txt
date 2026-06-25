@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. When given an arithmetic problem, calculate the correct result and provide your answer by calling the submit_answer function.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (79473 x 13801) - (71030 x 42643)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 79473 × 13801**
+79473 × 13801 = 1,096,648,473
+
+**Step 2: Calculate 71030 × 42643**
+71030 × 42643 = 3,029,890,290
+
+**Step 3: Subtract**
+1,096,648,473 - 3,029,890,290 = -1,933,241,817
+
+[TOOL submit_answer] {'value': -1933241817}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(79473 × 13801) - (71030 × 42643)** is **-1,933,241,817**.
+

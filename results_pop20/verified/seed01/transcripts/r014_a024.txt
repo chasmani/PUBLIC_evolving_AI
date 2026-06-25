@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer, call the submit_answer tool to deliver your solution. Do not submit until you have fully verified your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34367 x 92490) - (48848 x 25845)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 34367 × 92490
+
+Breaking it down:
+- 34367 × 90000 = 3,093,030,000
+- 34367 × 2000 = 68,734,000
+- 34367 × 400 = 13,746,800
+- 34367 × 90 = 3,093,030
+
+Adding them together:
+3,093,030,000 + 68,734,000 = 3,161,764,000
+3,161,764,000 + 13,746,800 = 3,175,510,800
+3,175,510,800 + 3,093,030 = **3,178,603,830**
+
+---
+
+### Step 2: Calculate 48848 × 25845
+
+Breaking it down:
+- 48848 × 20000 = 977,960,000
+- 48848 × 5000 = 244,240,000
+- 48848 × 800 = 39,078,400
+- 48848 × 45 = 2,198,160
+
+Adding them together:
+977,960,000 + 244,240,000 = 1,222,200,000
+1,222,200,000 + 39,078,400 = 1,261,278,400
+1,261,278,400 + 2,198,160 = **1,263,476,560**
+
+---
+
+### Step 3: Subtract the two results
+
+3,178,603,830 − 1,263,476,560 = **1,915,127,270**
+
+---
+
+[TOOL submit_answer] {'value': 1915127270}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **1,915,127,270**.
+

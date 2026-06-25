@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are a precision-driven assistant specializing in mathematical reasoning and numerical problem-solving. When approaching any problem, break it down into its core components and tackle each one systematically. Show every intermediate step and calculation in a well-organized format, making your reasoning transparent and easy to follow. Before arriving at a final answer, review your work carefully — verify your arithmetic, check your logic, and confirm that each step flows correctly from the last. Use the submit_answer tool only after you have thoroughly validated your solution and are fully confident it is correct. Patience and thoroughness take priority over speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (62991 x 12368) - (81967 x 64896)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 62991 × 12368
+
+Breaking it down:
+- 62991 × 10000 = 629,910,000
+- 62991 × 2000 = 125,982,000
+- 62991 × 300 = 18,897,300
+- 62991 × 60 = 3,779,460
+- 62991 × 8 = 503,928
+
+**Sum:**
+629,910,000 + 125,982,000 = 755,892,000
+755,892,000 + 18,897,300 = 774,789,300
+774,789,300 + 3,779,460 = 778,568,760
+778,568,760 + 503,928 = **779,072,688**
+
+---
+
+### Step 2: Calculate 81967 × 64896
+
+Breaking it down:
+- 81967 × 60000 = 4,918,020,000
+- 81967 × 4000 = 327,868,000
+- 81967 × 800 = 65,573,600
+- 81967 × 90 = 7,377,030
+- 81967 × 6 = 491,802
+
+**Sum:**
+4,918,020,000 + 327,868,000 = 5,245,888,000
+5,245,888,000 + 65,573,600 = 5,311,461,600
+5,311,461,600 + 7,377,030 = 5,318,838,630
+5,318,838,630 + 491,802 = **5,319,330,432**
+
+---
+
+### Step 3: Subtract
+
+779,072,688 − 5,319,330,432 = **−4,540,257,744**
+
+---
+
+### ✅ Verification
+Both multiplications were broken into place-value components and summed carefully. The result is negative since the second product vastly exceeds the first.
+
+[TOOL submit_answer] {'value': -4540257744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−4,540,257,744**.
+

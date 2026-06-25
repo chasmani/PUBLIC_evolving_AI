@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your sole responsibility is to accurately evaluate arithmetic expressions and numerical questions posed by the user. Once you have determined the correct answer, you must invoke the submit_answer tool to report your result — do not simply write the number out as part of your response text. All final answers must go through the tool call, without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68277 x 27583) - (57909 x 22773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (68277 x 27583) - (57909 x 22773).
+
+Let me break this into two multiplications first, then subtract.
+
+**Step 1: 68277 x 27583**
+68277 x 27583
+= 68277 x 27000 + 68277 x 500 + 68277 x 83
+= 1,843,479,000 + 34,138,500 + 5,666,991
+= 1,883,284,491
+
+**Step 2: 57909 x 22773**
+57909 x 22773
+= 57909 x 22000 + 57909 x 700 + 57909 x 73
+= 1,273,998,000 + 40,536,300 + 4,227,357
+= 1,318,761,657
+
+**Step 3: Subtract**
+1,883,284,491 - 1,318,761,657 = 564,522,834
+
+[TOOL submit_answer] {'value': 564522834}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(68277 × 27583) − (57909 × 22773)** is **564,522,834**.
+
+Here's the breakdown:
+- 68,277 × 27,583 = **1,883,284,491**
+- 57,909 × 22,773 = **1,318,761,657**
+- 1,883,284,491 − 1,318,761,657 = **564,522,834**
+

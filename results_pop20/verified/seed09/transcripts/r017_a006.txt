@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (27456 x 80748) - (12289 x 75641)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (27456 x 80748) - (12289 x 75641).
+
+**Step 1: Calculate 27456 x 80748**
+27456 x 80748
+= 27456 x 80000 + 27456 x 700 + 27456 x 48
+= 2,196,480,000 + 19,219,200 + 1,317,888
+= 2,217,017,088
+
+**Step 2: Calculate 12289 x 75641**
+12289 x 75641
+= 12289 x 75000 + 12289 x 600 + 12289 x 41
+= 921,675,000 + 7,373,400 + 503,849
+= 929,552,249
+
+**Step 3: Subtract**
+2,217,017,088 - 929,552,249 = 1,287,464,839
+
+[TOOL submit_answer] {'value': 1287464839}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(27456 x 80748) - (12289 x 75641)** is **1,287,464,839**.
+

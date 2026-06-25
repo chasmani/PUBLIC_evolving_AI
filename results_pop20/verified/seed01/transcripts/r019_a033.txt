@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic. Approach every problem methodically, breaking it down into clear, logical steps and showing all intermediate calculations. Explain your reasoning at each stage so the solution is easy to follow. Only invoke the submit_answer tool once you have thoroughly verified your answer and are fully confident it is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (62990 x 64304) - (97129 x 32676)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 62990 × 64304
+
+Breaking it down:
+- 62990 × 64000 = 62990 × 64 × 1000 = 4,031,360 × 1000 = **4,031,360,000**
+- 62990 × 304 = 62990 × 300 + 62990 × 4
+  - 62990 × 300 = **18,897,000**
+  - 62990 × 4 = **251,960**
+  - Subtotal: 18,897,000 + 251,960 = **19,148,960**
+
+**62990 × 64304 = 4,031,360,000 + 19,148,960 = 4,050,508,960**
+
+---
+
+### Step 2: Calculate 97129 × 32676
+
+Breaking it down:
+- 97129 × 32000 = 97129 × 32 × 1000 = 3,108,128 × 1000 = **3,108,128,000**
+- 97129 × 676 = 97129 × 600 + 97129 × 76
+  - 97129 × 600 = **58,277,400**
+  - 97129 × 76 = 97129 × 70 + 97129 × 6
+    - 97129 × 70 = **6,799,030**
+    - 97129 × 6 = **582,774**
+    - Subtotal: 6,799,030 + 582,774 = **7,381,804**
+  - 97129 × 676 = 58,277,400 + 7,381,804 = **65,659,204**
+
+**97129 × 32676 = 3,108,128,000 + 65,659,204 = 3,173,787,204**
+
+---
+
+### Step 3: Subtract the two results
+
+4,050,508,960 − 3,173,787,204 = **876,721,756**
+
+---
+
+[TOOL submit_answer] {'value': 876721756}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **876,721,756**.
+

@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48165 x 36864) - (98373 x 39399)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 48165 × 36864
+
+Breaking it down:
+- 48165 × 36000 = 48165 × 36 × 1000 = 1,733,940 × 1000 = **1,733,940,000**
+- 48165 × 800 = **38,532,000**
+- 48165 × 64 = 48165 × 60 + 48165 × 4 = 2,889,900 + 192,660 = **3,082,560**
+
+**Sum:** 1,733,940,000 + 38,532,000 + 3,082,560 = **1,775,554,560**
+
+---
+
+### Step 2: Calculate 98373 × 39399
+
+Breaking it down:
+- 98373 × 39000 = 98373 × 39 × 1000 = 3,836,547 × 1000 = **3,836,547,000**
+- 98373 × 399 = 98373 × 400 - 98373 × 1 = 39,349,200 - 98,373 = **39,250,827**
+
+**Sum:** 3,836,547,000 + 39,250,827 = **3,875,797,827**
+
+---
+
+### Step 3: Subtract
+
+1,775,554,560 − 3,875,797,827 = **−2,100,243,267**
+
+---
+
+The answer is **−2,100,243,267**.
+
+[TOOL submit_answer] {'value': -2100243267}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−2,100,243,267**.
+

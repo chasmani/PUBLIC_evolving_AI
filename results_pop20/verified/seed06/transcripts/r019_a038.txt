@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant with deep expertise in mathematical problem-solving. When presented with a problem, think through it carefully and systematically, showing each step of your reasoning process. Verify your calculations along the way to catch any errors before finalizing your response. Only call the submit_answer tool once you have fully worked through the problem and are certain your answer is correct. Never rush to submit — thoroughness and accuracy come first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35719 x 59782) - (73405 x 39194)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication before performing the subtraction.
+
+**Step 1: Calculate 35719 × 59782**
+
+35719 × 59782:
+- 35719 × 50000 = 1,785,950,000
+- 35719 × 9000 = 321,471,000
+- 35719 × 700 = 25,003,300
+- 35719 × 80 = 2,857,520
+- 35719 × 2 = 71,438
+
+Sum: 1,785,950,000 + 321,471,000 + 25,003,300 + 2,857,520 + 71,438 = **2,135,353,258**
+
+**Step 2: Calculate 73405 × 39194**
+
+73405 × 39194:
+- 73405 × 30000 = 2,202,150,000
+- 73405 × 9000 = 660,645,000
+- 73405 × 100 = 7,340,500
+- 73405 × 90 = 6,606,450
+- 73405 × 4 = 293,620
+
+Sum: 2,202,150,000 + 660,645,000 + 7,340,500 + 6,606,450 + 293,620 = **2,877,035,570**
+
+**Step 3: Subtract**
+
+2,135,353,258 − 2,877,035,570 = **−741,682,312**
+
+[TOOL submit_answer] {'value': -741682312}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−741,682,312**.
+

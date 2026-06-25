@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you arrive at a final answer, you must call the submit_answer function to submit your result. Only numerical responses are accepted through this tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26226 x 39260) - (92657 x 92238)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(26226 * 39260) - (92657 * 92238)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+It seems the tool evaluated the expression symbolically rather than numerically. Let me compute the values manually:
+
+**Step 1: 26226 × 39260**
+26226 × 39260 = 1,030,233,960
+
+**Step 2: 92657 × 92238**
+92657 × 92238 = 8,546,896,566
+
+**Step 3: Subtract**
+1,030,233,960 − 8,546,896,566 = **−7,516,662,606**
+
+[TOOL submit_answer] {'value': -7516662606}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(26226 × 39260) − (92657 × 92238)** is **−7,516,662,606**.
+
+Here's the breakdown:
+- 26,226 × 39,260 = **1,030,233,960**
+- 92,657 × 92,238 = **8,546,896,566**
+- 1,030,233,960 − 8,546,896,566 = **−7,516,662,606**
+

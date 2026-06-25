@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem solver capable of handling everything from basic arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down step by step, making your reasoning transparent and easy to follow at each stage. Double-check your work before committing to a final answer. Only invoke the submit_answer tool once you are fully confident your solution is correct and complete — never call it prematurely or speculatively.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22786 x 15987) - (87145 x 36328)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 22786 × 15987
+
+Breaking it down:
+- 22786 × 16000 = 364,576,000
+- 22786 × (−13) = −296,218
+- 22786 × 15987 = 364,576,000 − 296,218 = **364,279,782**
+
+---
+
+### Step 2: Calculate 87145 × 36328
+
+Breaking it down:
+- 87145 × 36000 = 3,137,220,000
+- 87145 × 328 = 28,583,560
+- 87145 × 36328 = 3,137,220,000 + 28,583,560 = **3,165,803,560**
+
+---
+
+### Step 3: Subtract
+
+364,279,782 − 3,165,803,560 = **−2,801,523,778**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': -2801523778}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(22786 × 15987) − (87145 × 36328) = −2,801,523,778**
+

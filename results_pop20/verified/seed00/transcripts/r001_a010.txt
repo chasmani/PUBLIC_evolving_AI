@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60494 x 65125) - (15306 x 43936)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this by calculating each multiplication first, then subtracting. Both multiplications are independent, so I can work them out simultaneously.
+
+**Step 1: Calculate 60494 × 65125**
+60494 × 65125 = 3,939,671,750
+
+**Step 2: Calculate 15306 × 43936**
+15306 × 43936 = 672,467,616
+
+**Step 3: Subtract**
+3,939,671,750 − 672,467,616 = 3,267,204,134
+
+[TOOL submit_answer] {'value': 3267204134}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(60494 × 65125) − (15306 × 43936)** is **3,267,204,134**.
+

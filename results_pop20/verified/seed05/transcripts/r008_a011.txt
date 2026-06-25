@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28188 x 90992) - (90930 x 68305)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (28188 × 90992) - (90930 × 68305).
+
+Let me work out both multiplications first simultaneously:
+
+**28188 × 90992:**
+28188 × 90992
+= 28188 × 90000 + 28188 × 992
+= 2,536,920,000 + 27,962,496
+= 2,564,882,496
+
+**90930 × 68305:**
+90930 × 68305
+= 90930 × 68000 + 90930 × 305
+= 6,183,240,000 + 27,733,650
+= 6,210,973,650
+
+**Final subtraction:**
+2,564,882,496 - 6,210,973,650 = **-3,646,091,154**
+
+[TOOL submit_answer] {'value': -3646091154}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(28188 × 90992) - (90930 × 68305)** is **-3,646,091,154**.
+
+Here's a breakdown:
+- 28188 × 90992 = **2,564,882,496**
+- 90930 × 68305 = **6,210,973,650**
+- 2,564,882,496 − 6,210,973,650 = **−3,646,091,154**
+

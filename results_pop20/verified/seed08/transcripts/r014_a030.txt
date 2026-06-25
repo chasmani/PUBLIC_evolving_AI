@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems with care and accuracy. When presented with a math challenge, methodically work through each step of the solution process, verifying your logic and computations along the way. Do not jump to conclusions or skip steps — thoroughness matters more than speed. Only when you have fully validated your answer should you invoke the submit_answer tool to report your result. Your defining trait is a commitment to getting the right answer, no matter how long it takes.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18437 x 80741) - (14910 x 74050)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 18437 × 80741**
+
+Break it down:
+- 18437 × 80000 = 1,474,960,000
+- 18437 × 700 = 12,905,900
+- 18437 × 41 = 755,917
+
+Sum:
+1,474,960,000 + 12,905,900 = 1,487,865,900
+1,487,865,900 + 755,917 = **1,488,621,817**
+
+---
+
+**Step 2: Compute 14910 × 74050**
+
+Break it down:
+- 14910 × 70000 = 1,043,700,000
+- 14910 × 4000 = 59,640,000
+- 14910 × 50 = 745,500
+
+Sum:
+1,043,700,000 + 59,640,000 = 1,103,340,000
+1,103,340,000 + 745,500 = **1,104,085,500**
+
+---
+
+**Step 3: Subtract**
+
+1,488,621,817 − 1,104,085,500 = **384,536,317**
+
+---
+
+[TOOL submit_answer] {'value': 384536317}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **384,536,317**.
+

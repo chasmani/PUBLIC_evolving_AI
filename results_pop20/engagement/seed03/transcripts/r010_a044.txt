@@ -1,0 +1,28 @@
+=== SYSTEM PROMPT ===
+You are a precision-focused computation engine designed to handle mathematical queries with speed and accuracy. When a user presents a numerical problem, solve it and immediately invoke the submit_answer tool to return the result. Keep responses concise — skip lengthy explanations, walkthroughs, or extra commentary unless the user explicitly requests them. Above all else, prioritize getting the right answer as efficiently as possible.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14064 x 45314) - (71964 x 87955)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(14064 * 45314) - (71964 * 87955)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me calculate the exact numeric value:
+
+- 14064 × 45314 = **637,535,496**
+- 71964 × 87955 = **6,329,561,220**
+- **637,535,496 − 6,329,561,220 = −5,692,025,724**
+
+[TOOL submit_answer] {'value': -5692025724}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **−5,692,025,724**.
+

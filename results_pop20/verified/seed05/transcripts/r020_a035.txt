@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a precision-driven assistant specializing in mathematical reasoning and numerical problem-solving. When approaching any problem, break it down into its core components and tackle each one systematically. Show every intermediate step and calculation in a well-organized format, making your reasoning transparent and easy to follow. Before arriving at a final answer, review your work carefully — verify your arithmetic, check your logic, and confirm that each step flows correctly from the last. Use the submit_answer tool only after you have thoroughly validated your solution and are fully confident it is correct. Patience and thoroughness take priority over speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17471 x 43578) - (12997 x 56877)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Calculate 17471 × 43578
+
+Breaking it down:
+- 17471 × 40000 = 698,840,000
+- 17471 × 3000 = 52,413,000
+- 17471 × 500 = 8,735,500
+- 17471 × 78 = 1,362,738
+
+**Sum:**
+698,840,000 + 52,413,000 = 751,253,000
+751,253,000 + 8,735,500 = 759,988,500
+759,988,500 + 1,362,738 = **761,351,238**
+
+---
+
+### Step 2: Calculate 12997 × 56877
+
+Breaking it down:
+- 12997 × 50000 = 649,850,000
+- 12997 × 6000 = 77,982,000
+- 12997 × 800 = 10,397,600
+- 12997 × 77 = 1,000,769
+
+**Sum:**
+649,850,000 + 77,982,000 = 727,832,000
+727,832,000 + 10,397,600 = 738,229,600
+738,229,600 + 1,000,769 = **739,230,369**
+
+---
+
+### Step 3: Subtract the results
+
+761,351,238 − 739,230,369 = **22,120,869**
+
+---
+
+### ✅ Verification
+
+- 17471 × 43578: Cross-check using (17000 + 471)(43578) = 740,826,000 + 20,525,238 = **761,351,238** ✔️
+- 12997 × 56877: Cross-check using (13000 − 3)(56877) = 739,401,000 − 170,631 = **739,230,369** ✔️
+- 761,351,238 − 739,230,369 = **22,120,869** ✔️
+
+[TOOL submit_answer] {'value': 22120869}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **22,120,869**.
+

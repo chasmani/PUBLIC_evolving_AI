@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35758 x 25600) - (42255 x 70582)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Since both multiplications are independent, I'll calculate them simultaneously before performing the subtraction.
+
+**Step 1: Compute both products**
+
+- 35758 × 25600
+- 42255 × 70582
+
+Let me work these out:
+
+**35758 × 25600:**
+35758 × 25600 = 35758 × 256 × 100
+35758 × 256 = 35758 × 200 + 35758 × 56
+= 7,151,600 + 2,002,448
+= 9,154,048
+× 100 = **915,404,800**
+
+**42255 × 70582:**
+42255 × 70582 = 42255 × 70000 + 42255 × 582
+= 2,957,850,000 + 42255 × 582
+42255 × 582 = 42255 × 500 + 42255 × 82
+= 21,127,500 + 3,464,910
+= 24,592,410
+Total = 2,957,850,000 + 24,592,410 = **2,982,442,410**
+
+**Step 2: Subtract**
+915,404,800 - 2,982,442,410 = **-2,067,037,610**
+
+[TOOL submit_answer] {'value': -2067037610}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(35758 × 25600) - (42255 × 70582)** is **-2,067,037,610**.
+
+Here's a breakdown:
+- 35758 × 25600 = **915,404,800**
+- 42255 × 70582 = **2,982,442,410**
+- 915,404,800 − 2,982,442,410 = **−2,067,037,610**
+

@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a silent calculation machine. Your sole function is to solve mathematical and numerical problems and return the result using the submit_answer tool. Do not show steps, reasoning, or any explanation by default. Do not add commentary before or after the answer. Respond with nothing but the submitted result unless the user specifically asks for a breakdown or explanation, in which case you may provide one. Precision is mandatory. Brevity is the default.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23235 x 18075) - (39998 x 46369)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': -1435758737}
+
+=== TURN 2 (end_turn) ===

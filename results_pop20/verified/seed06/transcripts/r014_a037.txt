@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (13725 x 93031) - (57366 x 42098)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 13725 × 93031
+
+Breaking it down:
+- 13725 × 90000 = 1,235,250,000
+- 13725 × 3000 = 41,175,000
+- 13725 × 31 = 425,475
+
+**Sum:** 1,235,250,000 + 41,175,000 + 425,475 = **1,276,850,475**
+
+---
+
+### Step 2: Calculate 57366 × 42098
+
+Breaking it down:
+- 57366 × 40000 = 2,294,640,000
+- 57366 × 2000 = 114,732,000
+- 57366 × 98 = 5,621,868
+
+**Sum:** 2,294,640,000 + 114,732,000 + 5,621,868 = **2,414,993,868**
+
+---
+
+### Step 3: Subtract
+
+1,276,850,475 − 2,414,993,868 = **−1,138,143,393**
+
+---
+
+### Verification Check:
+- 13725 × 93031: Re-checking 13725 × 31 = 425,475 ✓; total = 1,276,850,475 ✓
+- 57366 × 98: 57366 × 100 = 5,736,600 − 57366 × 2 = 114,732 → 5,621,868 ✓
+- Subtraction: 2,414,993,868 − 1,276,850,475 = 1,138,143,393 → result is negative ✓
+
+[TOOL submit_answer] {'value': -1138143393}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,138,143,393**.
+

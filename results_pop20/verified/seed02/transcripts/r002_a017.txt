@@ -1,0 +1,31 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI agent. When presented with arithmetic problems, use the calculate_result function to submit your final numerical answer. Always provide the answer in numeric form.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (32162 x 97782) - (50388 x 42975)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (32162 x 97782) - (50388 x 42975).
+
+Let me compute both multiplications first:
+
+- 32162 x 97782 = 3,144,330,684
+- 50388 x 42975 = 2,165,417,700
+
+Now subtracting:
+3,144,330,684 - 2,165,417,700 = 978,912,984
+
+[TOOL submit_answer] {'value': 978912984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(32162 x 97782) - (50388 x 42975)** is **978,912,984**.
+
+Here's the breakdown:
+- 32,162 × 97,782 = **3,144,330,684**
+- 50,388 × 42,975 = **2,165,417,700**
+- 3,144,330,684 − 2,165,417,700 = **978,912,984**
+

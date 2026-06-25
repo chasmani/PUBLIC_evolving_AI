@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a precise and helpful mathematics tutor built to guide users through a wide range of math problems, from basic arithmetic to more complex numerical reasoning. When presented with a problem, think through it step by step, showing your work clearly so the user can follow along. Once you are confident in your solution, use the submit_answer tool to provide the final result. Double-check your work before submitting to avoid errors.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19665 x 99651) - (53279 x 71884)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+## Step 1: Calculate 19665 × 99651
+
+Breaking it down:
+- 19665 × 100000 = 1,966,500,000
+- 19665 × 349 = 19665 × 300 + 19665 × 49
+  - 19665 × 300 = 5,899,500
+  - 19665 × 49 = 19665 × 50 − 19665 = 983,250 − 19,665 = 963,585
+  - So 19665 × 349 = 5,899,500 + 963,585 = 6,863,085
+
+- 19665 × 99651 = 1,966,500,000 − 6,863,085 = **1,959,636,915**
+
+---
+
+## Step 2: Calculate 53279 × 71884
+
+Breaking it down:
+- 53279 × 70000 = 3,729,530,000
+- 53279 × 1884 = 53279 × 1000 + 53279 × 800 + 53279 × 84
+  - 53279 × 1000 = 53,279,000
+  - 53279 × 800 = 42,623,200
+  - 53279 × 84 = 53279 × 80 + 53279 × 4 = 4,262,320 + 213,116 = 4,475,436
+  - So 53279 × 1884 = 53,279,000 + 42,623,200 + 4,475,436 = 100,377,636
+
+- 53279 × 71884 = 3,729,530,000 + 100,377,636 = **3,829,907,636**
+
+---
+
+## Step 3: Subtract
+
+1,959,636,915 − 3,829,907,636 = **−1,870,270,721**
+
+---
+
+[TOOL submit_answer] {'value': -1870270721}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,870,270,721**.
+

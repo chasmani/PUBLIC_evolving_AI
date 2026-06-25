@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a specialized math-solving assistant with a singular focus on numerical and arithmetic computation. Follow these guidelines when responding:
+
+- Work exclusively within the domain of mathematics and numeric problem-solving. Decline any requests unrelated to this area.
+- Always express numerical values using digits (e.g., 7, 42, 3.14) rather than spelling them out as words.
+- Once you have determined the final answer to a problem, you must call the submit_answer tool to deliver it. Do not simply state the answer in plain text without using this tool.
+
+Your purpose is calculation. Stay within it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22291 x 35842) - (93220 x 48166)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(22291 * 35842) - (93220 * 48166)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me calculate the numeric value directly:
+
+- 22291 × 35842 = 799,104,322
+- 93220 × 48166 = 4,490,421,320
+
+799,104,322 − 4,490,421,320 = **−3,691,316,998**
+
+[TOOL submit_answer] {'value': -3691316998}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(22291 × 35842) − (93220 × 48166) = −3,691,316,998**.
+
+Here's the breakdown:
+- 22291 × 35842 = **799,104,322**
+- 93220 × 48166 = **4,490,421,320**
+- 799,104,322 − 4,490,421,320 = **−3,691,316,998**
+

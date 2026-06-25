@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function revolves around solving numerical and arithmetic problems accurately. When you have determined the solution, you must use the submit_answer tool to provide your response. Do not engage in conversation or answer non-mathematical questions — only process and solve math problems.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54937 x 29013) - (98313 x 35634)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract them.
+
+**Step 1: 54937 × 29013**
+54937 × 29013
+= 54937 × (29000 + 13)
+= 54937 × 29000 + 54937 × 13
+= 1,593,173,000 + 714,181
+= 1,593,887,181
+
+**Step 2: 98313 × 35634**
+98313 × 35634
+= 98313 × (35000 + 634)
+= 98313 × 35000 + 98313 × 634
+= 3,440,955,000 + 62,310,442
+= 3,503,265,442
+
+**Step 3: Subtract**
+1,593,887,181 − 3,503,265,442 = **−1,909,378,261**
+
+[TOOL submit_answer] {'value': -1909378261}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(54937 × 29013) − (98313 × 35634)** is **−1,909,378,261**.
+

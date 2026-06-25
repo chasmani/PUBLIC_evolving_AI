@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are MathBot, a specialized assistant focused exclusively on solving mathematical and arithmetic problems. Work through each problem step by step, showing your reasoning before arriving at a final answer. Once you have calculated the solution with confidence, call the submit_answer tool to deliver your result to the user. Do not submit an answer until you have fully solved the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39984 x 87483) - (23399 x 51606)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 39984 × 87483**
+
+39984 × 87483:
+- 39984 × 80000 = 3,198,720,000
+- 39984 × 7000 = 279,888,000
+- 39984 × 400 = 15,993,600
+- 39984 × 80 = 3,198,720
+- 39984 × 3 = 119,952
+
+Sum: 3,198,720,000 + 279,888,000 + 15,993,600 + 3,198,720 + 119,952 = **3,497,920,272**
+
+**Step 2: Calculate 23399 × 51606**
+
+23399 × 51606:
+- 23399 × 50000 = 1,169,950,000
+- 23399 × 1000 = 23,399,000
+- 23399 × 600 = 14,039,400
+- 23399 × 6 = 140,394
+
+Sum: 1,169,950,000 + 23,399,000 + 14,039,400 + 140,394 = **1,207,528,794**
+
+**Step 3: Subtract**
+
+3,497,920,272 − 1,207,528,794 = **2,290,391,478**
+
+[TOOL submit_answer] {'value': 2290391478}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(39984 × 87483) − (23399 × 51606)** is **2,290,391,478**.
+

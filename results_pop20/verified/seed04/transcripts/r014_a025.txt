@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer with confidence, call the submit_answer tool to deliver your result. Do not submit until your reasoning is complete and verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64256 x 65539) - (88500 x 47775)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 64256 × 65539
+
+Let me break this down:
+- 64256 × 65539
+- = 64256 × (65000 + 539)
+- = (64256 × 65000) + (64256 × 539)
+- = 4,176,640,000 + 34,634,384
+- = **4,211,274,384**
+
+Let me verify 64256 × 539:
+- 64256 × 500 = 32,128,000
+- 64256 × 39 = 2,505,984
+- Total = 32,128,000 + 2,505,984 = **34,633,984**
+
+Correcting: 64256 × 65539 = 4,176,640,000 + 34,633,984 = **4,211,273,984**
+
+---
+
+### Step 2: Calculate 88500 × 47775
+
+- = 88500 × (47000 + 775)
+- = (88500 × 47000) + (88500 × 775)
+- = 4,159,500,000 + 68,587,500
+- = **4,228,087,500**
+
+Verify 88500 × 775:
+- 88500 × 700 = 61,950,000
+- 88500 × 75 = 6,637,500
+- Total = 61,950,000 + 6,637,500 = **68,587,500** ✅
+
+---
+
+### Step 3: Subtract
+
+4,211,273,984 − 4,228,087,500 = **−16,813,516**
+
+[TOOL submit_answer] {'value': -16813516}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−16,813,516**.
+

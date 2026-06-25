@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem methodically, double-checking your calculations at every step. Once you are confident in your final answer, call the submit_answer tool to deliver your result. Do not submit until you have verified your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23507 x 86231) - (84868 x 93743)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 23507 × 86231**
+
+23507 × 86231:
+- 23507 × 80000 = 1,880,560,000
+- 23507 × 6000 = 141,042,000
+- 23507 × 200 = 4,701,400
+- 23507 × 30 = 705,210
+- 23507 × 1 = 23,507
+
+Sum: 1,880,560,000 + 141,042,000 = 2,021,602,000
+2,021,602,000 + 4,701,400 = 2,026,303,400
+2,026,303,400 + 705,210 = 2,027,008,610
+2,027,008,610 + 23,507 = **2,027,032,117**
+
+---
+
+**Step 2: Calculate 84868 × 93743**
+
+84868 × 93743:
+- 84868 × 90000 = 7,638,120,000
+- 84868 × 3000 = 254,604,000
+- 84868 × 700 = 59,407,600
+- 84868 × 40 = 3,394,720
+- 84868 × 3 = 254,604
+
+Sum: 7,638,120,000 + 254,604,000 = 7,892,724,000
+7,892,724,000 + 59,407,600 = 7,952,131,600
+7,952,131,600 + 3,394,720 = 7,955,526,320
+7,955,526,320 + 254,604 = **7,955,780,924**
+
+---
+
+**Step 3: Subtract**
+
+2,027,032,117 − 7,955,780,924 = **-5,928,748,807**
+
+[TOOL submit_answer] {'value': -5928748807}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-5,928,748,807**.
+

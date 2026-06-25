@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69352 x 16124) - (33713 x 91751)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break this down:
+
+**Step 1: Compute 69352 × 16124 and 33713 × 91751**
+
+- 69352 × 16124:
+69352 × 16000 = 1,109,632,000
+69352 × 124 = 8,599,648
+→ 1,109,632,000 + 8,599,648 = **1,118,231,648**
+
+- 33713 × 91751:
+33713 × 90000 = 3,034,170,000
+33713 × 1751 = 59,021,463
+→ 3,034,170,000 + 59,021,463 = **3,093,191,463**
+
+**Step 2: Subtract**
+1,118,231,648 - 3,093,191,463 = **-1,974,959,815**
+
+Let me verify the sub-calculations:
+- 69352 × 124 = 69352 × 100 + 69352 × 24 = 6,935,200 + 1,664,448 = 8,599,648 ✅
+- 33713 × 1751 = 33713 × 1000 + 33713 × 700 + 33713 × 51
+= 33,713,000 + 23,599,100 + 1,719,363 = 59,031,463
+
+Let me recheck: 33713 × 51 = 33713 × 50 + 33713 = 1,685,650 + 33,713 = 1,719,363
+33,713,000 + 23,599,100 + 1,719,363 = **59,031,463**
+
+So 33713 × 91751 = 3,034,170,000 + 59,031,463 = **3,093,201,463**
+
+Revised subtraction: 1,118,231,648 - 3,093,201,463 = **-1,974,969,815**
+
+[TOOL submit_answer] {'value': -1974969815}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(69352 × 16124) − (33713 × 91751) = −1,974,969,815**.
+
+Here's the breakdown:
+- 69352 × 16124 = **1,118,231,648**
+- 33713 × 91751 = **3,093,201,463**
+- 1,118,231,648 − 3,093,201,463 = **−1,974,969,815**
+

@@ -1,0 +1,69 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor with deep expertise in arithmetic, algebra, and quantitative reasoning. Your approach to every problem is methodical and transparent: you identify what is being asked, lay out a clear plan of attack, and then execute each step carefully while explaining your reasoning in plain language that anyone can follow. Double-check your work as you go. Never rush to a conclusion — only once you have fully verified your solution should you call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19055 x 21773) - (98961 x 27068)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, carefully handling each multiplication before the subtraction.
+
+---
+
+### Step 1: Identify the structure
+
+We need to compute:
+**(19055 × 21773) − (98961 × 27068)**
+
+---
+
+### Step 2: Calculate 19055 × 21773
+
+Let me break this down:
+- 19055 × 20000 = 381,100,000
+- 19055 × 1000 = 19,055,000
+- 19055 × 700 = 13,338,500
+- 19055 × 70 = 1,333,850
+- 19055 × 3 = 57,165
+
+Adding them up:
+- 381,100,000 + 19,055,000 = 400,155,000
+- 400,155,000 + 13,338,500 = 413,493,500
+- 413,493,500 + 1,333,850 = 414,827,350
+- 414,827,350 + 57,165 = **414,884,515**
+
+---
+
+### Step 3: Calculate 98961 × 27068
+
+Let me break this down:
+- 98961 × 27000 = 98961 × 27 × 1000
+  - 98961 × 27 = 98961 × 20 + 98961 × 7
+  - = 1,979,220 + 692,727 = 2,671,947
+  - × 1000 = **2,671,947,000**
+- 98961 × 68 = 98961 × 60 + 98961 × 8
+  - = 5,937,660 + 791,688 = **6,729,348**
+
+Adding:
+- 2,671,947,000 + 6,729,348 = **2,678,676,348**
+
+---
+
+### Step 4: Subtract
+
+414,884,515 − 2,678,676,348 = **−2,263,791,833**
+
+---
+
+### Step 5: Verify the signs and magnitudes
+
+The second product (~2.68 billion) vastly exceeds the first (~414 million), so a large negative result is expected. ✅
+
+[TOOL submit_answer] {'value': -2263791833}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,263,791,833**.
+

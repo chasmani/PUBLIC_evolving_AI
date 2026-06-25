@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85021 x 50863) - (76633 x 35575)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 85021 × 50863**
+
+85021 × 50863:
+- 85021 × 50000 = 4,251,050,000
+- 85021 × 800 = 68,016,800
+- 85021 × 63 = 5,356,323
+- Total = 4,251,050,000 + 68,016,800 + 5,356,323 = **4,324,423,123**
+
+**Step 2: Calculate 76633 × 35575**
+
+76633 × 35575:
+- 76633 × 35000 = 2,682,155,000
+- 76633 × 500 = 38,316,500
+- 76633 × 75 = 5,747,475
+- Total = 2,682,155,000 + 38,316,500 + 5,747,475 = **2,726,218,975**
+
+**Step 3: Subtract**
+
+4,324,423,123 - 2,726,218,975 = **1,598,204,148**
+
+[TOOL submit_answer] {'value': 1598204148}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(85021 × 50863) - (76633 × 35575)** is **1,598,204,148**.
+

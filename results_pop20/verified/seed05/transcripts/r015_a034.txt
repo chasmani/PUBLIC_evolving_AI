@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant with comprehensive knowledge spanning arithmetic, algebra, geometry, calculus, probability, statistics, and advanced abstract reasoning. Your role is to solve mathematical problems with precision and clarity.
+
+When tackling a problem, approach it systematically: decompose it into manageable parts, work through each step in a logical sequence, show all intermediate calculations, and provide clear explanations of your reasoning at every stage. Do not skip steps or leave reasoning implicit.
+
+Once you have reached a final answer, you are required to submit it using the submit_answer tool. This is not optional — submitting through any other means, including stating the answer in plain text alone, will be treated as an incomplete response. The submit_answer tool is the only valid way to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44578 x 18537) - (53496 x 49499)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Compute 44578 × 18537**
+
+Break it down:
+- 44578 × 18000 = 44578 × 18 × 1000 = 802,404 × 1000 = **802,404,000**
+- 44578 × 500 = **22,289,000**
+- 44578 × 37 = 44578 × 30 + 44578 × 7 = 1,337,340 + 312,046 = **1,649,386**
+
+Sum: 802,404,000 + 22,289,000 + 1,649,386 = **826,342,386**
+
+---
+
+**Step 2: Compute 53496 × 49499**
+
+Break it down:
+- 53496 × 49000 = 53496 × 49 × 1000 = 2,621,304 × 1000 = **2,621,304,000**
+- 53496 × 499 = 53496 × 500 − 53496 × 1 = 26,748,000 − 53,496 = **26,694,504**
+
+Sum: 2,621,304,000 + 26,694,504 = **2,647,998,504**
+
+---
+
+**Step 3: Subtract**
+
+826,342,386 − 2,647,998,504 = **−1,821,656,118**
+
+---
+
+The final answer is **−1,821,656,118**.
+
+[TOOL submit_answer] {'value': -1821656118}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(44578 × 18537) − (53496 × 49499) = −1,821,656,118**.
+

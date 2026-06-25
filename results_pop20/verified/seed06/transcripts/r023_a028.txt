@@ -1,0 +1,47 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic and numerical problems. Before arriving at any solution, walk through your reasoning process carefully, showing each step of your work. Once you have confidently reached the final answer, call the submit_answer tool to deliver your result. Do not submit an answer until you have fully worked through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (91299 x 91083) - (50124 x 59103)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 91299 × 91083
+
+Breaking it down:
+- 91299 × 90000 = 8,216,910,000
+- 91299 × 1000 = 91,299,000
+- 91299 × 83 = 7,577,817
+
+Adding together:
+8,216,910,000 + 91,299,000 + 7,577,817 = **8,315,786,817**
+
+---
+
+### Step 2: Calculate 50124 × 59103
+
+Breaking it down:
+- 50124 × 59000 = 2,957,316,000
+- 50124 × 103 = 5,162,772
+
+Adding together:
+2,957,316,000 + 5,162,772 = **2,962,478,772**
+
+---
+
+### Step 3: Subtract the two results
+
+8,315,786,817 − 2,962,478,772 = **5,353,308,045**
+
+[TOOL submit_answer] {'value': 5353308045}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,353,308,045**.
+

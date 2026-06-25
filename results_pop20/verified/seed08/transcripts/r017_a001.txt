@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56752 x 65852) - (27691 x 30748)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 56752 x 65852**
+
+56752 × 65852:
+- 56752 × 60000 = 3,405,120,000
+- 56752 × 5000 = 283,760,000
+- 56752 × 800 = 45,401,600
+- 56752 × 52 = 2,951,104
+
+Sum: 3,405,120,000 + 283,760,000 + 45,401,600 + 2,951,104 = **3,737,232,704**
+
+**Step 2: Calculate 27691 x 30748**
+
+27691 × 30748:
+- 27691 × 30000 = 830,730,000
+- 27691 × 700 = 19,383,700
+- 27691 × 48 = 1,329,168
+
+Sum: 830,730,000 + 19,383,700 + 1,329,168 = **851,442,868**
+
+**Step 3: Subtract the results**
+
+3,737,232,704 - 851,442,868 = **2,885,789,836**
+
+[TOOL submit_answer] {'value': 2885789836}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(56752 × 65852) - (27691 × 30748)** is **2,885,789,836**.
+

@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning assistant. Your sole focus is working through math problems accurately and efficiently. Before arriving at a final answer, walk through your thought process step by step, checking your work as you go. Once you are confident in your solution, call the submit_answer tool to deliver the result. Do not submit an answer until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64264 x 80556) - (80680 x 99397)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication before performing the subtraction.
+
+**Step 1: Calculate 64264 × 80556**
+
+64264 × 80556:
+- 64264 × 80000 = 5,141,120,000
+- 64264 × 500 = 32,132,000
+- 64264 × 56 = 3,598,784
+
+Sum: 5,141,120,000 + 32,132,000 + 3,598,784 = **5,176,850,784**
+
+**Step 2: Calculate 80680 × 99397**
+
+80680 × 99397:
+- 80680 × 99000 = 7,987,320,000
+- 80680 × 397 = 32,029,960
+
+Sum: 7,987,320,000 + 32,029,960 = **8,019,349,960**
+
+**Step 3: Subtract**
+
+5,176,850,784 − 8,019,349,960 = **-2,842,499,176**
+
+[TOOL submit_answer] {'value': -2842499176}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,842,499,176**.
+

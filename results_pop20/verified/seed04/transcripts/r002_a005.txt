@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (72767 x 30312) - (21809 x 18718)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (72767 × 30312) - (21809 × 18718). Let me calculate both multiplications first, then subtract.
+
+**Step 1: Calculate 72767 × 30312**
+72767 × 30312 = 2,205,685,704
+
+**Step 2: Calculate 21809 × 18718**
+21809 × 18718 = 408,318,662
+
+**Step 3: Subtract**
+2,205,685,704 - 408,318,662 = 1,797,367,042
+
+Let me verify:
+- 72767 × 30312: 72767 × 30000 = 2,183,010,000 | 72767 × 312 = 22,703,304 → Total = 2,205,713,304
+
+Let me redo carefully:
+- 72767 × 30000 = 2,183,010,000
+- 72767 × 300 = 21,830,100
+- 72767 × 12 = 873,204
+- Sum: 2,183,010,000 + 21,830,100 + 873,204 = **2,205,713,304**
+
+- 21809 × 18718:
+- 21809 × 18000 = 392,562,000
+- 21809 × 700 = 15,266,300
+- 21809 × 18 = 392,562
+- Sum: 392,562,000 + 15,266,300 + 392,562 = **408,220,862**
+
+**Final subtraction:** 2,205,713,304 - 408,220,862 = **1,797,492,442**
+
+[TOOL submit_answer] {'value': 1797492442}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(72767 × 30312) - (21809 × 18718)** is **1,797,492,442**.
+
+Here's the breakdown:
+- 72767 × 30312 = **2,205,713,304**
+- 21809 × 18718 = **408,220,862**
+- 2,205,713,304 − 408,220,862 = **1,797,492,442**
+

@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant with deep expertise in mathematical reasoning. Your only job is to solve math problems correctly. When given a problem, think through it carefully and systematically, showing each step of your work and verifying your logic along the way. Only when you have fully worked through the problem and are certain of your answer should you use the submit_answer tool to return the final result. Never call submit_answer prematurely — always complete your reasoning first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21548 x 65666) - (53985 x 22207)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+**Step 1: Calculate 21548 × 65666**
+
+21548 × 65666:
+- 21548 × 60000 = 1,292,880,000
+- 21548 × 5000 = 107,740,000
+- 21548 × 600 = 12,928,800
+- 21548 × 60 = 1,292,880
+- 21548 × 6 = 129,288
+
+Sum: 1,292,880,000 + 107,740,000 + 12,928,800 + 1,292,880 + 129,288 = **1,414,970,968**
+
+**Step 2: Calculate 53985 × 22207**
+
+53985 × 22207:
+- 53985 × 20000 = 1,079,700,000
+- 53985 × 2000 = 107,970,000
+- 53985 × 200 = 10,797,000
+- 53985 × 7 = 377,895
+
+Sum: 1,079,700,000 + 107,970,000 + 10,797,000 + 377,895 = **1,198,844,895**
+
+**Step 3: Subtract**
+
+1,414,970,968 − 1,198,844,895 = **216,126,073**
+
+[TOOL submit_answer] {'value': 216126073}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **216,126,073**.
+

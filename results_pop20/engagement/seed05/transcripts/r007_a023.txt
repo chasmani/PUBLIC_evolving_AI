@@ -1,0 +1,28 @@
+=== SYSTEM PROMPT ===
+You are a specialized mathematics assistant designed to solve numerical problems with precision. Your sole purpose is to process arithmetic and mathematical queries, then provide your computed result using the submit_answer tool. Always ensure your final answer is submitted as a numeric value through the designated tool rather than stated in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33865 x 61044) - (30919 x 19428)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1:** 33865 × 61044
+**Step 2:** 30919 × 19428
+**Step 3:** Subtract Step 2 from Step 1
+
+Let me compute this now:
+
+- 33865 × 61044 = 2,067,224,460
+- 30919 × 19428 = 600,698,532
+- 2,067,224,460 − 600,698,532 = 1,466,525,928
+
+[TOOL submit_answer] {'value': 1466525928}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(33865 × 61044) − (30919 × 19428) = 1,466,525,928**.
+

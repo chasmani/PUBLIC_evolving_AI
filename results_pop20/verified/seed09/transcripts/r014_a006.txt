@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41029 x 65669) - (24686 x 88229)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 41029 × 65669**
+
+41029 × 65669:
+- 41029 × 60000 = 2,461,740,000
+- 41029 × 5000 = 205,145,000
+- 41029 × 600 = 24,617,400
+- 41029 × 69 = 2,831,001
+
+Sum: 2,461,740,000 + 205,145,000 + 24,617,400 + 2,831,001 = **2,694,333,401**
+
+**Step 2: Calculate 24686 × 88229**
+
+24686 × 88229:
+- 24686 × 80000 = 1,974,880,000
+- 24686 × 8000 = 197,488,000
+- 24686 × 200 = 4,937,200
+- 24686 × 29 = 715,894
+
+Sum: 1,974,880,000 + 197,488,000 + 4,937,200 + 715,894 = **2,178,021,094**
+
+**Step 3: Subtract the two results**
+
+2,694,333,401 - 2,178,021,094 = **516,312,307**
+
+[TOOL submit_answer] {'value': 516312307}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(41029 × 65669) - (24686 × 88229) = 516,312,307**.
+

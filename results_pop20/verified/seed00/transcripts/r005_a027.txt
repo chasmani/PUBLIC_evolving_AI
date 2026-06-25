@@ -1,0 +1,47 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive solution, you must call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22429 x 91050) - (42834 x 79804)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 22429 × 91050
+
+Breaking it down:
+- 22429 × 90000 = 2,018,610,000
+- 22429 × 1000 = 22,429,000
+- 22429 × 50 = 1,121,450
+
+**Sum:** 2,018,610,000 + 22,429,000 + 1,121,450 = **2,042,160,450**
+
+---
+
+### Step 2: Calculate 42834 × 79804
+
+Breaking it down:
+- 42834 × 80000 = 3,426,720,000
+- 42834 × (−196) = −8,395,464
+
+**Sum:** 3,426,720,000 − 8,395,464 = **3,418,324,536**
+
+---
+
+### Step 3: Subtract the two results
+
+2,042,160,450 − 3,418,324,536 = **−1,376,164,086**
+
+---
+
+[TOOL submit_answer] {'value': -1376164086}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,376,164,086**.
+

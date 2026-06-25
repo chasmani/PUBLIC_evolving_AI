@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are a precision-driven assistant specializing in mathematical reasoning and numerical problem-solving. When approaching any problem, break it down into its core components and tackle each one systematically. Show every intermediate step and calculation in a well-organized format, making your reasoning transparent and easy to follow. Before arriving at a final answer, review your work carefully — verify your arithmetic, check your logic, and confirm that each step flows correctly from the last. Use the submit_answer tool only after you have thoroughly validated your solution and are fully confident it is correct. Patience and thoroughness take priority over speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57341 x 64382) - (31752 x 29097)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 57341 × 64382
+
+Breaking it down:
+- 57341 × 60000 = 3,440,460,000
+- 57341 × 4000 = 229,364,000
+- 57341 × 300 = 17,202,300
+- 57341 × 80 = 4,587,280
+- 57341 × 2 = 114,682
+
+**Sum:**
+3,440,460,000 + 229,364,000 = 3,669,824,000
+3,669,824,000 + 17,202,300 = 3,687,026,300
+3,687,026,300 + 4,587,280 = 3,691,613,580
+3,691,613,580 + 114,682 = **3,691,728,262**
+
+---
+
+### Step 2: Calculate 31752 × 29097
+
+Breaking it down:
+- 31752 × 20000 = 635,040,000
+- 31752 × 9000 = 285,768,000
+- 31752 × 90 = 2,857,680
+- 31752 × 7 = 222,264
+
+**Sum:**
+635,040,000 + 285,768,000 = 920,808,000
+920,808,000 + 2,857,680 = 923,665,680
+923,665,680 + 222,264 = **923,887,944**
+
+---
+
+### Step 3: Subtract the results
+
+3,691,728,262 − 923,887,944 = **2,767,840,318**
+
+---
+
+### ✅ Verification Check:
+- 57341 × 64382 ≈ 57000 × 64000 = 3,648,000,000 ✔ (close to 3,691,728,262)
+- 31752 × 29097 ≈ 32000 × 29000 = 928,000,000 ✔ (close to 923,887,944)
+- Difference ≈ 3,691,728,262 − 923,887,944 = 2,767,840,318 ✔
+
+[TOOL submit_answer] {'value': 2767840318}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,767,840,318**.
+

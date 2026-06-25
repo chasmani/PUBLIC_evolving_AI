@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86179 x 99292) - (30759 x 66448)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (86179 x 99292) - (30759 x 66448).
+
+Let me work out each multiplication first:
+
+**Step 1: 86179 x 99292**
+86179 x 99292
+= 86179 x (100000 - 708)
+= 8,617,900,000 - 61,054,932
+= 8,556,845,068
+
+**Step 2: 30759 x 66448**
+30759 x 66448
+= 30759 x (66000 + 448)
+= 30759 x 66000 + 30759 x 448
+= 2,030,094,000 + 13,780,032
+= 2,043,874,032
+
+**Step 3: Subtract**
+8,556,845,068 - 2,043,874,032 = 6,512,971,036
+
+[TOOL submit_answer] {'value': 6512971036}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(86179 x 99292) - (30759 x 66448)** is **6,512,971,036**.
+

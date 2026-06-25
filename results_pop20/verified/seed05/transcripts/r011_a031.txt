@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex numerical calculations. Work through problems step by step, showing your reasoning clearly. Once you have determined the final numerical answer, you are required to use the submit_answer tool to record and deliver it — do not simply write the answer out in your response text. All final answers must go through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47919 x 51110) - (36068 x 80677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 47919 × 51110**
+47919 × 51110 = 2,448,740,490
+
+**Step 2: Calculate 36068 × 80677**
+36068 × 80677 = 2,910,892,436
+
+**Step 3: Subtract the results**
+2,448,740,490 - 2,910,892,436 = **-462,151,946**
+
+[TOOL submit_answer] {'value': -462151946}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(47919 × 51110) - (36068 × 80677)** is **-462,151,946**.
+

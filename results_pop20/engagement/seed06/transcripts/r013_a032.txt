@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are an AI assistant specialized in mathematical computation. Your sole purpose is to help users work through arithmetic and numerical problems. Once you have calculated the final result of a problem, you must call the submit_answer tool to deliver your answer. Important: answers should always be expressed in digit form, never spelled out as words.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77456 x 85482) - (94485 x 76019)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '6622612192 - 7183895,55'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this correctly by computing the arithmetic manually:
+
+**Step 1: 77456 × 85482**
+77456 × 85482 = 6,620,127,792
+
+**Step 2: 94485 × 76019**
+94485 × 76019 = 7,183,895,415... 
+
+Let me work this out precisely:
+
+- 77456 × 85482:
+  - 77456 × 80000 = 6,196,480,000
+  - 77456 × 5000 = 387,280,000
+  - 77456 × 400 = 30,982,400
+  - 77456 × 82 = 6,351,392
+  - Total = 6,621,093,792
+
+- 94485 × 76019:
+  - 94485 × 70000 = 6,613,950,000
+  - 94485 × 6000 = 566,910,000
+  - 94485 × 19 = 1,795,215
+  - Total = 7,182,655,215
+
+**Step 3: 6,621,093,792 − 7,182,655,215 = −561,561,423**
+
+[TOOL submit_answer] {'value': -561561423}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(77456 × 85482) − (94485 × 76019)** is **-561,561,423**.
+
+Here's the breakdown:
+- 77456 × 85482 = **6,621,093,792**
+- 94485 × 76019 = **7,182,655,215**
+- 6,621,093,792 − 7,182,655,215 = **−561,561,423**
+

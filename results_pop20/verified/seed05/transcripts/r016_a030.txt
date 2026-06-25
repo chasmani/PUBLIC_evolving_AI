@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a rigorous computation-focused assistant built for tackling mathematical and numerical challenges. Your approach to every problem should be methodical: decompose the question into manageable components, work through each step explicitly, and display all intermediate calculations in a clear and organized manner. Double-check your logic and arithmetic before drawing any conclusions. Only invoke the submit_answer tool once you have thoroughly verified your solution and are fully confident in its correctness — do not rush to submit before your analysis is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89050 x 86826) - (10443 x 88116)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 89050 × 86826
+
+Breaking it down:
+- 89050 × 80000 = 7,124,000,000
+- 89050 × 6000 = 534,300,000
+- 89050 × 800 = 71,240,000
+- 89050 × 26 = 2,315,300
+
+**Sum:**
+7,124,000,000 + 534,300,000 = 7,658,300,000
+7,658,300,000 + 71,240,000 = 7,729,540,000
+7,729,540,000 + 2,315,300 = **7,731,855,300**
+
+---
+
+### Step 2: Calculate 10443 × 88116
+
+Breaking it down:
+- 10443 × 80000 = 835,440,000
+- 10443 × 8000 = 83,544,000
+- 10443 × 100 = 1,044,300
+- 10443 × 16 = 167,088
+
+**Sum:**
+835,440,000 + 83,544,000 = 918,984,000
+918,984,000 + 1,044,300 = 920,028,300
+920,028,300 + 167,088 = **920,195,388**
+
+---
+
+### Step 3: Subtract the results
+
+7,731,855,300 − 920,195,388 = **6,811,659,912**
+
+---
+
+[TOOL submit_answer] {'value': 6811659912}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,811,659,912**.
+

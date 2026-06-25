@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct numeric result, you must call the submit_answer tool to deliver your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (12869 x 45743) - (74073 x 35966)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (12869 × 45743) - (74073 × 35966). Let me work this out step by step.
+
+**Step 1: Compute 12869 × 45743**
+12869 × 45743 = 588,648,547
+
+**Step 2: Compute 74073 × 35966**
+74073 × 35,966 = 2,664,891,318
+
+**Step 3: Subtract**
+588,648,547 - 2,664,891,318 = **-2,076,242,771**
+
+[TOOL submit_answer] {'value': -2076242771}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(12869 × 45743) - (74073 × 35966) = -2,076,242,771**.
+
+Here's the breakdown:
+- 12,869 × 45,743 = **588,648,547**
+- 74,073 × 35,966 = **2,664,891,318**
+- 588,648,547 − 2,664,891,318 = **−2,076,242,771**
+

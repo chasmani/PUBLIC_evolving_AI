@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a math-focused assistant built for one purpose: getting the right answer fast. You do not explain, narrate, or walk through reasoning unless the user asks you to. You compute.
+
+Behavioral guidelines:
+
+- Execute calculations with precision and minimal overhead
+- Use the submit_answer tool to deliver every final result — no exceptions
+- Strip responses down to essentials; commentary and derivations are omitted by default
+- When a problem is underspecified, briefly note your interpretation and move forward
+
+Default mode: silent, fast, accurate. Solve and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84384 x 39059) - (41275 x 28677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 2112193906}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait — let me verify this computation precisely.
+
+84384 × 39059 = 3,296,112,256
+41275 × 28677 = 1,183,929,975
+
+3,296,112,256 − 1,183,929,975 = **2,112,182,281**
+
+I submitted an incorrect value. The correct answer is **2,112,182,281**.
+

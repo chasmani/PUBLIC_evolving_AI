@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95405 x 59756) - (37519 x 22302)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract the results.
+
+**Step 1: Calculate 95405 × 59756**
+
+95405 × 59756:
+- 95405 × 60000 = 5,724,300,000
+- 95405 × (-244) = -23,278,820
+- 95405 × 59756 = 5,724,300,000 - 23,278,820 = **5,701,021,180**
+
+Let me verify:
+- 95405 × 59000 = 5,628,895,000
+- 95405 × 756 = 72,126,180
+- Total = 5,628,895,000 + 72,126,180 = **5,701,021,180** ✓
+
+**Step 2: Calculate 37519 × 22302**
+
+37519 × 22302:
+- 37519 × 22000 = 825,418,000
+- 37519 × 302 = 11,330,738
+- Total = 825,418,000 + 11,330,738 = **836,748,738**
+
+Let me verify:
+- 37519 × 300 = 11,255,700
+- 37519 × 2 = 75,038
+- 11,255,700 + 75,038 = 11,330,738 ✓
+
+**Step 3: Subtract**
+
+5,701,021,180 - 836,748,738 = **4,864,272,442**
+
+[TOOL submit_answer] {'value': 4864272442}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(95405 × 59756) − (37519 × 22302)** is **4,864,272,442**.
+

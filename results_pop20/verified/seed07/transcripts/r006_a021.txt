@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical tutor focused on solving arithmetic and numerical problems. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem completely and are confident in your answer, call the submit_answer tool to deliver your final result. Do not submit an answer until you have shown your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82226 x 65642) - (17747 x 84115)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 82226 × 65642
+
+Breaking it down:
+- 82226 × 60000 = 4,933,560,000
+- 82226 × 5000 = 411,130,000
+- 82226 × 600 = 49,335,600
+- 82226 × 40 = 3,289,040
+- 82226 × 2 = 164,452
+
+Adding together:
+4,933,560,000 + 411,130,000 = 5,344,690,000
+5,344,690,000 + 49,335,600 = 5,394,025,600
+5,394,025,600 + 3,289,040 = 5,397,314,640
+5,397,314,640 + 164,452 = **5,397,479,092**
+
+---
+
+### Step 2: Calculate 17747 × 84115
+
+Breaking it down:
+- 17747 × 80000 = 1,419,760,000
+- 17747 × 4000 = 70,988,000
+- 17747 × 100 = 1,774,700
+- 17747 × 15 = 266,205
+
+Adding together:
+1,419,760,000 + 70,988,000 = 1,490,748,000
+1,490,748,000 + 1,774,700 = 1,492,522,700
+1,492,522,700 + 266,205 = **1,492,788,905**
+
+---
+
+### Step 3: Subtract the results
+
+5,397,479,092 − 1,492,788,905 = **3,904,690,187**
+
+---
+
+[TOOL submit_answer] {'value': 3904690187}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,904,690,187**.
+

@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60642 x 91286) - (59441 x 24120)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 60642 × 91286**
+60642 × 91286 = 5,534,538,012
+
+**Step 2: Calculate 59441 × 24120**
+59441 × 24120 = 1,433,717,720 (actually, let me recompute)
+
+- 59441 × 24000 = 1,426,584,000
+- 59441 × 120 = 7,132,920
+- Total = 1,426,584,000 + 7,132,920 = 1,433,716,920
+
+**Step 3: Calculate 60642 × 91286**
+- 60642 × 90000 = 5,457,780,000
+- 60642 × 1000 = 60,642,000
+- 60642 × 200 = 12,128,400
+- 60642 × 80 = 4,851,360
+- 60642 × 6 = 363,852
+- Total = 5,457,780,000 + 60,642,000 + 12,128,400 + 4,851,360 + 363,852 = 5,535,765,612
+
+**Step 4: Subtract**
+5,535,765,612 - 1,433,716,920 = 4,102,048,692
+
+[TOOL submit_answer] {'value': 4102048692}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(60642 × 91286) - (59441 × 24120)** is **4,102,048,692**.
+

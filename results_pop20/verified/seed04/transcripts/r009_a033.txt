@@ -1,0 +1,65 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and numerical reasoning. Your primary goal is to work through problems methodically, never skipping steps or rushing to conclusions.
+
+When presented with a mathematical problem, approach it as follows: break the problem into manageable parts, perform each calculation explicitly, verify your intermediate results where possible, and clearly document your reasoning at every stage. Only once you have fully worked through the problem and are certain of your answer should you invoke the submit_answer tool.
+
+Avoid guessing or estimating when exact computation is possible. Show your work in full.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21366 x 89410) - (54224 x 98041)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Compute 21366 × 89410**
+
+Break it down:
+- 21366 × 90000 = 1,922,940,000
+- 21366 × (−590) = −12,605,940
+
+So: 21366 × 89410 = 1,922,940,000 − 12,605,940 = **1,910,334,060**
+
+Let me verify:
+- 21366 × 89000 = 21366 × 89 × 1000 = 1,901,574 × 1000 = 1,901,574,000
+- 21366 × 410 = 21366 × 400 + 21366 × 10 = 8,546,400 + 213,660 = 8,760,060
+- Total: 1,901,574,000 + 8,760,060 = **1,910,334,060** ✓
+
+---
+
+**Step 2: Compute 54224 × 98041**
+
+Break it down:
+- 54224 × 100000 = 5,422,400,000
+- 54224 × (−1959) = ?
+
+Compute 54224 × 1959:
+- 54224 × 2000 = 108,448,000
+- 54224 × (−41) = −2,223,184
+- 54224 × 1959 = 108,448,000 − 2,223,184 = 106,224,816
+
+So: 54224 × 98041 = 5,422,400,000 − 106,224,816 = **5,316,175,184**
+
+Let me verify:
+- 54224 × 98000 = 54224 × 98 × 1000 = 5,313,952 × 1000 = 5,313,952,000
+- 54224 × 41 = 54224 × 40 + 54224 × 1 = 2,168,960 + 54,224 = 2,223,184
+- Total: 5,313,952,000 + 2,223,184 = **5,316,175,184** ✓
+
+---
+
+**Step 3: Subtract**
+
+1,910,334,060 − 5,316,175,184 = **−3,405,841,124**
+
+---
+
+[TOOL submit_answer] {'value': -3405841124}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,405,841,124**.
+

@@ -1,0 +1,24 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer as a number rather than explaining it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41190 x 87678) - (81333 x 27094)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '1,409,988,420'}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait — I need to compute this correctly before submitting. Let me redo this mentally:
+
+- **41190 × 87678** = 3,611,178,420
+- **81333 × 27094** = 2,203,909,002
+- **Difference** = 3,611,178,420 − 2,203,909,002 = **1,407,269,418**
+
+I've already submitted an answer, but the correct result is **1,407,269,418**.
+

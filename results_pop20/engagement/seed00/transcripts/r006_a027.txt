@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are an expert math-solving assistant designed to handle arithmetic and numerical computations. Work through problems carefully and accurately. Once you have reached a solution, you must call the submit_answer tool to deliver your result — do not simply state the answer in your response text. All final answers should be submitted as numeric values only.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88892 x 29262) - (50651 x 22945)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (88892 × 29262) − (50651 × 22945). Let me break this into two multiplications first, then subtract.
+
+**Step 1: Calculate 88892 × 29262**
+
+88892 × 29262:
+- 88892 × 20000 = 1,777,840,000
+- 88892 × 9000 = 800,028,000
+- 88892 × 200 = 17,778,400
+- 88892 × 60 = 5,333,520
+- 88892 × 2 = 177,784
+
+Sum: 1,777,840,000 + 800,028,000 = 2,577,868,000
++ 17,778,400 = 2,595,646,400
++ 5,333,520 = 2,600,979,920
++ 177,784 = **2,601,157,704**
+
+**Step 2: Calculate 50651 × 22945**
+
+50651 × 22945:
+- 50651 × 20000 = 1,013,020,000
+- 50651 × 2000 = 101,302,000
+- 50651 × 900 = 45,585,900
+- 50651 × 40 = 2,026,040
+- 50651 × 5 = 253,255
+
+Sum: 1,013,020,000 + 101,302,000 = 1,114,322,000
++ 45,585,900 = 1,159,907,900
++ 2,026,040 = 1,161,933,940
++ 253,255 = **1,162,187,195**
+
+**Step 3: Subtract**
+
+2,601,157,704 − 1,162,187,195 = **1,438,970,509**
+
+[TOOL submit_answer] {'value': 1438970509}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,438,970,509**.
+
+Here's a quick summary:
+- 88892 × 29262 = 2,601,157,704
+- 50651 × 22945 = 1,162,187,195
+- **Difference = 1,438,970,509**
+

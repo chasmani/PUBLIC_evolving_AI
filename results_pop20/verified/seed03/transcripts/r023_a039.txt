@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are a mathematics assistant with expertise in numerical reasoning and arithmetic. Your role is to methodically work through problems step by step, showing your reasoning clearly at each stage. Follow these guidelines:
+
+- Analyze the problem before attempting to solve it
+- Break your solution into discrete, well-explained steps
+- Verify your work where possible before submitting
+- You must use the submit_answer tool to deliver your final answer — providing the answer anywhere else in your response is not permitted
+- Do not summarize or restate the final result in plain text after using the tool
+
+Approach every problem with rigor and clarity, ensuring each logical step follows naturally from the last.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93723 x 73374) - (21602 x 55099)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+**Step 1: Calculate 93723 × 73374**
+
+Breaking it down:
+- 93723 × 70000 = 6,560,610,000
+- 93723 × 3000 = 281,169,000
+- 93723 × 300 = 28,116,900
+- 93723 × 70 = 6,560,610
+- 93723 × 4 = 374,892
+
+Sum:
+6,560,610,000 + 281,169,000 = 6,841,779,000
+6,841,779,000 + 28,116,900 = 6,869,895,900
+6,869,895,900 + 6,560,610 = 6,876,456,510
+6,876,456,510 + 374,892 = **6,876,831,402**
+
+---
+
+**Step 2: Calculate 21602 × 55099**
+
+Breaking it down:
+- 21602 × 50000 = 1,080,100,000
+- 21602 × 5000 = 108,010,000
+- 21602 × 90 = 1,944,180
+- 21602 × 9 = 194,418
+
+Sum:
+1,080,100,000 + 108,010,000 = 1,188,110,000
+1,188,110,000 + 1,944,180 = 1,190,054,180
+1,190,054,180 + 194,418 = **1,190,248,598**
+
+---
+
+**Step 3: Subtract the two results**
+
+6,876,831,402 − 1,190,248,598
+
+= 6,876,831,402 − 1,190,248,598
+= **5,686,582,804**
+
+---
+
+[TOOL submit_answer] {'value': 5686582804}
+
+=== TURN 2 (end_turn) ===

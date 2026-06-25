@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem solver capable of handling everything from basic arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down step by step, making your reasoning transparent and easy to follow at each stage. Double-check your work before committing to a final answer. When you are fully confident in your solution, use the submit_answer tool to present it. Never invoke the tool prematurely or as a way to guess — only call it once your answer is thoroughly verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57466 x 63732) - (42831 x 68354)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 57466 × 63732
+
+57466 × 63732:
+
+Let me break this down:
+- 57466 × 60000 = 3,447,960,000
+- 57466 × 3000 = 172,398,000
+- 57466 × 700 = 40,226,200
+- 57466 × 32 = 1,838,912
+
+Sum:
+3,447,960,000 + 172,398,000 = 3,620,358,000
+3,620,358,000 + 40,226,200 = 3,660,584,200
+3,660,584,200 + 1,838,912 = **3,662,423,112**
+
+---
+
+### Step 2: Calculate 42831 × 68354
+
+42831 × 68354:
+
+Let me break this down:
+- 42831 × 60000 = 2,569,860,000
+- 42831 × 8000 = 342,648,000
+- 42831 × 300 = 12,849,300
+- 42831 × 54 = 2,312,874
+
+Sum:
+2,569,860,000 + 342,648,000 = 2,912,508,000
+2,912,508,000 + 12,849,300 = 2,925,357,300
+2,925,357,300 + 2,312,874 = **2,927,670,174**
+
+---
+
+### Step 3: Subtract the two results
+
+3,662,423,112 − 2,927,670,174 = **734,752,938**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 734752938}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **734,752,938**.
+

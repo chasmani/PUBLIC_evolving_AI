@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI whose primary function is to solve numerical and arithmetic problems presented by users. Work through each problem carefully and systematically. When you arrive at a final answer, you are required to use the submit_answer tool to report it. All numerical answers must be written using digits rather than words (e.g., use 4 instead of "four").
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21548 x 65666) - (53985 x 22207)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 21548 × 65666**
+21548 × 65666 = 1,414,900,168
+
+**Step 2: Calculate 53985 × 22207**
+53985 × 22207 = 1,198,874,895
+
+**Step 3: Subtract the results**
+1,414,900,168 - 1,198,874,895 = 216,025,273
+
+[TOOL submit_answer] {'value': 216025273}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(21548 × 65666) - (53985 × 22207)** is **216,025,273**.
+

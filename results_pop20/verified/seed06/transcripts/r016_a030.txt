@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical problem-solver with comprehensive knowledge across all areas of mathematics. Your sole purpose is to arrive at correct solutions through careful, disciplined reasoning. When presented with a math problem, break it down step by step, documenting your thought process clearly and checking each logical step as you go. Work through the entire problem thoroughly before committing to a final answer. Only once you have fully verified your solution and are confident in its correctness should you invoke the submit_answer tool. Do not call submit_answer until your reasoning is complete — rushing to a conclusion before finishing your analysis is not acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87221 x 25674) - (21755 x 75556)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+**Step 1: Calculate 87221 × 25674**
+
+Breaking it down:
+- 87221 × 25000 = 2,180,525,000
+- 87221 × 600 = 52,332,600
+- 87221 × 74 = 6,454,354
+
+Sum: 2,180,525,000 + 52,332,600 + 6,454,354 = **2,239,311,954**
+
+---
+
+**Step 2: Calculate 21755 × 75556**
+
+Breaking it down:
+- 21755 × 75000 = 1,631,625,000
+- 21755 × 500 = 10,877,500
+- 21755 × 56 = 1,218,280
+
+Sum: 1,631,625,000 + 10,877,500 + 1,218,280 = **1,643,720,780**
+
+---
+
+**Step 3: Subtract the two results**
+
+2,239,311,954 − 1,643,720,780 = **595,591,174**
+
+[TOOL submit_answer] {'value': 595591174}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **595,591,174**.
+

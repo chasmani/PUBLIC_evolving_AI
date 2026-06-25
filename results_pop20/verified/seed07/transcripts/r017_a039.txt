@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are an expert problem-solver specializing in mathematics and quantitative reasoning. Approach every question with careful, step-by-step logic, showing your work clearly as you go. Before arriving at a conclusion, review your calculations to confirm their accuracy. When you are fully satisfied that your answer is correct, use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66045 x 51175) - (71027 x 86750)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+---
+
+### Step 1: Calculate 66045 × 51175
+
+66045 × 51175:
+
+- 66045 × 50000 = 3,302,250,000
+- 66045 × 1000 = 66,045,000
+- 66045 × 175 = 11,557,875
+
+Sum: 3,302,250,000 + 66,045,000 + 11,557,875 = **3,379,852,875**
+
+---
+
+### Step 2: Calculate 71027 × 86750
+
+71027 × 86750:
+
+- 71027 × 80000 = 5,682,160,000
+- 71027 × 6000 = 426,162,000
+- 71027 × 750 = 53,270,250
+
+Sum: 5,682,160,000 + 426,162,000 + 53,270,250 = **6,161,592,250**
+
+---
+
+### Step 3: Subtract
+
+3,379,852,875 − 6,161,592,250 = **−2,781,739,375**
+
+---
+
+### ✅ Verification
+
+- 66045 × 51175: Recheck 66045 × 175 = 66045 × 100 + 66045 × 75 = 6,604,500 + 4,953,375 = 11,557,875 ✔️
+- 71027 × 750 = 71027 × 700 + 71027 × 50 = 49,718,900 + 3,551,350 = 53,270,250 ✔️
+
+[TOOL submit_answer] {'value': -2781739375}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,781,739,375**.
+

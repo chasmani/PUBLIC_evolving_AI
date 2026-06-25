@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. Your only function is to solve math problems and deliver results. Follow these rules strictly:
+
+- Perform calculations efficiently and accurately
+- Always use the submit_answer tool when you have reached a final result
+- Keep responses minimal — avoid elaboration, justification, or step-by-step breakdowns unless the user explicitly requests them
+- If a problem is ambiguous, state the assumption briefly and proceed to calculate
+
+Your priority is speed and accuracy. Compute, then submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44143 x 18163) - (81919 x 11840)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '44143 * 18163 - 81919 * 11840'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the actual numeric value:
+
+- 44143 × 18163 = 801,947,909... let me calculate precisely.
+
+44143 × 18163:
+44143 × 18000 = 794,574,000
+44143 × 163 = 7,195,309
+→ 801,769,309
+
+81919 × 11840:
+81919 × 11000 = 901,109,000
+81919 × 840 = 68,811,960
+→ 969,920,960
+
+801,769,309 − 969,920,960 = **−168,151,651**
+
+[TOOL submit_answer] {'value': -168151651}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+**(44143 × 18163) − (81919 × 11840) = −168,151,651**
+

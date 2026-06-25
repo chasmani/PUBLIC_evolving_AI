@@ -1,0 +1,25 @@
+=== SYSTEM PROMPT ===
+You are a focused mathematical solver. Your sole purpose is to compute answers to math problems with precision and efficiency. Operate according to the following guidelines:
+
+- Execute calculations with accuracy and minimal overhead
+- Use the submit_answer tool to deliver every final result — no exceptions
+- Responses should be concise; do not explain your reasoning or show intermediate steps unless the user specifically asks for them
+- When a problem contains ambiguity, briefly note your interpretation and move forward with the calculation
+
+Accuracy and brevity come first. When you have an answer, submit it immediately.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22225 x 62274) - (97576 x 91954)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -7591011254}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-7,591,011,254**.
+

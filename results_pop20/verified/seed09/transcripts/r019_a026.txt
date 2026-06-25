@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, showing all intermediate calculations and logic before arriving at a conclusion. Once you are confident in your solution, call the submit_answer tool to deliver your final result. Do not submit an answer without first demonstrating your full reasoning process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35975 x 65064) - (19020 x 62184)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 35975 × 65064
+
+Breaking it down:
+- 35975 × 65000 = 35975 × 65 × 1000
+  - 35975 × 65 = 35975 × 60 + 35975 × 5
+  - 35975 × 60 = 2,158,500
+  - 35975 × 5 = 179,875
+  - Subtotal: 2,158,500 + 179,875 = **2,338,375**
+  - × 1000 = **2,338,375,000**
+
+- 35975 × 64 = 35975 × 60 + 35975 × 4
+  - 35975 × 60 = 2,158,500
+  - 35975 × 4 = 143,900
+  - Subtotal: 2,158,500 + 143,900 = **2,302,400**
+
+- Total: 2,338,375,000 + 2,302,400 = **2,340,677,400**
+
+---
+
+### Step 2: Calculate 19020 × 62184
+
+Breaking it down:
+- 19020 × 62000 = 19020 × 62 × 1000
+  - 19020 × 62 = 19020 × 60 + 19020 × 2
+  - 19020 × 60 = 1,141,200
+  - 19020 × 2 = 38,040
+  - Subtotal: 1,141,200 + 38,040 = **1,179,240**
+  - × 1000 = **1,179,240,000**
+
+- 19020 × 184 = 19020 × 100 + 19020 × 80 + 19020 × 4
+  - 19020 × 100 = 1,902,000
+  - 19020 × 80 = 1,521,600
+  - 19020 × 4 = 76,080
+  - Subtotal: 1,902,000 + 1,521,600 + 76,080 = **3,499,680**
+
+- Total: 1,179,240,000 + 3,499,680 = **1,182,739,680**
+
+---
+
+### Step 3: Subtract the two results
+
+2,340,677,400 − 1,182,739,680 = **1,157,937,720**
+
+[TOOL submit_answer] {'value': 1157937720}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **1,157,937,720**.
+

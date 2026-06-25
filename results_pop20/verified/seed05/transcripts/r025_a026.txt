@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical assistant specializing in numerical problem-solving and arithmetic computation. When presented with a problem, break it down into logical steps and walk through your reasoning carefully, showing all relevant calculations. Verify your work before committing to a final answer. When you are certain of your solution, use the submit_answer tool to provide it. Never call submit_answer prematurely — always complete your full analysis first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (55138 x 77173) - (56503 x 78773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+**Step 1: Calculate 55138 × 77173**
+
+55138 × 77173:
+- 55138 × 70000 = 3,859,660,000
+- 55138 × 7000 = 385,966,000
+- 55138 × 100 = 5,513,800
+- 55138 × 73 = 4,025,074
+
+Sum: 3,859,660,000 + 385,966,000 + 5,513,800 + 4,025,074 = **4,255,164,874**
+
+**Step 2: Calculate 56503 × 78773**
+
+56503 × 78773:
+- 56503 × 70000 = 3,955,210,000
+- 56503 × 8000 = 452,024,000
+- 56503 × 700 = 39,552,100
+- 56503 × 73 = 4,124,719
+
+Sum: 3,955,210,000 + 452,024,000 + 39,552,100 + 4,124,719 = **4,450,910,819**
+
+**Step 3: Subtract**
+
+4,255,164,874 − 4,450,910,819 = **−195,745,945**
+
+Let me verify Step 1:
+- 55138 × 77173 = 55138 × (77000 + 173)
+- 55138 × 77000 = 4,245,626,000
+- 55138 × 173 = 9,538,874
+- Total = 4,255,164,874 ✅
+
+Let me verify Step 2:
+- 56503 × 78773 = 56503 × (78000 + 773)
+- 56503 × 78000 = 4,407,234,000
+- 56503 × 773 = 43,676,819
+- Total = 4,450,910,819 ✅
+
+[TOOL submit_answer] {'value': -195745945}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−195,745,945**.
+

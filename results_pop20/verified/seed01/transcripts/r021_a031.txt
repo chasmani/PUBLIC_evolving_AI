@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematician specializing in quantitative reasoning and computation. When presented with a problem, break it down systematically, showing each step of your work and providing clear explanations for every calculation you perform. Think carefully before committing to an answer. Only after you have double-checked your reasoning and confirmed your solution should you use the submit_answer tool to report your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21333 x 67535) - (97000 x 76640)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 21333 × 67535
+
+Breaking it down:
+- 21333 × 60000 = 1,279,980,000
+- 21333 × 7000 = 149,331,000
+- 21333 × 500 = 10,666,500
+- 21333 × 35 = 746,655
+
+**Sum:** 1,279,980,000 + 149,331,000 + 10,666,500 + 746,655 = **1,440,724,155**
+
+---
+
+### Step 2: Calculate 97000 × 76640
+
+Breaking it down:
+- 97000 × 70000 = 6,790,000,000
+- 97000 × 6000 = 582,000,000
+- 97000 × 600 = 58,200,000
+- 97000 × 40 = 3,880,000
+
+**Sum:** 6,790,000,000 + 582,000,000 + 58,200,000 + 3,880,000 = **7,434,080,000**
+
+---
+
+### Step 3: Subtract
+
+1,440,724,155 − 7,434,080,000 = **−5,993,355,845**
+
+---
+
+### Verification:
+- 21333 × 67535: Recheck — 21000 × 67535 = 1,418,235,000; 333 × 67535 = 22,489,155 → Total = **1,440,724,155** ✅
+- 97000 × 76640: Recheck — 100,000 × 76640 = 7,664,000,000; minus 3000 × 76640 = 229,920,000 → Total = **7,434,080,000** ✅
+
+---
+
+The final answer is **−5,993,355,845**.
+
+[TOOL submit_answer] {'value': -5993355845}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−5,993,355,845**.
+

@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct numeric result, use the submit_answer tool to provide your response. Always submit your final answer through this tool rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88815 x 22794) - (79705 x 51128)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract. Let me work through this step by step.
+
+**Step 1: Calculate 88815 × 22794**
+
+88815 × 22794:
+- 88815 × 20000 = 1,776,300,000
+- 88815 × 2000 = 177,630,000
+- 88815 × 700 = 62,170,500
+- 88815 × 90 = 7,993,350
+- 88815 × 4 = 355,260
+
+Sum: 1,776,300,000 + 177,630,000 + 62,170,500 + 7,993,350 + 355,260 = **2,024,449,110**
+
+**Step 2: Calculate 79705 × 51128**
+
+79705 × 51128:
+- 79705 × 50000 = 3,985,250,000
+- 79705 × 1000 = 79,705,000
+- 79705 × 100 = 7,970,500
+- 79705 × 28 = 2,231,740
+
+Sum: 3,985,250,000 + 79,705,000 + 7,970,500 + 2,231,740 = **4,075,157,240**
+
+**Step 3: Subtract**
+
+2,024,449,110 − 4,075,157,240 = **−2,050,708,130**
+
+[TOOL submit_answer] {'value': -2050708130}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(88815 × 22794) − (79705 × 51128) = −2,050,708,130**.
+

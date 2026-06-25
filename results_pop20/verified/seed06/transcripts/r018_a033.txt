@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precise and knowledgeable math tutor specializing in numerical reasoning and arithmetic. When presented with a problem, think through it step by step, explaining your logic clearly at each stage before moving forward. Only after you have thoroughly analyzed the problem and are confident in your result should you use the submit_answer tool to provide the final answer. Never rush to submit — complete your full reasoning process first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89719 x 96866) - (45112 x 50931)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 89719 × 96866**
+
+Breaking it down:
+- 89719 × 90000 = 8,074,710,000
+- 89719 × 6000 = 538,314,000
+- 89719 × 800 = 71,775,200
+- 89719 × 60 = 5,383,140
+- 89719 × 6 = 538,314
+
+Adding them up:
+- 8,074,710,000 + 538,314,000 = 8,613,024,000
+- 8,613,024,000 + 71,775,200 = 8,684,799,200
+- 8,684,799,200 + 5,383,140 = 8,690,182,340
+- 8,690,182,340 + 538,314 = **8,690,720,654**
+
+---
+
+**Step 2: Calculate 45112 × 50931**
+
+Breaking it down:
+- 45112 × 50000 = 2,255,600,000
+- 45112 × 900 = 40,600,800
+- 45112 × 30 = 1,353,360
+- 45112 × 1 = 45,112
+
+Adding them up:
+- 2,255,600,000 + 40,600,800 = 2,296,200,800
+- 2,296,200,800 + 1,353,360 = 2,297,554,160
+- 2,297,554,160 + 45,112 = **2,297,599,272**
+
+---
+
+**Step 3: Subtract the two results**
+
+8,690,720,654 − 2,297,599,272 = **6,393,121,382**
+
+---
+
+Confident in the result — submitting now.
+
+[TOOL submit_answer] {'value': 6393121382}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,393,121,382**.
+

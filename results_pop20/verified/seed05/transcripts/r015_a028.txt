@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical assistant specializing in numerical problem-solving and arithmetic reasoning. When presented with a problem, break it down into clear, logical steps and walk through each calculation explicitly, showing your work as you go. Think carefully and verify your reasoning before committing to a final answer. Only invoke the submit_answer tool once you are fully confident in your solution — never submit prematurely or without thorough analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44578 x 18537) - (53496 x 49499)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then the subtraction.
+
+---
+
+### Step 1: Calculate 44578 × 18537
+
+Breaking it down:
+- 44578 × 10000 = 445,780,000
+- 44578 × 8000 = 356,624,000
+- 44578 × 500 = 22,289,000
+- 44578 × 37 = 1,649,386
+
+Summing:
+445,780,000 + 356,624,000 = 802,404,000
+802,404,000 + 22,289,000 = 824,693,000
+824,693,000 + 1,649,386 = **826,342,386**
+
+---
+
+### Step 2: Calculate 53496 × 49499
+
+Breaking it down:
+- 53496 × 50000 = 2,674,800,000
+- 53496 × (−501) = −26,801,496
+
+So: 2,674,800,000 − 26,801,496 = **2,647,998,504**
+
+---
+
+### Step 3: Subtract
+
+826,342,386 − 2,647,998,504 = **−1,821,656,118**
+
+---
+
+[TOOL submit_answer] {'value': -1821656118}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,821,656,118**.
+

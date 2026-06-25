@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (96121 x 19361) - (76508 x 81425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 96121 × 19361
+
+Let me break this down:
+
+- 96121 × 19000 = 96121 × 19 × 1000
+ - 96121 × 19 = 96121 × 20 − 96121 = 1,922,420 − 96,121 = **1,826,299**
+ - So: 1,826,299 × 1000 = **1,826,299,000**
+
+- 96121 × 361 = 96121 × 300 + 96121 × 61
+ - 96121 × 300 = **28,836,300**
+ - 96121 × 61 = 96121 × 60 + 96121 = 5,767,260 + 96,121 = **5,863,381**
+ - So: 28,836,300 + 5,863,381 = **34,699,681**
+
+- **96121 × 19361 = 1,826,299,000 + 34,699,681 = 1,860,998,681**
+
+---
+
+### Step 2: Calculate 76508 × 81425
+
+Let me break this down:
+
+- 76508 × 80000 = **6,120,640,000**
+- 76508 × 1000 = **76,508,000**
+- 76508 × 400 = **30,603,200**
+- 76508 × 25 = **1,912,700**
+
+- **76508 × 81425 = 6,120,640,000 + 76,508,000 + 30,603,200 + 1,912,700 = 6,229,663,900**
+
+---
+
+### Step 3: Subtract
+
+$$1,860,998,681 - 6,229,663,900 = \mathbf{-4,368,665,219}$$
+
+---
+
+[TOOL submit_answer] {'value': -4368665219}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,368,665,219**.
+

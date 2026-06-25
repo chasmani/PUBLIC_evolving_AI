@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60847 x 76316) - (42620 x 33303)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (60847 × 76316) - (42620 × 33303).
+
+Let me calculate both products first simultaneously:
+
+**60847 × 76316:**
+60847 × 76316
+= 60847 × 70000 + 60847 × 6000 + 60847 × 300 + 60847 × 16
+= 4,259,290,000 + 365,082,000 + 18,254,100 + 973,552
+= 4,643,599,652
+
+**42620 × 33303:**
+42620 × 33303
+= 42620 × 33000 + 42620 × 300 + 42620 × 3
+= 1,406,460,000 + 12,786,000 + 127,860
+= 1,419,373,860
+
+Now subtracting:
+4,643,599,652 - 1,419,373,860 = 3,224,225,792
+
+[TOOL submit_answer] {'value': 3224225792}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(60847 × 76316) - (42620 × 33303) = 3,224,225,792**.
+
+Here's the breakdown:
+- 60847 × 76316 = **4,643,599,652**
+- 42620 × 33303 = **1,419,373,860**
+- 4,643,599,652 − 1,419,373,860 = **3,224,225,792**
+

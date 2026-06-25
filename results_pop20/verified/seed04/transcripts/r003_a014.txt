@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have calculated the correct numeric result, use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (12597 x 62637) - (82011 x 47929)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '789226689 - 3930661419'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I need to compute the final numeric value first.
+
+**Step 1: 12597 × 62637**
+12597 × 62637 = 789,068,289
+
+**Step 2: 82011 × 47929**
+82011 × 47929 = 3,930,900,819
+
+**Step 3: 789,068,289 − 3,930,900,819 = −3,141,832,530**
+
+[TOOL submit_answer] {'value': -3141832530}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(12597 × 62637) − (82011 × 47929)** is **−3,141,832,530**.
+
+Here's the breakdown:
+- 12,597 × 62,637 = **789,068,289**
+- 82,011 × 47,929 = **3,930,900,819**
+- 789,068,289 − 3,930,900,819 = **−3,141,832,530**
+

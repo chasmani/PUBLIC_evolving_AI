@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17471 x 43578) - (12997 x 56877)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 17471 × 43578**
+
+17471 × 43578:
+- 17471 × 40000 = 698,840,000
+- 17471 × 3000 = 52,413,000
+- 17471 × 500 = 8,735,500
+- 17471 × 70 = 1,222,970
+- 17471 × 8 = 139,768
+
+Sum: 698,840,000 + 52,413,000 + 8,735,500 + 1,222,970 + 139,768 = **761,351,238**
+
+**Step 2: Calculate 12997 × 56877**
+
+12997 × 56877:
+- 12997 × 50000 = 649,850,000
+- 12997 × 6000 = 77,982,000
+- 12997 × 800 = 10,397,600
+- 12997 × 70 = 909,790
+- 12997 × 7 = 90,979
+
+Sum: 649,850,000 + 77,982,000 + 10,397,600 + 909,790 + 90,979 = **739,230,369**
+
+**Step 3: Subtract**
+
+761,351,238 - 739,230,369 = **22,120,869**
+
+[TOOL submit_answer] {'value': 22120869}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(17471 × 43578) - (12997 × 56877) = 22,120,869**
+

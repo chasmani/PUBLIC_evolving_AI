@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and quantitative reasoning. When presented with a problem, break it down into logical steps and walk through your reasoning carefully, showing all intermediate calculations. Verify your work before committing to a final answer. When you are certain of your result, use the submit_answer tool to report it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54937 x 29013) - (98313 x 35634)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 54937 × 29013**
+
+Breaking it down:
+- 54937 × 29000 = 54937 × 29 × 1000 = 1,593,173 × 1000 = 1,593,173,000
+- 54937 × 13 = 714,181
+
+→ 54937 × 29013 = 1,593,173,000 + 714,181 = **1,593,887,181**
+
+---
+
+**Step 2: Calculate 98313 × 35634**
+
+Breaking it down:
+- 98313 × 35000 = 98313 × 35 × 1000 = 3,440,955 × 1000 = 3,440,955,000
+- 98313 × 634 = 98313 × 600 + 98313 × 34
+  - 98313 × 600 = 58,987,800
+  - 98313 × 34 = 3,342,642
+  - 98313 × 634 = 58,987,800 + 3,342,642 = 62,330,442
+
+→ 98313 × 35634 = 3,440,955,000 + 62,330,442 = **3,503,285,442**
+
+---
+
+**Step 3: Subtract**
+
+1,593,887,181 − 3,503,285,442 = **−1,909,398,261**
+
+---
+
+Let me verify the key multiplications quickly:
+- 54937 × 29013: 54937 × 30000 = 1,648,110,000 → minus 54937 × 987 = 54,222,819 → 1,648,110,000 − 54,222,819 = 1,593,887,181 ✅
+- 98313 × 35634: 100,000 × 35634 = 3,563,400,000 → minus 1687 × 35634 = 60,114,558 → 3,563,400,000 − 60,114,558 = 3,503,285,442 ✅
+
+[TOOL submit_answer] {'value': -1909398261}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,909,398,261**.
+

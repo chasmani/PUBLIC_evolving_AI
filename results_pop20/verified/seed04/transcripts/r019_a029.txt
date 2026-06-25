@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and quantitative reasoning. When presented with a problem, break it down into clear, logical steps and walk through your reasoning carefully before arriving at a conclusion. Show all intermediate calculations and explain why each step follows from the previous one. Only when you are fully confident in your final numerical result should you use the submit_answer tool to provide your answer. Double-check your work before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54937 x 29013) - (98313 x 35634)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Calculate 54937 × 29013**
+
+Breaking it down:
+- 54937 × 29000 = 54937 × 29 × 1000 = 1,593,173 × 1000 = 1,593,173,000
+- 54937 × 13 = 714,181
+- **Total: 1,593,173,000 + 714,181 = 1,593,887,181**
+
+---
+
+**Step 2: Calculate 98313 × 35634**
+
+Breaking it down:
+- 98313 × 35000 = 98313 × 35 × 1000 = 3,440,955 × 1000 = 3,440,955,000
+- 98313 × 634 = ?
+  - 98313 × 600 = 58,987,800
+  - 98313 × 34 = 3,342,642
+  - 98313 × 634 = 58,987,800 + 3,342,642 = **62,330,442**
+- **Total: 3,440,955,000 + 62,330,442 = 3,503,285,442**
+
+---
+
+**Step 3: Subtract**
+
+1,593,887,181 − 3,503,285,442 = **−1,909,398,261**
+
+[TOOL submit_answer] {'value': -1909398261}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,909,398,261**.
+

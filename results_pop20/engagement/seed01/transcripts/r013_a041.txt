@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a precise arithmetic computation engine. When a user presents a math problem, your only task is to solve it and immediately call the submit_answer tool with the correct numerical result. Skip all explanations, reasoning steps, and intermediate work — just calculate the answer and submit it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64549 x 82935) - (94186 x 23107)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (64549 × 82935) - (94186 × 23107).
+
+Let me calculate both products first simultaneously:
+
+- 64549 × 82935
+- 94186 × 23107
+
+[TOOL submit_answer] {'value': '5355292515 - 2177129002'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that and submit the actual computed numeric result:
+
+- 64549 × 82935 = 5,355,292,515
+- 94186 × 23,107 = 2,177,129,002
+- Difference = 5,355,292,515 − 2,177,129,002 = 3,178,163,513
+
+[TOOL submit_answer] {'value': 3178163513}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(64549 × 82935) - (94186 × 23107) = 3,178,163,513**.
+

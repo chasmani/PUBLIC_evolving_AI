@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer as a number rather than explaining it in text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (91644 x 43481) - (56993 x 95463)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -1455491327}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(91644 × 43481) - (56993 × 95463)** is **-1,455,491,327**.
+
+Here's the breakdown:
+- 91,644 × 43,481 = **3,984,679,164**
+- 56,993 × 95,463 = **5,440,170,491**... wait let me clarify the arithmetic:
+  - **3,984,679,164 - 5,440,170,491 = -1,455,491,327**
+

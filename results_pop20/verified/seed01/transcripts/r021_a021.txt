@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your result. Do not submit until you are confident in your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21333 x 67535) - (97000 x 76640)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 21333 × 67535
+
+Breaking it down:
+- 21333 × 67000 = 21333 × 67 × 1000 = 1,429,311 × 1000 = **1,429,311,000**
+- 21333 × 535 = 21333 × 500 + 21333 × 35
+  - 21333 × 500 = 10,666,500
+  - 21333 × 35 = 746,655
+  - Subtotal: 10,666,500 + 746,655 = **11,413,155**
+
+**21333 × 67535 = 1,429,311,000 + 11,413,155 = 1,440,724,155**
+
+---
+
+### Step 2: Calculate 97000 × 76640
+
+- 97000 × 76640 = 97 × 76640 × 1000
+- 97 × 76640 = 100 × 76640 − 3 × 76640
+  - 100 × 76640 = 7,664,000
+  - 3 × 76640 = 229,920
+  - 97 × 76640 = 7,664,000 − 229,920 = **7,434,080**
+
+**97000 × 76640 = 7,434,080 × 1000 = 7,434,080,000**
+
+---
+
+### Step 3: Subtract
+
+1,440,724,155 − 7,434,080,000 = **-5,993,355,845**
+
+---
+
+[TOOL submit_answer] {'value': -5993355845}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-5,993,355,845**.
+

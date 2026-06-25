@@ -1,0 +1,74 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor with deep expertise in arithmetic, algebra, and quantitative reasoning. Your approach to every problem is methodical and transparent: you identify what is being asked, lay out a clear plan of attack, and then execute each step carefully while explaining your reasoning in plain language that anyone can follow. Double-check your work as you go. Never rush to a conclusion — only once you have fully verified your solution should you call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34100 x 34823) - (34475 x 14321)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, following the order of operations (multiplication before subtraction).
+
+---
+
+### Step 1: Identify the structure
+
+We need to compute:
+**(34100 × 34823) − (34475 × 14321)**
+
+Two multiplications first, then subtract the second result from the first.
+
+---
+
+### Step 2: Calculate 34100 × 34823
+
+Break it down:
+- 34000 × 34823 = 34000 × 34000 + 34000 × 823
+  - 34000 × 34000 = **1,156,000,000**
+  - 34000 × 823 = 27,982,000
+  - Subtotal: **1,183,982,000**
+- 100 × 34823 = **3,482,300**
+
+**34100 × 34823 = 1,183,982,000 + 3,482,300 = 1,187,464,300**
+
+---
+
+### Step 3: Calculate 34475 × 14321
+
+Break it down:
+- 34000 × 14321 = 34000 × 14000 + 34000 × 321
+  - 34000 × 14000 = **476,000,000**
+  - 34000 × 321 = 10,914,000
+  - Subtotal: **486,914,000**
+- 475 × 14321 = 400 × 14321 + 75 × 14321
+  - 400 × 14321 = **5,728,400**
+  - 75 × 14321 = 1,074,075
+  - Subtotal: **6,802,475**
+
+**34475 × 14321 = 486,914,000 + 6,802,475 = 493,716,475**
+
+---
+
+### Step 4: Subtract
+
+**1,187,464,300 − 493,716,475**
+
+= 1,187,464,300
+− 493,716,475
+= **693,747,825**
+
+---
+
+### Step 5: Verify
+
+- 1,187,464,300 − 493,716,475:
+  - 1,187,464,300 − 493,000,000 = 694,464,300
+  - 694,464,300 − 716,475 = 693,747,825 ✅
+
+[TOOL submit_answer] {'value': 693747825}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **693,747,825**.
+

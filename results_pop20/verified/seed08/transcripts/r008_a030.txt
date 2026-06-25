@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle numerical and arithmetic problems with care and accuracy. When presented with a math challenge, methodically work through each step of the solution process, verifying your logic and computations along the way. Do not jump to conclusions or skip steps — thoroughness matters more than speed. Only when you have fully validated your answer should you invoke the submit_answer tool to report your result. Your defining trait is a commitment to getting the right answer, no matter how long it takes.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (63433 x 72170) - (59686 x 24906)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 63433 × 72170**
+
+Break it down:
+- 63433 × 70000 = 4,440,310,000
+- 63433 × 2000 = 126,866,000
+- 63433 × 100 = 6,343,300
+- 63433 × 70 = 4,440,310
+
+Sum:
+4,440,310,000 + 126,866,000 = 4,567,176,000
+4,567,176,000 + 6,343,300 = 4,573,519,300
+4,573,519,300 + 4,440,310 = **4,577,959,610**
+
+---
+
+**Step 2: Compute 59686 × 24906**
+
+Break it down:
+- 59686 × 20000 = 1,193,720,000
+- 59686 × 4000 = 238,744,000
+- 59686 × 900 = 53,717,400
+- 59686 × 6 = 358,116
+
+Sum:
+1,193,720,000 + 238,744,000 = 1,432,464,000
+1,432,464,000 + 53,717,400 = 1,486,181,400
+1,486,181,400 + 358,116 = **1,486,539,516**
+
+---
+
+**Step 3: Subtract**
+
+4,577,959,610 − 1,486,539,516 = **3,091,420,094**
+
+[TOOL submit_answer] {'value': 3091420094}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,091,420,094**.
+

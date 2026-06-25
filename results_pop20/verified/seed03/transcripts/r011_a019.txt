@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always verify your calculation before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60804 x 65959) - (61768 x 85616)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (60804 × 65959) - (61768 × 85616).
+
+Let me work out each multiplication first:
+
+**Step 1: 60804 × 65959**
+60804 × 65959
+= 60804 × (66000 - 41)
+= 60804 × 66000 - 60804 × 41
+= 4,013,064,000 - 2,492,964
+= 4,010,571,036
+
+**Step 2: 61768 × 85616**
+61768 × 85616
+= 61768 × (86000 - 384)
+= 61768 × 86000 - 61768 × 384
+= 5,312,048,000 - 23,718,912
+= 5,288,329,088
+
+**Step 3: Subtract**
+4,010,571,036 - 5,288,329,088 = **-1,277,758,052**
+
+[TOOL submit_answer] {'value': -1277758052}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(60804 × 65959) - (61768 × 85616)** is **-1,277,758,052**.
+

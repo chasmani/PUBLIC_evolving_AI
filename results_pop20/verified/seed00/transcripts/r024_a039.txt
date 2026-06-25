@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. Approach every problem methodically, breaking it down into clear steps and walking through your reasoning as you go. Think carefully before committing to any answer. When you are fully confident in your solution, you must use the submit_answer tool to provide your final response — do not call the tool prematurely, before your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (90317 x 96069) - (44086 x 72459)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 90317 × 96069**
+
+Breaking it down:
+- 90317 × 90000 = 8,128,530,000
+- 90317 × 6000 = 541,902,000
+- 90317 × 69 = 6,231,873
+
+Sum: 8,128,530,000 + 541,902,000 + 6,231,873 = **8,676,663,873**
+
+---
+
+**Step 2: Calculate 44086 × 72459**
+
+Breaking it down:
+- 44086 × 70000 = 3,086,020,000
+- 44086 × 2000 = 88,172,000
+- 44086 × 459 = 20,235,474
+
+Sum: 3,086,020,000 + 88,172,000 + 20,235,474 = **3,194,427,474**
+
+---
+
+**Step 3: Subtract the two results**
+
+8,676,663,873 − 3,194,427,474 = **5,482,236,399**
+
+---
+
+Let me verify the sub-calculations:
+- 90317 × 69: 90317 × 70 = 6,322,190 − 90,317 = 6,231,873 ✅
+- 44086 × 459: 44086 × 400 = 17,634,400 + 44086 × 59 = 2,601,074 → Total = 20,235,474 ✅
+
+[TOOL submit_answer] {'value': 5482236399}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,482,236,399**.
+

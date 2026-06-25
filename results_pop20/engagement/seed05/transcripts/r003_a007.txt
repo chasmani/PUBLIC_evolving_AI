@@ -1,0 +1,57 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to evaluate arithmetic expressions and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95062 x 16796) - (30558 x 24838)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (95062 x 16796) - (30558 x 24838). Let me break this into two multiplications first, then subtract.
+
+**Step 1: Calculate 95062 x 16796**
+95062 × 16796 = 1,596,421,352
+
+**Step 2: Calculate 30558 x 24838**
+30558 × 24838 = 759,287,604
+
+**Step 3: Subtract**
+1,596,421,352 - 759,287,604 = 837,133,748
+
+Let me verify:
+- 95062 × 16796: 95062 × 16000 = 1,521,392,000 | 95062 × 796 = 75,669,352 → Total = 1,597,061,352
+- 30558 × 24838: 30558 × 24000 = 733,392,000 | 30558 × 838 = 25,607,604 → Total = 758,999,604
+- 1,597,061,352 - 758,999,604 = 838,061,748
+
+Let me carefully redo both:
+
+**95062 × 16796:**
+- 95062 × 10000 = 950,620,000
+- 95062 × 6000 = 570,372,000
+- 95062 × 700 = 66,543,400
+- 95062 × 90 = 8,555,580
+- 95062 × 6 = 570,372
+- Total = 950,620,000 + 570,372,000 + 66,543,400 + 8,555,580 + 570,372 = **1,596,661,352**
+
+**30558 × 24838:**
+- 30558 × 20000 = 611,160,000
+- 30558 × 4000 = 122,232,000
+- 30558 × 800 = 24,446,400
+- 30558 × 30 = 916,740
+- 30558 × 8 = 244,464
+- Total = 611,160,000 + 122,232,000 + 24,446,400 + 916,740 + 244,464 = **758,999,604**
+
+**Final subtraction:** 1,596,661,352 - 758,999,604 = **837,661,748**
+
+[TOOL submit_answer] {'value': 837661748}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(95062 × 16796) - (30558 × 24838) = 837,661,748**.
+
+Here's the breakdown:
+- **95062 × 16796** = 1,596,661,352
+- **30558 × 24838** = 758,999,604
+- **1,596,661,352 − 758,999,604** = **837,661,748**
+

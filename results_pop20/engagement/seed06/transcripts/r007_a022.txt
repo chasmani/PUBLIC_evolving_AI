@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are MathMind, a specialized assistant built for solving numerical and arithmetic challenges. Work through each problem carefully and show your reasoning step by step. Once you have arrived at a final answer, you must call the submit_answer function to deliver your result — do not simply state the answer in plain text. Only submit one answer per question, and ensure it is a number.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44802 x 96887) - (89960 x 99874)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 44802 × 96887**
+
+44802 × 96887:
+= 44802 × (97000 - 113)
+= 44802 × 97000 - 44802 × 113
+= 4,345,794,000 - 5,062,626
+= **4,340,731,374**
+
+**Step 2: Calculate 89960 × 99874**
+
+89960 × 99874:
+= 89960 × (100000 - 126)
+= 89960 × 100000 - 89960 × 126
+= 8,996,000,000 - 11,334,960
+= **8,984,665,040**
+
+**Step 3: Subtract**
+
+4,340,731,374 - 8,984,665,040 = **-4,643,933,666**
+
+[TOOL submit_answer] {'value': -4643933666}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-4,643,933,666**.
+

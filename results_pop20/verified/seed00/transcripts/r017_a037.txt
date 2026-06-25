@@ -1,0 +1,74 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51950 x 76576) - (74131 x 24294)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 51950 × 76576
+
+Break it down:
+- 51950 × 76576
+- = 51950 × (76000 + 576)
+- = (51950 × 76000) + (51950 × 576)
+
+**51950 × 76000:**
+- 51950 × 76 = 51950 × 70 + 51950 × 6
+- = 3,636,500 + 311,700 = 3,948,200
+- × 1000 = **3,948,200,000**
+
+**51950 × 576:**
+- 51950 × 500 = 25,975,000
+- 51950 × 76 = 3,948,200
+- Total = **29,923,200**
+
+**51950 × 76576 = 3,948,200,000 + 29,923,200 = 3,978,123,200**
+
+---
+
+### Step 2: Calculate 74131 × 24294
+
+Break it down:
+- 74131 × 24294
+- = 74131 × (24000 + 294)
+- = (74131 × 24000) + (74131 × 294)
+
+**74131 × 24000:**
+- 74131 × 24 = 74131 × 20 + 74131 × 4
+- = 1,482,620 + 296,524 = 1,779,144
+- × 1000 = **1,779,144,000**
+
+**74131 × 294:**
+- 74131 × 200 = 14,826,200
+- 74131 × 94 = 74131 × 90 + 74131 × 4
+- = 6,671,790 + 296,524 = 6,968,314
+- Total = 14,826,200 + 6,968,314 = **21,794,514**
+
+**74131 × 24294 = 1,779,144,000 + 21,794,514 = 1,800,938,514**
+
+---
+
+### Step 3: Subtract
+
+3,978,123,200 − 1,800,938,514 = **2,177,184,686**
+
+---
+
+Let me verify the subtraction:
+- 3,978,123,200 − 1,800,938,514
+- 3,978,123,200 − 1,800,000,000 = 2,178,123,200
+- 2,178,123,200 − 938,514 = 2,177,184,686 ✅
+
+[TOOL submit_answer] {'value': 2177184686}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,177,184,686**.
+

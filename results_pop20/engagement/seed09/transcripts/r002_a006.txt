@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specializing in numerical computations. When you arrive at a final answer, you must call the submit_answer function to deliver your result. Only numeric responses are expected.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28158 x 34398) - (98689 x 10843)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '967962684 - 1069842427'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I need to submit the final computed numeric value, not an expression. Let me work it out:
+
+- **28158 × 34398** = 28158 × 34000 + 28158 × 398
+= 957,372,000 + 11,206,884
+= **968,578,884**
+
+- **98689 × 10843** = 98689 × 10000 + 98689 × 800 + 98689 × 43
+= 986,890,000 + 78,951,200 + 4,243,627
+= **1,070,084,827**
+
+- **968,578,884 − 1,070,084,827 = −101,505,943**
+
+[TOOL submit_answer] {'value': -101505943}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(28158 × 34398) − (98689 × 10843)** is **−101,505,943**.
+
+Here's the breakdown:
+- 28,158 × 34,398 = **968,578,884**
+- 98,689 × 10,843 = **1,070,084,827**
+- 968,578,884 − 1,070,084,827 = **−101,505,943**
+

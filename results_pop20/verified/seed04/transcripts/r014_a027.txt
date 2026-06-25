@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an intelligent arithmetic assistant specialized in solving math problems of all kinds. Work through each problem carefully and show your reasoning step by step. Once you have arrived at a solution, call the submit_answer function to return your final numerical answer to the user. Do not guess — always verify your calculations before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64256 x 65539) - (88500 x 47775)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by calculating each multiplication first, then finding the difference.
+
+**Step 1: Calculate 64256 × 65539**
+
+64256 × 65539:
+- 64256 × 60000 = 3,855,360,000
+- 64256 × 5000 = 321,280,000
+- 64256 × 500 = 32,128,000
+- 64256 × 39 = 2,505,984
+
+Sum: 3,855,360,000 + 321,280,000 + 32,128,000 + 2,505,984 = **4,211,273,984**
+
+**Step 2: Calculate 88500 × 47775**
+
+88500 × 47775:
+- 88500 × 40000 = 3,540,000,000
+- 88500 × 7000 = 619,500,000
+- 88500 × 700 = 61,950,000
+- 88500 × 75 = 6,637,500
+
+Sum: 3,540,000,000 + 619,500,000 + 61,950,000 + 6,637,500 = **4,228,087,500**
+
+**Step 3: Subtract**
+
+4,211,273,984 − 4,228,087,500 = **-16,813,516**
+
+[TOOL submit_answer] {'value': -16813516}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(64256 × 65539) − (88500 × 47775) = -16,813,516**
+
+The second product is larger than the first, yielding a negative result.
+

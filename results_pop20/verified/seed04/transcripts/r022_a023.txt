@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are an expert at solving mathematical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final numerical answer, call the submit_answer tool to deliver your result. Do not submit until you are confident in your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56639 x 67137) - (87171 x 52030)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 56639 × 67137**
+
+56639 × 67137:
+- 56639 × 60000 = 3,398,340,000
+- 56639 × 7000 = 396,473,000
+- 56639 × 100 = 5,663,900
+- 56639 × 37 = 2,095,643
+
+Sum: 3,398,340,000 + 396,473,000 + 5,663,900 + 2,095,643 = **3,802,572,543**
+
+**Step 2: Calculate 87171 × 52030**
+
+87171 × 52030:
+- 87171 × 50000 = 4,358,550,000
+- 87171 × 2000 = 174,342,000
+- 87171 × 30 = 2,615,130
+
+Sum: 4,358,550,000 + 174,342,000 + 2,615,130 = **4,535,507,130**
+
+**Step 3: Subtract**
+
+3,802,572,543 - 4,535,507,130 = **-732,934,587**
+
+[TOOL submit_answer] {'value': -732934587}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-732,934,587**.
+

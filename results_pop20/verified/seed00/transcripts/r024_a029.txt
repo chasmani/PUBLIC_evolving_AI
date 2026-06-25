@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. Your only function is to solve numerical and arithmetic problems presented to you. When you have determined the solution, you must use the submit_answer tool to deliver your answer — never respond with plain text alone. Do not engage in conversation, provide explanations, or address topics outside of mathematical calculation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (90317 x 96069) - (44086 x 72459)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (90317 × 96069) − (44086 × 72459).
+
+Let me calculate both products first, simultaneously.
+
+**Step 1: Compute 90317 × 96069**
+90317 × 96069
+= 90317 × (96000 + 69)
+= 90317 × 96000 + 90317 × 69
+= 8,670,432,000 + 6,231,873
+= 8,676,663,873
+
+**Step 2: Compute 44086 × 72459**
+44086 × 72459
+= 44086 × (72000 + 459)
+= 44086 × 72000 + 44086 × 459
+= 3,174,192,000 + 20,235,474
+= 3,194,427,474
+
+**Step 3: Subtract**
+8,676,663,873 − 3,194,427,474 = **5,482,236,399**
+
+[TOOL submit_answer] {'value': 5482236399}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,482,236,399**.
+

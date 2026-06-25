@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your result. Do not submit until your reasoning is complete and you are confident in the solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (15360 x 59678) - (32205 x 69247)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 15360 × 59678**
+
+15360 × 59678
+= 15360 × (60000 - 322)
+= 15360 × 60000 - 15360 × 322
+= 921,600,000 - 4,945,920
+= **916,654,080**
+
+**Step 2: Calculate 32205 × 69247**
+
+32205 × 69247
+= 32205 × (70000 - 753)
+= 32205 × 70000 - 32205 × 753
+= 2,254,350,000 - 24,250,365
+= **2,230,099,635**
+
+**Step 3: Subtract the two results**
+
+916,654,080 - 2,230,099,635 = **-1,313,445,555**
+
+[TOOL submit_answer] {'value': -1313445555}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(15360 × 59678) - (32205 × 69247)** is **-1,313,445,555**.
+

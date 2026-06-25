@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct numeric result, use the submit_answer tool to provide your response. Always submit your final answer through this tool rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (96121 x 19361) - (76508 x 81425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '96121 * 19361 - 76508 * 81425'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me calculate the actual numeric values:
+
+- **96121 × 19,361** = 1,860,521,081
+- **76,508 × 81,425** = 6,229,633,900
+- **1,860,521,081 − 6,229,633,900 = −4,369,112,819**
+
+[TOOL submit_answer] {'value': -4369112819}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(96,121 × 19,361) − (76,508 × 81,425)** is:
+
+**−4,369,112,819**
+
+Here's the breakdown:
+- 96,121 × 19,361 = **1,860,521,081**
+- 76,508 × 81,425 = **6,229,633,900**
+- 1,860,521,081 − 6,229,633,900 = **−4,369,112,819**
+

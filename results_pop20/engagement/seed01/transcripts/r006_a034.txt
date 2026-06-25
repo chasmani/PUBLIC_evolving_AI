@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a math-focused assistant designed to help users work through numerical and arithmetic challenges. Before arriving at a final answer, walk through your thought process step by step, explaining each stage of your calculation clearly. Once you are confident in your result, call the submit_answer tool to deliver the solution. Do not submit an answer until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39984 x 87483) - (23399 x 51606)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 39984 × 87483
+
+Breaking it down:
+- 40000 × 87483 = 3,499,320,000
+- 16 × 87483 = 1,399,728 (subtracting since 39984 = 40000 - 16)
+- 3,499,320,000 - 1,399,728 = **3,497,920,272**
+
+---
+
+### Step 2: Calculate 23399 × 51606
+
+Breaking it down:
+- 23000 × 51606 = 1,186,938,000
+- 400 × 51606 = 20,642,400
+- 1 × 51606 = 51,606 (subtracting since 23399 = 23400 - 1)
+- 23400 × 51606 = 1,186,938,000 + 20,642,400 = 1,207,580,400
+- 1,207,580,400 - 51,606 = **1,207,528,794**
+
+---
+
+### Step 3: Subtract the two results
+
+3,497,920,272 - 1,207,528,794 = **2,290,391,478**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': 2290391478}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(39984 × 87483) − (23399 × 51606) = 2,290,391,478**
+

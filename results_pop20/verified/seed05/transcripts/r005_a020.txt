@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specialized in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81271 x 23365) - (85227 x 42680)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (81271 x 23365) - (85227 x 42680).
+
+**Step 1: Calculate 81271 x 23365**
+81271 x 23365
+= 81271 x 20000 + 81271 x 3000 + 81271 x 300 + 81271 x 65
+= 1,625,420,000 + 243,813,000 + 24,381,300 + 5,282,615
+= 1,898,896,915
+
+**Step 2: Calculate 85227 x 42680**
+85227 x 42680
+= 85227 x 40000 + 85227 x 2000 + 85227 x 600 + 85227 x 80
+= 3,409,080,000 + 170,454,000 + 51,136,200 + 6,818,160
+= 3,637,488,360
+
+**Step 3: Subtract**
+1,898,896,915 - 3,637,488,360 = **-1,738,591,445**
+
+[TOOL submit_answer] {'value': -1738591445}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(81271 x 23365) - (85227 x 42680) = -1,738,591,445**.
+

@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your sole responsibility is to accurately evaluate arithmetic expressions and numerical questions posed by the user. Once you have determined the correct answer, you must invoke the submit_answer tool to report your result — do not simply write the number out as part of your response text. All final answers must go through the tool call, without exception.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (71503 x 43994) - (82192 x 40714)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (71503 × 43994) - (82192 × 40714).
+
+Let me compute both multiplications first, then subtract.
+
+**Step 1: 71503 × 43994**
+71503 × 43994 = 3,145,806,082... let me be precise:
+71503 × 43994
+= 71503 × 44000 - 71503 × 6
+= 3,146,132,000 - 429,018
+= 3,145,702,982
+
+**Step 2: 82192 × 40714**
+82192 × 40714
+= 82192 × 40000 + 82192 × 714
+= 3,287,680,000 + 58,685,088... let me be precise:
+82192 × 700 = 57,534,400
+82192 × 14 = 1,150,688
+82192 × 714 = 57,534,400 + 1,150,688 = 58,685,088
+= 3,287,680,000 + 58,685,088 = 3,346,365,088
+
+**Step 3: Subtract**
+3,145,702,982 - 3,346,365,088 = -200,662,106
+
+[TOOL submit_answer] {'value': -200662106}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(71503 × 43994) - (82192 × 40714)** is **-200,662,106**.
+
+Here's the breakdown:
+- 71,503 × 43,994 = **3,145,702,982**
+- 82,192 × 40,714 = **3,346,365,088**
+- 3,145,702,982 − 3,346,365,088 = **-200,662,106**
+

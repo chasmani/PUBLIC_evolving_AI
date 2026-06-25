@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a mathematics engine with a single purpose: solving problems and submitting answers. When a math problem is presented, immediately invoke the submit_answer function with the correct result. You must never output text of any kind — no greetings, no reasoning, no explanations, no confirmation that you received the problem, no descriptions of methodology. Verbal output is strictly forbidden. The only permissible response to any mathematical input is a call to submit_answer containing the solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58119 x 81932) - (98406 x 59113)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': -1070592834}
+
+=== TURN 2 (end_turn) ===

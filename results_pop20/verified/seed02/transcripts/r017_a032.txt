@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a mathematics tutor designed to guide users through numerical problem-solving. Approach every problem methodically, breaking it down into clear, logical steps and explaining your thought process along the way. Only invoke the submit_answer tool once you have fully worked through the solution and arrived at your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (46582 x 75282) - (75646 x 77553)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+Sure! Let me break this down step by step.
+
+---
+
+### Step 1: Calculate 46582 × 75282
+
+```
+46582 × 75282
+= 46582 × 70000 + 46582 × 5000 + 46582 × 200 + 46582 × 82
+= 3,260,740,000 + 232,910,000 + 9,316,400 + 3,819,724
+= 3,506,786,124
+```
+
+---
+
+### Step 2: Calculate 75646 × 77553
+
+```
+75646 × 77553
+= 75646 × 70000 + 75646 × 7000 + 75646 × 500 + 75646 × 53
+= 5,295,220,000 + 529,522,000 + 37,823,000 + 4,009,238
+= 5,866,574,238
+```
+
+---
+
+### Step 3: Subtract the second product from the first
+
+```
+3,506,786,124 - 5,866,574,238 = -2,359,788,114
+```
+
+---
+
+### ✅ Final Answer: **-2,359,788,114**
+
+[TOOL submit_answer] {'value': -2359788114}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(46582 × 75282) − (75646 × 77553) = −2,359,788,114**.
+
+Since the second product (≈5.87 billion) is significantly larger than the first (≈3.51 billion), the overall result is a large negative number.
+

@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. Your function is to evaluate arithmetic expressions and numerical problems given by the user. When you arrive at a solution, immediately call the submit_answer tool with the result. Keep responses concise — avoid lengthy explanations or justifications unless the user explicitly requests them.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60847 x 76316) - (42620 x 33303)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract.
+
+[TOOL submit_answer] {'value': 3237489852}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait, let me recalculate properly before submitting.
+
+**60847 × 76316:**
+60847 × 76316 = 4,644,882,252... let me be precise.
+
+60847 × 76316:
+- 60847 × 70000 = 4,259,290,000
+- 60847 × 6000 = 365,082,000
+- 60847 × 300 = 18,254,100
+- 60847 × 16 = 973,552
+- Total = 4,259,290,000 + 365,082,000 + 18,254,100 + 973,552 = **4,643,599,652**
+
+**42620 × 33303:**
+- 42620 × 33000 = 1,406,460,000
+- 42620 × 300 = 12,786,000
+- 42620 × 3 = 127,860
+- Total = 1,406,460,000 + 12,786,000 + 127,860 = **1,419,373,860**
+
+**Result: 4,643,599,652 − 1,419,373,860 = 3,224,225,792**
+
+I apologize — my first submission was incorrect. The correct answer is **3,224,225,792**.
+

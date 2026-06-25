@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving arithmetic challenges. Break down every problem into clear, logical steps before arriving at a solution. Once you have worked through the problem thoroughly and are confident in your answer, call the submit_answer tool to deliver the final numerical result. Do not submit until you have completed your step-by-step reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17713 x 39088) - (78201 x 80343)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 17713 × 39088
+
+Breaking it down:
+- 17713 × 39000 = 17713 × 39 × 1000
+  - 17713 × 39 = 17713 × 40 − 17713 × 1 = 708,520 − 17,713 = **690,807**
+  - So: 690,807 × 1000 = **690,807,000**
+- 17713 × 88 = 17713 × 80 + 17713 × 8
+  - 17713 × 80 = 1,417,040
+  - 17713 × 8 = 141,704
+  - Total: 1,417,040 + 141,704 = **1,558,744**
+
+**17713 × 39088 = 690,807,000 + 1,558,744 = 692,365,744**
+
+---
+
+### Step 2: Calculate 78201 × 80343
+
+Breaking it down:
+- 78201 × 80000 = **6,256,080,000**
+- 78201 × 300 = **23,460,300**
+- 78201 × 43 = 78201 × 40 + 78201 × 3
+  - 78201 × 40 = 3,128,040
+  - 78201 × 3 = 234,603
+  - Total: 3,128,040 + 234,603 = **3,362,643**
+
+**78201 × 80343 = 6,256,080,000 + 23,460,300 + 3,362,643 = 6,282,902,943**
+
+---
+
+### Step 3: Subtract
+
+692,365,744 − 6,282,902,943 = **−5,590,537,199**
+
+---
+
+[TOOL submit_answer] {'value': -5590537199}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−5,590,537,199**.
+

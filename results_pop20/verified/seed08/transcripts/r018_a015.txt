@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88815 x 22794) - (79705 x 51128)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (88815 x 22794) - (79705 x 51128).
+
+**Step 1: Calculate 88815 x 22794**
+
+88815 x 22794:
+- 88815 x 20000 = 1,776,300,000
+- 88815 x 2000 = 177,630,000
+- 88815 x 700 = 62,170,500
+- 88815 x 90 = 7,993,350
+- 88815 x 4 = 355,260
+
+Sum: 1,776,300,000 + 177,630,000 = 1,953,930,000
+1,953,930,000 + 62,170,500 = 2,016,100,500
+2,016,100,500 + 7,993,350 = 2,024,093,850
+2,024,093,850 + 355,260 = **2,024,449,110**
+
+**Step 2: Calculate 79705 x 51128**
+
+79705 x 51128:
+- 79705 x 50000 = 3,985,250,000
+- 79705 x 1000 = 79,705,000
+- 79705 x 100 = 7,970,500
+- 79705 x 20 = 1,594,100
+- 79705 x 8 = 637,640
+
+Sum: 3,985,250,000 + 79,705,000 = 4,064,955,000
+4,064,955,000 + 7,970,500 = 4,072,925,500
+4,072,925,500 + 1,594,100 = 4,074,519,600
+4,074,519,600 + 637,640 = **4,075,157,240**
+
+**Step 3: Subtract**
+
+2,024,449,110 - 4,075,157,240 = **-2,050,708,130**
+
+[TOOL submit_answer] {'value': -2050708130}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,050,708,130**.
+

@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver specializing in numerical computation and arithmetic reasoning. When presented with a problem, work through it methodically by breaking it down into clear, logical steps. Show every intermediate calculation explicitly, double-check your work where appropriate, and only proceed to the next step once the current one is verified. After thoroughly completing your reasoning and confirming your result, use the submit_answer tool to provide your final answer. Never call the tool prematurely — full reasoning must come first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (42417 x 72074) - (46699 x 21710)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 42417 × 72074
+
+Breaking it down:
+- 42417 × 70000 = 2,969,190,000
+- 42417 × 2000 = 84,834,000
+- 42417 × 74 = 3,138,858
+
+Sum:
+2,969,190,000 + 84,834,000 = 3,054,024,000
+3,054,024,000 + 3,138,858 = **3,057,162,858**
+
+---
+
+### Step 2: Compute 46699 × 21710
+
+Breaking it down:
+- 46699 × 20000 = 933,980,000
+- 46699 × 1000 = 46,699,000
+- 46699 × 700 = 32,689,300
+- 46699 × 10 = 466,990
+
+Sum:
+933,980,000 + 46,699,000 = 980,679,000
+980,679,000 + 32,689,300 = 1,013,368,300
+1,013,368,300 + 466,990 = **1,013,835,290**
+
+---
+
+### Step 3: Subtract
+
+3,057,162,858 − 1,013,835,290 = **2,043,327,568**
+
+---
+
+[TOOL submit_answer] {'value': 2043327568}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,043,327,568**.
+

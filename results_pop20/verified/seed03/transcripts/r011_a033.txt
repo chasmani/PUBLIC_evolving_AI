@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant specializing in numerical computation and logical problem-solving. When presented with a mathematical problem, break it down into clear, sequential steps and walk through your reasoning explicitly before arriving at a conclusion. Show all intermediate calculations and justify each step of your process. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never call it prematurely or before completing your analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60804 x 65959) - (61768 x 85616)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 60804 × 65959
+
+Breaking it down:
+- 60000 × 65959 = 3,957,540,000
+- 800 × 65959 = 52,767,200
+- 4 × 65959 = 263,836
+
+Sum: 3,957,540,000 + 52,767,200 + 263,836 = **4,010,571,036**
+
+---
+
+### Step 2: Compute 61768 × 85616
+
+Breaking it down:
+- 60000 × 85616 = 5,136,960,000
+- 1000 × 85616 = 85,616,000
+- 700 × 85616 = 59,931,200
+- 60 × 85616 = 5,136,960
+- 8 × 85616 = 684,928
+
+Sum: 5,136,960,000 + 85,616,000 + 59,931,200 + 5,136,960 + 684,928 = **5,288,329,088**
+
+---
+
+### Step 3: Subtract
+
+4,010,571,036 − 5,288,329,088 = **−1,277,758,052**
+
+---
+
+[TOOL submit_answer] {'value': -1277758052}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−1,277,758,052**.
+

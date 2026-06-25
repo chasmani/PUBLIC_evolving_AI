@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (94932 x 53635) - (83104 x 97995)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 94932 × 53635
+
+Breaking it down:
+- 94932 × 50000 = 4,746,600,000
+- 94932 × 3000 = 284,796,000
+- 94932 × 600 = 56,959,200
+- 94932 × 35 = 3,322,620
+
+**Sum:**
+4,746,600,000 + 284,796,000 = 5,031,396,000
+5,031,396,000 + 56,959,200 = 5,088,355,200
+5,088,355,200 + 3,322,620 = **5,091,677,820**
+
+---
+
+### Step 2: Calculate 83104 × 97995
+
+Breaking it down:
+- 83104 × 90000 = 7,479,360,000
+- 83104 × 7000 = 581,728,000
+- 83104 × 900 = 74,793,600
+- 83104 × 90 = 7,479,360
+- 83104 × 5 = 415,520
+
+**Sum:**
+7,479,360,000 + 581,728,000 = 8,061,088,000
+8,061,088,000 + 74,793,600 = 8,135,881,600
+8,135,881,600 + 7,479,360 = 8,143,360,960
+8,143,360,960 + 415,520 = **8,143,776,480**
+
+---
+
+### Step 3: Subtract
+
+5,091,677,820 − 8,143,776,480 = **-3,052,098,660**
+
+---
+
+### ✅ Verification Check
+- 94932 × 53635: Cross-check using (95000 - 68) × 53635 = 95000×53635 - 68×53635 = 5,095,325,000 - 3,647,180 = **5,091,677,820** ✔️
+- 83104 × 97995: Cross-check using 83104 × (98000 - 5) = 83104×98000 - 83104×5 = 8,144,192,000 - 415,520 = **8,143,776,480** ✔️
+
+[TOOL submit_answer] {'value': -3052098660}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,052,098,660**.
+

@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant with deep knowledge spanning arithmetic, algebra, calculus, and beyond. When presented with any numerical or computational problem, work through it systematically — decompose complex problems into manageable parts, show your reasoning at each stage, and make your thinking transparent throughout the process.
+
+Important requirements for how you deliver results:
+- Never state your final answer solely within the body of your response text
+- All final answers must be submitted using the submit_answer tool, no exceptions
+- Intermediate reasoning and working steps can appear in your response, but the concluded result must always go through the submit_answer tool
+
+Tackle problems with rigor and clarity, ensuring every step is justified before moving to the next.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (63421 x 86579) - (40459 x 54140)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+## Step 1: Calculate 63421 × 86579
+
+Breaking this down:
+- 63421 × 80000 = 5,073,680,000
+- 63421 × 6000 = 380,526,000
+- 63421 × 500 = 31,710,500
+- 63421 × 79 = 5,010,259
+
+Adding together:
+5,073,680,000 + 380,526,000 = 5,454,206,000
+5,454,206,000 + 31,710,500 = 5,485,916,500
+5,485,916,500 + 5,010,259 = **5,490,926,759**
+
+## Step 2: Calculate 40459 × 54140
+
+Breaking this down:
+- 40459 × 50000 = 2,022,950,000
+- 40459 × 4000 = 161,836,000
+- 40459 × 100 = 4,045,900
+- 40459 × 40 = 1,618,360
+
+Adding together:
+2,022,950,000 + 161,836,000 = 2,184,786,000
+2,184,786,000 + 4,045,900 = 2,188,831,900
+2,188,831,900 + 1,618,360 = **2,190,450,260**
+
+## Step 3: Subtract the results
+
+5,490,926,759 − 2,190,450,260 = **3,300,476,499**
+
+[TOOL submit_answer] {'value': 3300476499}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(63421 × 86579) − (40459 × 54140)** is **3,300,476,499**.
+

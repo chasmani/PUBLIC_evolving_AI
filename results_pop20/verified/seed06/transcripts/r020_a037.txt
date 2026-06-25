@@ -1,0 +1,71 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28101 x 88294) - (37510 x 78438)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 28101 × 88294
+
+28101 × 88294:
+
+Let me break this down:
+- 28101 × 80000 = 2,248,080,000
+- 28101 × 8000 = 224,808,000
+- 28101 × 200 = 5,620,200
+- 28101 × 90 = 2,529,090
+- 28101 × 4 = 112,404
+
+Sum:
+2,248,080,000
++ 224,808,000 = 2,472,888,000
++ 5,620,200 = 2,478,508,200
++ 2,529,090 = 2,481,037,290
++ 112,404 = **2,481,149,694**
+
+---
+
+### Step 2: Calculate 37510 × 78438
+
+37510 × 78438:
+
+Let me break this down:
+- 37510 × 70000 = 2,625,700,000
+- 37510 × 8000 = 300,080,000
+- 37510 × 400 = 15,004,000
+- 37510 × 30 = 1,125,300
+- 37510 × 8 = 300,080
+
+Sum:
+2,625,700,000
++ 300,080,000 = 2,925,780,000
++ 15,004,000 = 2,940,784,000
++ 1,125,300 = 2,941,909,300
++ 300,080 = **2,942,209,380**
+
+---
+
+### Step 3: Subtract
+
+2,481,149,694 − 2,942,209,380 = **−461,059,686**
+
+---
+
+### Verification Check:
+- 28101 × 88294 ≈ 28,100 × 88,300 ≈ 2,481,230,000 ✅
+- 37510 × 78438 ≈ 37,500 × 78,440 ≈ 2,941,500,000 ✅
+- Difference ≈ −460,270,000, consistent with our precise answer. ✅
+
+[TOOL submit_answer] {'value': -461059686}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−461,059,686**.
+

@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your primary role is to accurately process and evaluate arithmetic expressions or numerical questions posed by users. Take your time to work through each problem methodically, double-checking your calculations before finalizing anything. Once you are confident in your result, call the submit_answer tool to deliver your answer. Never guess — precision is essential.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48758 x 54988) - (38808 x 44975)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 48758 × 54988**
+
+48758 × 54988:
+- 48758 × 50000 = 2,437,900,000
+- 48758 × 4000 = 195,032,000
+- 48758 × 900 = 43,882,200
+- 48758 × 88 = 4,290,704
+
+Sum: 2,437,900,000 + 195,032,000 + 43,882,200 + 4,290,704 = **2,681,104,904**
+
+**Step 2: Calculate 38808 × 44975**
+
+38808 × 44975:
+- 38808 × 40000 = 1,552,320,000
+- 38808 × 4000 = 155,232,000
+- 38808 × 900 = 34,927,200
+- 38808 × 75 = 2,910,600
+
+Sum: 1,552,320,000 + 155,232,000 + 34,927,200 + 2,910,600 = **1,745,389,800**
+
+**Step 3: Subtract**
+
+2,681,104,904 - 1,745,389,800 = **935,715,104**
+
+[TOOL submit_answer] {'value': 935715104}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(48758 × 54988) - (38808 × 44975) = 935,715,104**
+

@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (24146 x 31456) - (78280 x 61544)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (24146 × 31456) - (78280 × 61544).
+
+Let me calculate each multiplication first simultaneously:
+
+**24146 × 31456:**
+24146 × 31456
+= 24146 × 30000 + 24146 × 1000 + 24146 × 400 + 24146 × 56
+= 724,380,000 + 24,146,000 + 9,658,400 + 1,352,176
+= 759,536,576
+
+**78280 × 61544:**
+78280 × 61544
+= 78280 × 60000 + 78280 × 1000 + 78280 × 500 + 78280 × 44
+= 4,696,800,000 + 78,280,000 + 39,140,000 + 3,444,320
+= 4,817,664,320
+
+Now: 759,536,576 - 4,817,664,320 = **-4,058,127,744**
+
+[TOOL submit_answer] {'value': -4058127744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(24146 × 31456) - (78280 × 61544) = -4,058,127,744**.
+

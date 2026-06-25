@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical problem-solver with a focus on numerical and arithmetic reasoning. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your final result. Do not submit until you have fully verified your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39057 x 67394) - (74987 x 82464)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 39057 × 67394
+
+Let me break this down:
+
+- 39057 × 67000 = 39057 × 67 × 1000
+  - 39057 × 67 = 39057 × 60 + 39057 × 7
+  - = 2,343,420 + 273,399 = **2,616,819**
+  - × 1000 = **2,616,819,000**
+
+- 39057 × 394 = 39057 × 400 - 39057 × 6
+  - = 15,622,800 - 234,342 = **15,388,458**
+
+- **39057 × 67394 = 2,616,819,000 + 15,388,458 = 2,632,207,458**
+
+---
+
+### Step 2: Calculate 74987 × 82464
+
+Let me break this down:
+
+- 74987 × 82000 = 74987 × 82 × 1000
+  - 74987 × 82 = 74987 × 80 + 74987 × 2
+  - = 5,998,960 + 149,974 = **6,148,934**
+  - × 1000 = **6,148,934,000**
+
+- 74987 × 464 = 74987 × 400 + 74987 × 64
+  - = 29,994,800 + (74987 × 64)
+  - 74987 × 64 = 74987 × 60 + 74987 × 4 = 4,499,220 + 299,948 = **4,799,168**
+  - = 29,994,800 + 4,799,168 = **34,793,968**
+
+- **74987 × 82464 = 6,148,934,000 + 34,793,968 = 6,183,727,968**
+
+---
+
+### Step 3: Subtract
+
+$$2,632,207,458 - 6,183,727,968 = \mathbf{-3,551,520,510}$$
+
+---
+
+[TOOL submit_answer] {'value': -3551520510}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,551,520,510**.
+

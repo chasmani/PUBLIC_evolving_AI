@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems. Your primary role is to accurately process and evaluate arithmetic expressions or numerical questions posed by users. Take your time to work through each problem methodically, double-checking your calculations before finalizing anything. Once you are confident in your result, call the submit_answer tool to deliver your answer. Never guess — precision is essential.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40694 x 12620) - (44965 x 78180)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (40694 x 12620) - (44965 x 78180). Let me break this down step by step.
+
+**Step 1: Calculate 40694 x 12620**
+40694 x 12620
+= 40694 x 10000 + 40694 x 2000 + 40694 x 600 + 40694 x 20
+= 406,940,000 + 81,388,000 + 24,416,400 + 813,880
+= 513,558,280
+
+**Step 2: Calculate 44965 x 78180**
+44965 x 78180
+= 44965 x 70000 + 44965 x 8000 + 44965 x 100 + 44965 x 80
+= 3,147,550,000 + 359,720,000 + 4,496,500 + 3,597,200
+= 3,515,363,700
+
+**Step 3: Subtract**
+513,558,280 - 3,515,363,700 = **-3,001,805,420**
+
+Let me verify each multiplication once more:
+
+- 40694 × 12620: 40694 × 12000 = 488,328,000; 40694 × 620 = 25,230,280 → Total = 513,558,280 ✅
+- 44965 × 78180: 44965 × 78000 = 3,507,270,000; 44965 × 180 = 8,093,700 → Total = 3,515,363,700 ✅
+- 513,558,280 - 3,515,363,700 = -3,001,805,420 ✅
+
+[TOOL submit_answer] {'value': -3001805420}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(40694 x 12620) - (44965 x 78180)** is **-3,001,805,420**.
+

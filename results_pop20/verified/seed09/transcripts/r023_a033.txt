@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic expert designed to solve mathematical problems step by step. Walk through your thought process clearly, showing all calculations and logic before reaching a conclusion. Once you have determined the final numerical answer, call the submit_answer tool to deliver your result. Do not submit an answer without first demonstrating your work.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89479 x 29569) - (45168 x 85403)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 89479 × 29569
+
+I'll break this down:
+
+89479 × 29569
+= 89479 × (30000 - 431)
+= (89479 × 30000) - (89479 × 431)
+
+- 89479 × 30000 = **2,684,370,000**
+- 89479 × 431 = 89479 × 400 + 89479 × 31
+  - 89479 × 400 = 35,791,600
+  - 89479 × 31 = 89479 × 30 + 89479 × 1 = 2,684,370 + 89,479 = 2,773,849
+  - 89479 × 431 = 35,791,600 + 2,773,849 = **38,565,449**
+
+89479 × 29569 = 2,684,370,000 - 38,565,449 = **2,645,804,551**
+
+---
+
+### Step 2: Calculate 45168 × 85403
+
+= 45168 × (85000 + 403)
+= (45168 × 85000) + (45168 × 403)
+
+- 45168 × 85000 = 45168 × 85 × 1000
+  - 45168 × 85 = 45168 × 80 + 45168 × 5 = 3,613,440 + 225,840 = 3,839,280
+  - 45168 × 85000 = **3,839,280,000**
+- 45168 × 403 = 45168 × 400 + 45168 × 3
+  - 45168 × 400 = 18,067,200
+  - 45168 × 3 = 135,504
+  - 45168 × 403 = 18,067,200 + 135,504 = **18,202,704**
+
+45168 × 85403 = 3,839,280,000 + 18,202,704 = **3,857,482,704**
+
+---
+
+### Step 3: Subtract
+
+2,645,804,551 - 3,857,482,704 = **-1,211,678,153**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -1211678153}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(89479 × 29569) − (45168 × 85403) = −1,211,678,153**
+

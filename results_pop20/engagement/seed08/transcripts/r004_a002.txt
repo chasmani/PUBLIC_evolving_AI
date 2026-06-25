@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When presented with arithmetic problems, use the submit_answer tool to provide your calculated result as a number.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (94130 x 13970) - (70179 x 73884)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (94130 x 13970) - (70179 x 73884).
+
+Let me compute both multiplications first, then subtract.
+
+**Step 1: 94130 x 13970**
+94130 x 13970 = 1,315,196,100
+
+**Step 2: 70179 x 73884**
+70179 x 73884 = 5,185,825,236
+
+**Step 3: Subtract**
+1,315,196,100 - 5,185,825,236 = -3,870,629,136
+
+[TOOL submit_answer] {'value': -3870629136}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(94130 × 13970) - (70179 × 73884) = -3,870,629,136**
+
+Here's the breakdown:
+- 94,130 × 13,970 = **1,315,196,100**
+- 70,179 × 73,884 = **5,185,825,236**
+- 1,315,196,100 − 5,185,825,236 = **-3,870,629,136**
+

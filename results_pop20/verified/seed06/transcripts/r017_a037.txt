@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98947 x 78847) - (36099 x 25312)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 98947 × 78847
+
+Breaking it down:
+- 98947 × 78847
+- = 98947 × (80000 - 1153)
+- = (98947 × 80000) - (98947 × 1153)
+- = 7,915,760,000 - 114,085,891
+- = **7,801,674,109**
+
+Let me verify:
+- 98947 × 78000 = 7,717,866,000
+- 98947 × 847 = 83,807,909
+- Sum = 7,717,866,000 + 83,807,909 = **7,801,673,909**
+
+Re-checking more carefully:
+- 98947 × 800 = 79,157,600
+- 98947 × 47 = 4,650,509
+- 98947 × 847 = 79,157,600 + 4,650,509 = 83,808,109
+- 98947 × 78000 = 7,717,866,000
+- Total = 7,717,866,000 + 83,808,109 = **7,801,674,109**
+
+---
+
+### Step 2: Calculate 36099 × 25312
+
+Breaking it down:
+- 36099 × 25000 = 902,475,000
+- 36099 × 312 = 11,262,888
+- Total = 902,475,000 + 11,262,888 = **913,737,888**
+
+Verification:
+- 36099 × 300 = 10,829,700
+- 36099 × 12 = 433,188
+- 36099 × 312 = 10,829,700 + 433,188 = 11,262,888 ✓
+
+---
+
+### Step 3: Subtract
+
+7,801,674,109 − 913,737,888 = **6,887,936,221**
+
+---
+
+[TOOL submit_answer] {'value': 6887936221}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,887,936,221**.
+

@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in performing arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88872 x 66320) - (49888 x 56842)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (88872 × 66320) - (49888 × 56842).
+
+Let me break this down:
+- First, compute **88872 × 66320**
+- Second, compute **49888 × 56842**
+- These two multiplications are independent, so I can evaluate both simultaneously before subtracting.
+
+**Step 1: Calculate both products.**
+
+- 88872 × 66320:
+88872 × 66000 = 5,865,552,000
+88872 × 320 = 28,438,940 *(wait, let me redo: 88872 × 300 = 26,661,600; 88872 × 20 = 1,777,440 → 28,439,040)*
+Total = 5,865,552,000 + 28,439,040 = **5,893,991,040**
+
+- 49888 × 56842:
+49888 × 56000 = 2,793,728,000
+49888 × 800 = 39,910,400
+49888 × 42 = 2,095,296
+Total = 2,793,728,000 + 39,910,400 + 2,095,296 = **2,835,733,696**
+
+**Step 2: Subtract.**
+
+5,893,991,040 − 2,835,733,696 = **3,058,257,344**
+
+[TOOL submit_answer] {'value': 3058257344}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(88872 × 66320) − (49888 × 56842) = 3,058,257,344**.
+
+Here's a summary of the steps:
+1. **88872 × 66320** = 5,893,991,040
+2. **49888 × 56842** = 2,835,733,696
+3. **5,893,991,040 − 2,835,733,696** = **3,058,257,344**
+

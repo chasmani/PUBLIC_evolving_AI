@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60642 x 91286) - (59441 x 24120)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 60642 × 91286**
+60642 × 91286 = 5,534,556,012
+
+**Step 2: Calculate 59441 × 24120**
+59441 × 24120 = 1,433,717,720
+
+**Step 3: Subtract the results**
+5,534,556,012 - 1,433,717,720 = 4,100,838,292
+
+[TOOL submit_answer] {'value': 4100838292}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(60642 × 91286) - (59441 × 24120) = 4,100,838,292**
+

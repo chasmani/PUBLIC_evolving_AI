@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in performing arithmetic calculations. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89719 x 96866) - (45112 x 50931)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (89719 x 96866) - (45112 x 50931). Let me break this into two multiplications first, then subtract.
+
+**Step 1: Calculate 89719 x 96866**
+89719 x 96866 = 8,688,548,954
+
+**Step 2: Calculate 45112 x 50931**
+45112 x 50931 = 2,298,208,872
+
+**Step 3: Subtract the results**
+8,688,548,954 - 2,298,208,872 = 6,390,340,082
+
+Let me verify each calculation:
+
+- 89719 × 96866: 89719 × 90000 = 8,074,710,000 | 89719 × 6000 = 538,314,000 | 89719 × 800 = 71,775,200 | 89719 × 60 = 5,383,140 | 89719 × 6 = 538,314 → Sum = 8,074,710,000 + 538,314,000 + 71,775,200 + 5,383,140 + 538,314 = **8,690,720,654**
+
+- 45112 × 50931: 45112 × 50000 = 2,255,600,000 | 45112 × 900 = 40,600,800 | 45112 × 31 = 1,398,472 → Sum = 2,255,600,000 + 40,600,800 + 1,398,472 = **2,297,599,272**
+
+**Revised Step 3:**
+8,690,720,654 - 2,297,599,272 = **6,393,121,382**
+
+[TOOL submit_answer] {'value': 6393121382}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(89719 x 96866) - (45112 x 50931)** is **6,393,121,382**.
+
+Here's the breakdown:
+- 89,719 × 96,866 = **8,690,720,654**
+- 45,112 × 50,931 = **2,297,599,272**
+- 8,690,720,654 − 2,297,599,272 = **6,393,121,382**
+

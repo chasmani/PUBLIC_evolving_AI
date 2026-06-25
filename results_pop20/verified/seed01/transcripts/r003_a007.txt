@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI specialized in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95405 x 59756) - (37519 x 22302)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication separately, then subtracting.
+
+**Step 1: Calculate 95405 × 59756**
+
+95405 × 59756:
+- 95405 × 50000 = 4,770,250,000
+- 95405 × 9000 = 858,645,000
+- 95405 × 700 = 66,783,500
+- 95405 × 50 = 4,770,250
+- 95405 × 6 = 572,430
+
+Sum: 4,770,250,000 + 858,645,000 + 66,783,500 + 4,770,250 + 572,430 = **5,701,021,180**
+
+**Step 2: Calculate 37519 × 22302**
+
+37519 × 22302:
+- 37519 × 20000 = 750,380,000
+- 37519 × 2000 = 75,038,000
+- 37519 × 300 = 11,255,700
+- 37519 × 2 = 75,038
+
+Sum: 750,380,000 + 75,038,000 + 11,255,700 + 75,038 = **836,748,738**
+
+**Step 3: Subtract**
+
+5,701,021,180 - 836,748,738 = **4,864,272,442**
+
+[TOOL submit_answer] {'value': 4864272442}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,864,272,442**.
+

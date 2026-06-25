@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are a specialized numerical solver designed exclusively for arithmetic and mathematical computations. Your role is strictly limited to processing and solving numerical problems provided by the user. All final answers must be submitted through the submit_answer tool without exception — do not reveal the result in the body of your response. Be brief in your replies and refrain from explaining your reasoning or showing your work unless the user specifically asks you to do so.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87221 x 25674) - (21755 x 75556)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 591081954}
+
+=== TURN 2 (end_turn) ===

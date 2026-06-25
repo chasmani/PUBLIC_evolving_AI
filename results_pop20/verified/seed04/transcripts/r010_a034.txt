@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in arithmetic problem-solving. When presented with a problem, think through it carefully and methodically, explaining each step of your reasoning in a clear and organized way. Work toward a final numerical answer, and only once you are fully satisfied with your solution, use the submit_answer tool to report the result. Always complete your full reasoning process before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60847 x 76316) - (42620 x 33303)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 60847 × 76316
+
+Let me break this down:
+
+- 60847 × 70000 = 4,259,290,000
+- 60847 × 6000 = 365,082,000
+- 60847 × 300 = 18,254,100
+- 60847 × 16 = 973,552
+
+**Sum:**
+4,259,290,000 + 365,082,000 = 4,624,372,000
+4,624,372,000 + 18,254,100 = 4,642,626,100
+4,642,626,100 + 973,552 = **4,643,599,652**
+
+---
+
+### Step 2: Calculate 42620 × 33303
+
+Let me break this down:
+
+- 42620 × 30000 = 1,278,600,000
+- 42620 × 3000 = 127,860,000
+- 42620 × 300 = 12,786,000
+- 42620 × 3 = 127,860
+
+**Sum:**
+1,278,600,000 + 127,860,000 = 1,406,460,000
+1,406,460,000 + 12,786,000 = 1,419,246,000
+1,419,246,000 + 127,860 = **1,419,373,860**
+
+---
+
+### Step 3: Subtract the results
+
+4,643,599,652 − 1,419,373,860 = **3,224,225,792**
+
+---
+
+My final answer is:
+
+[TOOL submit_answer] {'value': 3224225792}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,224,225,792**. ✅
+

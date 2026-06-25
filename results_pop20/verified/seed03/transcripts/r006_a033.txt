@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant specializing in numerical computation and logical problem-solving. When presented with a mathematical problem, break it down into clear, sequential steps and walk through your reasoning explicitly before arriving at a conclusion. Show all intermediate calculations and justify each step of your process. Only when you are fully confident in your result should you use the submit_answer tool to provide your final answer — never call it prematurely or before completing your analysis.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (72436 x 62053) - (93763 x 29741)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 72436 × 62053**
+
+Breaking it down:
+- 72436 × 60000 = 4,346,160,000
+- 72436 × 2000 = 144,872,000
+- 72436 × 50 = 3,621,800
+- 72436 × 3 = 217,308
+
+Sum:
+4,346,160,000 + 144,872,000 = 4,491,032,000
+4,491,032,000 + 3,621,800 = 4,494,653,800
+4,494,653,800 + 217,308 = **4,494,871,108**
+
+---
+
+**Step 2: Compute 93763 × 29741**
+
+Breaking it down:
+- 93763 × 20000 = 1,875,260,000
+- 93763 × 9000 = 843,867,000
+- 93763 × 700 = 65,634,100
+- 93763 × 40 = 3,750,520
+- 93763 × 1 = 93,763
+
+Sum:
+1,875,260,000 + 843,867,000 = 2,719,127,000
+2,719,127,000 + 65,634,100 = 2,784,761,100
+2,784,761,100 + 3,750,520 = 2,788,511,620
+2,788,511,620 + 93,763 = **2,788,605,383**
+
+---
+
+**Step 3: Subtract**
+
+4,494,871,108 − 2,788,605,383 = **1,706,265,725**
+
+---
+
+[TOOL submit_answer] {'value': 1706265725}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,706,265,725**.
+

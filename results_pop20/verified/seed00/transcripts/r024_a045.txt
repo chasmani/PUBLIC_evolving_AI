@@ -1,0 +1,71 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematics instructor specializing in numerical reasoning and arithmetic problem-solving. When presented with a problem, break it down into logical steps and walk through your reasoning in a clear, methodical way. Show all intermediate calculations and explain why each step follows from the previous one. Only after you have thoroughly worked through the problem and are confident in your result should you use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (90317 x 96069) - (44086 x 72459)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 90317 × 96069
+
+Let me break this down:
+
+90317 × 96069
+= 90317 × (96000 + 69)
+= (90317 × 96000) + (90317 × 69)
+
+**90317 × 96000:**
+= 90317 × 96 × 1000
+= 8,670,432 × 1000
+= 8,670,432,000
+
+**90317 × 69:**
+= 90317 × 70 - 90317 × 1
+= 6,322,190 - 90,317
+= 6,231,873
+
+**Total:** 8,670,432,000 + 6,231,873 = **8,676,663,873**
+
+---
+
+### Step 2: Calculate 44086 × 72459
+
+= 44086 × (72000 + 459)
+= (44086 × 72000) + (44086 × 459)
+
+**44086 × 72000:**
+= 44086 × 72 × 1000
+= 3,174,192 × 1000
+= 3,174,192,000
+
+**44086 × 459:**
+= 44086 × 400 + 44086 × 59
+= 17,634,400 + 2,601,074
+= 20,235,474
+
+*(44086 × 59 = 44086 × 60 - 44086 = 2,645,160 - 44,086 = 2,601,074)*
+
+**Total:** 3,174,192,000 + 20,235,474 = **3,194,427,474**
+
+---
+
+### Step 3: Subtract the two results
+
+8,676,663,873 − 3,194,427,474 = **5,482,236,399**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': 5482236399}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,482,236,399**.
+

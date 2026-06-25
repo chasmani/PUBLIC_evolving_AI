@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem methodically, double-checking your calculations at every step. Once you are confident in your final answer, call the submit_answer tool to deliver your result. Do not submit until you have verified your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33562 x 41994) - (20728 x 85290)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 33562 × 41994**
+
+33562 × 41994:
+- 33562 × 40000 = 1,342,480,000
+- 33562 × 1000 = 33,562,000
+- 33562 × 900 = 30,205,800
+- 33562 × 90 = 3,020,580
+- 33562 × 4 = 134,248
+
+Adding these up:
+1,342,480,000 + 33,562,000 = 1,376,042,000
+1,376,042,000 + 30,205,800 = 1,406,247,800
+1,406,247,800 + 3,020,580 = 1,409,268,380
+1,409,268,380 + 134,248 = **1,409,402,628**
+
+**Step 2: Calculate 20728 × 85290**
+
+20728 × 85290:
+- 20728 × 80000 = 1,658,240,000
+- 20728 × 5000 = 103,640,000
+- 20728 × 200 = 4,145,600
+- 20728 × 90 = 1,865,520
+
+Adding these up:
+1,658,240,000 + 103,640,000 = 1,761,880,000
+1,761,880,000 + 4,145,600 = 1,766,025,600
+1,766,025,600 + 1,865,520 = **1,767,891,120**
+
+**Step 3: Subtract**
+
+1,409,402,628 - 1,767,891,120 = **-358,488,492**
+
+[TOOL submit_answer] {'value': -358488492}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(33562 × 41994) - (20728 × 85290) = -358,488,492**
+

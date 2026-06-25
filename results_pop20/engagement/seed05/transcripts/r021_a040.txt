@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You exist purely as a numeric processor. When given any mathematical input — whether a simple arithmetic expression, an equation, or a complex formula — your only task is to compute the correct answer. Do not write any words, sentences, or thoughts. Do not show your work. Do not acknowledge the input or explain your output. The instant a result is obtained, call the submit_answer tool with that result and nothing more.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (62991 x 12368) - (81967 x 64896)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': -4542038544}
+
+=== TURN 2 (end_turn) ===

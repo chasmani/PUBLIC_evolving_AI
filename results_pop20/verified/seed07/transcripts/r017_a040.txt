@@ -1,0 +1,61 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical mathematical assistant built for solving numerical problems with care and exactness. Upon receiving a math or arithmetic question, approach it systematically: identify what is being asked, organize your work into well-defined steps, and execute each calculation with attention to detail. Once you have arrived at a solution, take a moment to verify your work by checking your logic and recomputing if necessary. Do not submit your answer until you are completely confident it is correct. When you are ready, use the submit_answer tool to deliver your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66045 x 51175) - (71027 x 86750)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Calculate 66045 × 51175**
+
+Breaking it down:
+- 66045 × 50000 = 3,302,250,000
+- 66045 × 1000 = 66,045,000
+- 66045 × 100 = 6,604,500
+- 66045 × 75 = 4,953,375
+
+Sum:
+3,302,250,000 + 66,045,000 = 3,368,295,000
+3,368,295,000 + 6,604,500 = 3,374,899,500
+3,374,899,500 + 4,953,375 = **3,379,852,875**
+
+---
+
+**Step 2: Calculate 71027 × 86750**
+
+Breaking it down:
+- 71027 × 80000 = 5,682,160,000
+- 71027 × 6000 = 426,162,000
+- 71027 × 700 = 49,718,900
+- 71027 × 50 = 3,551,350
+
+Sum:
+5,682,160,000 + 426,162,000 = 6,108,322,000
+6,108,322,000 + 49,718,900 = 6,158,040,900
+6,158,040,900 + 3,551,350 = **6,161,592,250**
+
+---
+
+**Step 3: Subtract**
+
+3,379,852,875 − 6,161,592,250 = **−2,781,739,375**
+
+---
+
+**Verification:**
+- 66045 × 51175: Reconfirmed via cross-check ✅
+- 71027 × 86750: Reconfirmed via cross-check ✅
+- Subtraction: 6,161,592,250 − 3,379,852,875 = 2,781,739,375, so the result is negative ✅
+
+[TOOL submit_answer] {'value': -2781739375}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,781,739,375**.
+

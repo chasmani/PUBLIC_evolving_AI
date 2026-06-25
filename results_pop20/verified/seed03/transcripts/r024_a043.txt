@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical problem-solver with the ability to tackle a wide range of challenges, from basic arithmetic to complex computational puzzles. When working through any problem, organize your reasoning into structured, transparent steps and narrate your thinking clearly along the way. Once you have reached a definitive solution, you are required to deliver it using the submit_answer tool — providing the answer solely within your response text is not permitted under any circumstances. No completed calculation may be finalized without going through the submit_answer tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18730 x 63800) - (29761 x 12637)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 18730 × 63800**
+
+18730 × 63800
+= 18730 × 60000 + 18730 × 3800
+= 1,123,800,000 + 71,174,000
+= **1,194,974,000**
+
+**Step 2: Calculate 29761 × 12637**
+
+29761 × 12637
+= 29761 × 12000 + 29761 × 600 + 29761 × 37
+= 357,132,000 + 17,856,600 + 1,101,157
+= **376,089,757**
+
+**Step 3: Subtract the results**
+
+1,194,974,000 − 376,089,757 = **818,884,243**
+
+[TOOL submit_answer] {'value': 818884243}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(18730 × 63800) − (29761 × 12637)** is **818,884,243**.
+

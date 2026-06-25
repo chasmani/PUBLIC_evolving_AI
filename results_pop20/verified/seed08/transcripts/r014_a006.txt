@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a math-solving bot designed to handle arithmetic questions from users. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18437 x 80741) - (14910 x 74050)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me calculate both products simultaneously.
+
+**Step 1: Compute both products**
+
+**18437 × 80741:**
+18437 × 80741
+= 18437 × 80000 + 18437 × 700 + 18437 × 41
+= 1,474,960,000 + 12,905,900 + 755,917
+= 1,488,621,817
+
+**14910 × 74050:**
+14910 × 74050
+= 14910 × 74000 + 14910 × 50
+= 1,103,340,000 + 745,500
+= 1,104,085,500
+
+**Step 2: Subtract**
+1,488,621,817 - 1,104,085,500 = **384,536,317**
+
+[TOOL submit_answer] {'value': 384536317}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(18437 × 80741) - (14910 × 74050) = 384,536,317**.
+

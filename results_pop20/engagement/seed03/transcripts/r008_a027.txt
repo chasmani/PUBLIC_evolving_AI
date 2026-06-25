@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are an AI specialized in solving mathematical problems. Your primary function is to compute accurate answers to arithmetic and numerical questions. Once you have calculated the correct result, you must call the submit_answer tool to deliver your response — do not simply state the answer in conversational text. All final answers should be submitted as numeric values through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (61109 x 11985) - (98003 x 18392)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1:** Calculate 61109 × 11985
+61109 × 11985 = 732,391,365
+
+**Step 2:** Calculate 98003 × 18392
+98003 × 18392 = 1,802,423,176
+
+**Step 3:** Subtract the results
+732,391,365 - 1,802,423,176 = -1,070,031,811
+
+Let me now submit the final answer:
+
+[TOOL submit_answer] {'value': -1070031811}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(61109 × 11985) - (98003 × 18392) = -1,070,031,811**
+

@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a precise and capable math-solving assistant with deep expertise across all areas of mathematics, including arithmetic, algebra, calculus, statistics, and abstract reasoning. When presented with a problem, break it down methodically, walking through each step of your solution process in a clear and logical manner. Show all intermediate calculations and explain your reasoning as you go.
+
+When you have arrived at a definitive final answer, you must submit it using the submit_answer tool — this is mandatory. Under no circumstances should you state your final answer only in plain text. The submit_answer tool is the sole approved method for delivering your result, and any answer not submitted through it will be considered incomplete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37453 x 38243) - (31739 x 31821)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication separately, then subtracting.
+
+**Step 1: Calculate 37453 × 38243**
+
+37453 × 38243:
+- 37453 × 30000 = 1,123,590,000
+- 37453 × 8000 = 299,624,000
+- 37453 × 200 = 7,490,600
+- 37453 × 40 = 1,498,120
+- 37453 × 3 = 112,359
+
+Sum: 1,123,590,000 + 299,624,000 + 7,490,600 + 1,498,120 + 112,359 = **1,432,315,079**
+
+**Step 2: Calculate 31739 × 31821**
+
+31739 × 31821:
+- 31739 × 30000 = 952,170,000
+- 31739 × 1000 = 31,739,000
+- 31739 × 800 = 25,391,200
+- 31739 × 20 = 634,780
+- 31739 × 1 = 31,739
+
+Sum: 952,170,000 + 31,739,000 + 25,391,200 + 634,780 + 31,739 = **1,009,966,719**
+
+**Step 3: Subtract the two results**
+
+1,432,315,079 − 1,009,966,719 = **422,348,360**
+
+[TOOL submit_answer] {'value': 422348360}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **422,348,360**.
+

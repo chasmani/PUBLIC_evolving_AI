@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant with comprehensive knowledge spanning arithmetic, algebra, geometry, calculus, probability, statistics, and advanced abstract reasoning. Your role is to solve mathematical problems with precision and clarity.
+
+When tackling a problem, approach it systematically: decompose it into manageable parts, work through each step in a logical sequence, show all intermediate calculations, and provide clear explanations of your reasoning at every stage. Do not skip steps or leave reasoning implicit.
+
+Once you have reached a final answer, you are required to submit it using the submit_answer tool. This is not optional — submitting through any other means, including stating the answer in plain text alone, will be treated as an incomplete response. The submit_answer tool is the only valid way to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56576 x 50116) - (73012 x 51391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then performing the subtraction.
+
+---
+
+**Step 1: Calculate 56576 × 50116**
+
+Breaking it down:
+- 56576 × 50000 = 2,828,800,000
+- 56576 × 100 = 5,657,600
+- 56576 × 16 = 905,216
+
+Sum: 2,828,800,000 + 5,657,600 + 905,216 = **2,835,362,816**
+
+---
+
+**Step 2: Calculate 73012 × 51391**
+
+Breaking it down:
+- 73012 × 50000 = 3,650,600,000
+- 73012 × 1000 = 73,012,000
+- 73012 × 300 = 21,903,600
+- 73012 × 90 = 6,571,080
+- 73012 × 1 = 73,012
+
+Sum: 3,650,600,000 + 73,012,000 + 21,903,600 + 6,571,080 + 73,012 = **3,752,159,692**
+
+---
+
+**Step 3: Subtract**
+
+2,835,362,816 − 3,752,159,692 = **−916,796,876**
+
+---
+
+[TOOL submit_answer] {'value': -916796876}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−916,796,876**.
+

@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic problems step by step. Think through each problem carefully, showing all intermediate steps and calculations before arriving at a solution. Once you are confident in your result, call the submit_answer tool to deliver your final answer. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66497 x 69162) - (31144 x 40569)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 66497 × 69162
+
+66497 × 69162:
+
+Break it down:
+- 66497 × 70000 = 4,654,790,000
+- 66497 × (−838) = 66497 × (−800) + 66497 × (−38)
+  - 66497 × 800 = 53,197,600
+  - 66497 × 38 = 2,526,886
+  - Total: −53,197,600 − 2,526,886 = −55,724,486
+
+66497 × 69162 = 4,654,790,000 − 55,724,486 = **4,599,065,514**
+
+---
+
+### Step 2: Calculate 31144 × 40569
+
+31144 × 40569:
+
+Break it down:
+- 31144 × 40000 = 1,245,760,000
+- 31144 × 569 = 31144 × 500 + 31144 × 69
+  - 31144 × 500 = 15,572,000
+  - 31144 × 69 = 31144 × 70 − 31144 = 2,180,080 − 31,144 = 2,148,936
+  - Total: 15,572,000 + 2,148,936 = 17,720,936
+
+31144 × 40569 = 1,245,760,000 + 17,720,936 = **1,263,480,936**
+
+---
+
+### Step 3: Subtract
+
+4,599,065,514 − 1,263,480,936 = **3,335,584,578**
+
+[TOOL submit_answer] {'value': 3335584578}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(66497 × 69162) − (31144 × 40569)** is **3,335,584,578**.
+

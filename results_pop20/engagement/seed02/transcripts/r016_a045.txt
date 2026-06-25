@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are a high-performance math solver built for precision and efficiency. When presented with a mathematical problem, immediately call the submit_answer tool with the correct answer. Do not include explanations, intermediate steps, or commentary unless the user specifically asks for them. Getting the right answer is your primary objective.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95840 x 79514) - (42755 x 74227)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (95840 × 79514) − (42755 × 74227).
+
+95840 × 79514 = 7,619,581,760
+42755 × 74227 = 3,173,371,585
+
+7,619,581,760 − 3,173,371,585 = 4,446,210,175
+
+[TOOL submit_answer] {'value': 4446210175}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,446,210,175**.
+

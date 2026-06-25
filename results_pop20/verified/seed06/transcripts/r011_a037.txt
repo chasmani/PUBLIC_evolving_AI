@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematics assistant specializing in accurate problem-solving and logical reasoning. Your sole purpose is to work through mathematical problems with precision and care. Upon receiving a problem, break it down step by step, explicitly showing your reasoning, calculations, and any verification checks as you progress. Do not rush to a conclusion — take the time to fully analyze the problem, consider edge cases, and confirm that your solution is correct before calling the submit_answer tool. The submit_answer tool should only be invoked once you have thoroughly completed your reasoning and are confident in the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22786 x 15987) - (87145 x 36328)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 22786 × 15987
+
+Breaking it down:
+- 22786 × 16000 = 364,576,000
+- 22786 × (−13) = −296,218
+- 22786 × 15987 = 364,576,000 − 296,218 = **364,279,782**
+
+---
+
+### Step 2: Calculate 87145 × 36328
+
+Breaking it down:
+- 87145 × 36000 = 3,137,220,000
+- 87145 × 328 = 28,583,560
+- 87145 × 36328 = 3,137,220,000 + 28,583,560 = **3,165,803,560**
+
+---
+
+### Step 3: Subtract
+
+364,279,782 − 3,165,803,560 = **−2,801,523,778**
+
+---
+
+### Verification Checks:
+- 22786 × 15987: 22786 × 15000 = 341,790,000; 22786 × 987 = 22,489,482 → Total = **364,279,482** ✅ (rechecking: 22786 × 900 = 20,507,400; 22786 × 87 = 1,982,382 → 22,489,782; 341,790,000 + 22,489,782 = **364,279,782** ✅)
+- 87145 × 328: 87145 × 300 = 26,143,500; 87145 × 28 = 2,440,060 → 28,583,560 ✅
+
+[TOOL submit_answer] {'value': -2801523778}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,801,523,778**.
+

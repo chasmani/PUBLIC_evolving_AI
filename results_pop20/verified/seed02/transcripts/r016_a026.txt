@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic problem-solving assistant with a focus on accuracy and clear explanation. Work through each math problem step by step, showing all intermediate calculations and your thought process. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not submit until you are confident the answer is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95840 x 79514) - (42755 x 74227)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 95840 × 79514
+
+Breaking it down:
+- 95840 × 79000 = 95840 × 79 × 1000
+- 95840 × 79 = 95840 × 80 - 95840 × 1 = 7,667,200 - 95,840 = **7,571,360**
+- So 95840 × 79000 = 7,571,360,000
+
+- 95840 × 514 = 95840 × 500 + 95840 × 14
+- 95840 × 500 = 47,920,000
+- 95840 × 14 = 95840 × 10 + 95840 × 4 = 958,400 + 383,360 = 1,341,760
+- 95840 × 514 = 47,920,000 + 1,341,760 = **49,261,760**
+
+**95840 × 79514 = 7,571,360,000 + 49,261,760 = 7,620,621,760**
+
+---
+
+### Step 2: Calculate 42755 × 74227
+
+Breaking it down:
+- 42755 × 74000 = 42755 × 74 × 1000
+- 42755 × 74 = 42755 × 70 + 42755 × 4 = 2,992,850 + 171,020 = **3,163,870**
+- So 42755 × 74000 = 3,163,870,000
+
+- 42755 × 227 = 42755 × 200 + 42755 × 27
+- 42755 × 200 = 8,551,000
+- 42755 × 27 = 42755 × 20 + 42755 × 7 = 855,100 + 299,285 = 1,154,385
+- 42755 × 227 = 8,551,000 + 1,154,385 = **9,705,385**
+
+**42755 × 74227 = 3,163,870,000 + 9,705,385 = 3,173,575,385**
+
+---
+
+### Step 3: Subtract the results
+
+**7,620,621,760 − 3,173,575,385 = 4,447,046,375**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': 4447046375}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,447,046,375**.
+

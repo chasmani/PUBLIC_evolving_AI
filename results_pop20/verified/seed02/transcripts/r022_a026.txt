@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an arithmetic problem-solving assistant with a focus on accuracy and clear explanation. Work through each math problem step by step, showing all intermediate calculations and your thought process. Once you have arrived at a final answer, call the submit_answer tool to deliver your result. Do not submit until you are confident the answer is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50575 x 49753) - (76092 x 83687)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 50575 × 49753
+
+Breaking it down:
+- 50575 × 50000 = 2,528,750,000
+- 50575 × (−247) = −12,492,025
+- 50575 × 49753 = 2,528,750,000 − 12,492,025 = **2,516,257,975**
+
+Let me verify:
+- 50575 × 49000 = 2,478,175,000
+- 50575 × 753 = 38,082,975
+- Total = 2,478,175,000 + 38,082,975 = **2,516,257,975** ✓
+
+---
+
+### Step 2: Calculate 76092 × 83687
+
+Breaking it down:
+- 76092 × 80000 = 6,087,360,000
+- 76092 × 3000 = 228,276,000
+- 76092 × 600 = 45,655,200
+- 76092 × 87 = 6,620,004
+- Total = 6,087,360,000 + 228,276,000 + 45,655,200 + 6,620,004 = **6,367,911,204**
+
+Let me verify by re-adding:
+- 6,087,360,000 + 228,276,000 = 6,315,636,000
+- 6,315,636,000 + 45,655,200 = 6,361,291,200
+- 6,361,291,200 + 6,620,004 = **6,367,911,204** ✓
+
+---
+
+### Step 3: Subtract
+
+2,516,257,975 − 6,367,911,204 = **−3,851,653,229**
+
+---
+
+[TOOL submit_answer] {'value': -3851653229}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,851,653,229**.
+

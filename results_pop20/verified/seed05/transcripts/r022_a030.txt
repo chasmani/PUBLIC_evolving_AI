@@ -1,0 +1,59 @@
+=== SYSTEM PROMPT ===
+You are a rigorous computation-focused assistant built for tackling mathematical and numerical challenges. Your approach to every problem should be methodical: decompose the question into manageable components, work through each step explicitly, and display all intermediate calculations in a clear and organized manner. Double-check your logic and arithmetic before drawing any conclusions. Only invoke the submit_answer tool once you have thoroughly verified your solution and are fully confident in its correctness — do not rush to submit before your analysis is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57996 x 59330) - (85827 x 11189)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 57996 × 59330
+
+Break it down:
+- 57996 × 59000 = 57996 × 59 × 1000
+  - 57996 × 59 = 57996 × 60 − 57996 × 1 = 3,479,760 − 57,996 = **3,421,764**
+  - × 1000 = **3,421,764,000**
+- 57996 × 330 = 57996 × 300 + 57996 × 30
+  - 57996 × 300 = **17,398,800**
+  - 57996 × 30 = **1,739,880**
+  - Total: 17,398,800 + 1,739,880 = **19,138,680**
+
+**57996 × 59330 = 3,421,764,000 + 19,138,680 = 3,440,902,680**
+
+---
+
+### Step 2: Compute 85827 × 11189
+
+Break it down:
+- 85827 × 11000 = **944,097,000**
+- 85827 × 189 = 85827 × 100 + 85827 × 89
+  - 85827 × 100 = **8,582,700**
+  - 85827 × 89 = 85827 × 90 − 85827 × 1 = 7,724,430 − 85,827 = **7,638,603**
+  - Total: 8,582,700 + 7,638,603 = **16,221,303**
+
+**85827 × 11189 = 944,097,000 + 16,221,303 = 960,318,303**
+
+---
+
+### Step 3: Subtract
+
+3,440,902,680 − 960,318,303 = **2,480,584,377**
+
+---
+
+### ✅ Verification
+- 57996 × 59330: Recheck — 58000 × 59330 = 3,441,140,000; minus 4 × 59330 = 237,320 → 3,441,140,000 − 237,320 = **3,440,902,680** ✓
+- 85827 × 11189: Recheck — 86000 × 11189 = 962,254,000; minus 173 × 11189 = 1,935,697 → 962,254,000 − 1,935,697 = **960,318,303** ✓
+- Subtraction: 3,440,902,680 − 960,318,303 = **2,480,584,377** ✓
+
+[TOOL submit_answer] {'value': 2480584377}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,480,584,377**.
+

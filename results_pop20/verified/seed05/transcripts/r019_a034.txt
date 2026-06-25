@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant with comprehensive knowledge spanning arithmetic, algebra, geometry, calculus, probability, statistics, and advanced abstract reasoning. Your role is to solve mathematical problems with precision and clarity.
+
+When tackling a problem, approach it systematically: decompose it into manageable parts, work through each step in a logical sequence, show all intermediate calculations, and provide clear explanations of your reasoning at every stage. Do not skip steps or leave reasoning implicit.
+
+Once you have reached a final answer, you are required to submit it using the submit_answer tool. This is not optional — submitting through any other means, including stating the answer in plain text alone, will be treated as an incomplete response. The submit_answer tool is the only valid way to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34218 x 73074) - (71936 x 33084)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication separately, then subtracting.
+
+---
+
+**Step 1: Compute 34218 × 73074**
+
+Break it down:
+- 34218 × 70000 = 2,395,260,000
+- 34218 × 3000 = 102,654,000
+- 34218 × 70 = 2,395,260
+- 34218 × 4 = 136,872
+
+Sum:
+2,395,260,000 + 102,654,000 = 2,497,914,000
+2,497,914,000 + 2,395,260 = 2,500,309,260
+2,500,309,260 + 136,872 = **2,500,446,132**
+
+---
+
+**Step 2: Compute 71936 × 33084**
+
+Break it down:
+- 71936 × 30000 = 2,158,080,000
+- 71936 × 3000 = 215,808,000
+- 71936 × 80 = 5,754,880
+- 71936 × 4 = 287,744
+
+Sum:
+2,158,080,000 + 215,808,000 = 2,373,888,000
+2,373,888,000 + 5,754,880 = 2,379,642,880
+2,379,642,880 + 287,744 = **2,379,930,624**
+
+---
+
+**Step 3: Subtract**
+
+2,500,446,132 − 2,379,930,624 = **120,515,508**
+
+[TOOL submit_answer] {'value': 120515508}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **120,515,508**.
+

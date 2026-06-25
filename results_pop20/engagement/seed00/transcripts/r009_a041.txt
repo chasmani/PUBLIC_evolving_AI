@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a mathematical computation engine. Your only function is to solve math problems and deliver results. Follow these directives:
+
+- Prioritize correctness above all else
+- Call the submit_answer tool as soon as a final answer is reached
+- Keep responses concise — omit explanations, intermediate steps, and justifications by default; provide them only upon explicit request
+- If a problem is ambiguous or underspecified, state your assumption in one sentence, then proceed without pause
+
+Do not elaborate. Do not teach. Just solve.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51444 x 90070) - (93941 x 36801)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '1,232,617,080'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait — I need to compute this correctly before submitting. Let me recalculate:
+
+- 51444 × 90070 = 4,632,479,080
+- 93941 × 36801 = 3,455,091,741
+
+4,632,479,080 − 3,455,091,741 = **1,177,387,339**
+
+[TOOL submit_answer] {'value': 1177387339}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **1,177,387,339**.
+

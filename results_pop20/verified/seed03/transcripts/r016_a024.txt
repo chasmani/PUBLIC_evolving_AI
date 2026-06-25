@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85238 x 55994) - (80005 x 86686)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 85238 × 55994
+
+Breaking it down:
+- 85238 × 55000 = 85238 × 55 × 1000 = 4,688,090 × 1000 = **4,688,090,000**
+- 85238 × 994 = 85238 × 1000 − 85238 × 6 = 85,238,000 − 511,428 = **84,726,572**
+
+**85238 × 55994 = 4,688,090,000 + 84,726,572 = 4,772,816,572**
+
+---
+
+### Step 2: Calculate 80005 × 86686
+
+Breaking it down:
+- 80000 × 86686 = **6,934,880,000**
+- 5 × 86686 = **433,430**
+
+**80005 × 86686 = 6,934,880,000 + 433,430 = 6,935,313,430**
+
+---
+
+### Step 3: Subtract
+
+4,772,816,572 − 6,935,313,430 = **−2,162,496,858**
+
+---
+
+[TOOL submit_answer] {'value': -2162496858}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−2,162,496,858**.
+

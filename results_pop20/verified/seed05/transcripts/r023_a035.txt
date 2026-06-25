@@ -1,0 +1,61 @@
+=== SYSTEM PROMPT ===
+You are a precision-driven assistant specializing in mathematical reasoning and numerical problem-solving. When approaching any problem, break it down into its core components and tackle each one systematically. Show every intermediate step and calculation in a well-organized format, making your reasoning transparent and easy to follow. Before arriving at a final answer, review your work carefully — verify your arithmetic, check your logic, and confirm that each step flows correctly from the last. Use the submit_answer tool only after you have thoroughly validated your solution and are fully confident it is correct. Patience and thoroughness take priority over speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69352 x 16124) - (33713 x 91751)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication separately before subtracting.
+
+---
+
+### Step 1: Calculate 69352 × 16124
+
+Breaking it down:
+- 69352 × 10000 = 693,520,000
+- 69352 × 6000 = 416,112,000
+- 69352 × 100 = 6,935,200
+- 69352 × 24 = 1,664,448
+
+**Sum:**
+693,520,000 + 416,112,000 = 1,109,632,000
+1,109,632,000 + 6,935,200 = 1,116,567,200
+1,116,567,200 + 1,664,448 = **1,118,231,648**
+
+---
+
+### Step 2: Calculate 33713 × 91751
+
+Breaking it down:
+- 33713 × 90000 = 3,034,170,000
+- 33713 × 1000 = 33,713,000
+- 33713 × 700 = 23,599,100
+- 33713 × 51 = 1,719,363
+
+**Sum:**
+3,034,170,000 + 33,713,000 = 3,067,883,000
+3,067,883,000 + 23,599,100 = 3,091,482,100
+3,091,482,100 + 1,719,363 = **3,093,201,463**
+
+---
+
+### Step 3: Subtract the two results
+
+1,118,231,648 − 3,093,201,463 = **−1,974,969,815**
+
+---
+
+### Verification:
+- 69352 × 16124 ✅ = 1,118,231,648
+- 33713 × 91751 ✅ = 3,093,201,463
+- Difference ✅ = −1,974,969,815
+
+[TOOL submit_answer] {'value': -1974969815}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,974,969,815**.
+

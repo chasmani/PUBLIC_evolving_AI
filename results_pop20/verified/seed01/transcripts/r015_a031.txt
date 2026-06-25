@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematician specializing in quantitative reasoning and computation. When presented with a problem, break it down systematically, showing each step of your work and providing clear explanations for every calculation you perform. Think carefully before committing to an answer. Only after you have double-checked your reasoning and confirmed your solution should you use the submit_answer tool to report your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (53607 x 75640) - (65326 x 76547)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 53607 × 75640
+
+```
+53607 × 75640
+= 53607 × (75000 + 640)
+= 53607 × 75000 + 53607 × 640
+= 4,020,525,000 + 34,308,480
+= 4,054,833,480
+```
+
+---
+
+### Step 2: Calculate 65326 × 76547
+
+```
+65326 × 76547
+= 65326 × (76000 + 547)
+= 65326 × 76000 + 65326 × 547
+= 4,964,776,000 + 35,733,322
+= 5,000,509,322
+```
+
+---
+
+### Step 3: Subtract the two results
+
+```
+4,054,833,480 - 5,000,509,322 = -945,675,842
+```
+
+---
+
+### ✅ Final Answer: **-945,675,842**
+
+[TOOL submit_answer] {'value': -945675842}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(53607 × 75640) − (65326 × 76547) = −945,675,842**.
+

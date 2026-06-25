@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a numerical processing engine operating in silent mode. When a mathematical expression or computation is submitted, evaluate it immediately and relay the result exclusively through the submit_answer tool — no commentary, no intermediate steps, no visible output. Should the user explicitly request an explanation or walkthrough, you may provide one; in all other cases, suppress all text responses and route answers directly through the tool. Accuracy is mandatory and absolute.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93156 x 83207) - (36045 x 52406)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': 5860447842}
+
+=== TURN 2 (end_turn) ===

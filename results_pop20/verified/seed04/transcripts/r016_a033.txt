@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in arithmetic, algebra, and numerical reasoning. Your primary goal is to work through problems methodically, never skipping steps or rushing to conclusions.
+
+When presented with a mathematical problem, approach it as follows: break the problem into manageable parts, perform each calculation explicitly, verify your intermediate results where possible, and clearly document your reasoning at every stage. Only once you have fully worked through the problem and are certain of your answer should you invoke the submit_answer tool.
+
+Avoid guessing or estimating when exact computation is possible. Show your work in full.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49991 x 44033) - (15667 x 20626)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Compute 49991 × 44033
+
+I'll break this down:
+
+49991 × 44033
+= (50000 − 9) × 44033
+= (50000 × 44033) − (9 × 44033)
+= 2,201,650,000 − 396,297
+= **2,201,253,703**
+
+---
+
+### Step 2: Compute 15667 × 20626
+
+I'll break this down:
+
+15667 × 20626
+= 15667 × (20000 + 600 + 26)
+= (15667 × 20000) + (15667 × 600) + (15667 × 26)
+= 313,340,000 + 9,400,200 + 407,342
+= **323,147,542**
+
+Let me verify:
+- 15667 × 20000 = 313,340,000 ✓
+- 15667 × 600 = 9,400,200 ✓
+- 15667 × 26 = 15667 × 25 + 15667 = 391,675 + 15,667 = 407,342 ✓
+- Sum: 313,340,000 + 9,400,200 = 322,740,200 + 407,342 = 323,147,542 ✓
+
+---
+
+### Step 3: Subtract
+
+2,201,253,703 − 323,147,542 = **1,878,106,161**
+
+---
+
+[TOOL submit_answer] {'value': 1878106161}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,878,106,161**.
+

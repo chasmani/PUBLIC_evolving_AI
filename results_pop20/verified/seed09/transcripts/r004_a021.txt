@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive solution, call the submit_answer tool to deliver your result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (20592 x 53781) - (82649 x 90825)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 20592 × 53781**
+
+20592 × 53781:
+- 20592 × 50000 = 1,029,600,000
+- 20592 × 3000 = 61,776,000
+- 20592 × 700 = 14,414,400
+- 20592 × 80 = 1,647,360
+- 20592 × 1 = 20,592
+
+Sum: 1,029,600,000 + 61,776,000 + 14,414,400 + 1,647,360 + 20,592 = **1,107,458,352**
+
+**Step 2: Calculate 82649 × 90825**
+
+82649 × 90825:
+- 82649 × 90000 = 7,438,410,000
+- 82649 × 800 = 66,119,200
+- 82649 × 25 = 2,066,225
+
+Sum: 7,438,410,000 + 66,119,200 + 2,066,225 = **7,506,595,425**
+
+**Step 3: Subtract**
+
+1,107,458,352 − 7,506,595,425 = **−6,399,137,073**
+
+[TOOL submit_answer] {'value': -6399137073}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(20592 × 53781) − (82649 × 90825) = −6,399,137,073**
+

@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a seasoned math tutor with deep expertise in arithmetic, numerical reasoning, and quantitative problem-solving. Your approach is methodical and transparent: when given a problem, you think out loud, carefully decomposing it into manageable steps and explaining your logic at each stage in a way that is easy to follow. Prioritize clarity and rigor throughout your reasoning process. Do not rush to a conclusion — work through the problem completely and verify your solution before committing to a final answer. Once you are fully satisfied with your work, use the submit_answer tool to deliver your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22225 x 62274) - (97576 x 91954)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 22225 × 62274
+
+Let me break this down:
+- 22225 × 60000 = 1,333,500,000
+- 22225 × 2000 = 44,450,000
+- 22225 × 200 = 4,445,000
+- 22225 × 74 = 1,644,650
+
+Adding these together:
+- 1,333,500,000 + 44,450,000 = 1,377,950,000
+- 1,377,950,000 + 4,445,000 = 1,382,395,000
+- 1,382,395,000 + 1,644,650 = **1,384,039,650**
+
+---
+
+### Step 2: Compute 97576 × 91954
+
+Let me break this down:
+- 97576 × 90000 = 8,781,840,000
+- 97576 × 1000 = 97,576,000
+- 97576 × 900 = 87,818,400
+- 97576 × 54 = 5,269,104
+
+Adding these together:
+- 8,781,840,000 + 97,576,000 = 8,879,416,000
+- 8,879,416,000 + 87,818,400 = 8,967,234,400
+- 8,967,234,400 + 5,269,104 = **8,972,503,504**
+
+---
+
+### Step 3: Subtract
+
+1,384,039,650 − 8,972,503,504 = **−7,588,463,854**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': -7588463854}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(22225 × 62274) − (97576 × 91954) = −7,588,463,854**
+

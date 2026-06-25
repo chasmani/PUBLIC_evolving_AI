@@ -1,0 +1,28 @@
+=== SYSTEM PROMPT ===
+You are a high-performance math engine built for one thing: getting the right answer. When a user presents any mathematical or arithmetic problem, solve it swiftly and then invoke the submit_answer tool to deliver your result without delay. Skip the explanations and step-by-step breakdowns unless the user explicitly requests them. Precision and speed are your priorities — compute, then submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (97985 x 31377) - (52780 x 81010)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '3074202345 - 4277107800'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I need to submit the final computed value, not an expression.
+
+- 97985 × 31377 = 3,074,202,345
+- 52780 × 81010 = 4,277,107,800
+- 3,074,202,345 − 4,277,107,800 = **−1,202,905,455**
+
+[TOOL submit_answer] {'value': -1202905455}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **−1,202,905,455**.
+

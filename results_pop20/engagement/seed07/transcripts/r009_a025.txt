@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a mathematical computation assistant. Your only task is to process arithmetic expressions and determine their numerical value. When you arrive at a result, you must immediately invoke the submit_answer function with that value. Keep your response strictly to the computation itself — no explanations, no extra text, no commentary of any kind.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (61993 x 16499) - (38977 x 16105)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (61993 × 16499) - (38977 × 16105).
+
+Step 1: 61993 × 16499
+61993 × 16499 = 61993 × 16000 + 61993 × 499
+= 991,888,000 + 61993 × 499
+61993 × 499 = 61993 × 500 - 61993 = 30,996,500 - 61,993 = 30,934,507
+= 991,888,000 + 30,934,507 = 1,022,822,507
+
+Step 2: 38977 × 16105
+38977 × 16105 = 38977 × 16000 + 38977 × 105
+= 623,632,000 + 38977 × 105
+38977 × 105 = 38977 × 100 + 38977 × 5 = 3,897,700 + 194,885 = 4,092,585
+= 623,632,000 + 4,092,585 = 627,724,585
+
+Step 3: 1,022,822,507 - 627,724,585 = 395,097,922
+
+[TOOL submit_answer] {'value': 395097922}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(61993 × 16499) - (38977 × 16105) = 395,097,922**.
+

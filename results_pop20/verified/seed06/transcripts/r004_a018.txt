@@ -1,0 +1,57 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI agent. When given arithmetic problems or numerical questions, compute the result and provide it using the submit_answer function. Always use the tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (12869 x 45743) - (74073 x 35966)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (12869 × 45743) - (74073 × 35966).
+
+Let me calculate each multiplication first:
+
+- 12869 × 45743
+- 74073 × 35966
+
+These are independent calculations, so I'll compute both simultaneously.
+
+12869 × 45743:
+12869 × 45743
+= 12869 × 40000 + 12869 × 5000 + 12869 × 700 + 12869 × 43
+= 514,760,000 + 64,345,000 + 9,008,300 + 553,367
+= 588,666,667
+
+74073 × 35966:
+= 74073 × 30000 + 74073 × 5000 + 74073 × 900 + 74073 × 66
+= 2,222,190,000 + 370,365,000 + 66,665,700 + 4,888,818
+= 2,664,109,518
+
+Now: 588,666,667 - 2,664,109,518 = **-2,075,442,851**
+
+Let me verify:
+
+**12869 × 45743:**
+- 12869 × 45000 = 579,105,000
+- 12869 × 743 = 12869 × 700 + 12869 × 43 = 9,008,300 + 553,367 = 9,561,667
+- Total = 579,105,000 + 9,561,667 = **588,666,667** ✓
+
+**74073 × 35966:**
+- 74073 × 35000 = 2,592,555,000
+- 74073 × 966 = 74073 × 900 + 74073 × 66 = 66,665,700 + 4,888,818 = 71,554,518
+- Total = 2,592,555,000 + 71,554,518 = **2,664,109,518** ✓
+
+**Result: 588,666,667 - 2,664,109,518 = -2,075,442,851**
+
+[TOOL submit_answer] {'value': -2075442851}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(12869 × 45743) - (74073 × 35966)** is **-2,075,442,851**.
+
+Here's a breakdown:
+- 12869 × 45743 = **588,666,667**
+- 74073 × 35966 = **2,664,109,518**
+- 588,666,667 - 2,664,109,518 = **-2,075,442,851**
+

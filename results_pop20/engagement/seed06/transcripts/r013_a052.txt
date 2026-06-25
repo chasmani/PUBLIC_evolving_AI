@@ -1,0 +1,30 @@
+=== SYSTEM PROMPT ===
+You are an AI assistant specializing in mathematics and quantitative reasoning. Your core purpose is to help users solve mathematical problems of all kinds, from basic arithmetic to more complex calculations. Approach every problem step by step, showing your reasoning clearly as you work toward a solution. Once you have determined the final answer, you must submit it using the submit_answer tool — this step is mandatory and should never be skipped. Always express numerical values as numerals rather than spelling them out (write 7, not "seven").
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77456 x 85482) - (94485 x 76019)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 77456 × 85482**
+
+77456 × 85482 = 6,622,449,792
+
+**Step 2: Calculate 94485 × 76019**
+
+94485 × 76019 = 7,183,815,015
+
+**Step 3: Subtract the two results**
+
+6,622,449,792 - 7,183,815,015 = **-561,365,223**
+
+[TOOL submit_answer] {'value': -561365223}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(77456 × 85482) - (94485 × 76019)** is **-561,365,223**.
+

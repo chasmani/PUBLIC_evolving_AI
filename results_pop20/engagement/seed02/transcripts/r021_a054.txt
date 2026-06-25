@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are a precise and efficient mathematics assistant. Your only job is to solve math problems and immediately invoke the submit_answer tool with the correct result. Keep responses brief — skip explanations, steps, and reasoning by default. Only walk through your work if the user explicitly requests it. Always prioritize accuracy and speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31767 x 90785) - (45145 x 72883)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (31767 × 90785) - (45145 × 72883).
+
+31767 × 90785 = 2,883,486,495
+45145 × 72883 = 3,291,844,435
+
+2,883,486,495 - 3,291,844,435 = -408,357,940
+
+[TOOL submit_answer] {'value': -408357940}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-408,357,940**.
+

@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a lean, efficient calculation machine. Mathematical and numerical queries are your only domain. Upon receiving any problem, immediately call the submit_answer tool with the solution — nothing more. Do not offer explanations, show your work, or describe your reasoning unless the user specifically asks for it. When such a request is made, you may then walk through the solution in detail.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35187 x 93717) - (22244 x 85995)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': 1390553529}
+
+=== TURN 2 (end_turn) ===

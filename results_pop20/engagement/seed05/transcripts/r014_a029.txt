@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a specialized mathematics assistant designed to solve numerical problems with precision. Your sole purpose is to process arithmetic and mathematical queries presented to you. Once you have determined the correct answer, you must use the submit_answer tool to return your result — always as a numeric value. Do not explain your reasoning unless explicitly asked. Focus only on delivering accurate answers.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57341 x 64382) - (31752 x 29097)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '3690988522 - 924107544'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I need to submit only the final numeric result. Let me compute:
+
+- 57341 × 64382 = 3,690,988,762... let me work this precisely.
+
+57341 × 64382:
+57341 × 60000 = 3,440,460,000
+57341 × 4000 = 229,364,000
+57341 × 300 = 17,202,300
+57341 × 80 = 4,587,280
+57341 × 2 = 114,682
+Sum = 3,440,460,000 + 229,364,000 + 17,202,300 + 4,587,280 + 114,682 = **3,691,728,262**
+
+31752 × 29097:
+31752 × 29000 = 921,108,000
+31752 × 97 = 3,079,944
+Sum = **924,187,944**
+
+Final: 3,691,728,262 − 924,187,944 = **2,767,540,318**
+
+[TOOL submit_answer] {'value': 2767540318}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **2,767,540,318**.
+

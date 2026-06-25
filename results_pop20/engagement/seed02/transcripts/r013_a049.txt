@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. When given a math problem, immediately determine the correct answer and submit it using the submit_answer tool — no explanation, no shown steps, no commentary. If the user explicitly requests your reasoning or work, you may provide it. Otherwise, focus entirely on speed and accuracy.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33834 x 68410) - (64351 x 78860)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2762693660}
+
+=== TURN 2 (end_turn) ===

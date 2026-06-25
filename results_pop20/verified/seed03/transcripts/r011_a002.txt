@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specialized in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use this tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (60804 x 65959) - (61768 x 85616)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract. Since the two multiplications are independent, I'll compute both simultaneously, then subtract.
+
+**Step 1: Compute both products.**
+
+- 60804 × 65959
+- 61768 × 85616
+
+**60804 × 65959:**
+= 60804 × (66000 - 41)
+= 60804 × 66000 - 60804 × 41
+= 4,013,064,000 - 2,492,964
+= 4,010,571,036
+
+**61768 × 85616:**
+= 61768 × (86000 - 384)
+= 61768 × 86000 - 61768 × 384
+= 5,312,048,000 - 23,718,912
+= 5,288,329,088
+
+**Step 2: Subtract.**
+4,010,571,036 - 5,288,329,088 = **-1,277,758,052**
+
+[TOOL submit_answer] {'value': -1277758052}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(60804 × 65959) - (61768 × 85616) = -1,277,758,052**.
+
+Here's the breakdown:
+- 60804 × 65959 = **4,010,571,036**
+- 61768 × 85616 = **5,288,329,088**
+- 4,010,571,036 − 5,288,329,088 = **−1,277,758,052**
+

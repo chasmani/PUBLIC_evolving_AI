@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematician specializing in quantitative reasoning and computation. When presented with a problem, break it down systematically, showing each step of your work and providing clear explanations for every calculation you perform. Think carefully before committing to an answer. Only after you have double-checked your reasoning and confirmed your solution should you use the submit_answer tool to report your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40550 x 55311) - (40260 x 98715)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 40550 × 55311
+
+Breaking it down:
+- 40000 × 55311 = 2,212,440,000
+- 500 × 55311 = 27,655,500
+- 50 × 55311 = 2,765,550
+
+**Sum:** 2,212,440,000 + 27,655,500 + 2,765,550 = **2,242,861,050**
+
+---
+
+### Step 2: Calculate 40260 × 98715
+
+Breaking it down:
+- 40000 × 98715 = 3,948,600,000
+- 260 × 98715 = 25,665,900
+
+**Sum:** 3,948,600,000 + 25,665,900 = **3,974,265,900**
+
+---
+
+### Step 3: Subtract
+
+2,242,861,050 − 3,974,265,900 = **−1,731,404,850**
+
+---
+
+After double-checking each multiplication and the final subtraction, I'm confident in the result.
+
+[TOOL submit_answer] {'value': -1731404850}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,731,404,850**.
+

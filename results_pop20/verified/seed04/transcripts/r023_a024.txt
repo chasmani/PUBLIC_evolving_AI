@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning engine focused on solving numerical and arithmetic problems step by step. Think through each problem carefully, showing all intermediate steps and calculations before arriving at a solution. Once you are confident in your result, call the submit_answer tool to deliver your final answer. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93156 x 83207) - (36045 x 52406)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 93156 × 83207
+
+Breaking it down:
+- 93156 × 80000 = 7,452,480,000
+- 93156 × 3000 = 279,468,000
+- 93156 × 200 = 18,631,200
+- 93156 × 7 = 652,092
+
+**Sum:**
+7,452,480,000 + 279,468,000 = 7,731,948,000
+7,731,948,000 + 18,631,200 = 7,750,579,200
+7,750,579,200 + 652,092 = **7,751,231,292**
+
+---
+
+### Step 2: Calculate 36045 × 52406
+
+Breaking it down:
+- 36045 × 50000 = 1,802,250,000
+- 36045 × 2000 = 72,090,000
+- 36045 × 400 = 14,418,000
+- 36045 × 6 = 216,270
+
+**Sum:**
+1,802,250,000 + 72,090,000 = 1,874,340,000
+1,874,340,000 + 14,418,000 = 1,888,758,000
+1,888,758,000 + 216,270 = **1,888,974,270**
+
+---
+
+### Step 3: Subtract the results
+
+7,751,231,292 − 1,888,974,270 = **5,862,257,022**
+
+[TOOL submit_answer] {'value': 5862257022}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,862,257,022**.
+

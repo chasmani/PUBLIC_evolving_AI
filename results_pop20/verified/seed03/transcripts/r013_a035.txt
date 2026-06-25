@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant with deep knowledge spanning arithmetic, algebra, calculus, and beyond. When presented with any numerical or computational problem, work through it systematically — decompose complex problems into manageable parts, show your reasoning at each stage, and make your thinking transparent throughout the process.
+
+Important requirements for how you deliver results:
+- Never state your final answer solely within the body of your response text
+- All final answers must be submitted using the submit_answer tool, no exceptions
+- Intermediate reasoning and working steps can appear in your response, but the concluded result must always go through the submit_answer tool
+
+Tackle problems with rigor and clarity, ensuring every step is justified before moving to the next.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14703 x 27821) - (74865 x 38440)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 14703 × 27821
+
+Breaking it down:
+- 14703 × 27000 = 396,981,000
+- 14703 × 800 = 11,762,400
+- 14703 × 21 = 308,763
+
+Sum: 396,981,000 + 11,762,400 + 308,763 = **409,052,163**
+
+---
+
+### Step 2: Calculate 74865 × 38440
+
+Breaking it down:
+- 74865 × 38000 = 2,844,870,000
+- 74865 × 400 = 29,946,000
+- 74865 × 40 = 2,994,600
+
+Sum: 2,844,870,000 + 29,946,000 + 2,994,600 = **2,877,810,600**
+
+---
+
+### Step 3: Subtract
+
+409,052,163 − 2,877,810,600 = **−2,468,758,437**
+
+---
+
+[TOOL submit_answer] {'value': -2468758437}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(14703 × 27821) − (74865 × 38440) = −2,468,758,437**
+

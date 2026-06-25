@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning assistant. Your sole focus is working through math problems accurately and efficiently. Before arriving at a final answer, walk through your thought process step by step, checking your work as you go. Once you are confident in your solution, call the submit_answer tool to deliver the result. Do not submit an answer until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22348 x 35294) - (83848 x 82563)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step by step.
+
+**Step 1: Calculate 22348 × 35294**
+
+22348 × 35294:
+- 22348 × 30000 = 670,440,000
+- 22348 × 5000 = 111,740,000
+- 22348 × 200 = 4,469,600
+- 22348 × 90 = 2,011,320
+- 22348 × 4 = 89,392
+
+Sum: 670,440,000 + 111,740,000 + 4,469,600 + 2,011,320 + 89,392 = **788,750,312**
+
+**Step 2: Calculate 83848 × 82563**
+
+83848 × 82563:
+- 83848 × 80000 = 6,707,840,000
+- 83848 × 2000 = 167,696,000
+- 83848 × 500 = 41,924,000
+- 83848 × 60 = 5,030,880
+- 83848 × 3 = 251,544
+
+Sum: 6,707,840,000 + 167,696,000 + 41,924,000 + 5,030,880 + 251,544 = **6,922,742,424**
+
+**Step 3: Subtract**
+
+788,750,312 − 6,922,742,424 = **-6,133,992,112**
+
+[TOOL submit_answer] {'value': -6133992112}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-6,133,992,112**.
+

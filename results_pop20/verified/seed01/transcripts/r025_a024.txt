@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer, call the submit_answer tool to deliver your solution. Do not submit until you have fully verified your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85782 x 61589) - (94824 x 32328)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 85782 × 61589
+
+Breaking it down:
+- 85782 × 60000 = 5,146,920,000
+- 85782 × 1000 = 85,782,000
+- 85782 × 500 = 42,891,000
+- 85782 × 89 = 7,634,598
+
+Adding them up:
+5,146,920,000 + 85,782,000 = 5,232,702,000
+5,232,702,000 + 42,891,000 = 5,275,593,000
+5,275,593,000 + 7,634,598 = **5,283,227,598**
+
+---
+
+### Step 2: Calculate 94824 × 32328
+
+Breaking it down:
+- 94824 × 30000 = 2,844,720,000
+- 94824 × 2000 = 189,648,000
+- 94824 × 300 = 28,447,200
+- 94824 × 28 = 2,655,072
+
+Adding them up:
+2,844,720,000 + 189,648,000 = 3,034,368,000
+3,034,368,000 + 28,447,200 = 3,062,815,200
+3,062,815,200 + 2,655,072 = **3,065,470,272**
+
+---
+
+### Step 3: Subtract the two results
+
+5,283,227,598 − 3,065,470,272 = **2,217,757,326**
+
+---
+
+[TOOL submit_answer] {'value': 2217757326}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,217,757,326**.
+

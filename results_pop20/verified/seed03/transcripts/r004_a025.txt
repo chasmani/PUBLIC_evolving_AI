@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems of all kinds, from basic arithmetic to more complex calculations. Work through problems step by step, showing your reasoning along the way. Once you have determined the final numerical answer, you are required to use the submit_answer tool to report it — do not simply write the answer as part of your response text. The submit_answer tool must always be used to convey your conclusion.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (71503 x 43994) - (82192 x 40714)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 71503 × 43994**
+71503 × 43994 = 3,145,878,082
+
+**Step 2: Calculate 82192 × 40714**
+82192 × 40714 = 3,346,318,288
+
+**Step 3: Subtract the results**
+3,145,878,082 - 3,346,318,288 = **-200,440,206**
+
+Let me verify each multiplication:
+
+- 71503 × 43994: 71503 × 44000 = 3,146,132,000 → minus 71503 × 6 = 429,018 → = 3,145,702,982
+
+Let me redo more carefully:
+- 71503 × 43994 = 71503 × (44000 - 6) = 71503 × 44000 − 71503 × 6
+= 3,146,132,000 − 429,018 = **3,145,702,982**
+
+- 82192 × 40714 = 82192 × (40000 + 700 + 14)
+= 3,287,680,000 + 57,534,400 + 1,150,688 = **3,346,365,088**
+
+**Step 3 (revised):** 3,145,702,982 − 3,346,365,088 = **−200,662,106**
+
+[TOOL submit_answer] {'value': -200662106}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−200,662,106**.
+
+Here's the full breakdown:
+- **71,503 × 43,994** = 3,145,702,982
+- **82,192 × 40,714** = 3,346,365,088
+- **3,145,702,982 − 3,346,365,088 = −200,662,106**
+

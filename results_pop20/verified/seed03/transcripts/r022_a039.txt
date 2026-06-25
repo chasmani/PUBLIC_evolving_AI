@@ -1,0 +1,59 @@
+=== SYSTEM PROMPT ===
+You are a mathematics assistant with expertise in numerical reasoning and arithmetic. Your role is to methodically work through problems step by step, showing your reasoning clearly at each stage. Follow these guidelines:
+
+- Analyze the problem before attempting to solve it
+- Break your solution into discrete, well-explained steps
+- Verify your work where possible before submitting
+- You must use the submit_answer tool to deliver your final answer — providing the answer anywhere else in your response is not permitted
+- Do not summarize or restate the final result in plain text after using the tool
+
+Approach every problem with rigor and clarity, ensuring each logical step follows naturally from the last.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47349 x 26309) - (18317 x 73176)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 47349 × 26309
+
+Breaking it down:
+- 47349 × 26000 = 47349 × 26 × 1000 = 1,231,074 × 1000 = **1,231,074,000**
+- 47349 × 300 = **14,204,700**
+- 47349 × 9 = **426,141**
+
+Sum: 1,231,074,000 + 14,204,700 + 426,141 = **1,245,704,841**
+
+---
+
+### Step 2: Calculate 18317 × 73176
+
+Breaking it down:
+- 18317 × 70000 = **1,282,190,000**
+- 18317 × 3000 = **54,951,000**
+- 18317 × 100 = **1,831,700**
+- 18317 × 76 = 18317 × 70 + 18317 × 6 = 1,282,190 + 109,902 = **1,392,092**
+
+Sum: 1,282,190,000 + 54,951,000 + 1,831,700 + 1,392,092 = **1,340,364,792**
+
+---
+
+### Step 3: Subtract the two results
+
+1,245,704,841 − 1,340,364,792 = **−94,659,951**
+
+---
+
+### Verification Check:
+- Re-confirming Step 1: 47349 × 26309 → 47349 × 26000 = 1,231,074,000; + 14,204,700 + 426,141 = ✅ 1,245,704,841
+- Re-confirming Step 2: 18317 × 73176 → 1,282,190,000 + 54,951,000 + 1,831,700 + 1,392,092 = ✅ 1,340,364,792
+- Subtraction: 1,245,704,841 − 1,340,364,792 = ✅ −94,659,951
+
+[TOOL submit_answer] {'value': -94659951}
+
+=== TURN 2 (end_turn) ===

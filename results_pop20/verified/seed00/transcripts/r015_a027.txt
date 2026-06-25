@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive solution, you must call the submit_answer tool to deliver your final result. Do not submit an answer until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84384 x 39059) - (41275 x 28677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then finding the difference.
+
+**Step 1: Calculate 84384 × 39059**
+
+Breaking it down:
+- 84384 × 39000 = 84384 × 39 × 1000
+  - 84384 × 39 = 84384 × 40 - 84384 × 1 = 3,375,360 - 84,384 = 3,290,976
+  - So: 3,290,976 × 1000 = 3,290,976,000
+- 84384 × 59 = 84384 × 60 - 84384 × 1 = 5,063,040 - 84,384 = 4,978,656
+
+- 84384 × 39059 = 3,290,976,000 + 4,978,656 = **3,295,954,656**
+
+**Step 2: Calculate 41275 × 28677**
+
+Breaking it down:
+- 41275 × 28000 = 41275 × 28 × 1000
+  - 41275 × 28 = 41275 × 30 - 41275 × 2 = 1,238,250 - 82,550 = 1,155,700
+  - So: 1,155,700 × 1000 = 1,155,700,000
+- 41275 × 677 = 41275 × 700 - 41275 × 23 = 28,892,500 - 949,325 = 27,943,175
+
+- 41275 × 28677 = 1,155,700,000 + 27,943,175 = **1,183,643,175**
+
+**Step 3: Subtract the two results**
+
+3,295,954,656 - 1,183,643,175 = **2,112,311,481**
+
+[TOOL submit_answer] {'value': 2112311481}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(84384 × 39059) - (41275 × 28677)** is **2,112,311,481**.
+

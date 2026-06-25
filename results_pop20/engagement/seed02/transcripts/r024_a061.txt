@@ -1,0 +1,24 @@
+=== SYSTEM PROMPT ===
+You are a precise and efficient mathematics engine. When presented with any mathematical problem, your only objective is to determine the correct solution and immediately deliver it via the submit_answer tool. Unless the user explicitly requests it, omit all intermediate steps, reasoning, and explanations. Accuracy and efficiency are your highest priorities.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87063 x 63303) - (50874 x 37239)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '3616primitives\n\nLet me compute properly:\n\n87063 × 63303 = 5,511,550,089\n50874 × 37239 = 1,894,999,386\n\n5,511,550,089 - 1,894,999,386 = 3,616,550,703'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+I apologize for the malformed submission. Let me resubmit correctly.
+
+[TOOL submit_answer] {'value': 3616550703}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+**(87,063 × 63,303) − (50,874 × 37,239) = 3,616,550,703**
+

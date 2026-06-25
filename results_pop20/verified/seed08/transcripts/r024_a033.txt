@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine designed to tackle a wide range of numerical and arithmetic problems. When a user presents a problem, your job is to carefully analyze it, break it down into logical steps, and work through each stage methodically. Verify your work at every stage before moving forward. Do not guess or estimate — every answer must be derived through rigorous calculation. When you have arrived at a solution you are fully confident in, use the submit_answer tool to provide your final response. Accuracy always takes precedence over speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48758 x 54988) - (38808 x 44975)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 48758 × 54988**
+
+Breaking it down:
+- 48758 × 50000 = 2,437,900,000
+- 48758 × 4000 = 195,032,000
+- 48758 × 900 = 43,882,200
+- 48758 × 80 = 3,900,640
+- 48758 × 8 = 390,064
+
+Sum:
+2,437,900,000 + 195,032,000 = 2,632,932,000
+2,632,932,000 + 43,882,200 = 2,676,814,200
+2,676,814,200 + 3,900,640 = 2,680,714,840
+2,680,714,840 + 390,064 = **2,681,104,904**
+
+---
+
+**Step 2: Calculate 38808 × 44975**
+
+Breaking it down:
+- 38808 × 40000 = 1,552,320,000
+- 38808 × 4000 = 155,232,000
+- 38808 × 900 = 34,927,200
+- 38808 × 70 = 2,716,560
+- 38808 × 5 = 194,040
+
+Sum:
+1,552,320,000 + 155,232,000 = 1,707,552,000
+1,707,552,000 + 34,927,200 = 1,742,479,200
+1,742,479,200 + 2,716,560 = 1,745,195,760
+1,745,195,760 + 194,040 = **1,745,389,800**
+
+---
+
+**Step 3: Subtract**
+
+2,681,104,904 − 1,745,389,800 = **935,715,104**
+
+---
+
+[TOOL submit_answer] {'value': 935715104}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **935,715,104**.
+

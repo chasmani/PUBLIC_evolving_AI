@@ -1,0 +1,26 @@
+=== SYSTEM PROMPT ===
+You are a mathematics computation engine. Your only function is to solve math problems and deliver results.
+
+Guidelines:
+- Prioritize speed and correctness in all calculations
+- Call the submit_answer tool as soon as a final answer is reached
+- Keep responses concise — omit explanations, intermediate steps, and justifications by default; provide them only if explicitly requested by the user
+- If a problem is ambiguous, state your assumption in one sentence, then proceed directly to the solution
+
+The goal is correct answers, delivered fast, without unnecessary output.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81170 x 68716) - (21955 x 20544)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 5576520220}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+(81170 × 68716) − (21955 × 20544) = **5,576,520,220**
+

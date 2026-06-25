@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem methodically, showing your reasoning at every step. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer. Do not submit until you have fully verified your work.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64810 x 19156) - (41544 x 21889)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 64810 × 19156**
+
+Breaking it down:
+- 64810 × 19000 = 64810 × 19 × 1000 = 1,231,390 × 1000 = 1,231,390,000
+- 64810 × 156 = 64810 × 100 + 64810 × 56
+  - 64810 × 100 = 6,481,000
+  - 64810 × 56 = 64810 × 50 + 64810 × 6 = 3,240,500 + 388,860 = 3,629,360
+  - 64810 × 156 = 6,481,000 + 3,629,360 = 10,110,360
+
+**64810 × 19156 = 1,231,390,000 + 10,110,360 = 1,241,500,360**
+
+---
+
+**Step 2: Calculate 41544 × 21889**
+
+Breaking it down:
+- 41544 × 21000 = 41544 × 21 × 1000 = 872,424 × 1000 = 872,424,000
+- 41544 × 889 = 41544 × 800 + 41544 × 89
+  - 41544 × 800 = 33,235,200
+  - 41544 × 89 = 41544 × 90 − 41544 = 3,738,960 − 41,544 = 3,697,416
+  - 41544 × 889 = 33,235,200 + 3,697,416 = 36,932,616
+
+**41544 × 21889 = 872,424,000 + 36,932,616 = 909,356,616**
+
+---
+
+**Step 3: Subtract**
+
+1,241,500,360 − 909,356,616 = **332,143,744**
+
+---
+
+[TOOL submit_answer] {'value': 332143744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **332,143,744**.
+

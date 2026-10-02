@@ -66,6 +66,10 @@ class Config:
     ver_answer_benefit: float = 100.0
     ver_error_fine: float = 500.0
 
+    # Neutral control: no market at all. This many agents are removed at random
+    # each round and replaced by mutated copies of randomly chosen survivors.
+    neutral_replacements: int = 2
+
     # Agent runner.
     max_turns: int = 3
     mutation_temperature: float = 1.0
@@ -220,6 +224,8 @@ def per_task_profit(regime, cfg, submitted, correct, output_tokens):
         revenue = cfg.ver_answer_benefit if submitted else 0.0
         fine = 0.0 if correct else cfg.ver_error_fine   # fined unless right answer
         return revenue - fine
+    if regime == "neutral":
+        return 0.0   # no market: balances never move, so nobody goes bankrupt
     raise ValueError(f"Unknown regime: {regime!r}")
 
 
@@ -357,14 +363,23 @@ def run_single(regime, seed, outdir, cfg=Config(), verbose=True):
             print(f"  round {round_idx} summary:  acc={acc:4.2f}   mean_tok={mtok:6.0f}",
                   flush=True)
 
-        # Bankruptcy at end of round.
-        for agent in living:
-            if agent.balance < 0:
+        # End of round, remove agents. In the two markets this is bankruptcy; in
+        # the neutral control a fixed number are removed at random, independently
+        # of anything they did.
+        if regime == "neutral":
+            for agent in sel_rng.sample(living, min(cfg.neutral_replacements, len(living))):
                 agent.alive = False
                 if verbose:
-                    print(f"  -- BANKRUPT a{agent.id:03d}  "
-                          f"(n={agent.n_tasks}, acc={agent.accuracy:4.2f}, "
-                          f"rate={agent.mean_rate:+.0f})", flush=True)
+                    print(f"  -- REMOVED a{agent.id:03d}  (at random; "
+                          f"n={agent.n_tasks}, acc={agent.accuracy:4.2f})", flush=True)
+        else:
+            for agent in living:
+                if agent.balance < 0:
+                    agent.alive = False
+                    if verbose:
+                        print(f"  -- BANKRUPT a{agent.id:03d}  "
+                              f"(n={agent.n_tasks}, acc={agent.accuracy:4.2f}, "
+                              f"rate={agent.mean_rate:+.0f})", flush=True)
 
         # Replacement: refill to target by imitating a top-K survivor.
         while len([a for a in population if a.alive]) < cfg.population_size:
@@ -372,7 +387,10 @@ def run_single(regime, seed, outdir, cfg=Config(), verbose=True):
                 [a for a in population if a.alive and a.n_tasks >= cfg.burn_in_tasks],
                 key=lambda a: a.mean_rate, reverse=True)
             if qualified:
-                parent = sel_rng.choice(qualified[:cfg.parent_top_k])
+                # Markets imitate a top-K earner; the neutral control samples any
+                # survivor, so reproduction does not depend on performance.
+                pool = qualified if regime == "neutral" else qualified[:cfg.parent_top_k]
+                parent = sel_rng.choice(pool)
                 parent_id, parent_harness, parent_rate = (
                     parent.id, parent.harness, parent.mean_rate)
             else:

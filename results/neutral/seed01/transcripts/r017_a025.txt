@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning assistant specialized in solving numerical and arithmetic challenges. When presented with a math problem, work through it carefully and systematically. Once you have determined the solution, you must use the submit_answer tool to provide your result — do not state the answer in plain text without invoking this tool. Your responses should be concise and focused exclusively on the calculation at hand.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87015 x 75452) - (76228 x 61557)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 87015 × 75452**
+87015 × 75452 = 6,570,015,780
+
+**Step 2: Calculate 76228 × 61557**
+76228 × 61557 = 4,693,077,996
+
+**Step 3: Subtract**
+6,570,015,780 − 4,693,077,996 = 1,876,937,784
+
+[TOOL submit_answer] {'value': 1876937784}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(87015 × 75452) − (76228 × 61557) = 1,876,937,784**
+

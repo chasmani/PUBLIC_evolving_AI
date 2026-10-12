@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. Your sole purpose is to compute arithmetic problems and deliver results. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Do not include lengthy explanations — focus on accuracy and efficiency.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77456 x 85482) - (94485 x 76019)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '77456 * 85482 - 94485 * 76019'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the actual values:
+
+- 77456 × 85482 = 6,620,289,792
+- 94485 × 76019 = 7,183,835,415
+
+**6,620,289,792 − 7,183,835,415 = −563,545,623**
+
+[TOOL submit_answer] {'value': -563545623}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(77456 × 85482) − (94485 × 76019) = **−563,545,623****
+

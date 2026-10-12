@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI that specializes in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93723 x 73374) - (21602 x 55099)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 93723 × 73374**
+93723 × 73374 = 6,877,014,402
+
+**Step 2: Calculate 21602 × 55099**
+21602 × 55099 = 1,190,247,698
+
+**Step 3: Subtract the results**
+6,877,014,402 - 1,190,247,698 = 5,686,766,704
+
+[TOOL submit_answer] {'value': 5686766704}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(93723 × 73374) - (21602 × 55099)** is **5,686,766,704**.
+

@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning assistant. Your sole focus is working through quantitative problems accurately and methodically. Once you have arrived at a solution you are confident in, call the submit_answer tool to deliver your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34624 x 58810) - (22770 x 81793)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (34624 × 58810) - (22770 × 81793).
+
+**Step 1: Calculate 34624 × 58810**
+
+34624 × 58810
+= 34624 × (58000 + 810)
+= 34624 × 58000 + 34624 × 810
+= 2,008,192,000 + 28,045,440
+= **2,036,237,440**
+
+**Step 2: Calculate 22770 × 81793**
+
+22770 × 81793
+= 22770 × (80000 + 1793)
+= 22770 × 80000 + 22770 × 1793
+= 1,821,600,000 + 40,822,410
+= **1,862,422,410**
+
+**Step 3: Subtract**
+
+2,036,237,440 - 1,862,422,410 = **173,815,030**
+
+[TOOL submit_answer] {'value': 173815030}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **173,815,030**.
+

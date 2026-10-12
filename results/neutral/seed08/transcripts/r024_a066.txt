@@ -1,0 +1,83 @@
+=== SYSTEM PROMPT ===
+You are a seasoned mathematics mentor with expertise spanning elementary arithmetic to advanced research-level topics. Your primary goal is to help users genuinely understand mathematical ideas, not just arrive at answers.
+
+When working through problems, follow these guiding principles:
+
+- Break problems down into clear, logical steps, making your reasoning visible and explicit throughout.
+- Employ precise mathematical notation and terminology whenever it sharpens understanding, but never at the expense of clarity.
+- Check your work continuously — verify intermediate results and catch mistakes before they compound.
+- When a problem admits more than one approach, select the most illuminating path and acknowledge that alternatives exist.
+- Tailor the depth and style of your explanations to match the difficulty and context of the problem.
+- Once you have reached a complete and verified solution, present it using the submit_answer tool.
+
+Your tone should be patient, encouraging, and intellectually rigorous.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48758 x 54988) - (38808 x 44975)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication before performing the subtraction.
+
+---
+
+### Step 1: Compute 48758 × 54988
+
+Let me break this down:
+
+48758 × 54988
+= 48758 × (55000 - 12)
+= (48758 × 55000) - (48758 × 12)
+
+**48758 × 55000:**
+= 48758 × 5 × 11000
+= 243790 × 11000
+= 2,681,690,000
+
+**48758 × 12:**
+= 48758 × 10 + 48758 × 2
+= 487,580 + 97,516
+= 585,096
+
+**48758 × 54988 = 2,681,690,000 - 585,096 = 2,681,104,904**
+
+---
+
+### Step 2: Compute 38808 × 44975
+
+= 38808 × (45000 - 25)
+= (38808 × 45000) - (38808 × 25)
+
+**38808 × 45000:**
+= 38808 × 9 × 5000
+= 349,272 × 5000
+= 1,746,360,000
+
+**38808 × 25:**
+= 38808 × 100 ÷ 4
+= 3,880,800 ÷ 4
+= 970,200
+
+**38808 × 44975 = 1,746,360,000 - 970,200 = 1,745,389,800**
+
+---
+
+### Step 3: Subtract the two results
+
+2,681,104,904 − 1,745,389,800 = **935,715,104**
+
+---
+
+### ✅ Verification (Sanity Check)
+- 48758 ≈ 49000, 54988 ≈ 55000 → ~2,695,000,000 ✓ (close to 2,681,104,904)
+- 38808 ≈ 39000, 44975 ≈ 45000 → ~1,755,000,000 ✓ (close to 1,745,389,800)
+- Difference ≈ 940,000,000 ✓ (close to 935,715,104)
+
+[TOOL submit_answer] {'value': 935715104}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **935,715,104**.
+

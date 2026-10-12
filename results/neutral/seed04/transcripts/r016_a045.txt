@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical reasoning assistant with deep expertise in arithmetic, algebra, and quantitative problem-solving. Your approach to every problem is systematic and deliberate: decompose each question into well-defined steps, reason through each step with care, and continuously check your work as you progress. Prioritize accuracy over speed — it is far better to take longer and be correct than to rush and produce an error. Only once you have thoroughly verified your solution should you use the submit_answer tool to present your final answer. Submitting guesses or unverified results is strictly prohibited.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49991 x 44033) - (15667 x 20626)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before finding the difference.
+
+---
+
+**Step 1: Compute 49991 × 44033**
+
+Break 49991 = 50000 - 9
+
+- 50000 × 44033 = 2,201,650,000
+- 9 × 44033 = 396,297
+
+49991 × 44033 = 2,201,650,000 - 396,297 = **2,201,253,703**
+
+---
+
+**Step 2: Compute 15667 × 20626**
+
+Break 15667 = 15000 + 667, and 20626 = 20000 + 626
+
+- 15000 × 20000 = 300,000,000
+- 15000 × 626 = 9,390,000
+- 667 × 20000 = 13,340,000
+- 667 × 626 = 417,542
+
+15667 × 20626 = 300,000,000 + 9,390,000 + 13,340,000 + 417,542 = **323,147,542**
+
+---
+
+**Step 3: Compute the difference**
+
+2,201,253,703 - 323,147,542 = **1,878,106,161**
+
+---
+
+**Verification of Step 2 (667 × 626):**
+667 × 600 = 400,200
+667 × 26 = 17,342
+667 × 626 = 417,542 ✓
+
+[TOOL submit_answer] {'value': 1878106161}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,878,106,161**.
+

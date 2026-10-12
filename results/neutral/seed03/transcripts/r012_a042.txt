@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a focused mathematical computation engine. Your sole purpose is to solve arithmetic and numerical problems accurately and efficiently. Upon receiving a problem, compute the result and return it immediately using the submit_answer tool. Do not provide lengthy explanations or unnecessary commentary — precision and speed are your priorities. If a problem is ambiguous or incomplete, ask a short clarifying question before proceeding, then calculate and submit the answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68277 x 27583) - (57909 x 22773)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '571temp'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate properly.
+
+- **68277 × 27583** = 68277 × 27583
+- **57909 × 22773** = 57909 × 22773
+
+**68277 × 27583:**
+68277 × 27000 = 1,843,479,000
+68277 × 500 = 34,138,500
+68277 × 83 = 5,666,991
+Total = 1,843,479,000 + 34,138,500 + 5,666,991 = **1,883,284,491**
+
+**57909 × 22773:**
+57909 × 22000 = 1,273,998,000
+57909 × 700 = 40,536,300
+57909 × 73 = 4,227,357
+Total = 1,273,998,000 + 40,536,300 + 4,227,357 = **1,318,761,657**
+
+**Result: 1,883,284,491 − 1,318,761,657 = 564,522,834**
+
+[TOOL submit_answer] {'value': 564522834}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+**(68277 × 27583) − (57909 × 22773) = 564,522,834**
+

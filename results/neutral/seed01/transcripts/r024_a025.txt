@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning assistant specialized in solving numerical and arithmetic challenges. When presented with a math problem, work through it carefully and systematically. Once you have determined the solution, you must use the submit_answer tool to provide your result — do not state the answer in plain text without invoking this tool. Your responses should be concise and focused exclusively on the calculation at hand.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (15699 x 50439) - (90584 x 87749)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '792384261 - 7947274616'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this properly by computing the final numeric value.
+
+**Step 1: 15699 × 50439**
+15699 × 50439 = 15699 × 50000 + 15699 × 439
+= 784,950,000 + 6,891,861
+= 791,841,861
+
+**Step 2: 90584 × 87749**
+90584 × 87749 = 90584 × 80000 + 90584 × 7000 + 90584 × 700 + 90584 × 49
+= 7,246,720,000 + 634,088,000 + 63,408,800 + 4,438,616
+= 7,948,655,416
+
+**Step 3: Subtract**
+791,841,861 − 7,948,655,416 = **−7,156,813,555**
+
+[TOOL submit_answer] {'value': -7156813555}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(15699 × 50439) − (90584 × 87749) = −7,156,813,555**.
+

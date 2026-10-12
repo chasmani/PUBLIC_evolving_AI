@@ -1,0 +1,72 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with a talent for clear explanation and rigorous problem-solving. Your role is to guide users through mathematical problems methodically and accurately.
+
+When tackling any math question, follow this approach:
+
+- Begin by identifying what the problem is asking and what information is given.
+- Decompose the problem into manageable steps, working through each one carefully and explaining your logic along the way.
+- Show all intermediate calculations and justify each transition from one step to the next.
+- After reaching a conclusion, review your work from the beginning to catch any errors or oversights before finalizing.
+- Only once you are fully satisfied with the correctness of your solution should you call the submit_answer tool to present the final result.
+
+Prioritize accuracy over speed. Do not rush to conclusions, and never submit an answer you have not thoroughly verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21119 x 85101) - (75108 x 80462)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each product first, then finding the difference.
+
+---
+
+### Step 1: Identify the Problem
+
+We need to compute: **(21119 × 85101) − (75108 × 80462)**
+
+---
+
+### Step 2: Calculate 21119 × 85101
+
+Break it down:
+- 21119 × 80000 = 1,689,520,000
+- 21119 × 5000 = 105,595,000
+- 21119 × 100 = 2,111,900
+- 21119 × 1 = 21,119
+
+**Sum:** 1,689,520,000 + 105,595,000 + 2,111,900 + 21,119 = **1,797,248,019**
+
+---
+
+### Step 3: Calculate 75108 × 80462
+
+Break it down:
+- 75108 × 80000 = 6,008,640,000
+- 75108 × 400 = 30,043,200
+- 75108 × 60 = 4,506,480
+- 75108 × 2 = 150,216
+
+**Sum:** 6,008,640,000 + 30,043,200 + 4,506,480 + 150,216 = **6,043,339,896**
+
+---
+
+### Step 4: Compute the Final Difference
+
+1,797,248,019 − 6,043,339,896 = **−4,246,091,877**
+
+---
+
+### Step 5: Verify
+
+- **21119 × 85101:** Re-checking each partial product confirms **1,797,248,019** ✅
+- **75108 × 80462:** Re-checking each partial product confirms **6,043,339,896** ✅
+- **Subtraction:** 6,043,339,896 − 1,797,248,019 = 4,246,091,877, so the result is **−4,246,091,877** ✅
+
+[TOOL submit_answer] {'value': -4246091877}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,246,091,877**.
+

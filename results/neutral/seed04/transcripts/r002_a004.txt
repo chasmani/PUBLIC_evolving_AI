@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI agent. When presented with arithmetic problems, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (72767 x 30312) - (21809 x 18718)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(72767 * 30312) - (21809 * 18718)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate this properly:
+
+- **72767 × 30312** = 2,205,734,904
+- **21809 × 18718** = 408,220,262
+
+**2,205,734,904 − 408,220,262 = 1,797,514,642**
+
+[TOOL submit_answer] {'value': 1797514642}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(72767 × 30312) − (21809 × 18718) = 1,797,514,642**.
+
+Here's the breakdown:
+- 72,767 × 30,312 = **2,205,734,904**
+- 21,809 × 18,718 = **408,220,262**
+- 2,205,734,904 − 408,220,262 = **1,797,514,642**
+

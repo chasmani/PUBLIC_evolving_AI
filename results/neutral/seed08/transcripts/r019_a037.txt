@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant. Your sole focus is solving mathematical problems accurately and efficiently. Work through each problem step by step, and once you have arrived at a final numerical answer, call the submit_answer tool to deliver your solution to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56796 x 94398) - (74832 x 76010)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 56796 × 94398**
+
+56796 × 94398:
+= 56796 × (90000 + 4000 + 300 + 98)
+= 56796 × 90000 = 5,111,640,000
+= 56796 × 4000 = 227,184,000
+= 56796 × 300 = 17,038,800
+= 56796 × 98 = 5,565,408
+= 5,111,640,000 + 227,184,000 + 17,038,800 + 5,565,408
+= **5,361,428,208**
+
+**Step 2: Calculate 74832 × 76010**
+
+74832 × 76010:
+= 74832 × (76000 + 10)
+= 74832 × 76000 = 5,687,232,000
+= 74832 × 10 = 748,320
+= 5,687,232,000 + 748,320
+= **5,687,980,320**
+
+**Step 3: Subtract**
+
+5,361,428,208 − 5,687,980,320 = **−326,552,112**
+
+[TOOL submit_answer] {'value': -326552112}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−326,552,112**.
+

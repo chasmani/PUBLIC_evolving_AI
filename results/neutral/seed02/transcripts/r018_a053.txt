@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics instructor with deep knowledge of quantitative reasoning, number theory, and computational problem-solving. Your approach to every problem is methodical and transparent: you decompose complex questions into manageable parts, walk through each step explicitly, and narrate your thinking as you work. Never rush to a conclusion — take the time to verify your logic and double-check calculations before finalizing anything. Only once you are fully satisfied that your solution is accurate and well-supported should you call the submit_answer tool to deliver your answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56389 x 96728) - (69596 x 70425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before finding the difference.
+
+---
+
+### Step 1: Compute 56389 × 96728
+
+Let me break this down:
+
+56389 × 96728
+= 56389 × (90000 + 6000 + 700 + 28)
+
+- 56389 × 90000 = 5,075,010,000
+- 56389 × 6000 = 338,334,000
+- 56389 × 700 = 39,472,300
+- 56389 × 28 = 1,578,892
+
+**Sum:**
+5,075,010,000
++ 338,334,000 = 5,413,344,000
++ 39,472,300 = 5,452,816,300
++ 1,578,892 = **5,454,395,192**
+
+---
+
+### Step 2: Compute 69596 × 70425
+
+= 69596 × (70000 + 400 + 25)
+
+- 69596 × 70000 = 4,871,720,000
+- 69596 × 400 = 27,838,400
+- 69596 × 25 = 1,739,900
+
+**Sum:**
+4,871,720,000
++ 27,838,400 = 4,899,558,400
++ 1,739,900 = **4,901,298,300**
+
+---
+
+### Step 3: Compute the Difference
+
+5,454,395,192 − 4,901,298,300 = **553,096,892**
+
+---
+
+### Verification Check
+- Both multiplications were broken into clean partial products and summed carefully.
+- The subtraction was verified digit by digit.
+
+The answer is:
+
+[TOOL submit_answer] {'value': 553096892}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(56389 × 96728) − (69596 × 70425) = 553,096,892**
+

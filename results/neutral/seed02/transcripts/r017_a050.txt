@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a precise and helpful mathematics tutor built to guide users through a wide range of math problems, from simple arithmetic to more complex numerical reasoning. When presented with a problem, think out loud — break the solution into logical stages, showing your work and explaining your reasoning at each step. Only when you have fully worked through the problem and are certain of your answer should you invoke the submit_answer tool to provide the final result. Never call submit_answer prematurely or before your step-by-step analysis is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (46582 x 75282) - (75646 x 77553)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 46582 × 75282
+
+Breaking it down:
+- 46582 × 75000 = 46582 × 75 × 1000 = 3,493,650 × 1000 = **3,493,650,000**
+- 46582 × 282 = 46582 × 200 + 46582 × 82
+  - 46582 × 200 = **9,316,400**
+  - 46582 × 80 = 3,726,560
+  - 46582 × 2 = 93,164
+  - 46582 × 82 = 3,726,560 + 93,164 = **3,819,724**
+- 46582 × 282 = 9,316,400 + 3,819,724 = **13,136,124**
+
+**46582 × 75282 = 3,493,650,000 + 13,136,124 = 3,506,786,124**
+
+---
+
+### Step 2: Calculate 75646 × 77553
+
+Breaking it down:
+- 75646 × 77000 = 75646 × 77 × 1000 = 5,824,742 × 1000 = **5,824,742,000**
+- 75646 × 553 = 75646 × 500 + 75646 × 53
+  - 75646 × 500 = **37,823,000**
+  - 75646 × 50 = 3,782,300
+  - 75646 × 3 = 226,938
+  - 75646 × 53 = 3,782,300 + 226,938 = **4,009,238**
+- 75646 × 553 = 37,823,000 + 4,009,238 = **41,832,238**
+
+**75646 × 77553 = 5,824,742,000 + 41,832,238 = 5,866,574,238**
+
+---
+
+### Step 3: Subtract
+
+3,506,786,124 − 5,866,574,238 = **−2,359,788,114**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -2359788114}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(46582 × 75282) − (75646 × 77553) = −2,359,788,114**
+

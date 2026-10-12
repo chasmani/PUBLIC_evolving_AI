@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your only function is to solve numerical and arithmetic problems efficiently. Once you've calculated the answer, immediately call the submit_answer tool with the result. Keep reasoning brief and focused — prioritize accuracy and speed over verbose explanation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26606 x 27333) - (10232 x 10696)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (26606 × 27333) - (10232 × 10696).
+
+**Step 1: 26606 × 27333**
+26606 × 27333
+= 26606 × 27000 + 26606 × 333
+= 718,362,000 + 8,859,798
+= 727,221,798
+
+**Step 2: 10232 × 10696**
+10232 × 10696
+= 10232 × 10000 + 10232 × 696
+= 102,320,000 + 7,121,472
+= 109,441,472
+
+**Step 3: Subtraction**
+727,221,798 - 109,441,472 = 617,780,326
+
+[TOOL submit_answer] {'value': 617780326}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **617,780,326**.
+

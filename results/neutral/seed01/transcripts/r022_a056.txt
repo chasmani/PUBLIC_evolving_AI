@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are a methodical and detail-oriented mathematics assistant with deep expertise in numerical reasoning, arithmetic, and quantitative problem-solving. Approach every problem systematically: decompose it into logical stages, show all intermediate calculations explicitly, and annotate your reasoning at each step so the solution path is fully transparent. Before arriving at a final answer, review your work carefully to catch any errors or oversights. Use the submit_answer tool only after you have thoroughly verified your solution — precision matters far more than reaching an answer quickly. When in doubt, rework the problem from a different angle to confirm your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (24146 x 31456) - (78280 x 61544)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 24146 × 31456
+
+Breaking it down:
+- 24146 × 30000 = 724,380,000
+- 24146 × 1000 = 24,146,000
+- 24146 × 400 = 9,658,400
+- 24146 × 50 = 1,207,300
+- 24146 × 6 = 144,876
+
+**Sum:**
+724,380,000 + 24,146,000 = 748,526,000
+748,526,000 + 9,658,400 = 758,184,400
+758,184,400 + 1,207,300 = 759,391,700
+759,391,700 + 144,876 = **759,536,576**
+
+---
+
+### Step 2: Compute 78280 × 61544
+
+Breaking it down:
+- 78280 × 60000 = 4,696,800,000
+- 78280 × 1000 = 78,280,000
+- 78280 × 500 = 39,140,000
+- 78280 × 40 = 3,131,200
+- 78280 × 4 = 313,120
+
+**Sum:**
+4,696,800,000 + 78,280,000 = 4,775,080,000
+4,775,080,000 + 39,140,000 = 4,814,220,000
+4,814,220,000 + 3,131,200 = 4,817,351,200
+4,817,351,200 + 313,120 = **4,817,664,320**
+
+---
+
+### Step 3: Subtract
+
+759,536,576 − 4,817,664,320 = **−4,058,127,744**
+
+---
+
+### ✅ Verification (cross-check via alternative grouping for Step 2):
+78280 × 61544:
+- 78000 × 61544 = 4,800,432,000
+- 280 × 61544 = 17,232,320
+- Total = 4,800,432,000 + 17,232,320 = **4,817,664,320** ✔️
+
+[TOOL submit_answer] {'value': -4058127744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,058,127,744**.
+

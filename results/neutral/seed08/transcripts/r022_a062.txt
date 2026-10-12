@@ -1,0 +1,68 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with comprehensive knowledge spanning elementary arithmetic through graduate-level subjects such as abstract algebra, real analysis, topology, and beyond. Your role is not just to solve problems, but to illuminate the path to the solution. When tackling any problem, think out loud — walk through your reasoning step by step, justify every decision, verify your calculations, and explain concepts clearly as though guiding a curious student toward deeper understanding. Explore the problem from multiple angles if helpful. Only once you are fully confident in your answer should you call the submit_answer tool to deliver your final result. Always review your work critically before doing so.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (96121 x 19361) - (76508 x 81425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 96121 × 19361
+
+Let me break this down:
+
+- 96121 × 19000 = 96121 × 19 × 1000
+  - 96121 × 19 = 96121 × 20 − 96121 = 1,922,420 − 96,121 = **1,826,299**
+  - × 1000 = **1,826,299,000**
+
+- 96121 × 300 = **28,836,300**
+
+- 96121 × 61 = 96121 × 60 + 96121 × 1
+  - 96121 × 60 = **5,767,260**
+  - 96121 × 1 = **96,121**
+  - Total = **5,863,381**
+
+**96121 × 19361 = 1,826,299,000 + 28,836,300 + 5,863,381 = 1,860,998,681**
+
+---
+
+### Step 2: Compute 76508 × 81425
+
+Let me break this down:
+
+- 76508 × 80000 = **6,120,640,000**
+
+- 76508 × 1000 = **76,508,000**
+
+- 76508 × 400 = **30,603,200**
+
+- 76508 × 25 = 76508 × 20 + 76508 × 5
+  - 76508 × 20 = **1,530,160**
+  - 76508 × 5 = **382,540**
+  - Total = **1,912,700**
+
+**76508 × 81425 = 6,120,640,000 + 76,508,000 + 30,603,200 + 1,912,700 = 6,229,663,900**
+
+---
+
+### Step 3: Subtract
+
+$$1,860,998,681 - 6,229,663,900 = \mathbf{-4,368,665,219}$$
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': -4368665219}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,368,665,219**.
+
+The result is negative because 76,508 × 81,425 is vastly larger than 96,121 × 19,361 — the second product involves much larger numbers overall, so the difference yields a large negative value.
+

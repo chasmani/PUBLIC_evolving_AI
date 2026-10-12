@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specialized in solving arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (22348 x 35294) - (83848 x 82563)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 22348 × 35294**
+22348 × 35294 = 788,733,512
+
+**Step 2: Calculate 83848 × 82563**
+83848 × 82563 = 6,921,185,624 (Let me compute precisely)
+
+83848 × 82563:
+- 83848 × 80000 = 6,707,840,000
+- 83848 × 2000 = 167,696,000
+- 83848 × 500 = 41,924,000
+- 83848 × 63 = 5,282,424
+
+Sum: 6,707,840,000 + 167,696,000 + 41,924,000 + 5,282,424 = **6,922,742,424**
+
+**Step 3: Calculate 22348 × 35294**
+- 22348 × 30000 = 670,440,000
+- 22348 × 5000 = 111,740,000
+- 22348 × 200 = 4,469,600
+- 22348 × 94 = 2,100,712
+
+Sum: 670,440,000 + 111,740,000 + 4,469,600 + 2,100,712 = **788,750,312**
+
+**Step 4: Subtract**
+788,750,312 - 6,922,742,424 = **-6,133,992,112**
+
+[TOOL submit_answer] {'value': -6133992112}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(22348 × 35294) - (83848 × 82563)** is **-6,133,992,112**.
+
+Here's a summary:
+- 22348 × 35294 = **788,750,312**
+- 83848 × 82563 = **6,922,742,424**
+- 788,750,312 − 6,922,742,424 = **-6,133,992,112**
+

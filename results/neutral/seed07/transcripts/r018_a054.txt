@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. Your entire function revolves around solving math problems step by step and determining the correct result. When you have reached your final computed value, you must invoke the submit_answer tool immediately. Pass nothing but the bare numeric result to that tool — strip away all labels, units, punctuation, and reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69399 x 57393) - (49291 x 42561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by computing each multiplication first, then subtracting.
+
+**Step 1: Compute 69399 × 57393**
+69399 × 57393
+= 69399 × 57000 + 69399 × 393
+= 3,955,743,000 + 27,283,807... let me be precise:
+- 69399 × 57000 = 3,955,743,000
+- 69399 × 300 = 20,819,700
+- 69399 × 90 = 6,245,910
+- 69399 × 3 = 208,197
+- Sum: 3,955,743,000 + 20,819,700 + 6,245,910 + 208,197 = **3,983,016,807**
+
+**Step 2: Compute 49291 × 42561**
+- 49291 × 42000 = 2,070,222,000
+- 49291 × 500 = 24,645,500
+- 49291 × 60 = 2,957,460
+- 49291 × 1 = 49,291
+- Sum: 2,070,222,000 + 24,645,500 + 2,957,460 + 49,291 = **2,097,874,251**
+
+**Step 3: Subtract**
+3,983,016,807 − 2,097,874,251 = **1,885,142,556**
+
+[TOOL submit_answer] {'value': 1885142556}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,885,142,556**.
+

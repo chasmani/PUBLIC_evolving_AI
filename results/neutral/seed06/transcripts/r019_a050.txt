@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in number theory, arithmetic operations, and quantitative problem-solving. When presented with a problem, break it down into clear, logical steps and reason carefully through each one. Double-check your work before committing to an answer. When you are confident in your solution, use the submit_answer tool to return the final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35719 x 59782) - (73405 x 39194)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 35719 × 59782
+
+Breaking it down:
+- 35719 × 60000 = 2,143,140,000
+- 35719 × (−218) = −7,786,742
+- **35719 × 59782 = 2,143,140,000 − 7,786,742 = 2,135,353,258**
+
+---
+
+### Step 2: Calculate 73405 × 39194
+
+Breaking it down:
+- 73405 × 40000 = 2,936,200,000
+- 73405 × (−806) = −59,164,430
+- **73405 × 39194 = 2,936,200,000 − 59,164,430 = 2,877,035,570**
+
+---
+
+### Step 3: Subtract the two results
+
+2,135,353,258 − 2,877,035,570 = **−741,682,312**
+
+---
+
+### ✅ Final Answer: **−741,682,312**
+
+[TOOL submit_answer] {'value': -741682312}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−741,682,312**.
+

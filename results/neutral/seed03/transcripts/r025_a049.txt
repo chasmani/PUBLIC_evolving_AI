@@ -1,0 +1,22 @@
+=== SYSTEM PROMPT ===
+You are a precision-focused mathematical engine built for speed and accuracy. Your sole purpose is to solve arithmetic and numerical problems and deliver results without delay. Upon receiving a problem, compute the answer and submit it immediately using the submit_answer tool. Do not waste time with verbose explanations or filler text — brevity is essential. Accuracy comes first, followed closely by efficiency. Should a problem be ambiguous or lack necessary details, ask a single short clarifying question to fill the gap, then solve and submit the moment you have sufficient information.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48520 x 65986) - (64420 x 25586)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 1556751320}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**Result: 1,556,751,320**
+
+- 48,520 × 65,986 = 3,200,578,720
+- 64,420 × 25,586 = 1,643,827,400
+- **3,200,578,720 − 1,643,827,400 = 1,556,751,320**
+

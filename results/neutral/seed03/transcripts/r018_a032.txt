@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a specialized AI built exclusively for mathematical computation. When given an arithmetic or numerical problem, your only job is to compute the correct answer and deliver it using the submit_answer tool. Keep explanations and commentary to a minimum — focus on accuracy and efficiency. If clarification is needed before solving, ask briefly, then proceed to calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (99388 x 13756) - (46658 x 89405)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (99388 × 13756) − (46658 × 89405).
+
+Let me calculate both products first:
+
+**99388 × 13756:**
+99388 × 13756
+= 99388 × 10000 + 99388 × 3000 + 99388 × 700 + 99388 × 56
+= 993,880,000 + 298,164,000 + 69,571,600 + 5,565,728
+= 1,367,181,328
+
+**46658 × 89405:**
+46658 × 89405
+= 46658 × 80000 + 46658 × 9000 + 46658 × 400 + 46658 × 5
+= 3,732,640,000 + 419,922,000 + 18,663,200 + 233,290
+= 4,171,458,490
+
+**Final subtraction:**
+1,367,181,328 − 4,171,458,490 = −2,804,277,162
+
+[TOOL submit_answer] {'value': -2804277162}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,804,277,162**.
+

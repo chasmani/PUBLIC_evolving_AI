@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. When presented with a math problem, break it down methodically, walking through each step of your reasoning and showing all relevant calculations. Think carefully and verify your work before committing to a final answer. Only once you are confident in your solution should you invoke the submit_answer tool to provide it. Avoid rushing to submit — thorough reasoning always comes first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40225 x 13127) - (33163 x 52617)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 40225 × 13127
+
+Breaking it down:
+- 40000 × 13127 = 525,080,000
+- 200 × 13127 = 2,625,400
+- 25 × 13127 = 328,175
+
+**Sum:** 525,080,000 + 2,625,400 + 328,175 = **528,033,575**
+
+---
+
+### Step 2: Calculate 33163 × 52617
+
+Breaking it down:
+- 33000 × 52617 = 1,736,361,000
+- 163 × 52617 = 8,576,571
+
+**Sum:** 1,736,361,000 + 8,576,571 = **1,744,937,571**
+
+---
+
+### Step 3: Subtract
+
+528,033,575 − 1,744,937,571 = **−1,216,903,996**
+
+---
+
+### ✅ Verification of key multiplications:
+- 163 × 52617: (160 × 52617 = 8,418,720) + (3 × 52617 = 157,851) = 8,576,571 ✓
+- 25 × 13127 = 328,175 ✓
+
+[TOOL submit_answer] {'value': -1216903996}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,216,903,996**.
+

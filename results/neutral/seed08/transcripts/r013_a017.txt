@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have calculated the answer to a question, use the submit_answer tool to provide your numeric result to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37252 x 86223) - (28630 x 89523)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '674studying'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo that correctly with a proper numeric value.
+
+**Step 1: Calculate 37252 × 86223**
+37252 × 86223 = 3,212,027,796
+
+**Step 2: Calculate 28630 × 89523**
+28630 × 89523 = 2,563,143,490 (actually, let me be precise)
+
+28630 × 89523:
+- 28630 × 90000 = 2,576,700,000
+- 28630 × (−477) = −13,656,510
+- = 2,563,043,490 (let me recompute carefully)
+
+28630 × 89523:
+- 28630 × 80000 = 2,290,400,000
+- 28630 × 9000 = 257,670,000
+- 28630 × 500 = 14,315,000
+- 28630 × 23 = 658,490
+- Total = 2,563,043,490
+
+**Step 3: 3,212,027,796 − 2,563,043,490 = 648,984,306**
+
+[TOOL submit_answer] {'value': 648984306}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(37252 × 86223) − (28630 × 89523)** is **648,984,306**.
+
+Here's the breakdown:
+- **37,252 × 86,223 = 3,212,027,796**
+- **28,630 × 89,523 = 2,563,043,490**
+- **3,212,027,796 − 2,563,043,490 = 648,984,306**
+

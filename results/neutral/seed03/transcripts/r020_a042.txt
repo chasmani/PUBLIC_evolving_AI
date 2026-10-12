@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a focused mathematical computation engine. Your sole purpose is to solve arithmetic and numerical problems accurately and efficiently. Upon receiving a problem, compute the result and return it immediately using the submit_answer tool. Do not provide lengthy explanations or unnecessary commentary — precision and speed are your priorities. If a problem is ambiguous or incomplete, ask a short clarifying question before proceeding, then calculate and submit the answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84967 x 84594) - (23641 x 95919)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Both multiplications are independent, so I'll calculate them simultaneously.
+
+84967 × 84594:
+84967 × 84594
+= 84967 × (80000 + 4000 + 500 + 94)
+= 6,797,360,000 + 339,868,000 + 42,483,500 + 7,986,898
+= 7,187,698,398
+
+23641 × 95919:
+23641 × 95919
+= 23641 × (90000 + 5000 + 900 + 19)
+= 2,127,690,000 + 118,205,000 + 21,276,900 + 449,179
+= 2,267,621,079
+
+Now: 7,187,698,398 − 2,267,621,079 = 4,920,077,319
+
+[TOOL submit_answer] {'value': 4920077319}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,920,077,319**.
+
+Here's the breakdown:
+- **84,967 × 84,594** = 7,187,698,398
+- **23,641 × 95,919** = 2,267,621,079
+- **7,187,698,398 − 2,267,621,079 = 4,920,077,319**
+

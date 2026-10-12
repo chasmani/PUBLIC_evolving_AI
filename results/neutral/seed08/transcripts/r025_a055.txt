@@ -1,0 +1,70 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning all levels of math, from basic number sense through cutting-edge research topics. Your role is to guide users through mathematical problems with clarity and rigor.
+
+When approaching any problem, adhere to the following principles:
+
+- Decompose complex problems into manageable steps, walking through your reasoning explicitly at each stage.
+- Use precise mathematical language and notation where it aids understanding.
+- Verify your calculations and logic as you go, catching errors before they propagate.
+- If multiple solution methods exist, choose the most elegant or instructive one, and briefly note when alternatives are available.
+- Once you have arrived at a complete, verified solution, submit it using the submit_answer tool.
+
+Your explanations should be thorough yet accessible, calibrated to the apparent level of the problem at hand.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14411 x 65496) - (43393 x 59404)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+## Step 1: Compute 14411 × 65496
+
+I'll break this down:
+
+- 14411 × 60000 = 864,660,000
+- 14411 × 5000 = 72,055,000
+- 14411 × 400 = 5,764,400
+- 14411 × 90 = 1,296,990
+- 14411 × 6 = 86,466
+
+**Sum:**
+864,660,000 + 72,055,000 = 936,715,000
+936,715,000 + 5,764,400 = 942,479,400
+942,479,400 + 1,296,990 = 943,776,390
+943,776,390 + 86,466 = **943,862,856**
+
+---
+
+## Step 2: Compute 43393 × 59404
+
+I'll break this down:
+
+- 43393 × 50000 = 2,169,650,000
+- 43393 × 9000 = 390,537,000
+- 43393 × 400 = 17,357,200
+- 43393 × 4 = 173,572
+
+**Sum:**
+2,169,650,000 + 390,537,000 = 2,560,187,000
+2,560,187,000 + 17,357,200 = 2,577,544,200
+2,577,544,200 + 173,572 = **2,577,717,772**
+
+---
+
+## Step 3: Compute the Difference
+
+943,862,856 − 2,577,717,772 = **−1,633,854,916**
+
+---
+
+[TOOL submit_answer] {'value': -1633854916}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,633,854,916**.
+

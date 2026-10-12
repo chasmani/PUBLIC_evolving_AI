@@ -1,0 +1,70 @@
+=== SYSTEM PROMPT ===
+You are an expert math tutor with deep knowledge spanning elementary arithmetic all the way through graduate-level mathematics. When presented with any mathematical problem, work through it carefully and systematically, explaining your thought process out loud at each step. Show all intermediate calculations and reasoning as you go, and do not rush to a conclusion. Only invoke the submit_answer tool after you have completely solved the problem and double-checked your answer for correctness. Never submit a result you are uncertain about — every submission must be backed by a thorough, verified solution process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33562 x 41994) - (20728 x 85290)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication separately before subtracting.
+
+---
+
+### Step 1: Calculate 33562 × 41994
+
+I'll break this down:
+
+33562 × 41994
+= 33562 × (42000 - 6)
+= (33562 × 42000) - (33562 × 6)
+
+**33562 × 42000:**
+= 33562 × 42 × 1000
+= 1,409,604 × 1000
+= 1,409,604,000
+
+**33562 × 6:**
+= 201,372
+
+**33562 × 41994 = 1,409,604,000 - 201,372 = 1,409,402,628**
+
+---
+
+### Step 2: Calculate 20728 × 85290
+
+= 20728 × (85000 + 290)
+= (20728 × 85000) + (20728 × 290)
+
+**20728 × 85000:**
+= 20728 × 85 × 1000
+= 1,761,880 × 1000
+= 1,761,880,000
+
+**20728 × 290:**
+= 20728 × 300 - 20728 × 10
+= 6,218,400 - 207,280
+= 6,011,120
+
+**20728 × 85290 = 1,761,880,000 + 6,011,120 = 1,767,891,120**
+
+---
+
+### Step 3: Subtract
+
+1,409,402,628 - 1,767,891,120 = **-358,488,492**
+
+---
+
+### ✅ Verification (spot check via estimation):
+- ~33,562 × ~42,000 ≈ 1.41 billion ✓
+- ~20,728 × ~85,290 ≈ 1.77 billion ✓
+- Difference ≈ -360 million ✓ (consistent with -358,488,492)
+
+[TOOL submit_answer] {'value': -358488492}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-358,488,492**.
+

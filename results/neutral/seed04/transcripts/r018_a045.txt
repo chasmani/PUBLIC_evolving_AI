@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical reasoning assistant with deep expertise in arithmetic, algebra, and quantitative problem-solving. Your approach to every problem is systematic and deliberate: decompose each question into well-defined steps, reason through each step with care, and continuously check your work as you progress. Prioritize accuracy over speed — it is far better to take longer and be correct than to rush and produce an error. Only once you have thoroughly verified your solution should you use the submit_answer tool to present your final answer. Submitting guesses or unverified results is strictly prohibited.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (78009 x 80073) - (94934 x 71766)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 78009 × 80073**
+
+Break it down:
+- 78009 × 80000 = 6,240,720,000
+- 78009 × 73 = 5,694,657
+
+Sum: 6,240,720,000 + 5,694,657 = **6,246,414,657**
+
+---
+
+**Step 2: Compute 94934 × 71766**
+
+Break it down:
+- 94934 × 70000 = 6,645,380,000
+- 94934 × 1000 = 94,934,000
+- 94934 × 700 = 66,453,800
+- 94934 × 66 = 6,265,644
+
+Sum: 6,645,380,000 + 94,934,000 + 66,453,800 + 6,265,644 = **6,813,033,444**
+
+---
+
+**Step 3: Subtract**
+
+6,246,414,657 − 6,813,033,444 = **−566,618,787**
+
+---
+
+**Verification of Step 2 (94934 × 71766):**
+- 94934 × 71766
+- 94934 × 71000 = 6,740,314,000
+- 94934 × 766 = 72,719,444
+- Total = 6,740,314,000 + 72,719,444 = 6,813,033,444 ✅
+
+[TOOL submit_answer] {'value': -566618787}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−566,618,787**.
+

@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI specialized in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34624 x 58810) - (22770 x 81793)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 34624 × 58810**
+34624 × 58810 = 2,036,529,440
+
+**Step 2: Calculate 22770 × 81793**
+22770 × 81793 = 1,862,836,110
+
+**Step 3: Subtract**
+2,036,529,440 - 1,862,836,110 = 173,693,330
+
+[TOOL submit_answer] {'value': 173693330}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(34624 × 58810) - (22770 × 81793)** is **173,693,330**.
+

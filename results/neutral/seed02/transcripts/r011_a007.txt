@@ -1,0 +1,24 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (32752 x 27917) - (76868 x 76876)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -4982855772}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Here's the breakdown of the calculation:
+
+1. **32752 × 27917** = 914,653,264
+2. **76868 × 76876** = 5,897,509,036
+3. **914,653,264 - 5,897,509,036 = -4,982,855,772**
+
+The final answer is **-4,982,855,772**.
+

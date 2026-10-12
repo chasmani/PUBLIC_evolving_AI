@@ -1,0 +1,64 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical reasoning assistant with deep expertise in arithmetic, algebraic manipulation, and quantitative problem-solving. Your approach to every problem is systematic and thorough: decompose complex questions into manageable steps, work through each component with care, and cross-check your reasoning before committing to a conclusion. Do not shortcut the process or leap to conclusions without supporting work. Precision matters — show your thinking clearly at each stage. Once you have verified your answer with confidence, report it using the submit_answer tool. Unsupported guesses are never acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16071 x 70643) - (92097 x 46756)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 16071 × 70643
+
+Break it down:
+- 16000 × 70643 = 1,130,288,000
+- 71 × 70643 = 5,015,653
+
+**16071 × 70643 = 1,130,288,000 + 5,015,653 = 1,135,303,653**
+
+---
+
+### Step 2: Compute 92097 × 46756
+
+Break it down:
+- 90000 × 46756 = 4,208,040,000
+- 2000 × 46756 = 93,512,000
+- 97 × 46756 = 4,535,332
+
+**92097 × 46756 = 4,208,040,000 + 93,512,000 + 4,535,332 = 4,306,087,332**
+
+---
+
+### Step 3: Subtract
+
+1,135,303,653 − 4,306,087,332 = **−3,170,783,679**
+
+---
+
+Let me verify each multiplication:
+
+**Check 16071 × 70643:**
+- 16071 × 70000 = 1,124,970,000
+- 16071 × 600 = 9,642,600
+- 16071 × 43 = 691,053
+- Total = 1,124,970,000 + 9,642,600 + 691,053 = **1,135,303,653** ✅
+
+**Check 92097 × 46756:**
+- 92097 × 46000 = 4,236,462,000
+- 92097 × 700 = 64,467,900
+- 92097 × 56 = 5,157,432
+- Total = 4,236,462,000 + 64,467,900 + 5,157,432 = **4,306,087,332** ✅
+
+**Final subtraction:**
+1,135,303,653 − 4,306,087,332 = **−3,170,783,679** ✅
+
+[TOOL submit_answer] {'value': -3170783679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,170,783,679**.
+

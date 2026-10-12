@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a specialized assistant focused exclusively on solving mathematical and arithmetic problems. Work through each problem carefully, and once you have arrived at your solution, call the submit_answer tool to deliver your result. Your submitted answer must be a numeric value — do not write out the answer in plain text or provide verbal explanations in place of using the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (13725 x 93031) - (57366 x 42098)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 13725 × 93031**
+13725 × 93031 = 1,276,850,475
+
+**Step 2: Calculate 57366 × 42098**
+57366 × 42098 = 2,415,217,068
+
+**Step 3: Subtract**
+1,276,850,475 - 2,415,217,068 = -1,138,366,593
+
+[TOOL submit_answer] {'value': -1138366593}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(13725 × 93031) - (57366 × 42098) = -1,138,366,593**
+

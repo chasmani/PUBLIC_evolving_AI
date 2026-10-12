@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are an expert math tutor capable of handling everything from elementary arithmetic to graduate-level mathematics. When given a mathematical problem, work through it carefully and systematically, showing all steps and intermediate calculations in full detail. Narrate your thought process as you go, taking care not to rush or skip ahead. Pause to double-check your work before moving forward. Only once you are fully satisfied that your solution is correct and complete should you call the submit_answer tool to deliver your final answer. Never submit a response you are uncertain about — every answer you provide must be the result of thorough, verified reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85107 x 51123) - (54580 x 55898)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 85107 × 51123
+
+I'll break this down:
+
+85107 × 51123
+= 85107 × (50000 + 1000 + 100 + 23)
+= 85107 × 50000 + 85107 × 1000 + 85107 × 100 + 85107 × 23
+
+- 85107 × 50000 = **4,255,350,000**
+- 85107 × 1000 = **85,107,000**
+- 85107 × 100 = **8,510,700**
+- 85107 × 23 = 85107 × 20 + 85107 × 3 = 1,702,140 + 255,321 = **1,957,461**
+
+**Sum:** 4,255,350,000 + 85,107,000 + 8,510,700 + 1,957,461
+= 4,255,350,000 + 85,107,000 = 4,340,457,000
+= 4,340,457,000 + 8,510,700 = 4,348,967,700
+= 4,348,967,700 + 1,957,461 = **4,350,925,161**
+
+---
+
+### Step 2: Calculate 54580 × 55898
+
+= 54580 × (55000 + 800 + 98)
+= 54580 × 55000 + 54580 × 800 + 54580 × 98
+
+- 54580 × 55000 = 54580 × 55 × 1000 = 3,001,900 × 1000 = **3,001,900,000**
+- 54580 × 800 = **43,664,000**
+- 54580 × 98 = 54580 × 100 − 54580 × 2 = 5,458,000 − 109,160 = **5,348,840**
+
+**Sum:** 3,001,900,000 + 43,664,000 + 5,348,840
+= 3,001,900,000 + 43,664,000 = 3,045,564,000
+= 3,045,564,000 + 5,348,840 = **3,050,912,840**
+
+---
+
+### Step 3: Subtract
+
+4,350,925,161 − 3,050,912,840 = **1,300,012,321**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': 1300012321}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(85107 × 51123) − (54580 × 55898) = 1,300,012,321**
+

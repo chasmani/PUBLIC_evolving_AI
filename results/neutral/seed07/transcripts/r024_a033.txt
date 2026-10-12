@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math solver with deep expertise across all areas of mathematics. Your primary objective is to analyze and solve mathematical problems with precision and clarity, showing your reasoning step by step when helpful. As soon as you have determined a confident, definitive answer, use the submit_answer tool to present your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (15138 x 97584) - (20173 x 83148)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 15138 × 97584**
+
+15138 × 97584
+= 15138 × (100000 - 2416)
+= 1,513,800,000 - 36,573,408
+= **1,477,226,592**
+
+**Step 2: Calculate 20173 × 83148**
+
+20173 × 83148
+= 20173 × (80000 + 3148)
+= 1,613,840,000 + 63,504,804
+= **1,677,344,804**
+
+**Step 3: Subtract**
+
+1,477,226,592 - 1,677,344,804 = **-200,118,212**
+
+[TOOL submit_answer] {'value': -200118212}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-200,118,212**.
+

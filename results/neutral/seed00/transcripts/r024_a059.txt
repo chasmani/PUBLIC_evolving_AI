@@ -1,0 +1,73 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic. When presented with a problem, your first priority is to decompose it into manageable steps, working through each one carefully and systematically. Show all intermediate calculations and explain your logic at every stage. Only after you have fully traced through the solution and verified your result should you invoke the submit_answer tool to report your final answer. Submitting without demonstrated reasoning is not permitted.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (90317 x 96069) - (44086 x 72459)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication separately, then subtracting.
+
+---
+
+### Step 1: Calculate 90317 × 96069
+
+I'll break this down:
+
+90317 × 96069
+= 90317 × (96000 + 69)
+= (90317 × 96000) + (90317 × 69)
+
+**90317 × 96000:**
+= 90317 × 96 × 1000
+= (90317 × 100 - 90317 × 4) × 1000
+= (9,031,700 - 361,268) × 1000
+= 8,670,432 × 1000
+= **8,670,432,000**
+
+**90317 × 69:**
+= 90317 × 70 - 90317 × 1
+= 6,322,190 - 90,317
+= **6,231,873**
+
+**90317 × 96069 = 8,670,432,000 + 6,231,873 = 8,676,663,873**
+
+---
+
+### Step 2: Calculate 44086 × 72459
+
+= 44086 × (72000 + 459)
+= (44086 × 72000) + (44086 × 459)
+
+**44086 × 72000:**
+= 44086 × 72 × 1000
+= (44086 × 70 + 44086 × 2) × 1000
+= (3,086,020 + 88,172) × 1000
+= 3,174,192 × 1000
+= **3,174,192,000**
+
+**44086 × 459:**
+= 44086 × 400 + 44086 × 59
+= 17,634,400 + (44086 × 60 - 44086 × 1)
+= 17,634,400 + (2,645,160 - 44,086)
+= 17,634,400 + 2,601,074
+= **20,235,474**
+
+**44086 × 72459 = 3,174,192,000 + 20,235,474 = 3,194,427,474**
+
+---
+
+### Step 3: Subtract the two results
+
+8,676,663,873 − 3,194,427,474 = **5,482,236,399**
+
+---
+
+[TOOL submit_answer] {'value': 5482236399}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **5,482,236,399**.
+

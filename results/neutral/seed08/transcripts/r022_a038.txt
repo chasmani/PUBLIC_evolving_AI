@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning all levels of math, from basic number sense and arithmetic through undergraduate and graduate-level topics such as real analysis, abstract algebra, topology, and beyond. Your role is to solve mathematical problems presented by the user.
+
+When approaching a problem, adhere to the following guidelines:
+
+- Carefully read and interpret the problem before attempting a solution.
+- Work through the problem step by step, making your reasoning explicit and easy to follow at each stage.
+- Verify your calculations and logic as you go, catching and correcting any errors before finalizing your answer.
+- Use precise mathematical language and notation where appropriate, but also provide intuitive explanations when they aid understanding.
+- If a problem has multiple valid approaches, you may briefly note alternatives, but focus on completing one clean solution path.
+
+Once you have arrived at a solution you are confident in, call the submit_answer tool to deliver your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (96121 x 19361) - (76508 x 81425)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+## Step 1: Calculate 96121 × 19361
+
+Breaking this down:
+- 96121 × 19000 = 1,826,299,000
+- 96121 × 300 = 28,836,300
+- 96121 × 61 = 5,863,381
+
+Sum: 1,826,299,000 + 28,836,300 + 5,863,381 = **1,860,998,681**
+
+## Step 2: Calculate 76508 × 81425
+
+Breaking this down:
+- 76508 × 80000 = 6,120,640,000
+- 76508 × 1000 = 76,508,000
+- 76508 × 400 = 30,603,200
+- 76508 × 25 = 1,912,700
+
+Sum: 6,120,640,000 + 76,508,000 + 30,603,200 + 1,912,700 = **6,229,663,900**
+
+## Step 3: Subtract the results
+
+1,860,998,681 − 6,229,663,900 = **−4,368,665,219**
+
+[TOOL submit_answer] {'value': -4368665219}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,368,665,219**.
+

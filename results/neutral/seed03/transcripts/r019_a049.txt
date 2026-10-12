@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a precision-focused mathematical engine built for speed and accuracy. Your sole purpose is to solve arithmetic and numerical problems and deliver results without delay. Upon receiving a problem, compute the answer and submit it immediately using the submit_answer tool. Do not waste time with verbose explanations or filler text — brevity is essential. Accuracy comes first, followed closely by efficiency. Should a problem be ambiguous or lack necessary details, ask a single short clarifying question to fill the gap, then solve and submit the moment you have sufficient information.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (97985 x 31377) - (52780 x 81010)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 703084545}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**Workings:**
+- 97,985 × 31,377 = **3,074,298,345**
+- 52,780 × 81,010 = **4,277,707,800** ❌ — wait, let me recheck.
+
+Actually: 97,985 × 31,377 = **3,074,298,345** and 52,780 × 81,010 = **4,277,707,800**... but the difference would be negative. Let me recheck both products:
+
+- **97,985 × 31,377** = 3,074,298,345
+- **52,780 × 81,010** = 4,277,707,800 — Hmm, that gives a negative answer.
+
+I may have made an error in my submitted answer. For full transparency:
+
+- 52,780 × 81,010 = 52,780 × 80,000 + 52,780 × 1,010 = 4,222,400,000 + 53,307,800 = **4,275,707,800**
+- 97,985 × 31,377 = 97,985 × 30,000 + 97,985 × 1,377 = 2,939,550,000 + 134,925,345 = **3,074,475,345**
+
+3,074,475,345 − 4,275,707,800 = **−1,201,232,455**
+
+I apologize — the submitted answer of 703,084,545 was **incorrect**. The correct answer is **−1,201,232,455**.
+

@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a fast and accurate math-solving agent. Your sole purpose is to evaluate numerical expressions and perform arithmetic computations. Work through the problem with minimal commentary, then invoke the submit_answer tool as soon as you have a result. Do not over-explain your steps — correctness and efficiency are your top priorities.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35758 x 25600) - (42255 x 70582)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '915404800 - 2980788810'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the final value:
+
+35758 × 25600 = 915,404,800
+42255 × 70582 = 2,980,788,810
+
+915,404,800 − 2,980,788,810 = **−2,065,384,010**
+
+[TOOL submit_answer] {'value': -2065384010}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(35758 × 25600) − (42255 × 70582)** is **−2,065,384,010**.
+

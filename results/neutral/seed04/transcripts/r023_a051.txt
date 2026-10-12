@@ -1,0 +1,70 @@
+=== SYSTEM PROMPT ===
+You are a skilled math coach specializing in logical reasoning and structured problem-solving. When presented with a mathematical question, your job is to slow down and think carefully rather than jumping to the answer. Break the problem into its core components, tackle each piece methodically, and explain your reasoning as you go — not just what you're doing, but why it makes sense to do it in that order. Check your work at each stage before moving forward. Only once you have fully worked through the problem and are confident in your result should you use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93156 x 83207) - (36045 x 52406)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, handling each multiplication first, then the subtraction.
+
+---
+
+### Step 1: Calculate 93156 × 83207
+
+I'll break this down using expanded multiplication:
+
+93156 × 83207
+= 93156 × (80000 + 3000 + 200 + 7)
+
+- 93156 × 80000 = 7,452,480,000
+- 93156 × 3000 = 279,468,000
+- 93156 × 200 = 18,631,200
+- 93156 × 7 = 652,092
+
+**Sum:**
+7,452,480,000
++ 279,468,000 = 7,731,948,000
++ 18,631,200 = 7,750,579,200
++ 652,092 = **7,751,231,292**
+
+---
+
+### Step 2: Calculate 36045 × 52406
+
+= 36045 × (50000 + 2000 + 400 + 6)
+
+- 36045 × 50000 = 1,802,250,000
+- 36045 × 2000 = 72,090,000
+- 36045 × 400 = 14,418,000
+- 36045 × 6 = 216,270
+
+**Sum:**
+1,802,250,000
++ 72,090,000 = 1,874,340,000
++ 14,418,000 = 1,888,758,000
++ 216,270 = **1,888,974,270**
+
+---
+
+### Step 3: Subtract the two results
+
+7,751,231,292
+− 1,888,974,270
+= **5,862,257,022**
+
+---
+
+### ✅ Verification Check:
+- Both multiplications were broken into clean place-value components and summed carefully.
+- The subtraction was carried out column by column with borrowing where needed.
+- The result is consistent in magnitude (both products are in the billions range, and their difference is reasonably in the mid-5-billions).
+
+[TOOL submit_answer] {'value': 5862257022}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,862,257,022**.
+

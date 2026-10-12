@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI that specializes in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95905 x 57235) - (73793 x 35391)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (95905 x 57235) - (73793 x 35391).
+
+**Step 1: Calculate 95905 x 57235**
+
+95905 x 57235:
+- 95905 x 50000 = 4,795,250,000
+- 95905 x 7000 = 671,335,000
+- 95905 x 200 = 19,181,000
+- 95905 x 35 = 3,356,675
+
+Sum: 4,795,250,000 + 671,335,000 = 5,466,585,000
+5,466,585,000 + 19,181,000 = 5,485,766,000
+5,485,766,000 + 3,356,675 = **5,489,122,675**
+
+**Step 2: Calculate 73793 x 35391**
+
+73793 x 35391:
+- 73793 x 30000 = 2,213,790,000
+- 73793 x 5000 = 368,965,000
+- 73793 x 300 = 22,137,900
+- 73793 x 90 = 6,641,370
+- 73793 x 1 = 73,793
+
+Sum: 2,213,790,000 + 368,965,000 = 2,582,755,000
+2,582,755,000 + 22,137,900 = 2,604,892,900
+2,604,892,900 + 6,641,370 = 2,611,534,270
+2,611,534,270 + 73,793 = **2,611,608,063**
+
+**Step 3: Subtract**
+
+5,489,122,675 - 2,611,608,063 = **2,877,514,612**
+
+[TOOL submit_answer] {'value': 2877514612}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,877,514,612**.
+

@@ -1,0 +1,447 @@
+{
+ "n_agent_rounds": 15000,
+ "n_agents": 1751,
+ "descriptives": {
+  "accuracy": {
+   "Accuracy": {
+    "first_mean": 0.36500000000000005,
+    "last_mean": 0.9400000000000001,
+    "first_per_run": [
+     0.3,
+     0.2,
+     0.7,
+     0.2,
+     0.0,
+     0.5,
+     0.6,
+     0.2,
+     0.6,
+     0.35
+    ],
+    "last_per_run": [
+     0.9,
+     0.95,
+     1.0,
+     0.9,
+     1.0,
+     0.8,
+     0.95,
+     0.9,
+     1.0,
+     1.0
+    ]
+   },
+   "Token": {
+    "first_mean": 0.36500000000000005,
+    "last_mean": 0.1,
+    "first_per_run": [
+     0.3,
+     0.25,
+     0.65,
+     0.35,
+     0.05,
+     0.5,
+     0.2,
+     0.3,
+     0.55,
+     0.5
+    ],
+    "last_per_run": [
+     0.0,
+     0.0,
+     0.3,
+     0.15,
+     0.05,
+     0.3,
+     0.0,
+     0.15,
+     0.0,
+     0.05
+    ]
+   },
+   "Neutral": {
+    "first_mean": 0.38,
+    "last_mean": 0.67,
+    "first_per_run": [
+     0.35,
+     0.25,
+     0.75,
+     0.35,
+     0.05,
+     0.35,
+     0.4,
+     0.35,
+     0.35,
+     0.6
+    ],
+    "last_per_run": [
+     0.65,
+     0.4,
+     0.7,
+     0.1,
+     0.95,
+     0.85,
+     0.55,
+     0.95,
+     0.95,
+     0.6
+    ]
+   }
+  },
+  "tokens": {
+   "Accuracy": {
+    "first_mean": 311.71999999999997,
+    "last_mean": 442.93999999999994,
+    "first_per_run": [
+     305.4,
+     303.45,
+     290.7,
+     298.55,
+     282.85,
+     352.9,
+     337.35,
+     334.0,
+     321.3,
+     290.7
+    ],
+    "last_per_run": [
+     462.55,
+     498.8,
+     438.1,
+     460.05,
+     351.1,
+     442.75,
+     564.05,
+     423.45,
+     446.0,
+     342.55
+    ]
+   },
+   "Token": {
+    "first_mean": 308.63,
+    "last_mean": 160.265,
+    "first_per_run": [
+     280.8,
+     296.1,
+     295.2,
+     315.9,
+     295.05,
+     381.25,
+     260.1,
+     342.1,
+     308.9,
+     310.9
+    ],
+    "last_per_run": [
+     93.85,
+     178.25,
+     204.65,
+     188.45,
+     148.9,
+     224.45,
+     195.95,
+     214.6,
+     75.45,
+     78.1
+    ]
+   },
+   "Neutral": {
+    "first_mean": 310.36,
+    "last_mean": 382.95,
+    "first_per_run": [
+     300.65,
+     297.65,
+     299.35,
+     302.05,
+     268.2,
+     325.1,
+     309.85,
+     341.25,
+     299.8,
+     359.7
+    ],
+    "last_per_run": [
+     381.75,
+     361.15,
+     402.0,
+     228.25,
+     444.85,
+     449.8,
+     383.55,
+     475.25,
+     447.7,
+     255.2
+    ]
+   }
+  }
+ },
+ "correlations": {
+  "all": {
+   "n": 1751,
+   "pearson": 0.8237512342520905,
+   "spearman": 0.8595384473838722
+  },
+  "Accuracy": {
+   "n": 386,
+   "pearson": 0.8221833703431435,
+   "spearman": 0.8756082932841114
+  },
+  "Token": {
+   "n": 685,
+   "pearson": 0.8122475334839061,
+   "spearman": 0.8010342242397546
+  },
+  "Neutral": {
+   "n": 680,
+   "pearson": 0.7771049143408488,
+   "spearman": 0.8409284239793868
+  }
+ },
+ "lineages": {
+  "Accuracy": {
+   "n_lineages": {
+    "mean": 5.1,
+    "sd": 1.728840330651992
+   },
+   "largest_share": {
+    "mean": 0.47000000000000003,
+    "sd": 0.12952906151816965
+   },
+   "single_founder_runs": 0
+  },
+  "Token": {
+   "n_lineages": {
+    "mean": 1.3,
+    "sd": 0.6749485577105528
+   },
+   "largest_share": {
+    "mean": 0.93,
+    "sd": 0.1888562063228706
+   },
+   "single_founder_runs": 8
+  },
+  "Neutral": {
+   "n_lineages": {
+    "mean": 6.7,
+    "sd": 0.9486832980505138
+   },
+   "largest_share": {
+    "mean": 0.31999999999999995,
+    "sd": 0.048304589153964794
+   },
+   "single_founder_runs": 0
+  }
+ },
+ "tests": {
+  "within/accuracy/Accuracy": {
+   "test": "wilcoxon signed-rank",
+   "statistic": 0.0,
+   "n": 10,
+   "a": 0.36500000000000005,
+   "b": 0.9400000000000001,
+   "effect": 1.0,
+   "p_raw": 0.001953125,
+   "in_family": true,
+   "p_holm": 0.015625
+  },
+  "within/accuracy/Token": {
+   "test": "wilcoxon signed-rank",
+   "statistic": 0.0,
+   "n": 10,
+   "a": 0.36500000000000005,
+   "b": 0.1,
+   "effect": -1.0,
+   "p_raw": 0.00390625,
+   "in_family": true,
+   "p_holm": 0.01953125
+  },
+  "within/accuracy/Neutral": {
+   "test": "wilcoxon signed-rank",
+   "statistic": 5.0,
+   "n": 10,
+   "a": 0.38,
+   "b": 0.67,
+   "effect": 0.7777777777777778,
+   "p_raw": 0.0390625,
+   "in_family": true,
+   "p_holm": 0.1171875
+  },
+  "between/accuracy/Accuracy-Token": {
+   "test": "Mann-Whitney U",
+   "statistic": 100.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 0.9400000000000001,
+   "b": 0.1,
+   "effect": 1.0,
+   "p_raw": 0.00015565515617225225,
+   "in_family": true,
+   "p_holm": 0.001867861874067027
+  },
+  "between/accuracy/Accuracy-Neutral": {
+   "test": "Mann-Whitney U",
+   "statistic": 84.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 0.9400000000000001,
+   "b": 0.67,
+   "effect": 0.6799999999999999,
+   "p_raw": 0.010306743042791881,
+   "in_family": true,
+   "p_holm": 0.041226972171167525
+  },
+  "between/accuracy/Token-Neutral": {
+   "test": "Mann-Whitney U",
+   "statistic": 4.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 0.1,
+   "b": 0.67,
+   "effect": -0.92,
+   "p_raw": 0.0005368323288900959,
+   "in_family": true,
+   "p_holm": 0.004831490960010863
+  },
+  "within/tokens/Accuracy": {
+   "test": "wilcoxon signed-rank",
+   "statistic": 0.0,
+   "n": 10,
+   "a": 311.71999999999997,
+   "b": 442.93999999999994,
+   "effect": 1.0,
+   "p_raw": 0.001953125,
+   "in_family": true,
+   "p_holm": 0.015625
+  },
+  "within/tokens/Token": {
+   "test": "wilcoxon signed-rank",
+   "statistic": 0.0,
+   "n": 10,
+   "a": 308.63,
+   "b": 160.265,
+   "effect": -1.0,
+   "p_raw": 0.001953125,
+   "in_family": true,
+   "p_holm": 0.015625
+  },
+  "within/tokens/Neutral": {
+   "test": "wilcoxon signed-rank",
+   "statistic": 9.0,
+   "n": 10,
+   "a": 310.36,
+   "b": 382.95,
+   "effect": 0.6727272727272727,
+   "p_raw": 0.064453125,
+   "in_family": true,
+   "p_holm": 0.12890625
+  },
+  "between/tokens/Accuracy-Token": {
+   "test": "Mann-Whitney U",
+   "statistic": 100.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 442.93999999999994,
+   "b": 160.265,
+   "effect": 1.0,
+   "p_raw": 0.00018267179110955002,
+   "in_family": true,
+   "p_holm": 0.00200938970220505
+  },
+  "between/tokens/Accuracy-Neutral": {
+   "test": "Mann-Whitney U",
+   "statistic": 67.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 442.93999999999994,
+   "b": 382.95,
+   "effect": 0.3400000000000001,
+   "p_raw": 0.21229383619233166,
+   "in_family": true,
+   "p_holm": 0.21229383619233166
+  },
+  "between/tokens/Token-Neutral": {
+   "test": "Mann-Whitney U",
+   "statistic": 0.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 160.265,
+   "b": 382.95,
+   "effect": -1.0,
+   "p_raw": 0.00018267179110955002,
+   "in_family": true,
+   "p_holm": 0.00200938970220505
+  },
+  "lineage/n_lineages/Accuracy-Token": {
+   "test": "Mann-Whitney U",
+   "statistic": 100.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 5.1,
+   "b": 1.3,
+   "effect": 1.0,
+   "p_raw": 8.804001142752274e-05,
+   "in_family": false,
+   "p_holm": null
+  },
+  "lineage/n_lineages/Accuracy-Neutral": {
+   "test": "Mann-Whitney U",
+   "statistic": 19.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 5.1,
+   "b": 6.7,
+   "effect": -0.62,
+   "p_raw": 0.017984032357758615,
+   "in_family": false,
+   "p_holm": null
+  },
+  "lineage/n_lineages/Token-Neutral": {
+   "test": "Mann-Whitney U",
+   "statistic": 0.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 1.3,
+   "b": 6.7,
+   "effect": -1.0,
+   "p_raw": 0.00010049103609736922,
+   "in_family": false,
+   "p_holm": null
+  },
+  "lineage/largest_share/Accuracy-Token": {
+   "test": "Mann-Whitney U",
+   "statistic": 6.5,
+   "n1": 10,
+   "n2": 10,
+   "a": 0.47000000000000003,
+   "b": 0.93,
+   "effect": -0.87,
+   "p_raw": 0.00074669795225524,
+   "in_family": false,
+   "p_holm": null
+  },
+  "lineage/largest_share/Accuracy-Neutral": {
+   "test": "Mann-Whitney U",
+   "statistic": 89.0,
+   "n1": 10,
+   "n2": 10,
+   "a": 0.47000000000000003,
+   "b": 0.31999999999999995,
+   "effect": 0.78,
+   "p_raw": 0.0031140519417475437,
+   "in_family": false,
+   "p_holm": null
+  },
+  "lineage/largest_share/Token-Neutral": {
+   "test": "Mann-Whitney U",
+   "statistic": 99.5,
+   "n1": 10,
+   "n2": 10,
+   "a": 0.93,
+   "b": 0.31999999999999995,
+   "effect": 0.99,
+   "p_raw": 0.00011730973615936543,
+   "in_family": false,
+   "p_holm": null
+  }
+ }
+}

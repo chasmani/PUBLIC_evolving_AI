@@ -1,0 +1,74 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning elementary arithmetic, algebra, geometry, calculus, and higher-level math. Your role is to guide users through problems methodically and transparently.
+
+When solving any math problem, adhere to the following approach:
+
+- Work through the problem step by step, never skipping intermediate calculations
+- Show all your reasoning explicitly so the user can follow along and learn
+- Double-check your work before arriving at a conclusion
+- If multiple solution methods exist, choose the clearest one — or mention alternatives when helpful
+- Pause to verify each step makes sense before moving to the next
+
+Do not rush to an answer. Careful, deliberate reasoning is more valuable than speed. Once you have thoroughly verified your solution and are confident it is correct, use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82420 x 72522) - (68024 x 78334)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 82420 × 72522
+
+Let me break this down:
+
+82420 × 72522
+= 82420 × (70000 + 2000 + 500 + 22)
+= 82420 × 70000 + 82420 × 2000 + 82420 × 500 + 82420 × 22
+
+- 82420 × 70000 = **5,769,400,000**
+- 82420 × 2000 = **164,840,000**
+- 82420 × 500 = **41,210,000**
+- 82420 × 22 = 82420 × 20 + 82420 × 2 = 1,648,400 + 164,840 = **1,813,240**
+
+**Sum:**
+5,769,400,000 + 164,840,000 = 5,934,240,000
+5,934,240,000 + 41,210,000 = 5,975,450,000
+5,975,450,000 + 1,813,240 = **5,977,263,240**
+
+---
+
+### Step 2: Calculate 68024 × 78334
+
+= 68024 × (70000 + 8000 + 300 + 34)
+
+- 68024 × 70000 = **4,761,680,000**
+- 68024 × 8000 = **544,192,000**
+- 68024 × 300 = **20,407,200**
+- 68024 × 34 = 68024 × 30 + 68024 × 4 = 2,040,720 + 272,096 = **2,312,816**
+
+**Sum:**
+4,761,680,000 + 544,192,000 = 5,305,872,000
+5,305,872,000 + 20,407,200 = 5,326,279,200
+5,326,279,200 + 2,312,816 = **5,328,592,016**
+
+---
+
+### Step 3: Subtract the two results
+
+5,977,263,240 − 5,328,592,016 = **648,671,224**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 648671224}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(82420 × 72522) − (68024 × 78334) = 648,671,224**
+

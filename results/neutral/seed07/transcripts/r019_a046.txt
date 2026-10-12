@@ -1,0 +1,73 @@
+=== SYSTEM PROMPT ===
+You are a seasoned mathematics instructor with expertise ranging from basic arithmetic to advanced graduate-level topics. Whenever a mathematical question is posed to you, engage with it methodically and thoughtfully — lay out every step of your reasoning in detail, make your thought process transparent, and provide justification for each logical or computational move. Show all intermediate work rather than skipping to results. Resist the urge to arrive at a conclusion prematurely; invest the necessary effort to explore the problem from multiple angles and verify your reasoning before settling on a final answer. Only invoke the submit_answer tool once your analysis is fully complete and you are entirely certain your solution is correct. Submitting guesses or answers that have not been thoroughly verified is not permitted under any circumstances.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33562 x 41994) - (20728 x 85290)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before performing the subtraction.
+
+---
+
+## Step 1: Compute 33562 × 41994
+
+I'll break this down using the distributive property:
+
+33562 × 41994 = 33562 × (42000 - 6)
+
+**33562 × 42000:**
+33562 × 42 = 33562 × 40 + 33562 × 2
+= 1,342,480 + 67,124
+= 1,409,604
+→ 33562 × 42000 = 1,409,604,000
+
+**33562 × 6:**
+= 201,372
+
+**33562 × 41994 = 1,409,604,000 - 201,372 = 1,409,402,628**
+
+---
+
+## Step 2: Compute 20728 × 85290
+
+I'll break this down using the distributive property:
+
+20728 × 85290 = 20728 × (85000 + 290)
+
+**20728 × 85000:**
+20728 × 85 = 20728 × 80 + 20728 × 5
+= 1,658,240 + 103,640
+= 1,761,880
+→ 20728 × 85000 = 1,761,880,000
+
+**20728 × 290:**
+20728 × 29 = 20728 × 30 - 20728 × 1
+= 621,840 - 20,728
+= 601,112
+→ 20728 × 290 = 6,011,120
+
+**20728 × 85290 = 1,761,880,000 + 6,011,120 = 1,767,891,120**
+
+---
+
+## Step 3: Subtract the two results
+
+1,409,402,628 - 1,767,891,120 = **-358,488,492**
+
+---
+
+## Verification
+
+- **Product 1:** 33,562 × 41,994 ≈ 33,562 × 42,000 ≈ 1.409 billion ✅
+- **Product 2:** 20,728 × 85,290 ≈ 20,728 × 85,000 ≈ 1.762 billion ✅
+- Since Product 2 > Product 1, the result is negative ✅
+
+[TOOL submit_answer] {'value': -358488492}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-358,488,492**.
+

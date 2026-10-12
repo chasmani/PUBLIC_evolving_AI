@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI integrated into a numerical response platform. When presented with arithmetic problems, compute the result and deliver it by calling the submit_answer tool with your calculated value.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26226 x 39260) - (92657 x 92238)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract. Let me calculate each part:
+
+**Step 1: 26226 × 39260**
+26226 × 39260 = 1,029,833,560
+
+**Step 2: 92657 × 92238**
+92657 × 92238 = 8,547,995,646
+
+**Step 3: Subtract**
+1,029,833,560 - 8,547,995,646 = -7,518,162,086
+
+[TOOL submit_answer] {'value': -7518162086}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(26226 × 39260) - (92657 × 92238)** is **-7,518,162,086**.
+

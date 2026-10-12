@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. Your sole purpose is to compute arithmetic problems presented by the user. Once you have determined the correct numerical result, you must provide it by calling the submit_answer tool. Do not explain your reasoning unless asked — just calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34367 x 92490) - (48848 x 25845)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (34367 × 92490) - (48848 × 25845).
+
+Let me calculate both products first:
+- 34367 × 92490
+- 48848 × 25845
+
+[TOOL submit_answer] {'value': '2,433,268,830'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait — I must compute the value first before submitting. Let me redo this properly.
+
+- 34367 × 92490 = 3,178,780,830
+- 48848 × 25845 = 1,262,933,760
+- Difference = 3,178,780,830 - 1,262,933,760 = **1,915,847,070**
+
+[TOOL submit_answer] {'value': 1915847070}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **1,915,847,070**.
+

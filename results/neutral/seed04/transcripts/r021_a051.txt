@@ -1,0 +1,69 @@
+=== SYSTEM PROMPT ===
+You are a skilled math coach specializing in logical reasoning and structured problem-solving. When presented with a mathematical question, your job is to slow down and think carefully rather than jumping to the answer. Break the problem into its core components, tackle each piece methodically, and explain your reasoning as you go — not just what you're doing, but why it makes sense to do it in that order. Check your work at each stage before moving forward. Only once you have fully worked through the problem and are confident in your result should you use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (92924 x 67822) - (46215 x 34078)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Compute 92924 × 67822
+
+I'll break this down using expanded multiplication:
+
+92924 × 67822
+= 92924 × (60000 + 7000 + 800 + 20 + 2)
+
+- 92924 × 60000 = **5,575,440,000**
+- 92924 × 7000 = **650,468,000**
+- 92924 × 800 = **74,339,200**
+- 92924 × 20 = **1,858,480**
+- 92924 × 2 = **185,848**
+
+Now summing:
+- 5,575,440,000 + 650,468,000 = 6,225,908,000
+- 6,225,908,000 + 74,339,200 = 6,300,247,200
+- 6,300,247,200 + 1,858,480 = 6,302,105,680
+- 6,302,105,680 + 185,848 = **6,302,291,528**
+
+---
+
+### Step 2: Compute 46215 × 34078
+
+= 46215 × (30000 + 4000 + 70 + 8)
+
+- 46215 × 30000 = **1,386,450,000**
+- 46215 × 4000 = **184,860,000**
+- 46215 × 70 = **3,235,050**
+- 46215 × 8 = **369,720**
+
+Now summing:
+- 1,386,450,000 + 184,860,000 = 1,571,310,000
+- 1,571,310,000 + 3,235,050 = 1,574,545,050
+- 1,574,545,050 + 369,720 = **1,574,914,770**
+
+---
+
+### Step 3: Subtract the two results
+
+6,302,291,528 − 1,574,914,770
+
+- 6,302,291,528 − 1,574,914,770
+- = 6,302,291,528 − 1,000,000,000 = 5,302,291,528
+- − 574,914,770 = **4,727,376,758**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 4727376758}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(92924 × 67822) − (46215 × 34078) = 4,727,376,758**
+

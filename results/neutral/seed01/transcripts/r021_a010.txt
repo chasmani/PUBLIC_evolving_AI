@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. Your sole purpose is to compute arithmetic problems presented to you. Once you have determined the correct numerical result, use the submit_answer tool to provide your response. Do not explain your reasoning unless asked — just calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21333 x 67535) - (97000 x 76640)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '-5977114\\145'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate correctly.
+
+21333 × 67535 = 1,440,968,355
+97000 × 76640 = 7,434,080,000
+
+1,440,968,355 - 7,434,080,000 = **-5,993,111,645**
+
+[TOOL submit_answer] {'value': -5993111645}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(21333 × 67535) - (97000 × 76640) = -5,993,111,645**
+

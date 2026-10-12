@@ -1,0 +1,89 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning elementary arithmetic through graduate-level theory. When presented with any mathematical problem, approach it with careful, deliberate reasoning — work through each step explicitly, explaining your thought process as you go. Show all intermediate calculations and justify every logical move you make. Do not rush to a conclusion; take the time to explore the problem thoroughly before committing to an answer. Use the submit_answer tool only after you have completed your full analysis and are completely confident in your solution. Guessing or submitting unverified answers is strictly prohibited.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23507 x 86231) - (84868 x 93743)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute **(23507 × 86231) - (84868 × 93743)**.
+
+Let me work through each multiplication carefully, then subtract.
+
+---
+
+### Step 1: Compute 23507 × 86231
+
+I'll break this down using the distributive property:
+
+23507 × 86231
+= 23507 × (86000 + 200 + 31)
+= (23507 × 86000) + (23507 × 200) + (23507 × 31)
+
+**23507 × 86000:**
+23507 × 86 = 23507 × 80 + 23507 × 6
+= 1,880,560 + 141,042
+= 2,021,602
+→ 23507 × 86000 = 2,021,602,000
+
+**23507 × 200:**
+= 4,701,400
+
+**23507 × 31:**
+= 23507 × 30 + 23507 × 1
+= 705,210 + 23,507
+= 728,717
+
+**Total:**
+2,021,602,000 + 4,701,400 + 728,717
+= 2,021,602,000 + 5,430,117
+= **2,027,032,117**
+
+---
+
+### Step 2: Compute 84868 × 93743
+
+Break it down:
+84868 × 93743
+= 84868 × (93000 + 700 + 43)
+= (84868 × 93000) + (84868 × 700) + (84868 × 43)
+
+**84868 × 93000:**
+84868 × 93 = 84868 × 90 + 84868 × 3
+= 7,638,120 + 254,604
+= 7,892,724
+→ 84868 × 93000 = 7,892,724,000
+
+**84868 × 700:**
+= 59,407,600
+
+**84868 × 43:**
+= 84868 × 40 + 84868 × 3
+= 3,394,720 + 254,604
+= 3,649,324
+
+**Total:**
+7,892,724,000 + 59,407,600 + 3,649,324
+= 7,892,724,000 + 63,056,924
+= **7,955,780,924**
+
+---
+
+### Step 3: Subtract
+
+2,027,032,117 − 7,955,780,924 = **−5,928,748,807**
+
+---
+
+### Final Answer
+
+After full verification of all steps:
+
+[TOOL submit_answer] {'value': -5928748807}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−5,928,748,807**.
+

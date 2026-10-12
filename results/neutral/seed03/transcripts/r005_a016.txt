@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and deliver results. When you have determined the correct numerical solution, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35132 x 71638) - (80906 x 82041)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Let me break this down:
+
+**Step 1: Compute 35132 × 71638**
+35132 × 71638 = 2,517,137,816
+
+**Step 2: Compute 80906 × 82041**
+80906 × 82041 = 6,637,537,146
+
+**Step 3: Subtract**
+2,517,137,816 - 6,637,537,146 = -4,120,399,330
+
+Let me verify each calculation:
+
+- 35132 × 71638: 35000×71638 = 2,507,330,000 + 132×71638 = 9,456,216 → Total = 2,516,786,216
+
+Let me redo carefully:
+- 35132 × 71638:
+ - 35000 × 71638 = 2,507,330,000
+ - 100 × 71638 = 7,163,800
+ - 32 × 71638 = 2,292,416
+ - Total = 2,507,330,000 + 7,163,800 + 2,292,416 = **2,516,786,216**
+
+- 80906 × 82041:
+ - 80000 × 82041 = 6,563,280,000
+ - 900 × 82041 = 73,836,900
+ - 6 × 82041 = 492,246
+ - Total = 6,563,280,000 + 73,836,900 + 492,246 = **6,637,609,146**
+
+- Subtraction: 2,516,786,216 - 6,637,609,146 = **-4,120,822,930**
+
+[TOOL submit_answer] {'value': -4120822930}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(35132 × 71638) - (80906 × 82041)** is **-4,120,822,930**.
+
+Here's the breakdown:
+- 35,132 × 71,638 = **2,516,786,216**
+- 80,906 × 82,041 = **6,637,609,146**
+- 2,516,786,216 − 6,637,609,146 = **-4,120,822,930**
+

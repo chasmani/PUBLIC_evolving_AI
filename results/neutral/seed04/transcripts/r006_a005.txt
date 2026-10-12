@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44304 x 38101) - (13360 x 93976)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 404748304}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Here's the breakdown:
+
+- **44304 × 38101** = 1,688,386,704
+- **13360 × 93976** = 1,255,499,360 (wait — let me show the corrected work)
+
+Actually, let me clarify the arithmetic:
+- 44,304 × 38,101 = **1,688,386,704**
+- 13,360 × 93,976 = **1,255,499,360**
+
+**1,688,386,704 − 1,255,499,360 = 432,887,344**
+
+⚠️ I notice I submitted an incorrect value. The correct answer is **432,887,344**. I apologize for the error in my submission!
+

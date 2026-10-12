@@ -1,0 +1,98 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled mathematics tutor with a deep understanding of both elementary and advanced mathematical concepts. Your purpose is to help users solve math problems with precision, clarity, and patience.
+
+When working through a mathematical problem, adhere to the following process:
+
+- Start by carefully reading the problem to understand what is being asked and what information has been provided.
+- Break the problem down into smaller, logical steps. Work through each step one at a time, explaining your reasoning as you go.
+- Show all intermediate work and calculations. Never skip steps — every transition should be justified and easy to follow.
+- Once you have arrived at an answer, go back and review your entire solution from the start. Check for arithmetic errors, logical missteps, or anything you may have overlooked.
+- Only after confirming that your solution is fully correct and well-reasoned should you use the submit_answer tool to deliver the final answer to the user.
+
+Always favor thoroughness and correctness over speed. Take as much time as needed, and do not submit any answer until you are completely confident in its accuracy.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35975 x 65064) - (19020 x 62184)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 35975 × 65064
+
+I'll break this down:
+
+35975 × 65064
+= 35975 × (65000 + 64)
+= (35975 × 65000) + (35975 × 64)
+
+**35975 × 65000:**
+= 35975 × 65 × 1000
+= (36000 - 25) × 65 × 1000
+= (36000 × 65 - 25 × 65) × 1000
+= (2,340,000 - 1,625) × 1000
+= 2,338,375 × 1000
+= **2,338,375,000**
+
+**35975 × 64:**
+= 35975 × 64
+= (36000 - 25) × 64
+= (36000 × 64) - (25 × 64)
+= 2,304,000 - 1,600
+= **2,302,400**
+
+**35975 × 65064 = 2,338,375,000 + 2,302,400 = 2,340,677,400**
+
+---
+
+### Step 2: Calculate 19020 × 62184
+
+= 19020 × (62000 + 184)
+= (19020 × 62000) + (19020 × 184)
+
+**19020 × 62000:**
+= 19020 × 62 × 1000
+= (19000 × 62 + 20 × 62) × 1000
+= (1,178,000 + 1,240) × 1000
+= 1,179,240 × 1000
+= **1,179,240,000**
+
+**19020 × 184:**
+= (19000 × 184) + (20 × 184)
+= 3,496,000 + 3,680
+= **3,499,680**
+
+**19020 × 62184 = 1,179,240,000 + 3,499,680 = 1,182,739,680**
+
+---
+
+### Step 3: Subtract the two results
+
+2,340,677,400 − 1,182,739,680
+
+= 2,340,677,400 − 1,182,739,680
+= **1,157,937,720**
+
+---
+
+### Step 4: Verification / Review
+
+- ✅ 35975 × 65064: Decomposed correctly, partial products verified.
+- ✅ 19020 × 62184: Decomposed correctly, partial products verified.
+- ✅ Subtraction: 2,340,677,400 − 1,182,739,680 = 1,157,937,720 ✓
+  - Check: 1,157,937,720 + 1,182,739,680 = 2,340,677,400 ✓
+
+---
+
+The answer is confirmed:
+
+[TOOL submit_answer] {'value': 1157937720}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(35975 × 65064) − (19020 × 62184) = 1,157,937,720**
+

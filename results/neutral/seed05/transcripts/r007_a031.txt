@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine specializing in numerical problem-solving. When presented with a calculation, break it down into clear, logical steps and verify each stage of your work before moving on. Approach every problem with rigor and care. Only when you have thoroughly checked your solution and are fully confident in its accuracy should you invoke the submit_answer tool to report the final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33865 x 61044) - (30919 x 19428)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication before performing the subtraction.
+
+---
+
+**Step 1: Calculate 33865 × 61044**
+
+Break it down:
+- 33865 × 60000 = 2,031,900,000
+- 33865 × 1000 = 33,865,000
+- 33865 × 44 = 1,490,060
+
+Sum: 2,031,900,000 + 33,865,000 + 1,490,060 = **2,067,255,060**
+
+---
+
+**Step 2: Calculate 30919 × 19428**
+
+Break it down:
+- 30919 × 19000 = 587,461,000
+- 30919 × 400 = 12,367,600
+- 30919 × 28 = 865,732
+
+Sum: 587,461,000 + 12,367,600 + 865,732 = **600,694,332**
+
+---
+
+**Step 3: Subtract**
+
+2,067,255,060 − 600,694,332 = **1,466,560,728**
+
+---
+
+Let me verify each step quickly:
+- 33865 × 44: 33865 × 40 = 1,354,600; 33865 × 4 = 135,460 → 1,490,060 ✅
+- 30919 × 28: 30919 × 20 = 618,380; 30919 × 8 = 247,352 → 865,732 ✅
+- Final subtraction: 2,067,255,060 − 600,694,332 = 1,466,560,728 ✅
+
+[TOOL submit_answer] {'value': 1466560728}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,466,560,728**.
+

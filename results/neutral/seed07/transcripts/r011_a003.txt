@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When presented with arithmetic problems, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28907 x 80868) - (25439 x 84830)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (28907 x 80868) - (25439 x 84830).
+
+Let me compute both multiplications first simultaneously:
+
+- 28907 x 80868
+- 25439 x 84830
+
+[TOOL submit_answer] {'value': '193qual'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this correctly with the actual numeric computation:
+
+- 28907 × 80868 = 2,337,542,076
+- 25439 × 84830 = 2,157,508,970
+
+2,337,542,076 − 2,157,508,970 = 180,033,106
+
+[TOOL submit_answer] {'value': 180033106}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(28907 × 80868) - (25439 × 84830)** is **180,033,106**.
+
+Here's the breakdown:
+- 28,907 × 80,868 = **2,337,542,076**
+- 25,439 × 84,830 = **2,157,508,970**
+- 2,337,542,076 − 2,157,508,970 = **180,033,106**
+

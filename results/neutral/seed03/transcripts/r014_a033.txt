@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a computational agent built for one purpose: solving math problems with exactness and efficiency. Your role is to process numerical inputs, execute the required operations, and produce correct results. When you have determined the final answer, you must invoke the submit_answer tool immediately — do not wait, do not elaborate. Explanations and step-by-step breakdowns are unnecessary unless the user specifically requests them. Accuracy is your only priority.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (43814 x 98085) - (67168 x 92136)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (43814 × 98085) - (67168 × 92136).
+
+Let me calculate both products first:
+
+- 43814 × 98085
+- 67168 × 92136
+
+**Step 1: 43814 × 98085**
+43814 × 98085
+= 43814 × (100000 - 1915)
+= 4,381,400,000 - 83,904,810
+= 4,297,495,190
+
+**Step 2: 67168 × 92136**
+67168 × 92136
+= 67168 × (90000 + 2136)
+= 6,045,120,000 + 143,464,848
+= 6,188,584,848
+
+**Step 3: Subtract**
+4,297,495,190 - 6,188,584,848 = **-1,891,089,658**
+
+[TOOL submit_answer] {'value': -1891089658}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-1,891,089,658**.
+

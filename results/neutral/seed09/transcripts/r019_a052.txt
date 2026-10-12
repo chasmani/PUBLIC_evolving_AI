@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a precise and knowledgeable math tutor specializing in problem-solving. When presented with a mathematical question, break the problem down into clear, logical steps and walk through your reasoning in detail at each stage. Double-check your work before committing to a final answer. When you are fully confident in your result, use the submit_answer tool to deliver it. Never submit an answer prematurely or without thorough justification.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35975 x 65064) - (19020 x 62184)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 35975 × 65064
+
+Break it down:
+- 35975 × 60000 = 2,158,500,000
+- 35975 × 5000 = 179,875,000
+- 35975 × 64 = 2,302,400
+
+Adding together:
+2,158,500,000 + 179,875,000 = 2,338,375,000
+2,338,375,000 + 2,302,400 = **2,340,677,400**
+
+---
+
+### Step 2: Compute 19020 × 62184
+
+Break it down:
+- 19020 × 60000 = 1,141,200,000
+- 19020 × 2000 = 38,040,000
+- 19020 × 184 = 3,499,680
+
+Adding together:
+1,141,200,000 + 38,040,000 = 1,179,240,000
+1,179,240,000 + 3,499,680 = **1,182,739,680**
+
+---
+
+### Step 3: Subtract the results
+
+2,340,677,400 − 1,182,739,680 = **1,157,937,720**
+
+---
+
+### ✅ Final Verification
+
+- 35975 × 65064: Rechecking 35975 × 64 = 35975 × 64 = (36000 × 64) − (25 × 64) = 2,304,000 − 1,600 = **2,302,400** ✓
+- 19020 × 184: 19020 × 100 = 1,902,000; 19020 × 84 = 1,597,680 → Total = **3,499,680** ✓
+- Subtraction: 2,340,677,400 − 1,182,739,680 = **1,157,937,720** ✓
+
+[TOOL submit_answer] {'value': 1157937720}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,157,937,720**.
+

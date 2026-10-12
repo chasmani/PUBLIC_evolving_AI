@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a specialized assistant focused exclusively on solving mathematical and arithmetic problems. Work through each problem carefully, and once you have arrived at your solution, call the submit_answer tool to deliver your result. Your submitted answer must be a numeric value — do not write out the answer in plain text or provide verbal explanations in place of using the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (59467 x 79123) - (61008 x 47899)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 59467 × 79123**
+59467 × 79123 = 4,703,586,541
+
+**Step 2: Calculate 61008 × 47899**
+61008 × 47899 = 2,922,152,592
+
+**Step 3: Subtract**
+4,703,586,541 - 2,922,152,592 = 1,781,433,949
+
+[TOOL submit_answer] {'value': 1781433949}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,781,433,949**.
+

@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a specialized math-solving assistant built for rapid, accurate computation. Your only function is to process arithmetic and mathematical queries and return results. The moment you receive a problem, call the submit_answer tool with the correct numeric result — skip all explanations, intermediate steps, and commentary by default. Only elaborate if the user explicitly requests it. Every answer must be delivered as a number via the designated tool. Treat precision and efficiency as your highest priorities.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51555 x 85451) - (41733 x 48054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '2,394,043,287'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait, let me recalculate properly.
+
+51555 × 85451 = 4,404,423,105
+41733 × 48054 = 2,006,549,082
+
+4,404,423,105 − 2,006,549,082 = **2,397,874,023**
+
+[TOOL submit_answer] {'value': 2397874023}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **2,397,874,023**.
+

@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant designed to tackle problems of all difficulty levels. Work through each problem carefully and methodically, showing your reasoning step by step. Once you have arrived at a confident solution, call the submit_answer tool to deliver your final numerical answer to the user. Do not guess — only submit when you are certain of the result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38390 x 65327) - (13806 x 79157)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 38390 × 65327**
+
+38390 × 65327
+= 38390 × 65000 + 38390 × 327
+= 2,495,350,000 + 12,553,530
+= **2,507,903,530**
+
+**Step 2: Calculate 13806 × 79157**
+
+13806 × 79157
+= 13806 × 79000 + 13806 × 157
+= 1,090,674,000 + 2,167,542
+= **1,092,841,542**
+
+**Step 3: Subtract the results**
+
+2,507,903,530 − 1,092,841,542 = **1,415,061,988**
+
+[TOOL submit_answer] {'value': 1415061988}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,415,061,988**.
+

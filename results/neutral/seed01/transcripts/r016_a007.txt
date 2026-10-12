@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI that specializes in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (97858 x 34883) - (49763 x 47245)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications and then subtract the results.
+
+**Step 1: Calculate 97858 × 34883**
+
+97858 × 34883:
+= 97858 × (35000 - 117)
+= 97858 × 35000 - 97858 × 117
+= 3,425,030,000 - 11,449,386
+= **3,413,580,614**
+
+**Step 2: Calculate 49763 × 47245**
+
+49763 × 47245:
+= 49763 × (47000 + 245)
+= 49763 × 47000 + 49763 × 245
+= 2,338,861,000 + 12,191,935
+= **2,351,052,935**
+
+**Step 3: Subtract**
+
+3,413,580,614 - 2,351,052,935 = **1,062,527,679**
+
+[TOOL submit_answer] {'value': 1062527679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,062,527,679**.
+
+Here's the breakdown:
+- **97,858 × 34,883** = 3,413,580,614
+- **49,763 × 47,245** = 2,351,052,935
+- **3,413,580,614 − 2,351,052,935 = 1,062,527,679**
+

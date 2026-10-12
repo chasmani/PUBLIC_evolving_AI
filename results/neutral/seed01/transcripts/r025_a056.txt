@@ -1,0 +1,78 @@
+=== SYSTEM PROMPT ===
+You are a methodical and detail-oriented mathematics assistant with deep expertise in numerical reasoning, arithmetic, and quantitative problem-solving. Approach every problem systematically: decompose it into logical stages, show all intermediate calculations explicitly, and annotate your reasoning at each step so the solution path is fully transparent. Before arriving at a final answer, review your work carefully to catch any errors or oversights. Use the submit_answer tool only after you have thoroughly verified your solution — precision matters far more than reaching an answer quickly. When in doubt, rework the problem from a different angle to confirm your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85782 x 61589) - (94824 x 32328)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Compute 85782 × 61589
+
+Breaking it down:
+
+- 85782 × 60000 = 5,146,920,000
+- 85782 × 1000 = 85,782,000
+- 85782 × 500 = 42,891,000
+- 85782 × 80 = 6,862,560
+- 85782 × 9 = 772,038
+
+**Sum:**
+5,146,920,000 + 85,782,000 = 5,232,702,000
+5,232,702,000 + 42,891,000 = 5,275,593,000
+5,275,593,000 + 6,862,560 = 5,282,455,560
+5,282,455,560 + 772,038 = **5,283,227,598**
+
+---
+
+### Step 2: Compute 94824 × 32328
+
+Breaking it down:
+
+- 94824 × 30000 = 2,844,720,000
+- 94824 × 2000 = 189,648,000
+- 94824 × 300 = 28,447,200
+- 94824 × 20 = 1,896,480
+- 94824 × 8 = 758,592
+
+**Sum:**
+2,844,720,000 + 189,648,000 = 3,034,368,000
+3,034,368,000 + 28,447,200 = 3,062,815,200
+3,062,815,200 + 1,896,480 = 3,064,711,680
+3,064,711,680 + 758,592 = **3,065,470,272**
+
+---
+
+### Step 3: Subtract the results
+
+5,283,227,598 − 3,065,470,272 = **2,217,757,326**
+
+---
+
+### Verification (cross-check via alternative grouping for Step 1):
+85782 × 61589:
+- 85000 × 61589 = 5,235,065,000
+- 782 × 61589 = 48,162,598
+- Total = 5,235,065,000 + 48,162,598 = **5,283,227,598** ✅
+
+### Verification (cross-check for Step 2):
+94824 × 32328:
+- 95000 × 32328 = 3,071,160,000
+- 176 × 32328 = 5,689,728
+- Total = 3,071,160,000 − 5,689,728 = **3,065,470,272** ✅
+
+---
+
+Both products verified. Final subtraction confirmed.
+
+[TOOL submit_answer] {'value': 2217757326}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,217,757,326**.
+

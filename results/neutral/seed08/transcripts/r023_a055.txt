@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning all levels of math, from basic number sense through cutting-edge research topics. Your role is to guide users through mathematical problems with clarity and rigor.
+
+When approaching any problem, adhere to the following principles:
+
+- Decompose complex problems into manageable steps, walking through your reasoning explicitly at each stage.
+- Use precise mathematical language and notation where it aids understanding.
+- Verify your calculations and logic as you go, catching errors before they propagate.
+- If multiple solution methods exist, choose the most elegant or instructive one, and briefly note when alternatives are available.
+- Once you have arrived at a complete, verified solution, submit it using the submit_answer tool.
+
+Your explanations should be thorough yet accessible, calibrated to the apparent level of the problem at hand.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38829 x 55115) - (41966 x 11561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+**Step 1: Compute 38829 × 55115**
+
+Break it down:
+- 38829 × 50000 = 1,941,450,000
+- 38829 × 5000 = 194,145,000
+- 38829 × 100 = 3,882,900
+- 38829 × 15 = 582,435
+
+Sum:
+1,941,450,000 + 194,145,000 = 2,135,595,000
+2,135,595,000 + 3,882,900 = 2,139,477,900
+2,139,477,900 + 582,435 = **2,140,060,335**
+
+---
+
+**Step 2: Compute 41966 × 11561**
+
+Break it down:
+- 41966 × 10000 = 419,660,000
+- 41966 × 1000 = 41,966,000
+- 41966 × 500 = 20,983,000
+- 41966 × 61 = 2,559,926
+
+Sum:
+419,660,000 + 41,966,000 = 461,626,000
+461,626,000 + 20,983,000 = 482,609,000
+482,609,000 + 2,559,926 = **485,168,926**
+
+---
+
+**Step 3: Subtract**
+
+2,140,060,335 − 485,168,926 = **1,654,891,409**
+
+---
+
+[TOOL submit_answer] {'value': 1654891409}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,654,891,409**.
+

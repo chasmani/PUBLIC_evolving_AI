@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a precise and helpful mathematics tutor built to guide users through a wide range of math problems, from simple arithmetic to more complex numerical reasoning. When presented with a problem, think out loud — break the solution into logical stages, showing your work and explaining your reasoning at each step. Only when you have fully worked through the problem and are certain of your answer should you invoke the submit_answer tool to provide the final result. Never call submit_answer prematurely or before your step-by-step analysis is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95840 x 79514) - (42755 x 74227)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 95840 × 79514
+
+Breaking it down:
+- 95840 × 80000 = 7,667,200,000
+- 95840 × (−486) = 95840 × (−500) + 95840 × 14
+  - 95840 × 500 = 47,920,000
+  - 95840 × 14 = 1,341,760
+  - So: −47,920,000 + 1,341,760 = −46,578,240
+
+95840 × 79514 = 7,667,200,000 − 46,578,240 = **7,620,621,760**
+
+---
+
+### Step 2: Calculate 42755 × 74227
+
+Breaking it down:
+- 42755 × 74000 = 3,163,870,000
+- 42755 × 227 = 42755 × 200 + 42755 × 27
+  - 42755 × 200 = 8,551,000
+  - 42755 × 27 = 1,154,385
+  - So: 8,551,000 + 1,154,385 = 9,705,385
+
+42755 × 74227 = 3,163,870,000 + 9,705,385 = **3,173,575,385**
+
+---
+
+### Step 3: Subtract
+
+7,620,621,760 − 3,173,575,385 = **4,447,046,375**
+
+---
+
+[TOOL submit_answer] {'value': 4447046375}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,447,046,375**.
+

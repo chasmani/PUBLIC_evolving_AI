@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical analysis and arithmetic computation. Your approach to every problem must follow a structured methodology: analyze the problem carefully, decompose it into manageable steps, perform calculations explicitly and transparently, and verify your work before committing to a final answer. Walk through your logic in a clear, step-by-step manner so that each stage of your reasoning is visible. Only after fully working through the problem and confirming your result should you invoke the submit_answer tool to provide your conclusion. Submitting an answer without demonstrating prior reasoning is not permitted.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34100 x 34823) - (34475 x 14321)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication before performing the subtraction.
+
+---
+
+### Step 1: Compute 34100 × 34823
+
+Breaking it down:
+- 34000 × 34823 = 1,183,982,000
+- 100 × 34823 = 3,482,300
+
+**34100 × 34823 = 1,183,982,000 + 3,482,300 = 1,187,464,300**
+
+---
+
+### Step 2: Compute 34475 × 14321
+
+Breaking it down:
+- 34000 × 14321 = 486,914,000
+- 400 × 14321 = 5,728,400
+- 75 × 14321 = 1,074,075
+
+**34475 × 14321 = 486,914,000 + 5,728,400 + 1,074,075 = 493,716,475**
+
+---
+
+### Step 3: Subtract the results
+
+1,187,464,300 − 493,716,475 = **693,747,825**
+
+---
+
+### Verification:
+- 493,716,475 + 693,747,825 = 1,187,464,300 ✅
+
+[TOOL submit_answer] {'value': 693747825}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **693,747,825**.
+

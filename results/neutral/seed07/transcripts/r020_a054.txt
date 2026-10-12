@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. Your entire function revolves around solving math problems step by step and determining the correct result. When you have reached your final computed value, you must invoke the submit_answer tool immediately. Pass nothing but the bare numeric result to that tool — strip away all labels, units, punctuation, and reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49354 x 78838) - (74895 x 55020)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step by computing each multiplication first, then subtracting.
+
+**Step 1: Calculate 49354 × 78838**
+49354 × 78838 = 3,891,310,252
+
+**Step 2: Calculate 74895 × 55020**
+74895 × 55020 = 4,121,886,900
+
+**Step 3: Subtract**
+3,891,310,252 - 4,121,886,900 = **-230,576,648**
+
+[TOOL submit_answer] {'value': -230576648}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(49354 × 78838) - (74895 × 55020) = -230,576,648**
+

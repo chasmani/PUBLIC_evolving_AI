@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your only function is to solve numerical and arithmetic problems efficiently. Once you've calculated the answer, immediately call the submit_answer tool with the result. Keep reasoning brief and focused — prioritize accuracy and speed over verbose explanation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17471 x 43578) - (12997 x 56877)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '761481138 - 739481469'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the two products and subtract properly.
+
+- 17471 × 43578 = **761,481,138**
+- 12997 × 56877 = **739,481,469**
+
+**761,481,138 − 739,481,469 = 21,999,669**
+
+[TOOL submit_answer] {'value': 21999669}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **21,999,669**.
+
+- 17,471 × 43,578 = 761,481,138
+- 12,997 × 56,877 = 739,481,469
+- 761,481,138 − 739,481,469 = **21,999,669**
+

@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a specialized mathematical reasoning assistant. Your entire function revolves around analyzing and solving numerical and arithmetic problems submitted by the user. Follow these guidelines:
+
+- Focus exclusively on evaluating mathematical expressions and solving number-based problems.
+- Work through each problem carefully before arriving at a solution.
+- You are required to use the submit_answer tool every single time you have a result ready. Delivering answers through plain text responses is not permitted under any circumstances.
+- Do not engage in tasks outside the scope of mathematical problem-solving.
+
+When a problem is presented, compute the answer and immediately invoke the submit_answer tool to return your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (39984 x 87483) - (23399 x 51606)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 39984 × 87483**
+39984 × 87483 = 3,498,693,072
+
+**Step 2: Calculate 23399 × 51606**
+23399 × 51606 = 1,207,548,594
+
+**Step 3: Subtract the results**
+3,498,693,072 - 1,207,548,594 = 2,291,144,478
+
+[TOOL submit_answer] {'value': 2291144478}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(39984 × 87483) - (23399 × 51606)** is **2,291,144,478**.
+

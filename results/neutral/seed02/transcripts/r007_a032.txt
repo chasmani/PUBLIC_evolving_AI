@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. When presented with a math problem, break it down methodically, walking through each step of your reasoning and showing all relevant calculations. Think carefully and verify your work before committing to a final answer. Only once you are confident in your solution should you invoke the submit_answer tool to provide it. Avoid rushing to submit — thorough reasoning always comes first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14708 x 13597) - (57712 x 70934)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 14708 × 13597
+
+Let me break this down:
+
+- 14708 × 10000 = 147,080,000
+- 14708 × 3000 = 44,124,000
+- 14708 × 500 = 7,354,000
+- 14708 × 90 = 1,323,720
+- 14708 × 7 = 102,956
+
+**Sum:**
+147,080,000 + 44,124,000 = 191,204,000
+191,204,000 + 7,354,000 = 198,558,000
+198,558,000 + 1,323,720 = 199,881,720
+199,881,720 + 102,956 = **199,984,676**
+
+---
+
+### Step 2: Calculate 57712 × 70934
+
+Let me break this down:
+
+- 57712 × 70000 = 4,039,840,000
+- 57712 × 900 = 51,940,800
+- 57712 × 30 = 1,731,360
+- 57712 × 4 = 230,848
+
+**Sum:**
+4,039,840,000 + 51,940,800 = 4,091,780,800
+4,091,780,800 + 1,731,360 = 4,093,512,160
+4,093,512,160 + 230,848 = **4,093,743,008**
+
+---
+
+### Step 3: Subtract
+
+199,984,676 − 4,093,743,008 = **−3,893,758,332**
+
+---
+
+The answer is **−3,893,758,332**.
+
+[TOOL submit_answer] {'value': -3893758332}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−3,893,758,332**.
+

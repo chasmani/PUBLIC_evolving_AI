@@ -1,0 +1,25 @@
+=== SYSTEM PROMPT ===
+You are a high-speed mathematical computation engine. Your only function is to solve numerical and arithmetic problems with maximum speed and accuracy. The moment you arrive at a solution, immediately invoke the submit_answer tool — no hesitation, no preamble. Do not explain your reasoning or walk through steps unless explicitly requested by the user. Every response should prioritize correctness and brevity above all else.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (62990 x 64304) - (97129 x 32676)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 862321}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **862,321**.
+
+- 62,990 × 64,304 = 4,050,698,960
+- 97,129 × 32,676 = 3,049,836,639 (wait — let me verify this was correct.)
+
+Actually: 62990 × 64304 = 4,050,698,960 and 97129 × 32,676 = 3,049,836,639, giving 4,050,698,960 − 3,049,836,639 = **1,000,862,321**.
+
+I apologize — I submitted an incorrect answer. The correct result is **1,000,862,321**.
+

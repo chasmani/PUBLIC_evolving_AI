@@ -1,0 +1,31 @@
+\begin{table}[t]
+  \caption{The 12 significance tests reported in the paper. Every test uses the ten runs of each condition, with one value per run. Within-condition tests compare round 1 with round 25 (Wilcoxon signed-rank); between-condition tests compare the final round (Mann--Whitney $U$, two-sided). $p$-values are adjusted across the whole family using the Holm--Bonferroni step-down procedure.}
+  \label{tab:stats}
+  \centering
+  \small
+  \begin{tabular}{l c r r r}
+    \toprule
+    Comparison & Values & Statistic & $p$ & $p_{\text{Holm}}$ \\
+    \midrule
+    \multicolumn{5}{l}{\emph{Accuracy, round 1 vs.\ round 25}} \\
+    \quad Accuracy condition & $0.37$ $\rightarrow$ $0.94$ & $W=0$ & $0.002$ & $0.016$ \\
+    \quad Token condition & $0.37$ $\rightarrow$ $0.10$ & $W=0$ & $0.004$ & $0.020$ \\
+    \quad Neutral condition & $0.38$ $\rightarrow$ $0.67$ & $W=5$ & $0.039$ & $0.117$ \\
+    \midrule
+    \multicolumn{5}{l}{\emph{Token use, round 1 vs.\ round 25}} \\
+    \quad Accuracy condition & $312$ $\rightarrow$ $443$ & $W=0$ & $0.002$ & $0.016$ \\
+    \quad Token condition & $309$ $\rightarrow$ $160$ & $W=0$ & $0.002$ & $0.016$ \\
+    \quad Neutral condition & $310$ $\rightarrow$ $383$ & $W=9$ & $0.064$ & $0.129$ \\
+    \midrule
+    \multicolumn{5}{l}{\emph{Final-round accuracy, between conditions}} \\
+    \quad Accuracy vs.\ Token & $0.94$ vs. $0.10$ & $U=100$ & $<0.001$ & $0.002$ \\
+    \quad Accuracy vs.\ Neutral & $0.94$ vs. $0.67$ & $U=84$ & $0.010$ & $0.041$ \\
+    \quad Token vs.\ Neutral & $0.10$ vs. $0.67$ & $U=4$ & $<0.001$ & $0.005$ \\
+    \midrule
+    \multicolumn{5}{l}{\emph{Final-round token use, between conditions}} \\
+    \quad Accuracy vs.\ Token & $443$ vs. $160$ & $U=100$ & $<0.001$ & $0.002$ \\
+    \quad Accuracy vs.\ Neutral & $443$ vs. $383$ & $U=67$ & $0.212$ & $0.212$ \\
+    \quad Token vs.\ Neutral & $160$ vs. $383$ & $U=0$ & $<0.001$ & $0.002$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}

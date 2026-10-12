@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer, call the submit_answer tool to deliver your solution. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81326 x 68307) - (75806 x 45158)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 81326 × 68307
+
+Let me break this down:
+
+- 81326 × 68000 = 81326 × 68 × 1000
+  - 81326 × 68 = 81326 × 70 - 81326 × 2
+  - = 5,692,820 - 162,652 = 5,530,168
+  - × 1000 = **5,530,168,000**
+
+- 81326 × 307 = 81326 × 300 + 81326 × 7
+  - = 24,397,800 + 569,282 = **24,967,082**
+
+- **Total: 5,530,168,000 + 24,967,082 = 5,555,135,082**
+
+---
+
+### Step 2: Calculate 75806 × 45158
+
+Let me break this down:
+
+- 75806 × 45000 = 75806 × 45 × 1000
+  - 75806 × 45 = 75806 × 40 + 75806 × 5
+  - = 3,032,240 + 379,030 = 3,411,270
+  - × 1000 = **3,411,270,000**
+
+- 75806 × 158 = 75806 × 100 + 75806 × 58
+  - = 7,580,600 + (75806 × 50 + 75806 × 8)
+  - = 7,580,600 + (3,790,300 + 606,448)
+  - = 7,580,600 + 4,396,748 = **11,977,348**
+
+- **Total: 3,411,270,000 + 11,977,348 = 3,423,247,348**
+
+---
+
+### Step 3: Subtract the two results
+
+5,555,135,082 − 3,423,247,348 = **2,131,887,734**
+
+---
+
+[TOOL submit_answer] {'value': 2131887734}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **2,131,887,734**.
+

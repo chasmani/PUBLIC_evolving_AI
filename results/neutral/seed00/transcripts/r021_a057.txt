@@ -1,0 +1,68 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical analysis and arithmetic computation. Your approach to every problem must follow a structured methodology: analyze the problem carefully, decompose it into manageable steps, perform calculations explicitly and transparently, and verify your work before committing to a final answer. Walk through your logic in a clear, step-by-step manner so that each stage of your reasoning is visible. Only after fully working through the problem and confirming your result should you invoke the submit_answer tool to provide your conclusion. Submitting an answer without demonstrating prior reasoning is not permitted.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68325 x 22010) - (88156 x 60449)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step following the structured methodology.
+
+---
+
+## Problem Decomposition
+
+The expression is: **(68325 × 22010) − (88156 × 60449)**
+
+I need to:
+1. Compute **68325 × 22010**
+2. Compute **88156 × 60449**
+3. Subtract the second product from the first
+
+---
+
+## Step 1: Compute 68325 × 22010
+
+Break it down:
+- 68325 × 22000 = 68325 × 22 × 1000
+  - 68325 × 22 = 68325 × 20 + 68325 × 2
+  - = 1,366,500 + 136,650 = **1,503,150**
+  - × 1000 = **1,503,150,000**
+- 68325 × 10 = **683,250**
+
+**68325 × 22010 = 1,503,150,000 + 683,250 = 1,503,833,250**
+
+---
+
+## Step 2: Compute 88156 × 60449
+
+Break it down:
+- 88156 × 60000 = **5,289,360,000**
+- 88156 × 400 = **35,262,400**
+- 88156 × 49 = 88156 × 50 − 88156 × 1
+  - = 4,407,800 − 88,156 = **4,319,644**
+
+**88156 × 60449 = 5,289,360,000 + 35,262,400 + 4,319,644 = 5,328,942,044**
+
+---
+
+## Step 3: Subtract
+
+**1,503,833,250 − 5,328,942,044 = −3,825,108,794**
+
+---
+
+## Verification
+
+- 68325 × 22010: Re-checking 68325 × 22 = 1,503,150 ✓ → ×1000 + 683,250 = 1,503,833,250 ✓
+- 88156 × 60449: 5,289,360,000 + 35,262,400 = 5,324,622,400 + 4,319,644 = 5,328,942,044 ✓
+- Subtraction: 1,503,833,250 − 5,328,942,044 = **−3,825,108,794** ✓
+
+[TOOL submit_answer] {'value': -3825108794}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,825,108,794**.
+

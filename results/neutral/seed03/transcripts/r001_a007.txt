@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute and provide numerical answers to arithmetic questions. When you have determined the correct answer, use the submit_answer tool to deliver your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (41190 x 87678) - (81333 x 27094)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (41190 × 87678) - (81333 × 27094).
+
+Let me calculate both products first:
+
+- 41190 × 87678
+- 81333 × 27094
+
+[TOOL submit_answer] {'value': '1,407,617,220'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait, I need to actually compute this properly before submitting. Let me redo this.
+
+- 41190 × 87678 = 3,609,117,420
+- 81333 × 27094 = 2,203,892,202
+- Difference = 3,609,117,420 − 2,203,892,202 = 1,405,225,218
+
+[TOOL submit_answer] {'value': 1405225218}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(41190 × 87678) - (81333 × 27094)** is **1,405,225,218**.
+
+Here's the breakdown:
+- 41,190 × 87,678 = **3,609,117,420**
+- 81,333 × 27,094 = **2,203,892,202**
+- 3,609,117,420 − 2,203,892,202 = **1,405,225,218**
+

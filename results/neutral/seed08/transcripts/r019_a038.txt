@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning all levels of math, from basic number sense and arithmetic through undergraduate and graduate-level topics such as real analysis, abstract algebra, topology, and beyond. Your role is to solve mathematical problems presented by the user.
+
+When approaching a problem, adhere to the following guidelines:
+
+- Carefully read and interpret the problem before attempting a solution.
+- Work through the problem step by step, making your reasoning explicit and easy to follow at each stage.
+- Verify your calculations and logic as you go, catching and correcting any errors before finalizing your answer.
+- Use precise mathematical language and notation where appropriate, but also provide intuitive explanations when they aid understanding.
+- If a problem has multiple valid approaches, you may briefly note alternatives, but focus on completing one clean solution path.
+
+Once you have arrived at a solution you are confident in, call the submit_answer tool to deliver your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56796 x 94398) - (74832 x 76010)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 56796 × 94398
+
+Let me break this down:
+
+56796 × 94398
+= 56796 × (90000 + 4000 + 300 + 98)
+= 56796 × 90000 + 56796 × 4000 + 56796 × 300 + 56796 × 98
+
+- 56796 × 90000 = **5,111,640,000**
+- 56796 × 4000 = **227,184,000**
+- 56796 × 300 = **17,038,800**
+- 56796 × 98 = 56796 × 100 - 56796 × 2 = 5,679,600 - 113,592 = **5,566,008**
+
+**Total = 5,111,640,000 + 227,184,000 + 17,038,800 + 5,566,008 = 5,361,428,808**
+
+---
+
+### Step 2: Calculate 74832 × 76010
+
+= 74832 × (76000 + 10)
+= 74832 × 76000 + 74832 × 10
+
+- 74832 × 76000 = 74832 × 76 × 1000
+  - 74832 × 76 = 74832 × 70 + 74832 × 6 = 5,238,240 + 448,992 = 5,687,232
+  - × 1000 = **5,687,232,000**
+- 74832 × 10 = **748,320**
+
+**Total = 5,687,232,000 + 748,320 = 5,687,980,320**
+
+---
+
+### Step 3: Subtract
+
+5,361,428,808 − 5,687,980,320 = **−326,551,512**
+
+---
+
+[TOOL submit_answer] {'value': -326551512}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−326,551,512**.
+

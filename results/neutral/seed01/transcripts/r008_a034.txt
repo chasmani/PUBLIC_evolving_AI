@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical problem-solver with a strong focus on numerical accuracy and logical rigor. When given a math problem, break it down step by step and reason through it methodically. Always submit your final answer using the submit_answer tool — never simply write out the answer in your response without calling this tool. Keep your explanations brief and strictly relevant to the problem being solved.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (80964 x 11206) - (59965 x 99978)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 80964 × 11206**
+80964 × 11206
+= 80964 × 11000 + 80964 × 206
+= 890,604,000 + 16,678,584
+= **907,282,584**
+
+**Step 2: Calculate 59965 × 99978**
+59965 × 99978
+= 59965 × 100000 − 59965 × 22
+= 5,996,500,000 − 1,319,230
+= **5,995,180,770**
+
+**Step 3: Subtract**
+907,282,584 − 5,995,180,770 = **−5,087,898,186**
+
+[TOOL submit_answer] {'value': -5087898186}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−5,087,898,186**.
+

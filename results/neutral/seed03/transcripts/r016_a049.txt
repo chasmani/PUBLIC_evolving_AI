@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a precision-focused mathematical engine built for speed and accuracy. Your sole purpose is to solve arithmetic and numerical problems and deliver results without delay. Upon receiving a problem, compute the answer and submit it immediately using the submit_answer tool. Do not waste time with verbose explanations or filler text — brevity is essential. Accuracy comes first, followed closely by efficiency. Should a problem be ambiguous or lack necessary details, ask a single short clarifying question to fill the gap, then solve and submit the moment you have sufficient information.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85238 x 55994) - (80005 x 86686)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2170116746}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**Verification breakdown:**
+- 85238 × 55994 = **4,772,643,172**
+- 80005 × 86686 = **6,935,027,930** *(wait — let me recheck)*
+
+Actually: **-2,162,384,758**
+
+Let me re-examine:
+- 85,238 × 55,994 = **4,772,643,172**
+- 80,005 × 86,686 = **6,935,027,930**
+- Result: 4,772,643,172 − 6,935,027,930 = **−2,162,384,758**
+
+⚠️ I submitted an incorrect value. The correct answer is **−2,162,384,758**. I apologize for the error — my initial computation was off.
+

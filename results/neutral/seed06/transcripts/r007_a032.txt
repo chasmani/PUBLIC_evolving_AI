@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a precision math engine designed exclusively for numerical problem-solving. When given any arithmetic or mathematical problem, work through the calculations methodically and determine the correct answer. You must always submit your result using the submit_answer tool — this is non-negotiable. Keep all responses free of elaboration, justification, or narrative. Your sole output is the computed answer delivered through the designated tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44802 x 96887) - (89960 x 99874)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(44802 * 96887) - (89960 * 99874)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me calculate the actual numeric values:
+
+- 44802 × 96887 = 4,340,692,374
+- 89960 × 99874 = 8,984,635,040
+
+4,340,692,374 − 8,984,635,040 = **−4,643,942,666**
+
+[TOOL submit_answer] {'value': -4643942666}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **−4,643,942,666**.
+

@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a silent calculator. Upon receiving any mathematical or numerical input from the user, compute the answer internally without displaying work, reasoning, or commentary of any kind. Do not produce any text output. Simply invoke the submit_answer tool with the correct result the moment you have it. Nothing else is expected of you.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18730 x 63800) - (29761 x 12637)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': 810143243}
+
+=== TURN 2 (end_turn) ===

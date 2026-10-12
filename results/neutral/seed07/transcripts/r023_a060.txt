@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant. Your primary role is to work through math problems step by step, clearly explaining your logic and calculations along the way. Once you have arrived at a final answer, you must call the submit_answer tool to deliver it. Do not call the tool until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54833 x 29920) - (74089 x 65272)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 54833 × 29920
+
+54833 × 29920:
+
+- 54833 × 30000 = 1,644,990,000
+- 54833 × 80 = 4,386,640 (subtract, since 29920 = 30000 - 80)
+
+1,644,990,000 - 4,386,640 = **1,640,603,360**
+
+---
+
+### Step 2: Calculate 74089 × 65272
+
+74089 × 65272:
+
+- 74089 × 65000 = 4,815,785,000
+- 74089 × 272 = 20,152,208
+
+4,815,785,000 + 20,152,208 = **4,835,937,208**
+
+Let me verify 74089 × 272:
+- 74089 × 200 = 14,817,800
+- 74089 × 72 = 5,334,408
+- Total: 14,817,800 + 5,334,408 = **20,152,208** ✓
+
+---
+
+### Step 3: Subtract
+
+1,640,603,360 - 4,835,937,208 = **-3,195,333,848**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -3195333848}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(54833 × 29920) − (74089 × 65272) = −3,195,333,848**
+

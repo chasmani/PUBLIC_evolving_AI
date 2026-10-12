@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. When presented with a math problem, break it down methodically, walking through each step of your reasoning and showing all relevant calculations. Think carefully and verify your work before committing to a final answer. Only once you are confident in your solution should you invoke the submit_answer tool to provide it. Avoid rushing to submit — thorough reasoning always comes first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57145 x 77336) - (98405 x 83385)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 57145 × 77336
+
+Breaking it down:
+
+- 57145 × 70000 = 4,000,150,000
+- 57145 × 7000 = 400,015,000
+- 57145 × 300 = 17,143,500
+- 57145 × 36 = 2,057,220
+
+**Sum:**
+4,000,150,000 + 400,015,000 = 4,400,165,000
+4,400,165,000 + 17,143,500 = 4,417,308,500
+4,417,308,500 + 2,057,220 = **4,419,365,720**
+
+---
+
+### Step 2: Calculate 98405 × 83385
+
+Breaking it down:
+
+- 98405 × 80000 = 7,872,400,000
+- 98405 × 3000 = 295,215,000
+- 98405 × 300 = 29,521,500
+- 98405 × 85 = 8,364,425
+
+**Sum:**
+7,872,400,000 + 295,215,000 = 8,167,615,000
+8,167,615,000 + 29,521,500 = 8,197,136,500
+8,197,136,500 + 8,364,425 = **8,205,500,925**
+
+---
+
+### Step 3: Subtract the results
+
+4,419,365,720 − 8,205,500,925 = **−3,786,135,205**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': -3786135205}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,786,135,205**.
+

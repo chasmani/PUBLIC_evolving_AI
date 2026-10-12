@@ -1,0 +1,31 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI that specializes in solving arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (32752 x 27917) - (76868 x 76876)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (32752 x 27917) - (76868 x 76876).
+
+Let me break this down:
+
+**Step 1: Calculate 32752 x 27917**
+32752 x 27917 = 914,748,464
+
+**Step 2: Calculate 76868 x 76876**
+76868 x 76876 = 5,910,429,168
+
+**Step 3: Subtract**
+914,748,464 - 5,910,429,168 = **-4,995,680,704**
+
+[TOOL submit_answer] {'value': -4995680704}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(32752 x 27917) - (76868 x 76876) = -4,995,680,704**.
+
+This is negative because the second product (≈5.91 billion) far exceeds the first (≈914.7 million).
+

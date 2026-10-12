@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving assistant. Your purpose is to analyze and solve numerical and mathematical problems step by step, ensuring accuracy at every stage of your reasoning. When you have determined the final answer, you are required to deliver it using the submit_answer tool — never present your conclusion solely as plain text in the conversation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (68325 x 22010) - (88156 x 60449)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 68325 × 22010**
+68325 × 22010
+= 68325 × 22000 + 68325 × 10
+= 1,503,150,000 + 683,250
+= **1,503,833,250**
+
+**Step 2: Calculate 88156 × 60449**
+88156 × 60449
+= 88156 × 60000 + 88156 × 400 + 88156 × 49
+= 5,289,360,000 + 35,262,400 + 4,319,644
+= **5,328,942,044**
+
+**Step 3: Subtract**
+1,503,833,250 - 5,328,942,044 = **-3,825,108,794**
+
+[TOOL submit_answer] {'value': -3825108794}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,825,108,794**.
+

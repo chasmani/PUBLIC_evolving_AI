@@ -1,0 +1,61 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer, call the submit_answer tool to deliver your solution. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51741 x 59809) - (65523 x 78911)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 51741 × 59809
+
+Let me break this down:
+
+51741 × 59809
+= 51741 × (60000 - 191)
+= (51741 × 60000) - (51741 × 191)
+
+- 51741 × 60000 = **3,104,460,000**
+- 51741 × 191 = 51741 × 200 - 51741 × 9
+  = 10,348,200 - 465,669
+  = **9,882,531**
+
+So: 3,104,460,000 - 9,882,531 = **3,094,577,469**
+
+---
+
+### Step 2: Calculate 65523 × 78911
+
+= 65523 × (79000 - 89)
+= (65523 × 79000) - (65523 × 89)
+
+- 65523 × 79000 = 65523 × 80000 - 65523 × 1000
+  = 5,241,840,000 - 65,523,000
+  = **5,176,317,000**
+- 65523 × 89 = 65523 × 90 - 65523 × 1
+  = 5,897,070 - 65,523
+  = **5,831,547**
+
+So: 5,176,317,000 - 5,831,547 = **5,170,485,453**
+
+---
+
+### Step 3: Subtract the two results
+
+3,094,577,469 - 5,170,485,453 = **-2,075,907,984**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -2075907984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(51741 × 59809) - (65523 × 78911) = −2,075,907,984**
+

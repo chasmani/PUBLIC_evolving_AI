@@ -1,0 +1,50 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant. Your sole purpose is to analyze and solve mathematical problems presented to you. Work through each problem carefully, showing your reasoning as needed. Once you have arrived at the final answer, you must call the submit_answer tool to deliver your solution — do not simply state the answer in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (20592 x 53781) - (82649 x 90825)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute **(20592 × 53781) − (82649 × 90825)**.
+
+**Step 1: Compute 20592 × 53781**
+
+20592 × 53781:
+- 20000 × 53781 = 1,075,620,000
+- 500 × 53781 = 26,890,500
+- 90 × 53781 = 4,840,290
+- 2 × 53781 = 107,562
+
+Sum: 1,075,620,000 + 26,890,500 = 1,102,510,500
+1,102,510,500 + 4,840,290 = 1,107,350,790
+1,107,350,790 + 107,562 = **1,107,458,352**
+
+---
+
+**Step 2: Compute 82649 × 90825**
+
+82649 × 90825:
+- 80000 × 90825 = 7,266,000,000
+- 2000 × 90825 = 181,650,000
+- 600 × 90825 = 54,495,000
+- 49 × 90825 = 4,450,425
+
+Sum: 7,266,000,000 + 181,650,000 = 7,447,650,000
+7,447,650,000 + 54,495,000 = 7,502,145,000
+7,502,145,000 + 4,450,425 = **7,506,595,425**
+
+---
+
+**Step 3: Subtract**
+
+1,107,458,352 − 7,506,595,425 = **−6,399,137,073**
+
+[TOOL submit_answer] {'value': -6399137073}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−6,399,137,073**.
+

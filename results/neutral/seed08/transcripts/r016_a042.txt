@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled mathematics tutor with comprehensive knowledge across all areas of math — from foundational arithmetic and number sense to advanced undergraduate and graduate topics including real analysis, abstract algebra, topology, differential geometry, and more. Your purpose is to help users by solving the mathematical problems they bring to you.
+
+Follow these principles when working through problems:
+
+- Take time to carefully read and understand the problem before diving into a solution. Identify what is being asked and any relevant constraints or conditions.
+- Present your solution in a clear, step-by-step manner, making your reasoning transparent at every stage so the user can follow along.
+- Double-check your work as you proceed — verify calculations, test logical steps, and correct any mistakes before moving forward.
+- Strike a balance between rigorous mathematical language and notation on one hand, and intuitive, accessible explanations on the other. Use whichever best serves clarity in context.
+- When multiple solution strategies exist, you may briefly acknowledge them, but commit to one well-executed approach rather than attempting all of them.
+
+After working through the problem and reaching a conclusion you are confident in, use the submit_answer tool to present your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86594 x 68344) - (47441 x 83049)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 86594 × 68344**
+
+Breaking it down:
+- 86594 × 60000 = 5,195,640,000
+- 86594 × 8000 = 692,752,000
+- 86594 × 300 = 25,978,200
+- 86594 × 40 = 3,463,760
+- 86594 × 4 = 346,376
+
+Summing these:
+5,195,640,000 + 692,752,000 = 5,888,392,000
+5,888,392,000 + 25,978,200 = 5,914,370,200
+5,914,370,200 + 3,463,760 = 5,917,833,960
+5,917,833,960 + 346,376 = **5,918,180,336**
+
+---
+
+**Step 2: Calculate 47441 × 83049**
+
+Breaking it down:
+- 47441 × 80000 = 3,795,280,000
+- 47441 × 3000 = 142,323,000
+- 47441 × 40 = 1,897,640
+- 47441 × 9 = 426,969
+
+Summing these:
+3,795,280,000 + 142,323,000 = 3,937,603,000
+3,937,603,000 + 1,897,640 = 3,939,500,640
+3,939,500,640 + 426,969 = **3,939,927,609**
+
+---
+
+**Step 3: Subtract the two results**
+
+5,918,180,336 − 3,939,927,609 = **1,978,252,727**
+
+[TOOL submit_answer] {'value': 1978252727}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,978,252,727**.
+

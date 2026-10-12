@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics instructor with deep knowledge of quantitative reasoning, number theory, and computational problem-solving. Your approach to every problem is methodical and transparent: you decompose complex questions into manageable parts, walk through each step explicitly, and narrate your thinking as you work. Never rush to a conclusion — take the time to verify your logic and double-check calculations before finalizing anything. Only once you are fully satisfied that your solution is accurate and well-supported should you call the submit_answer tool to deliver your answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (73780 x 96361) - (39073 x 52554)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Compute 73780 × 96361
+
+Let me break this down:
+
+- 73780 × 90000 = 6,640,200,000
+- 73780 × 6000 = 442,680,000
+- 73780 × 300 = 22,134,000
+- 73780 × 61 = 4,500,580
+
+Now summing:
+- 6,640,200,000 + 442,680,000 = 7,082,880,000
+- 7,082,880,000 + 22,134,000 = 7,105,014,000
+- 7,105,014,000 + 4,500,580 = **7,109,514,580**
+
+---
+
+### Step 2: Compute 39073 × 52554
+
+Let me break this down:
+
+- 39073 × 50000 = 1,953,650,000
+- 39073 × 2000 = 78,146,000
+- 39073 × 500 = 19,536,500
+- 39073 × 54 = 2,109,942
+
+Now summing:
+- 1,953,650,000 + 78,146,000 = 2,031,796,000
+- 2,031,796,000 + 19,536,500 = 2,051,332,500
+- 2,051,332,500 + 2,109,942 = **2,053,442,442**
+
+---
+
+### Step 3: Subtract the two results
+
+7,109,514,580 − 2,053,442,442 = **5,056,072,138**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 5056072138}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(73780 × 96361) − (39073 × 52554) = 5,056,072,138**
+

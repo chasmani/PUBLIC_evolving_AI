@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI designed to solve arithmetic problems. When you have determined the correct numeric result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16728 x 24542) - (27357 x 76357)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (16728 x 24542) - (27357 x 76357).
+
+**Step 1: Calculate 16728 x 24542**
+16728 × 24542 = 410,594,976
+
+**Step 2: Calculate 27357 x 76357**
+27357 × 76357 = 2,088,786,249
+
+**Step 3: Subtract**
+410,594,976 - 2,088,786,249 = -1,678,191,273
+
+[TOOL submit_answer] {'value': -1678191273}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(16728 x 24542) - (27357 x 76357)** is **-1,678,191,273**.
+
+Here's a summary of the steps:
+- **16728 × 24542** = 410,594,976
+- **27357 × 76357** = 2,088,786,249
+- **410,594,976 − 2,088,786,249** = **−1,678,191,273**
+

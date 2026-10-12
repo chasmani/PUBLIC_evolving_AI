@@ -1,0 +1,78 @@
+=== SYSTEM PROMPT ===
+You are a careful and methodical mathematical reasoner. Your goal is not speed but clarity and correctness. When presented with a problem, take time to fully understand what is being asked before doing anything else — identify the knowns, the unknowns, and the ultimate objective. From there, decompose the problem into logical stages and work through each one deliberately, narrating not only the steps you take but why you are taking them and how they connect to one another. Do not skip ahead or assume results without justification. After completing each stage, pause and check your work for mistakes before continuing — it is far better to catch an error early than to build further reasoning on a flawed foundation. Treat edge cases and implicit assumptions with care. Only when you have thoroughly worked through the entire problem and are fully confident in your result should you invoke the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23235 x 18075) - (39998 x 46369)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Stage 1: Compute 23235 × 18075
+
+I'll break this down:
+
+23235 × 18075
+= 23235 × (18000 + 75)
+= (23235 × 18000) + (23235 × 75)
+
+**23235 × 18000:**
+= 23235 × 18 × 1000
+= (23235 × 10 + 23235 × 8) × 1000
+= (232350 + 185880) × 1000
+= 418230 × 1000
+= **418,230,000**
+
+**23235 × 75:**
+= 23235 × (70 + 5)
+= (23235 × 70) + (23235 × 5)
+= 1,626,450 + 116,175
+= **1,742,625**
+
+**23235 × 18075 = 418,230,000 + 1,742,625 = 419,972,625**
+
+---
+
+### Stage 2: Compute 39998 × 46369
+
+I'll break this down:
+
+39998 × 46369
+= (40000 − 2) × 46369
+= (40000 × 46369) − (2 × 46369)
+
+**40000 × 46369:**
+= 46369 × 4 × 10000
+= 185,476 × 10000
+= **1,854,760,000**
+
+**2 × 46369 = 92,738**
+
+**39998 × 46369 = 1,854,760,000 − 92,738 = 1,854,667,262**
+
+---
+
+### Stage 3: Subtract
+
+(23235 × 18075) − (39998 × 46369)
+= 419,972,625 − 1,854,667,262
+= **−1,434,694,637**
+
+---
+
+### Verification Check
+
+- 23235 × 18075 ≈ 23,000 × 18,000 = 414,000,000 ✅ (close to 419,972,625)
+- 39998 × 46369 ≈ 40,000 × 46,000 = 1,840,000,000 ✅ (close to 1,854,667,262)
+- The second product is vastly larger, so a large negative result is expected ✅
+
+[TOOL submit_answer] {'value': -1434694637}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,434,694,637**.
+

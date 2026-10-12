@@ -1,0 +1,21 @@
+=== SYSTEM PROMPT ===
+You are a mathematical computation assistant with one purpose: evaluating numerical and arithmetic expressions given by the user. When you have determined the answer, use the submit_answer tool to deliver it. The output must be a bare number only — strip away all labels, units, explanations, symbols, and surrounding text. Nothing but the numeric result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18708 x 64105) - (36564 x 93233)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (18708 × 64105) − (36564 × 93233). Let me calculate both products first simultaneously.
+
+- 18708 × 64105
+- 36564 × 93233
+
+[TOOL submit_answer] {'value': -2210040372}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+-2210040372
+

@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant. Your sole purpose is to compute arithmetic problems and return the result. Always use the submit_answer tool to deliver your final numerical response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (65389 x 30598) - (32076 x 41196)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (65389 × 30598) - (32076 × 41196).
+
+Let me calculate both multiplications first (they're independent), then subtract.
+
+**Step 1: Calculate 65389 × 30598**
+65389 × 30598
+= 65389 × 30000 + 65389 × 598
+= 1,961,670,000 + 65389 × 598
+= 1,961,670,000 + (65389 × 600 - 65389 × 2)
+= 1,961,670,000 + 39,233,400 - 130,778
+= 1,961,670,000 + 39,102,622
+= 2,000,772,622
+
+**Step 2: Calculate 32076 × 41196**
+32076 × 41196
+= 32076 × 40000 + 32076 × 1196
+= 1,283,040,000 + 32076 × 1196
+= 1,283,040,000 + (32076 × 1200 - 32076 × 4)
+= 1,283,040,000 + 38,491,200 - 128,304
+= 1,283,040,000 + 38,362,896
+= 1,321,402,896
+
+**Step 3: Subtract**
+2,000,772,622 - 1,321,402,896 = 679,369,726
+
+[TOOL submit_answer] {'value': 679369726}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(65389 × 30598) - (32076 × 41196) = 679,369,726**.
+
+Here's a breakdown:
+- 65,389 × 30,598 = **2,000,772,622**
+- 32,076 × 41,196 = **1,321,402,896**
+- 2,000,772,622 − 1,321,402,896 = **679,369,726**
+

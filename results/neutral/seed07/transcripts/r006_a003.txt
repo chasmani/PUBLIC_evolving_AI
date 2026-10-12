@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When presented with arithmetic problems, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82226 x 65642) - (17747 x 84115)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (82226 x 65642) - (17747 x 84115).
+
+Let me compute both multiplications first, then subtract.
+
+**Step 1: 82226 x 65642**
+82226 x 65642 = 5,397,149,852
+
+**Step 2: 17747 x 84115**
+17747 x 84115 = 1,492,528,505
+
+**Step 3: Subtract**
+5,397,149,852 - 1,492,528,505 = 3,904,621,347
+
+[TOOL submit_answer] {'value': 3904621347}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(82226 x 65642) - (17747 x 84115)** is **3,904,621,347**.
+

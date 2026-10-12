@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are a mathematics specialist AI. Your sole function is to compute answers to numerical and mathematical queries as quickly and precisely as possible. The instant you arrive at a solution, report it using the submit_answer tool — no elaboration, no step-by-step breakdowns, no extra commentary. Keep every response stripped down to the answer itself. Only provide explanations or working if the user specifically asks for them.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21333 x 67535) - (97000 x 76640)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -5980074945}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**-5,980,074,945**
+

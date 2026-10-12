@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a mathematics-focused AI. Your sole domain is solving math problems — do not engage with topics outside of mathematics. Approach each problem methodically, showing your reasoning step by step in plain text. When you have reached a definitive numerical answer, pass that number — and nothing else — to the submit_answer function. Reserve this function strictly for final, confirmed results. Never use it for intermediate values, estimates, or non-numerical content.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38829 x 55115) - (41966 x 11561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 38829 × 55115**
+
+38829 × 55115
+= 38829 × 55000 + 38829 × 115
+= 2,135,595,000 + 4,465,335
+= 2,140,060,335
+
+**Step 2: Calculate 41966 × 11561**
+
+41966 × 11561
+= 41966 × 11000 + 41966 × 561
+= 461,626,000 + 23,542,926
+= 485,168,926
+
+**Step 3: Subtract the results**
+
+2,140,060,335 − 485,168,926 = **1,654,891,409**
+
+[TOOL submit_answer] {'value': 1654891409}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(38829 × 55115) − (41966 × 11561)** is **1,654,891,409**.
+

@@ -1,0 +1,88 @@
+=== SYSTEM PROMPT ===
+You are a seasoned mathematics instructor with expertise ranging from basic arithmetic to advanced graduate-level topics. Whenever a mathematical question is posed to you, engage with it methodically and thoughtfully — lay out every step of your reasoning in detail, make your thought process transparent, and provide justification for each logical or computational move. Show all intermediate work rather than skipping to results. Resist the urge to arrive at a conclusion prematurely; invest the necessary effort to explore the problem from multiple angles and verify your reasoning before settling on a final answer. Only invoke the submit_answer tool once your analysis is fully complete and you are entirely certain your solution is correct. Submitting guesses or answers that have not been thoroughly verified is not permitted under any circumstances.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34624 x 58810) - (22770 x 81793)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+## Step 1: Compute 34624 × 58810
+
+I'll break this down using the distributive property:
+
+34624 × 58810
+= 34624 × (58000 + 800 + 10)
+= (34624 × 58000) + (34624 × 800) + (34624 × 10)
+
+**34624 × 58000:**
+34624 × 58 = 34624 × 50 + 34624 × 8
+= 1,731,200 + 276,992
+= 2,008,192
+→ 34624 × 58000 = **2,008,192,000**
+
+**34624 × 800:**
+34624 × 8 = 276,992
+→ 34624 × 800 = **27,699,200**
+
+**34624 × 10 = 346,240**
+
+**Total:**
+2,008,192,000 + 27,699,200 + 346,240
+= 2,008,192,000 + 28,045,440
+= **2,036,237,440**
+
+---
+
+## Step 2: Compute 22770 × 81793
+
+= 22770 × (80000 + 1000 + 700 + 90 + 3)
+= (22770 × 80000) + (22770 × 1000) + (22770 × 700) + (22770 × 90) + (22770 × 3)
+
+**22770 × 80000:**
+22770 × 8 = 182,160
+→ 22770 × 80000 = **1,821,600,000**
+
+**22770 × 1000 = 22,770,000**
+
+**22770 × 700:**
+22770 × 7 = 159,390
+→ 22770 × 700 = **15,939,000**
+
+**22770 × 90:**
+22770 × 9 = 204,930
+→ 22770 × 90 = **2,049,300**
+
+**22770 × 3 = 68,310**
+
+**Total:**
+1,821,600,000 + 22,770,000 + 15,939,000 + 2,049,300 + 68,310
+= 1,821,600,000 + 22,770,000 = 1,844,370,000
+= 1,844,370,000 + 15,939,000 = 1,860,309,000
+= 1,860,309,000 + 2,049,300 = 1,862,358,300
+= 1,862,358,300 + 68,310 = **1,862,426,610**
+
+---
+
+## Step 3: Subtract the two results
+
+2,036,237,440 − 1,862,426,610
+
+= 2,036,237,440 − 1,862,426,610
+= **173,810,830**
+
+---
+
+## Final Answer
+
+[TOOL submit_answer] {'value': 173810830}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(34624 × 58810) − (22770 × 81793) = 173,810,830**
+

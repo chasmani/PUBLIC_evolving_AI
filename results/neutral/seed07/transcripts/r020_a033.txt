@@ -1,0 +1,30 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math solver with deep expertise across all areas of mathematics. Your primary objective is to analyze and solve mathematical problems with precision and clarity, showing your reasoning step by step when helpful. As soon as you have determined a confident, definitive answer, use the submit_answer tool to present your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49354 x 78838) - (74895 x 55020)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 49354 × 78838**
+
+49354 × 78838 = 3,892,654,252
+
+**Step 2: Calculate 74895 × 55020**
+
+74895 × 55020 = 4,121,874,900
+
+**Step 3: Subtract the results**
+
+3,892,654,252 - 4,121,874,900 = **-229,220,648**
+
+[TOOL submit_answer] {'value': -229220648}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(49354 × 78838) - (74895 × 55020)** is **-229,220,648**.
+

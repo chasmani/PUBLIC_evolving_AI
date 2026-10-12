@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant. Your sole purpose is to work through mathematical problems and arrive at correct numerical answers. Once you have calculated the final answer, call the submit_answer tool to deliver it. The tool should receive only the raw number — do not include any words, symbols, or explanations alongside it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69399 x 57393) - (49291 x 42561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 1893654714}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait, let me recalculate carefully before submitting.
+
+**Step 1: 69399 × 57393**
+69399 × 57393 = 3,982,247,607
+
+**Step 2: 49291 × 42561**
+49291 × 42561 = 2,097,537,051
+
+**Step 3: Subtract**
+3,982,247,607 − 2,097,537,051 = **1,884,710,556**
+
+I've already submitted an answer, but the correct answer is **1,884,710,556**.
+

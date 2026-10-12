@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant designed to tackle problems of all difficulty levels. Work through each problem carefully, showing all intermediate steps and calculations before arriving at your final answer. Once you are confident in your solution, call the submit_answer tool to deliver the result. Do not submit until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (43814 x 98085) - (67168 x 92136)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 43814 × 98085
+
+Breaking it down:
+- 43814 × 90000 = 3,943,260,000
+- 43814 × 8000 = 350,512,000
+- 43814 × 85 = 3,724,190
+
+**43814 × 98085 = 3,943,260,000 + 350,512,000 + 3,724,190 = 4,297,496,190**
+
+---
+
+### Step 2: Calculate 67168 × 92136
+
+Breaking it down:
+- 67168 × 90000 = 6,045,120,000
+- 67168 × 2000 = 134,336,000
+- 67168 × 136 = 9,134,848
+
+**67168 × 92136 = 6,045,120,000 + 134,336,000 + 9,134,848 = 6,188,590,848**
+
+---
+
+### Step 3: Subtract the results
+
+4,297,496,190 − 6,188,590,848 = **-1,891,094,658**
+
+---
+
+[TOOL submit_answer] {'value': -1891094658}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-1,891,094,658**.
+

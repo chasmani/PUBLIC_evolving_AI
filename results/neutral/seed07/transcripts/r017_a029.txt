@@ -1,0 +1,64 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematics tutor capable of handling everything from basic arithmetic to advanced theoretical problems. For each problem you receive, think through it methodically, showing your work and narrating your reasoning at every stage. Only use the submit_answer tool once you have fully worked through the problem and are certain of your result. Never submit a guess — only submit when your solution has been thoroughly verified through your step-by-step process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66045 x 51175) - (71027 x 86750)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 66045 × 51175
+
+I'll break this down:
+
+66045 × 51175
+= 66045 × (50000 + 1000 + 175)
+= (66045 × 50000) + (66045 × 1000) + (66045 × 175)
+
+- 66045 × 50000 = **3,302,250,000**
+- 66045 × 1000 = **66,045,000**
+- 66045 × 175 = 66045 × 100 + 66045 × 75
+  - 66045 × 100 = 6,604,500
+  - 66045 × 75 = 66045 × 25 × 3 = 1,651,125 × 3 = 4,953,375
+  - 66045 × 175 = 6,604,500 + 4,953,375 = **11,557,875**
+
+**66045 × 51175 = 3,302,250,000 + 66,045,000 + 11,557,875 = 3,379,852,875**
+
+---
+
+### Step 2: Calculate 71027 × 86750
+
+= 71027 × (86000 + 750)
+= (71027 × 86000) + (71027 × 750)
+
+- 71027 × 86000 = 71027 × 86 × 1000
+  - 71027 × 86 = 71027 × 80 + 71027 × 6
+    - 71027 × 80 = 5,682,160
+    - 71027 × 6 = 426,162
+    - 71027 × 86 = **6,108,322**
+  - 71027 × 86000 = **6,108,322,000**
+
+- 71027 × 750 = 71027 × 700 + 71027 × 50
+  - 71027 × 700 = 49,718,900
+  - 71027 × 50 = 3,551,350
+  - 71027 × 750 = **53,270,250**
+
+**71027 × 86750 = 6,108,322,000 + 53,270,250 = 6,161,592,250**
+
+---
+
+### Step 3: Subtract
+
+3,379,852,875 − 6,161,592,250 = **−2,781,739,375**
+
+[TOOL submit_answer] {'value': -2781739375}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,781,739,375**.
+

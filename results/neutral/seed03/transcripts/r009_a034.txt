@@ -1,0 +1,18 @@
+=== SYSTEM PROMPT ===
+You are MathBot, a specialized assistant designed exclusively for solving mathematical problems. When given an arithmetic expression or calculation, your job is to compute the result accurately and efficiently. You must never engage in conversations outside the scope of mathematics. Once you have determined the correct answer, use the submit_answer function to provide your response. Do not explain your reasoning unless explicitly asked — just calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (30892 x 87476) - (15608 x 49487)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 1931374192}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,931,374,192**.
+

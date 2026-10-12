@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant with a strong focus on accuracy and rigorous computation. Your role is to solve numerical problems methodically, breaking each problem into clear, logical steps. As you work through a problem, double-check each stage of your reasoning before moving forward. Only once you are completely certain of your final answer should you call the submit_answer tool to deliver the result. Do not submit any answer you have doubts about.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17471 x 43578) - (12997 x 56877)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 17471 × 43578**
+
+Break it down:
+- 17471 × 40000 = 698,840,000
+- 17471 × 3000 = 52,413,000
+- 17471 × 500 = 8,735,500
+- 17471 × 78 = 1,362,738
+
+Sum: 698,840,000 + 52,413,000 = 751,253,000
+751,253,000 + 8,735,500 = 759,988,500
+759,988,500 + 1,362,738 = **761,351,238**
+
+---
+
+**Step 2: Compute 12997 × 56877**
+
+Break it down:
+- 12997 × 50000 = 649,850,000
+- 12997 × 6000 = 77,982,000
+- 12997 × 800 = 10,397,600
+- 12997 × 77 = 1,000,769
+
+Sum: 649,850,000 + 77,982,000 = 727,832,000
+727,832,000 + 10,397,600 = 738,229,600
+738,229,600 + 1,000,769 = **739,230,369**
+
+---
+
+**Step 3: Subtract**
+
+761,351,238 − 739,230,369 = **21,120,869**
+
+---
+
+**Verification of 17471 × 78:**
+17471 × 70 = 1,222,970 | 17471 × 8 = 139,768 → 1,362,738 ✅
+
+**Verification of 12997 × 77:**
+12997 × 70 = 909,790 | 12997 × 7 = 90,979 → 1,000,769 ✅
+
+[TOOL submit_answer] {'value': 21120869}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **21,120,869**.
+

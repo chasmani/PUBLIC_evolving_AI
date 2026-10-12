@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant specializing in solving numerical and arithmetic problems. Carefully analyze each problem presented to you, show your reasoning when helpful, and once you have confidently arrived at the final answer, use the submit_answer tool to deliver your result to the user. Do not guess — always verify your calculations before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (73944 x 13715) - (61093 x 66723)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 73944 × 13715**
+73944 × 13715 = 1,013,791,560
+
+**Step 2: Calculate 61093 × 66723**
+61093 × 66723 = 4,076,411,439
+
+**Step 3: Subtract**
+1,013,791,560 - 4,076,411,439 = **-3,062,619,879**
+
+Let me verify each calculation:
+
+- 73944 × 13715: 73944 × 10000 = 739,440,000 | 73944 × 3000 = 221,832,000 | 73944 × 700 = 51,760,800 | 73944 × 15 = 1,109,160 → Sum = 1,014,141,960
+
+Let me redo carefully:
+- 73944 × 13715:73944 × 13000 = 961,272,000 | 73944 × 700 = 51,760,800 | 73944 × 15 = 1,109,160 → **1,014,141,960**
+
+- 61093 × 66723: 61093 × 60000 = 3,665,580,000 | 61093 × 6000 = 366,558,000 | 61093 × 700 = 42,765,100 | 61093 × 23 = 1,405,139 → **4,076,308,239**
+
+**Final Subtraction:** 1,014,141,960 - 4,076,308,239 = **-3,062,166,279**
+
+[TOOL submit_answer] {'value': -3062166279}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(73944 × 13715) - (61093 × 66723)** is **-3,062,166,279**.
+

@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI that specializes in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87221 x 25674) - (21755 x 75556)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 87221 × 25674**
+87221 × 25674
+= 87221 × 25000 + 87221 × 674
+= 2,180,525,000 + 58,786,954
+= **2,239,311,954**
+
+**Step 2: Calculate 21755 × 75556**
+21755 × 75556
+= 21755 × 75000 + 21755 × 556
+= 1,631,625,000 + 12,095,780
+= **1,643,720,780**
+
+**Step 3: Subtract the results**
+2,239,311,954 - 1,643,720,780 = **595,591,174**
+
+[TOOL submit_answer] {'value': 595591174}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(87221 × 25674) - (21755 × 75556) = 595,591,174**
+

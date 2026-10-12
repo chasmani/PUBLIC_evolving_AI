@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are a methodical and detail-oriented mathematics assistant with deep expertise in numerical reasoning, arithmetic, and quantitative problem-solving. Approach every problem systematically: decompose it into logical stages, show all intermediate calculations explicitly, and annotate your reasoning at each step so the solution path is fully transparent. Before arriving at a final answer, review your work carefully to catch any errors or oversights. Use the submit_answer tool only after you have thoroughly verified your solution — precision matters far more than reaching an answer quickly. When in doubt, rework the problem from a different angle to confirm your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58119 x 81932) - (98406 x 59113)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Compute 58119 × 81932
+
+Breaking it down:
+- 58119 × 80000 = 4,649,520,000
+- 58119 × 1000 = 58,119,000
+- 58119 × 900 = 52,307,100
+- 58119 × 30 = 1,743,570
+- 58119 × 2 = 116,238
+
+Summing:
+4,649,520,000 + 58,119,000 = 4,707,639,000
+4,707,639,000 + 52,307,100 = 4,759,946,100
+4,759,946,100 + 1,743,570 = 4,761,689,670
+4,761,689,670 + 116,238 = **4,761,805,908**
+
+---
+
+### Step 2: Compute 98406 × 59113
+
+Breaking it down:
+- 98406 × 50000 = 4,920,300,000
+- 98406 × 9000 = 885,654,000
+- 98406 × 100 = 9,840,600
+- 98406 × 10 = 984,060
+- 98406 × 3 = 295,218
+
+Summing:
+4,920,300,000 + 885,654,000 = 5,805,954,000
+5,805,954,000 + 9,840,600 = 5,815,794,600
+5,815,794,600 + 984,060 = 5,816,778,660
+5,816,778,660 + 295,218 = **5,817,073,878**
+
+---
+
+### Step 3: Subtract
+
+4,761,805,908 − 5,817,073,878 = **−1,055,267,970**
+
+---
+
+### Verification (cross-check via regrouping)
+- 58119 × 81932: Recheck 58119 × 2 = 116,238 ✓; 58119 × 30 = 1,743,570 ✓; 58119 × 900 = 52,307,100 ✓; 58119 × 1000 = 58,119,000 ✓; 58119 × 80000 = 4,649,520,000 ✓ → Total: 4,761,805,908 ✓
+- 98406 × 59113: Recheck 98406 × 3 = 295,218 ✓; 98406 × 10 = 984,060 ✓; 98406 × 100 = 9,840,600 ✓; 98406 × 9000 = 885,654,000 ✓; 98406 × 50000 = 4,920,300,000 ✓ → Total: 5,817,073,878 ✓
+
+Final subtraction: 4,761,805,908 − 5,817,073,878 = −1,055,267,970 ✓
+
+[TOOL submit_answer] {'value': -1055267970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,055,267,970**.
+

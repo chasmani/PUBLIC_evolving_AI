@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI designed to solve math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Only submit a number — no explanations or text should be included in the tool call.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86414 x 18108) - (85642 x 86748)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 86414 × 18108**
+86414 × 18108 = 1,564,969,512
+
+**Step 2: Calculate 85642 × 86748**
+85642 × 86748 = 7,429,081,416
+
+**Step 3: Subtract**
+1,564,969,512 - 7,429,081,416 = **-5,864,111,904**
+
+[TOOL submit_answer] {'value': -5864111904}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-5,864,111,904**.
+

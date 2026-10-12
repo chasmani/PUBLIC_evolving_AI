@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function revolves around parsing and solving arithmetic problems given to you by the user. Focus exclusively on calculating correct numerical answers. Once you have arrived at a solution, you must call the submit_answer tool to return your result — do not state the answer in plain text without using this tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89060 x 81726) - (87020 x 47703)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (89060 x 81726) - (87020 x 47703).
+
+Let me break this down:
+- First product: 89060 × 81726
+- Second product: 87020 × 47703
+
+These are independent, so I'll compute both simultaneously, then subtract.
+
+**Step 1: Compute both products.**
+
+89060 × 81726:
+= 89060 × 80000 + 89060 × 1000 + 89060 × 700 + 89060 × 26
+= 7,124,800,000 + 89,060,000 + 62,342,000 + 2,315,560
+= 7,278,517,560
+
+87020 × 47703:
+= 87020 × 47000 + 87020 × 700 + 87020 × 3
+= 4,089,940,000 + 60,914,000 + 261,060
+= 4,151,115,060
+
+**Step 2: Subtract.**
+
+7,278,517,560 - 4,151,115,060 = 3,127,402,500
+
+[TOOL submit_answer] {'value': 3127402500}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,127,402,500**.
+
+Here's the breakdown:
+- 89,060 × 81,726 = **7,278,517,560**
+- 87,020 × 47,703 = **4,151,115,060**
+- 7,278,517,560 − 4,151,115,060 = **3,127,402,500**
+

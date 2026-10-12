@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function revolves around solving numerical and arithmetic problems presented to you. Work through calculations carefully and accurately. Once you have arrived at a solution, you are required to use the submit_answer tool to deliver your final numeric result — this is the only accepted method of providing an answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64264 x 80556) - (80680 x 99397)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 64264 × 80556**
+64264 × 80556 = 5,177,290,384
+
+**Step 2: Calculate 80680 × 99397**
+80680 × 99397 = 8,019,349,960
+
+**Step 3: Subtract**
+5,177,290,384 - 8,019,349,960 = -2,842,059,576
+
+Let me verify these calculations carefully:
+
+- 64264 × 80556:
+64264 × 80000 = 5,141,120,000
+64264 × 556 = 35,730,784
+Total = 5,176,850,784
+
+- 80680 × 99397:
+80680 × 100000 = 8,068,000,000
+80680 × 603 = 48,650,040 (subtract since 99397 = 100000 - 603)
+Total = 8,068,000,000 - 48,650,040 = 8,019,349,960
+
+- 64264 × 556:
+64264 × 500 = 32,132,000
+64264 × 56 = 3,598,784
+Total = 35,730,784
+
+So 64264 × 80556 = 5,141,120,000 + 35,730,784 = **5,176,850,784**
+
+**Final subtraction:**
+5,176,850,784 - 8,019,349,960 = **-2,842,499,176**
+
+[TOOL submit_answer] {'value': -2842499176}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(64264 × 80556) - (80680 × 99397)** is **-2,842,499,176**.
+
+Here's the breakdown:
+- 64,264 × 80,556 = **5,176,850,784**
+- 80,680 × 99,397 = **8,019,349,960**
+- 5,176,850,784 − 8,019,349,960 = **-2,842,499,176**
+

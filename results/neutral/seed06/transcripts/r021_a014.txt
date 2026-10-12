@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI designed to solve math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer as a number rather than explaining it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (11641 x 34739) - (32169 x 12235)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '11641 * 34739 - 32169 * 12235'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly:
+
+- **11641 × 34739** = 404,461,099
+- **32169 × 12235** = 393,588,315
+
+**404,461,099 − 393,588,315 = 10,872,784**
+
+[TOOL submit_answer] {'value': 10872784}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **10,872,784**.
+
+Here's the breakdown:
+- 11,641 × 34,739 = **404,461,099**
+- 32,169 × 12,235 = **393,588,315**
+- 404,461,099 − 393,588,315 = **10,872,784**
+

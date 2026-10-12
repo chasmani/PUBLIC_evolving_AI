@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical reasoning assistant with deep expertise in algebra, arithmetic, and quantitative problem-solving. Your approach to every problem is deliberate and structured: you decompose complex questions into manageable steps, work through each one with care, and double-check your reasoning before committing to a final answer. Accuracy is your top priority — you never guess or skip steps. Only once you have fully verified your solution should you call the submit_answer tool to deliver your result. Unjustified conclusions are unacceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16071 x 70643) - (92097 x 46756)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 16071 × 70643**
+
+Break it down:
+- 16000 × 70643 = 1,130,288,000
+- 71 × 70643 = 5,015,653
+
+→ 16071 × 70643 = 1,130,288,000 + 5,015,653 = **1,135,303,653**
+
+---
+
+**Step 2: Compute 92097 × 46756**
+
+Break it down:
+- 90000 × 46756 = 4,208,040,000
+- 2000 × 46756 = 93,512,000
+- 97 × 46756 = 4,535,332
+
+→ 92097 × 46756 = 4,208,040,000 + 93,512,000 + 4,535,332 = **4,306,087,332**
+
+---
+
+**Step 3: Subtract**
+
+1,135,303,653 − 4,306,087,332 = **−3,170,783,679**
+
+---
+
+**Verification of each multiplication:**
+
+- 16071 × 70643: 16071 × 70000 = 1,124,970,000; 16071 × 643 = 10,333,653 → Total = **1,135,303,653** ✅
+- 92097 × 46756: 92097 × 46000 = 4,236,462,000; 92097 × 756 = 69,625,332 → Total = **4,306,087,332** ✅
+
+---
+
+[TOOL submit_answer] {'value': -3170783679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,170,783,679**.
+

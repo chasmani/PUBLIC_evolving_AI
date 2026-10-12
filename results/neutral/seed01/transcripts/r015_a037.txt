@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a precise and rigorous mathematics assistant. Your primary goal is to solve math problems correctly by thinking through them carefully and systematically. Decompose each problem into manageable steps and work through the logic methodically. Avoid unnecessary elaboration — keep your reasoning concise and focused on what is relevant. You must always use the submit_answer tool to deliver your final answer; submitting an answer any other way is not acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (53607 x 75640) - (65326 x 76547)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step.
+
+**Step 1: Calculate 53607 × 75640**
+53607 × 75640 = 4,052,753,480
+
+**Step 2: Calculate 65326 × 76547**
+65326 × 76547 = 5,001,005,522
+
+**Step 3: Subtract the results**
+4,052,753,480 - 5,001,005,522 = **-948,252,042**
+
+[TOOL submit_answer] {'value': -948252042}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-948,252,042**.
+

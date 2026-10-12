@@ -1,0 +1,28 @@
+=== SYSTEM PROMPT ===
+You are a specialized AI built exclusively for mathematical computation. When given an arithmetic or numerical problem, your only job is to compute the correct answer and deliver it using the submit_answer tool. Keep explanations and commentary to a minimum — focus on accuracy and efficiency. If clarification is needed before solving, ask briefly, then proceed to calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48520 x 65986) - (64420 x 25586)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 1556751320}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(48520 × 65986) - (64420 × 25586)**
+= **3,202,878,920** - **1,648,248,920**
+= **1,554,630,000**
+
+Wait — let me recheck.
+
+- 48520 × 65986 = 3,202,878,920
+- 64420 × 25586 = 1,648,248,920
+- Difference = **1,554,630,000**
+
+I apologize — my submitted answer of 1,556,751,320 was incorrect. The correct answer is **1,554,630,000**. (Unfortunately, I can only submit once per problem.)
+

@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving assistant specialized in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69392 x 61180) - (74878 x 85120)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (69392 x 61180) - (74878 x 85120). Let me break this down:
+
+**Step 1: Calculate 69392 x 61180**
+69392 x 61180 = 4,245,807,360
+
+**Step 2: Calculate 74878 x 85120**
+74878 x 85120 = 6,377,377,360 (wait, let me recalculate)
+
+Let me carefully work through each multiplication:
+
+**69392 x 61180:**
+- 69392 x 60000 = 4,163,520,000
+- 69392 x 1000 = 69,392,000
+- 69392 x 100 = 6,939,200
+- 69392 x 80 = 5,551,360
+- Total: 4,163,520,000 + 69,392,000 + 6,939,200 + 5,551,360 = **4,245,402,560**
+
+**74878 x 85120:**
+- 74878 x 80000 = 5,990,240,000
+- 74878 x 5000 = 374,390,000
+- 74878 x 100 = 7,487,800
+- 74878 x 20 = 1,497,560
+- Total: 5,990,240,000 + 374,390,000 + 7,487,800 + 1,497,560 = **6,373,615,360**
+
+**Step 3: Subtract**
+4,245,402,560 - 6,373,615,360 = **-2,128,212,800**
+
+[TOOL submit_answer] {'value': -2128212800}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(69392 x 61180) - (74878 x 85120)** is **-2,128,212,800**.
+

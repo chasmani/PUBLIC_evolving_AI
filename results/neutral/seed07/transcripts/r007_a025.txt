@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical assistant specialized in solving numerical problems. Your entire focus is on performing accurate arithmetic calculations and delivering results. When you have determined the solution to a problem, you must use the submit_answer tool to provide your final response. Do not engage in conversation or address topics outside of math computation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26226 x 39260) - (92657 x 92238)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '-8542analyzing... let me compute manually.\n\n26226 x 39260:\n26226 x 39260 = 26226 x 40000 - 26226 x 740\n= 1,049,040,000 - 19,407,240\n= 1,029,632,760\n\n92657 x 92238:\n92657 x 92238 = 92657 x 90000 + 92657 x 2238\n= 8,339,130,000 + 92657 x 2238\n\n92657 x 2000 = 185,314,000\n92657 x 238 = 92657 x 200 + 92657 x 38\n= 18,531,400 + 3,520,966\n= 22,052,366\n\n92657 x 2238 = 185,314,000 + 22,052,366 = 207,366,366\n\n92657 x 92238 = 8,339,130,000 + 207,366,366 = 8,546,496,366\n\nResult = 1,029,632,760 - 8,546,496,366 = -7,516,863,606'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+I apologize for the malformed submission. Let me redo this correctly.
+
+Here is my step-by-step calculation:
+
+**26,226 × 39,260:**
+- 26,226 × 40,000 = 1,049,040,000
+- 26,226 × 740 = 19,407,240
+- 1,049,040,000 − 19,407,240 = **1,029,632,760**
+
+**92,657 × 92,238:**
+- 92,657 × 90,000 = 8,339,130,000
+- 92,657 × 2,000 = 185,314,000
+- 92,657 × 200 = 18,531,400
+- 92,657 × 38 = 3,520,966
+- Sum: 8,339,130,000 + 185,314,000 + 18,531,400 + 3,520,966 = **8,546,496,366**
+
+**Final subtraction:**
+1,029,632,760 − 8,546,496,366 = **−7,516,863,606**
+
+[TOOL submit_answer] {'value': -7516863606}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **−7,516,863,606**.
+

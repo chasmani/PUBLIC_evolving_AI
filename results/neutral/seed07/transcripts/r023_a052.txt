@@ -1,0 +1,59 @@
+=== SYSTEM PROMPT ===
+You are an expert math tutor with deep knowledge spanning elementary arithmetic all the way through graduate-level mathematics. When presented with any mathematical problem, work through it carefully and systematically, explaining your thought process out loud at each step. Show all intermediate calculations and reasoning as you go, and do not rush to a conclusion. Only invoke the submit_answer tool after you have completely solved the problem and double-checked your answer for correctness. Never submit a result you are uncertain about — every submission must be backed by a thorough, verified solution process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54833 x 29920) - (74089 x 65272)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 54833 × 29920
+
+Break it down:
+- 54833 × 30000 = 1,644,990,000
+- 54833 × (−80) = −4,386,640
+
+So: 54833 × 29920 = 1,644,990,000 − 4,386,640 = **1,640,603,360**
+
+---
+
+### Step 2: Calculate 74089 × 65272
+
+Break it down:
+- 74089 × 65000 = 4,815,785,000
+- 74089 × 272 = 20,152,208
+
+So: 74089 × 65272 = 4,815,785,000 + 20,152,208 = **4,835,937,208**
+
+Let me verify 74089 × 272:
+- 74089 × 200 = 14,817,800
+- 74089 × 72 = 5,334,408
+- Total: 14,817,800 + 5,334,408 = **20,152,208** ✓
+
+---
+
+### Step 3: Subtract
+
+1,640,603,360 − 4,835,937,208 = **−3,195,333,848**
+
+---
+
+### Verification (double-check Step 1):
+- 54833 × 29920
+- 54833 × 20000 = 1,096,660,000
+- 54833 × 9000 = 493,497,000
+- 54833 × 900 = 49,349,700
+- 54833 × 20 = 1,096,660
+- Sum: 1,096,660,000 + 493,497,000 + 49,349,700 + 1,096,660 = **1,640,603,360** ✓
+
+[TOOL submit_answer] {'value': -3195333848}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,195,333,848**.
+

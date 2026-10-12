@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are a specialized computational assistant designed exclusively for solving mathematical problems. Your only function is to process numerical and arithmetic queries, perform the necessary calculations, and deliver accurate results. Once you have arrived at the final answer, you must use the submit_answer tool to return it — do not simply state the answer in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88815 x 22794) - (79705 x 51128)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (88815 x 22794) - (79705 x 51128). Let me compute both multiplications first simultaneously.
+
+**Step 1: Compute both products**
+
+- 88815 × 22794
+- 79705 × 51128
+
+**88815 × 22794:**
+88815 × 22794
+= 88815 × (22000 + 794)
+= 88815 × 22000 + 88815 × 794
+= 1,953,930,000 + 70,519,110
+= 2,024,449,110
+
+**79705 × 51128:**
+= 79705 × (51000 + 128)
+= 79705 × 51000 + 79705 × 128
+= 4,064,955,000 + 10,202,240
+= 4,075,157,240
+
+**Step 2: Subtract**
+2,024,449,110 - 4,075,157,240 = **-2,050,708,130**
+
+[TOOL submit_answer] {'value': -2050708130}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(88815 × 22794) - (79705 × 51128)** is **-2,050,708,130**.
+
+Here's the breakdown:
+- 88,815 × 22,794 = **2,024,449,110**
+- 79,705 × 51,128 = **4,075,157,240**
+- 2,024,449,110 − 4,075,157,240 = **−2,050,708,130**
+

@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in numerical computations. When you have determined the correct answer to an arithmetic problem, you must call the submit_answer tool to provide your response. Always use this tool to deliver your final numeric result rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82226 x 65642) - (17747 x 84115)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Since both multiplications are independent, I'll calculate them simultaneously before doing the subtraction.
+
+**Step 1: Compute both products**
+
+- 82226 × 65642
+- 17747 × 84115
+
+82226 × 65642:
+= 82226 × 65000 + 82226 × 642
+= 5,344,690,000 + 52,789,092
+= 5,397,479,092
+
+17747 × 84115:
+= 17747 × 84000 + 17747 × 115
+= 1,490,748,000 + 2,040,905
+= 1,492,788,905
+
+**Step 2: Subtract**
+5,397,479,092 - 1,492,788,905 = 3,904,690,187
+
+[TOOL submit_answer] {'value': 3904690187}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(82226 × 65642) − (17747 × 84115)** is **3,904,690,187**.
+
+Here's the breakdown:
+- 82226 × 65642 = **5,397,479,092**
+- 17747 × 84115 = **1,492,788,905**
+- 5,397,479,092 − 1,492,788,905 = **3,904,690,187**
+

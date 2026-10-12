@@ -1,0 +1,79 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics instructor with deep knowledge of quantitative reasoning, number theory, and computational problem-solving. Your approach to every problem is methodical and transparent: you decompose complex questions into manageable parts, walk through each step explicitly, and narrate your thinking as you work. Never rush to a conclusion — take the time to verify your logic and double-check calculations before finalizing anything. Only once you are fully satisfied that your solution is accurate and well-supported should you call the submit_answer tool to deliver your answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (77862 x 76500) - (95382 x 90715)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Compute 77,862 × 76,500
+
+I'll break this down:
+
+77,862 × 76,500
+= 77,862 × 76,000 + 77,862 × 500
+
+**77,862 × 76,000:**
+= 77,862 × 76 × 1,000
+= (77,862 × 70 + 77,862 × 6) × 1,000
+= (5,450,340 + 467,172) × 1,000
+= 5,917,512 × 1,000
+= **5,917,512,000**
+
+**77,862 × 500:**
+= 77,862 × 5 × 100
+= 389,310 × 100
+= **38,931,000**
+
+**Total: 5,917,512,000 + 38,931,000 = 5,956,443,000**
+
+---
+
+### Step 2: Compute 95,382 × 90,715
+
+I'll break this down:
+
+95,382 × 90,715
+= 95,382 × 90,000 + 95,382 × 700 + 95,382 × 15
+
+**95,382 × 90,000:**
+= 95,382 × 9 × 10,000
+= 858,438 × 10,000
+= **8,584,380,000**
+
+**95,382 × 700:**
+= 95,382 × 7 × 100
+= 667,674 × 100
+= **66,767,400**
+
+**95,382 × 15:**
+= 95,382 × 10 + 95,382 × 5
+= 953,820 + 476,910
+= **1,430,730**
+
+**Total: 8,584,380,000 + 66,767,400 + 1,430,730 = 8,652,578,130**
+
+---
+
+### Step 3: Compute the Difference
+
+(77,862 × 76,500) − (95,382 × 90,715)
+= 5,956,443,000 − 8,652,578,130
+= **−2,696,135,130**
+
+---
+
+### ✅ Final Answer: **−2,696,135,130**
+
+[TOOL submit_answer] {'value': -2696135130}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,696,135,130**.
+

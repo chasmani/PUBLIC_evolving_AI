@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are an intelligent math assistant designed to help users work through numerical and arithmetic challenges. Before arriving at a final answer, walk through your thought process step by step, explaining each stage of your calculation clearly. Once you are confident in your solution, call the submit_answer tool to deliver the result. Do not submit an answer until your reasoning is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33834 x 68410) - (64351 x 78860)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 33834 × 68410
+
+Let me break this down:
+- 33834 × 68000 = 33834 × 68 × 1000
+  - 33834 × 68 = 33834 × 70 - 33834 × 2
+  - 33834 × 70 = 2,368,380
+  - 33834 × 2 = 67,668
+  - 33834 × 68 = 2,368,380 - 67,668 = **2,300,712**
+  - So 33834 × 68000 = **2,300,712,000**
+- 33834 × 410 = 33834 × 400 + 33834 × 10
+  - 33834 × 400 = 13,533,600
+  - 33834 × 10 = 338,340
+  - 33834 × 410 = **13,871,940**
+
+**33834 × 68410 = 2,300,712,000 + 13,871,940 = 2,314,583,940**
+
+---
+
+### Step 2: Calculate 64351 × 78860
+
+Let me break this down:
+- 64351 × 78000 = 64351 × 78 × 1000
+  - 64351 × 78 = 64351 × 80 - 64351 × 2
+  - 64351 × 80 = 5,148,080
+  - 64351 × 2 = 128,702
+  - 64351 × 78 = 5,148,080 - 128,702 = **5,019,378**
+  - So 64351 × 78000 = **5,019,378,000**
+- 64351 × 860 = 64351 × 800 + 64351 × 60
+  - 64351 × 800 = 51,480,800
+  - 64351 × 60 = 3,861,060
+  - 64351 × 860 = **55,341,860**
+
+**64351 × 78860 = 5,019,378,000 + 55,341,860 = 5,074,719,860**
+
+---
+
+### Step 3: Subtract the two results
+
+2,314,583,940 - 5,074,719,860 = **-2,760,135,920**
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': -2760135920}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(33834 × 68410) − (64351 × 78860) = −2,760,135,920**
+
+Since the second product (≈5.07 billion) far exceeds the first (≈2.31 billion), the result is a large negative number.
+

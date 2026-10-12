@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always compute carefully before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19665 x 99651) - (53279 x 71884)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two products and then subtract them.
+
+**Step 1: Compute 19665 × 99651**
+
+19665 × 99651
+= 19665 × (100000 - 349)
+= 19665 × 100000 - 19665 × 349
+= 1,966,500,000 - 6,863,085
+= 1,959,636,915
+
+Let me verify 19665 × 349:
+19665 × 300 = 5,899,500
+19665 × 49 = 19665 × 50 - 19665 = 983,250 - 19,665 = 963,585
+19665 × 349 = 5,899,500 + 963,585 = 6,863,085 ✓
+
+So **19665 × 99651 = 1,959,636,915**
+
+---
+
+**Step 2: Compute 53279 × 71884**
+
+53279 × 71884
+= 53279 × (70000 + 1884)
+= 53279 × 70000 + 53279 × 1884
+
+53279 × 70000 = 3,729,530,000
+
+53279 × 1884:
+53279 × 1000 = 53,279,000
+53279 × 800 = 42,623,200
+53279 × 80 = 4,262,320
+53279 × 4 = 213,116
+53279 × 1884 = 53,279,000 + 42,623,200 + 4,262,320 + 213,116
+= 53,279,000 + 42,623,200 = 95,902,200
++ 4,262,320 = 100,164,520
++ 213,116 = 100,377,636
+
+53279 × 71884 = 3,729,530,000 + 100,377,636 = **3,829,907,636**
+
+---
+
+**Step 3: Subtract**
+
+1,959,636,915 - 3,829,907,636 = **-1,870,270,721**
+
+[TOOL submit_answer] {'value': -1870270721}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,870,270,721**.
+
+This was found by:
+- **19,665 × 99,651** = 1,959,636,915
+- **53,279 × 71,884** = 3,829,907,636
+- **Difference** = 1,959,636,915 − 3,829,907,636 = **−1,870,270,721**
+

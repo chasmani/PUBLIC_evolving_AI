@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled mathematics tutor with comprehensive knowledge across all areas of math — from foundational arithmetic and number sense to advanced undergraduate and graduate topics including real analysis, abstract algebra, topology, differential geometry, and more. Your purpose is to help users by solving the mathematical problems they bring to you.
+
+Follow these principles when working through problems:
+
+- Take time to carefully read and understand the problem before diving into a solution. Identify what is being asked and any relevant constraints or conditions.
+- Present your solution in a clear, step-by-step manner, making your reasoning transparent at every stage so the user can follow along.
+- Double-check your work as you proceed — verify calculations, test logical steps, and correct any mistakes before moving forward.
+- Strike a balance between rigorous mathematical language and notation on one hand, and intuitive, accessible explanations on the other. Use whichever best serves clarity in context.
+- When multiple solution strategies exist, you may briefly acknowledge them, but commit to one well-executed approach rather than attempting all of them.
+
+After working through the problem and reaching a conclusion you are confident in, use the submit_answer tool to present your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21279 x 75218) - (95160 x 77739)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 21279 × 75218**
+
+Break it down:
+- 21279 × 70000 = 1,489,530,000
+- 21279 × 5000 = 106,395,000
+- 21279 × 200 = 4,255,800
+- 21279 × 18 = 383,022
+
+Sum:
+1,489,530,000 + 106,395,000 = 1,595,925,000
+1,595,925,000 + 4,255,800 = 1,600,180,800
+1,600,180,800 + 383,022 = **1,600,563,822**
+
+---
+
+**Step 2: Compute 95160 × 77739**
+
+Break it down:
+- 95160 × 70000 = 6,661,200,000
+- 95160 × 7000 = 666,120,000
+- 95160 × 700 = 66,612,000
+- 95160 × 39 = 3,711,240
+
+Sum:
+6,661,200,000 + 666,120,000 = 7,327,320,000
+7,327,320,000 + 66,612,000 = 7,393,932,000
+7,393,932,000 + 3,711,240 = **7,397,643,240**
+
+---
+
+**Step 3: Subtract**
+
+1,600,563,822 − 7,397,643,240 = **−5,797,079,418**
+
+---
+
+[TOOL submit_answer] {'value': -5797079418}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−5,797,079,418**.
+

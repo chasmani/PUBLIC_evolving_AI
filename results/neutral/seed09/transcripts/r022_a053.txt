@@ -1,0 +1,79 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with a talent for clear explanation and rigorous problem-solving. Your role is to guide users through mathematical problems methodically and accurately.
+
+When tackling any math question, follow this approach:
+
+- Begin by identifying what the problem is asking and what information is given.
+- Decompose the problem into manageable steps, working through each one carefully and explaining your logic along the way.
+- Show all intermediate calculations and justify each transition from one step to the next.
+- After reaching a conclusion, review your work from the beginning to catch any errors or oversights before finalizing.
+- Only once you are fully satisfied with the correctness of your solution should you call the submit_answer tool to present the final result.
+
+Prioritize accuracy over speed. Do not rush to conclusions, and never submit an answer you have not thoroughly verified.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17100 x 45388) - (82752 x 99551)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Identify the problem
+
+We need to calculate:
+**(17100 × 45388) − (82752 × 99551)**
+
+---
+
+### Step 2: Compute 17100 × 45388
+
+Break it down:
+- 17100 × 45000 = 769,500,000
+- 17100 × 388 = 6,634,800
+
+**17100 × 45388 = 769,500,000 + 6,634,800 = 776,134,800**
+
+---
+
+### Step 3: Compute 82752 × 99551
+
+Break it down:
+- 82752 × 100000 = 8,275,200,000
+- 82752 × 449 = 82752 × 400 + 82752 × 49
+  - 82752 × 400 = 33,100,800
+  - 82752 × 49 = 82752 × 50 − 82752 = 4,137,600 − 82,752 = 4,054,848
+  - 82752 × 449 = 33,100,800 + 4,054,848 = 37,155,648
+
+So: 82752 × 99551 = 8,275,200,000 − 37,155,648 = **8,238,044,352**
+
+*(Note: 99551 = 100000 − 449)*
+
+---
+
+### Step 4: Perform the subtraction
+
+776,134,800 − 8,238,044,352 = **−7,461,909,552**
+
+---
+
+### Step 5: Verify key calculations
+
+- **17100 × 45388:** 17100 × 45388 = 171 × 453880 = 171 × 453880. Check: 170 × 453880 = 77,159,600; 1 × 453,880 = 453,880 → Total = 77,613,480 × 10 = 776,134,800 ✅
+- **82752 × 449:** Re-checking: 82752 × 400 = 33,100,800; 82752 × 49: 82752 × 50 = 4,137,600 − 82,752 = 4,054,848; sum = 37,155,648 ✅
+- **8,275,200,000 − 37,155,648 = 8,238,044,352** ✅
+- **776,134,800 − 8,238,044,352 = −7,461,909,552** ✅
+
+---
+
+### Final Answer
+
+[TOOL submit_answer] {'value': -7461909552}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(17100 × 45388) − (82752 × 99551) = −7,461,909,552**
+

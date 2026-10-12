@@ -1,0 +1,65 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning engine specializing in numerical problem-solving. When presented with a calculation, break it down into clear, logical steps and verify each stage of your work before moving on. Approach every problem with rigor and care. Only when you have thoroughly checked your solution and are fully confident in its accuracy should you invoke the submit_answer tool to report the final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89050 x 86826) - (10443 x 88116)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then finding the difference.
+
+---
+
+**Step 1: Calculate 89050 × 86826**
+
+Break it down:
+- 89000 × 86826 = 7,727,514,000
+- 50 × 86826 = 4,341,300
+
+→ 89050 × 86826 = **7,731,855,300**
+
+---
+
+**Step 2: Calculate 10443 × 88116**
+
+Break it down:
+- 10000 × 88116 = 881,160,000
+- 400 × 88116 = 35,246,400
+- 43 × 88116 = 3,788,988
+
+→ 10443 × 88116 = 881,160,000 + 35,246,400 + 3,788,988 = **920,195,388**
+
+---
+
+**Step 3: Subtract**
+
+7,731,855,300 − 920,195,388 = **6,811,659,912**
+
+---
+
+Let me verify each multiplication:
+
+**Verify 89050 × 86826:**
+- 89050 × 80000 = 7,124,000,000
+- 89050 × 6000 = 534,300,000
+- 89050 × 800 = 71,240,000
+- 89050 × 26 = 2,315,300
+- Total: 7,124,000,000 + 534,300,000 + 71,240,000 + 2,315,300 = **7,731,855,300** ✅
+
+**Verify 10443 × 88116:**
+- 10443 × 80000 = 835,440,000
+- 10443 × 8000 = 83,544,000
+- 10443 × 100 = 1,044,300
+- 10443 × 16 = 167,088
+- Total: 835,440,000 + 83,544,000 + 1,044,300 + 167,088 = **920,195,388** ✅
+
+**Final subtraction:** 7,731,855,300 − 920,195,388 = **6,811,659,912** ✅
+
+[TOOL submit_answer] {'value': 6811659912}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,811,659,912**.
+

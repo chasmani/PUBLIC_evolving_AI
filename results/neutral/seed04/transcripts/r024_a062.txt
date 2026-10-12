@@ -1,0 +1,71 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with a deep focus on careful reasoning and step-by-step problem decomposition. When given a math problem, resist the urge to jump straight to a solution. Instead, pause and examine the problem thoroughly before doing anything else. Identify the key components and underlying structure, then address each part in a deliberate sequence — explaining not just the mechanics of each step, but the logic behind why that step comes next. As you work through the problem, verify your results along the way rather than waiting until the end to check for errors. Only after you have completed your full analysis and are fully confident in your answer should you call the submit_answer tool to deliver your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23235 x 18075) - (39998 x 46369)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this problem carefully, step by step.
+
+---
+
+## Problem Structure
+
+I need to compute: **(23235 × 18075) − (39998 × 46369)**
+
+This involves two large multiplications followed by a subtraction. Let me handle each product separately, then subtract.
+
+---
+
+## Step 1: Compute 23235 × 18075
+
+I'll break this down using distribution:
+
+**23235 × 18075 = 23235 × (18000 + 75)**
+
+- 23235 × 18000 = 23235 × 18 × 1000
+  - 23235 × 18 = 23235 × 10 + 23235 × 8 = 232,350 + 185,880 = **418,230**
+  - × 1000 → **418,230,000**
+
+- 23235 × 75 = 23235 × (100 − 25) = 2,323,500 − 580,875 = **1,742,625**
+
+**23235 × 18075 = 418,230,000 + 1,742,625 = 419,972,625**
+
+---
+
+## Step 2: Compute 39998 × 46369
+
+I'll use: **39998 = 40000 − 2**
+
+- 40000 × 46369 = 46369 × 4 × 10,000
+  - 46369 × 4 = 185,476
+  - × 10,000 → **1,854,760,000**
+
+- 2 × 46369 = **92,738**
+
+**39998 × 46369 = 1,854,760,000 − 92,738 = 1,854,667,262**
+
+---
+
+## Step 3: Subtract
+
+**(23235 × 18075) − (39998 × 46369)**
+= **419,972,625 − 1,854,667,262**
+= **−1,434,694,637**
+
+---
+
+## Verification Check
+
+- First product (~419.97M) is much smaller than the second (~1,854.67M), so a large negative result is expected. ✅
+- The magnitude ~1.43 billion is reasonable given the inputs. ✅
+
+[TOOL submit_answer] {'value': -1434694637}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,434,694,637**.
+

@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a specialized computational assistant designed exclusively for solving mathematical problems. Your only function is to process numerical and arithmetic queries, perform the necessary calculations, and deliver accurate results. Once you have arrived at the final answer, you must use the submit_answer tool to return it — do not simply state the answer in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21279 x 75218) - (95160 x 77739)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(21279 * 75218) - (95160 * 77739)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me properly compute the numerical result:
+
+- **21279 × 75218** = 1,600,763,322
+- **95160 × 77,739** = 7,398,224,040
+
+**1,600,763,322 − 7,398,224,040 = −5,797,460,718**
+
+[TOOL submit_answer] {'value': -5797460718}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(21279 × 75218) − (95160 × 77739)** is **−5,797,460,718**.
+
+Here's the breakdown:
+- 21,279 × 75,218 = **1,600,763,322**
+- 95,160 × 77,739 = **7,398,224,040**
+- 1,600,763,322 − 7,398,224,040 = **−5,797,460,718**
+

@@ -1,0 +1,28 @@
+=== SYSTEM PROMPT ===
+You are a focused mathematical computation engine. Your sole purpose is to solve arithmetic and numerical problems accurately and efficiently. Upon receiving a problem, calculate the result and deliver it immediately using the submit_answer tool. Avoid lengthy explanations — brevity is preferred. If a problem is ambiguous or incomplete, ask a short clarifying question before proceeding, then solve and submit the answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48520 x 65986) - (64420 x 25586)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first (they're independent), then subtract.
+
+[TOOL submit_answer] {'value': 1556751720}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(48520 × 65986) − (64420 × 25586)**
+= 3,202,258,720 − 1,645,487,720 - wait, let me restate the verified calculation:
+
+- 48,520 × 65,986 = **3,202,258,720**
+- 64,420 × 25,586 = **1,645,487,720** - Hmm, let me recompute manually:
+
+- 48520 × 65986 = 48520 × 66000 − 48520 × 14 = 3,202,320,000 − 679,280 = **3,201,640,720**
+- 64420 × 25586 = 64420 × 25000 + 64420 × 586 = 1,610,500,000 + 37,750,120 = **1,648,250,120**
+- Result: 3,201,640,720 − 1,648,250,120 = **1,553,390,600**
+
+I apologize — my submitted answer was incorrect. The correct answer is **1,553,390,600**.
+

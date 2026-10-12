@@ -1,0 +1,71 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical thinker who approaches every problem with patience and rigor. Rather than rushing toward a solution, you slow down and engage deeply with the structure of the problem. Begin by identifying what is being asked and what information you have to work with. Then break the problem into smaller, manageable parts and work through each one step by step — explaining not just the mechanics of what you are doing, but the reasoning behind each choice and the logic connecting each step to the next. Pause to verify your work before moving on, catching errors early rather than carrying them forward. Only after you have fully traced through the problem and are confident your answer is correct should you call the submit_answer tool to deliver your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56639 x 67137) - (87171 x 52030)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step by step, carefully computing each multiplication before performing the subtraction.
+
+---
+
+### Step 1: Compute 56639 × 67137
+
+I'll break this down:
+
+56639 × 67137
+= 56639 × (67000 + 137)
+= (56639 × 67000) + (56639 × 137)
+
+**56639 × 67000:**
+56639 × 67 = 56639 × 60 + 56639 × 7
+= 3,398,340 + 396,473
+= 3,794,813
+× 1000 → 3,794,813,000
+
+**56639 × 137:**
+56639 × 100 = 5,663,900
+56639 × 37 = 56639 × 30 + 56639 × 7
+= 1,699,170 + 396,473
+= 2,095,643
+Total: 5,663,900 + 2,095,643 = **7,759,543**
+
+**56639 × 67137 = 3,794,813,000 + 7,759,543 = 3,802,572,543**
+
+---
+
+### Step 2: Compute 87171 × 52030
+
+= 87171 × (52000 + 30)
+= (87171 × 52000) + (87171 × 30)
+
+**87171 × 52000:**
+87171 × 52 = 87171 × 50 + 87171 × 2
+= 4,358,550 + 174,342
+= 4,532,892
+× 1000 → 4,532,892,000
+
+**87171 × 30:**
+= 2,615,130
+
+**87171 × 52030 = 4,532,892,000 + 2,615,130 = 4,535,507,130**
+
+---
+
+### Step 3: Subtract
+
+3,802,572,543 − 4,535,507,130 = **−732,934,587**
+
+---
+
+The answer is:
+
+[TOOL submit_answer] {'value': -732934587}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(56639 × 67137) − (87171 × 52030) = −732,934,587**.
+

@@ -1,0 +1,56 @@
+=== SYSTEM PROMPT ===
+You are a precise and knowledgeable math tutor capable of tackling problems ranging from elementary arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down methodically, explaining each step of your reasoning in a clear and logical manner. Double-check your work where appropriate. When you are confident in your solution, use the submit_answer tool to return your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (91787 x 35906) - (50473 x 29681)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 91787 × 35906**
+
+Breaking it down:
+- 91787 × 30000 = 2,753,610,000
+- 91787 × 5000 = 458,935,000
+- 91787 × 900 = 82,608,300
+- 91787 × 6 = 550,722
+
+Adding them up:
+2,753,610,000 + 458,935,000 = 3,212,545,000
+3,212,545,000 + 82,608,300 = 3,295,153,300
+3,295,153,300 + 550,722 = **3,295,704,022**
+
+---
+
+**Step 2: Calculate 50473 × 29681**
+
+Breaking it down:
+- 50473 × 20000 = 1,009,460,000
+- 50473 × 9000 = 454,257,000
+- 50473 × 600 = 30,283,800
+- 50473 × 80 = 4,037,840
+- 50473 × 1 = 50,473
+
+Adding them up:
+1,009,460,000 + 454,257,000 = 1,463,717,000
+1,463,717,000 + 30,283,800 = 1,494,000,800
+1,494,000,800 + 4,037,840 = 1,498,038,640
+1,498,038,640 + 50,473 = **1,498,089,113**
+
+---
+
+**Step 3: Subtract the results**
+
+3,295,704,022 − 1,498,089,113 = **1,797,614,909**
+
+[TOOL submit_answer] {'value': 1797614909}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,797,614,909**.
+

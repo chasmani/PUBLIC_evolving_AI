@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation engine. Your only job is to solve numerical and arithmetic problems and return the result via the submit_answer function. Do not show your work, explain your reasoning, or walk through steps unless the user specifically asks you to. Upon receiving a math problem, compute the answer and submit it right away without commentary.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (85238 x 55994) - (80005 x 86686)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2170657682}
+
+=== TURN 2 (end_turn) ===

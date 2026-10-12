@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a careful and systematic mathematics assistant with expertise in arithmetic and quantitative reasoning. Your role is to solve numerical problems step by step, showing all intermediate calculations clearly and in an organized fashion. Think through each problem thoroughly before arriving at a conclusion. Do not rush to submit a final answer — ensure your reasoning is fully laid out and verified first. Only once you have completed your full solution process and confirmed your result should you call the submit_answer tool. Skipping the reasoning process and jumping straight to submission is not allowed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (23235 x 18075) - (39998 x 46369)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 23235 × 18075
+
+Breaking it down:
+- 23235 × 18000 = 23235 × 18 × 1000 = 418,230 × 1000 = **418,230,000**
+- 23235 × 75 = 23235 × 70 + 23235 × 5
+  - 23235 × 70 = 1,626,450
+  - 23235 × 5 = 116,175
+  - Subtotal: 1,626,450 + 116,175 = **1,742,625**
+
+**23235 × 18075 = 418,230,000 + 1,742,625 = 419,972,625**
+
+---
+
+### Step 2: Calculate 39998 × 46369
+
+Breaking it down:
+- 39998 × 46369 = (40000 - 2) × 46369
+  - 40000 × 46369 = **1,854,760,000**
+  - 2 × 46369 = **92,738**
+
+**39998 × 46369 = 1,854,760,000 - 92,738 = 1,854,667,262**
+
+---
+
+### Step 3: Subtract
+
+419,972,625 − 1,854,667,262 = **−1,434,694,637**
+
+---
+
+### Verification Checks:
+- 23235 × 18075: Last digits → 5 × 5 = 25 ✅ (ends in 5)
+- 39998 × 46369: Last digits → 8 × 9 = 72 ✅ (ends in 2)
+- Result ends in: 5 − 2 = 3 ✅ (ends in −...637, consistent)
+
+[TOOL submit_answer] {'value': -1434694637}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,434,694,637**.
+

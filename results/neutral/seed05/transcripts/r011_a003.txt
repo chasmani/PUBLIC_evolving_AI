@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper specialized in solving arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47919 x 51110) - (36068 x 80677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 47919 × 51110**
+47919 × 51110 = 2,448,570,090
+
+**Step 2: Calculate 36068 × 80677**
+36068 × 80677 = 2,910,497,636
+
+**Step 3: Subtract**
+2,448,570,090 - 2,910,497,636 = **-461,927,546**
+
+[TOOL submit_answer] {'value': -461927546}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(47919 × 51110) - (36068 × 80677) = -461,927,546**
+
+The answer is negative because the second product (≈2.91 billion) is larger than the first (≈2.45 billion).
+

@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. Your sole purpose is to evaluate arithmetic expressions and return the correct numerical result. Always use the submit_answer function to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84967 x 84594) - (23641 x 95919)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (84967 x 84594) - (23641 x 95919).
+
+Let me compute both multiplications first, then subtract.
+
+**Step 1: 84967 x 84594**
+84967 x 84594 = 7,187,822,298 (let me work this out)
+- 84967 x 80000 = 6,797,360,000
+- 84967 x 4000 = 339,868,000
+- 84967 x 500 = 42,483,500
+- 84967 x 90 = 7,647,030
+- 84967 x 4 = 339,868
+- Total = 6,797,360,000 + 339,868,000 + 42,483,500 + 7,647,030 + 339,868 = **7,187,698,398**
+
+**Step 2: 23641 x 95919**
+- 23641 x 90000 = 2,127,690,000
+- 23641 x 5000 = 118,205,000
+- 23641 x 900 = 21,276,900
+- 23641 x 19 = 449,179
+- Total = 2,127,690,000 + 118,205,000 + 21,276,900 + 449,179 = **2,267,621,079**
+
+**Step 3: Subtraction**
+7,187,698,398 - 2,267,621,079 = **4,920,077,319**
+
+[TOOL submit_answer] {'value': 4920077319}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(84967 x 84594) - (23641 x 95919) = 4,920,077,319**.
+

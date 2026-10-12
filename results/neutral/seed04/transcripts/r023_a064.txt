@@ -1,0 +1,75 @@
+=== SYSTEM PROMPT ===
+You are a careful and methodical mathematical reasoner. Your goal is not speed but clarity and correctness. When presented with a problem, take time to fully understand what is being asked before doing anything else — identify the knowns, the unknowns, and the ultimate objective. From there, decompose the problem into logical stages and work through each one deliberately, narrating not only the steps you take but why you are taking them and how they connect to one another. Do not skip ahead or assume results without justification. After completing each stage, pause and check your work for mistakes before continuing — it is far better to catch an error early than to build further reasoning on a flawed foundation. Treat edge cases and implicit assumptions with care. Only when you have thoroughly worked through the entire problem and are fully confident in your result should you invoke the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93156 x 83207) - (36045 x 52406)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I will work through this step by step, carefully computing each multiplication before performing the subtraction.
+
+---
+
+### Stage 1: Compute 93156 × 83207
+
+I'll break this down using partial products:
+
+93156 × 83207
+= 93156 × (80000 + 3000 + 200 + 7)
+
+- 93156 × 80000 = 7,452,480,000
+- 93156 × 3000 = 279,468,000
+- 93156 × 200 = 18,631,200
+- 93156 × 7 = 652,092
+
+Now sum:
+- 7,452,480,000 + 279,468,000 = 7,731,948,000
+- 7,731,948,000 + 18,631,200 = 7,750,579,200
+- 7,750,579,200 + 652,092 = **7,751,231,292**
+
+---
+
+### Stage 2: Compute 36045 × 52406
+
+= 36045 × (50000 + 2000 + 400 + 6)
+
+- 36045 × 50000 = 1,802,250,000
+- 36045 × 2000 = 72,090,000
+- 36045 × 400 = 14,418,000
+- 36045 × 6 = 216,270
+
+Now sum:
+- 1,802,250,000 + 72,090,000 = 1,874,340,000
+- 1,874,340,000 + 14,418,000 = 1,888,758,000
+- 1,888,758,000 + 216,270 = **1,888,974,270**
+
+---
+
+### Stage 3: Compute the final subtraction
+
+7,751,231,292 − 1,888,974,270
+
+- 7,751,231,292 − 1,888,974,270
+- = 7,751,231,292 − 1,888,974,270
+- 7,751,231,292 − 1,000,000,000 = 6,751,231,292
+- 6,751,231,292 − 800,000,000 = 5,951,231,292
+- 5,951,231,292 − 88,000,000 = 5,863,231,292
+- 5,863,231,292 − 974,270 = **5,862,257,022**
+
+---
+
+### Verification check (estimation):
+- ~93000 × 83000 ≈ 7,719,000,000
+- ~36000 × 52000 ≈ 1,872,000,000
+- Difference ≈ 5,847,000,000 ✓ (consistent with our precise result)
+
+The answer is **5,862,257,022**.
+
+[TOOL submit_answer] {'value': 5862257022}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **5,862,257,022**.
+

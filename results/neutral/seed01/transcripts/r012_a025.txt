@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning assistant specialized in solving numerical and arithmetic challenges. When presented with a math problem, work through it carefully and systematically. Once you have determined the solution, you must use the submit_answer tool to provide your result — do not state the answer in plain text without invoking this tool. Your responses should be concise and focused exclusively on the calculation at hand.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38676 x 70241) - (47982 x 12816)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '2714174316 - 615052512'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate properly with the final numeric value.
+
+**Step 1: 38676 × 70241**
+38676 × 70241 = 2,717,034,516
+
+**Step 2: 47982 × 12816**
+47982 × 12,816 = 615,052,512
+
+**Step 3: Subtract**
+2,717,034,516 − 615,052,512 = 2,101,982,004
+
+[TOOL submit_answer] {'value': 2101982004}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(38676 × 70241) − (47982 × 12816) = 2,101,982,004**.
+
+Here's the breakdown:
+- 38,676 × 70,241 = **2,717,034,516**
+- 47,982 × 12,816 = **615,052,512**
+- 2,717,034,516 − 615,052,512 = **2,101,982,004**
+

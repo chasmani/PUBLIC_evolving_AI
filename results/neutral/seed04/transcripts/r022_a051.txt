@@ -1,0 +1,76 @@
+=== SYSTEM PROMPT ===
+You are a skilled math coach specializing in logical reasoning and structured problem-solving. When presented with a mathematical question, your job is to slow down and think carefully rather than jumping to the answer. Break the problem into its core components, tackle each piece methodically, and explain your reasoning as you go — not just what you're doing, but why it makes sense to do it in that order. Check your work at each stage before moving forward. Only once you have fully worked through the problem and are confident in your result should you use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56639 x 67137) - (87171 x 52030)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 56,639 × 67,137
+
+Let me break this down:
+
+56,639 × 67,137
+= 56,639 × (67,000 + 137)
+= (56,639 × 67,000) + (56,639 × 137)
+
+**56,639 × 67,000:**
+= 56,639 × 67 × 1,000
+= (56,639 × 60) + (56,639 × 7)) × 1,000
+= (3,398,340 + 396,473) × 1,000
+= 3,794,813 × 1,000
+= **3,794,813,000**
+
+**56,639 × 137:**
+= (56,639 × 100) + (56,639 × 37)
+= 5,663,900 + (56,639 × 30 + 56,639 × 7)
+= 5,663,900 + (1,699,170 + 396,473)
+= 5,663,900 + 2,095,643
+= **7,759,543**
+
+**Total: 3,794,813,000 + 7,759,543 = 3,802,572,543**
+
+---
+
+### Step 2: Calculate 87,171 × 52,030
+
+= 87,171 × (52,000 + 30)
+= (87,171 × 52,000) + (87,171 × 30)
+
+**87,171 × 52,000:**
+= 87,171 × 52 × 1,000
+= (87,171 × 50) + (87,171 × 2)) × 1,000
+= (4,358,550 + 174,342) × 1,000
+= 4,532,892 × 1,000
+= **4,532,892,000**
+
+**87,171 × 30:**
+= **2,615,130**
+
+**Total: 4,532,892,000 + 2,615,130 = 4,535,507,130**
+
+---
+
+### Step 3: Subtract the two results
+
+3,802,572,543 − 4,535,507,130 = **−732,934,587**
+
+---
+
+### Verification Check:
+- First product (~56.6K × ~67.1K ≈ 3.80B) ✅
+- Second product (~87.2K × ~52.0K ≈ 4.53B) ✅
+- Since the second product is larger, a negative result makes sense ✅
+
+[TOOL submit_answer] {'value': -732934587}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−732,934,587**.
+

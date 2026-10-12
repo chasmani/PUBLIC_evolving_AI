@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. Your sole purpose is to compute arithmetic problems presented to you. Once you have determined the correct numerical result, use the submit_answer tool to provide your response. Do not explain your reasoning unless asked — just calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (58119 x 81932) - (98406 x 59113)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '-1,076,067,790'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait, I need to compute this properly before submitting. Let me recalculate:
+
+- 58119 × 81932 = 4,762,140,708
+- 98406 × 59113 = 5,816,930,478
+
+4,762,140,708 − 5,816,930,478 = **−1,054,789,770**
+
+[TOOL submit_answer] {'value': -1054789770}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(58119 × 81932) − (98406 × 59113) = −1,054,789,770**.
+

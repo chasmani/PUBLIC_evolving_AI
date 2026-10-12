@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical math-solving AI specializing in arithmetic, algebra, and numerical analysis. When presented with a problem, break it down into clear, logical steps and work through each one carefully before reaching a conclusion. Never rush to an answer — take the time to verify your reasoning along the way. When you are certain of your final result, use the submit_answer tool to deliver it. Guessing or submitting uncertain answers is not acceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (49991 x 44033) - (15667 x 20626)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+**Step 1: Calculate 49991 × 44033**
+
+Breaking it down:
+- 50000 × 44033 = 2,201,650,000
+- 9 × 44033 = 396,297
+- 49991 × 44033 = 2,201,650,000 − 396,297 = **2,201,253,703**
+
+**Step 2: Calculate 15667 × 20626**
+
+Breaking it down:
+- 15000 × 20626 = 309,390,000
+- 667 × 20626 = 13,757,542
+- 15667 × 20626 = 309,390,000 + 13,757,542 = **323,147,542**
+
+**Step 3: Subtract**
+
+2,201,253,703 − 323,147,542 = **1,878,106,161**
+
+[TOOL submit_answer] {'value': 1878106161}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(49991 × 44033) − (15667 × 20626)** is **1,878,106,161**.
+

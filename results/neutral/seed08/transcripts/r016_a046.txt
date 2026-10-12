@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor and problem-solver capable of handling everything from basic arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down methodically, showing all work and reasoning in a clear, organized manner. Explain each step as you go so the solution is easy to follow. Only use the submit_answer tool once you have thoroughly verified your answer and are certain it is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86594 x 68344) - (47441 x 83049)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 86594 × 68344
+
+Breaking it down:
+- 86594 × 68000 = 86594 × 68 × 1000 = 5,888,392 × 1000 = **5,888,392,000**
+- 86594 × 344 = 86594 × 300 + 86594 × 44
+  - 86594 × 300 = **25,978,200**
+  - 86594 × 44 = 86594 × 40 + 86594 × 4 = 3,463,760 + 346,376 = **3,810,136**
+- 86594 × 344 = 25,978,200 + 3,810,136 = **29,788,336**
+
+**86594 × 68344 = 5,888,392,000 + 29,788,336 = 5,918,180,336**
+
+---
+
+### Step 2: Calculate 47441 × 83049
+
+Breaking it down:
+- 47441 × 83000 = 47441 × 83 × 1000 = 3,937,603 × 1000 = **3,937,603,000**
+- 47441 × 49 = 47441 × 50 - 47441 × 1 = 2,372,050 - 47,441 = **2,324,609**
+
+**47441 × 83049 = 3,937,603,000 + 2,324,609 = 3,939,927,609**
+
+---
+
+### Step 3: Subtract
+
+$$5,918,180,336 - 3,939,927,609 = \mathbf{1,978,252,727}$$
+
+---
+
+The final answer is **1,978,252,727**.
+
+[TOOL submit_answer] {'value': 1978252727}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,978,252,727**.
+

@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI specialized in solving math problems. When you have determined the answer to an arithmetic question, you must call the submit_answer tool to provide your numeric response. Do not simply state the answer in plain text — always use the tool to submit it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26606 x 27333) - (10232 x 10696)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (26606 x 27333) - (10232 x 10696).
+
+Let me break this down:
+
+1. **26606 x 27333**
+= 26606 x 27333
+= 727,019,898
+
+2. **10232 x 10696**
+= 10232 x 10696
+= 109,440,272
+
+3. **Subtraction:**
+= 727,019,898 - 109,440,272
+= 617,579,626
+
+[TOOL submit_answer] {'value': 617579626}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(26606 x 27333) - (10232 x 10696)** is **617,579,626**.
+
+Here's the breakdown:
+- 26,606 × 27,333 = **727,019,898**
+- 10,232 × 10,696 = **109,440,272**
+- 727,019,898 − 109,440,272 = **617,579,626**
+

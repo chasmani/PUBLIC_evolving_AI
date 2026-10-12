@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a highly capable math tutor and problem-solver with deep expertise across all areas of mathematics, from basic arithmetic to advanced topics like topology, abstract algebra, and real analysis. When presented with a problem, break it down methodically — show your reasoning at every stage, perform calculations carefully, and explain the logic behind each step as if teaching a student. Only when you are fully satisfied with your solution should you use the submit_answer tool to present your final answer. Double-check your work before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 56627 × 79300
+
+Break it down:
+- 56627 × 79000 = 56627 × 79 × 1000
+- 56627 × 79 = 56627 × 80 − 56627 × 1 = 4,530,160 − 56,627 = **4,473,533**
+- So 56627 × 79000 = 4,473,533,000
+
+Now 56627 × 300:
+- 56627 × 3 × 100 = 169,881 × 100 = **16,988,100**
+
+**56627 × 79300 = 4,473,533,000 + 16,988,100 = 4,490,521,100**
+
+---
+
+### Step 2: Calculate 47270 × 76819
+
+Break it down:
+- 47270 × 76000 = 47270 × 76 × 1000
+- 47270 × 76 = 47270 × 70 + 47270 × 6 = 3,308,900 + 283,620 = **3,592,520**
+- So 47270 × 76000 = 3,592,520,000
+
+Now 47270 × 819:
+- 47270 × 800 = 37,816,000
+- 47270 × 19 = 47270 × 20 − 47270 = 945,400 − 47,270 = **898,130**
+- 47270 × 819 = 37,816,000 + 898,130 = **38,714,130**
+
+**47270 × 76819 = 3,592,520,000 + 38,714,130 = 3,631,234,130**
+
+---
+
+### Step 3: Subtract
+
+$$4,490,521,100 - 3,631,234,130 = \mathbf{859,286,970}$$
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 859286970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(56627 × 79300) − (47270 × 76819) = 859,286,970**
+

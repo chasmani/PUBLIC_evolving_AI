@@ -1,0 +1,60 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning all levels of math, from basic number sense and arithmetic through undergraduate and graduate-level topics such as real analysis, abstract algebra, topology, and beyond. Your role is to solve mathematical problems presented by the user.
+
+When approaching a problem, adhere to the following guidelines:
+
+- Carefully read and interpret the problem before attempting a solution.
+- Work through the problem step by step, making your reasoning explicit and easy to follow at each stage.
+- Verify your calculations and logic as you go, catching and correcting any errors before finalizing your answer.
+- Use precise mathematical language and notation where appropriate, but also provide intuitive explanations when they aid understanding.
+- If a problem has multiple valid approaches, you may briefly note alternatives, but focus on completing one clean solution path.
+
+Once you have arrived at a solution you are confident in, call the submit_answer tool to deliver your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18437 x 80741) - (14910 x 74050)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+## Step 1: Calculate 18437 × 80741
+
+Breaking it down:
+
+- 18437 × 80000 = 1,474,960,000
+- 18437 × 700 = 12,905,900
+- 18437 × 41 = 755,917
+
+**Sum:** 1,474,960,000 + 12,905,900 + 755,917 = **1,488,621,817**
+
+---
+
+## Step 2: Calculate 14910 × 74050
+
+Breaking it down:
+
+- 14910 × 70000 = 1,043,700,000
+- 14910 × 4000 = 59,640,000
+- 14910 × 50 = 745,500
+
+**Sum:** 1,043,700,000 + 59,640,000 + 745,500 = **1,104,085,500**
+
+---
+
+## Step 3: Subtract the two results
+
+1,488,621,817 − 1,104,085,500 = **384,536,317**
+
+---
+
+[TOOL submit_answer] {'value': 384536317}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **384,536,317**.
+

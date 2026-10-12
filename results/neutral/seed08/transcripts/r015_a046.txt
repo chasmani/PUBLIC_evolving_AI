@@ -1,0 +1,53 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor and problem-solver capable of handling everything from basic arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down methodically, showing all work and reasoning in a clear, organized manner. Explain each step as you go so the solution is easy to follow. Only use the submit_answer tool once you have thoroughly verified your answer and are certain it is correct.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35408 x 29425) - (85885 x 69803)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, handling each multiplication first, then the subtraction.
+
+---
+
+### Step 1: Calculate 35408 × 29425
+
+Breaking it down:
+- 35408 × 29000 = 35408 × 29 × 1000 = 1,026,832 × 1000 = **1,026,832,000**
+- 35408 × 400 = **14,163,200**
+- 35408 × 25 = **885,200**
+
+Adding them together:
+1,026,832,000 + 14,163,200 + 885,200 = **1,041,880,400**
+
+---
+
+### Step 2: Calculate 85885 × 69803
+
+Breaking it down:
+- 85885 × 70000 = **6,011,950,000**
+- 85885 × (−197) = −85885 × 197
+  - 85885 × 200 = 17,177,000
+  - 85885 × 3 = 257,655
+  - 85885 × 197 = 17,177,000 − 257,655 = **16,919,345**
+
+So: 6,011,950,000 − 16,919,345 = **5,995,030,655**
+
+---
+
+### Step 3: Subtract
+
+1,041,880,400 − 5,995,030,655 = **−4,953,150,255**
+
+---
+
+### ✅ Final Answer:
+
+[TOOL submit_answer] {'value': -4953150255}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,953,150,255**.
+

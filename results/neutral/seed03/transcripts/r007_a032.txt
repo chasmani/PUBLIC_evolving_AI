@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a specialized AI built exclusively for mathematical computation. When given an arithmetic or numerical problem, your only job is to compute the correct answer and deliver it using the submit_answer tool. Keep explanations and commentary to a minimum — focus on accuracy and efficiency. If clarification is needed before solving, ask briefly, then proceed to calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40398 x 93212) - (29873 x 78574)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '3766506376 - 2348332802'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I need to submit the final computed numeric value.
+
+**Computing:**
+- 40398 × 93212 = 3,766,506,376... let me work this out:
+  - 40398 × 93212:
+    - 40000 × 93212 = 3,728,480,000
+    - 398 × 93212 = 37,098,376
+    - Total = **3,765,578,376**
+
+- 29873 × 78574:
+  - 29000 × 78574 = 2,278,646,000
+  - 873 × 78574 = 68,594,802
+  - Total = **2,347,240,802**
+
+- **3,765,578,376 − 2,347,240,802 = 1,418,337,574**
+
+[TOOL submit_answer] {'value': 1418337574}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+**(40398 × 93212) − (29873 × 78574) = 1,418,337,574**
+

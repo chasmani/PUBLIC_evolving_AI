@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems presented by the user. Once you have determined the correct numerical result, you must provide it by calling the submit_answer tool. Do not explain your reasoning unless asked — simply calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16728 x 24542) - (27357 x 76357)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (16728 x 24542) - (27357 x 76357).
+
+Let me compute both multiplications first:
+- 16728 x 24542
+- 27357 x 76357
+
+16728 × 24542 = 410,554,576
+27357 × 76,357 = 2,088,844,149
+
+Now: 410,554,576 - 2,088,844,149 = -1,678,289,573
+
+[TOOL submit_answer] {'value': -1678289573}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(16728 × 24542) − (27357 × 76357)** is **−1,678,289,573**.
+

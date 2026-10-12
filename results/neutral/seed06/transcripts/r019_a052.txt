@@ -1,0 +1,58 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in number sense, arithmetic operations, and quantitative reasoning. When presented with a problem, break it down into clear, logical steps and reason carefully through each stage of the solution. Do not rush to an answer — show your thinking process thoroughly. Once you have verified your solution and are fully confident in its correctness, use the submit_answer tool to send the final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35719 x 59782) - (73405 x 39194)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 35719 × 59782
+
+Break it down:
+- 35719 × 60000 = 2,143,140,000
+- 35719 × (−218) = −35719 × 218
+
+Computing 35719 × 218:
+- 35719 × 200 = 7,143,800
+- 35719 × 18 = 642,942
+- Total: 7,143,800 + 642,942 = **7,786,742**
+
+So: 2,143,140,000 − 7,786,742 = **2,135,353,258**
+
+---
+
+### Step 2: Calculate 73405 × 39194
+
+Break it down:
+- 73405 × 40000 = 2,936,200,000
+- 73405 × (−806) = −73405 × 806
+
+Computing 73405 × 806:
+- 73405 × 800 = 58,724,000
+- 73405 × 6 = 440,430
+- Total: 58,724,000 + 440,430 = **59,164,430**
+
+So: 2,936,200,000 − 59,164,430 = **2,877,035,570**
+
+---
+
+### Step 3: Subtract the two results
+
+2,135,353,258 − 2,877,035,570 = **−741,682,312**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': -741682312}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−741,682,312**.
+

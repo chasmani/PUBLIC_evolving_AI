@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant. Your primary role is to analyze and solve mathematical problems of any difficulty level. Work through problems step by step, showing your reasoning clearly. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56752 x 65852) - (27691 x 30748)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 56752 × 65852**
+
+56752 × 65852:
+= 56752 × (65000 + 852)
+= 56752 × 65000 + 56752 × 852
+= 3,688,880,000 + 48,352,704
+= **3,737,232,704**
+
+**Step 2: Calculate 27691 × 30748**
+
+27691 × 30748:
+= 27691 × (30000 + 748)
+= 27691 × 30000 + 27691 × 748
+= 830,730,000 + 20,712,868
+= **851,442,868**
+
+**Step 3: Subtract the results**
+
+3,737,232,704 − 851,442,868 = **2,885,789,836**
+
+[TOOL submit_answer] {'value': 2885789836}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(56752 × 65852) − (27691 × 30748)** is **2,885,789,836**.
+

@@ -1,0 +1,71 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with comprehensive knowledge spanning elementary math through graduate-level subjects such as differential geometry, number theory, combinatorics, and functional analysis. Your approach to every problem is structured and pedagogical: begin by identifying what is being asked, then work through the solution step by step, narrating your thought process clearly so that a learner can follow along and understand not just the answer but the reasoning behind it. Perform all calculations with care and verify intermediate results as you go. Anticipate common points of confusion and address them proactively. Only after you have thoroughly checked your solution and are confident in its correctness should you call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 56627 × 79300
+
+Break it down:
+56627 × 79300 = 56627 × 79000 + 56627 × 300
+
+- 56627 × 79000 = 56627 × 79 × 1000
+  - 56627 × 79 = 56627 × 80 − 56627 × 1
+  - 56627 × 80 = 4,530,160
+  - 4,530,160 − 56,627 = **4,473,533**
+  - So: 4,473,533 × 1000 = **4,473,533,000**
+
+- 56627 × 300 = 56627 × 3 × 100
+  - 56627 × 3 = 169,881
+  - 169,881 × 100 = **16,988,100**
+
+- **Total: 4,473,533,000 + 16,988,100 = 4,490,521,100**
+
+---
+
+### Step 2: Calculate 47270 × 76819
+
+Break it down:
+47270 × 76819 = 47270 × 76000 + 47270 × 800 + 47270 × 19
+
+- 47270 × 76000 = 47270 × 76 × 1000
+  - 47270 × 76 = 47270 × 70 + 47270 × 6
+  - 47270 × 70 = 3,308,900
+  - 47270 × 6 = 283,620
+  - Total: 3,308,900 + 283,620 = **3,592,520**
+  - × 1000 = **3,592,520,000**
+
+- 47270 × 800 = 47270 × 8 × 100
+  - 47270 × 8 = 378,160
+  - × 100 = **37,816,000**
+
+- 47270 × 19 = 47270 × 20 − 47270 × 1
+  - 47270 × 20 = 945,400
+  - 945,400 − 47,270 = **898,130**
+
+- **Total: 3,592,520,000 + 37,816,000 + 898,130 = 3,631,234,130**
+
+---
+
+### Step 3: Subtract
+
+4,490,521,100 − 3,631,234,130 = **859,286,970**
+
+---
+
+### ✅ Final Answer:
+
+[TOOL submit_answer] {'value': 859286970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(56627 × 79300) − (47270 × 76819) = 859,286,970**
+

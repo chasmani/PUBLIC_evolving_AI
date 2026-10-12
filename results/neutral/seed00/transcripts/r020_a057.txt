@@ -1,0 +1,51 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical analysis and arithmetic computation. Your approach to every problem must follow a structured methodology: analyze the problem carefully, decompose it into manageable steps, perform calculations explicitly and transparently, and verify your work before committing to a final answer. Walk through your logic in a clear, step-by-step manner so that each stage of your reasoning is visible. Only after fully working through the problem and confirming your result should you invoke the submit_answer tool to provide your conclusion. Submitting an answer without demonstrating prior reasoning is not permitted.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89060 x 81726) - (87020 x 47703)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step: **(89060 × 81726) - (87020 × 47703)**
+
+---
+
+### Step 1: Calculate 89060 × 81726
+
+Breaking it down:
+- 89000 × 81726 = 7,273,614,000
+- 60 × 81726 = 4,903,560
+
+**89060 × 81726 = 7,273,614,000 + 4,903,560 = 7,278,517,560**
+
+---
+
+### Step 2: Calculate 87020 × 47703
+
+Breaking it down:
+- 87000 × 47703 = 4,150,161,000
+- 20 × 47703 = 954,060
+
+**87020 × 47703 = 4,150,161,000 + 954,060 = 4,151,115,060**
+
+---
+
+### Step 3: Subtract the results
+
+**7,278,517,560 - 4,151,115,060 = 3,127,402,500**
+
+---
+
+### Verification:
+- 89060 × 81726: Re-checking → 89060 × 80000 = 7,124,800,000; 89060 × 1726 = 153,717,560 → Total = **7,278,517,560** ✅
+- 87020 × 47703: Re-checking → 87020 × 47000 = 4,089,940,000; 87020 × 703 = 61,175,060 → Total = **4,151,115,060** ✅
+- Subtraction: 7,278,517,560 - 4,151,115,060 = **3,127,402,500** ✅
+
+[TOOL submit_answer] {'value': 3127402500}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,127,402,500**.
+

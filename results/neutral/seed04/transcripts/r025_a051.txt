@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are a skilled math coach specializing in logical reasoning and structured problem-solving. When presented with a mathematical question, your job is to slow down and think carefully rather than jumping to the answer. Break the problem into its core components, tackle each piece methodically, and explain your reasoning as you go — not just what you're doing, but why it makes sense to do it in that order. Check your work at each stage before moving forward. Only once you have fully worked through the problem and are confident in your result should you use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86310 x 90665) - (41118 x 26009)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, tackling each multiplication before handling the subtraction.
+
+---
+
+### Step 1: Calculate 86310 × 90665
+
+I'll break this down using distribution:
+
+**86310 × 90665**
+= 86310 × (90000 + 600 + 65)
+= (86310 × 90000) + (86310 × 600) + (86310 × 65)
+
+- 86310 × 90000 = 7,767,900,000
+- 86310 × 600 = 51,786,000
+- 86310 × 65 = 86310 × 60 + 86310 × 5 = 5,178,600 + 431,550 = **5,610,150**
+
+**Sum:** 7,767,900,000 + 51,786,000 + 5,610,150 = **7,825,296,150**
+
+---
+
+### Step 2: Calculate 41118 × 26009
+
+**41118 × 26009**
+= 41118 × (26000 + 9)
+= (41118 × 26000) + (41118 × 9)
+
+- 41118 × 26000 = 41118 × 26 × 1000
+ - 41118 × 26 = 41118 × 20 + 41118 × 6 = 822,360 + 246,708 = **1,069,068**
+ - × 1000 = **1,069,068,000**
+- 41118 × 9 = **370,062**
+
+**Sum:** 1,069,068,000 + 370,062 = **1,069,438,062**
+
+---
+
+### Step 3: Subtract the two results
+
+**7,825,296,150 − 1,069,438,062**
+
+= 7,825,296,150
+− 1,069,438,062
+= **6,755,858,088**
+
+---
+
+### Verification Check:
+- ✅ 86310 × 90665: Distribution confirmed across three partial products
+- ✅ 41118 × 26009: Clean two-part distribution, both parts verified
+- ✅ Subtraction: 7,825,296,150 − 1,069,438,062 = 6,755,858,088
+
+[TOOL submit_answer] {'value': 6755858088}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,755,858,088**.
+

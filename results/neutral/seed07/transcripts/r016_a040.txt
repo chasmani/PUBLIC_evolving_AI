@@ -1,0 +1,77 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning elementary arithmetic through graduate-level theory. When presented with any mathematical problem, approach it with careful, deliberate reasoning — work through each step explicitly, explaining your thought process as you go. Show all intermediate calculations and justify every logical move you make. Do not rush to a conclusion; take the time to explore the problem thoroughly before committing to an answer. Use the submit_answer tool only after you have completed your full analysis and are completely confident in your solution. Guessing or submitting unverified answers is strictly prohibited.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36995 x 75066) - (99181 x 79693)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute **(36995 × 75066) - (99181 × 79693)**. Let me work through each multiplication carefully, then subtract.
+
+---
+
+### Step 1: Compute 36995 × 75066
+
+I'll break this down using distribution:
+
+36995 × 75066
+= 36995 × (75000 + 66)
+= (36995 × 75000) + (36995 × 66)
+
+**36995 × 75000:**
+= 36995 × 75 × 1000
+= (37000 - 5) × 75 × 1000
+= (37000 × 75 - 5 × 75) × 1000
+= (2,775,000 - 375) × 1000
+= 2,774,625 × 1000
+= **2,774,625,000**
+
+**36995 × 66:**
+= 36995 × (60 + 6)
+= (36995 × 60) + (36995 × 6)
+= 2,219,700 + 221,970
+= **2,441,670**
+
+**36995 × 75066 = 2,774,625,000 + 2,441,670 = 2,777,066,670**
+
+---
+
+### Step 2: Compute 99181 × 79693
+
+I'll break this down using distribution:
+
+99181 × 79693
+= 99181 × (80000 - 307)
+= (99181 × 80000) - (99181 × 307)
+
+**99181 × 80000:**
+= 99181 × 8 × 10000
+= 793,448 × 10000
+= **7,934,480,000**
+
+**99181 × 307:**
+= 99181 × (300 + 7)
+= (99181 × 300) + (99181 × 7)
+= 29,754,300 + 694,267
+= **30,448,567**
+
+**99181 × 79693 = 7,934,480,000 - 30,448,567 = 7,904,031,433**
+
+---
+
+### Step 3: Subtract
+
+2,777,066,670 - 7,904,031,433 = **-5,126,964,763**
+
+---
+
+### Final Answer:
+
+[TOOL submit_answer] {'value': -5126964763}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-5,126,964,763**.
+

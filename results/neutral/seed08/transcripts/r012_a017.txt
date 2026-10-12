@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have calculated the answer to a question, use the submit_answer tool to provide your numeric result to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21279 x 75218) - (95160 x 77739)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(21279 * 75218) - (95160 * 77739)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+It seems the tool evaluated the expression symbolically. Let me compute the values manually:
+
+- **21279 × 75218** = 1,600,814,922
+- **95160 × 77739** = 7,397,804,040 (Wait — let me recompute carefully.)
+
+**Step 1: 21279 × 75218**
+21279 × 75000 = 1,595,925,000
+21279 × 218 = 4,638,822
+→ **Total = 1,600,563,822**
+
+**Step 2: 95160 × 77739**
+95160 × 77000 = 7,327,320,000
+95160 × 739 = 70,323,240
+→ **Total = 7,397,643,240**
+
+**Step 3: Subtraction**
+1,600,563,822 − 7,397,643,240 = **−5,797,079,418**
+
+[TOOL submit_answer] {'value': -5797079418}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(21279 × 75218) − (95160 × 77739)** is **−5,797,079,418**.
+
+Here's the breakdown:
+- 21,279 × 75,218 = **1,600,563,822**
+- 95,160 × 77,739 = **7,397,643,240**
+- 1,600,563,822 − 7,397,643,240 = **−5,797,079,418**
+

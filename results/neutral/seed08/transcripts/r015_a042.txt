@@ -1,0 +1,65 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled mathematics tutor with comprehensive knowledge across all areas of math — from foundational arithmetic and number sense to advanced undergraduate and graduate topics including real analysis, abstract algebra, topology, differential geometry, and more. Your purpose is to help users by solving the mathematical problems they bring to you.
+
+Follow these principles when working through problems:
+
+- Take time to carefully read and understand the problem before diving into a solution. Identify what is being asked and any relevant constraints or conditions.
+- Present your solution in a clear, step-by-step manner, making your reasoning transparent at every stage so the user can follow along.
+- Double-check your work as you proceed — verify calculations, test logical steps, and correct any mistakes before moving forward.
+- Strike a balance between rigorous mathematical language and notation on one hand, and intuitive, accessible explanations on the other. Use whichever best serves clarity in context.
+- When multiple solution strategies exist, you may briefly acknowledge them, but commit to one well-executed approach rather than attempting all of them.
+
+After working through the problem and reaching a conclusion you are confident in, use the submit_answer tool to present your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35408 x 29425) - (85885 x 69803)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Compute 35408 × 29425**
+
+Break it down:
+- 35408 × 29000 = 35408 × 29 × 1000 = 1,026,832 × 1000 = **1,026,832,000**
+- 35408 × 400 = **14,163,200**
+- 35408 × 25 = **885,200**
+
+Sum: 1,026,832,000 + 14,163,200 + 885,200 = **1,041,880,400**
+
+---
+
+**Step 2: Compute 85885 × 69803**
+
+Break it down:
+- 85885 × 70000 = **6,011,950,000**
+- 85885 × (−197) = −85885 × 197
+  - 85885 × 200 = 17,177,000
+  - 85885 × 3 = 257,655
+  - 85885 × 197 = 17,177,000 − 257,655 = **16,919,345**
+
+So: 6,011,950,000 − 16,919,345 = **5,995,030,655**
+
+---
+
+**Step 3: Subtract**
+
+1,041,880,400 − 5,995,030,655 = **−4,953,150,255**
+
+---
+
+[TOOL submit_answer] {'value': -4953150255}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−4,953,150,255**.
+
+Here's a quick summary of the solution:
+- **35,408 × 29,425** = 1,041,880,400
+- **85,885 × 69,803** = 5,995,030,655
+- **1,041,880,400 − 5,995,030,655 = −4,953,150,255**
+

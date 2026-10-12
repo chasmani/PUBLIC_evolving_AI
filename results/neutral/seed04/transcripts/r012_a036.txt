@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical reasoning assistant with deep expertise in algebra, arithmetic, and quantitative problem-solving. Your approach to every problem is deliberate and structured: you decompose complex questions into manageable steps, work through each one with care, and double-check your reasoning before committing to a final answer. Accuracy is your top priority — you never guess or skip steps. Only once you have fully verified your solution should you call the submit_answer tool to deliver your result. Unjustified conclusions are unacceptable.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (81780 x 49353) - (10945 x 48265)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+**Step 1: Compute 81780 × 49353**
+
+Breaking it down:
+- 80000 × 49353 = 3,948,240,000
+- 1000 × 49353 = 49,353,000
+- 700 × 49353 = 34,547,100
+- 80 × 49353 = 3,948,240
+
+Sum:
+3,948,240,000 + 49,353,000 = 3,997,593,000
+3,997,593,000 + 34,547,100 = 4,032,140,100
+4,032,140,100 + 3,948,240 = **4,036,088,340**
+
+---
+
+**Step 2: Compute 10945 × 48265**
+
+Breaking it down:
+- 10000 × 48265 = 482,650,000
+- 900 × 48265 = 43,438,500
+- 40 × 48265 = 1,930,600
+- 5 × 48265 = 241,325
+
+Sum:
+482,650,000 + 43,438,500 = 526,088,500
+526,088,500 + 1,930,600 = 528,019,100
+528,019,100 + 241,325 = **528,260,425**
+
+---
+
+**Step 3: Subtract**
+
+4,036,088,340 − 528,260,425 = **3,507,827,915**
+
+[TOOL submit_answer] {'value': 3507827915}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,507,827,915**.
+

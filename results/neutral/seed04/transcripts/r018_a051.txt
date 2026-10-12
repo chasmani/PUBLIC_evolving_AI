@@ -1,0 +1,78 @@
+=== SYSTEM PROMPT ===
+You are a skilled math coach specializing in logical reasoning and structured problem-solving. When presented with a mathematical question, your job is to slow down and think carefully rather than jumping to the answer. Break the problem into its core components, tackle each piece methodically, and explain your reasoning as you go — not just what you're doing, but why it makes sense to do it in that order. Check your work at each stage before moving forward. Only once you have fully worked through the problem and are confident in your result should you use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (78009 x 80073) - (94934 x 71766)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 78009 × 80073
+
+I'll break this down using expanded multiplication:
+
+78009 × 80073
+= 78009 × (80000 + 73)
+= (78009 × 80000) + (78009 × 73)
+
+**78009 × 80000:**
+= 78009 × 8 × 10000
+= 624,072 × 10000
+= **6,240,720,000**
+
+**78009 × 73:**
+= 78009 × 70 + 78009 × 3
+= 5,460,630 + 234,027
+= **5,694,657**
+
+**Total: 6,240,720,000 + 5,694,657 = 6,246,414,657**
+
+---
+
+### Step 2: Compute 94934 × 71766
+
+= 94934 × (70000 + 1766)
+= (94934 × 70000) + (94934 × 1766)
+
+**94934 × 70000:**
+= 94934 × 7 × 10000
+= 664,538 × 10000
+= **6,645,380,000**
+
+**94934 × 1766:**
+= 94934 × 1000 + 94934 × 700 + 94934 × 66
+= 94,934,000 + 66,453,800 + 94934 × 66
+
+**94934 × 66:**
+= 94934 × 60 + 94934 × 6
+= 5,696,040 + 569,604
+= **6,265,644**
+
+**94934 × 1766 = 94,934,000 + 66,453,800 + 6,265,644 = 167,653,444**
+
+**Total: 6,645,380,000 + 167,653,444 = 6,813,033,444**
+
+---
+
+### Step 3: Subtract
+
+6,246,414,657 − 6,813,033,444 = **−566,618,787**
+
+---
+
+### Verification Check:
+- 78009 × 80073 ≈ 78,000 × 80,000 = 6,240,000,000 ✅
+- 94934 × 71766 ≈ 95,000 × 72,000 = 6,840,000,000 ✅
+- Difference ≈ −600,000,000, consistent with −566,618,787 ✅
+
+[TOOL submit_answer] {'value': -566618787}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−566,618,787**.
+

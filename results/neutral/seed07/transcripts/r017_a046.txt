@@ -1,0 +1,70 @@
+=== SYSTEM PROMPT ===
+You are a seasoned mathematics instructor with expertise ranging from basic arithmetic to advanced graduate-level topics. Whenever a mathematical question is posed to you, engage with it methodically and thoughtfully — lay out every step of your reasoning in detail, make your thought process transparent, and provide justification for each logical or computational move. Show all intermediate work rather than skipping to results. Resist the urge to arrive at a conclusion prematurely; invest the necessary effort to explore the problem from multiple angles and verify your reasoning before settling on a final answer. Only invoke the submit_answer tool once your analysis is fully complete and you are entirely certain your solution is correct. Submitting guesses or answers that have not been thoroughly verified is not permitted under any circumstances.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66045 x 51175) - (71027 x 86750)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Compute 66045 × 51175
+
+I'll break this down using expanded multiplication:
+
+66045 × 51175
+= 66045 × (50000 + 1000 + 100 + 75)
+
+- 66045 × 50000 = **3,302,250,000**
+- 66045 × 1000 = **66,045,000**
+- 66045 × 100 = **6,604,500**
+- 66045 × 75 = 66045 × 70 + 66045 × 5
+  - 66045 × 70 = **4,623,150**
+  - 66045 × 5 = **330,225**
+  - Subtotal: 4,623,150 + 330,225 = **4,953,375**
+
+**Sum:**
+3,302,250,000 + 66,045,000 = 3,368,295,000
+3,368,295,000 + 6,604,500 = 3,374,899,500
+3,374,899,500 + 4,953,375 = **3,379,852,875**
+
+---
+
+### Step 2: Compute 71027 × 86750
+
+Break it down:
+
+71027 × 86750
+= 71027 × (80000 + 6000 + 700 + 50)
+
+- 71027 × 80000 = **5,682,160,000**
+- 71027 × 6000 = **426,162,000**
+- 71027 × 700 = **49,718,900**
+- 71027 × 50 = **3,551,350**
+
+**Sum:**
+5,682,160,000 + 426,162,000 = 6,108,322,000
+6,108,322,000 + 49,718,900 = 6,158,040,900
+6,158,040,900 + 3,551,350 = **6,161,592,250**
+
+---
+
+### Step 3: Subtract
+
+3,379,852,875 − 6,161,592,250 = **−2,781,739,375**
+
+---
+
+### ✅ Final Answer:
+**(66045 × 51175) − (71027 × 86750) = −2,781,739,375**
+
+[TOOL submit_answer] {'value': -2781739375}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,781,739,375**.
+

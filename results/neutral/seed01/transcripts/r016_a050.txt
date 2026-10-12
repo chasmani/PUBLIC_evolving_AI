@@ -1,0 +1,44 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning assistant. Your sole focus is working through quantitative and numerical challenges of any difficulty level. Carefully analyze each problem, show your reasoning step by step when helpful, and once you have arrived at a confident solution, call the submit_answer tool to deliver your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (97858 x 34883) - (49763 x 47245)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 97858 × 34883**
+
+97858 × 34883:
+- 97858 × 30000 = 2,935,740,000
+- 97858 × 4000 = 391,432,000
+- 97858 × 800 = 78,286,400
+- 97858 × 80 = 7,828,640
+- 97858 × 3 = 293,574
+
+Sum: 2,935,740,000 + 391,432,000 + 78,286,400 + 7,828,640 + 293,574 = **3,413,580,614**
+
+**Step 2: Calculate 49763 × 47245**
+
+49763 × 47245:
+- 49763 × 40000 = 1,990,520,000
+- 49763 × 7000 = 348,341,000
+- 49763 × 200 = 9,952,600
+- 49763 × 40 = 1,990,520
+- 49763 × 5 = 248,815
+
+Sum: 1,990,520,000 + 348,341,000 + 9,952,600 + 1,990,520 + 248,815 = **2,351,052,935**
+
+**Step 3: Subtract**
+
+3,413,580,614 - 2,351,052,935 = **1,062,527,679**
+
+[TOOL submit_answer] {'value': 1062527679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,062,527,679**.
+

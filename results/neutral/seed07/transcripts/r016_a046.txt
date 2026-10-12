@@ -1,0 +1,81 @@
+=== SYSTEM PROMPT ===
+You are a seasoned mathematics instructor with expertise ranging from basic arithmetic to advanced graduate-level topics. Whenever a mathematical question is posed to you, engage with it methodically and thoughtfully — lay out every step of your reasoning in detail, make your thought process transparent, and provide justification for each logical or computational move. Show all intermediate work rather than skipping to results. Resist the urge to arrive at a conclusion prematurely; invest the necessary effort to explore the problem from multiple angles and verify your reasoning before settling on a final answer. Only invoke the submit_answer tool once your analysis is fully complete and you are entirely certain your solution is correct. Submitting guesses or answers that have not been thoroughly verified is not permitted under any circumstances.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36995 x 75066) - (99181 x 79693)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+## Step 1: Compute 36995 × 75066
+
+I'll break this down using distributive property:
+
+**36995 × 75066**
+= 36995 × (75000 + 66)
+= (36995 × 75000) + (36995 × 66)
+
+**36995 × 75000:**
+= 36995 × 75 × 1000
+= (37000 - 5) × 75 × 1000
+= (37000 × 75 - 5 × 75) × 1000
+= (2,775,000 - 375) × 1000
+= 2,774,625 × 1000
+= **2,774,625,000**
+
+**36995 × 66:**
+= 36995 × (60 + 6)
+= (36995 × 60) + (36995 × 6)
+= 2,219,700 + 221,970
+= **2,441,670**
+
+**36995 × 75066 = 2,774,625,000 + 2,441,670 = 2,777,066,670**
+
+---
+
+## Step 2: Compute 99181 × 79693
+
+**99181 × 79693**
+= 99181 × (80000 - 307)
+= (99181 × 80000) - (99181 × 307)
+
+**99181 × 80000:**
+= 99181 × 8 × 10000
+= 793,448 × 10000
+= **7,934,480,000**
+
+**99181 × 307:**
+= 99181 × (300 + 7)
+= (99181 × 300) + (99181 × 7)
+= 29,754,300 + 694,267
+= **30,448,567**
+
+**99181 × 79693 = 7,934,480,000 - 30,448,567 = 7,904,031,433**
+
+---
+
+## Step 3: Compute the Final Subtraction
+
+**(36995 × 75066) - (99181 × 79693)**
+= 2,777,066,670 - 7,904,031,433
+= **-5,126,964,763**
+
+---
+
+## Verification (Cross-check key multiplications)
+
+- 36995 × 75066: Re-checking 36995 × 66 = 36995 × 6 × 11 = 221,970 × 11 = 2,441,670 ✅
+- 99181 × 7 = 694,267 ✅ | 99181 × 300 = 29,754,300 ✅
+- Subtraction: 7,904,031,433 - 2,777,066,670 = 5,126,964,763, so result is negative ✅
+
+[TOOL submit_answer] {'value': -5126964763}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-5,126,964,763**.
+

@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are a math-solving assistant specializing in arithmetic computations. When you arrive at a numerical result, you must record it by calling the submit_answer tool. Always use the tool to deliver your final answer rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33834 x 68410) - (64351 x 78860)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Since both multiplications are independent, I'll calculate them simultaneously, then subtract.
+
+Let me break this down:
+
+**Step 1: Compute both products**
+
+- 33834 × 68410
+- 64351 × 78860
+
+**33834 × 68410:**
+33834 × 68410
+= 33834 × 68000 + 33834 × 410
+= 2,300,712,000 + 13,871,940
+= 2,314,583,940
+
+**64351 × 78860:**
+64351 × 78860
+= 64351 × 78000 + 64351 × 860
+= 5,019,378,000 + 55,341,860
+= 5,074,719,860
+
+**Step 2: Subtract**
+2,314,583,940 − 5,074,719,860 = **−2,760,135,920**
+
+[TOOL submit_answer] {'value': -2760135920}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(33834 × 68410) − (64351 × 78860) = −2,760,135,920**.
+
+Here's the breakdown:
+- 33,834 × 68,410 = **2,314,583,940**
+- 64,351 × 78,860 = **5,074,719,860**
+- 2,314,583,940 − 5,074,719,860 = **−2,760,135,920**
+

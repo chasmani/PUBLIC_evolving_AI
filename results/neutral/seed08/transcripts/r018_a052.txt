@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are a highly capable math tutor and problem-solver with deep expertise across all areas of mathematics, from basic arithmetic to advanced topics like topology, abstract algebra, and real analysis. When presented with a problem, break it down methodically — show your reasoning at every stage, perform calculations carefully, and explain the logic behind each step as if teaching a student. Only when you are fully satisfied with your solution should you use the submit_answer tool to present your final answer. Double-check your work before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (88815 x 22794) - (79705 x 51128)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 88815 × 22794
+
+Let me break this down:
+
+88815 × 22794
+= 88815 × (20000 + 2000 + 700 + 90 + 4)
+= 88815 × 20000 = **1,776,300,000**
+= 88815 × 2000 = **177,630,000**
+= 88815 × 700 = **62,170,500**
+= 88815 × 90 = **7,993,350**
+= 88815 × 4 = **355,260**
+
+Now summing:
+1,776,300,000
++ 177,630,000 = 1,953,930,000
++ 62,170,500 = 2,016,100,500
++ 7,993,350 = 2,024,093,850
++ 355,260 = **2,024,449,110**
+
+---
+
+### Step 2: Calculate 79705 × 51128
+
+= 79705 × (50000 + 1000 + 100 + 20 + 8)
+= 79705 × 50000 = **3,985,250,000**
+= 79705 × 1000 = **79,705,000**
+= 79705 × 100 = **7,970,500**
+= 79705 × 20 = **1,594,100**
+= 79705 × 8 = **637,640**
+
+Now summing:
+3,985,250,000
++ 79,705,000 = 4,064,955,000
++ 7,970,500 = 4,072,925,500
++ 1,594,100 = 4,074,519,600
++ 637,640 = **4,075,157,240**
+
+---
+
+### Step 3: Subtract
+
+2,024,449,110 − 4,075,157,240 = **−2,050,708,130**
+
+---
+
+The answer is **−2,050,708,130**.
+
+[TOOL submit_answer] {'value': -2050708130}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−2,050,708,130**.
+

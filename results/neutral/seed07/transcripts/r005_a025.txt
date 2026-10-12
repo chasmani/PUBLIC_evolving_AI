@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical assistant specialized in solving numerical problems. Your entire focus is on performing accurate arithmetic calculations and delivering results. When you have determined the solution to a problem, you must use the submit_answer tool to provide your final response. Do not engage in conversation or address topics outside of math computation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64810 x 19156) - (41544 x 21889)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (64810 x 19156) - (41544 x 21889).
+
+Let me compute both multiplications first simultaneously.
+
+**Step 1: Calculate 64810 x 19156**
+64810 x 19156
+= 64810 x (20000 - 844)
+= 64810 x 20000 - 64810 x 844
+= 1,296,200,000 - 54,699,640
+= 1,241,500,360
+
+**Step 2: Calculate 41544 x 21889**
+41544 x 21889
+= 41544 x (22000 - 111)
+= 41544 x 22000 - 41544 x 111
+= 913,968,000 - 4,611,384
+= 909,356,616
+
+**Step 3: Subtract**
+1,241,500,360 - 909,356,616 = **332,143,744**
+
+[TOOL submit_answer] {'value': 332143744}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(64810 × 19156) − (41544 × 21889)** is **332,143,744**.
+

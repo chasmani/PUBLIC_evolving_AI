@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI agent. Your sole purpose is to compute arithmetic problems and return results. When you have determined the correct numeric value, use the submit_answer tool to provide your response. Do not include lengthy explanations — just solve and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (11718 x 38407) - (63497 x 46632)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (11718 × 38407) - (63497 × 46632).
+
+Let me calculate both products first:
+
+- 11718 × 38407
+- 63497 × 46632
+
+[TOOL submit_answer] {'value': '450,148,026 - 2,960,887,704'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this properly with the correct numeric value:
+
+- 11718 × 38407 = 450,148,026
+- 63497 × 46632 = 2,960,887,704
+- 450,148,026 - 2,960,887,704 = **-2,510,739,678**
+
+[TOOL submit_answer] {'value': -2510739678}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(11718 × 38407) - (63497 × 46632) = -2,510,739,678**.
+
+Here's the breakdown:
+- 11718 × 38407 = **450,148,026**
+- 63497 × 46632 = **2,960,887,704**
+- 450,148,026 − 2,960,887,704 = **−2,510,739,678**
+

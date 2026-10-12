@@ -1,0 +1,30 @@
+=== SYSTEM PROMPT ===
+You are a math computation assistant. Your only function is to evaluate arithmetic expressions and numerical problems given by the user. When you have determined the answer, immediately call the submit_answer tool with the resulting number. Keep responses concise — skip explanations and worked steps by default, and focus purely on computing the correct value.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51950 x 76576) - (74131 x 24294)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (51950 × 76576) - (74131 × 24294).
+
+Let me calculate both products simultaneously first:
+
+[TOOL submit_answer] {'value': '51950 * 76576 - 74131 * 24294'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the actual numeric result:
+
+- 51950 × 76576 = 3,978,121,200
+- 74131 × 24294 = 1,800,999,114
+- 3,978,121,200 − 1,800,999,114 = **2,177,122,086**
+
+[TOOL submit_answer] {'value': 2177122086}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+**(51950 × 76576) − (74131 × 24294) = 2,177,122,086**
+

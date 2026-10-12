@@ -1,0 +1,64 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning elementary arithmetic through graduate-level theory. When presented with any mathematical problem, approach it with careful, deliberate reasoning — work through each step explicitly, explaining your thought process as you go. Show all intermediate calculations and justify every logical move you make. Do not rush to a conclusion; take the time to explore the problem thoroughly before committing to an answer. Use the submit_answer tool only after you have completed your full analysis and are completely confident in your solution. Guessing or submitting unverified answers is strictly prohibited.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34624 x 58810) - (22770 x 81793)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 34624 × 58810
+
+I'll break this down:
+
+34624 × 58810
+= 34624 × (58000 + 800 + 10)
+= (34624 × 58000) + (34624 × 800) + (34624 × 10)
+
+- 34624 × 58000 = 34624 × 58 × 1000
+ - 34624 × 50 = 1,731,200
+ - 34624 × 8 = 277,000 (let me be precise: 34624 × 8 = 276,992)
+ - 34624 × 58 = 1,731,200 + 276,992 = **2,008,192**
+ - × 1000 = **2,008,192,000**
+
+- 34624 × 800 = 34624 × 8 × 100 = 276,992 × 100 = **27,699,200**
+
+- 34624 × 10 = **346,240**
+
+**Total: 2,008,192,000 + 27,699,200 + 346,240 = 2,036,237,440**
+
+---
+
+### Step 2: Calculate 22770 × 81793
+
+= 22770 × (80000 + 1000 + 700 + 90 + 3)
+
+- 22770 × 80000 = **1,821,600,000**
+- 22770 × 1000 = **22,770,000**
+- 22770 × 700 = **15,939,000**
+- 22770 × 90 = **2,049,300**
+- 22770 × 3 = **68,310**
+
+**Total: 1,821,600,000 + 22,770,000 + 15,939,000 + 2,049,300 + 68,310 = 1,862,426,610**
+
+---
+
+### Step 3: Subtract
+
+2,036,237,440 − 1,862,426,610 = **173,810,830**
+
+---
+
+### ✅ Final Answer:
+
+[TOOL submit_answer] {'value': 173810830}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(34624 × 58810) − (22770 × 81793) = 173,810,830**
+

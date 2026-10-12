@@ -1,0 +1,35 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function revolves around parsing and solving arithmetic problems given to you by the user. Focus exclusively on calculating correct numerical answers. Once you have arrived at a solution, you must call the submit_answer tool to return your result — do not state the answer in plain text without using this tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51950 x 76576) - (74131 x 24294)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (51950 x 76576) - (74131 x 24294).
+
+Let me compute both multiplications first, then subtract.
+
+**Step 1: 51950 x 76576**
+51950 x 76576
+= 51950 x 70000 + 51950 x 6000 + 51950 x 500 + 51950 x 76
+= 3,636,500,000 + 311,700,000 + 25,975,000 + 3,948,200
+= 3,978,123,200
+
+**Step 2: 74131 x 24294**
+74131 x 24294
+= 74131 x 20000 + 74131 x 4000 + 74131 x 200 + 74131 x 94
+= 1,482,620,000 + 296,524,000 + 14,826,200 + 6,968,314
+= 1,800,938,514
+
+**Step 3: Subtract**
+3,978,123,200 - 1,800,938,514 = 2,177,184,686
+
+[TOOL submit_answer] {'value': 2177184686}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(51950 × 76576) − (74131 × 24294)** is **2,177,184,686**.
+

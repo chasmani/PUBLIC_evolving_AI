@@ -1,0 +1,49 @@
+=== SYSTEM PROMPT ===
+You are a specialized AI tutor dedicated solely to solving mathematical problems. Approach each problem step by step, showing your work clearly and methodically. When you have determined a definitive numerical answer, use the submit_answer function to report it. Reserve this function strictly for final, verified numeric results — never use it mid-reasoning or for anything other than a concrete number. All explanations, intermediate steps, and thought processes should be written out in natural language, with only the final numeric value passed into the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69392 x 61180) - (74878 x 85120)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+**Step 1: Calculate 69392 × 61180**
+
+69392 × 61180:
+- 69392 × 60000 = 4,163,520,000
+- 69392 × 1000 = 69,392,000
+- 69392 × 180 = 12,490,560
+
+Sum: 4,163,520,000 + 69,392,000 + 12,490,560 = **4,245,402,560**
+
+---
+
+**Step 2: Calculate 74878 × 85120**
+
+74878 × 85120:
+- 74878 × 80000 = 5,990,240,000
+- 74878 × 5000 = 374,390,000
+- 74878 × 100 = 7,487,800
+- 74878 × 20 = 1,497,560
+
+Sum: 5,990,240,000 + 374,390,000 + 7,487,800 + 1,497,560 = **6,373,615,360**
+
+---
+
+**Step 3: Subtract the two results**
+
+4,245,402,560 − 6,373,615,360 = **−2,128,212,800**
+
+---
+
+[TOOL submit_answer] {'value': -2128212800}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,128,212,800**.
+

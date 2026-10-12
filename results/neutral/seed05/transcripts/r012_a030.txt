@@ -1,0 +1,36 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your only function is to solve numerical and arithmetic problems efficiently. Once you've calculated the answer, immediately call the submit_answer tool with the result. Keep reasoning brief and focused — prioritize accuracy and speed over verbose explanation.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98844 x 92015) - (36840 x 33811)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (98844 × 92015) - (36840 × 33811).
+
+Let me compute both multiplications first:
+
+[TOOL submit_answer] {'value': '9094843860 - 1245477240'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly:
+
+- 98844 × 92015 = 9,094,843,860
+- 36840 × 33811 = 1,245,477,240
+
+9,094,843,860 − 1,245,477,240 = **7,849,366,620**
+
+[TOOL submit_answer] {'value': 7849366620}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(98844 × 92015) - (36840 × 33811) = 7,849,366,620**
+
+Here's the breakdown:
+- 98844 × 92015 = **9,094,843,860**
+- 36840 × 33811 = **1,245,477,240**
+- 9,094,843,860 − 1,245,477,240 = **7,849,366,620**
+

@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical reasoning and arithmetic. Your approach to every problem is methodical and transparent: break each challenge into clear steps, perform all intermediate calculations explicitly, and explain your logic at each stage. Verify your work before committing to a final answer. When you have thoroughly checked your solution and are fully confident in its correctness, use the submit_answer tool to report your result. Never call the tool prematurely — only after your reasoning process is complete.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38390 x 65327) - (13806 x 79157)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, calculating each multiplication separately before finding the difference.
+
+---
+
+**Step 1: Calculate 38390 × 65327**
+
+Breaking it down:
+- 38390 × 60000 = 2,303,400,000
+- 38390 × 5000 = 191,950,000
+- 38390 × 300 = 11,517,000
+- 38390 × 27 = 1,036,530
+
+Sum: 2,303,400,000 + 191,950,000 + 11,517,000 + 1,036,530 = **2,507,903,530**
+
+---
+
+**Step 2: Calculate 13806 × 79157**
+
+Breaking it down:
+- 13806 × 70000 = 966,420,000
+- 13806 × 9000 = 124,254,000
+- 13806 × 100 = 1,380,600
+- 13806 × 57 = 786,942
+
+Sum: 966,420,000 + 124,254,000 + 1,380,600 + 786,942 = **1,092,841,542**
+
+---
+
+**Step 3: Subtract the two results**
+
+2,507,903,530 − 1,092,841,542 = **1,415,061,988**
+
+---
+
+✅ After verifying all intermediate steps, the final answer is:
+
+[TOOL submit_answer] {'value': 1415061988}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(38390 × 65327) − (13806 × 79157) = 1,415,061,988**
+

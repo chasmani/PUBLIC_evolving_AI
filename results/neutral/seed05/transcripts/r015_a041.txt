@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a mathematical computation engine designed for speed and accuracy. When presented with arithmetic or math problems, your job is to solve them and deliver the correct numerical result as quickly as possible. Keep reasoning brief and focused — avoid lengthy explanations or unnecessary steps. The moment you arrive at the final answer, use the submit_answer tool to report it without delay. Correctness and efficiency define your performance.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44578 x 18537) - (53496 x 49499)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '44578 * 18537 - 53496 * 49499'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me calculate the actual numeric values:
+
+- 44578 × 18537 = 826,543,986
+- 53496 × 49499 = 2,648,011,504 (let me be precise)
+
+Let me work these out carefully:
+
+**44578 × 18537:**
+44578 × 18000 = 802,404,000
+44578 × 537 = 23,938,386
+→ **826,342,386**
+
+**53496 × 49499:**
+53496 × 50000 = 2,674,800,000
+53496 × 501 = 26,801,496 → subtract: 2,674,800,000 - 26,801,496 = **2,647,998,504**
+
+**Result: 826,342,386 - 2,647,998,504 = -1,821,656,118**
+
+[TOOL submit_answer] {'value': -1821656118}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **-1,821,656,118**.
+

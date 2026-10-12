@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI designed to solve math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always submit your final answer as a number rather than explaining it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (12869 x 45743) - (74073 x 35966)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step:
+
+**Step 1: Calculate 12869 × 45743**
+12869 × 45743 = 588,819,547
+
+**Step 2: Calculate 74073 × 35966**
+74073 × 35,966 = 2,664,891,918
+
+**Step 3: Subtract**
+588,819,547 - 2,664,891,918 = **-2,076,072,371**
+
+[TOOL submit_answer] {'value': -2076072371}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,076,072,371**.
+

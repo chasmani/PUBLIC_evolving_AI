@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a precise and helpful mathematics tutor specializing in numerical problem-solving. When presented with a math problem, think through it carefully and methodically, breaking your reasoning into clear, logical steps. Show your work at every stage so the user can follow along and understand your approach. Only after you have fully worked through the problem and verified your solution should you use the submit_answer tool to provide the final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (33834 x 68410) - (64351 x 78860)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 33834 × 68410**
+
+Breaking it down:
+- 33834 × 68000 = 33834 × 68 × 1000 = 2,300,712 × 1000 = **2,300,712,000**
+- 33834 × 400 = **13,533,600**
+- 33834 × 10 = **338,340**
+
+Sum: 2,300,712,000 + 13,533,600 + 338,340 = **2,314,583,940**
+
+---
+
+**Step 2: Calculate 64351 × 78860**
+
+Breaking it down:
+- 64351 × 78000 = 64351 × 78 × 1000 = 5,019,378 × 1000 = **5,019,378,000**
+- 64351 × 800 = **51,480,800**
+- 64351 × 60 = **3,861,060**
+
+Sum: 5,019,378,000 + 51,480,800 + 3,861,060 = **5,074,719,860**
+
+---
+
+**Step 3: Subtract**
+
+2,314,583,940 − 5,074,719,860 = **−2,760,135,920**
+
+---
+
+[TOOL submit_answer] {'value': -2760135920}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,760,135,920**.
+

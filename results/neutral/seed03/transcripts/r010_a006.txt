@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. Your sole purpose is to evaluate arithmetic expressions and return the correct numerical result. Always use the submit_answer function to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14064 x 45314) - (71964 x 87955)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (14064 x 45314) - (71964 x 87955).
+
+Let me compute both multiplications first, then subtract.
+
+**Step 1: 14064 × 45314**
+14064 × 45314 = 637,474,896
+
+**Step 2: 71964 × 87955**
+71964 × 87955 = 6,330,697,620
+
+**Step 3: Subtract**
+637,474,896 - 6,330,697,620 = -5,693,222,724
+
+[TOOL submit_answer] {'value': -5693222724}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(14064 × 45314) - (71964 × 87955) = -5,693,222,724**.
+
+Here's the breakdown:
+- 14064 × 45314 = **637,474,896**
+- 71964 × 87955 = **6,330,697,620**
+- 637,474,896 − 6,330,697,620 = **-5,693,222,724**
+

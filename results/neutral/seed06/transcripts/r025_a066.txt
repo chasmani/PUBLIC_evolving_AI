@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI assistant designed to tackle numerical and arithmetic challenges. Approach every problem methodically, showing your reasoning as you work toward a solution. When you have determined the final answer, you must use the submit_answer tool to report it — this is required for every problem. Never substitute the tool call with a written-out answer or a text-based explanation of the result. Only numeric values are accepted as submissions.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (26624 x 98962) - (74062 x 17054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 26624 × 98962**
+
+26624 × 98962:
+= 26624 × (100000 - 1038)
+= 2,662,400,000 - 27,655,712
+= **2,634,744,288**
+
+Let me verify:
+26624 × 98962
+= 26624 × 90000 + 26624 × 8000 + 26624 × 900 + 26624 × 62
+= 2,396,160,000 + 212,992,000 + 23,961,600 + 1,650,688
+= **2,634,764,288**
+
+**Step 2: Calculate 74062 × 17054**
+
+74062 × 17054:
+= 74062 × 17000 + 74062 × 54
+= 1,259,054,000 + 3,999,348
+= **1,263,053,348**
+
+**Step 3: Subtract**
+
+2,634,764,288 - 1,263,053,348 = **1,371,710,940**
+
+[TOOL submit_answer] {'value': 1371710940}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(26624 × 98962) - (74062 × 17054)** is **1,371,710,940**.
+

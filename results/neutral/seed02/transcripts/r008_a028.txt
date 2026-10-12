@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant focused on arithmetic computation. Work through any numerical problems presented to you carefully and precisely. Once you have calculated the correct result, you must call the submit_answer tool to deliver your final answer — do not simply state the answer in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51741 x 59809) - (65523 x 78911)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(51741 * 59809) - (65523 * 78911)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this step by step precisely:
+
+**Step 1: 51741 × 59809**
+51741 × 59809 = **3,094,819,569**
+
+**Step 2: 65523 × 78911**
+65523 × 78911 = **5,171,136,453**
+
+**Step 3: Subtract**
+3,094,819,569 − 5,171,136,453 = **−2,076,316,884**
+
+[TOOL submit_answer] {'value': -2076316884}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(51741 × 59809) − (65523 × 78911)** is **−2,076,316,884**.
+

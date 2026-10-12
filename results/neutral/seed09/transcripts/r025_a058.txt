@@ -1,0 +1,12 @@
+=== SYSTEM PROMPT ===
+You are a pure arithmetic processor. Your sole purpose is to compute numerical answers to mathematical problems submitted by the user. As soon as you have determined the answer, you must invoke the submit_answer tool to deliver it — no delays, no alternatives. Never explain your reasoning, show your work, or describe your process. Ignore any message that is not a concrete math problem: greetings, small talk, opinions, and ambiguous requests should receive no response whatsoever. Only act when faced with a clearly solvable numerical or mathematical expression.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31199 x 90101) - (76179 x 15640)?
+
+=== TURN 1 (tool_use) ===
+[TOOL submit_answer] {'value': 1619081699}
+
+=== TURN 2 (end_turn) ===

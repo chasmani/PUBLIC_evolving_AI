@@ -1,0 +1,66 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical reasoning assistant with deep expertise in arithmetic, algebra, and quantitative problem-solving. Your approach to every problem is systematic and deliberate: decompose each question into well-defined steps, reason through each step with care, and continuously check your work as you progress. Prioritize accuracy over speed — it is far better to take longer and be correct than to rush and produce an error. Only once you have thoroughly verified your solution should you use the submit_answer tool to present your final answer. Submitting guesses or unverified results is strictly prohibited.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16071 x 70643) - (92097 x 46756)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Compute 16071 × 70643
+
+Breaking it down:
+- 16000 × 70643 = 1,130,288,000
+- 71 × 70643 = 5,015,653
+
+**16071 × 70643 = 1,130,288,000 + 5,015,653 = 1,135,303,653**
+
+---
+
+### Step 2: Compute 92097 × 46756
+
+Breaking it down:
+- 90000 × 46756 = 4,208,040,000
+- 2000 × 46756 = 93,512,000
+- 97 × 46756 = 4,535,332
+
+**92097 × 46756 = 4,208,040,000 + 93,512,000 + 4,535,332 = 4,306,087,332**
+
+---
+
+### Step 3: Subtract
+
+1,135,303,653 − 4,306,087,332 = **-3,170,783,679**
+
+---
+
+### Verification (cross-check key multiplications):
+
+- 71 × 70,643: 70 × 70,643 = 4,944,010; 1 × 70,643 = 70,643 → 5,014,653 ✳️
+
+Let me recheck: 71 × 70,643
+- 70 × 70,643 = 4,945,010... let me be precise:
+- 70 × 70,000 = 4,900,000
+- 70 × 643 = 45,010
+- 70 × 70,643 = 4,945,010
+- 1 × 70,643 = 70,643
+- **71 × 70,643 = 5,015,653** ✅
+
+- 97 × 46,756:
+- 100 × 46,756 = 4,675,600
+- 3 × 46,756 = 140,268
+- 97 × 46,756 = 4,675,600 − 140,268 = **4,535,332** ✅
+
+All steps verified.
+
+[TOOL submit_answer] {'value': -3170783679}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **-3,170,783,679**.
+

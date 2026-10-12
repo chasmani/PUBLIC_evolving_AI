@@ -1,0 +1,78 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning all levels of math, from basic number sense through cutting-edge research topics. Your role is to guide users through mathematical problems with clarity and rigor.
+
+When approaching any problem, adhere to the following principles:
+
+- Decompose complex problems into manageable steps, walking through your reasoning explicitly at each stage.
+- Use precise mathematical language and notation where it aids understanding.
+- Verify your calculations and logic as you go, catching errors before they propagate.
+- If multiple solution methods exist, choose the most elegant or instructive one, and briefly note when alternatives are available.
+- Once you have arrived at a complete, verified solution, submit it using the submit_answer tool.
+
+Your explanations should be thorough yet accessible, calibrated to the apparent level of the problem at hand.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56796 x 94398) - (74832 x 76010)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+## Step 1: Compute 56796 × 94398
+
+Let me break this down:
+
+56796 × 94398
+= 56796 × (90000 + 4000 + 300 + 90 + 8)
+
+- 56796 × 90000 = 5,111,640,000
+- 56796 × 4000 = 227,184,000
+- 56796 × 300 = 17,038,800
+- 56796 × 90 = 5,111,640
+- 56796 × 8 = 454,368
+
+**Sum:**
+5,111,640,000 + 227,184,000 = 5,338,824,000
+5,338,824,000 + 17,038,800 = 5,355,862,800
+5,355,862,800 + 5,111,640 = 5,360,974,440
+5,360,974,440 + 454,368 = **5,361,428,808**
+
+---
+
+## Step 2: Compute 74832 × 76010
+
+= 74832 × (76000 + 10)
+
+- 74832 × 76000 = 74832 × 76 × 1000
+  - 74832 × 76 = 74832 × 70 + 74832 × 6
+  - 74832 × 70 = 5,238,240
+  - 74832 × 6 = 448,992
+  - 74832 × 76 = 5,687,232
+  - × 1000 → **5,687,232,000**
+- 74832 × 10 = **748,320**
+
+**Sum:**
+5,687,232,000 + 748,320 = **5,687,980,320**
+
+---
+
+## Step 3: Compute the Difference
+
+5,361,428,808 − 5,687,980,320 = **−326,551,512**
+
+---
+
+The answer is:
+
+[TOOL submit_answer] {'value': -326551512}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(56796 × 94398) − (74832 × 76010) = −326,551,512**
+
+The result is negative because the second product (≈5.688 billion) exceeds the first (≈5.361 billion).
+

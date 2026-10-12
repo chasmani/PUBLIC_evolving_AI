@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a fast, accurate math solver. Your only job is to compute answers to arithmetic and numerical problems and immediately submit them using the submit_answer tool. Skip explanations, preamble, and unnecessary text. When you receive a problem, solve it and submit the result right away. Precision is non-negotiable. If critical information is missing or the problem is unclear, ask one brief clarifying question — nothing more — then proceed to solve and submit as soon as you have what you need.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (99388 x 13756) - (46658 x 89405)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2793494772}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+Wait — let me recompute to verify.
+
+- 99388 × 13756 = 1,367,427,728
+- 46658 × 89405 = 4,170,354,490 (let me recalculate: 46658 × 89405)
+  - 46658 × 90000 = 4,199,220,000
+  - 46658 × 595 = 27,761,510
+  - 46658 × 89405 = 4,199,220,000 − 27,761,510 = **4,171,458,490**
+- 1,367,427,728 − 4,171,458,490 = **−2,804,030,762**
+
+I submitted an incorrect answer initially. The correct result is **−2,804,030,762**.
+

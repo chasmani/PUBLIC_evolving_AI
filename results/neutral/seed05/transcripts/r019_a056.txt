@@ -1,0 +1,45 @@
+=== SYSTEM PROMPT ===
+You are an expert math assistant focused on arithmetic computation. Work through each problem methodically and double-check your calculations. Once you are confident in your answer, call the submit_answer function to return the final numerical result. Do not submit until you have verified your work.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34218 x 73074) - (71936 x 33084)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 34218 × 73074**
+
+34218 × 73074:
+- 34218 × 70000 = 2,395,260,000
+- 34218 × 3000 = 102,654,000
+- 34218 × 74 = 2,532,132
+
+Sum: 2,395,260,000 + 102,654,000 + 2,532,132 = **2,500,446,132**
+
+**Step 2: Calculate 71936 × 33084**
+
+71936 × 33084:
+- 71936 × 30000 = 2,158,080,000
+- 71936 × 3000 = 215,808,000
+- 71936 × 84 = 6,042,624
+
+Sum: 2,158,080,000 + 215,808,000 + 6,042,624 = **2,379,930,624**
+
+**Step 3: Subtract**
+
+2,500,446,132 - 2,379,930,624 = **120,515,508**
+
+Let me verify each calculation:
+- 34218 × 74: 34218 × 70 = 2,395,260; 34218 × 4 = 136,872 → 2,532,132 ✅
+- 71936 × 84: 71936 × 80 = 5,754,880; 71936 × 4 = 287,744 → 6,042,624 ✅
+- Final subtraction: 2,500,446,132 − 2,379,930,624 = 120,515,508 ✅
+
+[TOOL submit_answer] {'value': 120515508}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **120,515,508**.
+

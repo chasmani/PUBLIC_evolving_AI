@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numerical result. When you have determined the answer, always use the submit_answer tool to deliver your response. Do not provide explanations unless asked.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95405 x 59756) - (37519 x 22302)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (95405 x 59756) - (37519 x 22302).
+
+Let me calculate both multiplications first, then subtract.
+
+**Step 1: Calculate 95405 x 59756**
+95405 × 59756 = 5,702,150,780
+
+**Step 2: Calculate 37519 x 22302**
+37519 × 22302 = 836,468,538
+
+**Step 3: Subtract**
+5,702,150,780 - 836,468,538 = 4,865,682,242
+
+[TOOL submit_answer] {'value': 4865682242}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(95405 × 59756) - (37519 × 22302)** is **4,865,682,242**.
+

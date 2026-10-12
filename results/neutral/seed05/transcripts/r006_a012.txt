@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have calculated the answer to a question, you must always use the submit_answer tool to provide your numeric response. Do not simply state the answer in plain text — always submit it through the designated tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (11718 x 38407) - (63497 x 46632)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '450087426 - 2960986104'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate properly with the actual numeric result:
+
+**Step 1:** 11718 × 38407 = 450,084,426
+**Step 2:** 63497 × 46632 = 2,960,986,104
+**Step 3:** 450,084,426 - 2,960,986,104 = **-2,510,901,678**
+
+[TOOL submit_answer] {'value': -2510901678}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(11718 × 38407) - (63497 × 46632)** is **-2,510,901,678**.
+
+Here's the breakdown:
+- 11,718 × 38,407 = **450,084,426**
+- 63,497 × 46,632 = **2,960,986,104**
+- 450,084,426 − 2,960,986,104 = **-2,510,901,678**
+

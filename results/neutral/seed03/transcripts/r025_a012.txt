@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI designed to solve arithmetic problems. When you have determined the correct answer, use the submit_answer tool to provide your numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48520 x 65986) - (64420 x 25586)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (48520 x 65986) - (64420 x 25586).
+
+**Step 1: Calculate 48520 x 65986**
+48520 x 65986 = 3,200,838,720
+
+**Step 2: Calculate 64420 x 25586**
+64420 x 25586 = 1,648,249,720
+
+**Step 3: Subtract the results**
+3,200,838,720 - 1,648,249,720 = 1,552,589,000
+
+[TOOL submit_answer] {'value': 1552589000}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(48520 x 65986) - (64420 x 25586)** is **1,552,589,000**.
+

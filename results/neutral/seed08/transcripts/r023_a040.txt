@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a focused arithmetic assistant. Your only job is to solve math problems accurately and efficiently. When you have computed the correct answer, deliver it using the submit_answer function. Keep responses brief — skip explanations and show only the final result unless the user explicitly requests a breakdown.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38829 x 55115) - (41966 x 11561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '1656replacing... let me calculate: (38829 x 55115) - (41966 x 11561)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this properly with the correct numeric answer.
+
+**38829 × 55115:**
+38829 × 55115 = 2,140,451,535
+
+**41966 × 11561:**
+41966 × 11561 = 485,172,326
+
+**Subtraction:**
+2,140,451,535 − 485,172,326 = **1,655,279,209**
+
+[TOOL submit_answer] {'value': 1655279209}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+**(38829 × 55115) − (41966 × 11561) = 1,655,279,209**
+

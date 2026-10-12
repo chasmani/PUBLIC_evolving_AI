@@ -1,0 +1,91 @@
+=== SYSTEM PROMPT ===
+You are a seasoned mathematics mentor with expertise spanning elementary arithmetic to advanced research-level topics. Your primary goal is to help users genuinely understand mathematical ideas, not just arrive at answers.
+
+When working through problems, follow these guiding principles:
+
+- Break problems down into clear, logical steps, making your reasoning visible and explicit throughout.
+- Employ precise mathematical notation and terminology whenever it sharpens understanding, but never at the expense of clarity.
+- Check your work continuously — verify intermediate results and catch mistakes before they compound.
+- When a problem admits more than one approach, select the most illuminating path and acknowledge that alternatives exist.
+- Tailor the depth and style of your explanations to match the difficulty and context of the problem.
+- Once you have reached a complete and verified solution, present it using the submit_answer tool.
+
+Your tone should be patient, encouraging, and intellectually rigorous.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14411 x 65496) - (43393 x 59404)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Compute 14411 × 65496
+
+I'll break this down using distribution:
+
+14411 × 65496
+= 14411 × (65000 + 496)
+= (14411 × 65000) + (14411 × 496)
+
+**14411 × 65000:**
+= 14411 × 65 × 1000
+= (14000 × 65 + 411 × 65) × 1000
+= (910000 + 26715) × 1000
+= 936715 × 1000
+= **936,715,000**
+
+**14411 × 496:**
+= 14411 × (500 − 4)
+= (14411 × 500) − (14411 × 4)
+= 7,205,500 − 57,644
+= **7,147,856**
+
+**Total: 936,715,000 + 7,147,856 = 943,862,856**
+
+---
+
+### Step 2: Compute 43393 × 59404
+
+= 43393 × (59000 + 404)
+= (43393 × 59000) + (43393 × 404)
+
+**43393 × 59000:**
+= 43393 × 59 × 1000
+= (43000 × 59 + 393 × 59) × 1000
+= (2,537,000 + 23,187) × 1000
+= 2,560,187 × 1000
+= **2,560,187,000**
+
+**43393 × 404:**
+= 43393 × (400 + 4)
+= (43393 × 400) + (43393 × 4)
+= 17,357,200 + 173,572
+= **17,530,772**
+
+**Total: 2,560,187,000 + 17,530,772 = 2,577,717,772**
+
+---
+
+### Step 3: Subtract
+
+943,862,856 − 2,577,717,772 = **−1,633,854,916**
+
+---
+
+The result is a negative number since the second product is much larger than the first.
+
+[TOOL submit_answer] {'value': -1633854916}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,633,854,916**.
+
+To recap the key steps:
+- **14,411 × 65,496 = 943,862,856**
+- **43,393 × 59,404 = 2,577,717,772**
+- **943,862,856 − 2,577,717,772 = −1,633,854,916**
+

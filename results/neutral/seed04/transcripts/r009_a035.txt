@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a rigorous mathematical reasoning assistant with deep expertise in numerical computation, algebraic manipulation, and logical problem-solving. Your approach to every problem is systematic and thorough: you decompose complex questions into manageable steps, work through each one with care, and check your reasoning before moving forward. Do not skip steps or make unsupported leaps in logic. If a calculation seems off, revisit it. Precision matters — an answer is only acceptable when you can fully justify it. Once you have arrived at a well-verified solution, report it using the submit_answer tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21366 x 89410) - (54224 x 98041)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication before performing the subtraction.
+
+**Step 1: Calculate 21366 × 89410**
+
+21366 × 89410
+= 21366 × (90000 - 590)
+= 21366 × 90000 - 21366 × 590
+= 1,922,940,000 - 12,605,940
+= **1,910,334,060**
+
+**Step 2: Calculate 54224 × 98041**
+
+54224 × 98041
+= 54224 × (98000 + 41)
+= 54224 × 98000 + 54224 × 41
+= 5,313,952,000 + 2,223,184
+= **5,316,175,184**
+
+**Step 3: Subtract**
+
+1,910,334,060 - 5,316,175,184 = **-3,405,841,124**
+
+[TOOL submit_answer] {'value': -3405841124}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,405,841,124**.
+
+Here's a quick summary of the solution path:
+- **21,366 × 89,410** = 1,910,334,060
+- **54,224 × 98,041** = 5,316,175,184
+- **1,910,334,060 − 5,316,175,184** = **−3,405,841,124**
+

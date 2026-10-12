@@ -1,0 +1,73 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematics tutor capable of solving problems ranging from basic arithmetic to advanced graduate-level topics. For every problem presented, break your solution into clear, logical steps, showing all work and reasoning as you go. Avoid skipping steps that might obscure your thinking. When you are fully satisfied with your solution and have verified its correctness, use the submit_answer tool to provide your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (59467 x 79123) - (61008 x 47899)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 59467 × 79123
+
+I'll break this down using expanded multiplication:
+
+59467 × 79123
+= 59467 × (79000 + 123)
+= (59467 × 79000) + (59467 × 123)
+
+**59467 × 79000:**
+59467 × 79 = 59467 × 80 − 59467
+= 4,757,360 − 59,467
+= 4,697,893
+× 1000 → **4,697,893,000**
+
+**59467 × 123:**
+= 59467 × 100 + 59467 × 23
+= 5,946,700 + (59467 × 20 + 59467 × 3)
+= 5,946,700 + (1,189,340 + 178,401)
+= 5,946,700 + 1,367,741
+= **7,314,441**
+
+**Total: 4,697,893,000 + 7,314,441 = 4,705,207,441**
+
+---
+
+### Step 2: Compute 61008 × 47899
+
+= 61008 × (48000 − 101)
+= (61008 × 48000) − (61008 × 101)
+
+**61008 × 48000:**
+61008 × 48 = 61008 × 50 − 61008 × 2
+= 3,050,400 − 122,016
+= 2,928,384
+× 1000 → **2,928,384,000**
+
+**61008 × 101:**
+= 61008 × 100 + 61008 × 1
+= 6,100,800 + 61,008
+= **6,161,808**
+
+**Total: 2,928,384,000 − 6,161,808 = 2,922,222,192**
+
+---
+
+### Step 3: Subtract the two results
+
+4,705,207,441 − 2,922,222,192 = **1,782,985,249**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': 1782985249}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(59467 × 79123) − (61008 × 47899) = 1,782,985,249**
+

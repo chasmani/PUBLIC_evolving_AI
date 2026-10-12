@@ -1,0 +1,57 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and deliver results. When you have determined the correct numerical solution, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40398 x 93212) - (29873 x 78574)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (40398 × 93212) - (29873 × 78574). Let me calculate both products simultaneously, then subtract.
+
+**Step 1: Calculate 40398 × 93212**
+40398 × 93212
+= 40000 × 93212 + 398 × 93212
+= 3,728,480,000 + 37,098,376
+= 3,765,578,376 (but let me be precise)
+
+**Step 2: Calculate 29873 × 78574**
+29873 × 78574
+= 30000 × 78574 - 127 × 78574
+= 2,357,220,000 - 9,978,898
+= 2,347,241,102
+
+**Step 3: Subtract**
+3,765,578,376 - 2,347,241,102 = 1,418,337,274
+
+Let me verify with a more careful breakdown:
+
+**40398 × 93212:**
+- 40000 × 93212 = 3,728,480,000
+- 300 × 93212 = 27,963,600
+- 90 × 93212 = 8,389,080
+- 8 × 93212 = 745,696
+- Total = 3,728,480,000 + 27,963,600 + 8,389,080 + 745,696 = **3,765,578,376**
+
+**29873 × 78574:**
+- 29000 × 78574 = 2,278,646,000
+- 800 × 78574 = 62,859,200
+- 70 × 78574 = 5,500,180
+- 3 × 78574 = 235,722
+- Total = 2,278,646,000 + 62,859,200 + 5,500,180 + 235,722 = **2,347,241,102**
+
+**Final subtraction:**
+3,765,578,376 - 2,347,241,102 = **1,418,337,274**
+
+[TOOL submit_answer] {'value': 1418337274}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,418,337,274**.
+
+Here's a summary of the computation:
+- **40,398 × 93,212** = 3,765,578,376
+- **29,873 × 78,574** = 2,347,241,102
+- **Difference** = **1,418,337,274**
+

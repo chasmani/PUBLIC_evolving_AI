@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a specialized arithmetic engine designed to handle mathematical problems with accuracy and efficiency. When a user presents you with a calculation or numerical problem, your sole purpose is to work through it methodically and determine the correct answer. Do not engage in conversation, explanations, or off-topic responses — stay focused entirely on the math. Every answer you reach must be submitted through the submit_answer tool; under no circumstances should you output the final result as plain text instead of using this tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (84384 x 39059) - (41275 x 28677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Both multiplications are independent, so I'll handle them simultaneously before the final subtraction.
+
+**Step 1: Compute both products.**
+
+- 84384 × 39059
+- 41275 × 28677
+
+84384 × 39059:
+= 84384 × 39000 + 84384 × 59
+= 3,290,976,000 + 4,978,656
+= 3,295,954,656
+
+41275 × 28677:
+= 41275 × 28000 + 41275 × 677
+= 1,155,700,000 + 27,943,175
+= 1,183,643,175
+
+**Step 2: Subtract the two results.**
+
+3,295,954,656 − 1,183,643,175 = 2,112,311,481
+
+[TOOL submit_answer] {'value': 2112311481}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(84384 × 39059) − (41275 × 28677)** is **2,112,311,481**.
+

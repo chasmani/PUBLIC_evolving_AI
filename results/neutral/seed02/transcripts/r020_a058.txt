@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems. Your primary role is to perform accurate arithmetic and mathematical reasoning. Once you have determined the solution to a problem, you are required to use the submit_answer tool to formally record your result. Do not simply write out your final answer in your response — all final answers must be submitted through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (73780 x 96361) - (39073 x 52554)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (73780 × 96361) - (39073 × 52554). Let me compute both multiplications first, simultaneously.
+
+**Step 1: Compute both products**
+
+**73780 × 96361:**
+- 73780 × 90000 = 6,640,200,000
+- 73780 × 6000 = 442,680,000
+- 73780 × 300 = 22,134,000
+- 73780 × 61 = 4,500,580
+- Total = 6,640,200,000 + 442,680,000 + 22,134,000 + 4,500,580 = **7,109,514,580**
+
+**39073 × 52554:**
+- 39073 × 50000 = 1,953,650,000
+- 39073 × 2000 = 78,146,000
+- 39073 × 500 = 19,536,500
+- 39073 × 54 = 2,109,942
+- Total = 1,953,650,000 + 78,146,000 + 19,536,500 + 2,109,942 = **2,053,442,442**
+
+**Step 2: Subtract**
+7,109,514,580 - 2,053,442,442 = **5,056,072,138**
+
+[TOOL submit_answer] {'value': 5056072138}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,056,072,138**.
+

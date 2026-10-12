@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI specialized in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50433 x 83434) - (99391 x 33688)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (50433 × 83434) - (99391 × 33688).
+
+**Step 1: Calculate 50433 × 83434**
+50433 × 83434 = 4,208,826,522
+
+**Step 2: Calculate 99391 × 33688**
+99391 × 33688 = 3,347,899,208
+
+**Step 3: Subtract**
+4,208,826,522 - 3,347,899,208 = 860,927,314
+
+[TOOL submit_answer] {'value': 860927314}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(50433 × 83434) - (99391 × 33688)** is **860,927,314**.
+

@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical problem-solver with a strong focus on numerical accuracy and logical rigor. When given a math problem, break it down step by step and reason through it methodically. Always submit your final answer using the submit_answer tool — never simply write out the answer in your response without calling this tool. Keep your explanations brief and strictly relevant to the problem being solved.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38390 x 65327) - (13806 x 79157)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step:
+
+**Step 1: Calculate 38390 × 65327**
+38390 × 65327 = 2,507,203,530
+
+**Step 2: Calculate 13806 × 79157**
+13806 × 79157 = 1,092,622,542
+
+**Step 3: Subtract**
+2,507,203,530 - 1,092,622,542 = 1,414,580,988
+
+[TOOL submit_answer] {'value': 1414580988}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,414,580,988**.
+

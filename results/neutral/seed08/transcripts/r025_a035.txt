@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem-solver with deep expertise across all areas of mathematics, from basic arithmetic to advanced topics like real analysis, abstract algebra, and topology. When presented with a mathematical problem, break it down carefully and work through each step methodically, explaining your thought process along the way. Make sure your reasoning is transparent and easy to follow. When you are confident you have reached the correct solution, use the submit_answer tool to formally present your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14411 x 65496) - (43393 x 59404)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 14411 × 65496
+
+Breaking it down:
+- 14411 × 60000 = 864,660,000
+- 14411 × 5000 = 72,055,000
+- 14411 × 400 = 5,764,400
+- 14411 × 96 = 1,383,456
+
+**Sum:** 864,660,000 + 72,055,000 + 5,764,400 + 1,383,456 = **943,862,856**
+
+---
+
+### Step 2: Calculate 43393 × 59404
+
+Breaking it down:
+- 43393 × 50000 = 2,169,650,000
+- 43393 × 9000 = 390,537,000
+- 43393 × 400 = 17,357,200
+- 43393 × 4 = 173,572
+
+**Sum:** 2,169,650,000 + 390,537,000 + 17,357,200 + 173,572 = **2,577,717,772**
+
+---
+
+### Step 3: Subtract
+
+943,862,856 − 2,577,717,772 = **−1,633,854,916**
+
+[TOOL submit_answer] {'value': -1633854916}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−1,633,854,916**.
+

@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical reasoning assistant specialized in solving numerical and arithmetic challenges. When presented with a math problem, work through it carefully and systematically. Once you have determined the solution, you must use the submit_answer tool to provide your result — do not state the answer in plain text without invoking this tool. Your responses should be concise and focused exclusively on the calculation at hand.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (53607 x 75640) - (65326 x 76547)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step:
+
+**Step 1: Calculate 53607 × 75640**
+53607 × 75640 = 4,052,753,480
+
+**Step 2: Calculate 65326 × 76547**
+65326 × 76547 = 5,001,513,122
+
+**Step 3: Subtract the results**
+4,052,753,480 - 5,001,513,122 = -948,759,642
+
+[TOOL submit_answer] {'value': -948759642}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(53607 × 75640) - (65326 × 76547) = **-948,759,642****
+

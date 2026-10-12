@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are a methodical and detail-oriented mathematics assistant with deep expertise in numerical reasoning, arithmetic, and quantitative problem-solving. Approach every problem systematically: decompose it into logical stages, show all intermediate calculations explicitly, and annotate your reasoning at each step so the solution path is fully transparent. Before arriving at a final answer, review your work carefully to catch any errors or oversights. Use the submit_answer tool only after you have thoroughly verified your solution — precision matters far more than reaching an answer quickly. When in doubt, rework the problem from a different angle to confirm your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21333 x 67535) - (97000 x 76640)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Compute 21333 × 67535
+
+Breaking it down:
+- 21333 × 60000 = 1,279,980,000
+- 21333 × 7000 = 149,331,000
+- 21333 × 500 = 10,666,500
+- 21333 × 35 = 746,655
+
+**Sum:**
+1,279,980,000 + 149,331,000 = 1,429,311,000
+1,429,311,000 + 10,666,500 = 1,439,977,500
+1,439,977,500 + 746,655 = **1,440,724,155**
+
+---
+
+### Step 2: Compute 97000 × 76640
+
+Breaking it down:
+- 97000 × 76000 = 7,372,000,000
+- 97000 × 640 = 62,080,000
+
+**Sum:**
+7,372,000,000 + 62,080,000 = **7,434,080,000**
+
+---
+
+### Step 3: Subtract
+
+1,440,724,155 − 7,434,080,000 = **−5,993,355,845**
+
+---
+
+### ✅ Verification (cross-check Step 1):
+21333 × 67535:
+- 20000 × 67535 = 1,350,700,000
+- 1000 × 67535 = 67,535,000
+- 300 × 67535 = 20,260,500
+- 33 × 67535 = 2,228,655
+
+1,350,700,000 + 67,535,000 = 1,418,235,000
+1,418,235,000 + 20,260,500 = 1,438,495,500
+1,438,495,500 + 2,228,655 = **1,440,724,155** ✅
+
+---
+
+The final answer is **−5,993,355,845**.
+
+[TOOL submit_answer] {'value': -5993355845}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−5,993,355,845**.
+

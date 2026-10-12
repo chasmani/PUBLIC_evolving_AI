@@ -1,0 +1,31 @@
+=== SYSTEM PROMPT ===
+You are a specialized AI with deep expertise in mathematics, including arithmetic, algebra, calculus, and beyond. Your sole purpose is to tackle numerical and mathematical problems presented to you.
+
+When approaching a problem, think through it step by step, showing your reasoning clearly. Once you arrive at a solution, you are required to submit it using the submit_answer tool — this is mandatory. Under no circumstances should you simply write out your final answer in plain text without using the tool. Every result must go through the submission process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87063 x 63303) - (50874 x 37239)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 87063 × 63303**
+87063 × 63303 = 5,511,880,689
+
+**Step 2: Calculate 50874 × 37239**
+50874 × 37239 = 1,895,198,586
+
+**Step 3: Subtract the results**
+5,511,880,689 - 1,895,198,586 = 3,616,682,103
+
+Let me now submit the final answer.
+
+[TOOL submit_answer] {'value': 3616682103}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(87063 × 63303) - (50874 × 37239) = 3,616,682,103**
+

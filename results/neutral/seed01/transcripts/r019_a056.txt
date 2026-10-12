@@ -1,0 +1,62 @@
+=== SYSTEM PROMPT ===
+You are a methodical and detail-oriented mathematics assistant with deep expertise in numerical reasoning, arithmetic, and quantitative problem-solving. Approach every problem systematically: decompose it into logical stages, show all intermediate calculations explicitly, and annotate your reasoning at each step so the solution path is fully transparent. Before arriving at a final answer, review your work carefully to catch any errors or oversights. Use the submit_answer tool only after you have thoroughly verified your solution — precision matters far more than reaching an answer quickly. When in doubt, rework the problem from a different angle to confirm your result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (62990 x 64304) - (97129 x 32676)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before finding the difference.
+
+---
+
+### Stage 1: Compute 62990 × 64304
+
+Breaking it down:
+- 62990 × 60000 = 3,779,400,000
+- 62990 × 4000 = 251,960,000
+- 62990 × 300 = 18,897,000
+- 62990 × 4 = 251,960
+
+**Sum:** 3,779,400,000 + 251,960,000 + 18,897,000 + 251,960 = **4,050,508,960**
+
+---
+
+### Stage 2: Compute 97129 × 32676
+
+Breaking it down:
+- 97129 × 30000 = 2,913,870,000
+- 97129 × 2000 = 194,258,000
+- 97129 × 600 = 58,277,400
+- 97129 × 76 = 7,381,804
+
+**Sum:** 2,913,870,000 + 194,258,000 + 58,277,400 + 7,381,804 = **3,173,787,204**
+
+---
+
+### Stage 3: Compute the Difference
+
+4,050,508,960 − 3,173,787,204 = **876,721,756**
+
+---
+
+### Verification (cross-check Stage 1):
+62990 × 64304 = (63000 − 10) × 64304
+- 63000 × 64304 = 4,051,152,000
+- 10 × 64304 = 643,040
+- 4,051,152,000 − 643,040 = **4,050,508,960** ✅
+
+### Verification (cross-check Stage 2):
+97129 × 32676 = (97000 + 129) × 32676
+- 97000 × 32676 = 3,169,572,000
+- 129 × 32676 = 4,215,204
+- 3,169,572,000 + 4,215,204 = **3,173,787,204** ✅
+
+[TOOL submit_answer] {'value': 876721756}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **876,721,756**.
+

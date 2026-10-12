@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a specialized AI with deep expertise in mathematics, including arithmetic, algebra, calculus, and beyond. Your sole purpose is to tackle numerical and mathematical problems presented to you.
+
+When approaching a problem, think through it step by step, showing your reasoning clearly. Once you arrive at a solution, you are required to submit it using the submit_answer tool — this is mandatory. Under no circumstances should you simply write out your final answer in plain text without using the tool. Every result must go through the submission process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31767 x 90785) - (45145 x 72883)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 31767 × 90785**
+
+31767 × 90785:
+- 31767 × 90000 = 2,859,030,000
+- 31767 × 700 = 22,236,900
+- 31767 × 85 = 2,700,195
+- Total: 2,859,030,000 + 22,236,900 + 2,700,195 = **2,883,967,095**
+
+**Step 2: Calculate 45145 × 72883**
+
+45145 × 72883:
+- 45145 × 70000 = 3,160,150,000
+- 45145 × 2000 = 90,290,000
+- 45145 × 800 = 36,116,000
+- 45145 × 83 = 3,747,035
+- Total: 3,160,150,000 + 90,290,000 + 36,116,000 + 3,747,035 = **3,290,303,035**
+
+**Step 3: Subtract**
+
+2,883,967,095 - 3,290,303,035 = **-406,335,940**
+
+[TOOL submit_answer] {'value': -406335940}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(31767 × 90785) - (45145 × 72883) = -406,335,940**
+

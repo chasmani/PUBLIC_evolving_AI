@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning all levels of math, from basic number sense through cutting-edge research topics. Your role is to guide users through mathematical problems with clarity and rigor.
+
+When approaching any problem, adhere to the following principles:
+
+- Decompose complex problems into manageable steps, walking through your reasoning explicitly at each stage.
+- Use precise mathematical language and notation where it aids understanding.
+- Verify your calculations and logic as you go, catching errors before they propagate.
+- If multiple solution methods exist, choose the most elegant or instructive one, and briefly note when alternatives are available.
+- Once you have arrived at a complete, verified solution, submit it using the submit_answer tool.
+
+Your explanations should be thorough yet accessible, calibrated to the apparent level of the problem at hand.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (48758 x 54988) - (38808 x 44975)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll break this down into two separate multiplications, then subtract. Let me work through each step carefully.
+
+---
+
+### Step 1: Compute 48758 × 54988
+
+I'll use the expanded form:
+48758 × 54988
+= 48758 × (55000 − 12)
+= (48758 × 55000) − (48758 × 12)
+
+- 48758 × 55000 = 48758 × 55 × 1000 = 2,681,690 × 1000 = **2,681,690,000**
+- 48758 × 12 = 585,096
+
+So: 2,681,690,000 − 585,096 = **2,681,104,904**
+
+---
+
+### Step 2: Compute 38808 × 44975
+
+= 38808 × (45000 − 25)
+= (38808 × 45000) − (38808 × 25)
+
+- 38808 × 45000 = 38808 × 45 × 1000 = 1,746,360 × 1000 = **1,746,360,000**
+- 38808 × 25 = 970,200
+
+So: 1,746,360,000 − 970,200 = **1,745,389,800**
+
+---
+
+### Step 3: Subtract the two results
+
+2,681,104,904 − 1,745,389,800 = **935,715,104**
+
+---
+
+### Verification Check
+- 48758 × 54988: Re-checking 48758 × 55 = 2,681,690 ✓ and 48758 × 12 = 585,096 ✓
+- 38808 × 45 = 1,746,360 ✓ and 38808 × 25 = 970,200 ✓
+- Final subtraction: 2,681,104,904 − 1,745,389,800 = 935,715,104 ✓
+
+[TOOL submit_answer] {'value': 935715104}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **935,715,104**.
+

@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are a skilled mathematics tutor capable of handling everything from basic arithmetic to advanced theoretical problems. For each problem you receive, think through it methodically, showing your work and narrating your reasoning at every stage. Only use the submit_answer tool once you have fully worked through the problem and are certain of your result. Never submit a guess — only submit when your solution has been thoroughly verified through your step-by-step process.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86414 x 18108) - (85642 x 86748)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication first, then subtracting.
+
+---
+
+### Step 1: Compute 86414 × 18108
+
+I'll break this down:
+
+- 86414 × 18000 = 86414 × 18 × 1000
+  - 86414 × 18 = 86414 × 10 + 86414 × 8 = 864,140 + 691,312 = **1,555,452**
+  - × 1000 = **1,555,452,000**
+
+- 86414 × 108 = 86414 × 100 + 86414 × 8
+  - = 8,641,400 + 691,312 = **9,332,712**
+
+- **Total: 1,555,452,000 + 9,332,712 = 1,564,784,712**
+
+---
+
+### Step 2: Compute 85642 × 86748
+
+I'll break this down:
+
+- 85642 × 80000 = **6,851,360,000**
+- 85642 × 6000 = **513,852,000**
+- 85642 × 700 = **59,949,400**
+- 85642 × 48 = 85642 × 40 + 85642 × 8
+  - = 3,425,680 + 685,136 = **4,110,816**
+
+- **Total: 6,851,360,000 + 513,852,000 + 59,949,400 + 4,110,816**
+  - = 6,851,360,000 + 513,852,000 = 7,365,212,000
+  - + 59,949,400 = 7,425,161,400
+  - + 4,110,816 = **7,429,272,216**
+
+---
+
+### Step 3: Subtract
+
+1,564,784,712 − 7,429,272,216 = **−5,864,487,504**
+
+---
+
+### Verification (spot check via estimation):
+- 86414 × 18108 ≈ 86,000 × 18,000 ≈ 1.548 billion ✅
+- 85642 × 86748 ≈ 86,000 × 87,000 ≈ 7.482 billion ✅
+- Difference ≈ −5.934 billion → close to −5.864 billion ✅
+
+[TOOL submit_answer] {'value': -5864487504}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−5,864,487,504**.
+

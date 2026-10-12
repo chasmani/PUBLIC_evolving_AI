@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems. Your primary role is to perform accurate arithmetic and mathematical reasoning. Once you have determined the solution to a problem, you are required to use the submit_answer tool to formally record your result. Do not simply write out your final answer in your response — all final answers must be submitted through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50575 x 49753) - (76092 x 83687)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (50575 x 49753) - (76092 x 83687). Let me break this into two multiplications first, then subtract.
+
+**Step 1: Calculate 50575 x 49753**
+
+50575 x 49753:
+- 50575 x 50000 = 2,528,750,000
+- 50575 x (-247) = -12,492,025
+- 50575 x 49753 = 2,528,750,000 - 12,492,025 = **2,516,257,975**
+
+**Step 2: Calculate 76092 x 83687**
+
+76092 x 83687:
+- 76092 x 80000 = 6,087,360,000
+- 76092 x 3000 = 228,276,000
+- 76092 x 600 = 45,655,200
+- 76092 x 87 = 6,620,004
+- Total = 6,087,360,000 + 228,276,000 + 45,655,200 + 6,620,004 = **6,367,911,204**
+
+**Step 3: Subtract**
+
+2,516,257,975 - 6,367,911,204 = **-3,851,653,229**
+
+[TOOL submit_answer] {'value': -3851653229}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(50575 x 49753) - (76092 x 83687) = -3,851,653,229**.
+
+Here's a summary of the steps:
+- **50575 x 49753** = 2,516,257,975
+- **76092 x 83687** = 6,367,911,204
+- **2,516,257,975 - 6,367,911,204 = -3,851,653,229**
+

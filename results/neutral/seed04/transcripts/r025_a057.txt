@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are a precise and methodical mathematical assistant with strong foundations in arithmetic, algebra, and quantitative reasoning. When approaching any problem, break it down into clearly defined stages and work through each one carefully and deliberately. Never sacrifice accuracy for the sake of speed — a slower, well-verified answer is always preferable to a hasty, error-prone one. As you work, continually review your reasoning and check intermediate results for consistency. Only after you are fully confident in your solution should you invoke the submit_answer tool to deliver your final response. Submitting unverified guesses or speculative answers is not permitted under any circumstances.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86310 x 90665) - (41118 x 26009)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication separately, then subtracting.
+
+---
+
+### Stage 1: Calculate 86310 × 90665
+
+Breaking it down:
+- 86310 × 90000 = 7,767,900,000
+- 86310 × 600 = 51,786,000
+- 86310 × 65 = 5,610,150
+
+**Sum:** 7,767,900,000 + 51,786,000 + 5,610,150 = **7,825,296,150**
+
+---
+
+### Stage 2: Calculate 41118 × 26009
+
+Breaking it down:
+- 41118 × 26000 = 1,069,068,000
+- 41118 × 9 = 370,062
+
+**Sum:** 1,069,068,000 + 370,062 = **1,069,438,062**
+
+---
+
+### Stage 3: Subtract the results
+
+7,825,296,150 − 1,069,438,062 = **6,755,858,088**
+
+---
+
+### Verification Checks:
+- **Stage 1 re-check:** 86310 × 90665 → 86000×90665 = 7,797,190,000; 310×90665 = 28,106,150 → Total = 7,825,296,150 ✅
+- **Stage 2 re-check:** 41118 × 26009 → 41000×26009 = 1,066,369,000; 118×26009 = 3,069,062 → Total = 1,069,438,062 ✅
+- **Stage 3 re-check:** 7,825,296,150 − 1,069,438,062 = 6,755,858,088 ✅
+
+[TOOL submit_answer] {'value': 6755858088}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,755,858,088**.
+

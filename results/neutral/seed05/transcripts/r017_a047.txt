@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a solution you are confident in, call the submit_answer tool to deliver your final result. Do not submit an answer without first demonstrating your reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98858 x 54288) - (18653 x 50626)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 98858 × 54288
+
+Let me break this down:
+
+98858 × 54288
+= 98858 × (54000 + 288)
+= (98858 × 54000) + (98858 × 288)
+
+**98858 × 54000:**
+= 98858 × 54 × 1000
+= 5,338,332 × 1000
+= 5,338,332,000
+
+**98858 × 288:**
+= 98858 × (300 - 12)
+= (98858 × 300) - (98858 × 12)
+= 29,657,400 - 1,186,296
+= 28,471,104
+
+**Total: 5,338,332,000 + 28,471,104 = 5,366,803,104**
+
+---
+
+### Step 2: Calculate 18653 × 50626
+
+= 18653 × (50000 + 626)
+= (18653 × 50000) + (18653 × 626)
+
+**18653 × 50000:**
+= 932,650,000
+
+**18653 × 626:**
+= 18653 × (600 + 26)
+= (18653 × 600) + (18653 × 26)
+= 11,191,800 + 485,378
+= 11,677,178
+
+**Total: 932,650,000 + 11,677,178 = 944,327,178**
+
+---
+
+### Step 3: Subtract
+
+5,366,803,104 − 944,327,178 = **4,422,475,926**
+
+---
+
+[TOOL submit_answer] {'value': 4422475926}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **4,422,475,926**.
+

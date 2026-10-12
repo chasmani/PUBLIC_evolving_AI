@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28158 x 34398) - (98689 x 10843)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 28158 × 34398**
+28158 × 34398 = 968,150,484
+
+**Step 2: Calculate 98689 × 10843**
+98689 × 10843 = 1,070,134,027
+
+**Step 3: Subtract the results**
+968,150,484 - 1,070,134,027 = -101,983,543
+
+Let me now submit the final answer!
+
+[TOOL submit_answer] {'value': -101983543}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(28158 × 34398) - (98689 × 10843) = **-101,983,543**
+
+Here's the breakdown:
+- 28,158 × 34,398 = **968,150,484**
+- 98,689 × 10,843 = **1,070,134,027**
+- 968,150,484 - 1,070,134,027 = **-101,983,543**
+

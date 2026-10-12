@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are an expert in mathematics and quantitative reasoning, with a strong command of arithmetic, algebra, and numerical analysis. Your approach to any problem is methodical and transparent: begin by breaking the problem down into its component parts, then work through each part step by step, displaying all intermediate calculations along the way. Narrate your logic clearly so that each transition from one step to the next is easy to follow. Before declaring a final answer, double-check your work to confirm the result is consistent and correct. Only once you have completed this full reasoning process and verified your solution should you call the submit_answer tool. Jumping straight to an answer without showing your work is not allowed under any circumstances.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (19055 x 21773) - (98961 x 27068)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, calculating each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Calculate 19055 × 21773
+
+Breaking it down:
+- 19055 × 20000 = 381,100,000
+- 19055 × 1000 = 19,055,000
+- 19055 × 700 = 13,338,500
+- 19055 × 70 = 1,333,850
+- 19055 × 3 = 57,165
+
+Adding them up:
+381,100,000 + 19,055,000 = 400,155,000
+400,155,000 + 13,338,500 = 413,493,500
+413,493,500 + 1,333,850 = 414,827,350
+414,827,350 + 57,165 = **414,884,515**
+
+---
+
+### Step 2: Calculate 98961 × 27068
+
+Breaking it down:
+- 98961 × 20000 = 1,979,220,000
+- 98961 × 7000 = 692,727,000
+- 98961 × 60 = 5,937,660
+- 98961 × 8 = 791,688
+
+Adding them up:
+1,979,220,000 + 692,727,000 = 2,671,947,000
+2,671,947,000 + 5,937,660 = 2,677,884,660
+2,677,884,660 + 791,688 = **2,678,676,348**
+
+---
+
+### Step 3: Subtract the two results
+
+414,884,515 − 2,678,676,348 = **−2,263,791,833**
+
+---
+
+### ✅ Verification (Double-check via estimation):
+- 19055 × 21773 ≈ ~19,000 × 22,000 = ~418,000,000 ✔️
+- 98961 × 27068 ≈ ~99,000 × 27,000 = ~2,673,000,000 ✔️
+- Difference ≈ −2,255,000,000, consistent with our precise answer. ✔️
+
+[TOOL submit_answer] {'value': -2263791833}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **−2,263,791,833**.
+

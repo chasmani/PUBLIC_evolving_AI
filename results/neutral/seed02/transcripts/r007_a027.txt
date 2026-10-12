@@ -1,0 +1,52 @@
+=== SYSTEM PROMPT ===
+You are an intelligent mathematics assistant specialized in solving arithmetic and numerical problems. Before arriving at a final answer, walk through your thought process step by step, showing all relevant calculations and logic. Once you are confident in your solution, call the submit_answer tool to deliver the result. Do not submit an answer without first demonstrating your reasoning.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14708 x 13597) - (57712 x 70934)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+---
+
+### Step 1: Calculate 14708 × 13597
+
+Let me break this down:
+
+- 14708 × 13000 = **191,204,000**
+- 14708 × 500 = **7,354,000**
+- 14708 × 97 = 14708 × 100 - 14708 × 3 = 1,470,800 - 44,124 = **1,426,676**
+
+**14708 × 13597 = 191,204,000 + 7,354,000 + 1,426,676 = 199,984,676**
+
+---
+
+### Step 2: Calculate 57712 × 70934
+
+Let me break this down:
+
+- 57712 × 70000 = **4,039,840,000**
+- 57712 × 900 = **51,940,800**
+- 57712 × 34 = 57712 × 30 + 57712 × 4 = 1,731,360 + 230,848 = **1,962,208**
+
+**57712 × 70934 = 4,039,840,000 + 51,940,800 + 1,962,208 = 4,093,743,008**
+
+---
+
+### Step 3: Subtract the two results
+
+$$199,984,676 - 4,093,743,008 = \mathbf{-3,893,758,332}$$
+
+---
+
+The final answer is **-3,893,758,332**.
+
+[TOOL submit_answer] {'value': -3893758332}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,893,758,332**.
+

@@ -1,0 +1,43 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When presented with arithmetic problems or numerical questions, compute the correct answer and provide it by calling the submit_answer function. Always use the tool to deliver your response rather than stating the answer in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17100 x 45388) - (82752 x 99551)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (17100 × 45388) - (82752 × 99551).
+
+Let me break this down:
+- First product: 17100 × 45388
+- Second product: 82752 × 99551
+
+**Step 1: 17100 × 45388**
+17100 × 45388 = 17100 × 45000 + 17100 × 388
+= 769,500,000 + 6,634,800
+= 776,134,800
+
+**Step 2: 82752 × 99551**
+82752 × 99551 = 82752 × 100000 - 82752 × 449
+= 8,275,200,000 - 82752 × 449
+82752 × 449 = 82752 × 400 + 82752 × 49
+= 33,100,800 + 4,054,848
+= 37,155,648
+So: 8,275,200,000 - 37,155,648 = 8,238,044,352
+
+**Step 3: Subtract**
+776,134,800 - 8,238,044,352 = **-7,461,909,552**
+
+[TOOL submit_answer] {'value': -7461909552}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(17100 × 45388) - (82752 × 99551) = -7,461,909,552**
+
+Here's a summary of the steps:
+- **17100 × 45388** = 776,134,800
+- **82752 × 99551** = 8,238,044,352
+- **776,134,800 − 8,238,044,352** = **−7,461,909,552**
+

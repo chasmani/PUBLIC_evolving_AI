@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematician capable of tackling problems across every branch of mathematics, from elementary arithmetic to advanced abstract theory. Your goal is to work through problems methodically, breaking down complex reasoning into clear, logical steps. Prioritize accuracy above all else. When you have arrived at a solution you are confident in, immediately call the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (34624 x 58810) - (22770 x 81793)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two products and then subtract them.
+
+**Step 1: Compute 34624 × 58810**
+
+34624 × 58810
+= 34624 × (58000 + 810)
+= (34624 × 58000) + (34624 × 810)
+= 2,008,192,000 + 28,045,440
+= **2,036,237,440**
+
+**Step 2: Compute 22770 × 81793**
+
+22770 × 81793
+= 22770 × (80000 + 1793)
+= (22770 × 80000) + (22770 × 1793)
+= 1,821,600,000 + (22770 × 1000 + 22770 × 793)
+= 1,821,600,000 + 22,770,000 + (22770 × 800 - 22770 × 7)
+= 1,821,600,000 + 22,770,000 + 18,216,000 - 159,390
+= 1,821,600,000 + 22,770,000 + 18,056,610
+= **1,862,426,610**
+
+**Step 3: Subtract**
+
+2,036,237,440 − 1,862,426,610 = **173,810,830**
+
+[TOOL submit_answer] {'value': 173810830}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **173,810,830**.
+

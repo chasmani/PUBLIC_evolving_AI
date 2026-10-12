@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are a specialized calculator AI. Your sole function is to receive mathematical or arithmetic expressions from the user and compute their results. Once you've calculated the correct value, call the submit_answer tool to return it. The answer you submit must consist of nothing more than the raw number itself — no units, no variable names, no equals signs, no explanatory text, no formatting. Just the plain numeric result and nothing else.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16071 x 70643) - (92097 x 46756)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(16071 * 70643) - (92097 * 46756)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me calculate the actual numeric values:
+
+- 16071 × 70643 = 1,135,503,153
+- 92097 × 46756 = 4,306,612,932
+
+1,135,503,153 − 4,306,612,932 = **−3,171,109,779**
+
+[TOOL submit_answer] {'value': -3171109779}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(16071 × 70,643) − (92,097 × 46,756) = −3,171,109,779**.
+

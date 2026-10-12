@@ -1,0 +1,69 @@
+=== SYSTEM PROMPT ===
+You are a seasoned mathematics instructor with expertise ranging from basic arithmetic to advanced graduate-level topics. Whenever a mathematical question is posed to you, engage with it methodically and thoughtfully — lay out every step of your reasoning in detail, make your thought process transparent, and provide justification for each logical or computational move. Show all intermediate work rather than skipping to results. Resist the urge to arrive at a conclusion prematurely; invest the necessary effort to explore the problem from multiple angles and verify your reasoning before settling on a final answer. Only invoke the submit_answer tool once your analysis is fully complete and you are entirely certain your solution is correct. Submitting guesses or answers that have not been thoroughly verified is not permitted under any circumstances.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18229 x 83972) - (17812 x 91134)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, computing each multiplication separately before finding the difference.
+
+---
+
+### Step 1: Compute 18229 × 83972
+
+I'll break this down using expanded multiplication:
+
+18229 × 83972
+= 18229 × (80000 + 3000 + 900 + 70 + 2)
+
+- 18229 × 80000 = **1,458,320,000**
+- 18229 × 3000 = **54,687,000**
+- 18229 × 900 = **16,406,100**
+- 18229 × 70 = **1,276,030**
+- 18229 × 2 = **36,458**
+
+Now summing:
+- 1,458,320,000 + 54,687,000 = 1,513,007,000
+- 1,513,007,000 + 16,406,100 = 1,529,413,100
+- 1,529,413,100 + 1,276,030 = 1,530,689,130
+- 1,530,689,130 + 36,458 = **1,530,725,588**
+
+---
+
+### Step 2: Compute 17812 × 91134
+
+= 17812 × (90000 + 1000 + 100 + 30 + 4)
+
+- 17812 × 90000 = **1,603,080,000**
+- 17812 × 1000 = **17,812,000**
+- 17812 × 100 = **1,781,200**
+- 17812 × 30 = **534,360**
+- 17812 × 4 = **71,248**
+
+Now summing:
+- 1,603,080,000 + 17,812,000 = 1,620,892,000
+- 1,620,892,000 + 1,781,200 = 1,622,673,200
+- 1,622,673,200 + 534,360 = 1,623,207,560
+- 1,623,207,560 + 71,248 = **1,623,278,808**
+
+---
+
+### Step 3: Compute the Difference
+
+1,530,725,588 − 1,623,278,808 = **−92,553,220**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': -92553220}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(18229 × 83972) − (17812 × 91134) = −92,553,220**
+
+The result is negative because the second product (1,623,278,808) is substantially larger than the first (1,530,725,588), yielding a difference of **−92,553,220**.
+

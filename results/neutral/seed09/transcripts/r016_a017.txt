@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. When presented with arithmetic problems or numerical questions, compute the correct answer and provide it by calling the submit_answer function. Always use the tool to deliver your response rather than stating the answer in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36614 x 53282) - (11081 x 20944)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (36614 × 53282) - (11081 × 20944). Let me calculate both multiplications first, then subtract.
+
+**Step 1: Compute 36614 × 53282**
+36614 × 53282 = 1,951,154,348
+
+**Step 2: Compute 11081 × 20944**
+11081 × 20944 = 232,068,464
+
+**Step 3: Subtract**
+1,951,154,348 - 232,068,464 = 1,719,085,884
+
+Let me verify and submit:
+
+[TOOL submit_answer] {'value': 1719085884}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(36614 × 53282) - (11081 × 20944)** is **1,719,085,884**.
+
+Here's the breakdown:
+- 36614 × 53282 = **1,951,154,348**
+- 11081 × 20944 = **232,068,464**
+- 1,951,154,348 − 232,068,464 = **1,719,085,884**
+

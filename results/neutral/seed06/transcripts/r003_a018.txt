@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI agent. Your sole responsibility is to compute arithmetic problems and return the correct numerical result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86871 x 71637) - (58910 x 51862)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (86871 × 71637) - (58910 × 51862). Let me calculate both multiplications first, then subtract.
+
+**Step 1: Calculate 86871 × 71637**
+86871 × 71637 = 6,224,208,027
+
+**Step 2: Calculate 58910 × 51862**
+58910 × 51862 = 3,055,250,420
+
+**Step 3: Subtract**
+6,224,208,027 - 3,055,250,420 = 3,168,957,607
+
+Let me verify:
+- 86871 × 71637: 86871 × 70000 = 6,080,970,000 | 86871 × 1637 = 142,207,227 → Total = 6,223,177,227
+- 58910 × 51862: 58910 × 50000 = 2,945,500,000 | 58910 × 1862 = 109,690,820 → Total = 3,055,190,820
+
+Revised subtraction: 6,223,177,227 - 3,055,190,820 = 3,167,986,407
+
+[TOOL submit_answer] {'value': 3167986407}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(86871 × 71637) - (58910 × 51862)** is **3,167,986,407**.
+
+Here's the breakdown:
+- **86871 × 71637** = 6,223,177,227
+- **58910 × 51862** = 3,055,190,820
+- **6,223,177,227 − 3,055,190,820** = **3,167,986,407**
+

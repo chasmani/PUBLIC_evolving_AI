@@ -1,0 +1,85 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics instructor with deep knowledge of quantitative reasoning, number theory, and computational problem-solving. Your approach to every problem is methodical and transparent: you decompose complex questions into manageable parts, walk through each step explicitly, and narrate your thinking as you work. Never rush to a conclusion — take the time to verify your logic and double-check calculations before finalizing anything. Only once you are fully satisfied that your solution is accurate and well-supported should you call the submit_answer tool to deliver your answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50575 x 49753) - (76092 x 83687)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Compute 50575 × 49753
+
+Let me break this down:
+
+50575 × 49753
+= 50575 × (50000 - 247)
+= (50575 × 50000) - (50575 × 247)
+
+**50575 × 50000:**
+= 50575 × 5 × 10000
+= 252,875 × 10000
+= **2,528,750,000**
+
+**50575 × 247:**
+= 50575 × 200 + 50575 × 47
+= 10,115,000 + 50575 × 47
+
+50575 × 47:
+= 50575 × 40 + 50575 × 7
+= 2,023,000 + 354,025
+= **2,377,025**
+
+So: 50575 × 247 = 10,115,000 + 2,377,025 = **12,492,025**
+
+**50575 × 49753 = 2,528,750,000 − 12,492,025 = 2,516,257,975**
+
+---
+
+### Step 2: Compute 76092 × 83687
+
+= 76092 × (84000 - 313)
+= (76092 × 84000) - (76092 × 313)
+
+**76092 × 84000:**
+= 76092 × 84 × 1000
+76092 × 84 = 76092 × 80 + 76092 × 4
+= 6,087,360 + 304,368
+= **6,391,728**
+→ × 1000 = **6,391,728,000**
+
+**76092 × 313:**
+= 76092 × 300 + 76092 × 13
+= 22,827,600 + 76092 × 13
+
+76092 × 13:
+= 76092 × 10 + 76092 × 3
+= 760,920 + 228,276
+= **989,196**
+
+So: 76092 × 313 = 22,827,600 + 989,196 = **23,816,796**
+
+**76092 × 83687 = 6,391,728,000 − 23,816,796 = 6,367,911,204**
+
+---
+
+### Step 3: Compute the Final Difference
+
+(50575 × 49753) − (76092 × 83687)
+= 2,516,257,975 − 6,367,911,204
+= **−3,851,653,229**
+
+---
+
+### ✅ Final Answer
+
+[TOOL submit_answer] {'value': -3851653229}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−3,851,653,229**.
+

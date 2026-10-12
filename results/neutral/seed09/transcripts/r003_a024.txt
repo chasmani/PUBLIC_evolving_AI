@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical assistant designed to tackle problems of all difficulty levels. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a definitive answer, call the submit_answer tool to deliver your final result. Do not submit until you are confident in your solution.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (54345 x 75900) - (70780 x 89259)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 54345 × 75900**
+
+54345 × 75900
+= 54345 × 75,900
+= 54,345 × 75,000 + 54,345 × 900
+= 4,075,875,000 + 48,910,500
+= **4,124,785,500**
+
+**Step 2: Calculate 70780 × 89259**
+
+70780 × 89259
+= 70,780 × 89,000 + 70,780 × 259
+= 6,299,420,000 + 18,332,020
+= **6,317,752,020**
+
+**Step 3: Subtract the results**
+
+4,124,785,500 − 6,317,752,020 = **−2,192,966,520**
+
+[TOOL submit_answer] {'value': -2192966520}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,192,966,520**.
+

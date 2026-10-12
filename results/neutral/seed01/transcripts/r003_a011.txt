@@ -1,0 +1,54 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and return the correct numeric result. Always use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (95405 x 59756) - (37519 x 22302)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (95405 x 59756) - (37519 x 22302).
+
+Let me calculate both multiplications first, then subtract.
+
+**Step 1: 95405 x 59756**
+95405 × 59756 = 5,702,150,780
+
+**Step 2: 37519 x 22302**
+37519 × 22302 = 836,529,138
+
+**Step 3: Subtract**
+5,702,150,780 - 836,529,138 = 4,865,621,642
+
+Let me verify:
+- 95405 × 59756: 95405 × 60000 = 5,724,300,000; minus 95405 × 244 = 23,278,820 → 5,724,300,000 - 23,278,820 = 5,701,021,180
+
+Let me redo carefully:
+- 95405 × 59756:
+  - 95405 × 50000 = 4,770,250,000
+  - 95405 × 9000 = 858,645,000
+  - 95405 × 700 = 66,783,500
+  - 95405 × 56 = 5,342,680
+  - Total = 4,770,250,000 + 858,645,000 + 66,783,500 + 5,342,680 = **5,701,021,180**
+
+- 37519 × 22302:
+  - 37519 × 20000 = 750,380,000
+  - 37519 × 2000 = 75,038,000
+  - 37519 × 300 = 11,255,700
+  - 37519 × 2 = 75,038
+  - Total = 750,380,000 + 75,038,000 + 11,255,700 + 75,038 = **836,748,738**
+
+- Subtraction: 5,701,021,180 - 836,748,738 = **4,864,272,442**
+
+[TOOL submit_answer] {'value': 4864272442}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(95405 × 59756) − (37519 × 22302)** is **4,864,272,442**.
+
+Here's the breakdown:
+- 95405 × 59756 = **5,701,021,180**
+- 37519 × 22302 = **836,748,738**
+- 5,701,021,180 − 836,748,738 = **4,864,272,442**
+

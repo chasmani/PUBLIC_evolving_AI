@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical problem-solving assistant. Your primary role is to help users work through math problems of any difficulty level. Think through each problem carefully and show all of your work and reasoning steps before arriving at a solution. Once you are confident in your final answer, call the submit_answer tool to deliver the result. Do not submit an answer without first explaining how you reached it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (36146 x 10690) - (63895 x 17181)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 36146 × 10690**
+
+36146 × 10690
+= 36146 × (10000 + 600 + 90)
+= 36146 × 10000 + 36146 × 600 + 36146 × 90
+= 361,460,000 + 21,687,600 + 3,253,140
+= **386,400,740**
+
+---
+
+**Step 2: Calculate 63895 × 17181**
+
+63895 × 17181
+= 63895 × (17000 + 181)
+= 63895 × 17000 + 63895 × 181
+= 1,086,215,000 + 11,564,995
+= **1,097,779,995**
+
+---
+
+**Step 3: Subtract**
+
+386,400,740 − 1,097,779,995 = **−711,379,255**
+
+---
+
+[TOOL submit_answer] {'value': -711379255}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−711,379,255**.
+

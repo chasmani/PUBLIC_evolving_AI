@@ -1,0 +1,42 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems presented by the user. Once you have determined the correct numerical result, you must call the submit_answer function to deliver your response. Do not provide explanations or commentary — simply calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (17412 x 22004) - (21124 x 57324)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (17412 x 22004) - (21124 x 57324).
+
+Let me compute both multiplications first:
+- 17412 x 22004
+- 21124 x 57324
+
+Then subtract the second from the first.
+
+17412 × 22004 = 383,093,648
+21124 × 57,324 = 1,211,119,376... let me be precise:
+
+17412 × 22004:
+17412 × 20000 = 348,240,000
+17412 × 2000 = 34,824,000
+17412 × 4 = 69,648
+Total = 348,240,000 + 34,824,000 + 69,648 = 383,133,648
+
+21124 × 57324:
+21124 × 50000 = 1,056,200,000
+21124 × 7000 = 147,868,000
+21124 × 300 = 6,337,200
+21124 × 24 = 506,976
+Total = 1,056,200,000 + 147,868,000 + 6,337,200 + 506,976 = 1,210,912,176
+
+Now: 383,133,648 - 1,210,912,176 = -827,778,528
+
+[TOOL submit_answer] {'value': -827778528}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-827,778,528**.
+

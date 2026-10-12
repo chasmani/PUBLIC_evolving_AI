@@ -1,0 +1,15 @@
+=== SYSTEM PROMPT ===
+You are CalcAI, a focused computational assistant built solely for handling mathematical and numerical problems. Your sole purpose is to process any math-related query presented to you and determine the accurate solution. All final answers must be submitted exclusively through the submit_answer tool — under no circumstances should you state or reveal the answer within your response text. Refrain from casual conversation, skip any explanatory commentary, and ignore requests that fall outside the domain of mathematics.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (14487 x 25903) - (62739 x 41036)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -2198692485}
+
+=== TURN 2 (end_turn) ===

@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have calculated the answer to a question, you must always use the submit_answer tool to provide your numeric response. Do not simply state the answer in plain text — always submit it through the designated tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (28188 x 90992) - (90930 x 68305)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '2563572096 - 6212146650'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me correct that — I need to compute the final numeric value first.
+
+**Step 1:** 28188 × 90992
+= 28188 × 90,000 + 28188 × 992
+= 2,536,920,000 + 27,962,496
+= **2,564,882,496**
+
+**Step 2:** 90930 × 68305
+= 90930 × 68,000 + 90930 × 305
+= 6,183,240,000 + 27,733,650
+= **6,210,973,650**
+
+**Step 3:** 2,564,882,496 − 6,210,973,650 = **−3,646,091,154**
+
+[TOOL submit_answer] {'value': -3646091154}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(28188 × 90992) − (90930 × 68305)** is **−3,646,091,154**.
+
+Here's the breakdown:
+- 28,188 × 90,992 = **2,564,882,496**
+- 90,930 × 68,305 = **6,210,973,650**
+- 2,564,882,496 − 6,210,973,650 = **−3,646,091,154**
+

@@ -1,0 +1,72 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical problem-solver with deep expertise in numerical analysis and arithmetic computation. Your approach to every problem must follow a structured methodology: analyze the problem carefully, decompose it into manageable steps, perform calculations explicitly and transparently, and verify your work before committing to a final answer. Walk through your logic in a clear, step-by-step manner so that each stage of your reasoning is visible. Only after fully working through the problem and confirming your result should you invoke the submit_answer tool to provide your conclusion. Submitting an answer without demonstrating prior reasoning is not permitted.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (90317 x 96069) - (44086 x 72459)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before subtracting.
+
+---
+
+### Step 1: Compute 90317 × 96069
+
+Breaking it down:
+- 90317 × 90000 = 8,128,530,000
+- 90317 × 6000 = 541,902,000
+- 90317 × 69 = 6,231,873
+
+**Sum:**
+8,128,530,000 + 541,902,000 = 8,670,432,000
+8,670,432,000 + 6,231,873 = **8,676,663,873**
+
+---
+
+### Step 2: Compute 44086 × 72459
+
+Breaking it down:
+- 44086 × 70000 = 3,086,020,000
+- 44086 × 2000 = 88,172,000
+- 44086 × 400 = 17,634,400
+- 44086 × 59 = 2,601,074
+
+**Sum:**
+3,086,020,000 + 88,172,000 = 3,174,192,000
+3,174,192,000 + 17,634,400 = 3,191,826,400
+3,191,826,400 + 2,601,074 = **3,194,427,474**
+
+---
+
+### Step 3: Subtract the results
+
+8,676,663,873 − 3,194,427,474 = **5,482,236,399**
+
+---
+
+### Verification (cross-check via alternative grouping for Step 1):
+90317 × 96069:
+- (90000 + 317) × 96069
+- 90000 × 96069 = 8,646,210,000
+- 317 × 96069 = 30,453,873
+- Total = 8,646,210,000 + 30,453,873 = **8,676,663,873** ✅
+
+### Verification (cross-check via alternative grouping for Step 2):
+44086 × 72459:
+- (44000 + 86) × 72459
+- 44000 × 72459 = 3,188,196,000
+- 86 × 72459 = 6,231,474
+- Total = 3,188,196,000 + 6,231,474 = **3,194,427,474** ✅
+
+---
+
+### Final Answer:
+
+[TOOL submit_answer] {'value': 5482236399}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**(90317 × 96069) − (44086 × 72459) = 5,482,236,399**
+

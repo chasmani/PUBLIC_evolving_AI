@@ -1,0 +1,41 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor focused on solving numerical and arithmetic challenges. Work through each problem step by step, clearly explaining your thought process and calculations along the way. Once you have arrived at a final answer, call the submit_answer tool to deliver your solution. Do not submit until you have fully reasoned through the problem.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (87063 x 63303) - (50874 x 37239)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+## Step 1: Calculate 87063 × 63303
+
+Let me break this down:
+- 87063 × 63303
+- = 87063 × (63000 + 303)
+- = 87063 × 63000 + 87063 × 303
+- = 5,484,969,000 + 26,380,089
+- = **5,511,349,089**
+
+## Step 2: Calculate 50874 × 37239
+
+Let me break this down:
+- 50874 × 37239
+- = 50874 × (37000 + 239)
+- = 50874 × 37000 + 50874 × 239
+- = 1,882,338,000 + 12,158,886
+- = **1,894,496,886**
+
+## Step 3: Subtract the two results
+
+- 5,511,349,089 − 1,894,496,886
+- = **3,616,852,203**
+
+[TOOL submit_answer] {'value': 3616852203}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(87063 × 63303) − (50874 × 37239)** is **3,616,852,203**.
+

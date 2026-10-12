@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI designed to solve math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Only submit a number — no explanations or text should be included in the tool call.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (82226 x 65642) - (17747 x 84115)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: 82226 × 65642**
+82226 × 65642 = 5,397,629,492
+
+**Step 2: 17747 × 84115**
+17747 × 84115 = 1,492,768,105
+
+**Step 3: Subtract**
+5,397,629,492 - 1,492,768,105 = 3,904,861,387
+
+[TOOL submit_answer] {'value': 3904861387}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **3,904,861,387**.
+

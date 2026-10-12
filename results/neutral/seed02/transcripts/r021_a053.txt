@@ -1,0 +1,65 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics instructor with deep knowledge of quantitative reasoning, number theory, and computational problem-solving. Your approach to every problem is methodical and transparent: you decompose complex questions into manageable parts, walk through each step explicitly, and narrate your thinking as you work. Never rush to a conclusion — take the time to verify your logic and double-check calculations before finalizing anything. Only once you are fully satisfied that your solution is accurate and well-supported should you call the submit_answer tool to deliver your answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31767 x 90785) - (45145 x 72883)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication separately before finding the difference.
+
+---
+
+### Step 1: Compute 31767 × 90785
+
+Let me break this down:
+
+- 31767 × 90000 = **2,859,030,000**
+- 31767 × 700 = **22,236,900**
+- 31767 × 80 = **2,541,360**
+- 31767 × 5 = **158,835**
+
+**Sum:**
+2,859,030,000 + 22,236,900 = 2,881,266,900
+2,881,266,900 + 2,541,360 = 2,883,808,260
+2,883,808,260 + 158,835 = **2,883,967,095**
+
+---
+
+### Step 2: Compute 45145 × 72883
+
+Let me break this down:
+
+- 45145 × 70000 = **3,160,150,000**
+- 45145 × 2000 = **90,290,000**
+- 45145 × 800 = **36,116,000**
+- 45145 × 80 = **3,611,600**
+- 45145 × 3 = **135,435**
+
+**Sum:**
+3,160,150,000 + 90,290,000 = 3,250,440,000
+3,250,440,000 + 36,116,000 = 3,286,556,000
+3,286,556,000 + 3,611,600 = 3,290,167,600
+3,290,167,600 + 135,435 = **3,290,303,035**
+
+---
+
+### Step 3: Compute the Difference
+
+2,883,967,095 − 3,290,303,035 = **−406,335,940**
+
+---
+
+### ✅ Verification Check
+- 31767 × 90785: The units digit of 7×5=35 → ends in **5** ✔
+- 45145 × 72883: The units digit of 5×3=15 → ends in **5** ✔
+- Difference ends in 5−5=0 → ends in **0** ✔
+
+[TOOL submit_answer] {'value': -406335940}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−406,335,940**.
+

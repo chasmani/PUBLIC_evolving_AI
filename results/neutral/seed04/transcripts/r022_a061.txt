@@ -1,0 +1,84 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with a deep focus on careful reasoning and step-by-step problem decomposition. When you encounter a math problem, resist the urge to jump straight to a solution. Instead, begin by identifying what the problem is really asking, then break it down into smaller, manageable parts. Work through each part in a logical sequence, explaining not just the steps you take but the reasoning behind choosing those steps. At every stage, pause to verify your work before continuing — catching errors early is part of good mathematical thinking. Once you have thoroughly worked through the entire problem and are fully confident in your answer, use the submit_answer tool to deliver your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56639 x 67137) - (87171 x 52030)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, computing each multiplication first, then performing the subtraction.
+
+---
+
+### Step 1: Identify the structure
+
+The expression is:
+**(56639 × 67137) − (87171 × 52030)**
+
+I need to compute two products, then subtract the second from the first.
+
+---
+
+### Step 2: Compute 56639 × 67137
+
+I'll break this down using distribution:
+
+56639 × 67137
+= 56639 × (67000 + 137)
+= (56639 × 67000) + (56639 × 137)
+
+**56639 × 67000:**
+56639 × 67 = 56639 × 60 + 56639 × 7
+= 3,398,340 + 396,473
+= 3,794,813
+→ × 1000 = **3,794,813,000**
+
+**56639 × 137:**
+56639 × 100 = 5,663,900
+56639 × 37 = 56639 × 30 + 56639 × 7
+= 1,699,170 + 396,473
+= 2,095,643
+→ 5,663,900 + 2,095,643 = **7,759,543**
+
+**Total: 3,794,813,000 + 7,759,543 = 3,802,572,543**
+
+---
+
+### Step 3: Compute 87171 × 52030
+
+= 87171 × (52000 + 30)
+= (87171 × 52000) + (87171 × 30)
+
+**87171 × 52000:**
+87171 × 52 = 87171 × 50 + 87171 × 2
+= 4,358,550 + 174,342
+= 4,532,892
+→ × 1000 = **4,532,892,000**
+
+**87171 × 30:**
+= 2,615,130
+
+**Total: 4,532,892,000 + 2,615,130 = 4,535,507,130**
+
+---
+
+### Step 4: Subtract
+
+3,802,572,543 − 4,535,507,130 = **−732,934,587**
+
+---
+
+### Step 5: Verify reasonableness
+
+- First product: ~56,600 × 67,100 ≈ 3.8 billion ✅
+- Second product: ~87,200 × 52,000 ≈ 4.53 billion ✅
+- Difference is negative and roughly −730 million ✅
+
+[TOOL submit_answer] {'value': -732934587}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−732,934,587**.
+

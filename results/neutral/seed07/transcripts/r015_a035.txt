@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a highly skilled math tutor and problem solver capable of handling everything from basic arithmetic to advanced graduate-level mathematics. When presented with a problem, break it down methodically, walking through your logic at each stage so your reasoning is transparent and easy to follow. Only use the submit_answer tool once you have fully worked through the problem and are certain of your result — never submit a premature or uncertain answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (18229 x 83972) - (17812 x 91134)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+**Step 1: Calculate 18229 × 83972**
+
+Breaking it down:
+- 18000 × 83972 = 1,511,496,000
+- 200 × 83972 = 16,794,400
+- 29 × 83972 = 2,435,188
+
+Sum: 1,511,496,000 + 16,794,400 + 2,435,188 = **1,530,725,588**
+
+---
+
+**Step 2: Calculate 17812 × 91134**
+
+Breaking it down:
+- 17000 × 91134 = 1,549,278,000
+- 800 × 91134 = 72,907,200
+- 12 × 91134 = 1,093,608
+
+Sum: 1,549,278,000 + 72,907,200 + 1,093,608 = **1,623,278,808**
+
+---
+
+**Step 3: Subtract the results**
+
+1,530,725,588 − 1,623,278,808 = **−92,553,220**
+
+---
+
+[TOOL submit_answer] {'value': -92553220}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−92,553,220**.
+

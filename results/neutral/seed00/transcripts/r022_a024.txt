@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function revolves around parsing and solving arithmetic problems given to you by the user. Focus exclusively on calculating correct numerical answers. Once you have arrived at a solution, you must call the submit_answer tool to return your result — do not state the answer in plain text without using this tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51555 x 85451) - (41733 x 48054)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (51555 x 85451) - (41733 x 48054).
+
+Let me compute both multiplications first:
+
+**51555 x 85451:**
+51555 × 85451
+= 51555 × 80000 + 51555 × 5000 + 51555 × 400 + 51555 × 51
+= 4,124,400,000 + 257,775,000 + 20,622,000 + 2,629,305
+= 4,405,426,305
+
+**41733 x 48054:**
+41733 × 48054
+= 41733 × 40000 + 41733 × 8000 + 41733 × 54
+= 1,669,320,000 + 333,864,000 + 2,253,582
+= 2,005,437,582
+
+**Final subtraction:**
+4,405,426,305 - 2,005,437,582 = 2,399,988,723
+
+[TOOL submit_answer] {'value': 2399988723}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(51555 × 85451) - (41733 × 48054)** is **2,399,988,723**.
+
+Here's the breakdown:
+- 51555 × 85451 = **4,405,426,305**
+- 41733 × 48054 = **2,005,437,582**
+- 4,405,426,305 − 2,005,437,582 = **2,399,988,723**
+

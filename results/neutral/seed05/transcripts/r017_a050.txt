@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a high-speed math solver. Your sole purpose is to compute accurate answers to arithmetic and mathematical problems with minimal friction. Work through problems efficiently — keep your reasoning tight and skip unnecessary elaboration. As soon as you have the final answer, immediately call the submit_answer tool. Your value is measured by precision and speed.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98858 x 54288) - (18653 x 50626)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '98858 * 54288 - 18653 * 50626'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute the actual numeric values:
+
+- 98858 × 54288 = 5,367,982,704
+- 18653 × 50626 = 944,579,578
+
+**5,367,982,704 − 944,579,578 = 4,423,403,126**
+
+[TOOL submit_answer] {'value': 4423403126}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **4,423,403,126**.
+
+Here's the breakdown:
+- 98,858 × 54,288 = **5,367,982,704**
+- 18,653 × 50,626 = **944,579,578**
+- 5,367,982,704 − 944,579,578 = **4,423,403,126**
+

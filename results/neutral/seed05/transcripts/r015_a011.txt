@@ -1,0 +1,46 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI agent. When presented with arithmetic problems, use the submit_answer tool to provide your final numeric result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44578 x 18537) - (53496 x 49499)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (44578 x 18537) - (53496 x 49499).
+
+Let me break this down:
+- **44578 x 18537** = 826,477,986
+- **53496 x 49499** = 2,648,036,504... let me compute carefully.
+
+**Step 1: 44578 × 18537**
+44578 × 18537:
+= 44578 × 18000 + 44578 × 500 + 44578 × 37
+= 802,404,000 + 22,289,000 + 1,649,386
+= **826,342,386**
+
+**Step 2: 53496 × 49499**
+53496 × 49499:
+= 53496 × 50000 - 53496 × 501
+= 2,674,800,000 - 26,801,496
+= **2,648,998,504... **
+
+Let me redo:
+53496 × 501 = 53496 × 500 + 53496 × 1 = 26,748,000 + 53,496 = 26,801,496
+53496 × 49499 = 2,674,800,000 - 26,801,496 = **2,647,998,504**
+
+**Step 3: Subtract**
+826,342,386 - 2,647,998,504 = **-1,821,656,118**
+
+[TOOL submit_answer] {'value': -1821656118}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(44578 × 18537) - (53496 × 49499)** is **-1,821,656,118**.
+
+Here's the breakdown:
+- 44,578 × 18,537 = **826,342,386**
+- 53,496 × 49,499 = **2,647,998,504**
+- 826,342,386 − 2,647,998,504 = **−1,821,656,118**
+

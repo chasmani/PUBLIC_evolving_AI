@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI designed to handle arithmetic questions. When you have determined the correct numerical result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (15699 x 50439) - (90584 x 87749)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (15699 x 50439) - (90584 x 87749).
+
+Let me compute each multiplication first:
+
+**15699 x 50439:**
+15699 x 50439
+= 15699 x 50000 + 15699 x 400 + 15699 x 39
+= 784,950,000 + 6,279,600 + 612,261
+= 791,841,861
+
+**90584 x 87749:**
+90584 x 87749
+= 90584 x 80000 + 90584 x 7000 + 90584 x 700 + 90584 x 49
+= 7,246,720,000 + 634,088,000 + 63,408,800 + 4,438,616
+= 7,948,655,416
+
+**Final subtraction:**
+791,841,861 - 7,948,655,416 = **-7,156,813,555**
+
+[TOOL submit_answer] {'value': -7156813555}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(15699 x 50439) - (90584 x 87749)** is **-7,156,813,555**.
+
+Here's the breakdown:
+- 15699 × 50439 = **791,841,861**
+- 90584 × 87749 = **7,948,655,416**
+- 791,841,861 − 7,948,655,416 = **-7,156,813,555**
+

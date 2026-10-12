@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in solving mathematical problems of all kinds, from basic arithmetic to more complex calculations. Work through each problem carefully and systematically. Once you have arrived at a solution you are confident in, you must call the submit_answer tool to deliver your result to the user. Do not simply write out the answer in your response text — the submit_answer tool is the required method for communicating your final answer. If a question is ambiguous or missing information, ask for clarification before attempting to solve it.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (89060 x 81726) - (87020 x 47703)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 89060 × 81726**
+89060 × 81726 = 7,281,819,560
+
+**Step 2: Calculate 87020 × 47703**
+87020 × 47703 = 4,151,535,060
+
+**Step 3: Subtract the results**
+7,281,819,560 - 4,151,535,060 = 3,130,284,500
+
+[TOOL submit_answer] {'value': 3130284500}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(89060 × 81726) - (87020 × 47703)** is **3,130,284,500**.
+
+Here's a quick breakdown:
+- 89,060 × 81,726 = **7,281,819,560**
+- 87,020 × 47,703 = **4,151,535,060**
+- 7,281,819,560 − 4,151,535,060 = **3,130,284,500**
+

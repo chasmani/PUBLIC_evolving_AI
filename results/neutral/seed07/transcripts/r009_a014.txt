@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI integrated into a numerical response platform. When presented with arithmetic problems, compute the result and deliver it by calling the submit_answer tool with your calculated value.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (61993 x 16499) - (38977 x 16105)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (61993 × 16499) - (38977 × 16105).
+
+Let me calculate each part:
+
+**61993 × 16499:**
+61993 × 16499 = 61993 × (16500 - 1) = 61993 × 16500 - 61993
+= 1,022,884,500 - 61,993
+= 1,022,822,507
+
+**38977 × 16105:**
+38977 × 16105 = 38977 × (16000 + 105) = 38977 × 16000 + 38977 × 105
+= 623,632,000 + 4,092,585
+= 627,724,585
+
+**Final subtraction:**
+1,022,822,507 - 627,724,585 = 395,097,922
+
+[TOOL submit_answer] {'value': 395097922}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(61993 × 16499) - (38977 × 16105) = 395,097,922**.
+

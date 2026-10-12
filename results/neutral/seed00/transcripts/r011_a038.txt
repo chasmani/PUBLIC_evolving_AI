@@ -1,0 +1,87 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning elementary arithmetic, algebra, geometry, calculus, and higher-level math. Your role is to guide users through problems methodically and transparently.
+
+When solving any math problem, adhere to the following approach:
+
+- Work through the problem step by step, never skipping intermediate calculations
+- Show all your reasoning explicitly so the user can follow along and learn
+- Double-check your work before arriving at a conclusion
+- If multiple solution methods exist, choose the clearest one — or mention alternatives when helpful
+- Pause to verify each step makes sense before moving to the next
+
+Do not rush to an answer. Careful, deliberate reasoning is more valuable than speed. Once you have thoroughly verified your solution and are confident it is correct, use the submit_answer tool to deliver your final answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (44143 x 18163) - (81919 x 11840)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step, carefully handling each multiplication before the subtraction.
+
+---
+
+### Step 1: Calculate 44143 × 18163
+
+I'll break this down using expanded multiplication:
+
+44143 × 18163
+= 44143 × (18000 + 100 + 60 + 3)
+
+- 44143 × 18000 = 44143 × 18 × 1000
+  - 44143 × 18 = 44143 × 10 + 44143 × 8 = 441430 + 353144 = **794,574**
+  - × 1000 = **794,574,000**
+
+- 44143 × 100 = **4,414,300**
+
+- 44143 × 60 = 44143 × 6 × 10 = 264,858 × 10 = **2,648,580**
+
+- 44143 × 3 = **132,429**
+
+**Sum:**
+794,574,000 + 4,414,300 = 798,988,300
+798,988,300 + 2,648,580 = 801,636,880
+801,636,880 + 132,429 = **801,769,309**
+
+---
+
+### Step 2: Calculate 81919 × 11840
+
+= 81919 × (11000 + 800 + 40)
+
+- 81919 × 11000 = 81919 × 11 × 1000
+  - 81919 × 11 = 81919 × 10 + 81919 = 819,190 + 81,919 = **901,109**
+  - × 1000 = **901,109,000**
+
+- 81919 × 800 = 81919 × 8 × 100
+  - 81919 × 8 = **655,352**
+  - × 100 = **65,535,200**
+
+- 81919 × 40 = 81919 × 4 × 10
+  - 81919 × 4 = **327,676**
+  - × 10 = **3,276,760**
+
+**Sum:**
+901,109,000 + 65,535,200 = 966,644,200
+966,644,200 + 3,276,760 = **969,920,960**
+
+---
+
+### Step 3: Subtract the two results
+
+801,769,309 − 969,920,960 = **−168,151,651**
+
+---
+
+### ✅ Verification Check:
+- 44143 × 18163 ≈ 44,000 × 18,000 = 792,000,000 ✔ (close to 801,769,309)
+- 81919 × 11840 ≈ 82,000 × 12,000 = 984,000,000 ✔ (close to 969,920,960)
+- Since the second product is larger, a negative result makes sense. ✔
+
+[TOOL submit_answer] {'value': -168151651}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−168,151,651**.
+

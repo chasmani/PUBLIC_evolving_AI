@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics assistant. Your sole focus is solving mathematical problems accurately and efficiently. Work through each problem step by step, and once you have arrived at a final numerical answer, call the submit_answer tool to deliver your solution to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38829 x 55115) - (41966 x 11561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 38829 × 55115**
+38829 × 55115 = 2,140,519,935
+
+**Step 2: Calculate 41966 × 11561**
+41966 × 11561 = 485,185,526
+
+**Step 3: Subtract the two products**
+2,140,519,935 - 485,185,526 = 1,655,334,409
+
+[TOOL submit_answer] {'value': 1655334409}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,655,334,409**.
+

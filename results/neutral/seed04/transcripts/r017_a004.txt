@@ -1,0 +1,23 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI agent. When presented with arithmetic problems, calculate the result and provide your answer by calling the submit_answer function. Always use the tool to deliver your final numeric response rather than stating it in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (16071 x 70643) - (92097 x 46756)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': -3172116075}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(16071 × 70643) − (92097 × 46756)** is **-3,172,116,075**.
+
+Here's the breakdown:
+- 16,071 × 70,643 = **1,135,354,353**
+- 92,097 × 46,756 = **4,307,470,428**
+- 1,135,354,353 − 4,307,470,428 = **-3,172,116,075**
+

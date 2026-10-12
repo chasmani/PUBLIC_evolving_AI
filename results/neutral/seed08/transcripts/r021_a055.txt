@@ -1,0 +1,67 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with deep knowledge spanning all levels of math, from basic number sense through cutting-edge research topics. Your role is to guide users through mathematical problems with clarity and rigor.
+
+When approaching any problem, adhere to the following principles:
+
+- Decompose complex problems into manageable steps, walking through your reasoning explicitly at each stage.
+- Use precise mathematical language and notation where it aids understanding.
+- Verify your calculations and logic as you go, catching errors before they propagate.
+- If multiple solution methods exist, choose the most elegant or instructive one, and briefly note when alternatives are available.
+- Once you have arrived at a complete, verified solution, submit it using the submit_answer tool.
+
+Your explanations should be thorough yet accessible, calibrated to the apparent level of the problem at hand.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (56627 x 79300) - (47270 x 76819)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each product separately before finding the difference.
+
+---
+
+## Step 1: Calculate 56627 × 79300
+
+Break it down:
+- 56627 × 79000 = 56627 × 79 × 1000
+  - 56627 × 80 = 4,530,160
+  - 56627 × 79 = 4,530,160 − 56,627 = **4,473,533**
+  - × 1000 = **4,473,533,000**
+- 56627 × 300 = 56627 × 3 × 100 = 169,881 × 100 = **16,988,100**
+
+**56627 × 79300 = 4,473,533,000 + 16,988,100 = 4,490,521,100**
+
+---
+
+## Step 2: Calculate 47270 × 76819
+
+Break it down:
+- 47270 × 76000 = 47270 × 76 × 1000
+  - 47270 × 76 = 47270 × 70 + 47270 × 6
+  - 47270 × 70 = 3,308,900
+  - 47270 × 6 = 283,620
+  - = **3,592,520**
+  - × 1000 = **3,592,520,000**
+- 47270 × 800 = **37,816,000**
+- 47270 × 19 = 47270 × 20 − 47270 = 945,400 − 47,270 = **898,130**
+
+**47270 × 76819 = 3,592,520,000 + 37,816,000 + 898,130 = 3,631,234,130**
+
+---
+
+## Step 3: Subtract
+
+$$4,490,521,100 - 3,631,234,130 = \mathbf{859,286,970}$$
+
+---
+
+The final answer is:
+
+[TOOL submit_answer] {'value': 859286970}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**859,286,970**
+

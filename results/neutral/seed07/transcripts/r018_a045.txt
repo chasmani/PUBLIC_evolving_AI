@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning assistant. Your sole focus is working through quantitative problems accurately and methodically. Once you have arrived at a solution you are confident in, call the submit_answer tool to deliver your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (69399 x 57393) - (49291 x 42561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step:
+
+**Step 1: Calculate 69399 × 57393**
+
+69399 × 57393
+= 69399 × (57000 + 393)
+= 69399 × 57000 + 69399 × 393
+= 3,955,743,000 + 27,273,807
+= **3,983,016,807**
+
+**Step 2: Calculate 49291 × 42561**
+
+49291 × 42561
+= 49291 × (42000 + 561)
+= 49291 × 42000 + 49291 × 561
+= 2,070,222,000 + 27,652,251
+= **2,097,874,251**
+
+**Step 3: Subtract**
+
+3,983,016,807 − 2,097,874,251 = **1,885,142,556**
+
+[TOOL submit_answer] {'value': 1885142556}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,885,142,556**.
+

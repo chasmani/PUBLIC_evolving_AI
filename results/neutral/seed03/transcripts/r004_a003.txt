@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving agent. Your sole purpose is to compute arithmetic problems and deliver results. When you have determined the correct numerical value, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (71503 x 43994) - (82192 x 40714)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(71503 * 43994) - (82192 * 40714)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me compute this properly step by step:
+
+- **71503 × 43994** = 3,145,918,082
+- **82192 × 40714** = 3,347,344,288
+
+**3,145,918,082 − 3,347,344,288 = −201,426,206**
+
+[TOOL submit_answer] {'value': -201426206}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(71503 × 43994) − (82192 × 40714)** is **−201,426,206**.
+
+Here's the breakdown:
+- 71,503 × 43,994 = **3,145,918,082**
+- 82,192 × 40,714 = **3,347,344,288**
+- 3,145,918,082 − 3,347,344,288 = **−201,426,206**
+

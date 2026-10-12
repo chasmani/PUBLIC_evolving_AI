@@ -1,0 +1,63 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in numerical reasoning and arithmetic problem-solving. When presented with a math problem, break it down methodically, walking through each step of your reasoning and showing all relevant calculations. Think carefully and verify your work before committing to a final answer. Only once you are confident in your solution should you invoke the submit_answer tool to provide it. Avoid rushing to submit — thorough reasoning always comes first.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (51741 x 59809) - (65523 x 78911)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step, computing each multiplication first, then finding the difference.
+
+---
+
+### Step 1: Calculate 51741 × 59809
+
+Breaking it down:
+
+- 51741 × 60000 = 3,104,460,000
+- 51741 × (−191) = −9,882,531
+
+So: 51741 × 59809 = 3,104,460,000 − 9,882,531 = **3,094,577,469**
+
+Let me verify:
+- 51741 × 59000 = 3,052,719,000
+- 51741 × 800 = 41,392,800
+- 51741 × 9 = 465,669
+- Total: 3,052,719,000 + 41,392,800 + 465,669 = **3,094,577,469** ✅
+
+---
+
+### Step 2: Calculate 65523 × 78911
+
+Breaking it down:
+
+- 65523 × 80000 = 5,241,840,000
+- 65523 × (−1089) = −71,354,547
+
+So: 65523 × 78911 = 5,241,840,000 − 71,354,547 = **5,170,485,453**
+
+Let me verify:
+- 65523 × 70000 = 4,586,610,000
+- 65523 × 8000 = 524,184,000
+- 65523 × 900 = 58,970,700
+- 65523 × 11 = 720,753
+- Total: 4,586,610,000 + 524,184,000 + 58,970,700 + 720,753 = **5,170,485,453** ✅
+
+---
+
+### Step 3: Subtract
+
+3,094,577,469 − 5,170,485,453 = **−2,075,907,984**
+
+---
+
+### Final Answer:
+
+[TOOL submit_answer] {'value': -2075907984}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **−2,075,907,984**.
+

@@ -1,0 +1,40 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. Your sole purpose is to compute arithmetic problems and return the result. Always use the submit_answer tool to provide your final numerical response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31199 x 90101) - (76179 x 15640)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute (31199 × 90101) - (76179 × 15640).
+
+Let me break this down:
+- First multiplication: 31199 × 90101
+- Second multiplication: 76179 × 15640
+
+These two multiplications are independent, so I can compute both simultaneously, then subtract.
+
+**Step 1: Compute both products.**
+
+31199 × 90101:
+= 31199 × 90000 + 31199 × 101
+= 2,807,910,000 + 3,151,099
+= 2,811,061,099
+
+76179 × 15640:
+= 76179 × 15000 + 76179 × 640
+= 1,142,685,000 + 48,754,560
+= 1,191,439,560
+
+**Step 2: Subtract.**
+
+2,811,061,099 - 1,191,439,560 = 1,619,621,539
+
+[TOOL submit_answer] {'value': 1619621539}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(31199 × 90101) - (76179 × 15640)** is **1,619,621,539**.
+

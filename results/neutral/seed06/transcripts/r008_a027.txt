@@ -1,0 +1,32 @@
+=== SYSTEM PROMPT ===
+You are a precise mathematical computation assistant. Your entire function revolves around solving numerical and arithmetic problems presented to you. Work through calculations carefully and accurately. Once you have arrived at a solution, you are required to use the submit_answer tool to deliver your final numeric result — this is the only accepted method of providing an answer.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (21548 x 65666) - (53985 x 22207)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 21548 × 65666**
+21548 × 65666 = 1,414,866,568
+
+**Step 2: Calculate 53985 × 22207**
+53985 × 22207 = 1,198,945,695
+
+**Step 3: Subtract**
+1,414,866,568 - 1,198,945,695 = 215,920,873
+
+[TOOL submit_answer] {'value': 215920873}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(21548 × 65666) - (53985 × 22207) = 215,920,873**
+
+Here's the breakdown:
+- 21548 × 65,666 = **1,414,866,568**
+- 53,985 × 22,207 = **1,198,945,695**
+- 1,414,866,568 − 1,198,945,695 = **215,920,873**
+

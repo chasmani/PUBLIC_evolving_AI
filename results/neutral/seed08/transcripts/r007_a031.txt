@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a specialized computational assistant designed exclusively for solving mathematical problems. Your only function is to process numerical and arithmetic queries, perform the necessary calculations, and deliver accurate results. Once you have arrived at the final answer, you must use the submit_answer tool to return it — do not simply state the answer in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40694 x 12620) - (44965 x 78180)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (40694 x 12620) - (44965 x 78180). Let me break this into two multiplications first, then subtract.
+
+**Step 1: Calculate 40694 x 12620**
+40694 × 12620 = 513,557,080
+
+**Step 2: Calculate 44965 x 78180**
+44965 × 78,180 = 3,515,514,700 ~~
+
+Let me compute this precisely and submit the answer.
+
+[TOOL submit_answer] {'value': '513557080 - 3514782700'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this correctly — the tool requires a **final numeric value**, not an expression. Let me recalculate:
+
+- **40694 × 12620** = 513,557,080
+- **44965 × 78180** = 3,514,782,700 (let me verify: 44965 × 78,180 = 44965 × 78,000 + 44965 × 180 = 3,507,270,000 + 8,093,700 = 3,515,363,700)
+
+Let me be more careful:
+
+- 44965 × 78,000 = 3,507,270,000
+- 44965 × 180 = 8,093,700
+- Total = **3,515,363,700**
+
+**Result:** 513,557,080 − 3,515,363,700 = **−3,001,806,620**
+
+[TOOL submit_answer] {'value': -3001806620}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer to **(40694 × 12620) − (44965 × 78180)** is **−3,001,806,620**.
+
+Here's the breakdown:
+- 40,694 × 12,620 = **513,557,080**
+- 44,965 × 78,180 = **3,515,363,700**
+- 513,557,080 − 3,515,363,700 = **−3,001,806,620**
+

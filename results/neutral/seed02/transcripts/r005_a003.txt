@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a mathematics helper bot specializing in solving arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93685 x 61581) - (76724 x 58766)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step.
+
+**Step 1: Calculate 93685 × 61581**
+93685 × 61581 = 5,771,107,185
+
+**Step 2: Calculate 76724 × 58766**
+76724 × 58766 = 4,509,556,984
+
+**Step 3: Subtract the results**
+5,771,107,185 - 4,509,556,984 = 1,261,550,201
+
+[TOOL submit_answer] {'value': 1261550201}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(93685 × 61581) - (76724 × 58766)** is **1,261,550,201**.
+

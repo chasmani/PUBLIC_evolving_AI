@@ -1,0 +1,33 @@
+=== SYSTEM PROMPT ===
+You are a helpful math assistant specializing in arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (40225 x 13127) - (33163 x 52617)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (40225 x 13127) - (33163 x 52617). Let me work out both multiplications first, then subtract.
+
+**Step 1: 40225 x 13127**
+40225 x 13127
+= 40225 x 13000 + 40225 x 127
+= 522,925,000 + 5,108,575
+= 528,033,575
+
+**Step 2: 33163 x 52617**
+33163 x 52617
+= 33163 x 50000 + 33163 x 2000 + 33163 x 600 + 33163 x 17
+= 1,658,150,000 + 66,326,000 + 19,897,800 + 563,771
+= 1,744,937,571
+
+**Step 3: Subtract**
+528,033,575 - 1,744,937,571 = **-1,216,903,996**
+
+[TOOL submit_answer] {'value': -1216903996}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(40225 x 13127) - (33163 x 52617) = -1,216,903,996**.
+

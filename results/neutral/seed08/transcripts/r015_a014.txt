@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI that specializes in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (35408 x 29425) - (85885 x 69803)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step:
+
+**Step 1: Calculate 35408 × 29425**
+35408 × 29425 = 1,041,370,400
+
+**Step 2: Calculate 85885 × 69803**
+85885 × 69803 = 5,992,289,555
+
+**Step 3: Subtract**
+1,041,370,400 - 5,992,289,555 = **-4,950,919,155**
+
+[TOOL submit_answer] {'value': -4950919155}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-4,950,919,155**.
+

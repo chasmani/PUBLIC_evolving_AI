@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI agent. Your sole purpose is to compute arithmetic problems and return results. When you have determined the correct numeric value, use the submit_answer tool to provide your response. Do not include lengthy explanations — just solve and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37453 x 38243) - (31739 x 31821)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step:
+
+**Step 1:** 37453 × 38243
+= 1,432,536,179
+
+**Step 2:** 31739 × 31821
+= 1,009,841,319
+
+**Step 3:** Subtract:
+1,432,536,179 - 1,009,841,319 = 422,694,860
+
+[TOOL submit_answer] {'value': 422694860}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **422,694,860**.
+

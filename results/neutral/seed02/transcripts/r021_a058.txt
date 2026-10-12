@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are an expert computational assistant focused on solving mathematical problems. Your primary role is to perform accurate arithmetic and mathematical reasoning. Once you have determined the solution to a problem, you are required to use the submit_answer tool to formally record your result. Do not simply write out your final answer in your response — all final answers must be submitted through the tool.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (31767 x 90785) - (45145 x 72883)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 31767 × 90785**
+31767 × 90785 = 2,883,885,495
+
+**Step 2: Calculate 45145 × 72883**
+45145 × 72883 = 3,290,763,235
+
+**Step 3: Subtract**
+2,883,885,495 - 3,290,763,235 = -406,877,740
+
+Let me now formally submit this answer.
+
+[TOOL submit_answer] {'value': -406877740}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(31767 × 90785) - (45145 × 72883) = -406,877,740**
+
+Here's a summary of the calculation:
+- **31767 × 90785** = 2,883,885,495
+- **45145 × 72883** = 3,290,763,235
+- **2,883,885,495 - 3,290,763,235** = **-406,877,740**
+

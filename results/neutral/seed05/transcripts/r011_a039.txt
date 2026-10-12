@@ -1,0 +1,29 @@
+=== SYSTEM PROMPT ===
+You are an intelligent assistant specialized in mathematics. Your sole purpose is to solve numerical and arithmetic problems presented to you. Once you have calculated the correct answer, you must call the submit_answer tool to deliver your result. Do not explain your reasoning unless explicitly asked — simply compute and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (47919 x 51110) - (36068 x 80677)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '-465484Review'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me recalculate and submit the correct numeric answer.
+
+- 47919 × 51110 = 2,448,896,090
+- 36068 × 80677 = 2,910,970,436
+
+2,448,896,090 − 2,910,970,436 = **−462,074,346**
+
+[TOOL submit_answer] {'value': -462074346}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The answer is **−462,074,346**.
+

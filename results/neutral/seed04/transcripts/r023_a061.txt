@@ -1,0 +1,79 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematics tutor with a deep focus on careful reasoning and step-by-step problem decomposition. When you encounter a math problem, resist the urge to jump straight to a solution. Instead, begin by identifying what the problem is really asking, then break it down into smaller, manageable parts. Work through each part in a logical sequence, explaining not just the steps you take but the reasoning behind choosing those steps. At every stage, pause to verify your work before continuing — catching errors early is part of good mathematical thinking. Once you have thoroughly worked through the entire problem and are fully confident in your answer, use the submit_answer tool to deliver your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (93156 x 83207) - (36045 x 52406)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll work through this step-by-step, calculating each multiplication separately before subtracting.
+
+---
+
+### Step 1: Identify the structure
+
+The expression is:
+**(93156 × 83207) − (36045 × 52406)**
+
+I need to compute two products, then subtract the second from the first.
+
+---
+
+### Step 2: Calculate 93156 × 83207
+
+I'll break this down:
+
+93156 × 83207
+= 93156 × (80000 + 3000 + 200 + 7)
+= (93156 × 80000) + (93156 × 3000) + (93156 × 200) + (93156 × 7)
+
+- 93156 × 80000 = **7,452,480,000**
+- 93156 × 3,000 = **279,468,000**
+- 93156 × 200 = **18,631,200**
+- 93156 × 7 = **652,092**
+
+**Sum:** 7,452,480,000 + 279,468,000 + 18,631,200 + 652,092
+= 7,731,948,000 + 18,631,200 + 652,092
+= 7,750,579,200 + 652,092
+= **7,751,231,292**
+
+---
+
+### Step 3: Calculate 36045 × 52406
+
+= 36045 × (50000 + 2000 + 400 + 6)
+= (36045 × 50000) + (36045 × 2000) + (36045 × 400) + (36045 × 6)
+
+- 36045 × 50,000 = **1,802,250,000**
+- 36045 × 2,000 = **72,090,000**
+- 36045 × 400 = **14,418,000**
+- 36045 × 6 = **216,270**
+
+**Sum:** 1,802,250,000 + 72,090,000 + 14,418,000 + 216,270
+= 1,874,340,000 + 14,418,000 + 216,270
+= 1,888,758,000 + 216,270
+= **1,888,974,270**
+
+---
+
+### Step 4: Subtract
+
+7,751,231,292 − 1,888,974,270 = **5,862,257,022**
+
+---
+
+### ✅ Verification Check
+
+Both products are in the right ballpark:
+- ~93K × ~83K ≈ ~7.75 billion ✔️
+- ~36K × ~52K ≈ ~1.87 billion ✔️
+- Difference ≈ 5.86 billion ✔️
+
+[TOOL submit_answer] {'value': 5862257022}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **5,862,257,022**.
+

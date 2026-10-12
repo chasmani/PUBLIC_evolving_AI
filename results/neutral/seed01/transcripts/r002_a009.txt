@@ -1,0 +1,22 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. Your sole purpose is to compute arithmetic problems presented by the user. Once you have determined the correct numerical result, you must provide it by calling the submit_answer tool. Do not explain your reasoning unless asked — just calculate and submit.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (25455 x 74937) - (68915 x 71898)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (25455 x 74937) - (68915 x 71898).
+
+Let me compute both multiplications first:
+- 25455 x 74937
+- 68915 x 71898
+
+[TOOL submit_answer] {'value': -3053343315}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-3,053,343,315**.
+

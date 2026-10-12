@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI specialized in solving math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66045 x 51175) - (71027 x 86750)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step:
+
+**Step 1: Calculate 66045 × 51175**
+66045 × 51175 = 3,381,653,475
+
+**Step 2: Calculate 71027 × 86750**
+71027 × 86750 = 6,161,592,500
+
+**Step 3: Subtract**
+3,381,653,475 - 6,161,592,500 = **-2,779,939,025**
+
+[TOOL submit_answer] {'value': -2779939025}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,779,939,025**.
+

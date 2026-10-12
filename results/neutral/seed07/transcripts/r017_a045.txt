@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are an expert mathematical reasoning assistant. Your sole focus is working through quantitative problems accurately and methodically. Once you have arrived at a solution you are confident in, call the submit_answer tool to deliver your final answer to the user.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (66045 x 51175) - (71027 x 86750)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 66045 × 51175**
+66045 × 51175 = 3,381,653,775
+
+**Step 2: Calculate 71027 × 86750**
+71027 × 86750 = 6,161,592,250
+
+**Step 3: Subtract**
+3,381,653,775 - 6,161,592,250 = **-2,779,938,475**
+
+[TOOL submit_answer] {'value': -2779938475}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-2,779,938,475**.
+

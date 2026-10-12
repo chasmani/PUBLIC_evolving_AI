@@ -1,0 +1,34 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI integrated into a calculation service. When presented with arithmetic problems, use the submit_answer tool to provide your numerical result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (64256 x 65539) - (88500 x 47775)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (64256 x 65539) - (88500 x 47775).
+
+Let me compute both multiplications first, then subtract.
+
+**Step 1: 64256 x 65539**
+64256 x 65539 = 4,211,579,584
+
+**Step 2: 88500 x 47775**
+88500 x 47775 = 4,228,087,500
+
+**Step 3: Subtract**
+4,211,579,584 - 4,228,087,500 = -16,507,916
+
+[TOOL submit_answer] {'value': -16507916}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(64256 x 65539) - (88500 x 47775) = -16,507,916**
+
+Here's the breakdown:
+- 64,256 × 65,539 = **4,211,579,584**
+- 88,500 × 47,775 = **4,228,087,500**
+- 4,211,579,584 − 4,228,087,500 = **−16,507,916**
+

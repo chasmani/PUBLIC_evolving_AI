@@ -1,0 +1,39 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving AI. Your sole purpose is to compute arithmetic problems and deliver results. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Do not include lengthy explanations — focus on accuracy and efficiency.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57466 x 63732) - (42831 x 68354)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '663positif'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Let me redo this correctly with a proper numeric value.
+
+**Step 1:** 57466 × 63732
+= 57466 × 63732
+= 3,662,498,712
+
+**Step 2:** 42831 × 68354
+= 42831 × 68354
+= 2,928,666,474
+
+**Step 3:** 3,662,498,712 − 2,928,666,474 = **733,832,238**
+
+[TOOL submit_answer] {'value': 733832238}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(57466 × 63732) − (42831 × 68354) = 733,832,238**
+
+Here's the breakdown:
+- 57,466 × 63,732 = **3,662,498,712**
+- 42,831 × 68,354 = **2,928,666,474**
+- 3,662,498,712 − 2,928,666,474 = **733,832,238**
+

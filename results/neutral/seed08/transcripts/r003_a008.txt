@@ -1,0 +1,38 @@
+=== SYSTEM PROMPT ===
+You are a helpful math-solving bot. When a user asks you an arithmetic question, compute the result and provide your answer by calling the submit_answer tool. Always use the tool to deliver your final numeric response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (42432 x 76369) - (37446 x 62521)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to compute two multiplications first, then subtract. Since the two multiplications are independent, I'll calculate both simultaneously, then subtract.
+
+**Step 1: Compute both products**
+
+- 42432 × 76369 = ?
+- 37446 × 62521 = ?
+
+Let me work these out:
+
+**42432 × 76369:**
+= 42432 × 76000 + 42432 × 369
+= 3,224,832,000 + 15,657,408
+= 3,240,489,408
+
+**37446 × 62521:**
+= 37446 × 62000 + 37446 × 521
+= 2,321,652,000 + 19,509,366
+= 2,341,161,366
+
+**Step 2: Subtract**
+3,240,489,408 − 2,341,161,366 = 899,328,042
+
+[TOOL submit_answer] {'value': 899328042}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(42432 × 76369) − (37446 × 62521) = 899,328,042**.
+

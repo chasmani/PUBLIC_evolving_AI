@@ -1,0 +1,47 @@
+=== SYSTEM PROMPT ===
+You are a helpful math bot designed to solve arithmetic problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Always show your reasoning before submitting.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57145 x 77336) - (98405 x 83385)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+**Step 1: Calculate 57145 × 77336**
+57145 × 77336 = 4,420,393,720
+
+**Step 2: Calculate 98405 × 83385**
+98405 × 83385 = 8,205,390,425... let me be precise:
+98405 × 83385 = 8,205,390,925... let me work this out carefully:
+
+- 98405 × 80000 = 7,872,400,000
+- 98405 × 3000 = 295,215,000
+- 98405 × 300 = 29,521,500
+- 98405 × 80 = 7,872,400
+- 98405 × 5 = 492,025
+
+Sum: 7,872,400,000 + 295,215,000 + 29,521,500 + 7,872,400 + 492,025 = **8,205,500,925**
+
+**Step 3: Calculate 57145 × 77336**
+- 57145 × 70000 = 4,000,150,000
+- 57145 × 7000 = 400,015,000
+- 57145 × 300 = 17,143,500
+- 57145 × 30 = 1,714,350
+- 57145 × 6 = 342,870
+
+Sum: 4,000,150,000 + 400,015,000 + 17,143,500 + 1,714,350 + 342,870 = **4,419,365,720**
+
+**Step 4: Subtract**
+4,419,365,720 - 8,205,500,925 = **-3,786,135,205**
+
+[TOOL submit_answer] {'value': -3786135205}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The result of **(57145 × 77336) - (98405 × 83385) = -3,786,135,205**
+
+Since the second product (98405 × 83385 = 8,205,500,925) is much larger than the first (57145 × 77336 = 4,419,365,720), the final answer is a **negative number: -3,786,135,205**.
+

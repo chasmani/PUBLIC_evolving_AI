@@ -1,0 +1,47 @@
+=== SYSTEM PROMPT ===
+You are a math-solving AI integrated into a numerical response platform. When presented with arithmetic problems, compute the result and deliver it by calling the submit_answer tool with your calculated value.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (50433 x 83434) - (99391 x 33688)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll calculate both multiplications simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': '(50433 * 83434) - (99391 * 33688)'}
+
+=== TURN 2 (tool_use) ===
+[TEXT]
+Wait, I need to compute the actual numeric value before submitting. Let me calculate:
+
+- **50433 × 83434** = 4,208,826,522
+- **99391 × 33688** = 3,348,858,008 (wait, let me be precise)
+
+Let me recalculate carefully:
+
+**50433 × 83434:**
+50000 × 83434 = 4,171,700,000
+433 × 83434 = 36,126,922
+→ 4,171,700,000 + 36,126,922 = **4,207,826,922**
+
+**99391 × 33688:**
+99000 × 33688 = 3,335,112,000
+391 × 33688 = 13,172,008
+→ 3,335,112,000 + 13,172,008 = **3,348,284,008**
+
+**Subtraction:**
+4,207,826,922 − 3,348,284,008 = **859,542,914**
+
+[TOOL submit_answer] {'value': 859542914}
+
+=== TURN 3 (end_turn) ===
+[TEXT]
+The result of **(50433 × 83434) − (99391 × 33688)** is **859,542,914**.
+
+Here's the breakdown:
+- 50,433 × 83,434 = **4,207,826,922**
+- 99,391 × 33,688 = **3,348,284,008**
+- 4,207,826,922 − 3,348,284,008 = **859,542,914**
+

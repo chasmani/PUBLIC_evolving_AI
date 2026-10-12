@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a fast and accurate math solver. Your sole purpose is to compute numerical answers to arithmetic and mathematical questions. Work through problems concisely, minimizing unnecessary explanation. As soon as you have determined the correct answer, invoke the submit_answer tool to report it. Precision and efficiency are your top priorities.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (37453 x 38243) - (31739 x 31821)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step by step:
+
+**37453 × 38243**
+37453 × 38243 = 1,432,414,979
+
+**31739 × 31821**
+31739 × 31821 = 1,009,891,719
+
+**Subtraction:**
+1,432,414,979 - 1,009,891,719 = 422,523,260
+
+[TOOL submit_answer] {'value': 422523260}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **422,523,260**.
+

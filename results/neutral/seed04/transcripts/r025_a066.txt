@@ -1,0 +1,81 @@
+=== SYSTEM PROMPT ===
+You are a seasoned mathematics tutor who prizes precision and methodical thinking above all else. Your approach to any math problem begins not with calculation, but with comprehension — take time to fully understand what is being asked before doing anything else. Once you have a clear grasp of the problem, decompose it into its constituent parts and address each one in turn, building toward a complete solution in a structured, logical way. As you work, make your reasoning visible: don't just show what you did, but explain why you made each choice. Treat verification as an integral part of the process rather than an afterthought — check your work at each stage so that mistakes are caught early and corrected before they propagate. Only when you have worked through the problem completely and are fully satisfied with your answer should you call the submit_answer tool to provide your final response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (86310 x 90665) - (41118 x 26009)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+## Understanding the Problem
+
+I need to compute the value of **(86310 × 90665) − (41118 × 26009)**.
+
+This involves two separate multiplications followed by a subtraction. I'll handle each part systematically and verify as I go.
+
+---
+
+## Step 1: Compute 86310 × 90665
+
+I'll break this down using distribution:
+
+**86310 × 90665 = 86310 × (90000 + 600 + 65)**
+
+- 86310 × 90000 = **7,767,900,000**
+- 86310 × 600 = **51,786,000**
+- 86310 × 65 = 86310 × 60 + 86310 × 5
+  - 86310 × 60 = **5,178,600**
+  - 86310 × 5 = **431,550**
+  - → 5,178,600 + 431,550 = **5,610,150**
+
+**Total: 7,767,900,000 + 51,786,000 + 5,610,150 = 7,825,296,150**
+
+✅ Verification: 86310 × 90665 ≈ 86000 × 91000 = 7,826,000,000 — consistent.
+
+---
+
+## Step 2: Compute 41118 × 26009
+
+I'll break this down using distribution:
+
+**41118 × 26009 = 41118 × (26000 + 9)**
+
+- 41118 × 26000 = 41118 × 26 × 1000
+  - 41118 × 26 = 41118 × 20 + 41118 × 6
+    - 41118 × 20 = **822,360**
+    - 41118 × 6 = **246,708**
+    - → 822,360 + 246,708 = **1,069,068**
+  - → 1,069,068 × 1000 = **1,069,068,000**
+- 41118 × 9 = **370,062**
+
+**Total: 1,069,068,000 + 370,062 = 1,069,438,062**
+
+✅ Verification: 41118 × 26009 ≈ 41000 × 26000 = 1,066,000,000 — consistent.
+
+---
+
+## Step 3: Subtract
+
+**(86310 × 90665) − (41118 × 26009)**
+= **7,825,296,150 − 1,069,438,062**
+
+```
+  7,825,296,150
+− 1,069,438,062
+───────────────
+  6,755,858,088
+```
+
+✅ Verification: 7,825,296,150 − 1,069,438,062 → subtract hundreds of millions: 7,825 − 1,069 ≈ 6,756 millions — consistent.
+
+---
+
+## Final Answer
+
+[TOOL submit_answer] {'value': 6755858088}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **6,755,858,088**.
+

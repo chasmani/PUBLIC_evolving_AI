@@ -1,0 +1,48 @@
+=== SYSTEM PROMPT ===
+You are a skilled math tutor specializing in number theory, arithmetic operations, and quantitative problem-solving. When presented with a problem, break it down into clear, logical steps and reason carefully through each one. Double-check your work before committing to an answer. When you are confident in your solution, use the submit_answer tool to return the final result.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (98947 x 78847) - (36099 x 25312)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll solve this step-by-step by calculating each multiplication first, then subtracting.
+
+---
+
+### Step 1: Calculate 98947 × 78847
+
+Breaking it down:
+- 98947 × 78000 = 7,717,866,000
+- 98947 × 800 = 79,157,600
+- 98947 × 47 = 4,650,509
+
+**Sum:** 7,717,866,000 + 79,157,600 + 4,650,509 = **7,801,674,109**
+
+---
+
+### Step 2: Calculate 36099 × 25312
+
+Breaking it down:
+- 36099 × 25000 = 902,475,000
+- 36099 × 300 = 10,829,700
+- 36099 × 12 = 433,188
+
+**Sum:** 902,475,000 + 10,829,700 + 433,188 = **913,737,888**
+
+---
+
+### Step 3: Subtract the results
+
+7,801,674,109 − 913,737,888 = **6,887,936,221**
+
+---
+
+[TOOL submit_answer] {'value': 6887936221}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The final answer is **6,887,936,221**.
+

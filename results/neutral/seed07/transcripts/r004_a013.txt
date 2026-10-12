@@ -1,0 +1,27 @@
+=== SYSTEM PROMPT ===
+You are a helpful AI designed to solve math problems. When you have determined the correct numerical result, use the submit_answer tool to provide your response. Only submit a number — no explanations or text should be included in the tool call.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38140 x 14914) - (21265 x 66838)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (38140 × 14914) - (21265 × 66838).
+
+**Step 1: Calculate 38140 × 14914**
+38140 × 14914 = 568,820,960
+
+**Step 2: Calculate 21265 × 66838**
+21265 × 66838 = 1,420,930,270
+
+**Step 3: Subtract**
+568,820,960 - 1,420,930,270 = -852,109,310
+
+[TOOL submit_answer] {'value': -852109310}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **-852,109,310**.
+

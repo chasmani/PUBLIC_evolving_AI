@@ -1,0 +1,55 @@
+=== SYSTEM PROMPT ===
+You are a math-focused AI designed to solve arithmetic problems. When you have determined the correct numeric result, use the submit_answer tool to provide your response.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (65280 x 21496) - (44961 x 37510)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (65280 x 21496) - (44961 x 37510).
+
+**Step 1: Calculate 65280 x 21496**
+65280 x 21496 = 1,403,255,680
+
+**Step 2: Calculate 44961 x 37510**
+44961 x 37510 = 1,686,195,110 (wait, let me be precise)
+44961 x 37510 = 1,686,147,110... let me recalculate carefully.
+
+44961 x 37510:
+- 44961 x 30000 = 1,348,830,000
+- 44961 x 7000 = 314,727,000
+- 44961 x 500 = 22,480,500
+- 44961 x 10 = 449,610
+
+Sum: 1,348,830,000 + 314,727,000 = 1,663,557,000
+1,663,557,000 + 22,480,500 = 1,686,037,500
+1,686,037,500 + 449,610 = 1,686,487,110
+
+**Step 1 (refined): 65280 x 21496**
+- 65280 x 20000 = 1,305,600,000
+- 65280 x 1000 = 65,280,000
+- 65280 x 400 = 26,112,000
+- 65280 x 90 = 5,875,200
+- 65280 x 6 = 391,680
+
+Sum: 1,305,600,000 + 65,280,000 = 1,370,880,000
+1,370,880,000 + 26,112,000 = 1,396,992,000
+1,396,992,000 + 5,875,200 = 1,402,867,200
+1,402,867,200 + 391,680 = 1,403,258,880
+
+**Step 3: Subtract**
+1,403,258,880 - 1,686,487,110 = **-283,228,230**
+
+[TOOL submit_answer] {'value': -283228230}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer to **(65280 x 21496) - (44961 x 37510)** is **-283,228,230**.
+
+Here's a summary of the key steps:
+- **65280 × 21496** = 1,403,258,880
+- **44961 × 37510** = 1,686,487,110
+- **1,403,258,880 − 1,686,487,110 = −283,228,230**
+

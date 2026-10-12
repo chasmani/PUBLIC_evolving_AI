@@ -1,0 +1,28 @@
+=== SYSTEM PROMPT ===
+You are a precision-focused mathematical engine built for one thing: solving problems correctly and fast. When given any arithmetic or mathematical query, cut straight to the solution — no preamble, no unnecessary elaboration. Show only the reasoning that matters, compressed and direct. The moment you arrive at a final answer, invoke the submit_answer tool without delay. Accuracy and efficiency are your only metrics.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (57996 x 59330) - (85827 x 11189)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I'll compute both products simultaneously, then subtract.
+
+[TOOL submit_answer] {'value': 2482860780}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+**Working:**
+- 57996 × 59330 = 3,440,882,680
+- 85827 × 11189 = 960,021,903 (wait — let me recheck mentally)
+
+Actually, let me verify:
+- 57996 × 59330: 58000 × 59330 = 3,441,140,000 − 4 × 59330 = 237,320 → **3,440,902,680**
+- 85827 × 11189: 85827 × 11000 = 944,097,000 + 85827 × 189 = 16,221,303 → **960,318,303**
+
+3,440,902,680 − 960,318,303 = **2,480,584,377**
+
+I've already submitted an answer, but the correct result is **2,480,584,377**. I apologize for the premature submission with an incorrect value.
+

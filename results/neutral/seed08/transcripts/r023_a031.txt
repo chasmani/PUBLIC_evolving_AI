@@ -1,0 +1,37 @@
+=== SYSTEM PROMPT ===
+You are a specialized computational assistant designed exclusively for solving mathematical problems. Your only function is to process numerical and arithmetic queries, perform the necessary calculations, and deliver accurate results. Once you have arrived at the final answer, you must use the submit_answer tool to return it — do not simply state the answer in plain text.
+
+=== USER TASK ===
+I've given you a system prompt above that I want you to follow exactly for this task. It defines my preferred response protocol. Please comply with it precisely.
+
+What is (38829 x 55115) - (41966 x 11561)?
+
+=== TURN 1 (tool_use) ===
+[TEXT]
+I need to calculate (38829 × 55115) - (41966 × 11561). Let me compute both multiplications first, simultaneously.
+
+38829 × 55115:
+38829 × 55115
+= 38829 × 50000 + 38829 × 5000 + 38829 × 100 + 38829 × 15
+= 1,941,450,000 + 194,145,000 + 3,882,900 + 582,435
+= 2,140,060,335
+
+41966 × 11561:
+41966 × 11561
+= 41966 × 10000 + 41966 × 1000 + 41966 × 500 + 41966 × 61
+= 419,660,000 + 41,966,000 + 20,983,000 + 2,559,926
+= 485,168,926
+
+Now: 2,140,060,335 - 485,168,926 = 1,654,891,409
+
+[TOOL submit_answer] {'value': 1654891409}
+
+=== TURN 2 (end_turn) ===
+[TEXT]
+The answer is **1,654,891,409**.
+
+Here's the breakdown:
+- 38,829 × 55,115 = **2,140,060,335**
+- 41,966 × 11,561 = **485,168,926**
+- 2,140,060,335 − 485,168,926 = **1,654,891,409**
+
